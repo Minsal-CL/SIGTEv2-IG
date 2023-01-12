@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"]; # 
   fhir:ImplementationGuide.name [ fhir:value "ListaEsperaChile"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-01-10T16:59:21-03:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-01-12T17:57:50-03:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "MINSAL Chile"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -47,6 +47,15 @@
      ];
      fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
      fhir:ImplementationGuide.dependsOn.version [ fhir:value "5.0.0" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "CoreCLDEV" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "https://build.fhir.org/ig/HL7Chile/CL-Core";
+       fhir:link <https://build.fhir.org/ig/HL7Chile/CL-Core>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.cl.corecl" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "dev" ]
   ]; # 
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -760,6 +769,34 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/Afrodescendiente>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Afrodescendiente" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Afrodescendiente" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "paciente pertenece a un Pueblo Afrodescendiente chileno" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/Etnia>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Etnia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Etnia a la cual pertenece" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Etnia a la cual pertenece" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/IdentidadGenero" ]
        ];
@@ -767,7 +804,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Identidad de genero" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -781,18 +818,18 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Esta extensión incluye códigos de paises de origen" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/PertenecienteEtnia>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/PertenecienteEtnia" ]
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/SegundoApellido>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/SegundoApellido" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PertenecienteEtnia" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PertenecienteEtnia" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Segundo Apellido" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Segundo Apellido" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ];
      fhir:ImplementationGuide.definition.page [

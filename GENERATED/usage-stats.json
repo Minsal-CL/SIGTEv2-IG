@@ -4,8 +4,34 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/Afrodescendiente",
+      "title": "Afrodescendiente",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
       "title": "Codigo de Identificación de países",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/Etnia",
+      "title": "Etnia a la cual pertenece",
       "types": [
         "CodeableConcept",
         "CodeableConcept",
@@ -42,10 +68,10 @@
       ]
     },
     {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/PertenecienteEtnia",
-      "title": "PertenecienteEtnia",
+      "url": "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido",
+      "title": "Segundo Apellido",
       "types": [
-        "boolean"
+        "string"
       ]
     }
   ],
@@ -124,6 +150,17 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-fathers-family": [
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
+      "Patient.contact.name.family",
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -152,14 +189,24 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://minsal.cl/listaespera/StructureDefinition/Afrodescendiente": [
+      "Patient"
+    ],
     "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises": [
+      "Patient"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/Etnia": [
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero": [
       "Patient"
     ],
-    "http://minsal.cl/listaespera/StructureDefinition/PertenecienteEtnia": [
-      "Patient"
+    "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises": [
+      "Patient",
+      "Patient.identifier.type"
+    ],
+    "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/IdContacto": [
+      "Patient.contact"
     ]
   }
 }

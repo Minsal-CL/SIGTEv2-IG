@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "ListaEsperaChile",
   "status" : "draft",
-  "date" : "2023-01-10T16:59:21-03:00",
+  "date" : "2023-01-12T17:57:50-03:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -30,6 +30,12 @@
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
     "version" : "5.0.0"
+  },
+  {
+    "id" : "CoreCLDEV",
+    "uri" : "https://build.fhir.org/ig/HL7Chile/CL-Core",
+    "packageId" : "hl7.fhir.cl.corecl",
+    "version" : "dev"
   }],
   "definition" : {
     "extension" : [{
@@ -674,6 +680,30 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/Afrodescendiente"
+      },
+      "name" : "Afrodescendiente",
+      "description" : "paciente pertenece a un Pueblo Afrodescendiente chileno",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Etnia"
+      },
+      "name" : "Etnia a la cual pertenece",
+      "description" : "Etnia a la cual pertenece",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/IdentidadGenero"
       },
       "name" : "Identidad de genero",
@@ -698,10 +728,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PertenecienteEtnia"
+        "reference" : "StructureDefinition/SegundoApellido"
       },
-      "name" : "PertenecienteEtnia",
-      "description" : "PertenecienteEtnia",
+      "name" : "Segundo Apellido",
+      "description" : "Segundo Apellido",
       "exampleBoolean" : false
     }],
     "page" : {
