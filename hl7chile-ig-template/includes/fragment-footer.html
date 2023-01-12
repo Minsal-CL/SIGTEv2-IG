@@ -1,0 +1,5 @@
+ Links: <a style="color: var(--footer-hyperlink-text-color)" href="{{site.data.info.assets}}toc.html">Tabla de contenidos</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reporte QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="{{site.data.fhir.canonical}}/history.html">Historial de versiones</a></a>
+{% for feedbacklink in site.data.features.feedback %}{% if feedbacklink.dashboard %} | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="{{feedbacklink.dashboard.url}}">{{feedbacklink.dashboard.label}}</a>{% endif %}{% endfor
+%}
