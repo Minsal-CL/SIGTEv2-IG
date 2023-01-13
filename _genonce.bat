@@ -8,18 +8,24 @@ ECHO We're offline...
 SET txoption=-tx n/a
 GOTO igpublish
 
+
+
+
+
 :isonline
 ECHO We're online
 SET txoption=
 
 :igpublish
-
 SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
+ECHO xxxxxx
+del GENERATE -recurse -force
+
 
 IF EXIST "%input_cache_path%\%publisher_jar%" (
-	JAVA -jar "%input_cache_path%\%publisher_jar%" -ig . -destination "GENERATED" %txoption% %*
+	JAVA -jar "%input_cache_path%\%publisher_jar%" -ig . %txoption% %*
 ) ELSE If exist "..\%publisher_jar%" (
-	JAVA -jar "..\%publisher_jar%" -ig . -destination "GENERATED" %txoption% %*
+	JAVA -jar "..\%publisher_jar%" -ig . %txoption% %*
 ) ELSE (
 	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 )
