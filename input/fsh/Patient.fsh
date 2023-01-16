@@ -8,7 +8,10 @@ Description: "PacienteLP"
 * extension contains PaisOrigenNacionalidadCl named paisOrigen 1..1 MS
 * extension contains IdentidadGenero named IdentidadGenero 1..1 MS
 * extension contains Etnia named Etnia 0..1 MS
-* extension contains Afrodescendiente named Afrodescendiente 1..1 MS
+* extension contains ExtBoolean named Afrodescendiente 1..1 MS
+
+
+//* extension[Etnia].valueCodeableConcept.coding.code from CodPais
 
 // FIN EXTENSIONES
 

@@ -38,12 +38,37 @@ Description: "Etnia a la cual pertenece"
   * display 1..1 MS
 * valueCodeableConcept.text MS
 
-Extension: Afrodescendiente 
-Id: Afrodescendiente
-Title:       "Afrodescendiente"
-Description: "paciente pertenece a un Pueblo Afrodescendiente chileno"
+Extension: ExtBoolean 
+Id: ExtBoolean
+Title:       "ExtBoolean"
+Description: "ExtBoolean"
 * value[x] only boolean
 
+Extension: ExtString 
+Id: ExtString
+Title:       "ExtString"
+Description: "ExtString"
+* value[x] only string
+
+Extension: ExtInteger 
+Id: ExtInteger
+Title:       "ExtInteger"
+Description: "ExtInteger"
+* value[x] only integer
+
+Extension: OrigenInterconsulta
+Id: OrigenInterconsulta
+Title: "Origen Interconsulta"
+Description: "Origen Interconsulta"
+* value[x] only CodeableConcept
+* value[x] ^short = "Codigo de la interconsulta"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 0..1 MS
+  //* code from interconsultaVS
+  * system 0..1 MS
+  * display 1..1 MS
+* valueCodeableConcept.text MS
 
 
 /*
