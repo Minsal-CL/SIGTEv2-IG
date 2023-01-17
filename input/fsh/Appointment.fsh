@@ -1,5 +1,5 @@
-Profile: AppointmentLP
+Profile: AppointmentLE
 Parent: Appointment
-Id: AppointmentLP
-Title: "AppointmentLP"
-Description: "AppointmentLP"
+Id: AppointmentLE
+Title: "AppointmentLE"
+Description: "AppointmentLE"

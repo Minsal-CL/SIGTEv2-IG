@@ -1,3 +1,4 @@
+/*
 Extension:   PaisOrigenNacionalidadCl
 Id:          CodigoPaises
 Title:       "Codigo de Identificación de países"
@@ -7,7 +8,22 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  //* code from CodPais
+  * code from CodPais
+  * system 0..1 MS
+  * display 0..1 MS
+*/
+
+
+Extension:   TipoOtroTelefono
+Id:          TipoOtroTelefono
+Title:       "TipoOtroTelefono"
+Description: "TipoOtroTelefono"
+* value[x] only CodeableConcept
+* value[x] ^short = "TipoOtroTelefonos"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSTipoOtroTelefono
   * system 0..1 MS
   * display 0..1 MS
 
@@ -20,7 +36,7 @@ Description: "Identidad de genero"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  //* code from CodPais
+  * code from VSIdentidaddeGenero
   * system 0..1 MS
   * display 0..1 MS
 
@@ -28,15 +44,26 @@ Extension: Etnia
 Id: Etnia
 Title: "Etnia a la cual pertenece"
 Description: "Etnia a la cual pertenece"
-* value[x] only CodeableConcept
-* value[x] ^short = "Codigo de la etnia"
-* url 1..1 MS
-* valueCodeableConcept.coding 1..1 MS
+* extension contains
+	etnia 1..* MS and
+	pertenencia 1..1 MS
+* url MS
+
+* extension[etnia].value[x] only CodeableConcept
+* extension[etnia].value[x] ^short = "Codigo de la etnia"
+* extension[etnia].url 1..1 MS
+* extension[etnia].valueCodeableConcept.coding 1..1 MS
   * code 0..1 MS
-  //* code from CodPais
+  * code from VSPuebloIndigena
   * system 0..1 MS
   * display 1..1 MS
-* valueCodeableConcept.text MS
+* extension[etnia].valueCodeableConcept.text MS
+* extension[etnia].valueCodeableConcept.text ^short = "Ingresar pueblo pertenciente, en caso que no se encuentre en la lista"
+
+* extension[pertenencia].value[x] only boolean
+
+
+
 
 Extension: ExtBoolean 
 Id: ExtBoolean
@@ -65,10 +92,37 @@ Description: "Origen Interconsulta"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 0..1 MS
-  //* code from interconsultaVS
+  * code from VSinterconsulta
   * system 0..1 MS
   * display 1..1 MS
 * valueCodeableConcept.text MS
+
+Extension: DigitoVerificador 
+Id: DigitoVerificador
+Title:       "DigitoVerificador"
+Description: "DigitoVerificador"
+* value[x] only integer
+
+Extension: SospechaPatologiaGes
+Id: SospechaPatologiaGes
+Title: "SospechaPatologiaGes"
+Description: "SospechaPatologiaGes"
+
+* extension contains
+	sospecha 1..1 MS and
+	patologia 1..1 MS
+  * url MS
+
+* extension[patologia].value[x] only CodeableConcept
+* extension[patologia].value[x] ^short = "Codigo de la identidad de gneero"
+* extension[patologia].url 1..1 MS
+* extension[patologia].valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSSospechaPatologiaGes
+  * system 0..1 MS
+  * display 0..1 MS
+
+* extension[sospecha].value[x] only boolean
 
 
 /*

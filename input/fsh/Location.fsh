@@ -1,8 +1,8 @@
-Profile: LocationLP
+Profile: LocationLE
 Parent: LocalizacionCL
-Id: LocationLP
-Title: "LocationLP"
-Description: "LocationLP"
+Id: LocationLE
+Title: "LocationLE"
+Description: "LocationLE"
 
 * identifier 1..1
   * system 1..1

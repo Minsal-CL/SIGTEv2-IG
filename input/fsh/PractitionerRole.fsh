@@ -1,8 +1,8 @@
-Profile: PractitioneRolerLP
+Profile: PractitioneRolerLE
 Parent: PractitionerRole
-Id: PractitioneRolerLP
-Title: "PractitionerRoleLP"
-Description: "PractitionerRoleLP"
+Id: PractitioneRolerLE
+Title: "PractitionerRoleLE"
+Description: "PractitionerRoleLE"
 
 * organization only Reference(Organization)
 * practitioner only Reference(PrestadorCL)

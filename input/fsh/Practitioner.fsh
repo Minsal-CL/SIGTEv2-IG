@@ -1,8 +1,13 @@
-Profile: PractitionerLP
+// No tiene nombre 
+
+Profile: PractitionerLE
 Parent: PrestadorCL
-Id: PractitionerLP
-Title: "PractitionerLP"
-Description: "PractitionerLP"
+Id: PractitionerLE
+Title: "PractitionerLE"
+Description: "PractitionerLE"
+
+
+
 
 /*
 * identifier  MS

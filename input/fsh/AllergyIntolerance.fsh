@@ -1,8 +1,8 @@
-Profile: AllergyIntoleranceLP
+Profile: AllergyIntoleranceLE
 Parent: AllergyIntolerance
-Id: AllergyIntoleranceLP
-Title: "AllergyIntoleranceLP"
-Description: "AllergyIntoleranceLP"
+Id: AllergyIntoleranceLE
+Title: "AllergyIntoleranceLE"
+Description: "AllergyIntoleranceLE"
 
 * patient MS
   * reference 1..1 MS

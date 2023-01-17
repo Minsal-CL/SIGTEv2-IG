@@ -4,22 +4,10 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
-      "title": "Codigo de Identificación de países",
+      "url": "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
+      "title": "DigitoVerificador",
       "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
+        "integer"
       ]
     },
     {
@@ -38,7 +26,58 @@
         "code",
         "string",
         "boolean",
-        "string"
+        "string",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
       ]
     },
     {
@@ -99,73 +138,212 @@
         "boolean",
         "string"
       ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes",
+      "title": "SospechaPatologiaGes",
+      "types": [
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "boolean",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/TipoOtroTelefono",
+      "title": "TipoOtroTelefono",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
     }
   ],
   "profiles": {
     "AllergyIntolerance": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceLP",
-        "title": "AllergyIntoleranceLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceLE",
+        "title": "AllergyIntoleranceLE"
       }
     ],
     "Appointment": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentLP",
-        "title": "AppointmentLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE",
+        "title": "AppointmentLE"
       }
     ],
     "Condition": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionLP",
-        "title": "CondicionLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionLE",
+        "title": "CondicionLE"
       }
     ],
     "Encounter": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/EncounterLP",
-        "title": "EncounterLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/EncounterLE",
+        "title": "EncounterLE"
       }
     ],
     "Location": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/LocationLP",
-        "title": "LocationLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/LocationLE",
+        "title": "LocationLE"
       }
     ],
     "MessageHeader": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLP",
-        "title": "MessageHeaderLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE",
+        "title": "MessageHeaderLE"
       }
     ],
     "Patient": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/PacienteLP",
-        "title": "PacienteLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/PacienteLE",
+        "title": "PacienteLE"
       }
     ],
     "PractitionerRole": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLP",
-        "title": "PractitionerRoleLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLE",
+        "title": "PractitionerRoleLE"
       }
     ],
     "Practitioner": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitionerLP",
-        "title": "PractitionerLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE",
+        "title": "PractitionerLE"
       }
     ],
     "QuestionnaireResponse": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseLP",
-        "title": "QuestionnaireResponseLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseLE",
+        "title": "QuestionnaireResponseLE"
       }
     ],
     "ServiceRequest": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLP",
-        "title": "ServiceRequestLP"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE",
+        "title": "ServiceRequestLE"
       }
     ]
   },
@@ -223,8 +401,8 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises": [
-      "Patient"
+    "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
+      "Patient.identifier"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/Etnia": [
       "Patient"
@@ -236,11 +414,20 @@
     "http://minsal.cl/listaespera/StructureDefinition/ExtInteger": [
       "ServiceRequest"
     ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtString": [
+      "ServiceRequest"
+    ],
     "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero": [
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta": [
       "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes": [
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/TipoOtroTelefono": [
+      "Patient.telecom"
     ],
     "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises": [
       "Patient",

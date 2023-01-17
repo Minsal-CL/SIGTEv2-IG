@@ -1,16 +1,17 @@
-Profile: PacienteLP
+Profile: PacienteLE
 Parent: PacienteCl
-Id: PacienteLP
-Title: "PacienteLP"
-Description: "PacienteLP"
+Id: PacienteLE
+Title: "PacienteLE"
+Description: "PacienteLE"
 
 // EXTESIONES
 * extension contains PaisOrigenNacionalidadCl named paisOrigen 1..1 MS
 * extension contains IdentidadGenero named IdentidadGenero 1..1 MS
 * extension contains Etnia named Etnia 0..1 MS
 * extension contains ExtBoolean named Afrodescendiente 1..1 MS
+//* extension contains ExtBoolean named  1..1 MS
 
-
+//* extension contains TipoOtroTelefono named TipoOtroTelefono 1..1 MS
 //* extension[Etnia].valueCodeableConcept.coding.code from CodPais
 
 // FIN EXTENSIONES
@@ -25,13 +26,53 @@ Description: "PacienteLP"
   //* use and type MS
     //* coding MS
       //* system and code MS
+
 * identifier[identificacionPrincipal] MS
+//* identifier[identificacionPrincipal].type 1..1 MS
+//* identifier[identificacionPrincipal].coding 1..1 MS
+      //* code 1..1 MS
+      //* system 1..1 MS
+      //* display 1..1 MS
+ // * value 1..1 MS
+
+* identifier.extension contains DigitoVerificador named DigitoVerificador 1..1 MS
 * identifier[identificacionPrincipal].type 1..1 MS
+* identifier[identificacionPrincipal].type.coding.code = #1
+/*
+* identifier[identificacionPrincipal].type.coding 1..1 MS
+* identifier[identificacionPrincipal].type.coding.code 1..1 MS
+* identifier[identificacionPrincipal].type.coding.system 1..1 MS
+* identifier[identificacionPrincipal].type.coding.display 1..1 MS
+*/
+* identifier[identificacionPrincipal].type.coding.code from VSTipoIdentificador
 * identifier[identificacionPrincipal].value 1..1 MS
+* identifier[identificacionPrincipal].value ^short = "Numero de RUN sin digito verificador ni puntos"
+* identifier[identificacionPrincipal].extension[DigitoVerificador] ^short = "Digito verificador del RUN"
+
+
+
 
 * identifier[otraIdentificacion] MS
+  //* type 1..1 MS
+    //* coding 1..1 MS
+    //  * code 1..1 MS
+    //  * system 1..1 MS
+      //* display 1..1 MS
+  //* value 1..1 MS
+* identifier[otraIdentificacion] MS
 * identifier[otraIdentificacion].type 1..1 MS
+//* identifier[otraIdentificacion].type.coding.code 
+* identifier[otraIdentificacion].type.coding.code from VSTipoIdentificador
+
+
+/*
+* identifier[otraIdentificacion].type.coding 1..1 MS
+* identifier[otraIdentificacion].type.coding.code 1..1 MS
+* identifier[otraIdentificacion].type.coding.system 1..1 MS
+* identifier[otraIdentificacion].type.coding.display 1..1 MS
 * identifier[otraIdentificacion].value 1..1 MS
+*/
+
 
 /*
 * name ^slicing.discriminator.type = #value
@@ -71,8 +112,6 @@ Description: "PacienteLP"
   * period 0..0
 
 * name[NombresSocial].use = #nickname
-
-
 * name.use = #official  
 
 */
@@ -81,23 +120,30 @@ Description: "PacienteLP"
 
 
 
-
 * telecom ^slicing.discriminator.type = #value
 * telecom ^slicing.discriminator.path = "use"
 * telecom ^slicing.rules = #open
 * telecom ^slicing.description = "Slice creado para almacenar diferentes contactos"
-* telecom contains contacto1 1..1 MS and contacto2 1..1 MS and contacto3 1..1 MS and contacto4 0..1 MS and contacto5 0..1 MS
+* telecom contains TelefonoMovil1 1..1 MS and TelefonoMovil2 0..1 MS and TelefonoMovil3 0..1 MS and TelefonoFijo 0..1 MS and TelefonoOtro 0..1 MS
 
-* telecom[contacto1].rank = 1
-* telecom[contacto1].system = #phone
-* telecom[contacto1].use = #mobile
-* telecom[contacto2].rank = 2
-* telecom[contacto2].system = #phone
-* telecom[contacto2].use = #mobile 
-* telecom[contacto3].rank = 3
-* telecom[contacto3].system = #phone 
-* telecom[contacto3].use = #mobile
-* telecom[contacto4].system = #phone 
-* telecom[contacto4].use = #temp
-* telecom[contacto5].system = #email 
-* telecom[contacto5].use = #home
+* telecom[TelefonoMovil1].rank = 1
+* telecom[TelefonoMovil1].system = #phone
+* telecom[TelefonoMovil1].use = #mobile
+
+* telecom[TelefonoMovil2].rank = 2
+* telecom[TelefonoMovil2].system = #phone
+* telecom[TelefonoMovil2].use = #mobile 
+
+* telecom[TelefonoMovil3].rank = 3
+* telecom[TelefonoMovil3].system = #phone 
+* telecom[TelefonoMovil3].use = #mobile
+
+* telecom[TelefonoOtro].system = #email 
+* telecom[TelefonoOtro].use = #home
+
+* telecom.extension contains TipoOtroTelefono named TipoOtroTelefono1 1..1 MS
+* telecom[TelefonoFijo].system = #phone 
+* telecom[TelefonoFijo].use = #temp
+* telecom[TelefonoFijo].extension[TipoOtroTelefono1]
+
+//https://id.who.int/icd/release/11/mms

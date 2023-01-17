@@ -1,5 +1,5 @@
-Profile: CondicionLP
+Profile: CondicionLE
 Parent: Condition
-Id: CondicionLP
-Title: "CondicionLP"
-Description: "CondicionLP"
+Id: CondicionLE
+Title: "CondicionLE"
+Description: "CondicionLE"

@@ -1,12 +1,12 @@
-Profile: MessageHeaderLP
+Profile: MessageHeaderLE
 Parent: MessageHeader
-Id: MessageHeaderLP
-Title: "MessageHeaderLP"
-Description: "MessageHeaderLP"
+Id: MessageHeaderLE
+Title: "MessageHeaderLE"
+Description: "MessageHeaderLE"
 
 
 * meta.lastUpdated 1..1 MS
 * source.software 1..1 MS
 
-* author only Reference(PractitioneRolerLP)
-* focus only Reference(ServiceRequestLP)
+* author only Reference(PractitioneRolerLE)
+* focus only Reference(ServiceRequestLE)

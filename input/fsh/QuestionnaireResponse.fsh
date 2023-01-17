@@ -1,5 +1,5 @@
-Profile: QuestionnaireResponseLP
+Profile: QuestionnaireResponseLE
 Parent: QuestionnaireResponse
-Id: QuestionnaireResponseLP
-Title: "QuestionnaireResponseLP"
-Description: "QuestionnaireResponseLP"
+Id: QuestionnaireResponseLE
+Title: "QuestionnaireResponseLE"
+Description: "QuestionnaireResponseLE"

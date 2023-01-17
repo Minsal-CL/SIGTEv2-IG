@@ -18,8 +18,6 @@ SET txoption=
 
 :igpublish
 SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
-ECHO xxxxxx
-del GENERATE -recurse -force
 
 
 IF EXIST "%input_cache_path%\%publisher_jar%" (
@@ -30,7 +28,6 @@ IF EXIST "%input_cache_path%\%publisher_jar%" (
 	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 )
 
-REN output GENERATED
 
 
 PAUSE
