@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-01-17T01:53:31-03:00",
+  "date" : "2023-01-17T23:45:39-03:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -694,6 +694,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ServiceRequest2LE"
+      },
+      "name" : "ServiceRequestLE",
+      "description" : "ServiceRequestLE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ServiceRequestLE"
       },
       "name" : "ServiceRequestLE",
@@ -710,18 +722,6 @@
       },
       "name" : "DigitoVerificador",
       "description" : "DigitoVerificador",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Etnia"
-      },
-      "name" : "Etnia a la cual pertenece",
-      "description" : "Etnia a la cual pertenece",
       "exampleBoolean" : false
     },
     {
@@ -790,6 +790,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/PuebloIndigena"
+      },
+      "name" : "Etnia a la cual pertenece",
+      "description" : "Etnia a la cual pertenece",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/SospechaPatologiaGes"
       },
       "name" : "SospechaPatologiaGes",
@@ -826,10 +838,34 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSEstablecimientoDestinoCodigo"
+      },
+      "name" : "EstablecimientoDestinoCodigo",
+      "description" : "EstablecimientoDestinoCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSIdentidaddeGenero"
       },
       "name" : "IdentidaddeGenero",
       "description" : "IdentidaddeGenero",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSMotivoDerivacion"
+      },
+      "name" : "MotivoDerivacion",
+      "description" : "MotivoDerivacion",
       "exampleBoolean" : false
     },
     {
@@ -910,10 +946,34 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/CSEstablecimientoDestinoCodigo"
+      },
+      "name" : "EstablecimientoDestinoCodigo",
+      "description" : "EstablecimientoDestinoCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/CSIdentidaddeGenero"
       },
       "name" : "IdentidaddeGenero",
       "description" : "IdentidaddeGenero",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSMotivoDerivacion"
+      },
+      "name" : "MotivoDerivacion",
+      "description" : "MotivoDerivacion",
       "exampleBoolean" : false
     },
     {

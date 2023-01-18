@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-01-17T01:53:31-03:00"/>
+  <date value="2023-01-17T23:45:39-03:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -537,6 +537,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ServiceRequest2LE"/>
+      </reference>
+      <name value="ServiceRequestLE"/>
+      <description value="ServiceRequestLE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ServiceRequestLE"/>
       </reference>
       <name value="ServiceRequestLE"/>
@@ -552,17 +563,6 @@
       </reference>
       <name value="DigitoVerificador"/>
       <description value="DigitoVerificador"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Etnia"/>
-      </reference>
-      <name value="Etnia a la cual pertenece"/>
-      <description value="Etnia a la cual pertenece"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -625,6 +625,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/PuebloIndigena"/>
+      </reference>
+      <name value="Etnia a la cual pertenece"/>
+      <description value="Etnia a la cual pertenece"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/SospechaPatologiaGes"/>
       </reference>
       <name value="SospechaPatologiaGes"/>
@@ -658,10 +669,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/VSEstablecimientoDestinoCodigo"/>
+      </reference>
+      <name value="EstablecimientoDestinoCodigo"/>
+      <description value="EstablecimientoDestinoCodigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VSIdentidaddeGenero"/>
       </reference>
       <name value="IdentidaddeGenero"/>
       <description value="IdentidaddeGenero"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSMotivoDerivacion"/>
+      </reference>
+      <name value="MotivoDerivacion"/>
+      <description value="MotivoDerivacion"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -735,10 +768,32 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/CSEstablecimientoDestinoCodigo"/>
+      </reference>
+      <name value="EstablecimientoDestinoCodigo"/>
+      <description value="EstablecimientoDestinoCodigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/CSIdentidaddeGenero"/>
       </reference>
       <name value="IdentidaddeGenero"/>
       <description value="IdentidaddeGenero"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSMotivoDerivacion"/>
+      </reference>
+      <name value="MotivoDerivacion"/>
+      <description value="MotivoDerivacion"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

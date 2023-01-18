@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ListaEsperaChile"]; # 
   fhir:ImplementationGuide.title [ fhir:value "Proyecto Listas de Espera MINSAL CHILE"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-01-17T01:53:31-03:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-01-17T23:45:39-03:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "MINSAL Chile"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -785,6 +785,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequest2LE>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ServiceRequest2LE" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ServiceRequestLE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ServiceRequestLE" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/ServiceRequestLE" ]
        ];
@@ -792,7 +806,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "ServiceRequestLE" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -804,20 +818,6 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DigitoVerificador" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DigitoVerificador" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/Etnia>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Etnia" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Etnia a la cual pertenece" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Etnia a la cual pertenece" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
@@ -897,6 +897,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/PuebloIndigena" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Etnia a la cual pertenece" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Etnia a la cual pertenece" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/SospechaPatologiaGes" ]
        ];
@@ -904,7 +918,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SospechaPatologiaGes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -918,7 +932,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TipoOtroTelefono" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -932,7 +946,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DerivadoParaCodigo" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/ValueSet/VSEstablecimientoDestinoCodigo>;
+         fhir:Reference.reference [ fhir:value "ValueSet/VSEstablecimientoDestinoCodigo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EstablecimientoDestinoCodigo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EstablecimientoDestinoCodigo" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -946,7 +974,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "IdentidaddeGenero" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/ValueSet/VSMotivoDerivacion>;
+         fhir:Reference.reference [ fhir:value "ValueSet/VSMotivoDerivacion" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MotivoDerivacion" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MotivoDerivacion" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -960,7 +1002,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PuebloIndigena" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -974,7 +1016,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SospechaPatologiaGes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -988,7 +1030,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TipoIdentificador" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1002,7 +1044,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TipoOtroTelefono" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1016,7 +1058,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "interconsulta" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 27;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1030,7 +1072,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DerivadoParaCodigo" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/CodeSystem/CSEstablecimientoDestinoCodigo>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/CSEstablecimientoDestinoCodigo" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "EstablecimientoDestinoCodigo" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "EstablecimientoDestinoCodigo" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1044,7 +1100,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "IdentidaddeGenero" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/CodeSystem/CSMotivoDerivacion>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/CSMotivoDerivacion" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "MotivoDerivacion" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "MotivoDerivacion" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1058,7 +1128,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PuebloIndigena" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 30;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1072,7 +1142,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SospechaPatologiaGes" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1086,7 +1156,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TipoIdentificador" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 32;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1100,7 +1170,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "TipoOtroTelefono" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 33;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

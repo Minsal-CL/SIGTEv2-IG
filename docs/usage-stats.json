@@ -11,7 +11,66 @@
       ]
     },
     {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/Etnia",
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolean",
+      "title": "ExtBoolean",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtInteger",
+      "title": "ExtInteger",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtString",
+      "title": "ExtString",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero",
+      "title": "Identidad de genero",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta",
+      "title": "Origen Interconsulta",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena",
       "title": "Etnia a la cual pertenece",
       "types": [
         "CodeableConcept",
@@ -78,65 +137,6 @@
         "UsageContext",
         "Dosage",
         "Meta"
-      ]
-    },
-    {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolean",
-      "title": "ExtBoolean",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtInteger",
-      "title": "ExtInteger",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtString",
-      "title": "ExtString",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero",
-      "title": "Identidad de genero",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta",
-      "title": "Origen Interconsulta",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
       ]
     },
     {
@@ -342,6 +342,10 @@
     ],
     "ServiceRequest": [
       {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequest2LE",
+        "title": "ServiceRequestLE"
+      },
+      {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE",
         "title": "ServiceRequestLE"
       }
@@ -402,10 +406,8 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
-      "Patient.identifier"
-    ],
-    "http://minsal.cl/listaespera/StructureDefinition/Etnia": [
-      "Patient"
+      "Patient.identifier",
+      "Practitioner.identifier"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolean": [
       "Patient",
@@ -422,6 +424,9 @@
     ],
     "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta": [
       "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena": [
+      "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes": [
       "ServiceRequest"
