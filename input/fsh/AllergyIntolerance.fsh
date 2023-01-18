@@ -4,10 +4,10 @@ Id: AllergyIntoleranceLE
 Title: "AllergyIntoleranceLE"
 Description: "AllergyIntoleranceLE"
 
-* patient MS
+* patient 1..1 MS
   * reference 1..1 MS
   * display 0..1 MS
-* patient only Reference(Patient)
+* patient only Reference(PacienteLE)
 * patient ^short = "Referencia al paciente"
 * patient ^definition = "Referencia al paciente"
 * patient.reference ^short = "URL del paciente"
@@ -16,10 +16,7 @@ Description: "AllergyIntoleranceLE"
 * patient.display ^definition = "Informacion extra o nombre del paciente"
 
 * code 1..1 MS
-  * coding 1..1 MS
-    * system 1..1 MS
-    * code 1..1 MS
-    * display 0..1 MS
+  * text 1..1 MS
 
 * code.text ^short = "Seccion para identificar la alergia o intolerancia"
 * code.coding.system ^short = "En"
