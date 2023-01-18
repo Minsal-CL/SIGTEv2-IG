@@ -20,7 +20,7 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "ServiceRequest.contained","ServiceRequest.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"ServiceRequest.extension","ServiceRequest.extension","","","",6,*,"","","","Extension {[]} {[]}
+"ServiceRequest.extension","ServiceRequest.extension","","","",10,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -36,8 +36,16 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Tiene alergia el paciente","ExtBoolean","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"ServiceRequest.extension:PatologiasGES","ServiceRequest.extension","PatologiasGES","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/ExtInteger]]} {[]}
-","ExtInteger","ExtInteger","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"ServiceRequest.extension:Cuidador","ServiceRequest.extension","Cuidador","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/ExtBoolean]]} {[]}
+","ExtBoolean","ExtBoolean","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ServiceRequest.extension:PresentaDiscapacidad","ServiceRequest.extension","PresentaDiscapacidad","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/ExtBoolean]]} {[]}
+","ExtBoolean","ExtBoolean","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ServiceRequest.extension:PersonaMayor","ServiceRequest.extension","PersonaMayor","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/ExtBoolean]]} {[]}
+","ExtBoolean","ExtBoolean","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ServiceRequest.extension:OrigenInterconsulta","ServiceRequest.extension","OrigenInterconsulta","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta]]} {[]}
@@ -46,6 +54,14 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ServiceRequest.extension:FundamentoPriorizacion","ServiceRequest.extension","FundamentoPriorizacion","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/ExtString]]} {[]}
 ","Fundamente de la Priorización","ExtString","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ServiceRequest.extension:EstadoInterconsultaCodigo","ServiceRequest.extension","EstadoInterconsultaCodigo","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE]]} {[]}
+","Estado Interconsulta Codigo","Estado Interconsulta Codigo","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"ServiceRequest.extension:DocAcreditacionCuidadorCodigo","ServiceRequest.extension","DocAcreditacionCuidadorCodigo","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE]]} {[]}
+","Doc Acreditacion Cuidador","Doc Acreditacion Cuidador","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ServiceRequest.modifierExtension","ServiceRequest.modifierExtension","","extensions
@@ -164,7 +180,7 @@ AOE","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://minsal.cl/listaespe
 ","Additional clinical information","Additional clinical information about the patient or specimen that may influence the services or their interpretations.     This information includes diagnosis, clinical findings and other observations.  In laboratory ordering these are typically referred to as ""ask at order entry questions (AOEs)"".  This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example,  reporting the amount of inspired oxygen for blood gas measurements.","To represent information about how the services are to be delivered use the `instructions` element.","","","","","","","","",,,,,"",,,,"ServiceRequest.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo","Accompanying segments",".outboundRelationship[typeCode=PERT].target"
 "ServiceRequest.supportingInfo:paciente","ServiceRequest.supportingInfo","paciente","Ask at order entry question
-AOE","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/PacienteLE]]}
+AOE","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
 ","Additional clinical information","Additional clinical information about the patient or specimen that may influence the services or their interpretations.     This information includes diagnosis, clinical findings and other observations.  In laboratory ordering these are typically referred to as ""ask at order entry questions (AOEs)"".  This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example,  reporting the amount of inspired oxygen for blood gas measurements.","To represent information about how the services are to be delivered use the `instructions` element.","","","","","","","","",,,,,"",,,,"ServiceRequest.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo","Accompanying segments",".outboundRelationship[typeCode=PERT].target"
 "ServiceRequest.supportingInfo:QuestionnaireResponse","ServiceRequest.supportingInfo","QuestionnaireResponse","Ask at order entry question
@@ -172,7 +188,7 @@ AOE","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://minsal.cl/listaespe
 ","Additional clinical information","Additional clinical information about the patient or specimen that may influence the services or their interpretations.     This information includes diagnosis, clinical findings and other observations.  In laboratory ordering these are typically referred to as ""ask at order entry questions (AOEs)"".  This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example,  reporting the amount of inspired oxygen for blood gas measurements.","To represent information about how the services are to be delivered use the `instructions` element.","","","","","","","","",,,,,"",,,,"ServiceRequest.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo","Accompanying segments",".outboundRelationship[typeCode=PERT].target"
 "ServiceRequest.supportingInfo:Condition","ServiceRequest.supportingInfo","Condition","Ask at order entry question
-AOE","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/CondicionLE]]}
+AOE","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/CondicionLE1]]}
 ","Additional clinical information","Additional clinical information about the patient or specimen that may influence the services or their interpretations.     This information includes diagnosis, clinical findings and other observations.  In laboratory ordering these are typically referred to as ""ask at order entry questions (AOEs)"".  This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example,  reporting the amount of inspired oxygen for blood gas measurements.","To represent information about how the services are to be delivered use the `instructions` element.","","","","","","","","",,,,,"",,,,"ServiceRequest.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo","Accompanying segments",".outboundRelationship[typeCode=PERT].target"
 "ServiceRequest.supportingInfo:AllergyIntolerance","ServiceRequest.supportingInfo","AllergyIntolerance","Ask at order entry question

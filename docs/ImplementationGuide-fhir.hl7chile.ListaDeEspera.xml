@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-01-17T23:45:39-03:00"/>
+  <date value="2023-01-18T13:51:24-03:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -449,10 +449,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionLE"/>
+        <reference value="StructureDefinition/CondicionLE1"/>
       </reference>
-      <name value="CondicionLE"/>
-      <description value="CondicionLE"/>
+      <name value="CondicionLE1"/>
+      <description value="CondicionLE1"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CondicionLE2"/>
+      </reference>
+      <name value="CondicionLE2"/>
+      <description value="CondicionLE2"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CondicionLE3"/>
+      </reference>
+      <name value="CondicionLE3"/>
+      <description value="CondicionLE3"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -486,6 +508,17 @@
       </reference>
       <name value="MessageHeaderLE"/>
       <description value="MessageHeaderLE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ObservationLE"/>
+      </reference>
+      <name value="ObservationLE"/>
+      <description value="ObservationLE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -570,6 +603,28 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DocAcreditacionCuidadorCodigoLE"/>
+      </reference>
+      <name value="Doc Acreditacion Cuidador"/>
+      <description value="Doc Acreditacion Cuidador"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EstadoInterconsultaCodigoLE"/>
+      </reference>
+      <name value="Estado Interconsulta Codigo"/>
+      <description value="Estado Interconsulta Codigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ExtBoolean"/>
       </reference>
       <name value="ExtBoolean"/>
@@ -625,6 +680,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/CodigoPaises"/>
+      </reference>
+      <name value="Codigo de Identificación de países"/>
+      <description value="Esta extensión incluye códigos de paises de origen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/PuebloIndigena"/>
       </reference>
       <name value="Etnia a la cual pertenece"/>
@@ -658,6 +724,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/CodPais"/>
+      </reference>
+      <name value="Códigos de Países"/>
+      <description value="Codigos definidos para la identificación de países segun norma ISO3166-N"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VSDerivadoParaCodigo"/>
       </reference>
       <name value="DerivadoParaCodigo"/>
@@ -669,10 +746,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/VSDocAcreditacionCuidador"/>
+      </reference>
+      <name value="DocAcreditacionCuidador"/>
+      <description value="DocAcreditacionCuidador"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VSEstablecimientoDestinoCodigo"/>
       </reference>
       <name value="EstablecimientoDestinoCodigo"/>
       <description value="EstablecimientoDestinoCodigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSEstadoInterconsulta"/>
+      </reference>
+      <name value="Estado Interconsulta"/>
+      <description value="Estado Interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -768,10 +867,32 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/CSDocAcreditacionCuidador"/>
+      </reference>
+      <name value="DocAcreditacionCuidador"/>
+      <description value="DocAcreditacionCuidador"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/CSEstablecimientoDestinoCodigo"/>
       </reference>
       <name value="EstablecimientoDestinoCodigo"/>
       <description value="EstablecimientoDestinoCodigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSEstadoInterconsulta"/>
+      </reference>
+      <name value="Estado Interconsulta"/>
+      <description value="Estado Interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

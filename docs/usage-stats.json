@@ -4,10 +4,67 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+      "title": "Codigo de Identificación de países",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
       "title": "DigitoVerificador",
       "types": [
         "integer"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE",
+      "title": "Doc Acreditacion Cuidador",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE",
+      "title": "Estado Interconsulta Codigo",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
       ]
     },
     {
@@ -294,8 +351,16 @@
     ],
     "Condition": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionLE",
-        "title": "CondicionLE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionLE1",
+        "title": "CondicionLE1"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionLE2",
+        "title": "CondicionLE2"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionLE3",
+        "title": "CondicionLE3"
       }
     ],
     "Encounter": [
@@ -314,6 +379,12 @@
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE",
         "title": "MessageHeaderLE"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationLE",
+        "title": "ObservationLE"
       }
     ],
     "Patient": [
@@ -380,6 +451,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -391,6 +465,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
@@ -405,15 +482,21 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises": [
+      "Patient"
+    ],
     "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
       "Patient.identifier",
       "Practitioner.identifier"
     ],
-    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolean": [
-      "Patient",
+    "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE": [
       "ServiceRequest"
     ],
-    "http://minsal.cl/listaespera/StructureDefinition/ExtInteger": [
+    "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE": [
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolean": [
+      "Patient",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtString": [

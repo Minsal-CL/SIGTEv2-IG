@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-01-17T23:45:39-03:00",
+  "date" : "2023-01-18T13:51:24-03:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -598,10 +598,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CondicionLE"
+        "reference" : "StructureDefinition/CondicionLE1"
       },
-      "name" : "CondicionLE",
-      "description" : "CondicionLE",
+      "name" : "CondicionLE1",
+      "description" : "CondicionLE1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CondicionLE2"
+      },
+      "name" : "CondicionLE2",
+      "description" : "CondicionLE2",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CondicionLE3"
+      },
+      "name" : "CondicionLE3",
+      "description" : "CondicionLE3",
       "exampleBoolean" : false
     },
     {
@@ -638,6 +662,18 @@
       },
       "name" : "MessageHeaderLE",
       "description" : "MessageHeaderLE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ObservationLE"
+      },
+      "name" : "ObservationLE",
+      "description" : "ObservationLE",
       "exampleBoolean" : false
     },
     {
@@ -730,6 +766,30 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/DocAcreditacionCuidadorCodigoLE"
+      },
+      "name" : "Doc Acreditacion Cuidador",
+      "description" : "Doc Acreditacion Cuidador",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EstadoInterconsultaCodigoLE"
+      },
+      "name" : "Estado Interconsulta Codigo",
+      "description" : "Estado Interconsulta Codigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ExtBoolean"
       },
       "name" : "ExtBoolean",
@@ -790,6 +850,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/CodigoPaises"
+      },
+      "name" : "Codigo de Identificación de países",
+      "description" : "Esta extensión incluye códigos de paises de origen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/PuebloIndigena"
       },
       "name" : "Etnia a la cual pertenece",
@@ -826,6 +898,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/CodPais"
+      },
+      "name" : "Códigos de Países",
+      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSDerivadoParaCodigo"
       },
       "name" : "DerivadoParaCodigo",
@@ -838,10 +922,34 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSDocAcreditacionCuidador"
+      },
+      "name" : "DocAcreditacionCuidador",
+      "description" : "DocAcreditacionCuidador",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSEstablecimientoDestinoCodigo"
       },
       "name" : "EstablecimientoDestinoCodigo",
       "description" : "EstablecimientoDestinoCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSEstadoInterconsulta"
+      },
+      "name" : "Estado Interconsulta",
+      "description" : "Estado Interconsulta",
       "exampleBoolean" : false
     },
     {
@@ -946,10 +1054,34 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/CSDocAcreditacionCuidador"
+      },
+      "name" : "DocAcreditacionCuidador",
+      "description" : "DocAcreditacionCuidador",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/CSEstablecimientoDestinoCodigo"
       },
       "name" : "EstablecimientoDestinoCodigo",
       "description" : "EstablecimientoDestinoCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSEstadoInterconsulta"
+      },
+      "name" : "Estado Interconsulta",
+      "description" : "Estado Interconsulta",
       "exampleBoolean" : false
     },
     {
