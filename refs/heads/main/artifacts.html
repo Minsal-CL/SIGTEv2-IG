@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FHIR.HL7CHILE.LISTADEESPERA\Artifacts Summary - FHIR v4.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7chile.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async>
+</script>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+    <a id="MINSAL-logo" no-external="true" href="http://minsal.cl">
+        
+        <img height="71" alt="Visitar sitio MINSAL Chile" src="assets/images/minsal-logo.svg" />
+    </a>
+</div>
+<div id="family-nav">
+    <!--
+    <a id="hl7chile-logo" no-external="true" href="http://hl7chile.cl"><img height="71" alt="Visitar HL7 Chile" src="assets/images/hl7chile-logo.svg" /> </a>-->
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Proyecto Listas de Espera MINSAL CHILE</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="Actores.html">Actores</a>
+  </li>
+  <li>
+    <a href="Casosdeuso.html">Casos de Uso</a>
+  </li>
+  <li>
+    <a href="Objetivos.html">Objetivos</a>
+  </li>
+  <li>
+    <a href="Operaciones.html">Operaciones</a>
+  </li>
+  <li>
+    <a href="Terminologias.html">Terminologias</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-AllergyIntoleranceLE.html"
+                     title="StructureDefinition/AllergyIntoleranceLE">AllergyIntoleranceLE</a>
+               </td>
+               <td>
+<p>AllergyIntoleranceLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-AppointmentLE.html"
+                     title="StructureDefinition/AppointmentLE">AppointmentLE</a>
+               </td>
+               <td>
+<p>AppointmentLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CondicionLE1.html"
+                     title="StructureDefinition/CondicionLE1">CondicionLE1</a>
+               </td>
+               <td>
+<p>CondicionLE1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CondicionLE2.html"
+                     title="StructureDefinition/CondicionLE2">CondicionLE2</a>
+               </td>
+               <td>
+<p>CondicionLE2</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CondicionLE3.html"
+                     title="StructureDefinition/CondicionLE3">CondicionLE3</a>
+               </td>
+               <td>
+<p>CondicionLE3</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-EncounterLE.html"
+                     title="StructureDefinition/EncounterLE">EncounterLE</a>
+               </td>
+               <td>
+<p>EncounterLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-LocationLE.html"
+                     title="StructureDefinition/LocationLE">LocationLE</a>
+               </td>
+               <td>
+<p>LocationLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MessageHeaderLE.html"
+                     title="StructureDefinition/MessageHeaderLE">MessageHeaderLE</a>
+               </td>
+               <td>
+<p>MessageHeaderLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ObservationLE.html"
+                     title="StructureDefinition/ObservationLE">ObservationLE</a>
+               </td>
+               <td>
+<p>ObservationLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PacienteLE.html"
+                     title="StructureDefinition/PacienteLE">PacienteLE</a>
+               </td>
+               <td>
+<p>PacienteLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PractitioneRolerLE.html"
+                     title="StructureDefinition/PractitioneRolerLE">PractitionerRoleLE</a>
+               </td>
+               <td>
+<p>PractitionerRoleLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PractitionerLE.html"
+                     title="StructureDefinition/PractitionerLE">PractitionerLE</a>
+               </td>
+               <td>
+<p>PractitionerLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-QuestionnaireResponseLE.html"
+                     title="StructureDefinition/QuestionnaireResponseLE">QuestionnaireResponseLE</a>
+               </td>
+               <td>
+<p>QuestionnaireResponseLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ServiceRequest2LE.html"
+                     title="StructureDefinition/ServiceRequest2LE">ServiceRequestLE</a>
+               </td>
+               <td>
+<p>ServiceRequestLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ServiceRequestLE.html"
+                     title="StructureDefinition/ServiceRequestLE">ServiceRequestLE</a>
+               </td>
+               <td>
+<p>ServiceRequestLE</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DigitoVerificador.html"
+                     title="StructureDefinition/DigitoVerificador">DigitoVerificador</a>
+               </td>
+               <td>
+<p>DigitoVerificador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DocAcreditacionCuidadorCodigoLE.html"
+                     title="StructureDefinition/DocAcreditacionCuidadorCodigoLE">Doc Acreditacion Cuidador</a>
+               </td>
+               <td>
+<p>Doc Acreditacion Cuidador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-EstadoInterconsultaCodigoLE.html"
+                     title="StructureDefinition/EstadoInterconsultaCodigoLE">Estado Interconsulta Codigo</a>
+               </td>
+               <td>
+<p>Estado Interconsulta Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBoolean.html"
+                     title="StructureDefinition/ExtBoolean">ExtBoolean</a>
+               </td>
+               <td>
+<p>ExtBoolean</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtInteger.html"
+                     title="StructureDefinition/ExtInteger">ExtInteger</a>
+               </td>
+               <td>
+<p>ExtInteger</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtString.html"
+                     title="StructureDefinition/ExtString">ExtString</a>
+               </td>
+               <td>
+<p>ExtString</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-IdentidadGenero.html"
+                     title="StructureDefinition/IdentidadGenero">Identidad de genero</a>
+               </td>
+               <td>
+<p>Identidad de genero</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OrigenInterconsulta.html"
+                     title="StructureDefinition/OrigenInterconsulta">Origen Interconsulta</a>
+               </td>
+               <td>
+<p>Origen Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CodigoPaises.html"
+                     title="StructureDefinition/CodigoPaises">Codigo de Identificación de países</a>
+               </td>
+               <td>
+<p>Esta extensión incluye códigos de paises de origen</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PuebloIndigena.html"
+                     title="StructureDefinition/PuebloIndigena">Etnia a la cual pertenece</a>
+               </td>
+               <td>
+<p>Etnia a la cual pertenece</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SospechaPatologiaGes.html"
+                     title="StructureDefinition/SospechaPatologiaGes">SospechaPatologiaGes</a>
+               </td>
+               <td>
+<p>SospechaPatologiaGes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-TipoOtroTelefono.html"
+                     title="StructureDefinition/TipoOtroTelefono">TipoOtroTelefono</a>
+               </td>
+               <td>
+<p>TipoOtroTelefono</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-CodPais.html" title="ValueSet/CodPais">Códigos de Países</a>
+               </td>
+               <td>
+<p>Codigos definidos para la identificación de países segun norma ISO3166-N</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSDerivadoParaCodigo.html"
+                     title="ValueSet/VSDerivadoParaCodigo">DerivadoParaCodigo</a>
+               </td>
+               <td>
+<p>DerivadoParaCodigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSDocAcreditacionCuidador.html"
+                     title="ValueSet/VSDocAcreditacionCuidador">DocAcreditacionCuidador</a>
+               </td>
+               <td>
+<p>DocAcreditacionCuidador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEstablecimientoDestinoCodigo.html"
+                     title="ValueSet/VSEstablecimientoDestinoCodigo">EstablecimientoDestinoCodigo</a>
+               </td>
+               <td>
+<p>EstablecimientoDestinoCodigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEstadoInterconsulta.html"
+                     title="ValueSet/VSEstadoInterconsulta">Estado Interconsulta</a>
+               </td>
+               <td>
+<p>Estado Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSIdentidaddeGenero.html"
+                     title="ValueSet/VSIdentidaddeGenero">IdentidaddeGenero</a>
+               </td>
+               <td>
+<p>IdentidaddeGenero</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSMotivoDerivacion.html"
+                     title="ValueSet/VSMotivoDerivacion">MotivoDerivacion</a>
+               </td>
+               <td>
+<p>MotivoDerivacion</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSPuebloIndigena.html" title="ValueSet/VSPuebloIndigena">PuebloIndigena</a>
+               </td>
+               <td>
+<p>PuebloIndigena</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSSospechaPatologiaGes.html"
+                     title="ValueSet/VSSospechaPatologiaGes">SospechaPatologiaGes</a>
+               </td>
+               <td>
+<p>SospechaPatologiaGes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSTipoIdentificador.html"
+                     title="ValueSet/VSTipoIdentificador">TipoIdentificador</a>
+               </td>
+               <td>
+<p>TipoIdentificador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSTipoOtroTelefono.html"
+                     title="ValueSet/VSTipoOtroTelefono">TipoOtroTelefono</a>
+               </td>
+               <td>
+<p>TipoOtroTelefono</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSinterconsulta.html" title="ValueSet/VSinterconsulta">interconsulta</a>
+               </td>
+               <td>
+<p>interconsulta</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSDerivadoParaCodigo.html"
+                     title="CodeSystem/CSDerivadoParaCodigo">DerivadoParaCodigo</a>
+               </td>
+               <td>
+<p>DerivadoParaCodigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSDocAcreditacionCuidador.html"
+                     title="CodeSystem/CSDocAcreditacionCuidador">DocAcreditacionCuidador</a>
+               </td>
+               <td>
+<p>DocAcreditacionCuidador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSEstablecimientoDestinoCodigo.html"
+                     title="CodeSystem/CSEstablecimientoDestinoCodigo">EstablecimientoDestinoCodigo</a>
+               </td>
+               <td>
+<p>EstablecimientoDestinoCodigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSEstadoInterconsulta.html"
+                     title="CodeSystem/CSEstadoInterconsulta">Estado Interconsulta</a>
+               </td>
+               <td>
+<p>Estado Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSIdentidaddeGenero.html"
+                     title="CodeSystem/CSIdentidaddeGenero">IdentidaddeGenero</a>
+               </td>
+               <td>
+<p>IdentidaddeGenero</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSMotivoDerivacion.html"
+                     title="CodeSystem/CSMotivoDerivacion">MotivoDerivacion</a>
+               </td>
+               <td>
+<p>MotivoDerivacion</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSPuebloIndigena.html"
+                     title="CodeSystem/CSPuebloIndigena">PuebloIndigena</a>
+               </td>
+               <td>
+<p>PuebloIndigena</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSSospechaPatologiaGes.html"
+                     title="CodeSystem/CSSospechaPatologiaGes">SospechaPatologiaGes</a>
+               </td>
+               <td>
+<p>SospechaPatologiaGes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSTipoIdentificador.html"
+                     title="CodeSystem/CSTipoIdentificador">TipoIdentificador</a>
+               </td>
+               <td>
+<p>TipoIdentificador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSTipoOtroTelefono.html"
+                     title="CodeSystem/CSTipoOtroTelefono">TipoOtroTelefono</a>
+               </td>
+               <td>
+<p>TipoOtroTelefono</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSinterconsulta.html"
+                     title="CodeSystem/CSinterconsulta">interconsulta</a>
+               </td>
+               <td>
+<p>interconsulta</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 18, 2023 23:52+0000">2023-01-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reporte QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="http://minsal.cl/listaespera/history.html">Historial de versiones</a></a>
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

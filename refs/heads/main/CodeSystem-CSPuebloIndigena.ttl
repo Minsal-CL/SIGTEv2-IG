@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/listaespera/CodeSystem/CSPuebloIndigena> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CSPuebloIndigena"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/listaespera/CodeSystem/CSPuebloIndigena</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSPuebloIndigena-1\"> </a></td><td>Mapuche</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSPuebloIndigena-2\"> </a></td><td>Aymara</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CSPuebloIndigena-3\"> </a></td><td>Rapa Nui O Pascuense</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CSPuebloIndigena-4\"> </a></td><td>Lickanantay</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CSPuebloIndigena-5\"> </a></td><td>Quechua</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"CSPuebloIndigena-6\"> </a></td><td>Colla</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"CSPuebloIndigena-7\"> </a></td><td>Diaguita</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"CSPuebloIndigena-8\"> </a></td><td>Kawésqar</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"CSPuebloIndigena-9\"> </a></td><td>Yagán</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"CSPuebloIndigena-11\"> </a></td><td>Chango</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"CSPuebloIndigena-10\"> </a></td><td>Otro (Especificar)</td></tr></table></div>"
+  ]; # 
+  fhir:CodeSystem.url [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSPuebloIndigena"]; # 
+  fhir:CodeSystem.version [ fhir:value "0.1.0"]; # 
+  fhir:CodeSystem.name [ fhir:value "CSPuebloIndigena"]; # 
+  fhir:CodeSystem.title [ fhir:value "PuebloIndigena"]; # 
+  fhir:CodeSystem.status [ fhir:value "active"]; # 
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
+  fhir:CodeSystem.date [ fhir:value "2023-01-15"^^xsd:date]; # 
+  fhir:CodeSystem.publisher [ fhir:value "MINSAL Chile"]; # 
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "MINSAL Chile" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://minsal.cl" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.description [ fhir:value "PuebloIndigena"]; # 
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "CL" ];
+       fhir:Coding.display [ fhir:value "Chile" ]
+     ]
+  ]; # 
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
+  fhir:CodeSystem.content [ fhir:value "complete"]; # 
+  fhir:CodeSystem.count [ fhir:value "11"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Mapuche" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Aymara" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "3" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Rapa Nui O Pascuense" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Lickanantay" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Quechua" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Colla" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Diaguita" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "8" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Kawésqar" ]
+  ], [
+     fhir:index 8;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Yagán" ]
+  ], [
+     fhir:index 9;
+     fhir:CodeSystem.concept.code [ fhir:value "11" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Chango" ]
+  ], [
+     fhir:index 10;
+     fhir:CodeSystem.concept.code [ fhir:value "10" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Otro (Especificar)" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/listaespera/CodeSystem/CSPuebloIndigena.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
