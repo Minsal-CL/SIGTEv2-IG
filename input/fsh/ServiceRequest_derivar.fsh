@@ -10,7 +10,7 @@ Description: "ServiceRequestLE"
 * extension contains SospechaPatologiaGes named SospechaGES 0..1 MS
 * extension contains ExtBoolean named ResolutividadAPS 0..1 MS
 * extension contains ExtBoolean named Alergia 0..1 MS
-* extension contains ExtInteger named PatologiasGES 0..1 MS
+//* extension contains ExtInteger named PatologiasGES 0..1 MS
 * extension contains OrigenInterconsulta named OrigenInterconsulta 0..1 MS
 * extension contains ExtString named FundamentoPriorizacion 0..1 MS
 
@@ -68,7 +68,7 @@ Description: "ServiceRequestLE"
 * supportingInfo contains reserva 0..1 MS and paciente 0..1 MS and QuestionnaireResponse 1..1 MS and Condition 0..1 MS and AllergyIntolerance 1..1 MS
 
 * supportingInfo[reserva] only Reference(AppointmentLE)
-* supportingInfo[paciente] only Reference(PacienteLE)
+//* supportingInfo[paciente] only Reference(PacienteLE)
 * supportingInfo[QuestionnaireResponse] only Reference(QuestionnaireResponseLE)
-* supportingInfo[Condition] only Reference(CondicionLE)
+* supportingInfo[Condition] only Reference(CondicionLE1)
 * supportingInfo[AllergyIntolerance] only Reference(AllergyIntoleranceLE)

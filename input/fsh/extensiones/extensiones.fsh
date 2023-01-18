@@ -1,5 +1,4 @@
-/*
-Extension:   PaisOrigenNacionalidadCl
+Extension:   PaisOrigenNacionalidadClLE
 Id:          CodigoPaises
 Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
@@ -11,7 +10,33 @@ Description: "Esta extensión incluye códigos de paises de origen"
   * code from CodPais
   * system 0..1 MS
   * display 0..1 MS
-*/
+
+Extension:   EstadoInterconsultaCodigoLE
+Id:          EstadoInterconsultaCodigoLE
+Title:       "Estado Interconsulta Codigo"
+Description: "Estado Interconsulta Codigo"
+* value[x] only CodeableConcept
+* value[x] ^short = "Estado Interconsulta Codigo"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSEstadoInterconsulta
+  * system 0..1 MS
+  * display 0..1 MS
+
+Extension:   DocAcreditacionCuidadorCodigoLE
+Id:          DocAcreditacionCuidadorCodigoLE
+Title:       "Doc Acreditacion Cuidador"
+Description: "Doc Acreditacion Cuidador"
+* value[x] only CodeableConcept
+* value[x] ^short = "Doc Acreditacion Cuidador"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSDocAcreditacionCuidador
+  * system 0..1 MS
+  * display 0..1 MS
+
 
 
 Extension:   TipoOtroTelefono

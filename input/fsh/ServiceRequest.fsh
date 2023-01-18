@@ -7,10 +7,14 @@ Description: "ServiceRequestLE"
 * extension contains SospechaPatologiaGes named SospechaGES 1..1 MS
 * extension contains ExtBoolean named ResolutividadAPS 1..1 MS
 * extension contains ExtBoolean named Alergia 1..1 MS
-* extension contains ExtInteger named PatologiasGES 1..1 MS
+* extension contains ExtBoolean named Cuidador 1..1 MS
+* extension contains ExtBoolean named PresentaDiscapacidad 1..1 MS
+* extension contains ExtBoolean named PersonaMayor 1..1 MS
+//* extension contains ExtInteger named PatologiasGES 1..1 MS
 * extension contains OrigenInterconsulta named OrigenInterconsulta 1..1 MS
 * extension contains ExtString named FundamentoPriorizacion 1..1 MS
-
+* extension contains EstadoInterconsultaCodigoLE named EstadoInterconsultaCodigo 1..1 MS
+* extension contains DocAcreditacionCuidadorCodigoLE named DocAcreditacionCuidadorCodigo 1..1 MS
 
 * extension[FundamentoPriorizacion] ^short = "Fundamente de la Priorización"
 * extension[ResolutividadAPS] ^short = "Programa de Resolutividad local"
@@ -51,7 +55,7 @@ Description: "ServiceRequestLE"
 * supportingInfo contains reserva 0..1 MS and paciente 0..1 MS and QuestionnaireResponse 0..1 MS and Condition 0..1 MS and AllergyIntolerance 0..1 MS
 
 * supportingInfo[reserva] only Reference(AppointmentLE)
-* supportingInfo[paciente] only Reference(PacienteLE)
+//* supportingInfo[paciente] only Reference(PacienteLE)
 * supportingInfo[QuestionnaireResponse] only Reference(QuestionnaireResponseLE)
-* supportingInfo[Condition] only Reference(CondicionLE)
+* supportingInfo[Condition] only Reference(CondicionLE1)
 * supportingInfo[AllergyIntolerance] only Reference(AllergyIntoleranceLE)

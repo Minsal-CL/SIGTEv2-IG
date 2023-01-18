@@ -5,8 +5,8 @@ Title: "PacienteLE"
 Description: "PacienteLE"
 
 // EXTESIONES
-* extension contains PaisOrigenNacionalidadCl named PaisOrigenCodigo 1..1 MS
-* extension contains PaisOrigenNacionalidadCl named NacionalidadCodigo 1..1 MS
+* extension contains PaisOrigenNacionalidadClLE named PaisOrigenCodigo 1..1 MS
+* extension contains PaisOrigenNacionalidadClLE named NacionalidadCodigo 1..1 MS
 * extension contains IdentidadGenero named IdentidadGenero 1..1 MS
 * extension contains PuebloIndigena named PuebloIndigena 0..1 MS
 * extension contains ExtBoolean named Afrodescendiente 1..1 MS

@@ -356,6 +356,97 @@ Description: "EstablecimientoDestinoCodigo"
 * #101304 "Servicio de Salud Arica Centro de Salud Familiar Putre"
 
 
+ValueSet: CodPaises
+Id: CodPais
+Title: "Códigos de Países"
+Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^copyright = "All content on ISO Online is copyright protected. The copyright is owned by ISO. Any use of the content, including copying of it in whole or in part, for example to another Internet site, is prohibited and would require written permission from ISO."
+
+* include codes from system urn:iso:std:iso:3166
+
+
+ValueSet: VSEstadoInterconsulta
+Id: VSEstadoInterconsulta
+Title: "Estado Interconsulta"
+Description: "Estado Interconsulta"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSEstadoInterconsulta
+
+CodeSystem: CSEstadoInterconsulta
+Id: CSEstadoInterconsulta
+Title: "Estado Interconsulta"
+Description: "Estado Interconsulta"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "En borrador"
+* #2 "En análisis de pertinencia nivel secundario"
+* #3 "En análisis de gestor atención primaria"
+* #4 "En espera de agendamiento"
+* #5 "En esperara de la atención"
+* #6 "En espera de exámenes y procedimientos"
+* #7 "Cerrada"
+
+
+ValueSet: VSDocAcreditacionCuidador
+Id: VSDocAcreditacionCuidador
+Title: "DocAcreditacionCuidador"
+Description: "DocAcreditacionCuidador"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSDocAcreditacionCuidador
+
+CodeSystem: CSDocAcreditacionCuidador
+Id: CSDocAcreditacionCuidador
+Title: "DocAcreditacionCuidador"
+Description: "DocAcreditacionCuidador"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Documento que acredita calidad de cuidador/a del Programa Red Local de Apoyos y Cuidados (MIDESOF)"
+* #2 "Documento que acredita calidad de cuidador/a del Programa de Atención Domicliaria a Personas con Dependencia Severa (MINSAL APS)"
+* #3 "Documento de que acredita calidad de cuidador/a de las Unidades de Cuidados Paliativos Universales (MINSAL)"
+* #4 "Documento de que acredita calidad de cuidador/a del Programa de Cuidados Domiciliarios (SENAMA)"
+* #5 "Documento de que acredita calidad de cuidador/a de Centro de Apoyo Comunitario para Personas con Demencia (MINSAL)"
+* #6 "Credencial de cuidador/a Registro Social de Hogares (MIDESOF)"
+
 /*
 
 ValueSet: VS
