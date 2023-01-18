@@ -8,6 +8,33 @@ Description: "PractitionerLE"
 
 
 
+//* identifier ^slicing.discriminator.type = #value
+//* identifier ^slicing.discriminator.path = "use"
+//* identifier ^slicing.rules = #open
+//* identifier ^slicing.description = "Slice creado para almacenar diferentes tipos de identificación"
+//* identifier contains identificacionPrincipal 1..1 MS and OtraIdentificacion 0..1 MS
+
+
+
+//* identifier[identificacionPrincipal] MS
+//
+* identifier[RUN].extension contains DigitoVerificador named DigitoVerificador 1..1 MS
+* identifier[RUN].type 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * display 1..1 MS
+    * system 1..1 MS
+* identifier[RUN].type.coding.code = #1
+//
+//* identifier[identificacionPrincipal].type.coding.code from VSTipoIdentificador
+//* identifier[identificacionPrincipal].value 1..1 MS
+//* identifier[identificacionPrincipal].value ^short = "Numero de RUN sin digito verificador ni puntos"
+//* identifier[identificacionPrincipal].extension[DigitoVerificador] ^short = "Digito verificador del RUN"
+//
+//* identifier[OtraIdentificacion] MS
+//* identifier[OtraIdentificacion] MS
+//* identifier[OtraIdentificacion].type 1..1 MS
+//* identifier[OtraIdentificacion].type.coding.code from VSTipoIdentificador
 
 /*
 * identifier  MS

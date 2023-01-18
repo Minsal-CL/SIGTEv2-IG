@@ -40,27 +40,27 @@ Description: "Identidad de genero"
   * system 0..1 MS
   * display 0..1 MS
 
-Extension: Etnia
-Id: Etnia
+Extension: PuebloIndigena
+Id: PuebloIndigena
 Title: "Etnia a la cual pertenece"
 Description: "Etnia a la cual pertenece"
 * extension contains
-	etnia 1..* MS and
-	pertenencia 1..1 MS
+	PuebloIndigenaCodigo 1..* MS and
+	PuebloIndigenaPertenencia 1..1 MS
 * url MS
 
-* extension[etnia].value[x] only CodeableConcept
-* extension[etnia].value[x] ^short = "Codigo de la etnia"
-* extension[etnia].url 1..1 MS
-* extension[etnia].valueCodeableConcept.coding 1..1 MS
+* extension[PuebloIndigenaCodigo].value[x] only CodeableConcept
+* extension[PuebloIndigenaCodigo].value[x] ^short = "Codigo de la etnia"
+* extension[PuebloIndigenaCodigo].url 1..1 MS
+* extension[PuebloIndigenaCodigo].valueCodeableConcept.coding 1..1 MS
   * code 0..1 MS
   * code from VSPuebloIndigena
   * system 0..1 MS
   * display 1..1 MS
-* extension[etnia].valueCodeableConcept.text MS
-* extension[etnia].valueCodeableConcept.text ^short = "Ingresar pueblo pertenciente, en caso que no se encuentre en la lista"
+* extension[PuebloIndigenaCodigo].valueCodeableConcept.text MS
+* extension[PuebloIndigenaCodigo].valueCodeableConcept.text ^short = "Ingresar pueblo pertenciente, en caso que no se encuentre en la lista"
 
-* extension[pertenencia].value[x] only boolean
+* extension[PuebloIndigenaPertenencia].value[x] only boolean
 
 
 

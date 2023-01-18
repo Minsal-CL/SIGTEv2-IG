@@ -250,10 +250,110 @@ Description: "interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-
 * #1 "APS"
 * #2 "Urgencia"
 * #3 "Derivación"
+
+
+ValueSet: VSMotivoDerivacion
+Id: VSMotivoDerivacion
+Title: "MotivoDerivacion"
+Description: "MotivoDerivacion"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSMotivoDerivacion
+
+CodeSystem: CSMotivoDerivacion
+Id: CSMotivoDerivacion
+Title: "MotivoDerivacion"
+Description: "MotivoDerivacion"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Derivado a Nivel Secundario"
+* #2 "Derivado a APS"
+* #3 "Derivado a Extra Sistema"
+* #4 "Derivado a Hospital Digital"
+
+ValueSet: VSEstablecimientoDestinoCodigo
+Id: VSEstablecimientoDestinoCodigo
+Title: "EstablecimientoDestinoCodigo"
+Description: "EstablecimientoDestinoCodigo"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSEstablecimientoDestinoCodigo
+
+CodeSystem: CSEstablecimientoDestinoCodigo
+Id: CSEstablecimientoDestinoCodigo
+Title: "EstablecimientoDestinoCodigo"
+Description: "EstablecimientoDestinoCodigo"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #101012 "Servicio de Salud Arica Clínica Dental Móvil Simple. Pat. PW4076 (Arica)"
+* #101090 "Servicio de Salud Arica Oficina Sanitaria Chacalluta"
+* #101100 "Servicio de Salud Arica Hospital Dr. Juan Noé Crevanni (Arica)"
+* #101203 "SEREMI De Arica y Parinacota Clínica Hebe "
+* #101212 "SEREMI De Arica y Parinacota Clínica San Agustín "
+* #101213 "SEREMI De Arica y Parinacota Clínica San José "
+* #101214 "SEREMI De Arica y Parinacota Clínica Arica"
+* #101215 "SEREMI De Arica y Parinacota Complejo Penitenciario "
+* #101216 "SEREMI De Arica y Parinacota Servicio Médico Estudiantil U de Tarapacá"
+* #101217 "SEREMI De Arica y Parinacota Centro Clínico Militar Arica"
+* #101219 "SEREMI De Arica y Parinacota Policlínico del Trabajador AChS Arica"
+* #101222 "SEREMI De Arica y Parinacota Instituto de Rehabilitación Infantil TELETÓN (Arica)"
+* #101223 "SEREMI De Arica y Parinacota Centro Médico Monte Sinaí"
+* #101224 "SEREMI De Arica y Parinacota Clínica Santo Domingo"
+* #101225 "SEREMI De Arica y Parinacota Centro Integral de Salud"
+* #101227 "SEREMI De Arica y Parinacota Policlínico Institucional de Gendarmería de Chile (Arica)"
+* #101228 "SEREMI De Arica y Parinacota Policlínico del Agricultor"
+* #101229 "SEREMI De Arica y Parinacota Centro Odontológico Arica"
+* #101234 "SEREMI De Arica y Parinacota Centro de Salud Mutual CChC Arica"
+* #101236 "SEREMI De Arica y Parinacota Centro Dental Megasalud SpA"
+* #101237 "SEREMI De Arica y Parinacota Clínica Dr. Héctor Sánchez"
+* #101238 "SEREMI De Arica y Parinacota Clínica Mella Arica y Compañía Ltda."
+* #101239 "SEREMI De Arica y Parinacota Policlínico Médico-Dental de Carabineros"
+* #101240 "SEREMI De Arica y Parinacota Laboratorio Clínico San José Ltda."
+* #101241 "SEREMI De Arica y Parinacota Laboratorio Bionet"
+* #101242 "SEREMI De Arica y Parinacota Laboratorio Clínico y Hematológico Diagnotest"
+* #101243 "SEREMI De Arica y Parinacota Laboratorio Clínico Central"
+* #101244 "SEREMI De Arica y Parinacota Laboratorio Clínico San Martín"
+* #101245 "SEREMI De Arica y Parinacota Laboratorio Clínico Dialab"
+* #101246 "SEREMI De Arica y Parinacota Laboratorio Clínico del Norte - Labonorte"
+* #101247 "SEREMI De Arica y Parinacota Laboratorio Clínico Chungará"
+* #101248 "SEREMI De Arica y Parinacota Laboratorio Clínico Biolascer"
+* #101300 "Servicio de Salud Arica Centro de Salud Familiar Víctor Bertín Soto"
+* #101302 "Servicio de Salud Arica Centro de Salud Familiar Dr. Amador Neghme de Arica"
+* #101303 "Servicio de Salud Arica Centro de Salud Familiar E. U. Iris Véliz Hume (Ex Oriente)"
+* #101304 "Servicio de Salud Arica Centro de Salud Familiar Putre"
 
 
 /*
