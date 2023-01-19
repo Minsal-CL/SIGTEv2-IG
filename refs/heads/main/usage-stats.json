@@ -108,6 +108,25 @@
       ]
     },
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaLE",
+      "title": "Motivo No Pertinencia",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta",
       "title": "Origen Interconsulta",
       "types": [
@@ -379,12 +398,22 @@
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE",
         "title": "MessageHeaderLE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderRevisarLE",
+        "title": "MessageHeader Revisar LE"
       }
     ],
     "Observation": [
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationLE",
         "title": "ObservationLE"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/OrganizacionLE",
+        "title": "OrganizacionLE"
       }
     ],
     "Patient": [
@@ -413,12 +442,20 @@
     ],
     "ServiceRequest": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequest2LE",
-        "title": "ServiceRequestLE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestAgendar",
+        "title": "Service Request Agendar LE"
       },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE",
-        "title": "ServiceRequestLE"
+        "title": "Service Request LE Inicio"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestReferenciadaLE",
+        "title": "Service Request Referenciada LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestRevisarLE",
+        "title": "Service Request LE Revisar"
       }
     ]
   },
@@ -504,6 +541,9 @@
     ],
     "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero": [
       "Patient"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaLE": [
+      "ServiceRequest.doNotPerform"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta": [
       "ServiceRequest"
