@@ -13,3 +13,11 @@ Description: "AppointmentLE"
 * status = #booked
 
 * start 1..1 MS
+
+
+* obeys inv-bodstr-0
+
+Invariant: inv-bodstr-0
+Description: "The body structure shall at least have location or description or an image"
+Severity: #error
+Expression: "status.exists() or start.exists() or identifier.exists()"

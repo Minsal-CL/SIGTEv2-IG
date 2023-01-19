@@ -13,6 +13,7 @@
     <sch:title>f:Extension/f:value[x] 1</sch:title>
     <sch:rule context="f:Extension/f:value[x]">
       <sch:assert test="count(f:coding) &gt;= 1">coding: minimum cardinality of 'coding' is 1</sch:assert>
+      <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

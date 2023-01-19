@@ -10,6 +10,20 @@ Description: "Esta extensión incluye códigos de paises de origen"
   * code from CodPais
   * system 0..1 MS
   * display 0..1 MS
+* valueCodeableConcept.text 1..1 MS
+
+Extension:   MotivoNoPertinenciaLE
+Id:          MotivoNoPertinenciaLE
+Title:       "Motivo No Pertinencia"
+Description: "Motivo No Pertinencia"
+* value[x] only CodeableConcept
+* value[x] ^short = "Motivo No Pertinencia"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSMotivoNoPertinencia
+  * system 0..1 MS
+  * display 0..1 MS
 
 Extension:   EstadoInterconsultaCodigoLE
 Id:          EstadoInterconsultaCodigoLE
@@ -36,7 +50,7 @@ Description: "Doc Acreditacion Cuidador"
   * code from VSDocAcreditacionCuidador
   * system 0..1 MS
   * display 0..1 MS
-
+  //* text 1..1 MS
 
 
 Extension:   TipoOtroTelefono

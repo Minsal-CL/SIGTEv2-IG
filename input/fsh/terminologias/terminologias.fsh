@@ -447,6 +447,73 @@ Description: "DocAcreditacionCuidador"
 * #5 "Documento de que acredita calidad de cuidador/a de Centro de Apoyo Comunitario para Personas con Demencia (MINSAL)"
 * #6 "Credencial de cuidador/a Registro Social de Hogares (MIDESOF)"
 
+ValueSet: VSMotivoNoPertinencia
+Id: VSMotivoNoPertinencia
+Title: "MotivoNoPertinencia"
+Description: "MotivoNoPertinencia"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSMotivoNoPertinencia
+
+CodeSystem: CSMotivoNoPertinencia
+Id: CSMotivoNoPertinencia
+Title: "MotivoNoPertinencia"
+Description: "MotivoNoPertinencia"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "No cumple reglas de derivación"
+* #2 "No respeta criterios de inclusión"
+* #3 "Otro"
+
+ValueSet: VSModalidadAtencionCodigo
+Id: VSModalidadAtencionCodigo
+Title: "Modalidad Atencion Codigo"
+Description: "Modalidad Atencion Codigo"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSModalidadAtencionCodigo
+
+CodeSystem: CSModalidadAtencionCodigo
+Id: CSModalidadAtencionCodigo
+Title: "Modalidad Atencion Codigo"
+Description: "Modalidad Atencion Codigo"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Presencial"
+* #2 "Remota"
+* #3 "Telemedicina"
+
+
 /*
 
 ValueSet: VS

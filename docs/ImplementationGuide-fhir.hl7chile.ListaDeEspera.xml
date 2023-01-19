@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-01-18T14:20:48-03:00"/>
+  <date value="2023-01-19T11:18:06-03:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -515,10 +515,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/MessageHeaderRevisarLE"/>
+      </reference>
+      <name value="MessageHeader Revisar LE"/>
+      <description value="MessageHeader Revisar LE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ObservationLE"/>
       </reference>
       <name value="ObservationLE"/>
       <description value="ObservationLE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OrganizacionLE"/>
+      </reference>
+      <name value="OrganizacionLE"/>
+      <description value="OrganizacionLE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -570,10 +592,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ServiceRequest2LE"/>
+        <reference value="StructureDefinition/ServiceRequestAgendar"/>
       </reference>
-      <name value="ServiceRequestLE"/>
-      <description value="ServiceRequestLE"/>
+      <name value="Service Request Agendar LE"/>
+      <description value="Service Request Agendar LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -583,8 +605,30 @@
       <reference>
         <reference value="StructureDefinition/ServiceRequestLE"/>
       </reference>
-      <name value="ServiceRequestLE"/>
-      <description value="ServiceRequestLE"/>
+      <name value="Service Request LE Inicio"/>
+      <description value="Service Request LE Inicio"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ServiceRequestReferenciadaLE"/>
+      </reference>
+      <name value="Service Request Referenciada LE"/>
+      <description value="Service Request Referenciada LE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ServiceRequestRevisarLE"/>
+      </reference>
+      <name value="Service Request LE Revisar"/>
+      <description value="Service Request LE Revisar"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -662,6 +706,17 @@
       </reference>
       <name value="Identidad de genero"/>
       <description value="Identidad de genero"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MotivoNoPertinenciaLE"/>
+      </reference>
+      <name value="Motivo No Pertinencia"/>
+      <description value="Motivo No Pertinencia"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -790,10 +845,32 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/VSModalidadAtencionCodigo"/>
+      </reference>
+      <name value="Modalidad Atencion Codigo"/>
+      <description value="Modalidad Atencion Codigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VSMotivoDerivacion"/>
       </reference>
       <name value="MotivoDerivacion"/>
       <description value="MotivoDerivacion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSMotivoNoPertinencia"/>
+      </reference>
+      <name value="MotivoNoPertinencia"/>
+      <description value="MotivoNoPertinencia"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -911,10 +988,32 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/CSModalidadAtencionCodigo"/>
+      </reference>
+      <name value="Modalidad Atencion Codigo"/>
+      <description value="Modalidad Atencion Codigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/CSMotivoDerivacion"/>
       </reference>
       <name value="MotivoDerivacion"/>
       <description value="MotivoDerivacion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSMotivoNoPertinencia"/>
+      </reference>
+      <name value="MotivoNoPertinencia"/>
+      <description value="MotivoNoPertinencia"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
