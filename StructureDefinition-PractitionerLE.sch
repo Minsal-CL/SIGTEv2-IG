@@ -113,7 +113,6 @@
       <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
       <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
-      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
       <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
       <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
     </sch:rule>
@@ -229,7 +228,7 @@
   <sch:pattern>
     <sch:title>f:Practitioner/f:name/f:family</sch:title>
     <sch:rule context="f:Practitioner/f:name/f:family">
-      <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/SegundoApellido']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/SegundoApellido': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family']) &lt;= 1">extension with URL = 'http://hl7.org/fhir/StructureDefinition/humanname-mothers-family': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -344,14 +343,11 @@
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.extension</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
@@ -369,14 +365,11 @@
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.identifier</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:identifier">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
@@ -386,15 +379,11 @@
     <sch:title>Practitioner.qualification.code</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:code">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.period</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:period">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
@@ -406,14 +395,11 @@
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>f:Practitioner/f:qualification</sch:title>
     <sch:rule context="f:Practitioner/f:qualification">
-      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
-      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
@@ -427,14 +413,11 @@
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.identifier.use</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:identifier/f:use">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
@@ -444,13 +427,11 @@
     <sch:rule context="f:Practitioner/f:qualification/f:identifier/f:type">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.identifier.system</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:identifier/f:system">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
@@ -460,7 +441,6 @@
     <sch:rule context="f:Practitioner/f:qualification/f:identifier/f:value">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -468,13 +448,11 @@
     <sch:rule context="f:Practitioner/f:qualification/f:identifier/f:period">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.identifier.assigner</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:identifier/f:assigner">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
@@ -486,23 +464,11 @@
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>Practitioner.qualification.code.coding</sch:title>
-    <sch:rule context="f:Practitioner/f:qualification/f:code/f:coding">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.code.coding.extension</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:code/f:coding/f:extension">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
@@ -514,13 +480,11 @@
     <sch:rule context="f:Practitioner/f:qualification/f:code/f:coding/f:system">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.code.coding.version</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:code/f:coding/f:version">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
@@ -530,13 +494,11 @@
     <sch:rule context="f:Practitioner/f:qualification/f:code/f:coding/f:code">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.code.coding.display</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:code/f:coding/f:display">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
@@ -546,13 +508,11 @@
     <sch:rule context="f:Practitioner/f:qualification/f:code/f:coding/f:userSelected">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.code.text</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:code/f:text">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
@@ -562,17 +522,11 @@
     <sch:rule context="f:Practitioner/f:qualification/f:issuer/f:extension">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.issuer.reference</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:issuer/f:reference">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -580,23 +534,17 @@
     <sch:title>Practitioner.qualification.issuer.type</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:issuer/f:type">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.issuer.identifier</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:issuer/f:identifier">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
     <sch:title>Practitioner.qualification.issuer.display</sch:title>
     <sch:rule context="f:Practitioner/f:qualification/f:issuer/f:display">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
     </sch:rule>
   </sch:pattern>
