@@ -12,16 +12,59 @@ Description: "Esta extensión incluye códigos de paises de origen"
   * display 0..1 MS
 * valueCodeableConcept.text 1..1 MS
 
-Extension:   MotivoNoPertinenciaLE
-Id:          MotivoNoPertinenciaLE
-Title:       "Motivo No Pertinencia"
-Description: "Motivo No Pertinencia"
+
+Extension:   MotivoCierreInterconsulta
+Id:          MotivoCierreInterconsulta
+Title:       "Motivo Cierre Interconsulta"
+Description: "Motivo Cierre Interconsulta"
+* value[x] only CodeableConcept
+* value[x] ^short = "Motivo Cierre Interconsulta"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSMotivoCierreInterconsulta
+  * system 0..1 MS
+  * display 0..1 MS
+* valueCodeableConcept.text 0..1 MS
+
+Extension:   DestinoAtencionCodigo
+Id:          DestinoAtencionCodigo
+Title:       "Destino Atención Codigo"
+Description: "Destino Atención Codigo"
+* value[x] only CodeableConcept
+* value[x] ^short = "Código Destino Atención"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSDestinoAtencionCodigo
+  * system 0..1 MS
+  * display 0..1 MS
+
+
+Extension:   MedioNotificacion
+Id:          MedioNotificacion
+Title:       "MedioNotificacion"
+Description: "MedioNotificacion"
+* value[x] only CodeableConcept
+* value[x] ^short = "MedioNotificacion"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSMedioNotificacion
+  * system 0..1 MS
+  * display 0..1 MS
+
+
+Extension:   PertinenciaInterconsulta
+Id:          PertinenciaInterconsulta
+Title:       "Pertinencia Interconsulta"
+Description: "Pertinencia Interconsulta"
 * value[x] only CodeableConcept
 * value[x] ^short = "Motivo No Pertinencia"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSMotivoNoPertinencia
+  * code from VSPertinenciaInterconsulta
   * system 0..1 MS
   * display 0..1 MS
 
@@ -95,11 +138,33 @@ Description: "Etnia a la cual pertenece"
   * code 0..1 MS
   * code from VSPuebloIndigena
   * system 0..1 MS
-  * display 1..1 MS
+  * display 0..1 MS
 * extension[PuebloIndigenaCodigo].valueCodeableConcept.text MS
 * extension[PuebloIndigenaCodigo].valueCodeableConcept.text ^short = "Ingresar pueblo pertenciente, en caso que no se encuentre en la lista"
 
 * extension[PuebloIndigenaPertenencia].value[x] only boolean
+
+Extension: Contactado
+Id: Contactado
+Title: "Contactado"
+Description: "Contactado"
+* extension contains
+	Contactado 1..1 MS and
+	MotivoNoContactabilidad 0..1 MS
+* url MS
+
+* extension[MotivoNoContactabilidad].value[x] only CodeableConcept
+* extension[MotivoNoContactabilidad].value[x] ^short = "Codigo de la etnia"
+* extension[MotivoNoContactabilidad].url 1..1 MS
+* extension[MotivoNoContactabilidad].valueCodeableConcept.coding 1..1 MS
+  * code 0..1 MS
+  * code from VSMotivoNoContactabilidad
+  * system 0..1 MS
+  * display 0..1 MS
+* extension[MotivoNoContactabilidad].valueCodeableConcept.text MS
+* extension[MotivoNoContactabilidad].valueCodeableConcept.text ^short = "Otro motivo de no contactabilidad"
+
+* extension[Contactado].value[x] only boolean
 
 
 
@@ -133,7 +198,7 @@ Description: "Origen Interconsulta"
   * code 0..1 MS
   * code from VSinterconsulta
   * system 0..1 MS
-  * display 1..1 MS
+  * display 0..1 MS
 * valueCodeableConcept.text MS
 
 Extension: DigitoVerificador 

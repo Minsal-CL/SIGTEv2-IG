@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.12"}
-    h3,h4,h5,h6{--heading-prefix:"8.12"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.23"}
+    h3,h4,h5,h6{--heading-prefix:"10.23"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -118,6 +118,16 @@
   </li>
   <li>
     <a href="Terminologias.html">Terminologias</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificaciones Técnicas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Transacciones.html">Transacciones</a>
+      </li>
+    </ul>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -216,7 +226,7 @@
         
           Active
           
-            as of 2023-01-19
+            as of 2023-01-20
           
         
       </td>
@@ -453,7 +463,7 @@
   <tr><td>Definition</td><td><p>Esta extensión incluye códigos de paises de origen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -585,7 +595,7 @@
 <span style='color:DarkGray;text-decoration:line-through'><p>A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a><span style='color:DarkGray;text-decoration:line-through'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-identifier-type.html">Identifier Type Codes</a>; other codes may be used where these codes are not suitable</span><br/><p>Value Set de Tipos de Documentos y CI Nacionales</p>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a><span style='color:DarkGray;text-decoration:line-through'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-identifier-type.html">Identifier Type Codes</a>; other codes may be used where these codes are not suitable</span><br/><p>Value Set de Tipos de Documentos y CI Nacionales</p>
 <span style='color:DarkGray;text-decoration:line-through'><p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
@@ -616,7 +626,7 @@
   <tr><td>Definition</td><td><p>Esta extensión incluye códigos de paises de origen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -736,7 +746,7 @@
 <span style='color:DarkGray;text-decoration:line-through'><p>A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a><span style='color:DarkGray;text-decoration:line-through'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-identifier-type.html">Identifier Type Codes</a>; other codes may be used where these codes are not suitable</span><br/><p>Value Set de Tipos de Documentos y CI Nacionales</p>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a><span style='color:DarkGray;text-decoration:line-through'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-identifier-type.html">Identifier Type Codes</a>; other codes may be used where these codes are not suitable</span><br/><p>Value Set de Tipos de Documentos y CI Nacionales</p>
 <span style='color:DarkGray;text-decoration:line-through'><p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
@@ -767,7 +777,7 @@
   <tr><td>Definition</td><td><p>Esta extensión incluye códigos de paises de origen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -902,7 +912,7 @@
 <span style='color:DarkGray;text-decoration:line-through'><p>A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a><span style='color:DarkGray;text-decoration:line-through'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-identifier-type.html">Identifier Type Codes</a>; other codes may be used where these codes are not suitable</span><br/><p>Value Set de Tipos de Documentos y CI Nacionales</p>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a><span style='color:DarkGray;text-decoration:line-through'>The codes SHALL be taken from <a href="http://hl7.org/fhir/R4/valueset-identifier-type.html">Identifier Type Codes</a>; other codes may be used where these codes are not suitable</span><br/><p>Value Set de Tipos de Documentos y CI Nacionales</p>
 <span style='color:DarkGray;text-decoration:line-through'><p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
@@ -933,7 +943,7 @@
   <tr><td>Definition</td><td><p>Esta extensión incluye códigos de paises de origen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1149,7 +1159,7 @@ Many systems use this property to mark as non-current patients, such as those th
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: <span style='color:DarkGray'>All FHIR elements must have a @value or children</span> (: <span style='color:DarkGray'>hasValue() or (children().count() &gt; id.count())</span>)</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="key_Patient.name:NombreSocial.given"> </a><span style="color: grey">56.</span> <b>Patient.name:NombreSocial.given</b><a href="#key_Patient.name:NombreSocial.given" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>Nombre Social del Paciente</p>
+  <tr><td>Definition</td><td><p>Nombre Social</p>
 <span style='color:DarkGray;text-decoration:line-through'><p>Given name.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
@@ -1711,7 +1721,7 @@ Many systems use this property to mark as non-current patients, such as those th
 <span style='color:DarkGray;text-decoration:line-through'><p>An address for the individual.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span> This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></span>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-cl-address.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/cl-address">ClAddress</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a></span>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-cl-address.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/cl-address">ClAddress</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><span style='color:DarkGray'><p>May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.</p>
 </span></td></tr>
@@ -1753,7 +1763,7 @@ Many systems use this property to mark as non-current patients, such as those th
 <span style='color:DarkGray;text-decoration:line-through'><p>May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>*</span> This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-IdContacto.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/IdContacto">IdentificacionContactoCl</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a></span>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-IdContacto.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto">IdentificacionContactoCl</a>)  (Complex Extension)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>:  (: )<br/><b title="Formal Invariant Identifier">ext-1</b>:  (: )</td></tr>
@@ -1948,7 +1958,7 @@ Many systems use this property to mark as non-current patients, such as those th
 <span style='color:DarkGray;text-decoration:line-through'><p>The ISO-639-1 alpha 2 code in lower case for the language, optionally followed by a hyphen and the ISO-3166-1 alpha 2 code for the region in upper case; e.g. &quot;en&quot; for English, or &quot;en-US&quot; for American English versus &quot;en-EN&quot; for England English.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>1</span>..<span style='color:DarkGray'>1</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSCodigoslenguaje.html">Codigos Lenguaje</a><span style='color:DarkGray;text-decoration:line-through'>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a></span><br/><p>Value Set de HL7, # de elementos es muy grande para poder visualizarlo</p>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSCodigoslenguaje.html">Codigos Lenguaje</a><span style='color:DarkGray;text-decoration:line-through'>The codes SHOULD be taken from <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a></span><br/><p>Value Set de HL7, # de elementos es muy grande para poder visualizarlo</p>
 <span style='color:DarkGray;text-decoration:line-through'><p>A human language.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
@@ -2187,7 +2197,7 @@ A human language
   <tr><td>Definition</td><td><p>Esta extensión incluye códigos de paises de origen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1 This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -2318,7 +2328,7 @@ Identifies the purpose for this identifier, if known
   <tr><td>Definition</td><td><p>Se define como tipo de documento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible. Para pacientes sin documeto local deben especificar el de origen. Pacientes sin Id, deben usar el código MR = Local Medical Record, es decir numero del registro clínico abierto en el establecimiento</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a>
 Value Set de Tipos de Documentos y CI Nacionale
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -2351,7 +2361,7 @@ Value Set de Tipos de Documentos y CI Nacionale
   <tr><td>Definition</td><td><p>Esta extensión incluye códigos de paises de origen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2565,7 +2575,7 @@ Identifies the purpose for this identifier, if known
   <tr><td>Definition</td><td><p>Se define como tipo de documento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible. Para pacientes sin documeto local deben especificar el de origen. Pacientes sin Id, deben usar el código MR = Local Medical Record, es decir numero del registro clínico abierto en el establecimiento</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a>
 Value Set de Tipos de Documentos y CI Nacionale
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -2598,7 +2608,7 @@ Value Set de Tipos de Documentos y CI Nacionale
   <tr><td>Definition</td><td><p>Esta extensión incluye códigos de paises de origen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -2815,7 +2825,7 @@ Identifies the purpose for this identifier, if known
   <tr><td>Definition</td><td><p>Se define como tipo de documento de Id, aquel definido en el Sistema de Codificación V2-0203 de Hl7. Este sistema es extensible. Para pacientes sin documeto local deben especificar el de origen. Pacientes sin Id, deben usar el código MR = Local Medical Record, es decir numero del registro clínico abierto en el establecimiento</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSTiposDocumentos.html">Tipos de Documentos</a>
 Value Set de Tipos de Documentos y CI Nacionale
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -2848,7 +2858,7 @@ Value Set de Tipos de Documentos y CI Nacionale
   <tr><td>Definition</td><td><p>Esta extensión incluye códigos de paises de origen</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CodigoPaises.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">PaisOrigenNacionalidadCl</a>)  (Extension Type: <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>false</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -3251,7 +3261,7 @@ The use of a human name
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))</td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Patient.name:NombreSocial.given"> </a><span style="color: grey">104.</span> <b>Patient.name:NombreSocial.given</b><a href="#Patient.name:NombreSocial.given" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
-  <tr><td>Definition</td><td><p>Nombre Social del Paciente</p>
+  <tr><td>Definition</td><td><p>Nombre Social</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..*</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
@@ -3995,7 +4005,7 @@ The gender of a person used for administrative purposes
   <tr><td>Definition</td><td><p>An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-cl-address.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/cl-address">ClAddress</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-cl-address.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/cl-address">ClAddress</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.</p>
 </td></tr>
@@ -4080,7 +4090,7 @@ The domestic partnership status of a person
   <tr><td>Definition</td><td><p>Extensión para declarar identificación del contacto y la procedencia de esta</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/StructureDefinition-IdContacto.html" title="https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/IdContacto">IdentificacionContactoCl</a>)  (Complex Extension)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>(<a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-IdContacto.html" title="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto">IdentificacionContactoCl</a>)  (Complex Extension)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
 <b title="Formal Invariant Identifier">ele-1</b>: All FHIR elements must have a @value or children (: hasValue() or (children().count() &gt; id.count()))<br/><b title="Formal Invariant Identifier">ext-1</b>: Must have either extensions or value[x], not both (: extension.exists() != value.exists())</td></tr>
@@ -4481,7 +4491,7 @@ The gender of a person used for administrative purposes
   <tr><td>Definition</td><td><p>Código del lenguaje específico</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSCodigoslenguaje.html">Codigos Lenguaje</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSCodigoslenguaje.html">Codigos Lenguaje</a>
 Value Set de HL7, # de elementos es muy grande para poder visualizarl
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -4849,7 +4859,7 @@ The type of link between this patient resource and another patient resource
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 19, 2023 11:18-0300">2023-01-19</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 20, 2023 14:40-0300">2023-01-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

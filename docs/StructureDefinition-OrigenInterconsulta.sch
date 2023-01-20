@@ -15,10 +15,4 @@
       <sch:assert test="count(f:coding) &gt;= 1">coding: minimum cardinality of 'coding' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:Extension/f:value[x]/f:coding 1</sch:title>
-    <sch:rule context="f:Extension/f:value[x]/f:coding">
-      <sch:assert test="count(f:display) &gt;= 1">display: minimum cardinality of 'display' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
 </sch:schema>

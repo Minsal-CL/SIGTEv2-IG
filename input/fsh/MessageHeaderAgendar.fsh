@@ -1,0 +1,13 @@
+Profile: MessageHeaderAgendarLE
+Parent: MessageHeader
+Id: MessageHeaderAgendarLE
+Title: "MessageHeader Agendar LE"
+Description: "MessageHeader Agendar LE"
+
+
+* meta.lastUpdated 1..1 MS
+* source.software 1..1 MS
+* focus only Reference(AppointmentLE)
+// * author only Reference(PractitioneRolerLE)
+//* focus only Reference(ServiceRequestLE)
+

@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-01-19T11:18:06-03:00",
+  "date" : "2023-01-20T14:40:00-03:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -34,10 +34,10 @@
     "version" : "5.0.0"
   },
   {
-    "id" : "CoreCLDEV",
-    "uri" : "https://build.fhir.org/ig/HL7Chile/CL-Core",
+    "id" : "hl7_fhir_cl_corecl",
+    "uri" : "https://hl7chile.cl/fhir/ig/CoreCL/ImplementationGuide/hl7.fhir.cl.corecl",
     "packageId" : "hl7.fhir.cl.corecl",
-    "version" : "dev"
+    "version" : "1.7.0"
   }],
   "definition" : {
     "extension" : [{
@@ -586,10 +586,70 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/AppointmentAtenderLE"
+      },
+      "name" : "Appointment Atender LE",
+      "description" : "Appointment Atender LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/AppointmentLE"
       },
       "name" : "AppointmentLE",
       "description" : "AppointmentLE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CarePlanLE"
+      },
+      "name" : "CarePlanLE",
+      "description" : "CarePlanLE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CondicionAtenderLE1"
+      },
+      "name" : "CondicionAtenderLE1",
+      "description" : "CondicionAtenderLE1",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CondicionAtenderLE2"
+      },
+      "name" : "CondicionAtenderLE2",
+      "description" : "CondicionAtenderLE2",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/CondicionAtenderLE3"
+      },
+      "name" : "CondicionAtenderLE3",
+      "description" : "CondicionAtenderLE3",
       "exampleBoolean" : false
     },
     {
@@ -634,6 +694,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/DocumentReferenceLE"
+      },
+      "name" : "Document Reference LE",
+      "description" : "Document Reference LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EncounterAtenderLE"
+      },
+      "name" : "Encounter Atender LE",
+      "description" : "Encounter Atender LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/EncounterLE"
       },
       "name" : "EncounterLE",
@@ -658,6 +742,30 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/MessageHeaderAgendarLE"
+      },
+      "name" : "MessageHeader Agendar LE",
+      "description" : "MessageHeader Agendar LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MessageHeaderAtenderLE"
+      },
+      "name" : "MessageHeader Revisar LE",
+      "description" : "MessageHeader Revisar LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/MessageHeaderLE"
       },
       "name" : "MessageHeaderLE",
@@ -674,6 +782,30 @@
       },
       "name" : "MessageHeader Revisar LE",
       "description" : "MessageHeader Revisar LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MessageHeaderTerminarLE"
+      },
+      "name" : "MessageHeader Terminar LE",
+      "description" : "MessageHeader Terminar LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ObservationAtenderLE"
+      },
+      "name" : "ObservationAtenderLE",
+      "description" : "ObservationAtenderLE",
       "exampleBoolean" : false
     },
     {
@@ -754,10 +886,22 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ServiceRequestAgendar"
+        "reference" : "StructureDefinition/ServiceRequestAgendarLE"
       },
       "name" : "Service Request Agendar LE",
       "description" : "Service Request Agendar LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ServiceRequestAtenderLE"
+      },
+      "name" : "Service Request LE Atender",
+      "description" : "Service Request LE Atender",
       "exampleBoolean" : false
     },
     {
@@ -794,6 +938,42 @@
       },
       "name" : "Service Request LE Revisar",
       "description" : "Service Request LE Revisar",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ServiceRequestTerminarLE"
+      },
+      "name" : "Service Request Agendar LE",
+      "description" : "Service Request Agendar LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Contactado"
+      },
+      "name" : "Contactado",
+      "description" : "Contactado",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DestinoAtencionCodigo"
+      },
+      "name" : "Destino Atención Codigo",
+      "description" : "Destino Atención Codigo",
       "exampleBoolean" : false
     },
     {
@@ -886,10 +1066,22 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MotivoNoPertinenciaLE"
+        "reference" : "StructureDefinition/MedioNotificacion"
       },
-      "name" : "Motivo No Pertinencia",
-      "description" : "Motivo No Pertinencia",
+      "name" : "MedioNotificacion",
+      "description" : "MedioNotificacion",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MotivoCierreInterconsulta"
+      },
+      "name" : "Motivo Cierre Interconsulta",
+      "description" : "Motivo Cierre Interconsulta",
       "exampleBoolean" : false
     },
     {
@@ -914,6 +1106,18 @@
       },
       "name" : "Codigo de Identificación de países",
       "description" : "Esta extensión incluye códigos de paises de origen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PertinenciaInterconsulta"
+      },
+      "name" : "Pertinencia Interconsulta",
+      "description" : "Pertinencia Interconsulta",
       "exampleBoolean" : false
     },
     {
@@ -982,6 +1186,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSDestinoAtencionCodigo"
+      },
+      "name" : "DestinoAtenciónCodigo",
+      "description" : "DestinoAtenciónCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSDestinoReferenciaCodigo"
+      },
+      "name" : "DestinoReferenciaCodigo",
+      "description" : "DestinoReferenciaCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSDocAcreditacionCuidador"
       },
       "name" : "DocAcreditacionCuidador",
@@ -1030,6 +1258,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSIndicecomorbilidad"
+      },
+      "name" : "Indicecomorbilidad",
+      "description" : "Indicecomorbilidad",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSMedioNotificacion"
+      },
+      "name" : "MedioNotificación",
+      "description" : "MedioNotificación",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSModalidadAtencionCodigo"
       },
       "name" : "Modalidad Atencion Codigo",
@@ -1042,10 +1294,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSMotivoDerivacion"
+        "reference" : "ValueSet/VSMotivoCierreInterconsulta"
       },
-      "name" : "MotivoDerivacion",
-      "description" : "MotivoDerivacion",
+      "name" : "MotivoCierreInterconsulta",
+      "description" : "MotivoCierreInterconsulta",
       "exampleBoolean" : false
     },
     {
@@ -1054,10 +1306,22 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSMotivoNoPertinencia"
+        "reference" : "ValueSet/VSMotivoNoContactabilidad"
       },
-      "name" : "MotivoNoPertinencia",
-      "description" : "MotivoNoPertinencia",
+      "name" : "MotivoNoContactabilidad",
+      "description" : "MotivoNoContactabilidad",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSPertinenciaInterconsulta"
+      },
+      "name" : "PertinenciaInterconsulta",
+      "description" : "PertinenciaInterconsulta",
       "exampleBoolean" : false
     },
     {
@@ -1078,10 +1342,46 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSSospechaPatologia"
+      },
+      "name" : "SospechaPatologia",
+      "description" : "SospechaPatologia",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSSospechaPatologiaGes"
       },
       "name" : "SospechaPatologiaGes",
       "description" : "SospechaPatologiaGes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSTipoCodDiagnostica"
+      },
+      "name" : "TipoCodDiagnostica",
+      "description" : "TipoCodDiagnostica",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSTipoConsulta"
+      },
+      "name" : "Tipo Consulta",
+      "description" : "Tipo Consulta",
       "exampleBoolean" : false
     },
     {
@@ -1138,6 +1438,30 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/CSDestinoAtencionCodigo"
+      },
+      "name" : "DestinoAtenciónCodigo",
+      "description" : "DestinoAtenciónCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSDestinoReferenciaCodigo"
+      },
+      "name" : "DestinoReferenciaCodigo",
+      "description" : "DestinoReferenciaCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/CSDocAcreditacionCuidador"
       },
       "name" : "DocAcreditacionCuidador",
@@ -1186,6 +1510,30 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/CSIndicecomorbilidad"
+      },
+      "name" : "Indicecomorbilidad",
+      "description" : "Indicecomorbilidad",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSMedioNotificacion"
+      },
+      "name" : "MedioNotificación",
+      "description" : "MedioNotificación",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/CSModalidadAtencionCodigo"
       },
       "name" : "Modalidad Atencion Codigo",
@@ -1198,10 +1546,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSMotivoDerivacion"
+        "reference" : "CodeSystem/CSMotivoCierreInterconsulta"
       },
-      "name" : "MotivoDerivacion",
-      "description" : "MotivoDerivacion",
+      "name" : "MotivoCierreInterconsulta",
+      "description" : "MotivoCierreInterconsulta",
       "exampleBoolean" : false
     },
     {
@@ -1210,10 +1558,22 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSMotivoNoPertinencia"
+        "reference" : "CodeSystem/CSMotivoNoContactabilidad"
       },
-      "name" : "MotivoNoPertinencia",
-      "description" : "MotivoNoPertinencia",
+      "name" : "MotivoNoContactabilidad",
+      "description" : "MotivoNoContactabilidad",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSPertinenciaInterconsulta"
+      },
+      "name" : "PertinenciaInterconsulta",
+      "description" : "PertinenciaInterconsulta",
       "exampleBoolean" : false
     },
     {
@@ -1234,10 +1594,46 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/CSSospechaPatologia"
+      },
+      "name" : "SospechaPatologia",
+      "description" : "SospechaPatologia",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/CSSospechaPatologiaGes"
       },
       "name" : "SospechaPatologiaGes",
       "description" : "SospechaPatologiaGes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSTipoCodDiagnostica"
+      },
+      "name" : "TipoCodDiagnostica",
+      "description" : "TipoCodDiagnostica",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSTipoConsulta"
+      },
+      "name" : "Tipo Consulta",
+      "description" : "Tipo Consulta",
       "exampleBoolean" : false
     },
     {
@@ -1314,6 +1710,15 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "EspecificacionesTecnicas.html"
+        }],
+        "nameUrl" : "EspecificacionesTecnicas.html",
+        "title" : "Especificaciones Tecnicas",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "Objetivos.html"
         }],
         "nameUrl" : "Objetivos.html",
@@ -1345,6 +1750,15 @@
         }],
         "nameUrl" : "Terminologias.html",
         "title" : "Terminologias",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Transacciones.html"
+        }],
+        "nameUrl" : "Transacciones.html",
+        "title" : "Transacciones",
         "generation" : "markdown"
       }]
     },

@@ -255,10 +255,10 @@ Description: "interconsulta"
 * #3 "Derivación"
 
 
-ValueSet: VSMotivoDerivacion
-Id: VSMotivoDerivacion
-Title: "MotivoDerivacion"
-Description: "MotivoDerivacion"
+ValueSet: VSDestinoReferenciaCodigo
+Id: VSDestinoReferenciaCodigo
+Title: "DestinoReferenciaCodigo"
+Description: "DestinoReferenciaCodigo"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -268,12 +268,12 @@ Description: "MotivoDerivacion"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSMotivoDerivacion
+* codes from system CSDestinoReferenciaCodigo
 
-CodeSystem: CSMotivoDerivacion
-Id: CSMotivoDerivacion
-Title: "MotivoDerivacion"
-Description: "MotivoDerivacion"
+CodeSystem: CSDestinoReferenciaCodigo
+Id: CSDestinoReferenciaCodigo
+Title: "DestinoReferenciaCodigo"
+Description: "DestinoReferenciaCodigo"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -284,10 +284,11 @@ Description: "MotivoDerivacion"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Derivado a Nivel Secundario"
-* #2 "Derivado a APS"
-* #3 "Derivado a Extra Sistema"
-* #4 "Derivado a Hospital Digital"
+* #1 "Nivel Secundario"
+* #2 "APS"
+* #3 "Extra Sistema"
+* #4 "Hospital Digital"
+* #5 "Establecimiento de alta complejidad"
 
 ValueSet: VSEstablecimientoDestinoCodigo
 Id: VSEstablecimientoDestinoCodigo
@@ -447,10 +448,10 @@ Description: "DocAcreditacionCuidador"
 * #5 "Documento de que acredita calidad de cuidador/a de Centro de Apoyo Comunitario para Personas con Demencia (MINSAL)"
 * #6 "Credencial de cuidador/a Registro Social de Hogares (MIDESOF)"
 
-ValueSet: VSMotivoNoPertinencia
-Id: VSMotivoNoPertinencia
-Title: "MotivoNoPertinencia"
-Description: "MotivoNoPertinencia"
+ValueSet: VSPertinenciaInterconsulta
+Id: VSPertinenciaInterconsulta
+Title: "PertinenciaInterconsulta"
+Description: "PertinenciaInterconsulta"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -460,12 +461,12 @@ Description: "MotivoNoPertinencia"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSMotivoNoPertinencia
+* codes from system CSPertinenciaInterconsulta
 
-CodeSystem: CSMotivoNoPertinencia
-Id: CSMotivoNoPertinencia
-Title: "MotivoNoPertinencia"
-Description: "MotivoNoPertinencia"
+CodeSystem: CSPertinenciaInterconsulta
+Id: CSPertinenciaInterconsulta
+Title: "PertinenciaInterconsulta"
+Description: "PertinenciaInterconsulta"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -476,9 +477,9 @@ Description: "MotivoNoPertinencia"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "No cumple reglas de derivación"
-* #2 "No respeta criterios de inclusión"
-* #3 "Otro"
+* #1 "Pertinente"
+* #2 "Pertinente Incompleta"
+* #3 "No Pertinente"
 
 ValueSet: VSModalidadAtencionCodigo
 Id: VSModalidadAtencionCodigo
@@ -513,9 +514,297 @@ Description: "Modalidad Atencion Codigo"
 * #2 "Remota"
 * #3 "Telemedicina"
 
+ValueSet: VSMedioNotificacion
+Id: VSMedioNotificacion
+Title: "MedioNotificación"
+Description: "MedioNotificación"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSMedioNotificacion
+
+CodeSystem: CSMedioNotificacion
+Id: CSMedioNotificacion
+Title: "MedioNotificación"
+Description: "MedioNotificación"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Correo"
+* #2 "SMS"
+* #3 "Llamada"
+* #4 "Whatsapp"
+* #5 "Presencial"
+
+
+ValueSet: VSMotivoNoContactabilidad
+Id: VSMotivoNoContactabilidad
+Title: "MotivoNoContactabilidad"
+Description: "MotivoNoContactabilidad"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSMotivoNoContactabilidad
+
+CodeSystem: CSMotivoNoContactabilidad
+Id: CSMotivoNoContactabilidad
+Title: "MotivoNoContactabilidad"
+Description: "MotivoNoContactabilidad"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "No contesta telefono."
+* #2 "No contesta correo"
+* #3 "Datos de contactos incorrectos"
+* #4 "Otro"
+
+ValueSet: VSTipoConsulta
+Id: VSTipoConsulta
+Title: "Tipo Consulta"
+Description: "Tipo Consulta"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoConsulta
+
+CodeSystem: CSTipoConsulta
+Id: CSTipoConsulta
+Title: "Tipo Consulta"
+Description: "Tipo Consulta"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Nueva"
+* #2 "Control"
+
+
+ValueSet: VSDestinoAtencionCodigo
+Id: VSDestinoAtencionCodigo
+Title: "DestinoAtenciónCodigo"
+Description: "DestinoAtenciónCodigo"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSDestinoAtencionCodigo
+
+CodeSystem: CSDestinoAtencionCodigo
+Id: CSDestinoAtencionCodigo
+Title: "DestinoAtenciónCodigo"
+Description: "DestinoAtenciónCodigo"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Control"
+* #2 "Alta"
+* #3 "Derivación"
+
+
+ValueSet: VSTipoCodDiagnostica
+Id: VSTipoCodDiagnostica
+Title: "TipoCodDiagnostica"
+Description: "TipoCodDiagnostica"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSTipoCodDiagnostica
+
+CodeSystem: CSTipoCodDiagnostica
+Id: CSTipoCodDiagnostica
+Title: "TipoCodDiagnostica"
+Description: "TipoCodDiagnostica"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "CIE11"
+* #2 "CIE10"
+* #3 "Snomed CT"
+
+
+ValueSet: VSMotivoCierreInterconsulta
+Id: VSMotivoCierreInterconsulta
+Title: "MotivoCierreInterconsulta"
+Description: "MotivoCierreInterconsulta"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSMotivoCierreInterconsulta
+
+CodeSystem: CSMotivoCierreInterconsulta
+Id: CSMotivoCierreInterconsulta
+Title: "MotivoCierreInterconsulta"
+Description: "MotivoCierreInterconsulta"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+
+* #1 "GES (0)"
+* #2 "Atención Realizada (1)"
+* #3 "Corresponde a la realización del examen procedimiento ejecutado (2)"
+* #4 "Atención Otorgada en el Extra sistema (4)"
+* #5 "No beneficiario (5)"
+* #6 "Renuncia o rechazo voluntario (6)"
+* #7 "Recuperación espontánea (7)"
+* #8 "Inasistencia (3 NSP) (8)"
+* #9 "Fallecimiento (9)"
+* #10 "Solicitud de indicación duplicada (10)"
+* #11 "Contacto no corresponde (11)"
+* #12 "Traslado coordinado (12)"
+* #13 "No pertinencia (13)"
+* #14 "Error de digitación(15)"
+* #15 "Atención por resolutividad (16)"
+* #16 "Atención por telemedicina (17)"
+* #17 "Modificación de condicion clínica del paciente (18)"
+* #18 "Atención hospital digital (19)"
+
+ValueSet: VSIndicecomorbilidad
+Id: VSIndicecomorbilidad
+Title: "Indicecomorbilidad"
+Description: "Indicecomorbilidad"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSIndicecomorbilidad
+
+CodeSystem: CSIndicecomorbilidad
+Id: CSIndicecomorbilidad
+Title: "Indicecomorbilidad"
+Description: "Indicecomorbilidad"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #G0 "Sin Riesgo, sin condiciones crónicas o riesgo no identificado "
+* #G1 "Riesgo Leve, 1 condición crónica"
+* #G2 "Riesgo Moderado, 2 a 4 condiciones crónicas"
+* #G3 "Riesgo Alto, 5 o más condiciones crónicas"
+
+
+ValueSet: VSSospechaPatologia
+Id: VSSospechaPatologia
+Title: "SospechaPatologia"
+Description: "SospechaPatologia"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSSospechaPatologia
+
+CodeSystem: CSSospechaPatologia
+Id: CSSospechaPatologia
+Title: "SospechaPatologia"
+Description: "SospechaPatologia"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #I120 "Enfermedad renal Hipertensiva con insuficicencia renal"
+* #N184 "Enfermedad renal crónica, etapa 4 "
+* #N189 "Enfermedad renal crónica, no especificada "
+* #Q602 "Agenesia renal, sin otra especificación"
+* #Q603 "Hipoplasia renal, unilateral"
 
 /*
-
 ValueSet: VS
 Id: VS
 Title: ""
@@ -548,3 +837,4 @@ Description: ""
 * # ""
 
 */
+ 

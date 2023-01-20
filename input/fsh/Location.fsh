@@ -5,7 +5,6 @@ Title: "LocationLE"
 Description: "LocationLE"
 
 * identifier 1..1
-  * system 1..1
   * value 1..1
 * identifier ^short = "Código del establecimiento"
 * identifier ^definition = "Código del establecimiento"

@@ -19,10 +19,18 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "Appointment.contained","Appointment.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"Appointment.extension","Appointment.extension","","extensions
-user content","",0,*,"","","","Extension {[]} {[]}
-","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
+"Appointment.extension","Appointment.extension","","","",1,*,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Appointment.extension:MedioNotificacion","Appointment.extension","MedioNotificacion","","",0,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion]]} {[]}
+","MedioNotificacion","MedioNotificacion","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Appointment.extension:Contactado","Appointment.extension","Contactado","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/Contactado]]} {[]}
+","Contactado","Contactado","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Appointment.modifierExtension","Appointment.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -45,7 +53,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Appointment.identifier.type","Appointment.identifier.type","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Description of identifier","A coded type for the identifier that can be used to determine which identifier to use for a specific purpose.","This element deals only with general categories of identifiers.  It SHOULD not be used for codes that correspond 1..1 with the Identifier.system. Some identifiers may fall into multiple categories due to common usage.   Where the system is known, a type is unnecessary because the type is always part of the system definition. However systems often need to handle identifiers where the system is not known. There is not a 1:1 relationship between type and system, since many different systems have the same type.","Allows users to make use of identifiers when the identifier system is not known.","","","","","","","",,"extensible","A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.","http://hl7.org/fhir/ValueSet/identifier-type","",,,,"Identifier.type",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","CX.5"
-"Appointment.identifier.system","Appointment.identifier.system","","","",1,1,"Y","","Y","uri {[]} {[]}
+"Appointment.identifier.system","Appointment.identifier.system","","","",0,1,"","","Y","uri {[]} {[]}
 ","The namespace for the identifier value","Establishes the namespace for the value - that is, a URL that describes a set values that are unique.","Identifier.system is always case sensitive.","There are many sets  of identifiers.  To perform matching of two identifiers, we need to know what set we're dealing with. The system identifies a particular set of unique identifiers.","","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""http://www.acme.com/identifiers/patient""/>","","",,,,,"",,,,"Identifier.system",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","II.root or Role.id.root","CX.4 / EI-2-4"
 "Appointment.identifier.value","Appointment.identifier.value","","","",1,1,"Y","","Y","string {[]} {[]}
@@ -92,7 +100,7 @@ This element is labeled as a modifier because the status contains the code enter
 "Appointment.supportingInformation","Appointment.supportingInformation","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
 ","Additional information to support the appointment","Additional information to support the appointment provided when making the appointment.","","","","","","","","","",,,,,"",,,,"Appointment.supportingInformation",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo",".inboundRelationship[@typeCode = 'SPRT'].observation","ATTACH","FiveWs.context"
-"Appointment.start","Appointment.start","","","",1,1,"Y","","Y","instant {[]} {[]}
+"Appointment.start","Appointment.start","","","",0,1,"Y","","Y","instant {[]} {[]}
 ","When appointment is to take place","Date/Time that the appointment is to take place.","","","","","","","","","",,,,,"",,,,"Appointment.start",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.occurrence[x]",".effectiveTime.low","DTSTART","FiveWs.init","ARQ-11.1, SCH-11.4 / TQ1-7"
 "Appointment.end","Appointment.end","","","",0,1,"","","Y","instant {[]} {[]}
@@ -114,7 +122,7 @@ This element is labeled as a modifier because the status contains the code enter
 ","Detailed information and instructions for the patient","While Appointment.comment contains information for internal use, Appointment.patientInstructions is used to capture patient facing information about the Appointment (e.g. please bring your referral or fast from 8pm night before).","","","","","","","","","",,,,,"",,,,"Appointment.patientInstruction",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".subjectOf.observation[@moodCode = 'EVN'][code = 'annotation'].value","DESCRIPTION (for patient use)","NTE-3"
 "Appointment.basedOn","Appointment.basedOn","","incomingReferral
-","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
+","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
 ","The service request this appointment is allocated to assess","The service request this appointment is allocated to assess (e.g. incoming referral or procedure request).","","","","","","","","","",,,,,"",,,,"Appointment.basedOn",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.basedOn",".outboundRelationship[@typeCode = 'FLFS'].act[@classCode < 'ActCareProvisionRequestType'][@moodCode = 'RQO']"
 "Appointment.participant","Appointment.participant","","","",1,*,"","","","BackboneElement {[]} {[]}

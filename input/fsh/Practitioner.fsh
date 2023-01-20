@@ -22,7 +22,7 @@ Description: "PractitionerLE"
 * identifier[RUN].type 1..1 MS
   * coding 1..1 MS
     * code 1..1 MS
-    * display 1..1 MS
+    * display 0..1 MS
     * system 1..1 MS
 * identifier[RUN].type.coding.code = #1
 //
@@ -144,7 +144,7 @@ Description: "PractitionerLE"
   * coding 0..1 MS
     * code 1..1 MS
     * system 0..1 MS
-    * display 1..1 MS
+    * display 0..1 MS
   * text 1..1 MS
 * qualification[Cert].code.text ^short = "Texto libre del Título o Certificado Profesional especificado"
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
@@ -173,7 +173,7 @@ Description: "PractitionerLE"
   * coding 0..1 MS
     * code 1..1 MS
     * system 0..1 MS
-    * display 1..1 MS
+    * display 0..1 MS
   * text 1..1 MS
 * qualification[Esp].code.coding.system MS
 * qualification[Esp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
@@ -199,7 +199,7 @@ Description: "PractitionerLE"
   * coding 0..1 MS
     * code 1..1 MS
     * system 0..1 MS
-    * display 1..1 MS
+    * display 0..1 MS
   * text 1..1 MS
 * qualification[SubEsp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
 * qualification[SubEsp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores."

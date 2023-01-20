@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"8.7"}
-    h3,h4,h5,h6{--heading-prefix:"8.7"}</style>
+    <style type="text/css">h2{--heading-prefix:"10.14"}
+    h3,h4,h5,h6{--heading-prefix:"10.14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -118,6 +118,16 @@
   </li>
   <li>
     <a href="Terminologias.html">Terminologias</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificaciones Técnicas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Transacciones.html">Transacciones</a>
+      </li>
+    </ul>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -216,7 +226,7 @@
         
           Active
           
-            as of 2023-01-19
+            as of 2023-01-20
           
         
       </td>
@@ -259,7 +269,6 @@
   <tr><td>Definition</td><td><p>VS de los codigos DEIS</p>
 <span style='color:DarkGray;text-decoration:line-through'><p>URL en donde se indican el conjunto de ubicaciones deseadas</p>
 </span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Location.identifier.value"> </a><span style="color: grey">4.</span> <b>Location.identifier.value</b><a href="#diff_Location.identifier.value" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>Código del establecimiento</p>
 <span style='color:DarkGray;text-decoration:line-through'><p>Valor de identificación con el cual se asigna un identificador a este recurso</p>
@@ -337,7 +346,7 @@
   <tr><td>Definition</td><td><p>VS de los codigos DEIS</p>
 <span style='color:DarkGray;text-decoration:line-through'><p>Establishes the namespace for the value - that is, a URL that describes a set values that are unique.</p>
 </span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1<span style='color:DarkGray;text-decoration:line-through'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
@@ -408,7 +417,7 @@
 <span style='color:DarkGray;text-decoration:line-through'><p>Indicates the type of function performed at the location.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>*</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style='color:DarkGray'>The codes SHALL be taken from <a href="http://terminology.hl7.org/5.0.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html">ServiceDeliveryLocationRoleType</a>; other codes may be used where these codes are not suitable</span><br/><span style='color:DarkGray'><p>Indicates the type of function performed at the location.</p>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td><span style='color:DarkGray'>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html">ServiceDeliveryLocationRoleType</a>; other codes may be used where these codes are not suitable</span><br/><span style='color:DarkGray'><p>Indicates the type of function performed at the location.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
@@ -513,7 +522,7 @@
 <span style='color:DarkGray;text-decoration:line-through'><p>The name of the city, town, suburb, village or other community or delivery center.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSCodigosComunaCL.html">Códigos de Comunas en Chile</a><span style='color:DarkGray;text-decoration:line-through'>For codes, see <a href="http://hl7.org/fhir/R4/terminologies.html#unbound">(unbound)</a></span>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSCodigosComunaCL.html">Códigos de Comunas en Chile</a><span style='color:DarkGray;text-decoration:line-through'>For codes, see <a href="http://hl7.org/fhir/R4/terminologies.html#unbound">(unbound)</a></span>
 Códigos Comuna, Ministerio del Interior, 201
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span></td></tr>
@@ -529,7 +538,7 @@ Códigos Comuna, Ministerio del Interior, 201
 <span style='color:DarkGray;text-decoration:line-through'><p>The name of the administrative area (county).</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSCodigosProvinciasCL.html">Códigos de Provincias en Chile</a><span style='color:DarkGray;text-decoration:line-through'>For codes, see <a href="http://hl7.org/fhir/R4/terminologies.html#unbound">(unbound)</a></span>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSCodigosProvinciasCL.html">Códigos de Provincias en Chile</a><span style='color:DarkGray;text-decoration:line-through'>For codes, see <a href="http://hl7.org/fhir/R4/terminologies.html#unbound">(unbound)</a></span>
 Códigos Provincia, Ministerio del Interior, 201
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span></td></tr>
@@ -547,7 +556,7 @@ Códigos Provincia, Ministerio del Interior, 201
 <span style='color:DarkGray;text-decoration:line-through'><p>Sub-unit of a country with limited sovereignty in a federally organized country. A code may be used if codes are in common use (e.g. US 2 letter state codes).</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSCodigosRegionesCL.html">Códigos de Regiones en Chile</a><span style='color:DarkGray;text-decoration:line-through'>For codes, see <a href="http://hl7.org/fhir/R4/terminologies.html#unbound">(unbound)</a></span>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSCodigosRegionesCL.html">Códigos de Regiones en Chile</a><span style='color:DarkGray;text-decoration:line-through'>For codes, see <a href="http://hl7.org/fhir/R4/terminologies.html#unbound">(unbound)</a></span>
 Códigos Regiones, Ministerio del Interior, 201
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span></td></tr>
@@ -561,7 +570,7 @@ Códigos Regiones, Ministerio del Interior, 201
 <span style='color:DarkGray;text-decoration:line-through'><p>Country - a nation as commonly understood or generally accepted.</p>
 </span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td><span style='color:DarkGray'>0</span>..<span style='color:DarkGray'>1</span></td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-CodPais.html">Códigos de Países</a><span style='color:DarkGray;text-decoration:line-through'>For codes, see <a href="http://hl7.org/fhir/R4/terminologies.html#unbound">(unbound)</a></span></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-CodPais.html">Códigos de Países</a><span style='color:DarkGray;text-decoration:line-through'>For codes, see <a href="http://hl7.org/fhir/R4/terminologies.html#unbound">(unbound)</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><span style='color:DarkGray'><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
@@ -832,7 +841,7 @@ A coded type for an identifier that can be used to determine which identifier to
   <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="Location.identifier.system"> </a><span style="color: grey">15.</span> <b>Location.identifier.system</b><a href="#Location.identifier.system" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z" fill="navy"></path></svg></a></span></td></tr>
   <tr><td>Definition</td><td><p>VS de los codigos DEIS</p>
 </td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
@@ -891,7 +900,7 @@ Códigos del estado de la localización de HL7 FHI
   <tr><td>Definition</td><td><p>The operational status covers operation values most relevant to beds (but can also apply to rooms/units/chairs/etc. such as an isolation unit/dialysis chair). This typically covers concepts such as contamination, housekeeping, and other activities like maintenance.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://terminology.hl7.org/5.0.0/ValueSet-v2-0116.html">hl7VS-bedStatus</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHOULD be taken from <a href="http://terminology.hl7.org/3.1.0/ValueSet-v2-0116.html">hl7VS-bedStatus</a>
 The operational status if the location (where typically a bed/room)
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a></td></tr>
@@ -952,7 +961,7 @@ Indicates whether a resource instance represents a specific location or a class 
   <tr><td>Definition</td><td><p>Indica el tipo o función que se ejecuta en la locacalización</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/5.0.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html">ServiceDeliveryLocationRoleType</a>; other codes may be used where these codes are not suitable
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html">ServiceDeliveryLocationRoleType</a>; other codes may be used where these codes are not suitable
 Indicates the type of function performed at the location
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td></tr>
@@ -1012,7 +1021,7 @@ Indicates the type of function performed at the location
   <tr><td>Definition</td><td><p>Tipos de localización segun tabla de HL7 Internacional. Es de tipo extensible para poder agregar mas elementos en caso de ser requerido</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/5.0.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html">ServiceDeliveryLocationRoleType</a>; other codes may be used where these codes are not suitable
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="http://terminology.hl7.org/3.1.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html">ServiceDeliveryLocationRoleType</a>; other codes may be used where these codes are not suitable
 Códigos V3 de Servicios brindado
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td></tr>
@@ -1257,7 +1266,7 @@ The type of an address (physical / postal)
   <tr><td>Definition</td><td><p>Campo para Comuna de residencia. Se usa el valueSet de códigos de comunas definidos a nivel naciona.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSCodigosComunaCL.html">Códigos de Comunas en Chile</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSCodigosComunaCL.html">Códigos de Comunas en Chile</a>
 Códigos Comuna, Ministerio del Interior, 201
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
@@ -1272,7 +1281,7 @@ Códigos Comuna, Ministerio del Interior, 201
   <tr><td>Definition</td><td><p>Campo para Provincia de Residencia. Se usa el valueSet de códigos de provicias definidos a nivel naciona.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSCodigosProvinciasCL.html">Códigos de Provincias en Chile</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSCodigosProvinciasCL.html">Códigos de Provincias en Chile</a>
 Códigos Provincia, Ministerio del Interior, 201
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
@@ -1289,7 +1298,7 @@ Códigos Provincia, Ministerio del Interior, 201
   <tr><td>Definition</td><td><p>Campo Región. Se usa el valueSet de códigos de regiones definidos a nivel naciona.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-VSCodigosRegionesCL.html">Códigos de Regiones en Chile</a>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-VSCodigosRegionesCL.html">Códigos de Regiones en Chile</a>
 Códigos Regiones, Ministerio del Interior, 201
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
@@ -1313,7 +1322,7 @@ Códigos Regiones, Ministerio del Interior, 201
   <tr><td>Definition</td><td><p>Campo para País de Residencia</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="file://C:\Users\jmansilla\ownCloud\IGs\_FHIR_Core_CH\output/ValueSet-CodPais.html">Códigos de Países</a></td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/terminologies.html">Binding</a></td><td>The codes SHALL be taken from <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/ValueSet-CodPais.html">Códigos de Países</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/search.html#summary">Summary</a></td><td>true</td></tr>
@@ -1661,7 +1670,7 @@ The days of the week
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jan 19, 2023 11:18-0300">2023-01-19</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 20, 2023 14:40-0300">2023-01-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

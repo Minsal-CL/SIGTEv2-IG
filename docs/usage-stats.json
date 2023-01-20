@@ -23,6 +23,95 @@
       ]
     },
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/Contactado",
+      "title": "Contactado",
+      "types": [
+        "boolean",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo",
+      "title": "Destino Atención Codigo",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
       "title": "DigitoVerificador",
       "types": [
@@ -108,8 +197,27 @@
       ]
     },
     {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaLE",
-      "title": "Motivo No Pertinencia",
+      "url": "http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion",
+      "title": "MedioNotificacion",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta",
+      "title": "Motivo Cierre Interconsulta",
       "types": [
         "CodeableConcept",
         "CodeableConcept",
@@ -129,6 +237,25 @@
     {
       "url": "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta",
       "title": "Origen Interconsulta",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta",
+      "title": "Pertinencia Interconsulta",
       "types": [
         "CodeableConcept",
         "CodeableConcept",
@@ -364,11 +491,33 @@
     ],
     "Appointment": [
       {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentAtenderLE",
+        "title": "Appointment Atender LE"
+      },
+      {
         "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE",
         "title": "AppointmentLE"
       }
     ],
+    "CarePlan": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CarePlanLE",
+        "title": "CarePlanLE"
+      }
+    ],
     "Condition": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderLE1",
+        "title": "CondicionAtenderLE1"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderLE2",
+        "title": "CondicionAtenderLE2"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderLE3",
+        "title": "CondicionAtenderLE3"
+      },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionLE1",
         "title": "CondicionLE1"
@@ -382,7 +531,17 @@
         "title": "CondicionLE3"
       }
     ],
+    "DocumentReference": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/DocumentReferenceLE",
+        "title": "Document Reference LE"
+      }
+    ],
     "Encounter": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE",
+        "title": "Encounter Atender LE"
+      },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/EncounterLE",
         "title": "EncounterLE"
@@ -396,15 +555,31 @@
     ],
     "MessageHeader": [
       {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderAgendarLE",
+        "title": "MessageHeader Agendar LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderAtenderLE",
+        "title": "MessageHeader Revisar LE"
+      },
+      {
         "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE",
         "title": "MessageHeaderLE"
       },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderRevisarLE",
         "title": "MessageHeader Revisar LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderTerminarLE",
+        "title": "MessageHeader Terminar LE"
       }
     ],
     "Observation": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE",
+        "title": "ObservationAtenderLE"
+      },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationLE",
         "title": "ObservationLE"
@@ -442,8 +617,12 @@
     ],
     "ServiceRequest": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestAgendar",
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestAgendarLE",
         "title": "Service Request Agendar LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestAtenderLE",
+        "title": "Service Request LE Atender"
       },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE",
@@ -456,6 +635,10 @@
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestRevisarLE",
         "title": "Service Request LE Revisar"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestTerminarLE",
+        "title": "Service Request Agendar LE"
       }
     ]
   },
@@ -480,7 +663,8 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
       "Patient.contact.name.family",
-      "Patient.name.family"
+      "Patient.name.family",
+      "Practitioner.name.family"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
@@ -522,6 +706,12 @@
     "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises": [
       "Patient"
     ],
+    "http://minsal.cl/listaespera/StructureDefinition/Contactado": [
+      "Appointment"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo": [
+      "ServiceRequest"
+    ],
     "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
       "Patient.identifier",
       "Practitioner.identifier"
@@ -533,20 +723,32 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolean": [
+      "CarePlan",
+      "Encounter",
       "Patient",
       "ServiceRequest"
     ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtInteger": [
+      "DocumentReference"
+    ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtString": [
+      "Encounter",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero": [
       "Patient"
     ],
-    "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaLE": [
-      "ServiceRequest.doNotPerform"
+    "http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion": [
+      "Appointment"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta": [
+      "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta": [
       "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta": [
+      "ServiceRequest.doNotPerform"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena": [
       "Patient"
@@ -557,15 +759,12 @@
     "http://minsal.cl/listaespera/StructureDefinition/TipoOtroTelefono": [
       "Patient.telecom"
     ],
-    "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises": [
+    "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises": [
       "Patient",
       "Patient.identifier.type"
     ],
-    "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/IdContacto": [
+    "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto": [
       "Patient.contact"
-    ],
-    "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/SegundoApellido": [
-      "Practitioner.name.family"
     ]
   }
 }
