@@ -1,7 +1,7 @@
 ValueSet: VSTipoOtroTelefono
 Id: VSTipoOtroTelefono
-Title: "TipoOtroTelefono"
-Description: "TipoOtroTelefono"
+Title: "Tipo Otro Telefono"
+Description: "Tipo Otro Telefono"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -15,8 +15,8 @@ Description: "TipoOtroTelefono"
 
 CodeSystem: CSTipoOtroTelefono
 Id: CSTipoOtroTelefono
-Title: "TipoOtroTelefono"
-Description: "TipoOtroTelefono"
+Title: "Tipo Otro Telefono"
+Description: "Tipo Otro Telefono"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -36,8 +36,8 @@ Description: "TipoOtroTelefono"
 
 ValueSet: VSTipoIdentificador
 Id: VSTipoIdentificador
-Title: "TipoIdentificador"
-Description: "TipoIdentificador"
+Title: "Tipo Identificador"
+Description: "Tipo Identificador"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -51,8 +51,8 @@ Description: "TipoIdentificador"
 
 CodeSystem: CSTipoIdentificador
 Id: CSTipoIdentificador
-Title: "TipoIdentificador"
-Description: "TipoIdentificador"
+Title: "Tipo Identificador"
+Description: "Tipo Identificador"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -72,8 +72,8 @@ Description: "TipoIdentificador"
 
 ValueSet: VSIdentidaddeGenero
 Id: VSIdentidaddeGenero
-Title: "IdentidaddeGenero"
-Description: "IdentidaddeGenero"
+Title: "Identidad de Genero"
+Description: "Identidad de Genero"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -87,8 +87,8 @@ Description: "IdentidaddeGenero"
 
 CodeSystem: CSIdentidaddeGenero
 Id: CSIdentidaddeGenero
-Title: "IdentidaddeGenero"
-Description: "IdentidaddeGenero"
+Title: "Identidad de Genero"
+Description: "Identidad de Genero"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -109,8 +109,8 @@ Description: "IdentidaddeGenero"
 
 ValueSet: VSPuebloIndigena
 Id: VSPuebloIndigena
-Title: "PuebloIndigena"
-Description: "PuebloIndigena"
+Title: "Pueblo Indigena"
+Description: "Pueblo Indigena"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -124,8 +124,8 @@ Description: "PuebloIndigena"
 
 CodeSystem: CSPuebloIndigena
 Id: CSPuebloIndigena
-Title: "PuebloIndigena"
-Description: "PuebloIndigena"
+Title: "Pueblo Indigena"
+Description: "Pueblo Indigena"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -150,8 +150,8 @@ Description: "PuebloIndigena"
 
 ValueSet: VSDerivadoParaCodigo
 Id: VSDerivadoParaCodigo
-Title: "DerivadoParaCodigo"
-Description: "DerivadoParaCodigo"
+Title: "Derivado Para"
+Description: "Derivado Para"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -165,8 +165,8 @@ Description: "DerivadoParaCodigo"
 
 CodeSystem: CSDerivadoParaCodigo
 Id: CSDerivadoParaCodigo
-Title: "DerivadoParaCodigo"
-Description: "DerivadoParaCodigo"
+Title: "Derivado Para"
+Description: "Derivado Para"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -183,48 +183,10 @@ Description: "DerivadoParaCodigo"
 * #4 "Seguimiento"
 * #5 "Otro"
 
-
-
-ValueSet: VSSospechaPatologiaGes
-Id: VSSospechaPatologiaGes
-Title: "SospechaPatologiaGes"
-Description: "SospechaPatologiaGes"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSSospechaPatologiaGes
-
-CodeSystem: CSSospechaPatologiaGes
-Id: CSSospechaPatologiaGes
-Title: "SospechaPatologiaGes"
-Description: "SospechaPatologiaGes"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #I120 "asdf"
-* #N184 "asdf"
-* #N189 "asdf"
-* #Q602 "asdf"
-* #Q603 "asdf"
-
-
 ValueSet: VSinterconsulta
 Id: VSinterconsulta
-Title: "interconsulta"
-Description: "interconsulta"
+Title: "Interconsulta"
+Description: "Interconsulta"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -238,8 +200,8 @@ Description: "interconsulta"
 
 CodeSystem: CSinterconsulta
 Id: CSinterconsulta
-Title: "interconsulta"
-Description: "interconsulta"
+Title: "Interconsulta"
+Description: "Interconsulta"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -257,8 +219,8 @@ Description: "interconsulta"
 
 ValueSet: VSDestinoReferenciaCodigo
 Id: VSDestinoReferenciaCodigo
-Title: "DestinoReferenciaCodigo"
-Description: "DestinoReferenciaCodigo"
+Title: "Destino Referencia Codigo"
+Description: "Destino Referencia Codigo"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -272,8 +234,8 @@ Description: "DestinoReferenciaCodigo"
 
 CodeSystem: CSDestinoReferenciaCodigo
 Id: CSDestinoReferenciaCodigo
-Title: "DestinoReferenciaCodigo"
-Description: "DestinoReferenciaCodigo"
+Title: "Destino Referencia Codigo"
+Description: "Destino Referencia Codigo"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -292,8 +254,8 @@ Description: "DestinoReferenciaCodigo"
 
 ValueSet: VSEstablecimientoDestinoCodigo
 Id: VSEstablecimientoDestinoCodigo
-Title: "EstablecimientoDestinoCodigo"
-Description: "EstablecimientoDestinoCodigo"
+Title: "Establecimiento Destino Codigo"
+Description: "Establecimiento Destino Codigo"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -307,8 +269,8 @@ Description: "EstablecimientoDestinoCodigo"
 
 CodeSystem: CSEstablecimientoDestinoCodigo
 Id: CSEstablecimientoDestinoCodigo
-Title: "EstablecimientoDestinoCodigo"
-Description: "EstablecimientoDestinoCodigo"
+Title: "Establecimiento Destino Codigo"
+Description: "Establecimiento Destino Codigo"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -414,8 +376,8 @@ Description: "Estado Interconsulta"
 
 ValueSet: VSDocAcreditacionCuidador
 Id: VSDocAcreditacionCuidador
-Title: "DocAcreditacionCuidador"
-Description: "DocAcreditacionCuidador"
+Title: "Documento Acreditacion Cuidador"
+Description: "Documento Acreditacion Cuidador"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -429,8 +391,8 @@ Description: "DocAcreditacionCuidador"
 
 CodeSystem: CSDocAcreditacionCuidador
 Id: CSDocAcreditacionCuidador
-Title: "DocAcreditacionCuidador"
-Description: "DocAcreditacionCuidador"
+Title: "Documento Acreditacion Cuidador"
+Description: "Documento Acreditacion Cuidador"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -450,8 +412,8 @@ Description: "DocAcreditacionCuidador"
 
 ValueSet: VSPertinenciaInterconsulta
 Id: VSPertinenciaInterconsulta
-Title: "PertinenciaInterconsulta"
-Description: "PertinenciaInterconsulta"
+Title: "Pertinencia Interconsulta"
+Description: "Pertinencia Interconsulta"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -465,8 +427,8 @@ Description: "PertinenciaInterconsulta"
 
 CodeSystem: CSPertinenciaInterconsulta
 Id: CSPertinenciaInterconsulta
-Title: "PertinenciaInterconsulta"
-Description: "PertinenciaInterconsulta"
+Title: "Pertinencia Interconsulta"
+Description: "Pertinencia Interconsulta"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -516,8 +478,8 @@ Description: "Modalidad Atencion Codigo"
 
 ValueSet: VSMedioNotificacion
 Id: VSMedioNotificacion
-Title: "MedioNotificación"
-Description: "MedioNotificación"
+Title: "Medio Notificación"
+Description: "Medio Notificación"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -531,8 +493,8 @@ Description: "MedioNotificación"
 
 CodeSystem: CSMedioNotificacion
 Id: CSMedioNotificacion
-Title: "MedioNotificación"
-Description: "MedioNotificación"
+Title: "Medio Notificación"
+Description: "Medio Notificación"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -552,8 +514,8 @@ Description: "MedioNotificación"
 
 ValueSet: VSMotivoNoContactabilidad
 Id: VSMotivoNoContactabilidad
-Title: "MotivoNoContactabilidad"
-Description: "MotivoNoContactabilidad"
+Title: "Motivo No Contactabilidad"
+Description: "Motivo No Contactabilidad"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -567,8 +529,8 @@ Description: "MotivoNoContactabilidad"
 
 CodeSystem: CSMotivoNoContactabilidad
 Id: CSMotivoNoContactabilidad
-Title: "MotivoNoContactabilidad"
-Description: "MotivoNoContactabilidad"
+Title: "Motivo No Contactabilidad"
+Description: "Motivo No Contactabilidad"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -619,8 +581,8 @@ Description: "Tipo Consulta"
 
 ValueSet: VSDestinoAtencionCodigo
 Id: VSDestinoAtencionCodigo
-Title: "DestinoAtenciónCodigo"
-Description: "DestinoAtenciónCodigo"
+Title: "Destino Atención Codigo"
+Description: "Destino Atención Codigo"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -634,8 +596,8 @@ Description: "DestinoAtenciónCodigo"
 
 CodeSystem: CSDestinoAtencionCodigo
 Id: CSDestinoAtencionCodigo
-Title: "DestinoAtenciónCodigo"
-Description: "DestinoAtenciónCodigo"
+Title: "Destino Atención Codigo"
+Description: "Destino Atención Codigo"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -653,8 +615,8 @@ Description: "DestinoAtenciónCodigo"
 
 ValueSet: VSTipoCodDiagnostica
 Id: VSTipoCodDiagnostica
-Title: "TipoCodDiagnostica"
-Description: "TipoCodDiagnostica"
+Title: "Tipo Codificación Diagnostica"
+Description: "Tipo Codificación Diagnostica"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -668,8 +630,8 @@ Description: "TipoCodDiagnostica"
 
 CodeSystem: CSTipoCodDiagnostica
 Id: CSTipoCodDiagnostica
-Title: "TipoCodDiagnostica"
-Description: "TipoCodDiagnostica"
+Title: "Tipo Codificación Diagnostica"
+Description: "Tipo Codificación Diagnostica"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -687,8 +649,8 @@ Description: "TipoCodDiagnostica"
 
 ValueSet: VSMotivoCierreInterconsulta
 Id: VSMotivoCierreInterconsulta
-Title: "MotivoCierreInterconsulta"
-Description: "MotivoCierreInterconsulta"
+Title: "Motivo Cierre Interconsulta"
+Description: "Motivo Cierre Interconsulta"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -702,8 +664,8 @@ Description: "MotivoCierreInterconsulta"
 
 CodeSystem: CSMotivoCierreInterconsulta
 Id: CSMotivoCierreInterconsulta
-Title: "MotivoCierreInterconsulta"
-Description: "MotivoCierreInterconsulta"
+Title: "Motivo Cierre Interconsulta"
+Description: "Motivo Cierre Interconsulta"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -736,8 +698,8 @@ Description: "MotivoCierreInterconsulta"
 
 ValueSet: VSIndicecomorbilidad
 Id: VSIndicecomorbilidad
-Title: "Indicecomorbilidad"
-Description: "Indicecomorbilidad"
+Title: "Indice Comorbilidad"
+Description: "Indice Comorbilidad"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -751,8 +713,8 @@ Description: "Indicecomorbilidad"
 
 CodeSystem: CSIndicecomorbilidad
 Id: CSIndicecomorbilidad
-Title: "Indicecomorbilidad"
-Description: "Indicecomorbilidad"
+Title: "Indice Comorbilidad"
+Description: "Indice Comorbilidad"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -771,8 +733,8 @@ Description: "Indicecomorbilidad"
 
 ValueSet: VSSospechaPatologia
 Id: VSSospechaPatologia
-Title: "SospechaPatologia"
-Description: "SospechaPatologia"
+Title: "Sospecha Patologia"
+Description: "Sospecha Patologia"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -786,8 +748,8 @@ Description: "SospechaPatologia"
 
 CodeSystem: CSSospechaPatologia
 Id: CSSospechaPatologia
-Title: "SospechaPatologia"
-Description: "SospechaPatologia"
+Title: "Sospecha Patologia"
+Description: "Sospecha Patologia"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -803,6 +765,9 @@ Description: "SospechaPatologia"
 * #N189 "Enfermedad renal crónica, no especificada "
 * #Q602 "Agenesia renal, sin otra especificación"
 * #Q603 "Hipoplasia renal, unilateral"
+
+
+
 
 /*
 ValueSet: VS
@@ -837,4 +802,5 @@ Description: ""
 * # ""
 
 */
- 
+
+

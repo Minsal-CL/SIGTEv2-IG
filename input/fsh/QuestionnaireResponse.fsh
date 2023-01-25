@@ -1,8 +1,8 @@
-Profile: QuestionnaireResponseLE
+Profile: QuestionnaireResponseInicioLE
 Parent: QuestionnaireResponse
-Id: QuestionnaireResponseLE
-Title: "QuestionnaireResponseLE"
-Description: "QuestionnaireResponseLE"
+Id: QuestionnaireResponseInicioLE
+Title: "QuestionnaireResponse Inicio LE"
+Description: "QuestionnaireResponse Inicio LE"
 
 * item.linkId = "resumen"
 * item.text = "Resumen"

@@ -24,12 +24,12 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.extension:PertinenciaAtencionBox","Encounter.extension","PertinenciaAtencionBox","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/ExtBoolean]]} {[]}
-","ExtBoolean","ExtBoolean","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Encounter.extension:PertinenciaAtencionBox","Encounter.extension","PertinenciaAtencionBox","","",1,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox]]} {[]}
+","ExtBool Pertinencia Atencion Box","ExtBool Pertinencia Atencion Box","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Encounter.extension:MotivoNoPertinencia","Encounter.extension","MotivoNoPertinencia","","",0,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/ExtString]]} {[]}
-","ExtString","ExtString","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Encounter.extension:MotivoNoPertinencia","Encounter.extension","MotivoNoPertinencia","","",0,1,"Y","","","Extension {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia]]} {[]}
+","ExtString MotivoNoPertinencia","ExtString MotivoNoPertinencia","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Encounter.modifierExtension","Encounter.modifierExtension","","extensions
@@ -66,8 +66,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.identifier.assigner","Encounter.identifier.assigner","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Organization that issued id (may be just text)","Organization that issued/manages the identifier.","The Identifier.assigner may omit the .reference element and only contain a .display element reflecting the name or other textual information about the assigning organization.","","","","","","","","",,,,,"",,,,"Identifier.assigner",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper","CX.4 / (CX.4,CX.9,CX.10)"
-"Encounter.status","Encounter.status","","","",1,1,"","Y","Y","code {[]} {[]}
-","planned | arrived | triaged | in-progress | onleave | finished | cancelled +","planned | arrived | triaged | in-progress | onleave | finished | cancelled +.","Note that internal business rules will determine the appropriate transitions that may occur between statuses (and also classes).","","","","","","","","",,"required","Current state of the encounter.","http://hl7.org/fhir/ValueSet/encounter-status|4.0.1","",,,,"Encounter.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Encounter.status","Encounter.status","","","",1,1,"Y","Y","Y","code {[]} {[]}
+","planned | arrived | triaged | in-progress | onleave | finished | cancelled +","planned | arrived | triaged | in-progress | onleave | finished | cancelled +.","Note that internal business rules will determine the appropriate transitions that may occur between statuses (and also classes).","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""in-progress""/>","","","",,"required","Current state of the encounter.","http://hl7.org/fhir/ValueSet/encounter-status|4.0.1","",,,,"Encounter.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.status",".statusCode","FiveWs.status","No clear equivalent in HL7 v2; active/finished could be inferred from PV1-44, PV1-45, PV2-24; inactive could be inferred from PV2-16"
 "Encounter.statusHistory","Encounter.statusHistory","","","",0,*,"","","","BackboneElement {[]} {[]}
 ","List of past encounter statuses","The status history permits the encounter resource to contain the status history without needing to read through the historical versions of the resource, or even have the server store them.","The current status is always found in the current version of the resource, not the status history.","","","","","","","","",,,,,"",,,,"Encounter.statusHistory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

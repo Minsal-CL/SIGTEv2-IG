@@ -1,0 +1,29 @@
+Profile: ServiceRequestAtenderLE
+Parent: ServiceRequest
+Id: ServiceRequestAtenderLE
+Title: "Service Request Atender LE"
+Description: "Service Request Atender LE"
+
+* extension contains DestinoAtencionCodigo named DestinoAtencionCodigo 1..1 MS
+
+// OBLIGATORIOS POR ESTANDAR
+* status MS
+* intent MS
+* subject MS
+
+* identifier 1..1 MS 
+* identifier ^slicing.discriminator[0].type = #value
+* identifier ^slicing.discriminator[0].path = "type.coding.code"
+* identifier ^slicing.discriminator[1].type = #value
+* identifier ^slicing.discriminator[1].path = "type.coding.system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slice creado para almacenar los identificadores"
+* identifier contains IdInterconsulta 1..1 MS
+
+* identifier[IdInterconsulta].type 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * code from VSTipoIdentificadorConsultas
+    * system 1..1 MS
+    * display 0..1 MS
+* identifier[IdInterconsulta].value 1..1 MS

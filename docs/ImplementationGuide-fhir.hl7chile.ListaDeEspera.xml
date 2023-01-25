@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-01-20T14:40:00-03:00"/>
+  <date value="2023-01-25T12:03:32-03:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -427,10 +427,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/AllergyIntoleranceLE"/>
+        <reference value="StructureDefinition/AllergyIntoleranceInicioLE"/>
       </reference>
-      <name value="AllergyIntoleranceLE"/>
-      <description value="AllergyIntoleranceLE"/>
+      <name value="AllergyIntolerance Inicio LE"/>
+      <description value="AllergyIntolerance Inicio LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -449,10 +449,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/AppointmentLE"/>
+        <reference value="StructureDefinition/AppointmentInicioLE"/>
       </reference>
-      <name value="AppointmentLE"/>
-      <description value="AppointmentLE"/>
+      <name value="Appointment Inicio LE"/>
+      <description value="Appointment Inicio LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -460,10 +460,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CarePlanLE"/>
+        <reference value="StructureDefinition/CarePlanAtenderLE"/>
       </reference>
-      <name value="CarePlanLE"/>
-      <description value="CarePlanLE"/>
+      <name value="CarePlan Atender LE"/>
+      <description value="CarePlan Atender LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -471,10 +471,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionAtenderLE1"/>
+        <reference value="StructureDefinition/CondicionAtender1LE"/>
       </reference>
-      <name value="CondicionAtenderLE1"/>
-      <description value="CondicionAtenderLE1"/>
+      <name value="Condicion Atender 1 LE"/>
+      <description value="Condicion Atender 1 LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -482,10 +482,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionAtenderLE2"/>
+        <reference value="StructureDefinition/CondicionAtender2LE"/>
       </reference>
-      <name value="CondicionAtenderLE2"/>
-      <description value="CondicionAtenderLE2"/>
+      <name value="Condicion Atender 2 LE"/>
+      <description value="Condicion Atender 2 LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -493,10 +493,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionAtenderLE3"/>
+        <reference value="StructureDefinition/CondicionAtender3LE"/>
       </reference>
-      <name value="CondicionAtenderLE3"/>
-      <description value="CondicionAtenderLE3"/>
+      <name value="Condicion Atender 3 LE"/>
+      <description value="Condicion Atender 3 LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -504,10 +504,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionLE1"/>
+        <reference value="StructureDefinition/CondicionInicio1LE"/>
       </reference>
-      <name value="CondicionLE1"/>
-      <description value="CondicionLE1"/>
+      <name value="Condicion Inicio 1 LE"/>
+      <description value="Condicion Inicio 1 LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -515,10 +515,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionLE2"/>
+        <reference value="StructureDefinition/CondicionInicio2LE"/>
       </reference>
-      <name value="CondicionLE2"/>
-      <description value="CondicionLE2"/>
+      <name value="Condicion Inicio 2 LE"/>
+      <description value="Condicion Inicio 2 LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -526,10 +526,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionLE3"/>
+        <reference value="StructureDefinition/CondicionInicio3LE"/>
       </reference>
-      <name value="CondicionLE3"/>
-      <description value="CondicionLE3"/>
+      <name value="Condicion Inicio 3 LE"/>
+      <description value="Condicion Inicio 3 LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -539,8 +539,8 @@
       <reference>
         <reference value="StructureDefinition/DocumentReferenceLE"/>
       </reference>
-      <name value="Document Reference LE"/>
-      <description value="Document Reference LE"/>
+      <name value="DocumentReference LE"/>
+      <description value="DocumentReference LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -559,10 +559,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/EncounterLE"/>
+        <reference value="StructureDefinition/EncounterInicioLE"/>
       </reference>
-      <name value="EncounterLE"/>
-      <description value="EncounterLE"/>
+      <name value="Encounter Inicio LE"/>
+      <description value="Encounter Inicio LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -572,30 +572,8 @@
       <reference>
         <reference value="StructureDefinition/LocationLE"/>
       </reference>
-      <name value="LocationLE"/>
-      <description value="LocationLE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MessageHeaderAgendarLE"/>
-      </reference>
-      <name value="MessageHeader Agendar LE"/>
-      <description value="MessageHeader Agendar LE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MessageHeaderAtenderLE"/>
-      </reference>
-      <name value="MessageHeader Revisar LE"/>
-      <description value="MessageHeader Revisar LE"/>
+      <name value="Location LE"/>
+      <description value="Location LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -614,32 +592,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MessageHeaderRevisarLE"/>
-      </reference>
-      <name value="MessageHeader Revisar LE"/>
-      <description value="MessageHeader Revisar LE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MessageHeaderTerminarLE"/>
-      </reference>
-      <name value="MessageHeader Terminar LE"/>
-      <description value="MessageHeader Terminar LE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/ObservationAtenderLE"/>
       </reference>
-      <name value="ObservationAtenderLE"/>
-      <description value="ObservationAtenderLE"/>
+      <name value="ObservationAtender LE"/>
+      <description value="ObservationAtender LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -649,8 +605,8 @@
       <reference>
         <reference value="StructureDefinition/ObservationLE"/>
       </reference>
-      <name value="ObservationLE"/>
-      <description value="ObservationLE"/>
+      <name value="Observation LE"/>
+      <description value="Observation LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -660,8 +616,8 @@
       <reference>
         <reference value="StructureDefinition/OrganizacionLE"/>
       </reference>
-      <name value="OrganizacionLE"/>
-      <description value="OrganizacionLE"/>
+      <name value="Organizacion LE"/>
+      <description value="Organizacion LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -671,8 +627,8 @@
       <reference>
         <reference value="StructureDefinition/PacienteLE"/>
       </reference>
-      <name value="PacienteLE"/>
-      <description value="PacienteLE"/>
+      <name value="Paciente LE"/>
+      <description value="Paciente LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -682,8 +638,8 @@
       <reference>
         <reference value="StructureDefinition/PractitioneRolerLE"/>
       </reference>
-      <name value="PractitionerRoleLE"/>
-      <description value="PractitionerRoleLE"/>
+      <name value="PractitionerRole LE"/>
+      <description value="PractitionerRole LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -693,8 +649,8 @@
       <reference>
         <reference value="StructureDefinition/PractitionerLE"/>
       </reference>
-      <name value="PractitionerLE"/>
-      <description value="PractitionerLE"/>
+      <name value="Practitioner LE"/>
+      <description value="Practitioner LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -702,32 +658,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/QuestionnaireResponseLE"/>
+        <reference value="StructureDefinition/QuestionnaireResponseInicioLE"/>
       </reference>
-      <name value="QuestionnaireResponseLE"/>
-      <description value="QuestionnaireResponseLE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ServiceRequestAgendarLE"/>
-      </reference>
-      <name value="Service Request Agendar LE"/>
-      <description value="Service Request Agendar LE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ServiceRequestAtenderLE"/>
-      </reference>
-      <name value="Service Request LE Atender"/>
-      <description value="Service Request LE Atender"/>
+      <name value="QuestionnaireResponse Inicio LE"/>
+      <description value="QuestionnaireResponse Inicio LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -737,41 +671,8 @@
       <reference>
         <reference value="StructureDefinition/ServiceRequestLE"/>
       </reference>
-      <name value="Service Request LE Inicio"/>
-      <description value="Service Request LE Inicio"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ServiceRequestReferenciadaLE"/>
-      </reference>
-      <name value="Service Request Referenciada LE"/>
-      <description value="Service Request Referenciada LE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ServiceRequestRevisarLE"/>
-      </reference>
-      <name value="Service Request LE Revisar"/>
-      <description value="Service Request LE Revisar"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ServiceRequestTerminarLE"/>
-      </reference>
-      <name value="Service Request Agendar LE"/>
-      <description value="Service Request Agendar LE"/>
+      <name value="ServiceRequest LE"/>
+      <description value="ServiceRequest LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -834,10 +735,109 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ExtBoolean"/>
+        <reference value="StructureDefinition/ExtBool"/>
       </reference>
-      <name value="ExtBoolean"/>
-      <description value="ExtBoolean"/>
+      <name value="ExtBool"/>
+      <description value="ExtBool"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtBoolAfrodescendiente"/>
+      </reference>
+      <name value="ExtBool Afrodescendiente"/>
+      <description value="ExtBool Afrodescendiente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtBoolAlergia"/>
+      </reference>
+      <name value="ExtBool Alergia"/>
+      <description value="ExtBool Alergia"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtBoolCuidador"/>
+      </reference>
+      <name value="ExtBool Cuidador"/>
+      <description value="ExtBool Cuidador"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtBoolPersonaMayor"/>
+      </reference>
+      <name value="ExtBool PersonaMayor"/>
+      <description value="ExtBool PersonaMayor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtBoolPertinenciaAtencionBox"/>
+      </reference>
+      <name value="ExtBool Pertinencia Atencion Box"/>
+      <description value="ExtBool Pertinencia Atencion Box"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtBoolPresentaDiscapacidad"/>
+      </reference>
+      <name value="ExtBool PresentaDiscapacidad"/>
+      <description value="ExtBool PresentaDiscapacidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtBoolRequiereExamen"/>
+      </reference>
+      <name value="ExtBool RequiereExamen"/>
+      <description value="ExtBool RequiereExamen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtBoolResolutividadAPS"/>
+      </reference>
+      <name value="ExtBool ResolutividadAPS"/>
+      <description value="ExtBool ResolutividadAPS"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtBoolSolicitudExamenes"/>
+      </reference>
+      <name value="ExtBool Solicitud Examenes"/>
+      <description value="ExtBool Solicitud Examenes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -856,10 +856,20 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ExtString"/>
+        <reference value="StructureDefinition/ExtStringFundamentoPriorizacion"/>
       </reference>
-      <name value="ExtString"/>
-      <description value="ExtString"/>
+      <name value="ExtStringFundamentoPriorizacion"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtStringMotivoNoPertinencia"/>
+      </reference>
+      <name value="ExtString MotivoNoPertinencia"/>
+      <description value="ExtString MotivoNoPertinencia"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -944,6 +954,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/SegundoApellido"/>
+      </reference>
+      <name value="Segundo Apellido"/>
+      <description value="Segundo Apellido"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/SospechaPatologiaGes"/>
       </reference>
       <name value="SospechaPatologiaGes"/>
@@ -979,8 +1000,8 @@
       <reference>
         <reference value="ValueSet/VSDerivadoParaCodigo"/>
       </reference>
-      <name value="DerivadoParaCodigo"/>
-      <description value="DerivadoParaCodigo"/>
+      <name value="Derivado Para"/>
+      <description value="Derivado Para"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -990,8 +1011,8 @@
       <reference>
         <reference value="ValueSet/VSDestinoAtencionCodigo"/>
       </reference>
-      <name value="DestinoAtenciónCodigo"/>
-      <description value="DestinoAtenciónCodigo"/>
+      <name value="Destino Atención Codigo"/>
+      <description value="Destino Atención Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1001,8 +1022,8 @@
       <reference>
         <reference value="ValueSet/VSDestinoReferenciaCodigo"/>
       </reference>
-      <name value="DestinoReferenciaCodigo"/>
-      <description value="DestinoReferenciaCodigo"/>
+      <name value="Destino Referencia Codigo"/>
+      <description value="Destino Referencia Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1012,8 +1033,8 @@
       <reference>
         <reference value="ValueSet/VSDocAcreditacionCuidador"/>
       </reference>
-      <name value="DocAcreditacionCuidador"/>
-      <description value="DocAcreditacionCuidador"/>
+      <name value="Documento Acreditacion Cuidador"/>
+      <description value="Documento Acreditacion Cuidador"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1023,8 +1044,8 @@
       <reference>
         <reference value="ValueSet/VSEstablecimientoDestinoCodigo"/>
       </reference>
-      <name value="EstablecimientoDestinoCodigo"/>
-      <description value="EstablecimientoDestinoCodigo"/>
+      <name value="Establecimiento Destino Codigo"/>
+      <description value="Establecimiento Destino Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1045,8 +1066,8 @@
       <reference>
         <reference value="ValueSet/VSIdentidaddeGenero"/>
       </reference>
-      <name value="IdentidaddeGenero"/>
-      <description value="IdentidaddeGenero"/>
+      <name value="Identidad de Genero"/>
+      <description value="Identidad de Genero"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1056,8 +1077,8 @@
       <reference>
         <reference value="ValueSet/VSIndicecomorbilidad"/>
       </reference>
-      <name value="Indicecomorbilidad"/>
-      <description value="Indicecomorbilidad"/>
+      <name value="Indice Comorbilidad"/>
+      <description value="Indice Comorbilidad"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1067,8 +1088,8 @@
       <reference>
         <reference value="ValueSet/VSMedioNotificacion"/>
       </reference>
-      <name value="MedioNotificación"/>
-      <description value="MedioNotificación"/>
+      <name value="Medio Notificación"/>
+      <description value="Medio Notificación"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1089,8 +1110,8 @@
       <reference>
         <reference value="ValueSet/VSMotivoCierreInterconsulta"/>
       </reference>
-      <name value="MotivoCierreInterconsulta"/>
-      <description value="MotivoCierreInterconsulta"/>
+      <name value="Motivo Cierre Interconsulta"/>
+      <description value="Motivo Cierre Interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1100,8 +1121,8 @@
       <reference>
         <reference value="ValueSet/VSMotivoNoContactabilidad"/>
       </reference>
-      <name value="MotivoNoContactabilidad"/>
-      <description value="MotivoNoContactabilidad"/>
+      <name value="Motivo No Contactabilidad"/>
+      <description value="Motivo No Contactabilidad"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1111,8 +1132,8 @@
       <reference>
         <reference value="ValueSet/VSPertinenciaInterconsulta"/>
       </reference>
-      <name value="PertinenciaInterconsulta"/>
-      <description value="PertinenciaInterconsulta"/>
+      <name value="Pertinencia Interconsulta"/>
+      <description value="Pertinencia Interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1122,8 +1143,8 @@
       <reference>
         <reference value="ValueSet/VSPuebloIndigena"/>
       </reference>
-      <name value="PuebloIndigena"/>
-      <description value="PuebloIndigena"/>
+      <name value="Pueblo Indigena"/>
+      <description value="Pueblo Indigena"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1133,8 +1154,8 @@
       <reference>
         <reference value="ValueSet/VSSospechaPatologia"/>
       </reference>
-      <name value="SospechaPatologia"/>
-      <description value="SospechaPatologia"/>
+      <name value="Sospecha Patologia"/>
+      <description value="Sospecha Patologia"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1144,8 +1165,8 @@
       <reference>
         <reference value="ValueSet/VSSospechaPatologiaGes"/>
       </reference>
-      <name value="SospechaPatologiaGes"/>
-      <description value="SospechaPatologiaGes"/>
+      <name value="Sospecha Patologia Ges"/>
+      <description value="Sospecha Patologia Ges"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1155,8 +1176,8 @@
       <reference>
         <reference value="ValueSet/VSTipoCodDiagnostica"/>
       </reference>
-      <name value="TipoCodDiagnostica"/>
-      <description value="TipoCodDiagnostica"/>
+      <name value="Tipo Codificación Diagnostica"/>
+      <description value="Tipo Codificación Diagnostica"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1177,8 +1198,8 @@
       <reference>
         <reference value="ValueSet/VSTipoIdentificador"/>
       </reference>
-      <name value="TipoIdentificador"/>
-      <description value="TipoIdentificador"/>
+      <name value="Tipo Identificador"/>
+      <description value="Tipo Identificador"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1188,8 +1209,8 @@
       <reference>
         <reference value="ValueSet/VSTipoOtroTelefono"/>
       </reference>
-      <name value="TipoOtroTelefono"/>
-      <description value="TipoOtroTelefono"/>
+      <name value="Tipo Otro Telefono"/>
+      <description value="Tipo Otro Telefono"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1199,8 +1220,8 @@
       <reference>
         <reference value="ValueSet/VSinterconsulta"/>
       </reference>
-      <name value="interconsulta"/>
-      <description value="interconsulta"/>
+      <name value="Interconsulta"/>
+      <description value="Interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1210,8 +1231,8 @@
       <reference>
         <reference value="CodeSystem/CSDerivadoParaCodigo"/>
       </reference>
-      <name value="DerivadoParaCodigo"/>
-      <description value="DerivadoParaCodigo"/>
+      <name value="Derivado Para"/>
+      <description value="Derivado Para"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1221,8 +1242,8 @@
       <reference>
         <reference value="CodeSystem/CSDestinoAtencionCodigo"/>
       </reference>
-      <name value="DestinoAtenciónCodigo"/>
-      <description value="DestinoAtenciónCodigo"/>
+      <name value="Destino Atención Codigo"/>
+      <description value="Destino Atención Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1232,8 +1253,8 @@
       <reference>
         <reference value="CodeSystem/CSDestinoReferenciaCodigo"/>
       </reference>
-      <name value="DestinoReferenciaCodigo"/>
-      <description value="DestinoReferenciaCodigo"/>
+      <name value="Destino Referencia Codigo"/>
+      <description value="Destino Referencia Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1243,8 +1264,8 @@
       <reference>
         <reference value="CodeSystem/CSDocAcreditacionCuidador"/>
       </reference>
-      <name value="DocAcreditacionCuidador"/>
-      <description value="DocAcreditacionCuidador"/>
+      <name value="Documento Acreditacion Cuidador"/>
+      <description value="Documento Acreditacion Cuidador"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1254,8 +1275,8 @@
       <reference>
         <reference value="CodeSystem/CSEstablecimientoDestinoCodigo"/>
       </reference>
-      <name value="EstablecimientoDestinoCodigo"/>
-      <description value="EstablecimientoDestinoCodigo"/>
+      <name value="Establecimiento Destino Codigo"/>
+      <description value="Establecimiento Destino Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1276,8 +1297,8 @@
       <reference>
         <reference value="CodeSystem/CSIdentidaddeGenero"/>
       </reference>
-      <name value="IdentidaddeGenero"/>
-      <description value="IdentidaddeGenero"/>
+      <name value="Identidad de Genero"/>
+      <description value="Identidad de Genero"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1287,8 +1308,8 @@
       <reference>
         <reference value="CodeSystem/CSIndicecomorbilidad"/>
       </reference>
-      <name value="Indicecomorbilidad"/>
-      <description value="Indicecomorbilidad"/>
+      <name value="Indice Comorbilidad"/>
+      <description value="Indice Comorbilidad"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1298,8 +1319,8 @@
       <reference>
         <reference value="CodeSystem/CSMedioNotificacion"/>
       </reference>
-      <name value="MedioNotificación"/>
-      <description value="MedioNotificación"/>
+      <name value="Medio Notificación"/>
+      <description value="Medio Notificación"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1320,8 +1341,8 @@
       <reference>
         <reference value="CodeSystem/CSMotivoCierreInterconsulta"/>
       </reference>
-      <name value="MotivoCierreInterconsulta"/>
-      <description value="MotivoCierreInterconsulta"/>
+      <name value="Motivo Cierre Interconsulta"/>
+      <description value="Motivo Cierre Interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1331,8 +1352,8 @@
       <reference>
         <reference value="CodeSystem/CSMotivoNoContactabilidad"/>
       </reference>
-      <name value="MotivoNoContactabilidad"/>
-      <description value="MotivoNoContactabilidad"/>
+      <name value="Motivo No Contactabilidad"/>
+      <description value="Motivo No Contactabilidad"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1342,8 +1363,8 @@
       <reference>
         <reference value="CodeSystem/CSPertinenciaInterconsulta"/>
       </reference>
-      <name value="PertinenciaInterconsulta"/>
-      <description value="PertinenciaInterconsulta"/>
+      <name value="Pertinencia Interconsulta"/>
+      <description value="Pertinencia Interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1353,8 +1374,8 @@
       <reference>
         <reference value="CodeSystem/CSPuebloIndigena"/>
       </reference>
-      <name value="PuebloIndigena"/>
-      <description value="PuebloIndigena"/>
+      <name value="Pueblo Indigena"/>
+      <description value="Pueblo Indigena"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1364,8 +1385,8 @@
       <reference>
         <reference value="CodeSystem/CSSospechaPatologia"/>
       </reference>
-      <name value="SospechaPatologia"/>
-      <description value="SospechaPatologia"/>
+      <name value="Sospecha Patologia"/>
+      <description value="Sospecha Patologia"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1375,8 +1396,8 @@
       <reference>
         <reference value="CodeSystem/CSSospechaPatologiaGes"/>
       </reference>
-      <name value="SospechaPatologiaGes"/>
-      <description value="SospechaPatologiaGes"/>
+      <name value="Sospecha Patologia Ges"/>
+      <description value="Sospecha Patologia Ges"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1386,8 +1407,8 @@
       <reference>
         <reference value="CodeSystem/CSTipoCodDiagnostica"/>
       </reference>
-      <name value="TipoCodDiagnostica"/>
-      <description value="TipoCodDiagnostica"/>
+      <name value="Tipo Codificación Diagnostica"/>
+      <description value="Tipo Codificación Diagnostica"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1408,8 +1429,8 @@
       <reference>
         <reference value="CodeSystem/CSTipoIdentificador"/>
       </reference>
-      <name value="TipoIdentificador"/>
-      <description value="TipoIdentificador"/>
+      <name value="Tipo Identificador"/>
+      <description value="Tipo Identificador"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1419,8 +1440,8 @@
       <reference>
         <reference value="CodeSystem/CSTipoOtroTelefono"/>
       </reference>
-      <name value="TipoOtroTelefono"/>
-      <description value="TipoOtroTelefono"/>
+      <name value="Tipo Otro Telefono"/>
+      <description value="Tipo Otro Telefono"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1430,8 +1451,8 @@
       <reference>
         <reference value="CodeSystem/CSinterconsulta"/>
       </reference>
-      <name value="interconsulta"/>
-      <description value="interconsulta"/>
+      <name value="Interconsulta"/>
+      <description value="Interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -1459,6 +1480,14 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="artifacts-Intro.html"/>
+        </extension>
+        <nameUrl value="artifacts-Intro.html"/>
+        <title value="Artifacts Intro"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="Casosdeuso.html"/>
         </extension>
         <nameUrl value="Casosdeuso.html"/>
@@ -1471,6 +1500,14 @@
         </extension>
         <nameUrl value="EspecificacionesTecnicas.html"/>
         <title value="Especificaciones Tecnicas"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="EventoInicio.html"/>
+        </extension>
+        <nameUrl value="EventoInicio.html"/>
+        <title value="Evento Inicio"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -1503,14 +1540,6 @@
         </extension>
         <nameUrl value="Terminologias.html"/>
         <title value="Terminologias"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="Transacciones.html"/>
-        </extension>
-        <nameUrl value="Transacciones.html"/>
-        <title value="Transacciones"/>
         <generation value="markdown"/>
       </page>
     </page>

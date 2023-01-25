@@ -1,8 +1,8 @@
-Profile: CarePlanLE
+Profile: CarePlanAtenderLE
 Parent: CarePlan
-Id: CarePlanLE
-Title: "CarePlanLE"
-Description: "CarePlanLE"
+Id: CarePlanAtenderLE
+Title: "CarePlan Atender LE"
+Description: "CarePlan Atender LE"
 
 // OBLIGATORIOS POR ESTANDAR
 
@@ -19,8 +19,7 @@ Description: "CarePlanLE"
 * activity.detail.status = #not-started
 * activity.detail.productCodeableConcept.text 1..1 MS
 
-* extension contains ExtBoolean named SolicitudExamenes 1..1 MS
-
+* extension contains ExtBoolSolicitudExamenes named SolicitudExamenes 1..1 MS
 
 
 

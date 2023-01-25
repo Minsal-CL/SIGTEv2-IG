@@ -1,15 +1,15 @@
 Profile: PacienteLE
 Parent: PacienteCl
 Id: PacienteLE
-Title: "PacienteLE"
-Description: "PacienteLE"
+Title: "Paciente LE"
+Description: "Paciente LE"
 
 // EXTESIONES
 * extension contains PaisOrigenNacionalidadClLE named PaisOrigenCodigo 1..1 MS
 * extension contains PaisOrigenNacionalidadClLE named NacionalidadCodigo 1..1 MS
 * extension contains IdentidadGenero named GeneroCodigo 1..1 MS
 * extension contains PuebloIndigena named PuebloIndigena 0..1 MS
-* extension contains ExtBoolean named Afrodescendiente 1..1 MS
+* extension contains ExtBoolAfrodescendiente named Afrodescendiente 1..1 MS
 
 // FIN EXTENSIONES
 

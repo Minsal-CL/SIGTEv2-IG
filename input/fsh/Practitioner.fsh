@@ -1,42 +1,11 @@
 // No tiene nombre 
 
 Profile: PractitionerLE
-Parent: PrestadorCL
+Parent: Practitioner
 Id: PractitionerLE
-Title: "PractitionerLE"
-Description: "PractitionerLE"
+Title: "Practitioner LE"
+Description: "Practitioner LE"
 
-
-
-//* identifier ^slicing.discriminator.type = #value
-//* identifier ^slicing.discriminator.path = "use"
-//* identifier ^slicing.rules = #open
-//* identifier ^slicing.description = "Slice creado para almacenar diferentes tipos de identificación"
-//* identifier contains identificacionPrincipal 1..1 MS and OtraIdentificacion 0..1 MS
-
-
-
-//* identifier[identificacionPrincipal] MS
-//
-* identifier[RUN].extension contains DigitoVerificador named DigitoVerificador 1..1 MS
-* identifier[RUN].type 1..1 MS
-  * coding 1..1 MS
-    * code 1..1 MS
-    * display 0..1 MS
-    * system 1..1 MS
-* identifier[RUN].type.coding.code = #1
-//
-//* identifier[identificacionPrincipal].type.coding.code from VSTipoIdentificador
-//* identifier[identificacionPrincipal].value 1..1 MS
-//* identifier[identificacionPrincipal].value ^short = "Numero de RUN sin digito verificador ni puntos"
-//* identifier[identificacionPrincipal].extension[DigitoVerificador] ^short = "Digito verificador del RUN"
-//
-//* identifier[OtraIdentificacion] MS
-//* identifier[OtraIdentificacion] MS
-//* identifier[OtraIdentificacion].type 1..1 MS
-//* identifier[OtraIdentificacion].type.coding.code from VSTipoIdentificador
-
-/*
 * identifier  MS
 
 * identifier 1..* 
@@ -93,11 +62,15 @@ Description: "PractitionerLE"
 * name.family ^short = "Primer Apellido"
 * name.family ^definition = "Se debe ingresar el primer apellido, segun indica su identificacion personal"
 * name.family 1..1
+* name.family.extension contains SegundoApellido named segundoApellido 0..1 MS
+* name.family.extension ^short = "Extensión para el segundo apellido"
 
-* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
-* name.family.extension ^short = "Extensión para apellido materno"
-* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-fathers-family named father-family 0..1 MS
-* name.family.extension ^short = "Extensión para apellido paterno"
+
+
+//* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-mothers-family named mothers-family 0..1 MS
+//* name.family.extension ^short = "Extensión para apellido materno"
+//* name.family.extension contains http://hl7.org/fhir/StructureDefinition/humanname-fathers-family named father-family 0..1 MS
+//* name.family.extension ^short = "Extensión para apellido paterno"
 * name.given 1..
  
 * telecom and gender and birthDate  MS
@@ -144,7 +117,7 @@ Description: "PractitionerLE"
   * coding 0..1 MS
     * code 1..1 MS
     * system 0..1 MS
-    * display 0..1 MS
+    * display 1..1 MS
   * text 1..1 MS
 * qualification[Cert].code.text ^short = "Texto libre del Título o Certificado Profesional especificado"
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
@@ -173,7 +146,7 @@ Description: "PractitionerLE"
   * coding 0..1 MS
     * code 1..1 MS
     * system 0..1 MS
-    * display 0..1 MS
+    * display 1..1 MS
   * text 1..1 MS
 * qualification[Esp].code.coding.system MS
 * qualification[Esp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
@@ -199,7 +172,7 @@ Description: "PractitionerLE"
   * coding 0..1 MS
     * code 1..1 MS
     * system 0..1 MS
-    * display 0..1 MS
+    * display 1..1 MS
   * text 1..1 MS
 * qualification[SubEsp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
 * qualification[SubEsp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores."
@@ -211,4 +184,4 @@ Description: "PractitionerLE"
 * qualification[SubEsp].issuer ^short = "Organizacion que entrega el certificado o título"
 * qualification[SubEsp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
 * qualification[SubEsp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
-*/
+

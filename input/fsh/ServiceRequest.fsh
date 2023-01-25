@@ -1,0 +1,98 @@
+Profile: ServiceRequestLE
+Parent: ServiceRequest
+Id: ServiceRequestLE
+Title: "ServiceRequest LE"
+Description: "ServiceRequest LE"
+
+* identifier 1..2 MS 
+* identifier ^slicing.discriminator[0].type = #value
+* identifier ^slicing.discriminator[0].path = "type.coding.code"
+* identifier ^slicing.discriminator[1].type = #value
+* identifier ^slicing.discriminator[1].path = "type.coding.system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.description = "Slice creado para almacenar los identificadores"
+* identifier contains IdInterconsulta 1..1 MS
+
+* identifier[IdInterconsulta].type 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * code = #"IdInterconsulta"    
+    * system 1..1 MS
+    * display 0..1 MS
+* identifier[IdInterconsulta].value 1..1 MS
+
+// OBLIGATORIOS POR ESTANDAR
+* status MS
+* intent MS
+* subject MS
+
+//--de aqui hacia abajo todo es opcional, para que sea generico
+
+* extension contains MotivoCierreInterconsulta named MotivoCierreInterconsulta 0..1 MS
+* extension contains ExtBoolRequiereExamen named RequiereExamen 0..1 MS
+
+// Service Request Inicio
+* extension contains SospechaPatologiaGes named SospechaGES 0..1 MS
+* extension contains ExtBoolResolutividadAPS named ResolutividadAPS 0..1 MS
+* extension contains ExtBoolAlergia named Alergia 0..1 MS
+* extension contains ExtBoolCuidador named Cuidador 0..1 MS
+* extension contains ExtBoolPresentaDiscapacidad named PresentaDiscapacidad 0..1 MS
+* extension contains ExtBoolPersonaMayor named PersonaMayor 0..1 MS
+* extension contains OrigenInterconsulta named OrigenInterconsulta 0..1 MS
+* extension contains ExtStringFundamentoPriorizacion named FundamentoPriorizacion 0..1 MS
+* extension contains EstadoInterconsultaCodigoLE named EstadoInterconsultaCodigo 0..1 MS
+* extension contains DocAcreditacionCuidadorCodigoLE named DocAcreditacionCuidadorCodigo 0..1 MS
+
+* extension[FundamentoPriorizacion] ^short = "Fundamente de la Priorización"
+* extension[ResolutividadAPS] ^short = "Programa de Resolutividad local"
+* extension[Alergia] ^short = "Tiene alergia el paciente"
+// fin
+
+
+* doNotPerform.extension contains PertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
+* doNotPerform 0..1 MS
+
+* authoredOn 0..1 MS
+* authoredOn ^short = "Fecha Asigna la Interconsulta"
+
+* reasonCode 0..1 MS
+
+* priority 0..1 MS
+* priority ^short = "Pertinencia Interconsulta"
+
+* locationCode 0..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * display 0..1 MS
+    * system 1..1 MS
+* locationCode.coding from VSDestinoReferenciaCodigo
+
+* locationReference 0..1 MS
+  * reference 1..1 MS
+* locationReference only Reference(Location)
+
+* category 0..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * display 0..1 MS
+    * system 1..1 MS
+* category.coding.code from VSModalidadAtencionCodigo
+
+* subject only Reference(Patient)
+* reasonReference only Reference(Observation)
+* encounter only Reference(Encounter)
+
+
+* supportingInfo 2..* MS 
+* supportingInfo ^slicing.discriminator.type = #value
+* supportingInfo ^slicing.discriminator.path = "use"
+* supportingInfo ^slicing.rules = #open
+* supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
+* supportingInfo contains reserva 0..1 MS and paciente 0..1 MS and QuestionnaireResponse 1..1 MS and Condition 0..1 MS and AllergyIntolerance 0..1 MS
+
+
+* supportingInfo[reserva] only Reference(AppointmentInicioLE)
+//* supportingInfo[paciente] only Reference(PacienteLE)
+* supportingInfo[QuestionnaireResponse] only Reference(QuestionnaireResponseInicioLE)
+* supportingInfo[Condition] only Reference(CondicionInicio1LE)
+* supportingInfo[AllergyIntolerance] only Reference(AllergyIntoleranceInicioLE)

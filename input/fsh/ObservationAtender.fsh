@@ -1,8 +1,8 @@
 Profile: ObservationAtenderLE
 Parent: Observation
 Id: ObservationAtenderLE
-Title: "ObservationAtenderLE"
-Description: "ObservationAtenderLE"
+Title: "ObservationAtender LE"
+Description: "ObservationAtender LE"
 
 
 * valueString 1..1 MS

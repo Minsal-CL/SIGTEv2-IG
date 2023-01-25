@@ -1,8 +1,8 @@
-Profile: CondicionAtenderLE3
+Profile: CondicionAtender3LE
 Parent: Condition
-Id: CondicionAtenderLE3
-Title: "CondicionAtenderLE3"
-Description: "CondicionAtenderLE3"
+Id: CondicionAtender3LE
+Title: "Condicion Atender 3 LE"
+Description: "Condicion Atender 3 LE"
 
 //OBLIGATORIO POR ESTANDAR
 * subject only Reference(PacienteLE)

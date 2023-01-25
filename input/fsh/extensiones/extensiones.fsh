@@ -169,16 +169,82 @@ Description: "Contactado"
 
 
 
-Extension: ExtBoolean 
-Id: ExtBoolean
-Title:       "ExtBoolean"
-Description: "ExtBoolean"
+Extension: ExtBool 
+Id: ExtBool
+Title:       "ExtBool"
+Description: "ExtBool"
 * value[x] only boolean
 
-Extension: ExtString 
-Id: ExtString
-Title:       "ExtString"
-Description: "ExtString"
+Extension: ExtBoolSolicitudExamenes
+Id: ExtBoolSolicitudExamenes
+Title:       "ExtBool Solicitud Examenes"
+Description: "ExtBool Solicitud Examenes"
+* value[x] only boolean
+
+Extension: ExtBoolPertinenciaAtencionBox 
+Id: ExtBoolPertinenciaAtencionBox
+Title:       "ExtBool Pertinencia Atencion Box"
+Description: "ExtBool Pertinencia Atencion Box"
+* value[x] only boolean
+
+Extension: ExtBoolAfrodescendiente 
+Id: ExtBoolAfrodescendiente
+Title:       "ExtBool Afrodescendiente"
+Description: "ExtBool Afrodescendiente"
+* value[x] only boolean
+
+Extension: ExtBoolResolutividadAPS 
+Id: ExtBoolResolutividadAPS
+Title:       "ExtBool ResolutividadAPS"
+Description: "ExtBool ResolutividadAPS"
+* value[x] only boolean
+
+Extension: ExtBoolAlergia 
+Id: ExtBoolAlergia
+Title:       "ExtBool Alergia"
+Description: "ExtBool Alergia"
+* value[x] only boolean
+
+Extension: ExtBoolCuidador 
+Id: ExtBoolCuidador
+Title:       "ExtBool Cuidador"
+Description: "ExtBool Cuidador"
+* value[x] only boolean
+
+Extension: ExtBoolPresentaDiscapacidad 
+Id: ExtBoolPresentaDiscapacidad
+Title:       "ExtBool PresentaDiscapacidad"
+Description: "ExtBool PresentaDiscapacidad"
+* value[x] only boolean
+
+Extension: ExtBoolPersonaMayor 
+Id: ExtBoolPersonaMayor
+Title:       "ExtBool PersonaMayor"
+Description: "ExtBool PersonaMayor"
+* value[x] only boolean
+
+Extension: ExtBoolRequiereExamen 
+Id: ExtBoolRequiereExamen
+Title:       "ExtBool RequiereExamen"
+Description: "ExtBool RequiereExamen"
+* value[x] only boolean
+
+Extension: SegundoApellido
+Id: SegundoApellido
+Title: "Segundo Apellido"
+Description: "Segundo Apellido"
+* value[x] only string
+
+
+
+Extension: ExtStringMotivoNoPertinencia 
+Id: ExtStringMotivoNoPertinencia
+Title:       "ExtString MotivoNoPertinencia"
+Description: "ExtString MotivoNoPertinencia"
+* value[x] only string
+
+Extension: ExtStringFundamentoPriorizacion 
+Id: ExtStringFundamentoPriorizacion
 * value[x] only string
 
 Extension: ExtInteger 
@@ -205,13 +271,13 @@ Extension: DigitoVerificador
 Id: DigitoVerificador
 Title:       "DigitoVerificador"
 Description: "DigitoVerificador"
-* value[x] only integer
+* value[x] only string
 
 Extension: SospechaPatologiaGes
 Id: SospechaPatologiaGes
 Title: "SospechaPatologiaGes"
 Description: "SospechaPatologiaGes"
-
+/*
 * extension contains
 	sospecha 1..1 MS and
 	patologia 1..1 MS
@@ -225,8 +291,8 @@ Description: "SospechaPatologiaGes"
   * code from VSSospechaPatologiaGes
   * system 0..1 MS
   * display 0..1 MS
-
-* extension[sospecha].value[x] only boolean
+*/
+* value[x] only boolean
 
 
 /*

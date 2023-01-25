@@ -1,8 +1,8 @@
-Profile: AllergyIntoleranceLE
+Profile: AllergyIntoleranceInicioLE
 Parent: AllergyIntolerance
-Id: AllergyIntoleranceLE
-Title: "AllergyIntoleranceLE"
-Description: "AllergyIntoleranceLE"
+Id: AllergyIntoleranceInicioLE
+Title: "AllergyIntolerance Inicio LE"
+Description: "AllergyIntolerance Inicio LE"
 
 * patient 1..1 MS
   * reference 1..1 MS
@@ -19,9 +19,3 @@ Description: "AllergyIntoleranceLE"
   * text 1..1 MS
 
 * code.text ^short = "Seccion para identificar la alergia o intolerancia"
-* code.coding.system ^short = "En"
-* code.coding.system  ^definition = "aaa"
-* code.coding.code ^short = "aaaa"
-* code.coding.code ^definition = "aaaa"
-* code.coding.display ^short = "aaa"
-* code.coding.display ^definition = "aaa"

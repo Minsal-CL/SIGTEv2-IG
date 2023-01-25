@@ -1,8 +1,8 @@
 Profile: LocationLE
 Parent: LocalizacionCL
 Id: LocationLE
-Title: "LocationLE"
-Description: "LocationLE"
+Title: "Location LE"
+Description: "Location LE"
 
 * identifier 1..1
   * value 1..1

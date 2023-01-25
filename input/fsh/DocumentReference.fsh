@@ -1,8 +1,8 @@
 Profile: DocumentReferenceLE
 Parent: DocumentReference
 Id: DocumentReferenceLE
-Title: "Document Reference LE"
-Description: "Document Reference LE"
+Title: "DocumentReference LE"
+Description: "DocumentReference LE"
 
 // OBLIGATORIOS POR ESTANDAR
 * status MS
