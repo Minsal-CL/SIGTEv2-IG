@@ -3,6 +3,8 @@ Parent: Condition
 Id: CondicionAtender1LE
 Title: "Condicion Atender 1 LE"
 Description: "Condicion Atender 1 LE"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 
 //OBLIGATORIO POR ESTANDAR

@@ -3,6 +3,8 @@ Parent: Appointment
 Id: AppointmentAtenderLE
 Title: "Appointment Atender LE"
 Description: "Appointment Atender LE"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 
 * identifier 1..1 MS
@@ -12,8 +14,8 @@ Description: "Appointment Atender LE"
 * status 1..1 MS
 * status = #booked
 
-
-* start 0..1 MS
+* created 0..1 MS //agendar
+* start 0..1 MS // atender
 
 * appointmentType 1..1 MS
   * coding 1..1 MS
@@ -21,3 +23,6 @@ Description: "Appointment Atender LE"
     * code 1..1 MS
     * display 0..1 MS
   * text 0..1 MS
+
+
+  // agendar y atender

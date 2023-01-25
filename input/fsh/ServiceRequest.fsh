@@ -3,6 +3,8 @@ Parent: ServiceRequest
 Id: ServiceRequestLE
 Title: "ServiceRequest LE"
 Description: "ServiceRequest LE"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 * identifier 1..2 MS 
 * identifier ^slicing.discriminator[0].type = #value
@@ -80,7 +82,7 @@ Description: "ServiceRequest LE"
 
 * subject only Reference(Patient)
 * reasonReference only Reference(Observation)
-* encounter only Reference(Encounter)
+* encounter only Reference(EncounterInicioLE)
 
 
 * supportingInfo 2..* MS 

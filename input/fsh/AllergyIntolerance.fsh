@@ -3,6 +3,8 @@ Parent: AllergyIntolerance
 Id: AllergyIntoleranceInicioLE
 Title: "AllergyIntolerance Inicio LE"
 Description: "AllergyIntolerance Inicio LE"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 * patient 1..1 MS
   * reference 1..1 MS

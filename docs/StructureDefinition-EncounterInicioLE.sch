@@ -12,6 +12,8 @@
   <sch:pattern>
     <sch:title>f:Encounter</sch:title>
     <sch:rule context="f:Encounter">
+      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:appointment) &gt;= 1">appointment: minimum cardinality of 'appointment' is 1</sch:assert>
       <sch:assert test="count(f:appointment) &lt;= 1">appointment: maximum cardinality of 'appointment' is 1</sch:assert>
     </sch:rule>

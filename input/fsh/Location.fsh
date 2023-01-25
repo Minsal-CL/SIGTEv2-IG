@@ -3,6 +3,8 @@ Parent: LocalizacionCL
 Id: LocationLE
 Title: "Location LE"
 Description: "Location LE"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 * identifier 1..1
   * value 1..1

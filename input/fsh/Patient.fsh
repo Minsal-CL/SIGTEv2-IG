@@ -3,6 +3,8 @@ Parent: PacienteCl
 Id: PacienteLE
 Title: "Paciente LE"
 Description: "Paciente LE"
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 // EXTESIONES
 * extension contains PaisOrigenNacionalidadClLE named PaisOrigenCodigo 1..1 MS

@@ -139,7 +139,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Appointment.slot","Appointment.slot","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Slot]]}
 ","The slots that this appointment is filling","The slots from the participants' schedules that will be filled by the appointment.","","","","","","","","","",,,,,"",,,,"Appointment.slot",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[@typeCode = 'REFR'].act[@classCode = 'ACT'][@moodCode = 'SLOT']"
-"Appointment.created","Appointment.created","","","",0,1,"","","","dateTime {[]} {[]}
+"Appointment.created","Appointment.created","","","",0,1,"Y","","","dateTime {[]} {[]}
 ","The date that this appointment was initially created","The date that this appointment was initially created. This could be different to the meta.lastModified value on the initial entry, as this could have been before the resource was created on the FHIR server, and should remain unchanged over the lifespan of the appointment.","This property is required for many use cases where the age of an appointment is considered in processing workflows for scheduling and billing of appointments.","","","","","","","","",,,,,"",,,,"Appointment.created",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.authoredOn",".author.time","CREATED"
 "Appointment.comment","Appointment.comment","","","",0,1,"","","","string {[]} {[]}
