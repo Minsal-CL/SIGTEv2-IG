@@ -36,6 +36,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Extension/f:value[x]/f:coding 1</sch:title>
+    <sch:rule context="f:Extension/f:value[x]/f:coding">
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Extension.value[x].coding 1</sch:title>
     <sch:rule context="f:Extension/f:value[x]/f:coding">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
