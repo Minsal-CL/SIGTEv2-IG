@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ListaEsperaChile"]; # 
   fhir:ImplementationGuide.title [ fhir:value "Proyecto Listas de Espera MINSAL CHILE"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-01-25T17:01:00+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-01-27T16:08:13+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "MINSAL Chile"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -2017,13 +2017,83 @@
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "EventoAgendar.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "EventoAgendar.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Evento Agendar" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "EventoAtender.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "EventoAtender.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Evento Atender" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 7;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
            fhir:Extension.valueUrl [ fhir:value "EventoInicio.html" ]
          ];
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "EventoInicio.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Evento Inicio" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 6;
+         fhir:index 8;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "EventoReferenciada.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "EventoReferenciada.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Evento Referenciada" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 9;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "EventoRevisar.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "EventoRevisar.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Evento Revisar" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 10;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "Eventos.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "Eventos.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Eventos" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 11;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "EventoTerminar.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "EventoTerminar.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Evento Terminar" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 12;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
+           fhir:Extension.valueUrl [ fhir:value "historialCambios.html" ]
+         ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "historialCambios.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Historial Cambios" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 13;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -2033,7 +2103,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Objetivos" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 7;
+         fhir:index 14;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -2043,7 +2113,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Operaciones" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 8;
+         fhir:index 15;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
@@ -2053,7 +2123,7 @@
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Structure Definition Practitioner LE Intro" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 9;
+         fhir:index 16;
          fhir:Element.extension [
            fhir:index 0;
            fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name" ];
