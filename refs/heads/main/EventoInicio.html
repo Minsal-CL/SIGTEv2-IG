@@ -260,6 +260,500 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en <a href="http://link">Conjunto mínimo de datos</a></p>
 
+<h2 id="ejemplo">Ejemplo</h2>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">Bundle</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">10bb101f-a121-4264-a920-67be9cb82c74</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">message</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">timestamp</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">2015-07-14T11:15:33+10:00</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">entry</span><span class="dl">"</span> <span class="p">:</span> <span class="p">[{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">urn:uuid:267b18ce-3d37-4581-9baa-6fada338038b</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">MessageHeader</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">267b18ce-3d37-4581-9baa-6fada338038b</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">generated</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">div</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">&lt;div xmlns=</span><span class="se">\"</span><span class="s2">http://www.w3.org/1999/xhtml</span><span class="se">\"</span><span class="s2">&gt;</span><span class="se">\n\t\t\t\t\t\t</span><span class="s2">&lt;p&gt;Este mensaje es el de inicio de una interconsulta&lt;/p&gt;</span><span class="se">\n\t\t\t\t\t</span><span class="s2">&lt;/div&gt;</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">meta</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">lastUpdated</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2023-01-20T14:12:10</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">eventCoding</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://listaespera.org/fhir/message-events</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">Iniciar</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">source</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">software</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">SolucionInformatica</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">focus</span><span class="dl">"</span> <span class="p">:</span> <span class="p">[{</span>
+        <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">base/fhir/ServiceRequest/serv1</span><span class="dl">"</span>
+      <span class="p">}]</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">base/fhir/ServiceRequest/serv1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">ServiceRequest</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">serv1</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">generated</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">div</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">&lt;div xmlns=</span><span class="se">\"</span><span class="s2">http://www.w3.org/1999/xhtml</span><span class="se">\"</span><span class="s2">&gt;</span><span class="se">\n\t\t\t\t\t\t</span><span class="s2">&lt;p&gt;Service Request serv1&lt;/p&gt;</span><span class="se">\n\t\t\t\t\t</span><span class="s2">&lt;/div&gt;</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span> <span class="p">:</span> <span class="p">[{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span> <span class="p">:</span> <span class="p">[{</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/CodeSystem/listaespera</span><span class="dl">"</span><span class="p">,</span><span class="c1">//Se debe definir el type</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">IdInterconsulta</span><span class="dl">"</span>
+          <span class="p">}]</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">1</span><span class="dl">"</span>
+      <span class="p">}],</span>
+      <span class="dl">"</span><span class="s2">authoredOn</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2022-01-20T13:50:20</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">draft</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">priority</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">PrioridadInterconsultaOrigen</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">extension</span><span class="dl">"</span><span class="p">:[</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/ExtString</span><span class="dl">"</span><span class="p">,</span><span class="c1">//reparar url</span>
+          <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">FundamentoPriorizacion</span><span class="dl">"</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">extension</span><span class="dl">"</span><span class="p">:[</span>
+            <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">sospecha</span><span class="dl">"</span><span class="p">,</span>
+              <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">true</span><span class="dl">"</span>
+            <span class="p">},</span>
+            <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">patologia</span><span class="dl">"</span><span class="p">,</span>
+              <span class="dl">"</span><span class="s2">valueCodeableConcept</span><span class="dl">"</span><span class="p">:[</span>
+                <span class="p">{</span>
+                  <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="p">{</span>
+                      <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/codigosDeis/sospechasGes</span><span class="dl">"</span><span class="p">,</span>
+                      <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2</span><span class="dl">"</span>
+                    <span class="p">}</span>
+                  <span class="p">]</span>
+                <span class="p">}</span>
+              <span class="p">]</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/ExtBoolean</span><span class="dl">"</span><span class="p">,</span> <span class="c1">//Reparar url extensión ResolutividadAPS</span>
+          <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span> 
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/ExtBoolean</span><span class="dl">"</span><span class="p">,</span><span class="c1">//Reparar url extensión Alergia</span>
+          <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">ttp://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta</span><span class="dl">"</span>
+          <span class="dl">"</span><span class="s2">valueCodeableConcept</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                  <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/codigosDeis/OrigenInterconsulta</span><span class="dl">"</span><span class="p">,</span>
+                  <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">3</span><span class="dl">"</span>
+                <span class="p">}</span>
+              <span class="p">]</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">valueCodeableConcept</span><span class="dl">"</span><span class="p">:[</span>
+            <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                  <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/codigosDeis/EstadoInterconsultaCodigoLE</span><span class="dl">"</span><span class="p">,</span>
+                  <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">3</span><span class="dl">"</span>
+                <span class="p">}</span>
+              <span class="p">]</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/ExtBoolean</span><span class="dl">"</span><span class="p">,</span><span class="c1">//Reparar url extensión Cuidador</span>
+          <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">valueCodeableConcept</span><span class="dl">"</span><span class="p">:[</span>
+            <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                  <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/codigosDeis/DocAcreditacionCuidadorCodigoLE</span><span class="dl">"</span><span class="p">,</span>
+                  <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">1</span><span class="dl">"</span>
+                <span class="p">}</span>
+              <span class="p">]</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/ExtBoolean</span><span class="dl">"</span><span class="p">,</span><span class="c1">//Reparar url extensión Presenta Discapacidad</span>
+          <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/ExtBoolean</span><span class="dl">"</span><span class="p">,</span><span class="c1">//Reparar url extensión Persona Mayor</span>
+          <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span>
+        <span class="p">}</span>
+      <span class="p">],</span>
+      <span class="dl">"</span><span class="s2">subject</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Patient/pat12</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">reasonReference</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Observation/obs1</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">encounter</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Encounter/enc1</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">reasonCode</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/codigosDeis/motivoInterconsulta</span><span class="dl">"</span><span class="p">,</span>
+              <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">1</span><span class="dl">"</span><span class="p">,</span>
+              <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">confirmacion</span><span class="dl">"</span>
+            <span class="p">}</span>
+          <span class="p">]</span>
+        <span class="p">}</span>
+      <span class="p">],</span>
+      <span class="dl">"</span><span class="s2">supportingInfo</span><span class="dl">"</span><span class="p">:[</span>
+        <span class="p">{</span>
+           <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Appointment/app1</span><span class="dl">"</span>   
+        <span class="p">},</span>
+        <span class="p">{</span>
+           <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/QuestionnaireResponse/que1</span><span class="dl">"</span>   
+        <span class="p">},</span>
+        <span class="p">{</span>
+           <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/AllergyIntolerance/all1</span><span class="dl">"</span>   
+        <span class="p">},</span>
+        <span class="p">{</span>
+           <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Condition/cond1</span><span class="dl">"</span>   
+        <span class="p">},</span>
+        <span class="p">{</span>
+           <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Condition/cond2</span><span class="dl">"</span>   
+        <span class="p">},</span>
+        <span class="p">{</span>
+           <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Condition/cond3</span><span class="dl">"</span>   
+        <span class="p">}</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Patient/pat12</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+  <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Patient</span><span class="dl">"</span><span class="p">,</span>
+  <span class="dl">"</span><span class="s2">extension</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/CodigoPaises</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">valueCoding</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">AD</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/CodigoPaises</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">valueCoding</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">AD</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/ValueSet/VSIdentidaddeGenero</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">valueCoding</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">01</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">valueBoolean</span><span class="dl">"</span><span class="p">:</span> <span class="kc">false</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">extension</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">valueString</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">K</span><span class="dl">"</span>
+        <span class="p">}</span>
+      <span class="p">],</span>
+      <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">extension</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+           <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/CodigoPaises</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">valueCoding</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">AD</span><span class="dl">"</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">1</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">RUN</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador</span><span class="dl">"</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">15999999</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://www.acme.com/identifiers/patient</span><span class="dl">"</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">use</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">official</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">given</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="dl">"</span><span class="s2">Luis</span><span class="dl">"</span>
+      <span class="p">],</span>
+      <span class="dl">"</span><span class="s2">family</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Perez</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">_family</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">extension</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://hl7.org/fhir/StructureDefinition/humanname-mothers-family</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">valueString</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">sierra</span><span class="dl">"</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">use</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">usual</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">given</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+        <span class="dl">"</span><span class="s2">Luis</span><span class="dl">"</span>
+      <span class="p">]</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="dl">"</span><span class="s2">telecom</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="dl">"</span><span class="s2">use</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">mobile</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">569854875457</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">rank</span><span class="dl">"</span><span class="p">:</span> <span class="mi">1</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+  <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+     <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Observation/obs1</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Observation</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">registered</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">examenes</span><span class="dl">"</span>  
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">valueString</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">examenes realizados</span><span class="dl">"</span>
+
+      <span class="p">}</span> 
+  <span class="p">},</span>
+  <span class="p">{</span>
+     <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/AllergyIntolerance/all1</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">AllergyIntolerance</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">tipo alergia</span><span class="dl">"</span>  
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">patient</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span><span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Patient/pat12</span><span class="dl">"</span><span class="p">}</span>
+      <span class="p">}</span> 
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Location/loc1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Location</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">generated</span><span class="dl">"</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">div</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">&lt;div xmlns=</span><span class="se">\"</span><span class="s2">http://www.w3.org/1999/xhtml</span><span class="se">\"</span><span class="s2">&gt;Resumen datos del establecimiento&lt;/div&gt;</span><span class="dl">"</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+              <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span> <span class="p">:</span> <span class="p">[{</span>
+              <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/CodeSystem/listaespera</span><span class="dl">"</span><span class="p">,</span>
+              <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">EstablecimientoCodigo</span><span class="dl">"</span>
+              <span class="p">}]</span>
+            <span class="p">},</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">1</span><span class="dl">"</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Appointment/app1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Appointment</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">status</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">booked</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span><span class="p">:[{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span> <span class="p">:</span> <span class="p">[{</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/CodeSystem/listaespera</span><span class="dl">"</span><span class="p">,</span><span class="c1">//Se debe definir el type</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">IdCita</span><span class="dl">"</span>
+          <span class="p">}]</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">21</span><span class="dl">"</span>
+      <span class="p">}],</span>
+      <span class="dl">"</span><span class="s2">start</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">2023-22-01T09:00:00Z</span><span class="dl">"</span>
+    <span class="p">}</span> 
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Condition/con1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Condition</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">TipoCodDiagnosticaCodigoSospecha</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">CodigoSospecha</span><span class="dl">"</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">DiagnosticoTextoLibreSospecha</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">encounter-diagnosis</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://terminology.hl7.org/CodeSystem/condition-category</span><span class="dl">"</span><span class="p">,</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">diagnostico</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">note</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">FundamentoDiagnostico</span><span class="dl">"</span>
+    <span class="p">}</span> 
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Condition/con2</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Condition</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Indice comorbilidad</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Indice comorbilidad code</span><span class="dl">"</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">problem-list-item</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://terminology.hl7.org/CodeSystem/condition-category</span><span class="dl">"</span><span class="p">,</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Indice Comorbilidad</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">}</span> 
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Condition/con3</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Condition</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SospechaPatologiaGesCodigoSystem</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">SospechaPatologiaGesCodigo</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">SospechaPatologiaGesGlosa</span><span class="dl">"</span>
+          <span class="p">}</span>
+        <span class="p">]</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">category</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">problem-list-item</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://terminology.hl7.org/CodeSystem/condition-category</span><span class="dl">"</span><span class="p">,</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">sospechaGes</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">}</span> 
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Encounter/enc1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Encounter</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span><span class="p">:[{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span> <span class="p">:</span> <span class="p">[{</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/CodeSystem/listaespera</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">IdConsultaAPS</span><span class="dl">"</span>
+          <span class="p">}]</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">3</span><span class="dl">"</span>
+      <span class="p">}]</span>
+    <span class="p">}</span> 
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Practitioner/pra1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Practitioner</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span><span class="p">:[{</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span> <span class="p">:</span> <span class="p">[{</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/CodeSystem/listaespera</span><span class="dl">"</span><span class="p">,</span> <span class="c1">//REvisar Type</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">ValorRNPI</span><span class="dl">"</span>
+          <span class="p">}]</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">2134</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">extension</span><span class="dl">"</span><span class="p">:[</span>
+          <span class="p">{</span>
+            <span class="dl">"</span><span class="s2">url</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">3</span><span class="dl">"</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="dl">"</span><span class="s2">type</span><span class="dl">"</span> <span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span> <span class="p">:</span> <span class="p">[{</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://terminology.cens.cl/CodeSystem/listaespera</span><span class="dl">"</span><span class="p">,</span> <span class="c1">// Revisar Type</span>
+            <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">RUN</span><span class="dl">"</span>
+          <span class="p">}]</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">2134</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="dl">"</span><span class="s2">qualification</span><span class="dl">"</span><span class="p">:[</span>
+      <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">identifier</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+          <span class="dl">"</span><span class="s2">value</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">cert</span><span class="dl">"</span>
+        <span class="p">},</span>
+        <span class="dl">"</span><span class="s2">code</span><span class="dl">"</span><span class="p">:{</span>
+          <span class="dl">"</span><span class="s2">coding</span><span class="dl">"</span><span class="p">:{</span>
+            <span class="dl">"</span><span class="s2">system</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://terminology.cens.cl/CodeSystem/certMedicos</span><span class="dl">"</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">display</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Medico Cirujano</span><span class="dl">"</span>
+          <span class="p">},</span>
+          <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Certificado(s)</span><span class="dl">"</span>
+
+        <span class="p">}</span>
+      <span class="p">}</span>
+      
+    <span class="p">]</span>
+    <span class="p">}</span> 
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/PractitionerRole/praR1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">PractitionerRole</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">practitioner</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Practitioner/pra1</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">location</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Location/loc1</span><span class="dl">"</span>
+      <span class="p">},</span>
+      <span class="dl">"</span><span class="s2">organization</span><span class="dl">"</span><span class="p">:{</span>
+        <span class="dl">"</span><span class="s2">reference</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/Organization/org1</span><span class="dl">"</span>
+      <span class="p">}</span>
+    <span class="p">}</span> 
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">fullUrl</span><span class="dl">"</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">http://acme.com/ehr/fhir/QuestionnaireResponse/que1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">resource</span><span class="dl">"</span><span class="p">:{</span>
+      <span class="dl">"</span><span class="s2">resourceType</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">QuestionnaireResponse</span><span class="dl">"</span><span class="p">,</span>
+      <span class="dl">"</span><span class="s2">item</span><span class="dl">"</span><span class="p">:[</span>
+        <span class="p">{</span>
+           <span class="dl">"</span><span class="s2">linkId</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">resumen</span><span class="dl">"</span><span class="p">,</span>
+           <span class="dl">"</span><span class="s2">text</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">resumen</span><span class="dl">"</span><span class="p">,</span>
+           <span class="dl">"</span><span class="s2">answer</span><span class="dl">"</span><span class="p">:[</span>
+             <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">valueString</span><span class="dl">"</span><span class="p">:</span><span class="dl">"</span><span class="s2">Anamnesis</span><span class="dl">"</span>
+             <span class="p">}</span>
+           <span class="p">]</span> 
+        <span class="p">}</span>
+        
+      <span class="p">]</span>
+    <span class="p">}</span> 
+  <span class="p">}</span>
+<span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
 <h2 id="notas">Notas</h2>
 
 <ul>
@@ -291,7 +785,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 27, 2023 16:08+0000">2023-01-27</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 27, 2023 21:59+0000">2023-01-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
