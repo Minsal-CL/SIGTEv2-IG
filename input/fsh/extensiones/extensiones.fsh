@@ -261,7 +261,7 @@ Description: "Origen Interconsulta"
 * value[x] ^short = "Codigo de la interconsulta"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
-  * code 0..1 MS
+  * code 1..1 MS
   * code from VSinterconsulta
   * system 0..1 MS
   * display 0..1 MS

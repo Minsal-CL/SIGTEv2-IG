@@ -8,17 +8,13 @@ ECHO We're offline...
 SET txoption=-tx n/a
 GOTO igpublish
 
-
-
-
-
 :isonline
 ECHO We're online
 SET txoption=
 
 :igpublish
-SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
+SET JAVA_TOOL_OPTIONS=-Dfile.encoding=UTF-8
 
 IF EXIST "%input_cache_path%\%publisher_jar%" (
 	JAVA -jar "%input_cache_path%\%publisher_jar%" -ig . %txoption% %*
@@ -27,7 +23,5 @@ IF EXIST "%input_cache_path%\%publisher_jar%" (
 ) ELSE (
 	ECHO IG Publisher NOT FOUND in input-cache or parent folder.  Please run _updatePublisher.  Aborting...
 )
-
-
 
 PAUSE
