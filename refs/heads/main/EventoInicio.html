@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -118,7 +118,25 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="Eventos.html">Eventos</a>
+      </li>
+      <li>
         <a href="EventoInicio.html">Evento Inicio</a>
+      </li>
+      <li>
+        <a href="EventoReferenciada.html">Evento Referenciada</a>
+      </li>
+      <li>
+        <a href="EventoRevisar.html">Evento Revisar</a>
+      </li>
+      <li>
+        <a href="EventoAgendar.html">Evento Agendar</a>
+      </li>
+      <li>
+        <a href="EventoAtender.html">Evento Atender</a>
+      </li>
+      <li>
+        <a href="EventoTerminar.html">Evento Terminar</a>
       </li>
     </ul>
   </li>
@@ -177,7 +195,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>El evento INICIO tiene asociado los siguientes códigos de evento:</p>
 
-<table>
+<table class="grid">
   <thead>
     <tr>
       <th>Código</th>
@@ -203,24 +221,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><br/></p>
 <div align="center">
   <img src="DiagramasRecursos_ListaEspera_FlujodeEventos_Inicio.png" style="border: 1px solid; color: black;"/> 
-  <p>----------</p>
+  <p></p>
 </div>
 <p><br/></p>
 
 <p>Los recursos usados en este evento son los siguientes:</p>
 
 <ul>
-  <li><a name="l365">​</a><a href="link">ServiceRequest</a>: Recurso principal para reflejar los datos de la interconsulta</li>
-  <li><a name="l370">​</a><a href="link">MessageHeader</a>: lorem</li>
-  <li><a name="l375">​</a><a href="link">PractitionerRole</a>: lorem</li>
-  <li><a name="l380">​</a><a href="link">Condition</a>: lorem</li>
-  <li><a name="l385">​</a><a href="link">PractitionerRole</a>: lorem</li>
-  <li><a name="l390">​</a><a href="link">Observation</a>: lorem</li>
-  <li><a name="l395">​</a><a href="link">Encounter</a>: lorem</li>
-  <li><a name="l400">​</a><a href="link">AllergyIntolerance</a>: lorem</li>
-  <li><a name="l405">​</a><a href="link">Patient</a>: lorem</li>
-  <li><a name="l410">​</a><a href="link">QuestionaireResponse</a>: lorem</li>
-  <li><a name="l415">​</a><a href="link">Appointment</a>: lorem</li>
+  <li><a name="l400">​</a><a href="link">ServiceRequest</a>: Recurso principal para reflejar los datos de la interconsulta</li>
+  <li><a name="l405">​</a><a href="link">MessageHeader</a>: lorem</li>
+  <li><a name="l410">​</a><a href="link">PractitionerRole</a>: lorem</li>
+  <li><a name="l415">​</a><a href="link">Condition</a>: lorem</li>
+  <li><a name="l420">​</a><a href="link">PractitionerRole</a>: lorem</li>
+  <li><a name="l425">​</a><a href="link">Observation</a>: lorem</li>
+  <li><a name="l430">​</a><a href="link">Encounter</a>: lorem</li>
+  <li><a name="l435">​</a><a href="link">AllergyIntolerance</a>: lorem</li>
+  <li><a name="l440">​</a><a href="link">Patient</a>: lorem</li>
+  <li><a name="l445">​</a><a href="link">QuestionaireResponse</a>: lorem</li>
+  <li><a name="l450">​</a><a href="link">Appointment</a>: lorem</li>
 </ul>
 
 <h2 id="relaciones-de-recursos">Relaciones de Recursos</h2>
@@ -228,7 +246,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><br/></p>
 <div align="center">
   <img src="DiagramasRecursos_ListaEspera_IniciarReferenciada.png" style="border: 1px solid; color: black;"/> 
-  <p>----------</p>
+  <p></p>
 </div>
 <p><br/></p>
 
@@ -273,7 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jan 25, 2023 17:01+0000">2023-01-25</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jan 27, 2023 16:08+0000">2023-01-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
