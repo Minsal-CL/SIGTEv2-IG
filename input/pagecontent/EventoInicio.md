@@ -6,6 +6,7 @@ El evento INICIO tiene asociado los siguientes códigos de evento:
 | Código | Evento| Descripción | Respuesta |
 |--------|----|-----|---|
 | inicio | Inicio | Este evento permite iniciar un proceso de interconsulta nuevo | La respuesta debe indicar si errores o indicar que la interconsulta ha sido creada |
+{:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
 
@@ -16,7 +17,7 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="DiagramasRecursos_ListaEspera_FlujodeEventos_Inicio.png"> 
-  <p>----------</p>
+  <p></p>
 </div>
 <br>
 
@@ -39,7 +40,7 @@ Los recursos usados en este evento son los siguientes:
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="DiagramasRecursos_ListaEspera_IniciarReferenciada.png"> 
-  <p>----------</p>
+  <p></p>
 </div>
 <br>
 
