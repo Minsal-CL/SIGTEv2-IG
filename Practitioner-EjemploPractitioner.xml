@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="EjemploPractitioner"/>
+  <meta>
+    <profile value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitioner"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitioner&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerLE.html">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-01-22</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Certificado(s) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (certMedicos &quot;Medico Cirujano&quot;)</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+        <code value="RUN"/>
+      </coding>
+    </type>
+    <value value="2134"/>
+  </identifier>
+  <identifier>
+    <use value="secondary"/>
+    <type>
+      <coding>
+        <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+        <code value="ValorRNPI"/>
+      </coding>
+    </type>
+    <value value="2134"/>
+  </identifier>
+  <gender value="male"/>
+  <birthDate value="1974-01-22"/>
+  <qualification>
+    <identifier>
+      <value value="cert"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://terminology.cens.cl/CodeSystem/certMedicos"/>
+        <display value="Medico Cirujano"/>
+      </coding>
+      <text value="Certificado(s)"/>
+    </code>
+  </qualification>
+</Practitioner>

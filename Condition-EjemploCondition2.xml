@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="EjemploCondition2"/>
+  <meta>
+    <profile value="http://minsal.cl/listaespera/StructureDefinition/CondicionInicio2LE"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="EjemploCondition2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;EjemploCondition2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CondicionInicio2LE.html">Condicion Inicio 2 LE</a></p></div><p><b>category</b>: Indice Comorbilidad <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: DiagnosticoTextoLibreSospecha <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSIndicecomorbilidad.html">Indice Comorbilidad</a>#G1)</span></p><p><b>subject</b>: <a href="http://acme.com/ehr/fhir/Patient/pat12">http://acme.com/ehr/fhir/Patient/pat12</a></p></div>
+  </text>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="problem-list-item"/>
+    </coding>
+    <text value="Indice Comorbilidad"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://minsal.cl/listaespera/CodeSystem/CSIndicecomorbilidad"/>
+      <code value="G1"/>
+    </coding>
+    <text value="DiagnosticoTextoLibreSospecha"/>
+  </code>
+  <subject>
+    <reference value="http://acme.com/ehr/fhir/Patient/pat12"/>
+  </subject>
+</Condition>

@@ -1,0 +1,79 @@
+{
+  "resourceType" : "Patient",
+  "id" : "EjemploPatient",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Luis </b> (no stated gender), DoB Unknown ( RUN: 15999999)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Luis Perez (OFFICIAL)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">569854875457(MOBILE)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Identidad de genero\"><a href=\"StructureDefinition-IdentidadGenero.html\">Identidad de genero:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">01</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de las Nacionalidades\"><a href=\"StructureDefinition-NacionalidadCodigo.html\">Codigo de Identificación de Nacionalidad:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de paises de origen\"><a href=\"StructureDefinition-CodigoPaises.html\">Codigo de Identificación de países:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"ExtBool Afrodescendiente\"><a href=\"StructureDefinition-ExtBoolAfrodescendiente.html\">ExtBool Afrodescendiente:</a></td><td colspan=\"3\"><ul><li>false</li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "AD"
+      }],
+      "text" : "Andorra"
+    }
+  },
+  {
+    "url" : "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "AD"
+      }],
+      "text" : "Andorra"
+    }
+  },
+  {
+    "url" : "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "01"
+      }]
+    }
+  },
+  {
+    "url" : "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente",
+    "valueBoolean" : false
+  }],
+  "identifier" : [{
+    "extension" : [{
+      "url" : "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
+      "valueString" : "K"
+    }],
+    "type" : {
+      "extension" : [{
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+        "valueCoding" : {
+          "code" : "AD"
+        }
+      }],
+      "coding" : [{
+        "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador",
+        "code" : "1",
+        "display" : "RUN"
+      }]
+    },
+    "system" : "http://www.acme.com/identifiers/patient",
+    "value" : "15999999"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Perez",
+    "_family" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+        "valueString" : "sierra"
+      }]
+    },
+    "given" : ["Luis"]
+  },
+  {
+    "use" : "usual",
+    "given" : ["Luis"]
+  }],
+  "telecom" : [{
+    "value" : "569854875457",
+    "use" : "mobile",
+    "rank" : 1
+  }]
+}
