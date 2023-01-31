@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-01-25T13:45:37-03:00",
+  "date" : "2023-01-30T23:51:40-03:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -1101,6 +1101,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/NacionalidadCodigo"
+      },
+      "name" : "Codigo de Identificación de Nacionalidad",
+      "description" : "Esta extensión incluye códigos de las Nacionalidades",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/OrigenInterconsulta"
       },
       "name" : "Origen Interconsulta",
@@ -1694,6 +1706,160 @@
       "name" : "Interconsulta",
       "description" : "Interconsulta",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/EjemploAppointment"
+      },
+      "name" : "Ejemplo de Appointment Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/EjemploCondition"
+      },
+      "name" : "Ejemplo de Condition1 Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio1LE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/EjemploCondition2"
+      },
+      "name" : "Ejemplo de Condition2 Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio2LE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/EjemploCondition3"
+      },
+      "name" : "Ejemplo de Condition3 Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/EjemploEncounter"
+      },
+      "name" : "Ejemplo de Encounter Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Location"
+      }],
+      "reference" : {
+        "reference" : "Location/EjemploLocation"
+      },
+      "name" : "Ejemplo de Location Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/LocationLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MessageHeader"
+      }],
+      "reference" : {
+        "reference" : "MessageHeader/EjemploMessageHeader"
+      },
+      "name" : "Ejemplo de MesaggeHeader Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EjemploObservation"
+      },
+      "name" : "Ejemplo de Observation Evento de Inicio",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/EjemploPatient"
+      },
+      "name" : "Ejemplo de Patient Evento de Inicio",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/EjemploPractitioner"
+      },
+      "name" : "Ejemplo de Practitioner Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/EjemploPractitionerRole"
+      },
+      "name" : "Ejemplo de PractitionerRole Evento de Inicio",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/EjemploQuestionnaireResponse"
+      },
+      "name" : "Ejemplo de QuestionnaireResponseEvento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseInicioLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/EjemploServiceRequest"
+      },
+      "name" : "Ejemplo de Service Request Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/EjemploServiceRequest2"
+      },
+      "name" : "Ejemplo de Service Request 2",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
     }],
     "page" : {
       "extension" : [{
@@ -1751,10 +1917,73 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "EventoAgendar.html"
+        }],
+        "nameUrl" : "EventoAgendar.html",
+        "title" : "Evento Agendar",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "EventoAtender.html"
+        }],
+        "nameUrl" : "EventoAtender.html",
+        "title" : "Evento Atender",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "EventoInicio.html"
         }],
         "nameUrl" : "EventoInicio.html",
         "title" : "Evento Inicio",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "EventoReferenciada.html"
+        }],
+        "nameUrl" : "EventoReferenciada.html",
+        "title" : "Evento Referenciada",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "EventoRevisar.html"
+        }],
+        "nameUrl" : "EventoRevisar.html",
+        "title" : "Evento Revisar",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "Eventos.html"
+        }],
+        "nameUrl" : "Eventos.html",
+        "title" : "Eventos",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "EventoTerminar.html"
+        }],
+        "nameUrl" : "EventoTerminar.html",
+        "title" : "Evento Terminar",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "historialCambios.html"
+        }],
+        "nameUrl" : "historialCambios.html",
+        "title" : "Historial Cambios",
         "generation" : "markdown"
       },
       {

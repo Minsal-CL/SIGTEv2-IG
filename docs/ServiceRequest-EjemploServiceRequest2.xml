@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="EjemploServiceRequest2"/>
+  <meta>
+    <profile value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequest2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequest2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>ExtStringFundamentoPriorizacion</b>: FundamentoPriorizacion</p><p><b>SospechaPatologiaGes</b>: true</p><p><b>ExtBool ResolutividadAPS</b>: true</p><p><b>ExtBool Alergia</b>: false</p><p><b>Origen Interconsulta</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>Estado Interconsulta Codigo</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>ExtBool Cuidador</b>: true</p><p><b>Doc Acreditacion Cuidador</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>ExtBool PresentaDiscapacidad</b>: false</p><p><b>ExtBool PersonaMayor</b>: false</p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href="http://acme.com/ehr/fhir/Patient/pat12">http://acme.com/ehr/fhir/Patient/pat12</a></p><p><b>encounter</b>: <a href="http://acme.com/ehr/fhir/Encounter/enc1">http://acme.com/ehr/fhir/Encounter/enc1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>reasonCode</b>: confirmacion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (motivoInterconsulta#1)</span></p><p><b>reasonReference</b>: <a href="http://acme.com/ehr/fhir/Observation/obs1">http://acme.com/ehr/fhir/Observation/obs1</a></p><p><b>supportingInfo</b>: </p><ul><li><a href="http://acme.com/ehr/fhir/Appointment/app1">http://acme.com/ehr/fhir/Appointment/app1</a></li><li><a href="http://acme.com/ehr/fhir/QuestionnaireResponse/que1">http://acme.com/ehr/fhir/QuestionnaireResponse/que1</a></li><li><a href="http://acme.com/ehr/fhir/AllergyIntolerance/all1">http://acme.com/ehr/fhir/AllergyIntolerance/all1</a></li><li><a href="http://acme.com/ehr/fhir/Condition/cond1">http://acme.com/ehr/fhir/Condition/cond1</a></li><li><a href="http://acme.com/ehr/fhir/Condition/cond2">http://acme.com/ehr/fhir/Condition/cond2</a></li><li><a href="http://acme.com/ehr/fhir/Condition/cond3">http://acme.com/ehr/fhir/Condition/cond3</a></li></ul></div>
+  </text>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion">
+    <valueString value="FundamentoPriorizacion"/>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia">
+    <valueBoolean value="false"/>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta">
+    <valueCodeableConcept>
+      <coding>
+        <code value="1"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE">
+    <valueCodeableConcept>
+      <coding>
+        <code value="1"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolCuidador">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE">
+    <valueCodeableConcept>
+      <coding>
+        <code value="1"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolPresentaDiscapacidad">
+    <valueBoolean value="false"/>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor">
+    <valueBoolean value="false"/>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+        <code value="IdInterconsulta"/>
+      </coding>
+    </type>
+    <value value="1"/>
+  </identifier>
+  <status value="draft"/>
+  <intent value="proposal"/>
+  <priority value="urgent"/>
+  <subject>
+    <reference value="http://acme.com/ehr/fhir/Patient/pat12"/>
+  </subject>
+  <encounter>
+    <reference value="http://acme.com/ehr/fhir/Encounter/enc1"/>
+  </encounter>
+  <authoredOn value="2022-01-20T13:50:20Z"/>
+  <reasonCode>
+    <coding>
+      <system value="http://terminology.cens.cl/codigosDeis/motivoInterconsulta"/>
+      <code value="1"/>
+      <display value="confirmacion"/>
+    </coding>
+  </reasonCode>
+  <reasonReference>
+    <reference value="http://acme.com/ehr/fhir/Observation/obs1"/>
+  </reasonReference>
+  <supportingInfo>
+    <reference value="http://acme.com/ehr/fhir/Appointment/app1"/>
+  </supportingInfo>
+  <supportingInfo>
+    <reference value="http://acme.com/ehr/fhir/QuestionnaireResponse/que1"/>
+  </supportingInfo>
+  <supportingInfo>
+    <reference value="http://acme.com/ehr/fhir/AllergyIntolerance/all1"/>
+  </supportingInfo>
+  <supportingInfo>
+    <reference value="http://acme.com/ehr/fhir/Condition/cond1"/>
+  </supportingInfo>
+  <supportingInfo>
+    <reference value="http://acme.com/ehr/fhir/Condition/cond2"/>
+  </supportingInfo>
+  <supportingInfo>
+    <reference value="http://acme.com/ehr/fhir/Condition/cond3"/>
+  </supportingInfo>
+</ServiceRequest>

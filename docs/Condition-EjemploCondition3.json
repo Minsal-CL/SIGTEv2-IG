@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Condition",
+  "id" : "EjemploCondition3",
+  "meta" : {
+    "profile" : ["http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionInicio3LE.html\">Condicion Inicio 3 LE</a></p></div><p><b>category</b>: sospechaGes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: SospechaPatologiaGesGlosa <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSSospechaPatologiaGes.html\">Sospecha Patologia Ges</a>#A000)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/pat12\">http://acme.com/ehr/fhir/Patient/pat12</a></p></div>"
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "code" : "problem-list-item"
+    }],
+    "text" : "sospechaGes"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://minsal.cl/listaespera/CodeSystem/CSSospechaPatologiaGes",
+      "code" : "A000"
+    }],
+    "text" : "SospechaPatologiaGesGlosa"
+  },
+  "subject" : {
+    "reference" : "http://acme.com/ehr/fhir/Patient/pat12"
+  }
+}

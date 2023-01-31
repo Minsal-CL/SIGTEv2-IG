@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-01-25T13:45:37-03:00"/>
+  <date value="2023-01-30T23:51:40-03:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -910,6 +910,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/NacionalidadCodigo"/>
+      </reference>
+      <name value="Codigo de Identificación de Nacionalidad"/>
+      <description value="Esta extensión incluye códigos de las Nacionalidades"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/OrigenInterconsulta"/>
       </reference>
       <name value="Origen Interconsulta"/>
@@ -1455,6 +1466,146 @@
       <description value="Interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/EjemploAppointment"/>
+      </reference>
+      <name value="Ejemplo de Appointment Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/EjemploCondition"/>
+      </reference>
+      <name value="Ejemplo de Condition1 Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/CondicionInicio1LE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/EjemploCondition2"/>
+      </reference>
+      <name value="Ejemplo de Condition2 Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/CondicionInicio2LE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/EjemploCondition3"/>
+      </reference>
+      <name value="Ejemplo de Condition3 Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/EjemploEncounter"/>
+      </reference>
+      <name value="Ejemplo de Encounter Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Location"/>
+      </extension>
+      <reference>
+        <reference value="Location/EjemploLocation"/>
+      </reference>
+      <name value="Ejemplo de Location Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/LocationLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/EjemploMessageHeader"/>
+      </reference>
+      <name value="Ejemplo de MesaggeHeader Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EjemploObservation"/>
+      </reference>
+      <name value="Ejemplo de Observation Evento de Inicio"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/EjemploPatient"/>
+      </reference>
+      <name value="Ejemplo de Patient Evento de Inicio"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/EjemploPractitioner"/>
+      </reference>
+      <name value="Ejemplo de Practitioner Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/EjemploPractitionerRole"/>
+      </reference>
+      <name value="Ejemplo de PractitionerRole Evento de Inicio"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/EjemploQuestionnaireResponse"/>
+      </reference>
+      <name value="Ejemplo de QuestionnaireResponseEvento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseInicioLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/EjemploServiceRequest"/>
+      </reference>
+      <name value="Ejemplo de Service Request Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/EjemploServiceRequest2"/>
+      </reference>
+      <name value="Ejemplo de Service Request 2"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
+    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -1504,10 +1655,66 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="EventoAgendar.html"/>
+        </extension>
+        <nameUrl value="EventoAgendar.html"/>
+        <title value="Evento Agendar"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="EventoAtender.html"/>
+        </extension>
+        <nameUrl value="EventoAtender.html"/>
+        <title value="Evento Atender"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="EventoInicio.html"/>
         </extension>
         <nameUrl value="EventoInicio.html"/>
         <title value="Evento Inicio"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="EventoReferenciada.html"/>
+        </extension>
+        <nameUrl value="EventoReferenciada.html"/>
+        <title value="Evento Referenciada"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="EventoRevisar.html"/>
+        </extension>
+        <nameUrl value="EventoRevisar.html"/>
+        <title value="Evento Revisar"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Eventos.html"/>
+        </extension>
+        <nameUrl value="Eventos.html"/>
+        <title value="Eventos"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="EventoTerminar.html"/>
+        </extension>
+        <nameUrl value="EventoTerminar.html"/>
+        <title value="Evento Terminar"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="historialCambios.html"/>
+        </extension>
+        <nameUrl value="historialCambios.html"/>
+        <title value="Historial Cambios"/>
         <generation value="markdown"/>
       </page>
       <page>

@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Location/EjemploLocation> a fhir:Location;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EjemploLocation"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/LocationLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/LocationLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"EjemploLocation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;EjemploLocation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-LocationLE.html\">Location LE</a></p></div><p><b>identifier</b>: Placer Identifier: 1</p></div>"
+  ]; # 
+  fhir:Location.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "PLAC" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Location/EjemploLocation.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

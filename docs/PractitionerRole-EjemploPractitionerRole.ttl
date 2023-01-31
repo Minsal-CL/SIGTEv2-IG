@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRole> a fhir:PractitionerRole;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EjemploPractitionerRole"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRole\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRole&quot; </p></div><p><b>practitioner</b>: <a href=\"http://acme.com/ehr/fhir/Practitioner/pra1\">http://acme.com/ehr/fhir/Practitioner/pra1</a></p><p><b>organization</b>: <a href=\"http://acme.com/ehr/fhir/Organization/org1\">http://acme.com/ehr/fhir/Organization/org1</a></p><p><b>location</b>: <a href=\"http://acme.com/ehr/fhir/Location/loc1\">http://acme.com/ehr/fhir/Location/loc1</a></p></div>"
+  ]; # 
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://acme.com/ehr/fhir/Practitioner/pra1>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Practitioner/pra1" ]
+  ]; # 
+  fhir:PractitionerRole.organization [
+     fhir:link <http://acme.com/ehr/fhir/Organization/org1>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Organization/org1" ]
+  ]; # 
+  fhir:PractitionerRole.location [
+     fhir:index 0;
+     fhir:link <http://acme.com/ehr/fhir/Location/loc1>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Location/loc1" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRole.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
