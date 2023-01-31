@@ -1,0 +1,9 @@
+Instance: EjemploObservation
+InstanceOf: Observation
+Usage: #example
+Title: "Ejemplo de Observation Evento de Inicio"
+Description: ""
+
+* status = #registered
+* code.text = "examenes"
+* valueString = "examenes realizados"

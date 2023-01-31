@@ -1,0 +1,86 @@
+{
+  "resourceType": "Patient",
+  "extension": [
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+      "valueCoding": {
+        "code": "AD"
+      }
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+      "valueCoding": {
+        "code": "AD"
+      }
+    },
+    {
+      "url": "http://minsal.cl/listaespera/ValueSet/VSIdentidaddeGenero",
+      "valueCoding": {
+        "code": "01"
+      }
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente",
+      "valueBoolean": false
+    }
+  ],
+  "identifier": [
+    {
+      "extension": [
+        {
+          "url": "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
+          "valueString": "K"
+        }
+      ],
+      "type": {
+        "extension": [
+          {
+            "url": "https://hl7chile.cl/fhir/ig/corecl/StructureDefinition/CodigoPaises",
+            "valueCoding": {
+              "code": "AD"
+            }
+          }
+        ],
+        "coding": [
+          {
+            "code": "1",
+            "display": "RUN",
+            "system": "http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador"
+          }
+        ]
+      },
+      "value": "15999999",
+      "system": "http://www.acme.com/identifiers/patient"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "given": [
+        "jorge"
+      ],
+      "family": "mansilla",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family",
+            "valueString": "sierra"
+          }
+        ]
+      }
+    },
+    {
+      "use": "usual",
+      "given": [
+        "kasandra"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "use": "mobile",
+      "value": "569854875457",
+      "rank": 1
+    }
+  ]
+}
