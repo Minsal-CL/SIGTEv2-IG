@@ -305,6 +305,25 @@
       ]
     },
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo",
+      "title": "Codigo de Identificación de Nacionalidad",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta",
       "title": "Origen Interconsulta",
       "types": [
@@ -635,7 +654,8 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises": [
-      "Patient"
+      "Patient",
+      "Patient.identifier.type"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/Contactado": [
       "Appointment"
@@ -693,6 +713,9 @@
     ],
     "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta": [
       "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo": [
+      "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta": [
       "ServiceRequest"

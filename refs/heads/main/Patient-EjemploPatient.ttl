@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Patient/EjemploPatient> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EjemploPatient"]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Luis </b> (no stated gender), DoB Unknown ( RUN: 15999999)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Luis Perez (OFFICIAL)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">569854875457(MOBILE)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Identidad de genero\"><a href=\"StructureDefinition-IdentidadGenero.html\">Identidad de genero:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">01</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de las Nacionalidades\"><a href=\"StructureDefinition-NacionalidadCodigo.html\">Codigo de Identificación de Nacionalidad:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de paises de origen\"><a href=\"StructureDefinition-CodigoPaises.html\">Codigo de Identificación de países:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"ExtBool Afrodescendiente\"><a href=\"StructureDefinition-ExtBoolAfrodescendiente.html\">ExtBool Afrodescendiente:</a></td><td colspan=\"3\"><ul><li>false</li></ul></td></tr></table></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "AD" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Andorra" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "AD" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Andorra" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "01" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente" ];
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ]; # 
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador" ];
+       fhir:Extension.valueString [ fhir:value "K" ]
+     ];
+     fhir:Identifier.type [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.code [ fhir:value "AD" ]
+         ]
+       ];
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "RUN" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://www.acme.com/identifiers/patient" ];
+     fhir:Identifier.value [ fhir:value "15999999" ]
+  ]; # 
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [
+       fhir:value "Perez";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family" ];
+         fhir:Extension.valueString [ fhir:value "sierra" ]
+       ]
+     ];
+     fhir:HumanName.given [
+       fhir:value "Luis";
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.given [
+       fhir:value "Luis";
+       fhir:index 0
+     ]
+  ]; # 
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.value [ fhir:value "569854875457" ];
+     fhir:ContactPoint.use [ fhir:value "mobile" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Patient/EjemploPatient.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

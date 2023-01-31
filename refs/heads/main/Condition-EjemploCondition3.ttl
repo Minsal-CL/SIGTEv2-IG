@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Condition/EjemploCondition3> a fhir:Condition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EjemploCondition3"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionInicio3LE.html\">Condicion Inicio 3 LE</a></p></div><p><b>category</b>: sospechaGes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: SospechaPatologiaGesGlosa <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSSospechaPatologiaGes.html\">Sospecha Patologia Ges</a>#A000)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/pat12\">http://acme.com/ehr/fhir/Patient/pat12</a></p></div>"
+  ]; # 
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-category" ];
+       fhir:Coding.code [ fhir:value "problem-list-item" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "sospechaGes" ]
+  ]; # 
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSSospechaPatologiaGes" ];
+       fhir:Coding.code [ fhir:value "A000" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "SospechaPatologiaGesGlosa" ]
+  ]; # 
+  fhir:Condition.subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/pat12>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/pat12" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Condition/EjemploCondition3.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
