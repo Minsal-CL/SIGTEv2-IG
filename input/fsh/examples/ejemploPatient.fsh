@@ -1,5 +1,5 @@
 Instance: EjemploPatient
-InstanceOf: Patient
+InstanceOf: PacienteLE
 Usage: #example
 Title: "Ejemplo de Patient Evento de Inicio"
 Description: ""
@@ -28,6 +28,8 @@ Description: ""
 * name[=].family.extension.valueString = "sierra"
 * name[+].use = #usual
 * name[=].given = "Luis"
-* telecom.use = #mobile
-* telecom.value = "569854875457"
-* telecom.rank = 1
+* telecom[TelefonoMovil1].use = #mobile
+* telecom[TelefonoMovil1].value = "569854875457"
+* telecom[TelefonoMovil1].rank = 1
+* gender = #male
+* birthDate = "1995-12-12"

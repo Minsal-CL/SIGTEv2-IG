@@ -1,5 +1,5 @@
 Instance: EjemploPractitionerRole
-InstanceOf: PractitionerRole
+InstanceOf: PractitionerRoleLE
 Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Inicio"
 Description: ""

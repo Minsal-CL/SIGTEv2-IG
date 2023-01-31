@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"18.104"}
-    h3,h4,h5,h6{--heading-prefix:"18.104"}</style>
+    <style type="text/css">h2{--heading-prefix:"18.105"}
+    h3,h4,h5,h6{--heading-prefix:"18.105"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -242,9 +242,14 @@
 {
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient">resourceType</a>" : "Patient",
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.id">id</a>" : "EjemploPatient",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      "http://minsal.cl/listaespera/StructureDefinition/PacienteLE"
+    ]
+  },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;Luis &lt;/b&gt; (no stated gender), DoB Unknown ( RUN: 15999999)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Alternate names (see the one above)\&quot;&gt;Alt. Name:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Luis Perez (OFFICIAL)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Detail:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;569854875457(MOBILE)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Identidad de genero\&quot;&gt;&lt;a href=\&quot;StructureDefinition-IdentidadGenero.html\&quot;&gt;Identidad de genero:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;01&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Esta extensión incluye códigos de las Nacionalidades\&quot;&gt;&lt;a href=\&quot;StructureDefinition-NacionalidadCodigo.html\&quot;&gt;Codigo de Identificación de Nacionalidad:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;Andorra&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Esta extensión incluye códigos de paises de origen\&quot;&gt;&lt;a href=\&quot;StructureDefinition-CodigoPaises.html\&quot;&gt;Codigo de Identificación de países:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;Andorra&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;ExtBool Afrodescendiente\&quot;&gt;&lt;a href=\&quot;StructureDefinition-ExtBoolAfrodescendiente.html\&quot;&gt;ExtBool Afrodescendiente:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;false&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;Luis &lt;/b&gt; male, DoB: 1995-12-12 ( RUN: 15999999)&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Alternate names (see the one above)\&quot;&gt;Alt. Name:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Luis Perez (OFFICIAL)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Detail:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;569854875457(MOBILE)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Identidad de genero\&quot;&gt;&lt;a href=\&quot;StructureDefinition-IdentidadGenero.html\&quot;&gt;Identidad de genero:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;01&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Esta extensión incluye códigos de las Nacionalidades\&quot;&gt;&lt;a href=\&quot;StructureDefinition-NacionalidadCodigo.html\&quot;&gt;Codigo de Identificación de Nacionalidad:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;Andorra&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Esta extensión incluye códigos de paises de origen\&quot;&gt;&lt;a href=\&quot;StructureDefinition-CodigoPaises.html\&quot;&gt;Codigo de Identificación de países:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;Andorra&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;ExtBool Afrodescendiente\&quot;&gt;&lt;a href=\&quot;StructureDefinition-ExtBoolAfrodescendiente.html\&quot;&gt;ExtBool Afrodescendiente:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;false&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>" : [
     {
@@ -342,7 +347,9 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">use</a>" : "mobile",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.rank">rank</a>" : 1
     }
-  ]
+  ],
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "male",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">birthDate</a>" : "1995-12-12"
 }</code></pre>
 
 
@@ -373,7 +380,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jan 30, 2023 23:51-0300">2023-01-30</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 31, 2023 15:14-0300">2023-01-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

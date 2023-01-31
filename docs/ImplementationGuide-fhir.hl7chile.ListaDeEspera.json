@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-01-30T23:51:40-03:00",
+  "date" : "2023-01-31T15:14:06-03:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -802,10 +802,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PractitioneRolerLE"
+        "reference" : "StructureDefinition/PractitionerLE"
       },
-      "name" : "PractitionerRole LE",
-      "description" : "PractitionerRole LE",
+      "name" : "Practitioner LE",
+      "description" : "Practitioner LE",
       "exampleBoolean" : false
     },
     {
@@ -814,10 +814,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PractitionerLE"
+        "reference" : "StructureDefinition/PractitioneRolerLE"
       },
-      "name" : "Practitioner LE",
-      "description" : "Practitioner LE",
+      "name" : "PractitionerRole LE",
+      "description" : "PractitionerRole LE",
       "exampleBoolean" : false
     },
     {
@@ -1710,6 +1710,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/EjemploAllergyIntolerance"
+      },
+      "name" : "Ejemplo de AllergyIntolerance Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceInicioLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Appointment"
       }],
       "reference" : {
@@ -1793,7 +1804,7 @@
         "reference" : "Observation/EjemploObservation"
       },
       "name" : "Ejemplo de Observation Evento de Inicio",
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ObservationLE"
     },
     {
       "extension" : [{
@@ -1804,7 +1815,7 @@
         "reference" : "Patient/EjemploPatient"
       },
       "name" : "Ejemplo de Patient Evento de Inicio",
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PacienteLE"
     },
     {
       "extension" : [{
@@ -1826,7 +1837,7 @@
         "reference" : "PractitionerRole/EjemploPractitionerRole"
       },
       "name" : "Ejemplo de PractitionerRole Evento de Inicio",
-      "exampleBoolean" : true
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLE"
     },
     {
       "extension" : [{

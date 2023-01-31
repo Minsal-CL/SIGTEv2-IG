@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-01-30T23:51:40-03:00"/>
+  <date value="2023-01-31T15:14:06-03:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -636,10 +636,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PractitioneRolerLE"/>
+        <reference value="StructureDefinition/PractitionerLE"/>
       </reference>
-      <name value="PractitionerRole LE"/>
-      <description value="PractitionerRole LE"/>
+      <name value="Practitioner LE"/>
+      <description value="Practitioner LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -647,10 +647,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PractitionerLE"/>
+        <reference value="StructureDefinition/PractitioneRolerLE"/>
       </reference>
-      <name value="Practitioner LE"/>
-      <description value="Practitioner LE"/>
+      <name value="PractitionerRole LE"/>
+      <description value="PractitionerRole LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1468,6 +1468,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/EjemploAllergyIntolerance"/>
+      </reference>
+      <name value="Ejemplo de AllergyIntolerance Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceInicioLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Appointment"/>
       </extension>
       <reference>
@@ -1544,7 +1554,7 @@
         <reference value="Observation/EjemploObservation"/>
       </reference>
       <name value="Ejemplo de Observation Evento de Inicio"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ObservationLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1554,7 +1564,7 @@
         <reference value="Patient/EjemploPatient"/>
       </reference>
       <name value="Ejemplo de Patient Evento de Inicio"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PacienteLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1574,7 +1584,7 @@
         <reference value="PractitionerRole/EjemploPractitionerRole"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Inicio"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

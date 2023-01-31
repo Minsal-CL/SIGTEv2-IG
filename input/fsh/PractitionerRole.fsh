@@ -1,4 +1,4 @@
-Profile: PractitioneRolerLE
+Profile: PractitionerRoleLE
 Parent: PractitionerRole
 Id: PractitioneRolerLE
 Title: "PractitionerRole LE"
