@@ -36,4 +36,4 @@ Description: "Condicion Inicio 2 LE"
     * system = #http://terminology.hl7.org/CodeSystem/condition-category
   * text = #"Indice Comorbilidad"
 
-* note 1..1 MS
+//* note 1..1 MS

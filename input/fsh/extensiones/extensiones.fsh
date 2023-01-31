@@ -1,9 +1,23 @@
-Extension:   PaisOrigenNacionalidadClLE
+Extension:   PaisOrigenClLE
 Id:          CodigoPaises
 Title:       "Codigo de Identificación de países"
 Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from CodPais
+  * system 0..1 MS
+  * display 0..1 MS
+* valueCodeableConcept.text 1..1 MS
+
+Extension:   NacionalidadCodigoClLE
+Id:          NacionalidadCodigo
+Title:       "Codigo de Identificación de Nacionalidad"
+Description: "Esta extensión incluye códigos de las Nacionalidades"
+* value[x] only CodeableConcept
+* value[x] ^short = "Código de la Nacionalidad"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS

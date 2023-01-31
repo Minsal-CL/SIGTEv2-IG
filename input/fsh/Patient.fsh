@@ -7,8 +7,8 @@ Description: "Paciente LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 // EXTESIONES
-* extension contains PaisOrigenNacionalidadClLE named PaisOrigenCodigo 1..1 MS
-* extension contains PaisOrigenNacionalidadClLE named NacionalidadCodigo 1..1 MS
+* extension contains PaisOrigenClLE named PaisOrigenCodigo 1..1 MS
+* extension contains NacionalidadCodigoClLE named NacionalidadCodigo 1..1 MS
 * extension contains IdentidadGenero named GeneroCodigo 1..1 MS
 * extension contains PuebloIndigena named PuebloIndigena 0..1 MS
 * extension contains ExtBoolAfrodescendiente named Afrodescendiente 1..1 MS
