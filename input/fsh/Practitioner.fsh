@@ -2,7 +2,7 @@ Profile: PractitionerLE
 Parent: Practitioner
 Id: PractitionerLE
 Title: "Practitioner LE"
-Description: "Practitioner LE"
+Description: "Practitioner LE recurso que se utiliza para representar la información de identificación del profesional de la salud."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

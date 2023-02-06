@@ -2,7 +2,7 @@ Profile: EncounterAtenderLE
 Parent: Encounter
 Id: EncounterAtenderLE
 Title: "Encounter Atender LE"
-Description: "Encounter Atender LE"
+Description: "Encounter Atender LE recurso que se utiliza para representar el encuentro médico, cuando se comienza a ejecutar la atención de la interconsulta."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

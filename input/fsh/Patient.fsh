@@ -2,7 +2,7 @@ Profile: PacienteLE
 Parent: PacienteCl
 Id: PacienteLE
 Title: "Paciente LE"
-Description: "Paciente LE"
+Description: "Paciente LE recurso que se utiliza para representar la información de identificación del paciente."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

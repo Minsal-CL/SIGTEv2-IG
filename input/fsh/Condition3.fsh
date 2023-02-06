@@ -1,8 +1,8 @@
 Profile: CondicionInicio3LE
 Parent: Condition
 Id: CondicionInicio3LE
-Title: "Condicion Inicio 3 LE"
-Description: "Condicion Inicio 3 LE"
+Title: "Condicion Inicio 3 LE "
+Description: "Condicion Inicio 3 LE recurso que se utiliza para indicar la sospecha de patología GES."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

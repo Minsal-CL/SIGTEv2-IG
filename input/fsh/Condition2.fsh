@@ -1,8 +1,8 @@
 Profile: CondicionInicio2LE
 Parent: Condition
 Id: CondicionInicio2LE
-Title: "Condicion Inicio 2 LE"
-Description: "Condicion Inicio 2 LE"
+Title: "Condicion Inicio 2 LE "
+Description: "Condicion Inicio 2 LE recurso que se utiliza para indicar el índice de comorbilidad de un paciente."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

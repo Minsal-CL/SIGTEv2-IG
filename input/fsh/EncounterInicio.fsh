@@ -2,7 +2,7 @@ Profile: EncounterInicioLE
 Parent: Encounter
 Id: EncounterInicioLE
 Title: "Encounter Inicio LE"
-Description: "Encounter Inicio LE"
+Description: "Encounter Inicio LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
