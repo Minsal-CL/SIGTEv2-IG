@@ -1,9 +1,9 @@
 ﻿ListaEsperaChile : Validation Results
 =========================================
 
-err = 76, warn = 90, info = 13
-IG Publisher Version: 1.2.22 Out of date - current version is 1.2.30
-Generated Tue Jan 31 18:51:29 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.0 (canonical = http://minsal.cl/listaespera)
+err = 76, warn = 94, info = 11
+IG Publisher Version: 1.2.22 Out of date - current version is 1.2.34
+Generated Tue Feb 07 12:16:35 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.0 (canonical = http://minsal.cl/listaespera)
  Build Errors : 48 / 20 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointment : 2 / 0 / 1
@@ -32,7 +32,7 @@ Generated Tue Jan 31 18:51:29 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/Condition-EjemploCondition2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-EjemploCondition3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-EjemploEncounter : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.hl7chile.ListaDeEspera : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.hl7chile.ListaDeEspera : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/Location-EjemploLocation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeader : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-EjemploObservation : 0 / 0 / 1
@@ -40,8 +40,8 @@ Generated Tue Jan 31 18:51:29 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitioner : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRole : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponse : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 30 / 3 / 4
- /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest2 : 30 / 3 / 4
+ /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 30 / 3 / 3
+ /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest2 : 30 / 3 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-AllergyIntoleranceInicioLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentAtenderLE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentInicioLE : 0 / 0 / 1
@@ -51,8 +51,8 @@ Generated Tue Jan 31 18:51:29 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/StructureDefinition-CondicionAtender2LE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CondicionAtender3LE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CondicionInicio1LE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-CondicionInicio2LE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-CondicionInicio3LE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CondicionInicio2LE : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CondicionInicio3LE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Contactado : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DestinoAtencionCodigo : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DigitoVerificador : 0 / 0 / 1
@@ -255,6 +255,8 @@ WARNING: CodeSystem/CSSospechaPatologiaGes: CodeSystem.concept[8261].display: va
 INFORMATION: Encounter/EjemploEncounter: Encounter.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 WARNING: Encounter/EjemploEncounter: Encounter.class: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ImplementationGuide-fhir.hl7chile.ListaDeEspera.json ==
+WARNING: ImplementationGuide/fhir.hl7chile.ListaDeEspera: ImplementationGuide.definition.resource[8].name: value should not start or finish with whitespace 'Condicion...LE '
+WARNING: ImplementationGuide/fhir.hl7chile.ListaDeEspera: ImplementationGuide.definition.resource[9].name: value should not start or finish with whitespace 'Condicion...LE '
 == fsh-generated/resources/Location-EjemploLocation.json ==
 == fsh-generated/resources/MessageHeader-EjemploMessageHeader.json ==
 INFORMATION: MessageHeader/EjemploMessageHeader: MessageHeader.event.ofType(Coding): Code System URI 'http://listaespera.org/fhir/message-events' is unknown so the code cannot be validated
@@ -314,7 +316,6 @@ ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[2]: S
 ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:AllergyIntolerance, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:AllergyIntolerance, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:AllergyIntolerance, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
-INFORMATION: ServiceRequest/EjemploServiceRequest: ServiceRequest: ServiceRequest.supportingInfo:QuestionnaireResponse: Found 0 matches, but unable to check minimum required (ServiceRequest.supportingInfo) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE|0.1.0)
 WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[4].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[7].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -351,7 +352,6 @@ ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.supportingInfo[2]: 
 ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.supportingInfo[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:AllergyIntolerance, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.supportingInfo[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:AllergyIntolerance, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.supportingInfo[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:AllergyIntolerance, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
-INFORMATION: ServiceRequest/EjemploServiceRequest2: ServiceRequest: ServiceRequest.supportingInfo:QuestionnaireResponse: Found 0 matches, but unable to check minimum required (ServiceRequest.supportingInfo) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE|0.1.0)
 WARNING: ServiceRequest/EjemploServiceRequest2: ServiceRequest.extension[4].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: ServiceRequest/EjemploServiceRequest2: ServiceRequest.extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: ServiceRequest/EjemploServiceRequest2: ServiceRequest.extension[7].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -372,7 +372,9 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/Structure
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/CondicionAtender3LE'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-CondicionInicio1LE.json ==
 == fsh-generated/resources/StructureDefinition-CondicionInicio2LE.json ==
+WARNING: StructureDefinition/CondicionInicio2LE: StructureDefinition.title: value should not start or finish with whitespace 'Condicion...LE '
 == fsh-generated/resources/StructureDefinition-CondicionInicio3LE.json ==
+WARNING: StructureDefinition/CondicionInicio3LE: StructureDefinition.title: value should not start or finish with whitespace 'Condicion...LE '
 == fsh-generated/resources/StructureDefinition-Contactado.json ==
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/Contactado'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-DestinoAtencionCodigo.json ==
