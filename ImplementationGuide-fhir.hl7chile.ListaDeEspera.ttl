@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ListaEsperaChile"]; # 
   fhir:ImplementationGuide.title [ fhir:value "Proyecto Listas de Espera MINSAL CHILE"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-01-31T18:46:21+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-07T12:10:18+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "MINSAL Chile"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -747,7 +747,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/CondicionInicio1LE" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condicion Inicio 1 LE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condicion Inicio 1 LE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
@@ -760,8 +760,8 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionInicio2LE>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CondicionInicio2LE" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condicion Inicio 2 LE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condicion Inicio 2 LE" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condicion Inicio 2 LE " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condicion Inicio 2 LE recurso que se utiliza para indicar el índice de comorbilidad de un paciente." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
@@ -774,8 +774,8 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/CondicionInicio3LE" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condicion Inicio 3 LE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condicion Inicio 3 LE" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Condicion Inicio 3 LE " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Condicion Inicio 3 LE recurso que se utiliza para indicar la sospecha de patología GES." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 10;
@@ -803,7 +803,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/EncounterAtenderLE" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter Atender LE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter Atender LE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter Atender LE recurso que se utiliza para representar el encuentro médico, cuando se comienza a ejecutar la atención de la interconsulta." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 12;
@@ -817,7 +817,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/EncounterInicioLE" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Encounter Inicio LE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter Inicio LE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Encounter Inicio LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
@@ -901,7 +901,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/PacienteLE" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Paciente LE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paciente LE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Paciente LE recurso que se utiliza para representar la información de identificación del paciente." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 19;
@@ -915,7 +915,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/PractitionerLE" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner LE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner LE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner LE recurso que se utiliza para representar la información de identificación del profesional de la salud." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 20;
@@ -928,7 +928,7 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLE>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/PractitioneRolerLE" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRole LE" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud." ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PractitionerRole LE" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -957,7 +957,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/ServiceRequestLE" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ServiceRequest LE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ServiceRequest LE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 23;
