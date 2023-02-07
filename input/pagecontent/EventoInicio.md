@@ -16,30 +16,32 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="DiagramasRecursos_ListaEspera_FlujodeEventos_Inicio.png"> 
+  <img  style="border: 1px solid; color: black;" src="inicio-evento.png"> 
   <p></p>
 </div>
 <br>
 
 Los recursos usados en este evento son los siguientes:
 
-* [ServiceRequest](link): Recurso principal para reflejar los datos de la interconsulta
-* [MessageHeader](link): lorem
-* [PractitionerRole](link): lorem
-* [Condition](link): lorem
-* [PractitionerRole](link): lorem
-* [Observation](link): lorem
-* [Encounter](link): lorem
-* [AllergyIntolerance](link): lorem
-* [Patient](link): lorem
-* [QuestionaireResponse](link): lorem
-* [Appointment](link): lorem
+* [ServiceRequestLE](StructureDefinition-ServicerequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
+* [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
+* [PractitionerRoleLE](StructureDefinition-PractitioneRolerLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
+* [Condition](https://www.hl7.org/FHIR/condition.html): Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
+  * [Condition1](StructureDefinition-CondicionInicio1LE.html): Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)
+  * [Condition2](StructureDefinition-CondicionInicio2LE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)
+  * [Condition3](StructureDefinition-CondicionInicio3LE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)
+* [ObservationInicioLE](StructureDefinition-ObservationLE.html): Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)
+* [EncounterInicioLE](StructureDefinition-EncounterInicioLE.html): Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)
+* [AllergyIntoleranceInicioLE](StructureDefinition-AllergyIntoleranceInicioLE.html): Recurso utilizado para registrar información relacionada al tipo de alergia en caso de tener (ServiceRequest.supportingInfo)
+* [PatientLE](StructureDefinition-PacienteLE.html): Recurso utilizado para registrar información relacionada al paciente (ServiceRequest.subject)
+* [QuestionnaireResponseInicioLE](StructureDefinition-QuestionnaireResponseLE.html): Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)
+* [AppointmentInicioLE](StructureDefinition-AppointmentInicioLE.html): Recurso utilizado para registrar información de la cita que da inicio a la solicitud de interconsulta (ServiceRequest.supportingInfo)
 
 ## Relaciones de Recursos
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="DiagramasRecursos_ListaEspera_IniciarReferenciada.png"> 
+  <img  style="border: 1px solid; color: black;" src="inicio-recursos.png"> 
   <p></p>
 </div>
 <br>
@@ -47,14 +49,29 @@ Los recursos usados en este evento son los siguientes:
 ## Secuencia del Evento
 
 El evento inicio debe soportar a siguiente secuencia:
+<div align="center" >
+{% include evento-inicio.svg %}
+</div>
 
-Diagrama de Secuencia por definir
 
 ## Consideraciones
 
 Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
 
-## Ejemplo
+El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
+
+* Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServicerequestLE.html)
+* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=inicio** 
+* Debe incluir el recurso [PatientLE](StructureDefinition-PacienteLE.html)
+* Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitioneRolerLE.html)
+* Debe incluir el recurso [EncounterInicioLE](StructureDefinition-EncounterInicioLE.html)
+* Debe incluir el recurso [AppointmentInicioLE](StructureDefinition-AppointmentInicioLE.html)
+* Debe incluir el recurso [Condition1](StructureDefinition-CondicionInicio1LE.html)
+* Debe incluir el recurso [QuestionnaireResponseInicioLE](StructureDefinition-QuestionnaireResponseLE.html)
+* Debe incluir el recurso [ObservationInicioLE](StructureDefinition-ObservationLE.html)
+
+
+## Mensaje Bundle de Ejemplo
 ```javascript
 {
   "resourceType" : "Bundle",
