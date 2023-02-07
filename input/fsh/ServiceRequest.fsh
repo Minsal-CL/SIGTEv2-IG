@@ -2,7 +2,7 @@ Profile: ServiceRequestLE
 Parent: ServiceRequest
 Id: ServiceRequestLE
 Title: "ServiceRequest LE"
-Description: "ServiceRequest LE"
+Description: "ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
@@ -85,12 +85,12 @@ Description: "ServiceRequest LE"
 * encounter only Reference(EncounterInicioLE)
 
 
-* supportingInfo 2..* MS 
+* supportingInfo 0..* MS 
 * supportingInfo ^slicing.discriminator.type = #value
 * supportingInfo ^slicing.discriminator.path = "use"
 * supportingInfo ^slicing.rules = #open
 * supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
-* supportingInfo contains reserva 0..1 MS and paciente 0..1 MS and QuestionnaireResponse 1..1 MS and Condition 0..1 MS and AllergyIntolerance 0..1 MS
+* supportingInfo contains reserva 0..1 MS and paciente 0..1 MS and QuestionnaireResponse 0..1 MS and Condition 0..1 MS and AllergyIntolerance 0..1 MS
 
 
 * supportingInfo[reserva] only Reference(AppointmentInicioLE)
