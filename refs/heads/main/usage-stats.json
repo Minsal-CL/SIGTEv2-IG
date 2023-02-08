@@ -138,6 +138,25 @@
       ]
     },
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo",
+      "title": "Especialidad Médica Destino Código",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE",
       "title": "Estado Interconsulta Codigo",
       "types": [
@@ -446,6 +465,25 @@
       ]
     },
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo",
+      "title": "SubEspecialidad Médica Destino Código",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/TipoOtroTelefono",
       "title": "TipoOtroTelefono",
       "types": [
@@ -502,16 +540,16 @@
         "title": "Condicion Atender 3 LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio1LE",
-        "title": "Condicion Inicio 1 LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE",
+        "title": "Condition Inicio Diagnostico Sospecha LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio2LE",
-        "title": "Condicion Inicio 2 LE "
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE",
+        "title": "Condition Inicio Indice Comorbilidad LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE",
-        "title": "Condicion Inicio 3 LE "
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE",
+        "title": "Condition Inicio Sospecha Ges LE"
       }
     ],
     "DocumentReference": [
@@ -539,13 +577,13 @@
     "MessageHeader": [
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE",
-        "title": "MessageHeaderLE"
+        "title": "MessageHeader LE"
       }
     ],
     "Observation": [
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE",
-        "title": "ObservationAtender LE"
+        "title": "Observation Atender LE"
       },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationLE",
@@ -564,16 +602,16 @@
         "title": "Paciente LE"
       }
     ],
-    "PractitionerRole": [
-      {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLE",
-        "title": "PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud."
-      }
-    ],
     "Practitioner": [
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE",
         "title": "Practitioner LE"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE",
+        "title": "PractitionerRole LE"
       }
     ],
     "QuestionnaireResponse": [
@@ -666,6 +704,9 @@
     "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE": [
       "ServiceRequest"
     ],
+    "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo": [
+      "ServiceRequest"
+    ],
     "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE": [
       "ServiceRequest"
     ],
@@ -730,6 +771,9 @@
       "Practitioner.name.family"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes": [
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo": [
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/TipoOtroTelefono": [

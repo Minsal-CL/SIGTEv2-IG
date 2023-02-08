@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-07T22:15:28+00:00",
+  "date" : "2023-02-08T07:55:54+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -658,9 +658,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CondicionInicio1LE"
+        "reference" : "StructureDefinition/ConditionInicioDiagnosticoSospechaLE"
       },
-      "name" : "Condicion Inicio 1 LE",
+      "name" : "Condition Inicio Diagnostico Sospecha LE",
       "description" : "Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta.",
       "exampleBoolean" : false
     },
@@ -670,9 +670,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CondicionInicio2LE"
+        "reference" : "StructureDefinition/ConditionInicioIndiceComorbilidadLE"
       },
-      "name" : "Condicion Inicio 2 LE ",
+      "name" : "Condition Inicio Indice Comorbilidad LE",
       "description" : "Condicion Inicio 2 LE recurso que se utiliza para indicar el índice de comorbilidad de un paciente.",
       "exampleBoolean" : false
     },
@@ -682,9 +682,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CondicionInicio3LE"
+        "reference" : "StructureDefinition/ConditionInicioSospechaGesLE"
       },
-      "name" : "Condicion Inicio 3 LE ",
+      "name" : "Condition Inicio Sospecha Ges LE",
       "description" : "Condicion Inicio 3 LE recurso que se utiliza para indicar la sospecha de patología GES.",
       "exampleBoolean" : false
     },
@@ -744,7 +744,7 @@
       "reference" : {
         "reference" : "StructureDefinition/MessageHeaderLE"
       },
-      "name" : "MessageHeaderLE",
+      "name" : "MessageHeader LE",
       "description" : "MessageHeaderLE",
       "exampleBoolean" : false
     },
@@ -756,7 +756,7 @@
       "reference" : {
         "reference" : "StructureDefinition/ObservationAtenderLE"
       },
-      "name" : "ObservationAtender LE",
+      "name" : "Observation Atender LE",
       "description" : "ObservationAtender LE",
       "exampleBoolean" : false
     },
@@ -814,10 +814,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PractitioneRolerLE"
+        "reference" : "StructureDefinition/PractitionerRoleLE"
       },
-      "name" : "PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud.",
-      "description" : "PractitionerRole LE",
+      "name" : "PractitionerRole LE",
+      "description" : "PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud.",
       "exampleBoolean" : false
     },
     {
@@ -890,6 +890,18 @@
       },
       "name" : "Doc Acreditacion Cuidador",
       "description" : "Doc Acreditacion Cuidador",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EspecialidadMedicaDestinoCodigo"
+      },
+      "name" : "Especialidad Médica Destino Código",
+      "description" : "Especialidad Médica Destino Código",
       "exampleBoolean" : false
     },
     {
@@ -1185,6 +1197,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/SubEspecialidadMedicaDestinoCodigo"
+      },
+      "name" : "SubEspecialidad Médica Destino Código",
+      "description" : "SubEspecialidad Médica Destino Código",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/TipoOtroTelefono"
       },
       "name" : "TipoOtroTelefono",
@@ -1365,6 +1389,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSPractitionerTipoRolLE"
+      },
+      "name" : "Rol de médicos",
+      "description" : "Rol de médicos(Practitioner) en algún evento, durante la intercosulta.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSPuebloIndigena"
       },
       "name" : "Pueblo Indigena",
@@ -1417,6 +1453,18 @@
       },
       "name" : "Tipo Consulta",
       "description" : "Tipo Consulta",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSTipoEventoLE"
+      },
+      "name" : "Tipo de Evento",
+      "description" : "Tipo de evento en la interconsulta",
       "exampleBoolean" : false
     },
     {
@@ -1617,6 +1665,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/CSPractitionerTipoRolLE"
+      },
+      "name" : "Rol de médicos",
+      "description" : "CodeSystem con códigos definidos para representar cada rol de los médicos dentro de la interconsulta",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/CSPuebloIndigena"
       },
       "name" : "Pueblo Indigena",
@@ -1669,6 +1729,18 @@
       },
       "name" : "Tipo Consulta",
       "description" : "Tipo Consulta",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSTipoEventoLE"
+      },
+      "name" : "Tipo de Evento",
+      "description" : "CodeSystem con códigos definidos para representar cada evento en la interconsulta",
       "exampleBoolean" : false
     },
     {
@@ -1738,7 +1810,7 @@
         "reference" : "Condition/EjemploCondition"
       },
       "name" : "Ejemplo de Condition1 Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio1LE"
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE"
     },
     {
       "extension" : [{
@@ -1749,7 +1821,7 @@
         "reference" : "Condition/EjemploCondition2"
       },
       "name" : "Ejemplo de Condition2 Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio2LE"
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE"
     },
     {
       "extension" : [{
@@ -1760,7 +1832,7 @@
         "reference" : "Condition/EjemploCondition3"
       },
       "name" : "Ejemplo de Condition3 Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE"
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE"
     },
     {
       "extension" : [{
@@ -1837,7 +1909,7 @@
         "reference" : "PractitionerRole/EjemploPractitionerRole"
       },
       "name" : "Ejemplo de PractitionerRole Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLE"
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
     },
     {
       "extension" : [{

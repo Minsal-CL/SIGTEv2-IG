@@ -230,12 +230,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li><a name="l400">​</a><a href="StructureDefinition-ServicerequestLE.html">ServiceRequestLE</a>: Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)</li>
   <li><a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a>: Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.</li>
-  <li><a href="StructureDefinition-PractitioneRolerLE.html">PractitionerRoleLE</a>: Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)</li>
+  <li><a name="l410">​</a><a href="StructureDefinition-PractitioneRolerLE.html">PractitionerRoleLE</a>: Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)</li>
   <li><a href="https://www.hl7.org/FHIR/condition.html">Condition</a>: Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
     <ul>
-      <li><a href="StructureDefinition-CondicionInicio1LE.html">Condition1</a>: Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)</li>
-      <li><a href="StructureDefinition-CondicionInicio2LE.html">Condition2</a>: Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)</li>
-      <li><a href="StructureDefinition-CondicionInicio3LE.html">Condition3</a>: Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)</li>
+      <li><a name="l421">​</a><a href="StructureDefinition-CondicionInicio1LE.html">Condition1</a>: Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)</li>
+      <li><a name="l426">​</a><a href="StructureDefinition-CondicionInicio2LE.html">Condition2</a>: Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)</li>
+      <li><a name="l431">​</a><a href="StructureDefinition-CondicionInicio3LE.html">Condition3</a>: Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)</li>
     </ul>
   </li>
   <li><a href="StructureDefinition-ObservationLE.html">ObservationInicioLE</a>: Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)</li>
@@ -272,10 +272,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a name="l531">​</a>Debe incluir el recurso <a href="StructureDefinition-ServicerequestLE.html">ServiceRequestLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a> con el valor <strong>MessageHeader.evenCoding.code=inicio</strong></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-PacienteLE.html">PatientLE</a></li>
-  <li>Debe incluir el recurso <a href="StructureDefinition-PractitioneRolerLE.html">PractitionerRoleLE</a></li>
+  <li><a name="l549">​</a>Debe incluir el recurso <a href="StructureDefinition-PractitioneRolerLE.html">PractitionerRoleLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-EncounterInicioLE.html">EncounterInicioLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-AppointmentInicioLE.html">AppointmentInicioLE</a></li>
-  <li>Debe incluir el recurso <a href="StructureDefinition-CondicionInicio1LE.html">Condition1</a></li>
+  <li><a name="l564">​</a>Debe incluir el recurso <a href="StructureDefinition-CondicionInicio1LE.html">Condition1</a></li>
   <li><a name="l569">​</a>Debe incluir el recurso <a href="StructureDefinition-QuestionnaireResponseLE.html">QuestionnaireResponseInicioLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-ObservationLE.html">ObservationInicioLE</a></li>
 </ul>
@@ -985,7 +985,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 7, 2023 22:15+0000">2023-02-07</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 8, 2023 07:55+0000">2023-02-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

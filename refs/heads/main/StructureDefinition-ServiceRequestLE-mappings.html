@@ -301,9 +301,11 @@
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>Request.supportingInfo</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (reserva)</td><td>Request.supportingInfo</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (paciente)</td><td>Request.supportingInfo</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (QuestionnaireResponse)</td><td>Request.supportingInfo</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Condition)</td><td>Request.supportingInfo</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (AllergyIntolerance)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Anamnesis)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (DiagnosticoSospecha)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (SospechaPatologiaGes)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (TipoAlergia)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (IndiceComorbilidad)</td><td>Request.supportingInfo</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Request.note</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>Request.relevantHistory</td> </tr>
 </table>
@@ -365,9 +367,11 @@
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>Accompanying segments</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (reserva)</td><td>Accompanying segments</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (paciente)</td><td>Accompanying segments</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (QuestionnaireResponse)</td><td>Accompanying segments</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Condition)</td><td>Accompanying segments</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (AllergyIntolerance)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Anamnesis)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (DiagnosticoSospecha)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (SospechaPatologiaGes)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (TipoAlergia)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (IndiceComorbilidad)</td><td>Accompanying segments</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>SPM</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>SPM</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>NTE</td> </tr>
@@ -458,9 +462,11 @@
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (reserva)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (paciente)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (QuestionnaireResponse)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Condition)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (AllergyIntolerance)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Anamnesis)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (DiagnosticoSospecha)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (SospechaPatologiaGes)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (TipoAlergia)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (IndiceComorbilidad)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>.participation[typeCode=SPC].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>targetSiteCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=ANNGEN, moodCode=EVN].value[xsi:type=ST]</td> </tr>
@@ -559,7 +565,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 7, 2023 22:15+0000">2023-02-07</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 8, 2023 07:55+0000">2023-02-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
