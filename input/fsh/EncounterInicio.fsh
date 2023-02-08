@@ -23,7 +23,7 @@ Description: "Encounter Inicio LE recurso que se utiliza para representar el enc
     * display 0..1 MS
 * identifier.value 1..1 MS
 
-* diagnosis.condition only Reference(CondicionInicio1LE)
+* diagnosis.condition only Reference(ConditionInicioDiagnosticoSospechaLE)
 
 * appointment 1..1 MS
 * appointment only Reference(AppointmentInicioLE)

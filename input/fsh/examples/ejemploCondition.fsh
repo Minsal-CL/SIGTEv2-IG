@@ -1,5 +1,5 @@
 Instance: EjemploCondition
-InstanceOf: CondicionInicio1LE
+InstanceOf: ConditionInicioDiagnosticoSospechaLE
 Usage: #example
 Title: "Ejemplo de Condition1 Evento de Inicio"
 Description: ""
@@ -12,7 +12,7 @@ Description: ""
 * subject = Reference(http://acme.com/ehr/fhir/Patient/pat12)
 
 Instance: EjemploCondition2
-InstanceOf: CondicionInicio2LE
+InstanceOf: ConditionInicioIndiceComorbilidadLE
 Usage: #example
 Title: "Ejemplo de Condition2 Evento de Inicio"
 Description: ""
@@ -24,7 +24,7 @@ Description: ""
 * subject = Reference(http://acme.com/ehr/fhir/Patient/pat12)
 
 Instance: EjemploCondition3
-InstanceOf: CondicionInicio3LE
+InstanceOf: ConditionInicioSospechaGesLE
 Usage: #example
 Title: "Ejemplo de Condition3 Evento de Inicio"
 Description: ""

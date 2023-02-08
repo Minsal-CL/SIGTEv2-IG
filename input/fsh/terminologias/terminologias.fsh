@@ -803,4 +803,74 @@ Description: ""
 
 */
 
+ValueSet: VSTipoEventoLE
+Id: VSTipoEventoLE
+Title: "Tipo de Evento"
+Description: "Tipo de evento en la interconsulta"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
+* codes from system CSTipoEventoLE
+
+CodeSystem: CSTipoEventoLE
+Id: CSTipoEventoLE
+Title: "Tipo de Evento"
+Description: "CodeSystem con códigos definidos para representar cada evento en la interconsulta"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #inicio "Inicio"
+* #referenciada "Referenciada"
+* #revisar "Revisar"
+* #agendar "Agendar"
+* #atender "Atender"
+* #terminar "Terminar"
+
+ValueSet: VSPractitionerTipoRolLE
+Id: VSPractitionerTipoRolLE
+Title: "Rol de médicos"
+Description: "Rol de médicos(Practitioner) en algún evento, durante la intercosulta."
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSPractitionerTipoRolLE
+
+CodeSystem: CSPractitionerTipoRolLE
+Id: CSPractitionerTipoRolLE
+Title: "Rol de médicos"
+Description: "CodeSystem con códigos definidos para representar cada rol de los médicos dentro de la interconsulta"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #iniciador "Iniciador"
+* #referenciador "Referenciador"
+* #revisor "Revisor"
+* #agendador "Agendador"
+* #atendedor "Atendedor"
+* #terminador "Terminador"

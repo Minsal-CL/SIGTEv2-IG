@@ -1,7 +1,7 @@
-Profile: CondicionInicio3LE
+Profile: ConditionInicioSospechaGesLE
 Parent: Condition
-Id: CondicionInicio3LE
-Title: "Condicion Inicio 3 LE "
+Id: ConditionInicioSospechaGesLE
+Title: "Condition Inicio Sospecha Ges LE"
 Description: "Condicion Inicio 3 LE recurso que se utiliza para indicar la sospecha de patología GES."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft

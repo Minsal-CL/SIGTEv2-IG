@@ -1,7 +1,7 @@
-Profile: CondicionInicio1LE
+Profile: ConditionInicioDiagnosticoSospechaLE
 Parent: Condition
-Id: CondicionInicio1LE
-Title: "Condicion Inicio 1 LE"
+Id: ConditionInicioDiagnosticoSospechaLE
+Title: "Condition Inicio Diagnostico Sospecha LE"
 Description: "Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft

@@ -308,6 +308,30 @@ Description: "SospechaPatologiaGes"
 */
 * value[x] only boolean
 
+Extension:   EspecialidadMedicaDestinoCodigo
+Id:          EspecialidadMedicaDestinoCodigo
+Title:       "Especialidad Médica Destino Código"
+Description: "Especialidad Médica Destino Código"
+* value[x] only CodeableConcept
+* value[x] ^short = "Código de la especialidad médica de destino"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * system 0..1 MS
+  * display 0..1 MS
+
+Extension:   SubEspecialidadMedicaDestinoCodigo
+Id:          SubEspecialidadMedicaDestinoCodigo
+Title:       "SubEspecialidad Médica Destino Código"
+Description: "SubEspecialidad Médica Destino Código"
+* value[x] only CodeableConcept
+* value[x] ^short = "Código de la SubEspecialidad médica de destino"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * system 0..1 MS
+  * display 0..1 MS
+
 
 /*
 Extension:   

@@ -44,7 +44,8 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains ExtStringFundamentoPriorizacion named FundamentoPriorizacion 0..1 MS
 * extension contains EstadoInterconsultaCodigoLE named EstadoInterconsultaCodigo 0..1 MS
 * extension contains DocAcreditacionCuidadorCodigoLE named DocAcreditacionCuidadorCodigo 0..1 MS
-
+* extension contains EspecialidadMedicaDestinoCodigo named EspecialidadMedicaDestinoCodigo 0..1 MS
+* extension contains SubEspecialidadMedicaDestinoCodigo named SubEspecialidadMedicaDestinoCodigo 0..1 MS
 * extension[FundamentoPriorizacion] ^short = "Fundamente de la Priorización"
 * extension[ResolutividadAPS] ^short = "Programa de Resolutividad local"
 * extension[Alergia] ^short = "Tiene alergia el paciente"
@@ -90,11 +91,13 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * supportingInfo ^slicing.discriminator.path = "use"
 * supportingInfo ^slicing.rules = #open
 * supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
-* supportingInfo contains reserva 0..1 MS and paciente 0..1 MS and QuestionnaireResponse 0..1 MS and Condition 0..1 MS and AllergyIntolerance 0..1 MS
-
+* supportingInfo contains reserva 0..1 MS and paciente 0..1 MS and Anamnesis 0..1 MS and DiagnosticoSospecha 0..1 MS 
+and SospechaPatologiaGes 0..1 MS and TipoAlergia 0..1 MS and IndiceComorbilidad 0..1 MS 
 
 * supportingInfo[reserva] only Reference(AppointmentInicioLE)
-//* supportingInfo[paciente] only Reference(PacienteLE)
-* supportingInfo[QuestionnaireResponse] only Reference(QuestionnaireResponseInicioLE)
-* supportingInfo[Condition] only Reference(CondicionInicio1LE)
-* supportingInfo[AllergyIntolerance] only Reference(AllergyIntoleranceInicioLE)
+* supportingInfo[paciente] only Reference(PacienteLE)
+* supportingInfo[Anamnesis] only Reference(QuestionnaireResponseInicioLE)
+* supportingInfo[DiagnosticoSospecha] only Reference(ConditionInicioDiagnosticoSospechaLE)
+* supportingInfo[IndiceComorbilidad] only Reference(ConditionInicioIndiceComorbilidadLE)
+* supportingInfo[SospechaPatologiaGes] only Reference(ConditionInicioSospechaGesLE)
+* supportingInfo[TipoAlergia] only Reference(AllergyIntoleranceInicioLE)
