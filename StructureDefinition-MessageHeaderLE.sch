@@ -104,6 +104,44 @@
     <sch:title>MessageHeader.event[x] 1</sch:title>
     <sch:rule context="f:MessageHeader/f:event[x]">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MessageHeader.event[x].extension 1</sch:title>
+    <sch:rule context="f:MessageHeader/f:event[x]/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MessageHeader.event[x].system 1</sch:title>
+    <sch:rule context="f:MessageHeader/f:event[x]/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MessageHeader.event[x].version 1</sch:title>
+    <sch:rule context="f:MessageHeader/f:event[x]/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MessageHeader.event[x].code 1</sch:title>
+    <sch:rule context="f:MessageHeader/f:event[x]/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MessageHeader.event[x].display 1</sch:title>
+    <sch:rule context="f:MessageHeader/f:event[x]/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>MessageHeader.event[x].userSelected 1</sch:title>
+    <sch:rule context="f:MessageHeader/f:event[x]/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
