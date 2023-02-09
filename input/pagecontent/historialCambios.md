@@ -9,3 +9,5 @@
 - (Corrección) Se modifica Patient.telecom, para obligar campos necesarios para la guía.
 - (Corrección) En MessageHeader.author se cambia cardinalidad a 1..1
 - (Eliminación) Se cambia cardinalidad de Appointment en incicio, debido a eliminación de campo idCita.
+- (Eliminación) Se elimina extensión de PersonaMayor, dado que se calculará.
+- 

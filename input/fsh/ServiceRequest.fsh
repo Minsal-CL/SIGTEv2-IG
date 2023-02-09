@@ -39,7 +39,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains ExtBoolAlergia named Alergia 0..1 MS
 * extension contains ExtBoolCuidador named Cuidador 0..1 MS
 * extension contains ExtBoolPresentaDiscapacidad named PresentaDiscapacidad 0..1 MS
-* extension contains ExtBoolPersonaMayor named PersonaMayor 0..1 MS
+//* extension contains ExtBoolPersonaMayor named PersonaMayor 0..1 MS
 * extension contains OrigenInterconsulta named OrigenInterconsulta 0..1 MS
 * extension contains ExtStringFundamentoPriorizacion named FundamentoPriorizacion 0..1 MS
 * extension contains EstadoInterconsultaCodigoLE named EstadoInterconsultaCodigo 0..1 MS
