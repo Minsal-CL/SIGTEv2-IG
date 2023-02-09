@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-09T17:43:27+00:00",
+  "date" : "2023-02-09T21:16:20+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -1782,6 +1782,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/1"
+      },
+      "name" : "Ejemplo de Bundle Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "AllergyIntolerance"
       }],
       "reference" : {
@@ -1866,6 +1877,17 @@
       },
       "name" : "Ejemplo de Observation Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/EjemploOrganization"
+      },
+      "name" : "Ejemplo de Organization Evento de Inicio",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
