@@ -1,10 +1,10 @@
 ﻿ListaEsperaChile : Validation Results
 =========================================
 
-err = 102, warn = 93, info = 11
+err = 101, warn = 92, info = 11
 IG Publisher Version: 1.2.22 Out of date - current version is 1.2.35
-Generated Wed Feb 08 08:00:40 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.0 (canonical = http://minsal.cl/listaespera)
- Build Errors : 47 / 20 / 0
+Generated Thu Feb 09 15:22:11 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
+ Build Errors : 41 / 19 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointment : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-CSDerivadoParaCodigo : 0 / 0 / 1
@@ -35,10 +35,9 @@ Generated Wed Feb 08 08:00:40 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/Condition-EjemploCondition3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-EjemploEncounter : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.hl7chile.ListaDeEspera : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Location-EjemploLocation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeader : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/Observation-EjemploObservation : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-EjemploPatient : 10 / 4 / 3
+ /github/workspace/fsh-generated/resources/Patient-EjemploPatient : 9 / 4 / 3
  /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitioner : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRole : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponse : 0 / 0 / 2
@@ -78,16 +77,15 @@ Generated Wed Feb 08 08:00:40 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtStringFundamentoPriorizacion : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtStringMotivoNoPertinencia : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-IdentidadGenero : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-LocationLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MedioNotificacion : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MotivoCierreInterconsulta : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-NacionalidadCodigo : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ObservationAtenderLE : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ObservationLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-OrganizacionLE : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ObservationInicioLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OrganizationLE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OrigenInterconsulta : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-PacienteLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PertinenciaInterconsulta : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerRoleLE : 0 / 0 / 1
@@ -131,7 +129,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/EjemploCondition2.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Condition/EjemploCondition3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/EjemploEncounter.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Location/EjemploLocation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/EjemploMessageHeader.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/EjemploObservation.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/EjemploPatient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -162,14 +159,8 @@ ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/di
 ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 244, column 8: The link 'link' for "Observation" cannot be resolved
 ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'link' for "Condition" cannot be resolved
 ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'StructureDefinition-ServicerequestLE.html' for "ServiceRequestLE" cannot be resolved
-ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/a at Line 236, column 8: The link 'StructureDefinition-PractitioneRolerLE.html' for "PractitionerRoleLE" cannot be resolved
-ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 239, column 12: The link 'StructureDefinition-CondicionInicio1LE.html' for "Condition1" cannot be resolved
-ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 240, column 12: The link 'StructureDefinition-CondicionInicio2LE.html' for "Condition2" cannot be resolved
-ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 241, column 12: The link 'StructureDefinition-CondicionInicio3LE.html' for "Condition3" cannot be resolved
 ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/a at Line 248, column 8: The link 'StructureDefinition-QuestionnaireResponseLE.html' for "QuestionnaireResponseInicioLE" cannot be resolved
 ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/a at Line 275, column 32: The link 'StructureDefinition-ServicerequestLE.html' for "ServiceRequestLE" cannot be resolved
-ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/a at Line 278, column 32: The link 'StructureDefinition-PractitioneRolerLE.html' for "PractitionerRoleLE" cannot be resolved
-ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/a at Line 281, column 32: The link 'StructureDefinition-CondicionInicio1LE.html' for "Condition1" cannot be resolved
 ERROR: /github/workspace/output/EventoInicio.html#/html/body/div/div/div/div/div/ul/li/a at Line 282, column 32: The link 'StructureDefinition-QuestionnaireResponseLE.html' for "QuestionnaireResponseInicioLE" cannot be resolved
 ERROR: /github/workspace/output/EventoReferenciada.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'link' for "ServiceRequest" cannot be resolved
 ERROR: /github/workspace/output/EventoReferenciada.html#/html/body/div/div/div/div/div/ul/li/a at Line 235, column 8: The link 'link' for "MessageHeader" cannot be resolved
@@ -262,34 +253,32 @@ WARNING: CodeSystem/CSSospechaPatologiaGes: CodeSystem.concept[8261].display: va
 INFORMATION: Encounter/EjemploEncounter: Encounter.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 WARNING: Encounter/EjemploEncounter: Encounter.class: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ImplementationGuide-fhir.hl7chile.ListaDeEspera.json ==
-== fsh-generated/resources/Location-EjemploLocation.json ==
 == fsh-generated/resources/MessageHeader-EjemploMessageHeader.json ==
 INFORMATION: MessageHeader/EjemploMessageHeader: MessageHeader.event.ofType(Coding): Code System URI 'http://listaespera.org/fhir/message-events' is unknown so the code cannot be validated
-ERROR: MessageHeader/EjemploMessageHeader: MessageHeader.event.ofType(Coding).code: The value provided ('Iniciar') is not in the value set 'Tipo de Evento' (http://minsal.cl/listaespera/ValueSet/VSTipoEventoLE|0.1.0), and a code is required from this value set) (error message = Unknown Code http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#Iniciar in http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE)
+ERROR: MessageHeader/EjemploMessageHeader: MessageHeader.event.ofType(Coding).code: The value provided ('Iniciar') is not in the value set 'Tipo de Evento' (http://minsal.cl/listaespera/ValueSet/VSTipoEventoLE|0.1.1), and a code is required from this value set) (error message = Unknown Code http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#Iniciar in http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE)
 == fsh-generated/resources/Observation-EjemploObservation.json ==
 == fsh-generated/resources/Patient-EjemploPatient.json ==
-ERROR: Patient/EjemploPatient: Patient.telecom[0]: Profile http://minsal.cl/listaespera/StructureDefinition/PacienteLE|0.1.0, Element matches more than one slice - TelefonoMovil1, TelefonoMovil2
-ERROR: Patient/EjemploPatient: Patient.telecom[0]: Profile http://minsal.cl/listaespera/StructureDefinition/PacienteLE|0.1.0, Element matches more than one slice - TelefonoMovil1, TelefonoMovil3
-INFORMATION: Patient/EjemploPatient: Patient.identifier[0]: This element does not match any known slice defined in the profile http://minsal.cl/listaespera/StructureDefinition/PacienteLE|0.1.0
-ERROR: Patient/EjemploPatient: Patient: Patient.identifier:identificacionPrincipal: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PacienteLE|0.1.0)
+ERROR: Patient/EjemploPatient: Patient.telecom[0]: Profile http://minsal.cl/listaespera/StructureDefinition/PatientLE|0.1.1, Element matches more than one slice - TelefonoMovil1, TelefonoMovil2
+ERROR: Patient/EjemploPatient: Patient.telecom[0]: Profile http://minsal.cl/listaespera/StructureDefinition/PatientLE|0.1.1, Element matches more than one slice - TelefonoMovil1, TelefonoMovil3
+INFORMATION: Patient/EjemploPatient: Patient.identifier[0]: This element does not match any known slice defined in the profile http://minsal.cl/listaespera/StructureDefinition/PatientLE|0.1.1
+ERROR: Patient/EjemploPatient: Patient: Patient.identifier:identificacionPrincipal: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PatientLE|0.1.1)
 WARNING: Patient/EjemploPatient: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Patient/EjemploPatient: Patient.extension[1].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Patient/EjemploPatient: Patient.extension[2].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Patient/EjemploPatient: Patient.extension[2].value.ofType(CodeableConcept).coding[0].code: The value provided ('01') is not in the value set 'Identidad de Genero' (http://minsal.cl/listaespera/ValueSet/VSIdentidaddeGenero|0.1.0), and a code is required from this value set) (error message = Unknown Code http://minsal.cl/listaespera/CodeSystem/CSIdentidaddeGenero#01 in http://minsal.cl/listaespera/CodeSystem/CSIdentidaddeGenero)
+ERROR: Patient/EjemploPatient: Patient.extension[2].value.ofType(CodeableConcept).coding[0].code: The value provided ('01') is not in the value set 'Identidad de Genero' (http://minsal.cl/listaespera/ValueSet/VSIdentidaddeGenero|0.1.1), and a code is required from this value set) (error message = Unknown Code http://minsal.cl/listaespera/CodeSystem/CSIdentidaddeGenero#01 in http://minsal.cl/listaespera/CodeSystem/CSIdentidaddeGenero)
 ERROR: Patient/EjemploPatient: Patient.identifier[0].type.extension[0]: The Extension 'http://minsal.cl/listaespera/StructureDefinition/CodigoPaises' definition allows for the types [CodeableConcept] but found type Coding
-ERROR: Patient/EjemploPatient: Patient.identifier[0].type.extension[0].value.ofType(Coding): This element does not match any known slice  defined in the profile http://minsal.cl/listaespera/StructureDefinition/CodigoPaises|0.1.0 and slicing is CLOSED: Patient.identifier[0].type.extension[0].value.ofType(Coding): Does not match slice 'valueCodeableConcept' (discriminator: ($this is CodeableConcept))
+ERROR: Patient/EjemploPatient: Patient.identifier[0].type.extension[0].value.ofType(Coding): This element does not match any known slice  defined in the profile http://minsal.cl/listaespera/StructureDefinition/CodigoPaises|0.1.1 and slicing is CLOSED: Patient.identifier[0].type.extension[0].value.ofType(Coding): Does not match slice 'valueCodeableConcept' (discriminator: ($this is CodeableConcept))
 ERROR: Patient/EjemploPatient: Patient.identifier[0].type.extension[0].value.ofType(Coding).code: This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/CodeableConcept|4.0.1
 WARNING: Patient/EjemploPatient: Patient.identifier[0].type.extension[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 ERROR: Patient/EjemploPatient: Patient.identifier[0].type: None of the codings provided are in the value set 'Tipos de Documentos' (https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos|1.7.0), and a coding from this value set is required) (codes = http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador#1)
-INFORMATION: Patient/EjemploPatient: Patient.identifier[0].type.extension[0]: This element does not match any known slice defined in the profile http://minsal.cl/listaespera/StructureDefinition/PacienteLE|0.1.0
-ERROR: Patient/EjemploPatient: Patient.identifier[0].type: Patient.identifier.type.extension:paises: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PacienteLE|0.1.0)
-ERROR: Patient/EjemploPatient: Patient.telecom[0]: Rule cpt-2: 'A system is required if a value is provided.' Failed
+INFORMATION: Patient/EjemploPatient: Patient.identifier[0].type.extension[0]: This element does not match any known slice defined in the profile http://minsal.cl/listaespera/StructureDefinition/PatientLE|0.1.1
+ERROR: Patient/EjemploPatient: Patient.identifier[0].type: Patient.identifier.type.extension:paises: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PatientLE|0.1.1)
 == fsh-generated/resources/Practitioner-EjemploPractitioner.json ==
 INFORMATION: Practitioner/EjemploPractitioner: Practitioner.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Practitioner/EjemploPractitioner: Practitioner.identifier[1].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
-ERROR: Practitioner/EjemploPractitioner: Practitioner.qualification[0].code.coding[0]: Practitioner.qualification:Cert.code.coding.code: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PractitionerLE|0.1.0)
+ERROR: Practitioner/EjemploPractitioner: Practitioner.qualification[0].code.coding[0]: Practitioner.qualification:Cert.code.coding.code: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PractitionerLE|0.1.1)
 == fsh-generated/resources/PractitionerRole-EjemploPractitionerRole.json ==
-ERROR: PractitionerRole/EjemploPractitionerRole: PractitionerRole.code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.0), and a coding from this value set is required) (codes = null#iniciador)
+ERROR: PractitionerRole/EjemploPractitionerRole: PractitionerRole.code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#iniciador)
 WARNING: PractitionerRole/EjemploPractitionerRole: PractitionerRole.code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponse.json ==
 INFORMATION: QuestionnaireResponse/EjemploQuestionnaireResponse: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
@@ -441,7 +430,6 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/Structure
 == fsh-generated/resources/StructureDefinition-ExtStringMotivoNoPertinencia.json ==
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-IdentidadGenero.json ==
-== fsh-generated/resources/StructureDefinition-LocationLE.json ==
 == fsh-generated/resources/StructureDefinition-MedioNotificacion.json ==
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-MessageHeaderLE.json ==
@@ -450,11 +438,11 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/Structure
 == fsh-generated/resources/StructureDefinition-NacionalidadCodigo.json ==
 == fsh-generated/resources/StructureDefinition-ObservationAtenderLE.json ==
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-ObservationLE.json ==
-== fsh-generated/resources/StructureDefinition-OrganizacionLE.json ==
-WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/OrganizacionLE'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ObservationInicioLE.json ==
+== fsh-generated/resources/StructureDefinition-OrganizationLE.json ==
+WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/OrganizationLE'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-OrigenInterconsulta.json ==
-== fsh-generated/resources/StructureDefinition-PacienteLE.json ==
+== fsh-generated/resources/StructureDefinition-PatientLE.json ==
 == fsh-generated/resources/StructureDefinition-PertinenciaInterconsulta.json ==
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-PractitionerLE.json ==

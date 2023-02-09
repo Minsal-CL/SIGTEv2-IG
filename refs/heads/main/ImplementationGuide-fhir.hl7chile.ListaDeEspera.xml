@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://minsal.cl/listaespera/ImplementationGuide/fhir.hl7chile.ListaDeEspera"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-02-08T07:55:54+00:00"/>
+  <date value="2023-02-09T15:16:32+00:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -570,17 +570,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/LocationLE"/>
-      </reference>
-      <name value="Location LE"/>
-      <description value="Location LE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/MessageHeaderLE"/>
       </reference>
       <name value="MessageHeader LE"/>
@@ -603,10 +592,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ObservationLE"/>
+        <reference value="StructureDefinition/ObservationInicioLE"/>
       </reference>
-      <name value="Observation LE"/>
-      <description value="Observation LE"/>
+      <name value="Observation Inicio LE"/>
+      <description value="Observation Inicio LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -614,10 +603,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/OrganizacionLE"/>
+        <reference value="StructureDefinition/OrganizationLE"/>
       </reference>
-      <name value="Organizacion LE"/>
-      <description value="Organizacion LE"/>
+      <name value="Organization LE"/>
+      <description value="Organization LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -625,7 +614,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PacienteLE"/>
+        <reference value="StructureDefinition/PatientLE"/>
       </reference>
       <name value="Paciente LE"/>
       <description value="Paciente LE recurso que se utiliza para representar la información de identificación del paciente."/>
@@ -1594,16 +1583,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/EjemploLocation"/>
-      </reference>
-      <name value="Ejemplo de Location Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/LocationLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MessageHeader"/>
       </extension>
       <reference>
@@ -1620,7 +1599,7 @@
         <reference value="Observation/EjemploObservation"/>
       </reference>
       <name value="Ejemplo de Observation Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ObservationLE"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1630,7 +1609,7 @@
         <reference value="Patient/EjemploPatient"/>
       </reference>
       <name value="Ejemplo de Patient Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PacienteLE"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PatientLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

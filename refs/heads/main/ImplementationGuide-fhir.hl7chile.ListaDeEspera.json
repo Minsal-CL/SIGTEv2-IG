@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ListaEsperaChile</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/listaespera/ImplementationGuide/fhir.hl7chile.ListaDeEspera</pre><div><p>Proyecto Listas de Espera MINSAL CHILE</p>\n</div></div>"
   },
   "url" : "http://minsal.cl/listaespera/ImplementationGuide/fhir.hl7chile.ListaDeEspera",
-  "version" : "0.1.0",
+  "version" : "0.1.1",
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-08T07:55:54+00:00",
+  "date" : "2023-02-09T15:16:32+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -730,18 +730,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/LocationLE"
-      },
-      "name" : "Location LE",
-      "description" : "Location LE",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/MessageHeaderLE"
       },
       "name" : "MessageHeader LE",
@@ -766,10 +754,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ObservationLE"
+        "reference" : "StructureDefinition/ObservationInicioLE"
       },
-      "name" : "Observation LE",
-      "description" : "Observation LE",
+      "name" : "Observation Inicio LE",
+      "description" : "Observation Inicio LE",
       "exampleBoolean" : false
     },
     {
@@ -778,10 +766,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/OrganizacionLE"
+        "reference" : "StructureDefinition/OrganizationLE"
       },
-      "name" : "Organizacion LE",
-      "description" : "Organizacion LE",
+      "name" : "Organization LE",
+      "description" : "Organization LE",
       "exampleBoolean" : false
     },
     {
@@ -790,7 +778,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PacienteLE"
+        "reference" : "StructureDefinition/PatientLE"
       },
       "name" : "Paciente LE",
       "description" : "Paciente LE recurso que se utiliza para representar la información de identificación del paciente.",
@@ -1848,17 +1836,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Location"
-      }],
-      "reference" : {
-        "reference" : "Location/EjemploLocation"
-      },
-      "name" : "Ejemplo de Location Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/LocationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MessageHeader"
       }],
       "reference" : {
@@ -1876,7 +1853,7 @@
         "reference" : "Observation/EjemploObservation"
       },
       "name" : "Ejemplo de Observation Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ObservationLE"
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE"
     },
     {
       "extension" : [{
@@ -1887,7 +1864,7 @@
         "reference" : "Patient/EjemploPatient"
       },
       "name" : "Ejemplo de Patient Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PacienteLE"
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PatientLE"
     },
     {
       "extension" : [{
