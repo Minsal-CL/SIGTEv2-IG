@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-09T15:16:32+00:00",
+  "date" : "2023-02-09T17:43:27+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -602,6 +602,18 @@
       },
       "name" : "Appointment Inicio LE",
       "description" : "Appointment Inicio LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BundleInicioLE"
+      },
+      "name" : "BundleInicio LE",
+      "description" : "Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio.",
       "exampleBoolean" : false
     },
     {
