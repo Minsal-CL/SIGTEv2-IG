@@ -10,12 +10,9 @@ Description: "MessageHeaderLE"
 * meta.lastUpdated 1..1 MS
 * source.software 1..1 MS
 
-//* author only Reference(PractitionerRoleLE)
 //* focus only Reference(ServiceRequestLE)
-
-* author 0..1
-* focus 0..1
-* author and focus MS
+* author 1..1 MS
+* focus 0..1 MS
 * eventCoding 1..1
 * eventCoding.code 1..1
 

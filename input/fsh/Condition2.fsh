@@ -7,7 +7,7 @@ Description: "Condicion Inicio 2 LE recurso que se utiliza para indicar el índi
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 //OBLIGATORIO POR ESTANDAR
-* subject only Reference(PacienteLE)
+* subject only Reference(PatientLE)
 
 
 

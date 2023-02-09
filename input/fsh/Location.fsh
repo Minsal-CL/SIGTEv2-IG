@@ -1,4 +1,4 @@
-Profile: LocationLE
+/*Profile: LocationLE
 Parent: LocalizacionCL
 Id: LocationLE
 Title: "Location LE"
@@ -13,4 +13,4 @@ Description: "Location LE"
 * identifier.system ^short = "VS de los codigos DEIS"
 * identifier.system ^definition = "VS de los codigos DEIS"
 * identifier.value ^short = "Código del establecimiento"
-* identifier.value ^definition = "Código del establecimiento"
+* identifier.value ^definition = "Código del establecimiento"*/

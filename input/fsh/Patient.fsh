@@ -1,6 +1,6 @@
-Profile: PacienteLE
+Profile: PatientLE
 Parent: PacienteCl
-Id: PacienteLE
+Id: PatientLE
 Title: "Paciente LE"
 Description: "Paciente LE recurso que se utiliza para representar la información de identificación del paciente."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
@@ -48,16 +48,23 @@ Description: "Paciente LE recurso que se utiliza para representar la informació
 * telecom contains TelefonoMovil1 1..1 MS and TelefonoMovil2 0..1 MS and TelefonoMovil3 0..1 MS and TelefonoFijo 0..1 MS and CorreoElectronico 0..1 MS and TelefonoOtro 0..1 MS
 
 * telecom[TelefonoMovil1].rank = 1
+* telecom[TelefonoMovil1].rank 1..1 MS
 * telecom[TelefonoMovil1].system = #phone
+* telecom[TelefonoMovil1].system 1..1 MS
 * telecom[TelefonoMovil1].use = #mobile
 
 * telecom[TelefonoMovil2].rank = 2
+* telecom[TelefonoMovil2].rank 1..1 MS
 * telecom[TelefonoMovil2].system = #phone
+* telecom[TelefonoMovil2].system 1..1 MS
 * telecom[TelefonoMovil2].use = #mobile 
 
 * telecom[TelefonoMovil3].rank = 3
-* telecom[TelefonoMovil3].system = #phone 
+* telecom[TelefonoMovil3].rank 1..1 MS
+* telecom[TelefonoMovil3].system = #phone
+* telecom[TelefonoMovil3].system 1..1 MS 
 * telecom[TelefonoMovil3].use = #mobile
+
 
 * telecom[TelefonoFijo].system = #phone 
 * telecom[TelefonoFijo].use = #temp

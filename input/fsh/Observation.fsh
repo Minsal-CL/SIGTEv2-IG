@@ -1,8 +1,8 @@
-Profile: ObservationLE
+Profile: ObservationInicioLE
 Parent: Observation
-Id: ObservationLE
-Title: "Observation LE"
-Description: "Observation LE"
+Id: ObservationInicioLE
+Title: "Observation Inicio LE"
+Description: "Observation Inicio LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

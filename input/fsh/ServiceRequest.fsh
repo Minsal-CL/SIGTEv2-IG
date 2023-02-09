@@ -95,7 +95,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 and SospechaPatologiaGes 0..1 MS and TipoAlergia 0..1 MS and IndiceComorbilidad 0..1 MS 
 
 * supportingInfo[reserva] only Reference(AppointmentInicioLE)
-* supportingInfo[paciente] only Reference(PacienteLE)
+* supportingInfo[paciente] only Reference(PatientLE)
 * supportingInfo[Anamnesis] only Reference(QuestionnaireResponseInicioLE)
 * supportingInfo[DiagnosticoSospecha] only Reference(ConditionInicioDiagnosticoSospechaLE)
 * supportingInfo[IndiceComorbilidad] only Reference(ConditionInicioIndiceComorbilidadLE)

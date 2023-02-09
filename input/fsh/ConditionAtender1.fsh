@@ -8,7 +8,7 @@ Description: "Condicion Atender 1 LE"
 
 
 //OBLIGATORIO POR ESTANDAR
-* subject only Reference(PacienteLE)
+* subject only Reference(PatientLE)
 
 
 * verificationStatus 1..1 MS

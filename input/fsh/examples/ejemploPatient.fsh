@@ -1,5 +1,5 @@
 Instance: EjemploPatient
-InstanceOf: PacienteLE
+InstanceOf: PatientLE
 Usage: #example
 Title: "Ejemplo de Patient Evento de Inicio"
 Description: ""

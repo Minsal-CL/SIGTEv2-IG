@@ -1,5 +1,5 @@
 Instance: EjemploObservation
-InstanceOf: ObservationLE
+InstanceOf: ObservationInicioLE
 Usage: #example
 Title: "Ejemplo de Observation Evento de Inicio"
 Description: ""

@@ -7,8 +7,8 @@ Description: "Appointment Inicio LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 
-* identifier 1..1 MS
-  * value 1..1 MS
+//* identifier 1..1 MS
+//  * value 1..1 MS
   
 * status 1..1 MS
 * status = #fulfilled

@@ -25,15 +25,15 @@ Los recursos usados en este evento son los siguientes:
 
 * [ServiceRequestLE](StructureDefinition-ServicerequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
-* [PractitionerRoleLE](StructureDefinition-PractitioneRolerLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
+* [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
 * [Condition](https://www.hl7.org/FHIR/condition.html): Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
-  * [Condition1](StructureDefinition-CondicionInicio1LE.html): Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)
-  * [Condition2](StructureDefinition-CondicionInicio2LE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)
-  * [Condition3](StructureDefinition-CondicionInicio3LE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)
-* [ObservationInicioLE](StructureDefinition-ObservationLE.html): Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)
+  * [Condition1](StructureDefinition-ConditionInicioDiagnosticoSospechaLE.html): Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)
+  * [Condition2](StructureDefinition-ConditionInicioIndiceComorbilidadLE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)
+  * [Condition3](StructureDefinition-ConditionInicioSospechaGesLE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)
+* [ObservationInicioLE](StructureDefinition-ObservationInicioLE.html): Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)
 * [EncounterInicioLE](StructureDefinition-EncounterInicioLE.html): Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)
 * [AllergyIntoleranceInicioLE](StructureDefinition-AllergyIntoleranceInicioLE.html): Recurso utilizado para registrar información relacionada al tipo de alergia en caso de tener (ServiceRequest.supportingInfo)
-* [PatientLE](StructureDefinition-PacienteLE.html): Recurso utilizado para registrar información relacionada al paciente (ServiceRequest.subject)
+* [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (ServiceRequest.subject)
 * [QuestionnaireResponseInicioLE](StructureDefinition-QuestionnaireResponseLE.html): Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)
 * [AppointmentInicioLE](StructureDefinition-AppointmentInicioLE.html): Recurso utilizado para registrar información de la cita que da inicio a la solicitud de interconsulta (ServiceRequest.supportingInfo)
 
@@ -62,13 +62,13 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServicerequestLE.html)
 * Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=inicio** 
-* Debe incluir el recurso [PatientLE](StructureDefinition-PacienteLE.html)
-* Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitioneRolerLE.html)
+* Debe incluir el recurso [PatientLE](StructureDefinition-PatientLE.html)
+* Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html)
 * Debe incluir el recurso [EncounterInicioLE](StructureDefinition-EncounterInicioLE.html)
 * Debe incluir el recurso [AppointmentInicioLE](StructureDefinition-AppointmentInicioLE.html)
-* Debe incluir el recurso [Condition1](StructureDefinition-CondicionInicio1LE.html)
+* Debe incluir el recurso [Condition1](StructureDefinition-ConditionInicioDiagnosticoSospechaLE.html)
 * Debe incluir el recurso [QuestionnaireResponseInicioLE](StructureDefinition-QuestionnaireResponseLE.html)
-* Debe incluir el recurso [ObservationInicioLE](StructureDefinition-ObservationLE.html)
+* Debe incluir el recurso [ObservationInicioLE](StructureDefinition-ObservationInicioLE.html)
 
 
 ## Mensaje Bundle de Ejemplo
@@ -250,7 +250,7 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
       "id" : "EjemploPatient",
       "meta" : {
         "profile" : [
-          "http://minsal.cl/listaespera/StructureDefinition/PacienteLE"
+          "http://minsal.cl/listaespera/StructureDefinition/PatientLE"
         ]
       },
       "text" : {
@@ -365,12 +365,12 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
         "id" : "EjemploObservation",
         "meta" : {
           "profile" : [
-            "http://minsal.cl/listaespera/StructureDefinition/ObservationLE"
+            "http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE"
           ]
         },
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"EjemploObservation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;EjemploObservation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationLE.html\">Observation LE</a></p></div><p><b>status</b>: registered</p><p><b>code</b>: examenes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: examenes realizados</p></div>"
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"EjemploObservation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;EjemploObservation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationInicioLE.html\">Observation LE</a></p></div><p><b>status</b>: registered</p><p><b>code</b>: examenes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: examenes realizados</p></div>"
         },
         "status" : "registered",
         "code" : {
@@ -473,12 +473,12 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
       "id" : "EjemploCondition",
       "meta" : {
         "profile" : [
-          "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio1LE"
+          "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE"
         ]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionInicio1LE.html\">Condicion Inicio 1 LE</a></p></div><p><b>category</b>: diagnostico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: DiagnosticoTextoLibreSospecha <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTipoCodDiagnostica.html\">Tipo Codificación Diagnostica</a>#2)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/pat12\">http://acme.com/ehr/fhir/Patient/pat12</a></p><p><b>note</b>: FundamentoDiagnostico</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConditionInicioDiagnosticoSospechaLE.html\">Condicion Inicio 1 LE</a></p></div><p><b>category</b>: diagnostico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: DiagnosticoTextoLibreSospecha <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTipoCodDiagnostica.html\">Tipo Codificación Diagnostica</a>#2)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/pat12\">http://acme.com/ehr/fhir/Patient/pat12</a></p><p><b>note</b>: FundamentoDiagnostico</p></div>"
       },
       "category" : [
         {
@@ -517,12 +517,12 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
       "id" : "EjemploCondition2",
       "meta" : {
         "profile" : [
-          "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio2LE"
+          "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE"
         ]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionInicio2LE.html\">Condicion Inicio 2 LE</a></p></div><p><b>category</b>: Indice Comorbilidad <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: DiagnosticoTextoLibreSospecha <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSIndicecomorbilidad.html\">Indice Comorbilidad</a>#G1)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/pat12\">http://acme.com/ehr/fhir/Patient/pat12</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConditionInicioIndiceComorbilidadLE.html\">Condicion Inicio 2 LE</a></p></div><p><b>category</b>: Indice Comorbilidad <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: DiagnosticoTextoLibreSospecha <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSIndicecomorbilidad.html\">Indice Comorbilidad</a>#G1)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/pat12\">http://acme.com/ehr/fhir/Patient/pat12</a></p></div>"
       },
       "category" : [
         {
@@ -556,12 +556,12 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
       "id" : "EjemploCondition3",
       "meta" : {
         "profile" : [
-          "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE"
+          "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE"
         ]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionInicio3LE.html\">Condicion Inicio 3 LE</a></p></div><p><b>category</b>: sospechaGes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: SospechaPatologiaGesGlosa <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSSospechaPatologiaGes.html\">Sospecha Patologia Ges</a>#A000)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/pat12\">http://acme.com/ehr/fhir/Patient/pat12</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition3&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConditionInicioSospechaGesLE.html\">Condicion Inicio 3 LE</a></p></div><p><b>category</b>: sospechaGes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: SospechaPatologiaGesGlosa <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSSospechaPatologiaGes.html\">Sospecha Patologia Ges</a>#A000)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/pat12\">http://acme.com/ehr/fhir/Patient/pat12</a></p></div>"
       },
       "category" : [
         {
@@ -695,12 +695,12 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
       "id" : "EjemploPractitionerRole",
       "meta" : {
         "profile" : [
-          "http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLE"
+          "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
         ]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRole\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRole&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitioneRolerLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"http://acme.com/ehr/fhir/Practitioner/pra1\">http://acme.com/ehr/fhir/Practitioner/pra1</a></p><p><b>organization</b>: <a href=\"http://acme.com/ehr/fhir/Organization/org1\">http://acme.com/ehr/fhir/Organization/org1</a></p><p><b>location</b>: <a href=\"http://acme.com/ehr/fhir/Location/loc1\">http://acme.com/ehr/fhir/Location/loc1</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRole\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRole&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"http://acme.com/ehr/fhir/Practitioner/pra1\">http://acme.com/ehr/fhir/Practitioner/pra1</a></p><p><b>organization</b>: <a href=\"http://acme.com/ehr/fhir/Organization/org1\">http://acme.com/ehr/fhir/Organization/org1</a></p><p><b>location</b>: <a href=\"http://acme.com/ehr/fhir/Location/loc1\">http://acme.com/ehr/fhir/Location/loc1</a></p></div>"
       },
       "practitioner" : {
         "reference" : "http://acme.com/ehr/fhir/Practitioner/pra1"

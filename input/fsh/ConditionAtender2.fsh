@@ -7,7 +7,7 @@ Description: "Condicion Atender 2 LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 //OBLIGATORIO POR ESTANDAR
-* subject only Reference(PacienteLE)
+* subject only Reference(PatientLE)
 
 
 * code 1..1 MS

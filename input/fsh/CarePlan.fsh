@@ -11,7 +11,7 @@ Description: "CarePlan Atender LE"
 * status MS
 * intent MS
 * subject MS
-* subject only Reference(PacienteLE)
+* subject only Reference(PatientLE)
 
 * description 1..1 MS
 * activity.detail.code  1..1 MS

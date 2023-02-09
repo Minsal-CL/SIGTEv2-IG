@@ -10,3 +10,4 @@ Description: ""
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
