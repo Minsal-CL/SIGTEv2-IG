@@ -23,6 +23,7 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 Los recursos usados en este evento son los siguientes:
 
+* [BundleInicioLE](StructureDefinition-BundleInicioLE.html): Recurso que permite agrupar los datos del mensaje.
 * [ServiceRequestLE](StructureDefinition-ServicerequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
@@ -60,6 +61,7 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 
 El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 
+* Debe incluir el recurso [BundleInicioLE](StructureDefinition-BundleInicioLE.html)
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServicerequestLE.html)
 * Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=inicio** 
 * Debe incluir el recurso [PatientLE](StructureDefinition-PatientLE.html)
