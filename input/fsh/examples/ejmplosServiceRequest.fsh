@@ -33,16 +33,16 @@ Description: ""
 * extension[PresentaDiscapacidad].valueBoolean = false
 //* extension[PersonaMayor].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor"
 //* extension[PersonaMayor].valueBoolean = false
-* subject.reference = "http://acme.com/ehr/fhir/Patient/pat12"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
 * reasonReference = Reference(http://acme.com/ehr/fhir/Observation/obs1)
 * encounter = Reference(http://acme.com/ehr/fhir/Encounter/enc1)
 * reasonCode = http://terminology.cens.cl/codigosDeis/motivoInterconsulta#1 "confirmacion"
 * supportingInfo[0] = Reference(http://acme.com/ehr/fhir/Appointment/app1)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/QuestionnaireResponse/que1)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/AllergyIntolerance/all1)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/cond1)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/cond2)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/cond3)
+* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con1)
+* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con2)
+* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con3)
 
 Instance: EjemploServiceRequest2
 InstanceOf: ServiceRequestLE

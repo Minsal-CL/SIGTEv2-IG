@@ -9,7 +9,7 @@ Description: ""
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 * category.text = "diagnostico"
 * note.text = "FundamentoDiagnostico"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/pat12)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
 
 Instance: EjemploCondition2
 InstanceOf: ConditionInicioIndiceComorbilidadLE
@@ -21,7 +21,7 @@ Description: ""
 * code.text = "DiagnosticoTextoLibreSospecha"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * category.text = "Indice Comorbilidad"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/pat12)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
 
 Instance: EjemploCondition3
 InstanceOf: ConditionInicioSospechaGesLE
@@ -33,4 +33,4 @@ Description: ""
 * code.text = "SospechaPatologiaGesGlosa"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * category.text = "sospechaGes"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/pat12)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
