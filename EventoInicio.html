@@ -228,7 +228,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Los recursos usados en este evento son los siguientes:</p>
 
 <ul>
-  <li><a name="l400">​</a><a href="StructureDefinition-ServicerequestLE.html">ServiceRequestLE</a>: Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)</li>
+  <li><a href="StructureDefinition-BundleInicioLE.html">BundleInicioLE</a>: Recurso que permite agrupar los datos del mensaje.</li>
+  <li><a name="l405">​</a><a href="StructureDefinition-ServicerequestLE.html">ServiceRequestLE</a>: Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)</li>
   <li><a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a>: Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.</li>
   <li><a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a>: Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)</li>
   <li><a href="https://www.hl7.org/FHIR/condition.html">Condition</a>: Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
@@ -242,7 +243,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="StructureDefinition-EncounterInicioLE.html">EncounterInicioLE</a>: Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)</li>
   <li><a href="StructureDefinition-AllergyIntoleranceInicioLE.html">AllergyIntoleranceInicioLE</a>: Recurso utilizado para registrar información relacionada al tipo de alergia en caso de tener (ServiceRequest.supportingInfo)</li>
   <li><a href="StructureDefinition-PatientLE.html">PatientLE</a>: Recurso utilizado para registrar información relacionada al paciente (ServiceRequest.subject)</li>
-  <li><a name="l458">​</a><a href="StructureDefinition-QuestionnaireResponseLE.html">QuestionnaireResponseInicioLE</a>: Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)</li>
+  <li><a name="l463">​</a><a href="StructureDefinition-QuestionnaireResponseLE.html">QuestionnaireResponseInicioLE</a>: Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)</li>
   <li><a href="StructureDefinition-AppointmentInicioLE.html">AppointmentInicioLE</a>: Recurso utilizado para registrar información de la cita que da inicio a la solicitud de interconsulta (ServiceRequest.supportingInfo)</li>
 </ul>
 
@@ -269,14 +270,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El Bundle de envío debe cumplir con las siguientes condiciones en este evento:</p>
 
 <ul>
-  <li><a name="l531">​</a>Debe incluir el recurso <a href="StructureDefinition-ServicerequestLE.html">ServiceRequestLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-BundleInicioLE.html">BundleInicioLE</a></li>
+  <li><a name="l541">​</a>Debe incluir el recurso <a href="StructureDefinition-ServicerequestLE.html">ServiceRequestLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a> con el valor <strong>MessageHeader.evenCoding.code=inicio</strong></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-PatientLE.html">PatientLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-EncounterInicioLE.html">EncounterInicioLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-AppointmentInicioLE.html">AppointmentInicioLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-ConditionInicioDiagnosticoSospechaLE.html">Condition1</a></li>
-  <li><a name="l569">​</a>Debe incluir el recurso <a href="StructureDefinition-QuestionnaireResponseLE.html">QuestionnaireResponseInicioLE</a></li>
+  <li><a name="l579">​</a>Debe incluir el recurso <a href="StructureDefinition-QuestionnaireResponseLE.html">QuestionnaireResponseInicioLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-ObservationInicioLE.html">ObservationInicioLE</a></li>
 </ul>
 
@@ -985,7 +987,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 9, 2023 15:16+0000">2023-02-09</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 9, 2023 17:43+0000">2023-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
