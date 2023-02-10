@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ListaEsperaChile"]; # 
   fhir:ImplementationGuide.title [ fhir:value "Proyecto Listas de Espera MINSAL CHILE"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-10T06:44:21+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-10T12:56:00+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "MINSAL Chile"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -2055,22 +2055,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/listaespera/Bundle/1>;
-         fhir:Reference.reference [ fhir:value "Bundle/1" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Bundle Evento de Inicio" ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE";
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE>
-       ]
-     ], [
-       fhir:index 102;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "AllergyIntolerance" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -2083,7 +2067,7 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceInicioLE>
        ]
      ], [
-       fhir:index 103;
+       fhir:index 102;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2097,6 +2081,22 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE";
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE>
+       ]
+     ], [
+       fhir:index 103;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/Bundle/EjemploBundle>;
+         fhir:Reference.reference [ fhir:value "Bundle/EjemploBundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Bundle Evento de Inicio" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE";
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE>
        ]
      ], [
        fhir:index 104;
