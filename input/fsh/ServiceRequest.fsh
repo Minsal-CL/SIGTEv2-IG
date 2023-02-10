@@ -84,7 +84,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * subject only Reference(Patient)
 * reasonReference only Reference(Observation)
 * encounter only Reference(EncounterInicioLE)
-
+* requester only Reference(PractitionerRoleLE)
 
 * supportingInfo 0..* MS 
 * supportingInfo ^slicing.discriminator.type = #value
