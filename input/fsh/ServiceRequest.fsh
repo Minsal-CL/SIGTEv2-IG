@@ -70,10 +70,6 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
     * system 1..1 MS
 * locationCode.coding from VSDestinoReferenciaCodigo
 
-* locationReference 0..1 MS
-  * reference 1..1 MS
-* locationReference only Reference(Location)
-
 * category 0..1 MS
   * coding 1..1 MS
     * code 1..1 MS
@@ -81,9 +77,10 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
     * system 1..1 MS
 * category.coding.code from VSModalidadAtencionCodigo
 
-* subject only Reference(Patient)
-* reasonReference only Reference(Observation)
+* subject only Reference(PatientLE)
+* reasonReference only Reference(ObservationInicioLE)
 * encounter only Reference(EncounterInicioLE)
+* requester MS
 * requester only Reference(PractitionerRoleLE)
 
 * supportingInfo 0..* MS 
@@ -91,11 +88,11 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * supportingInfo ^slicing.discriminator.path = "use"
 * supportingInfo ^slicing.rules = #open
 * supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
-* supportingInfo contains reserva 0..1 MS and paciente 0..1 MS and Anamnesis 0..1 MS and DiagnosticoSospecha 0..1 MS 
+* supportingInfo contains cita 0..1 MS and paciente 0..1 MS and Anamnesis 0..1 MS and DiagnosticoSospecha 0..1 MS 
 and SospechaPatologiaGes 0..1 MS and TipoAlergia 0..1 MS and IndiceComorbilidad 0..1 MS 
 
-* supportingInfo[reserva] only Reference(AppointmentInicioLE)
-* supportingInfo[paciente] only Reference(PatientLE)
+* supportingInfo[cita] only Reference(AppointmentInicioLE)
+//* supportingInfo[paciente] only Reference(PatientLE)
 * supportingInfo[Anamnesis] only Reference(QuestionnaireResponseInicioLE)
 * supportingInfo[DiagnosticoSospecha] only Reference(ConditionInicioDiagnosticoSospechaLE)
 * supportingInfo[IndiceComorbilidad] only Reference(ConditionInicioIndiceComorbilidadLE)
