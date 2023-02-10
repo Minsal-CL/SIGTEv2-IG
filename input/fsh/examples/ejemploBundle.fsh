@@ -26,14 +26,14 @@ Description: ""
 * entry[questionnaireresponse].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/que1"
 * entry[questionnaireresponse].resource = EjemploQuestionnaireResponse
 
-* entry[condition1].fullUrl = "http://acme.com/ehr/fhir/Condition/con1"
-* entry[condition1].resource = EjemploCondition
+* entry[conditionDiagnostico].fullUrl = "http://acme.com/ehr/fhir/Condition/con1"
+* entry[conditionDiagnostico].resource = EjemploCondition
 
-* entry[condition2].fullUrl = "http://acme.com/ehr/fhir/Condition/con2"
-* entry[condition2].resource = EjemploCondition2
+* entry[conditionComorbilidad].fullUrl = "http://acme.com/ehr/fhir/Condition/con2"
+* entry[conditionComorbilidad].resource = EjemploCondition2
 
-* entry[condition3].fullUrl = "http://acme.com/ehr/fhir/Condition/con3"
-* entry[condition3].resource = EjemploCondition3
+* entry[conditionGes].fullUrl = "http://acme.com/ehr/fhir/Condition/con3"
+* entry[conditionGes].resource = EjemploCondition3
 
 * entry[observation].fullUrl = "http://acme.com/ehr/fhir/Observation/obs1"
 * entry[observation].resource = EjemploObservation
