@@ -3,6 +3,8 @@ Parent: Bundle
 Id: BundleInicioLE
 Title: "BundleInicio LE"
 Description: "Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 * id MS
 * id
