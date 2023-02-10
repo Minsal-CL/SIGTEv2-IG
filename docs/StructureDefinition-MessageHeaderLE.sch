@@ -12,6 +12,8 @@
   <sch:pattern>
     <sch:title>f:MessageHeader</sch:title>
     <sch:rule context="f:MessageHeader">
+      <sch:assert test="count(f:author) &gt;= 1">author: minimum cardinality of 'author' is 1</sch:assert>
+      <sch:assert test="count(f:focus) &gt;= 1">focus: minimum cardinality of 'focus' is 1</sch:assert>
       <sch:assert test="count(f:focus) &lt;= 1">focus: maximum cardinality of 'focus' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

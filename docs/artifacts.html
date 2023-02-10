@@ -67,7 +67,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Proyecto Listas de Espera MINSAL CHILE</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.1.1 - ci-build
 
 
             </span>
@@ -175,7 +175,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.0). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.1). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -245,6 +245,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-BundleInicioLE.html"
+                     title="StructureDefinition/BundleInicioLE">BundleInicio LE</a>
+               </td>
+               <td>
+<p>Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-CarePlanAtenderLE.html"
                      title="StructureDefinition/CarePlanAtenderLE">CarePlan Atender LE</a>
                </td>
@@ -281,29 +290,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CondicionInicio1LE.html"
-                     title="StructureDefinition/CondicionInicio1LE">Condicion Inicio 1 LE</a>
+                  <a href="StructureDefinition-ConditionInicioDiagnosticoSospechaLE.html"
+                     title="StructureDefinition/ConditionInicioDiagnosticoSospechaLE">Condition Inicio Diagnostico Sospecha LE</a>
                </td>
                <td>
-<p>Condicion Inicio 1 LE</p>
+<p>Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CondicionInicio2LE.html"
-                     title="StructureDefinition/CondicionInicio2LE">Condicion Inicio 2 LE</a>
+                  <a href="StructureDefinition-ConditionInicioIndiceComorbilidadLE.html"
+                     title="StructureDefinition/ConditionInicioIndiceComorbilidadLE">Condition Inicio Indice Comorbilidad LE</a>
                </td>
                <td>
-<p>Condicion Inicio 2 LE</p>
+<p>Condicion Inicio 2 LE recurso que se utiliza para indicar el índice de comorbilidad de un paciente.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CondicionInicio3LE.html"
-                     title="StructureDefinition/CondicionInicio3LE">Condicion Inicio 3 LE</a>
+                  <a href="StructureDefinition-ConditionInicioSospechaGesLE.html"
+                     title="StructureDefinition/ConditionInicioSospechaGesLE">Condition Inicio Sospecha Ges LE</a>
                </td>
                <td>
-<p>Condicion Inicio 3 LE</p>
+<p>Condicion Inicio 3 LE recurso que se utiliza para indicar la sospecha de patología GES.</p>
 </td>
             </tr>
             <tr>
@@ -321,7 +330,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/EncounterAtenderLE">Encounter Atender LE</a>
                </td>
                <td>
-<p>Encounter Atender LE</p>
+<p>Encounter Atender LE recurso que se utiliza para representar el encuentro médico, cuando se comienza a ejecutar la atención de la interconsulta.</p>
 </td>
             </tr>
             <tr>
@@ -330,22 +339,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/EncounterInicioLE">Encounter Inicio LE</a>
                </td>
                <td>
-<p>Encounter Inicio LE</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-LocationLE.html"
-                     title="StructureDefinition/LocationLE">Location LE</a>
-               </td>
-               <td>
-<p>Location LE</p>
+<p>Encounter Inicio LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-MessageHeaderLE.html"
-                     title="StructureDefinition/MessageHeaderLE">MessageHeaderLE</a>
+                     title="StructureDefinition/MessageHeaderLE">MessageHeader LE</a>
                </td>
                <td>
 <p>MessageHeaderLE</p>
@@ -354,7 +354,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="StructureDefinition-ObservationAtenderLE.html"
-                     title="StructureDefinition/ObservationAtenderLE">ObservationAtender LE</a>
+                     title="StructureDefinition/ObservationAtenderLE">Observation Atender LE</a>
                </td>
                <td>
 <p>ObservationAtender LE</p>
@@ -362,29 +362,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ObservationLE.html"
-                     title="StructureDefinition/ObservationLE">Observation LE</a>
+                  <a href="StructureDefinition-ObservationInicioLE.html"
+                     title="StructureDefinition/ObservationInicioLE">Observation Inicio LE</a>
                </td>
                <td>
-<p>Observation LE</p>
+<p>Observation Inicio LE</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-OrganizacionLE.html"
-                     title="StructureDefinition/OrganizacionLE">Organizacion LE</a>
+                  <a href="StructureDefinition-OrganizationLE.html"
+                     title="StructureDefinition/OrganizationLE">Organization LE</a>
                </td>
                <td>
-<p>Organizacion LE</p>
+<p>Organization LE</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-PacienteLE.html"
-                     title="StructureDefinition/PacienteLE">Paciente LE</a>
+                  <a href="StructureDefinition-PatientLE.html"
+                     title="StructureDefinition/PatientLE">Paciente LE</a>
                </td>
                <td>
-<p>Paciente LE</p>
+<p>Paciente LE recurso que se utiliza para representar la información de identificación del paciente.</p>
 </td>
             </tr>
             <tr>
@@ -393,16 +393,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/PractitionerLE">Practitioner LE</a>
                </td>
                <td>
-<p>Practitioner LE</p>
+<p>Practitioner LE recurso que se utiliza para representar la información de identificación del profesional de la salud.</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-PractitioneRolerLE.html"
-                     title="StructureDefinition/PractitioneRolerLE">PractitionerRole LE</a>
+                  <a href="StructureDefinition-PractitionerRoleLE.html"
+                     title="StructureDefinition/PractitionerRoleLE">PractitionerRole LE</a>
                </td>
                <td>
-<p>PractitionerRole LE</p>
+<p>PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud.</p>
 </td>
             </tr>
             <tr>
@@ -420,7 +420,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                      title="StructureDefinition/ServiceRequestLE">ServiceRequest LE</a>
                </td>
                <td>
-<p>ServiceRequest LE</p>
+<p>ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta.</p>
 </td>
             </tr>
          </tbody>
@@ -469,6 +469,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Doc Acreditacion Cuidador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-EspecialidadMedicaDestinoCodigo.html"
+                     title="StructureDefinition/EspecialidadMedicaDestinoCodigo">Especialidad Médica Destino Código</a>
+               </td>
+               <td>
+<p>Especialidad Médica Destino Código</p>
 </td>
             </tr>
             <tr>
@@ -689,6 +698,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-SubEspecialidadMedicaDestinoCodigo.html"
+                     title="StructureDefinition/SubEspecialidadMedicaDestinoCodigo">SubEspecialidad Médica Destino Código</a>
+               </td>
+               <td>
+<p>SubEspecialidad Médica Destino Código</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-TipoOtroTelefono.html"
                      title="StructureDefinition/TipoOtroTelefono">TipoOtroTelefono</a>
                </td>
@@ -835,6 +853,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-VSPractitionerTipoRolLE.html"
+                     title="ValueSet/VSPractitionerTipoRolLE">Rol de médicos</a>
+               </td>
+               <td>
+<p>Rol de médicos(Practitioner) en algún evento, durante la intercosulta.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-VSPuebloIndigena.html" title="ValueSet/VSPuebloIndigena">Pueblo Indigena</a>
                </td>
                <td>
@@ -874,6 +901,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Tipo Consulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSTipoEventoLE.html" title="ValueSet/VSTipoEventoLE">Tipo de Evento</a>
+               </td>
+               <td>
+<p>Tipo de evento en la interconsulta</p>
 </td>
             </tr>
             <tr>
@@ -1033,6 +1068,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-CSPractitionerTipoRolLE.html"
+                     title="CodeSystem/CSPractitionerTipoRolLE">Rol de médicos</a>
+               </td>
+               <td>
+<p>CodeSystem con códigos definidos para representar cada rol de los médicos dentro de la interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-CSPuebloIndigena.html"
                      title="CodeSystem/CSPuebloIndigena">Pueblo Indigena</a>
                </td>
@@ -1073,6 +1117,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Tipo Consulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSTipoEventoLE.html" title="CodeSystem/CSTipoEventoLE">Tipo de Evento</a>
+               </td>
+               <td>
+<p>CodeSystem con códigos definidos para representar cada evento en la interconsulta</p>
 </td>
             </tr>
             <tr>
@@ -1128,6 +1180,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundle.html" title="Bundle/EjemploBundle">Ejemplo de Bundle Evento de Inicio</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Condition-EjemploCondition.html"
                      title="Condition/EjemploCondition">Ejemplo de Condition1 Evento de Inicio</a>
                </td>
@@ -1152,11 +1209,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Location-EjemploLocation.html" title="Location/EjemploLocation">Ejemplo de Location Evento de Inicio</a>
-               </td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="MessageHeader-EjemploMessageHeader.html"
                      title="MessageHeader/EjemploMessageHeader">Ejemplo de MesaggeHeader Evento de Inicio</a>
                </td>
@@ -1165,6 +1217,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td style="column-width:30%">
                   <a href="Observation-EjemploObservation.html"
                      title="Observation/EjemploObservation">Ejemplo de Observation Evento de Inicio</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganization.html"
+                     title="Organization/EjemploOrganization">Ejemplo de Organization Evento de Inicio</a>
                </td>
             </tr>
             <tr>
@@ -1229,7 +1287,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 31, 2023 15:14-0300">2023-01-31</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 10, 2023 14:01-0300">2023-02-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

@@ -71,7 +71,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Proyecto Listas de Espera MINSAL CHILE</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">0.1.1 - ci-build
 
 
             </span>
@@ -172,7 +172,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.0). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.1). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -299,11 +299,13 @@
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>Request.reasonReference</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>Request.insurance</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>Request.supportingInfo</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (reserva)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (cita)</td><td>Request.supportingInfo</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (paciente)</td><td>Request.supportingInfo</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (QuestionnaireResponse)</td><td>Request.supportingInfo</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Condition)</td><td>Request.supportingInfo</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (AllergyIntolerance)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Anamnesis)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (DiagnosticoSospecha)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (SospechaPatologiaGes)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (TipoAlergia)</td><td>Request.supportingInfo</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (IndiceComorbilidad)</td><td>Request.supportingInfo</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>Request.note</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;relevantHistory</td><td>Request.relevantHistory</td> </tr>
 </table>
@@ -363,11 +365,13 @@
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>ORC.16</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>IN1/IN2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>Accompanying segments</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (reserva)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (cita)</td><td>Accompanying segments</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (paciente)</td><td>Accompanying segments</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (QuestionnaireResponse)</td><td>Accompanying segments</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Condition)</td><td>Accompanying segments</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (AllergyIntolerance)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Anamnesis)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (DiagnosticoSospecha)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (SospechaPatologiaGes)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (TipoAlergia)</td><td>Accompanying segments</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (IndiceComorbilidad)</td><td>Accompanying segments</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>SPM</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>SPM</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>NTE</td> </tr>
@@ -446,21 +450,17 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>CD.codingRationale</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;locationReference</td><td>.participation[typeCode=LOC].role[scoper.determinerCode=INSTANCE]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reference</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;identifier</td><td>.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonCode</td><td>.reasonCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;reasonReference</td><td>.outboundRelationship[typeCode=RSON].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;insurance</td><td>.outboundRelationship[typeCode=COVBY].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (reserva)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (cita)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (paciente)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (QuestionnaireResponse)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Condition)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (AllergyIntolerance)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (Anamnesis)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (DiagnosticoSospecha)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (SospechaPatologiaGes)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (TipoAlergia)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;supportingInfo (IndiceComorbilidad)</td><td>.outboundRelationship[typeCode=PERT].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;specimen</td><td>.participation[typeCode=SPC].role</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>targetSiteCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.inboundRelationship(typeCode=SUBJ].source[classCode=ANNGEN, moodCode=EVN].value[xsi:type=ST]</td> </tr>
@@ -559,7 +559,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jan 31, 2023 15:14-0300">2023-01-31</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 10, 2023 14:01-0300">2023-02-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

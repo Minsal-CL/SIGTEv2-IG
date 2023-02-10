@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="http://minsal.cl/listaespera/ImplementationGuide/fhir.hl7chile.ListaDeEspera"/>
-  <version value="0.1.0"/>
+  <version value="0.1.1"/>
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-01-31T15:14:06-03:00"/>
+  <date value="2023-02-10T14:01:31-03:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -460,6 +460,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/BundleInicioLE"/>
+      </reference>
+      <name value="BundleInicio LE"/>
+      <description value="Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/CarePlanAtenderLE"/>
       </reference>
       <name value="CarePlan Atender LE"/>
@@ -504,10 +515,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionInicio1LE"/>
+        <reference value="StructureDefinition/ConditionInicioDiagnosticoSospechaLE"/>
       </reference>
-      <name value="Condicion Inicio 1 LE"/>
-      <description value="Condicion Inicio 1 LE"/>
+      <name value="Condition Inicio Diagnostico Sospecha LE"/>
+      <description value="Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -515,10 +526,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionInicio2LE"/>
+        <reference value="StructureDefinition/ConditionInicioIndiceComorbilidadLE"/>
       </reference>
-      <name value="Condicion Inicio 2 LE"/>
-      <description value="Condicion Inicio 2 LE"/>
+      <name value="Condition Inicio Indice Comorbilidad LE"/>
+      <description value="Condicion Inicio 2 LE recurso que se utiliza para indicar el índice de comorbilidad de un paciente."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -526,10 +537,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CondicionInicio3LE"/>
+        <reference value="StructureDefinition/ConditionInicioSospechaGesLE"/>
       </reference>
-      <name value="Condicion Inicio 3 LE"/>
-      <description value="Condicion Inicio 3 LE"/>
+      <name value="Condition Inicio Sospecha Ges LE"/>
+      <description value="Condicion Inicio 3 LE recurso que se utiliza para indicar la sospecha de patología GES."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -551,7 +562,7 @@
         <reference value="StructureDefinition/EncounterAtenderLE"/>
       </reference>
       <name value="Encounter Atender LE"/>
-      <description value="Encounter Atender LE"/>
+      <description value="Encounter Atender LE recurso que se utiliza para representar el encuentro médico, cuando se comienza a ejecutar la atención de la interconsulta."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -562,18 +573,7 @@
         <reference value="StructureDefinition/EncounterInicioLE"/>
       </reference>
       <name value="Encounter Inicio LE"/>
-      <description value="Encounter Inicio LE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/LocationLE"/>
-      </reference>
-      <name value="Location LE"/>
-      <description value="Location LE"/>
+      <description value="Encounter Inicio LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -583,7 +583,7 @@
       <reference>
         <reference value="StructureDefinition/MessageHeaderLE"/>
       </reference>
-      <name value="MessageHeaderLE"/>
+      <name value="MessageHeader LE"/>
       <description value="MessageHeaderLE"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -594,7 +594,7 @@
       <reference>
         <reference value="StructureDefinition/ObservationAtenderLE"/>
       </reference>
-      <name value="ObservationAtender LE"/>
+      <name value="Observation Atender LE"/>
       <description value="ObservationAtender LE"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -603,10 +603,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ObservationLE"/>
+        <reference value="StructureDefinition/ObservationInicioLE"/>
       </reference>
-      <name value="Observation LE"/>
-      <description value="Observation LE"/>
+      <name value="Observation Inicio LE"/>
+      <description value="Observation Inicio LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -614,10 +614,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/OrganizacionLE"/>
+        <reference value="StructureDefinition/OrganizationLE"/>
       </reference>
-      <name value="Organizacion LE"/>
-      <description value="Organizacion LE"/>
+      <name value="Organization LE"/>
+      <description value="Organization LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -625,10 +625,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PacienteLE"/>
+        <reference value="StructureDefinition/PatientLE"/>
       </reference>
       <name value="Paciente LE"/>
-      <description value="Paciente LE"/>
+      <description value="Paciente LE recurso que se utiliza para representar la información de identificación del paciente."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -639,7 +639,7 @@
         <reference value="StructureDefinition/PractitionerLE"/>
       </reference>
       <name value="Practitioner LE"/>
-      <description value="Practitioner LE"/>
+      <description value="Practitioner LE recurso que se utiliza para representar la información de identificación del profesional de la salud."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -647,10 +647,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PractitioneRolerLE"/>
+        <reference value="StructureDefinition/PractitionerRoleLE"/>
       </reference>
       <name value="PractitionerRole LE"/>
-      <description value="PractitionerRole LE"/>
+      <description value="PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -672,7 +672,7 @@
         <reference value="StructureDefinition/ServiceRequestLE"/>
       </reference>
       <name value="ServiceRequest LE"/>
-      <description value="ServiceRequest LE"/>
+      <description value="ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -717,6 +717,17 @@
       </reference>
       <name value="Doc Acreditacion Cuidador"/>
       <description value="Doc Acreditacion Cuidador"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EspecialidadMedicaDestinoCodigo"/>
+      </reference>
+      <name value="Especialidad Médica Destino Código"/>
+      <description value="Especialidad Médica Destino Código"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -987,6 +998,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/SubEspecialidadMedicaDestinoCodigo"/>
+      </reference>
+      <name value="SubEspecialidad Médica Destino Código"/>
+      <description value="SubEspecialidad Médica Destino Código"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/TipoOtroTelefono"/>
       </reference>
       <name value="TipoOtroTelefono"/>
@@ -1152,6 +1174,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/VSPractitionerTipoRolLE"/>
+      </reference>
+      <name value="Rol de médicos"/>
+      <description value="Rol de médicos(Practitioner) en algún evento, durante la intercosulta."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VSPuebloIndigena"/>
       </reference>
       <name value="Pueblo Indigena"/>
@@ -1200,6 +1233,17 @@
       </reference>
       <name value="Tipo Consulta"/>
       <description value="Tipo Consulta"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSTipoEventoLE"/>
+      </reference>
+      <name value="Tipo de Evento"/>
+      <description value="Tipo de evento en la interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1383,6 +1427,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/CSPractitionerTipoRolLE"/>
+      </reference>
+      <name value="Rol de médicos"/>
+      <description value="CodeSystem con códigos definidos para representar cada rol de los médicos dentro de la interconsulta"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/CSPuebloIndigena"/>
       </reference>
       <name value="Pueblo Indigena"/>
@@ -1431,6 +1486,17 @@
       </reference>
       <name value="Tipo Consulta"/>
       <description value="Tipo Consulta"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSTipoEventoLE"/>
+      </reference>
+      <name value="Tipo de Evento"/>
+      <description value="CodeSystem con códigos definidos para representar cada evento en la interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1488,13 +1554,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/EjemploBundle"/>
+      </reference>
+      <name value="Ejemplo de Bundle Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
         <reference value="Condition/EjemploCondition"/>
       </reference>
       <name value="Ejemplo de Condition1 Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/CondicionInicio1LE"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1504,7 +1580,7 @@
         <reference value="Condition/EjemploCondition2"/>
       </reference>
       <name value="Ejemplo de Condition2 Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/CondicionInicio2LE"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1514,7 +1590,7 @@
         <reference value="Condition/EjemploCondition3"/>
       </reference>
       <name value="Ejemplo de Condition3 Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1525,16 +1601,6 @@
       </reference>
       <name value="Ejemplo de Encounter Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Location"/>
-      </extension>
-      <reference>
-        <reference value="Location/EjemploLocation"/>
-      </reference>
-      <name value="Ejemplo de Location Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/LocationLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1554,7 +1620,17 @@
         <reference value="Observation/EjemploObservation"/>
       </reference>
       <name value="Ejemplo de Observation Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ObservationLE"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/EjemploOrganization"/>
+      </reference>
+      <name value="Ejemplo de Organization Evento de Inicio"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1564,7 +1640,7 @@
         <reference value="Patient/EjemploPatient"/>
       </reference>
       <name value="Ejemplo de Patient Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PacienteLE"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PatientLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1584,7 +1660,7 @@
         <reference value="PractitionerRole/EjemploPractitionerRole"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLE"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

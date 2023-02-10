@@ -1,6 +1,6 @@
 {
   "package": "fhir.hl7chile.ListaDeEspera",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -121,6 +121,25 @@
     {
       "url": "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE",
       "title": "Doc Acreditacion Cuidador",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo",
+      "title": "Especialidad Médica Destino Código",
       "types": [
         "CodeableConcept",
         "CodeableConcept",
@@ -446,6 +465,25 @@
       ]
     },
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo",
+      "title": "SubEspecialidad Médica Destino Código",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/TipoOtroTelefono",
       "title": "TipoOtroTelefono",
       "types": [
@@ -482,6 +520,12 @@
         "title": "Appointment Inicio LE"
       }
     ],
+    "Bundle": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE",
+        "title": "BundleInicio LE"
+      }
+    ],
     "CarePlan": [
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/CarePlanAtenderLE",
@@ -502,16 +546,16 @@
         "title": "Condicion Atender 3 LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio1LE",
-        "title": "Condicion Inicio 1 LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE",
+        "title": "Condition Inicio Diagnostico Sospecha LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio2LE",
-        "title": "Condicion Inicio 2 LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE",
+        "title": "Condition Inicio Indice Comorbilidad LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionInicio3LE",
-        "title": "Condicion Inicio 3 LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE",
+        "title": "Condition Inicio Sospecha Ges LE"
       }
     ],
     "DocumentReference": [
@@ -530,50 +574,44 @@
         "title": "Encounter Inicio LE"
       }
     ],
-    "Location": [
-      {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/LocationLE",
-        "title": "Location LE"
-      }
-    ],
     "MessageHeader": [
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE",
-        "title": "MessageHeaderLE"
+        "title": "MessageHeader LE"
       }
     ],
     "Observation": [
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE",
-        "title": "ObservationAtender LE"
+        "title": "Observation Atender LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationLE",
-        "title": "Observation LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE",
+        "title": "Observation Inicio LE"
       }
     ],
     "Organization": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/OrganizacionLE",
-        "title": "Organizacion LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE",
+        "title": "Organization LE"
       }
     ],
     "Patient": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/PacienteLE",
+        "url": "http://minsal.cl/listaespera/StructureDefinition/PatientLE",
         "title": "Paciente LE"
-      }
-    ],
-    "PractitionerRole": [
-      {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitioneRolerLE",
-        "title": "PractitionerRole LE"
       }
     ],
     "Practitioner": [
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE",
         "title": "Practitioner LE"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE",
+        "title": "PractitionerRole LE"
       }
     ],
     "QuestionnaireResponse": [
@@ -609,6 +647,7 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
+      "Bundle.entry.resource.name.family",
       "Patient.contact.name.family",
       "Patient.name.family"
     ],
@@ -654,6 +693,8 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.identifier.type",
       "Patient",
       "Patient.identifier.type"
     ],
@@ -661,36 +702,44 @@
       "Appointment"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
+      "Bundle.entry.resource.identifier",
       "Patient.identifier"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo": [
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolCuidador": [
-      "ServiceRequest"
-    ],
-    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox": [
       "Encounter"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPresentaDiscapacidad": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen": [
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolSolicitudExamenes": [
@@ -700,12 +749,14 @@
       "DocumentReference"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia": [
       "Encounter"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion": [
@@ -715,9 +766,11 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta": [
@@ -730,6 +783,10 @@
       "Practitioner.name.family"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo": [
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/TipoOtroTelefono": [

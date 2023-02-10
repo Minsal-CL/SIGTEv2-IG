@@ -2,11 +2,11 @@
   "resourceType" : "Patient",
   "id" : "EjemploPatient",
   "meta" : {
-    "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PacienteLE"]
+    "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PatientLE"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Luis </b> male, DoB: 1995-12-12 ( RUN: 15999999)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Luis Perez (OFFICIAL)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">569854875457(MOBILE)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Identidad de genero\"><a href=\"StructureDefinition-IdentidadGenero.html\">Identidad de genero:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">01</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de las Nacionalidades\"><a href=\"StructureDefinition-NacionalidadCodigo.html\">Codigo de Identificación de Nacionalidad:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de paises de origen\"><a href=\"StructureDefinition-CodigoPaises.html\">Codigo de Identificación de países:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"ExtBool Afrodescendiente\"><a href=\"StructureDefinition-ExtBoolAfrodescendiente.html\">ExtBool Afrodescendiente:</a></td><td colspan=\"3\"><ul><li>false</li></ul></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Luis </b> male, DoB: 1995-12-12 ( RUN: 15999999)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Luis Perez (OFFICIAL)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">ph: 569854875457(MOBILE)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Identidad de genero\"><a href=\"StructureDefinition-IdentidadGenero.html\">Identidad de genero:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">01</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de las Nacionalidades\"><a href=\"StructureDefinition-NacionalidadCodigo.html\">Codigo de Identificación de Nacionalidad:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de paises de origen\"><a href=\"StructureDefinition-CodigoPaises.html\">Codigo de Identificación de países:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"ExtBool Afrodescendiente\"><a href=\"StructureDefinition-ExtBoolAfrodescendiente.html\">ExtBool Afrodescendiente:</a></td><td colspan=\"3\"><ul><li>false</li></ul></td></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
@@ -75,6 +75,7 @@
     "given" : ["Luis"]
   }],
   "telecom" : [{
+    "system" : "phone",
     "value" : "569854875457",
     "use" : "mobile",
     "rank" : 1
