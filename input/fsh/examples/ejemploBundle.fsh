@@ -1,11 +1,11 @@
-Instance: EjemploBundleInicio
+Instance: EjemploBundle
 InstanceOf: BundleInicioLE
 Usage: #example
 Title: "Ejemplo de Bundle Evento de Inicio"
 Description: ""
 
-* id = "1"
 * type = #message
+* meta.lastUpdated = "2023-01-20T14:12:10Z"
 * timestamp = "2023-02-09T17:15:22Z"
 
 * entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"

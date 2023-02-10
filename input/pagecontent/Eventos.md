@@ -1,6 +1,6 @@
 # Eventos
 
-## Tabla de Eventos
+## Tabla de códigos de Eventos
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
@@ -12,12 +12,12 @@
 | terminar | Terminar | Este evento permite registrar información asociada a los motivos de cierre o término de la interconsulta. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido revisada |
 {:.grid}
 
-## Descripción de Eventos
-* [ServiceRequest](link): Recurso principal para reflejar los datos de la interconsulta
-* [Evento Inicio](EventoInicio.html): LoremIpusm
-* [Evento Referenciada](EventoReferenciada.html): LoremIpusm
-* [Evento Revisar](EventoRevisar.html): LoremIpusm
-* [Evento Agendar](EventoAgendar.html): LoremIpusm
-* [Evento Atender](EventoAtender.html): LoremIpusm
-* [Evento Terminar](EventoTerminar.html): LoremIpusm
+## Definicion de Eventos
+
+* [Evento Inicio](EventoInicio.html)
+* [Evento Referenciada](EventoReferenciada.html)
+* [Evento Revisar](EventoRevisar.html)
+* [Evento Agendar](EventoAgendar.html)
+* [Evento Atender](EventoAtender.html)
+* [Evento Terminar](EventoTerminar.html)
 
