@@ -90,3 +90,25 @@ Description: ""
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/cond2)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/cond3)
 
+/*EJEMPLO PARA BUNDLE REFERENCIA*/
+Instance: EjemploServiceRequestReferencia
+InstanceOf: ServiceRequestLE
+Usage: #example
+Title: "Ejemplo de Service Request Evento de Referencia"
+Description: ""
+
+* status = #draft
+* priority = #urgent
+* intent = #proposal
+* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.value = "1"
+* extension[EspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo"
+* extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #1
+* extension[SubEspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo"
+* extension[SubEspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #1
+* locationCode.text = "Motivo derivación"
+* locationCode.coding.code = #1
+* locationCode.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDestinoReferenciaCodigo"
+* performer = Reference(http://acme.com/ehr/fhir/Organization/org2)
+/*FIN PARA BUNDLE REFERENCIA*/

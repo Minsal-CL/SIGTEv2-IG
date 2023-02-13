@@ -50,3 +50,31 @@ Description: ""
 * entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
 * entry[organization].resource = EjemploOrganization
 
+/*Budle Referencia*/
+Instance: EjemploBundleReferencia
+InstanceOf: BundleReferenciaLE
+Usage: #example
+Title: "Ejemplo de Bundle Evento de Inicio"
+Description: ""
+
+* type = #message
+* meta.lastUpdated = "2023-01-20T14:12:10Z"
+* timestamp = "2023-02-09T17:15:22Z"
+
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"
+* entry[messageheader].resource = EjemploMessageHeaderReferencia
+
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
+* entry[servicerequest].resource = EjemploServiceRequestReferencia
+
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
+* entry[practitionerRole].resource = EjemploPractitionerRoleReferencia
+
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/pra1"
+* entry[practitioner].resource = EjemploPractitionerReferencia
+
+* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
+* entry[organization][=].resource = EjemploOrganizationReferencia1
+
+* entry[organization][1].fullUrl = "http://acme.com/ehr/fhir/Organization/org2"
+* entry[organization][1].resource = EjemploOrganizationReferencia2
