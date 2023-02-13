@@ -75,7 +75,7 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 
 ## Mensaje Bundle de Ejemplo
 
-* [BundleInicioLE](Bundle-EjemploBundle.html)
+* [BundleInicioLE](Bundle-EjemploBundleInicio.html)
 
 ## Notas
 

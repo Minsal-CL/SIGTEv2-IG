@@ -1,0 +1,22 @@
+@startuml
+title Transaction: Evento Referenciada
+
+hide footbox
+
+!include ./style.iuml
+
+Participant "CESFAM"  as CESFAM
+Participant "Hospital"  as HOSPITAL
+Participant "Hospital Digital"  as HOSPITALDIG
+
+
+autonumber 1.1.1
+
+alt CESFAM
+    CESFAM->HOSPITAL: APS a Nivel Secundario
+else HOSPITALDIG
+    HOSPITAL->HOSPITALDIG: Nivel Secundario a Hospital Digital
+else HOSPITAL
+    HOSPITAL->CESFAM: Nivel Secundario a APS
+end
+@enduml
