@@ -13,6 +13,10 @@ Description: "Paciente LE recurso que se utiliza para representar la informació
 * extension contains PuebloIndigena named PuebloIndigena 0..1 MS
 * extension contains ExtBoolAfrodescendiente named Afrodescendiente 1..1 MS
 
+* name[NombreOficial].family.extension contains SegundoApellido named segundoApellido 0..1 MS
+* name[NombreOficial].family.extension ^short = "Extensión para el segundo apellido"
+* name[NombreOficial].family.extension[mothers-family] 0..0 
+
 // FIN EXTENSIONES
 
 * identifier ^slicing.discriminator.type = #value

@@ -1,4 +1,4 @@
-Instance: EjemploBundle
+Instance: EjemploBundleInicio
 InstanceOf: BundleInicioLE
 Usage: #example
 Title: "Ejemplo de Bundle Evento de Inicio"
