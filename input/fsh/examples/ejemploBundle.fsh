@@ -54,7 +54,7 @@ Description: ""
 Instance: EjemploBundleReferencia
 InstanceOf: BundleReferenciaLE
 Usage: #example
-Title: "Ejemplo de Bundle Evento de Inicio"
+Title: "Ejemplo de Bundle Evento de Referencia"
 Description: ""
 
 * type = #message
