@@ -7,9 +7,9 @@ Description: "PractitionerRole LE recurso que se utiliza para representar la inf
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 * organization 1..1 MS
-* organization only Reference(Organization)
+* organization only Reference(OrganizationLE)
 * organization ^short = "Organización que se identifica con el código de establecimiento"
-* practitioner only Reference(PrestadorCL)
+* practitioner only Reference(PractitionerLE)
 * code 1..1 MS
 * code.coding.code 1..1 MS
 * code from VSPractitionerTipoRolLE

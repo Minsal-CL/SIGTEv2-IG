@@ -2,7 +2,7 @@ Profile: ObservationInicioLE
 Parent: Observation
 Id: ObservationInicioLE
 Title: "Observation Inicio LE"
-Description: "Observation Inicio LE"
+Description: "Observation Inicio LE, recurso que permite agregar los examenes en el evento de inicio."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
