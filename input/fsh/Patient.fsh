@@ -15,7 +15,7 @@ Description: "Paciente LE recurso que se utiliza para representar la informació
 
 * name[NombreOficial].family.extension contains SegundoApellido named segundoApellido 0..1 MS
 * name[NombreOficial].family.extension ^short = "Extensión para el segundo apellido"
-* name[NombreOficial].family.extension[mothers-family] 0..0 
+* name[NombreOficial].family.extension[mothers-family] 0..0
 
 // FIN EXTENSIONES
 
