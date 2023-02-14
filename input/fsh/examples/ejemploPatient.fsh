@@ -24,7 +24,7 @@ Description: ""
 * name[0].use = #official
 * name[=].given = "Luis"
 * name[=].family = "Perez"
-* name[=].family.extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family"
+* name[=].family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
 * name[=].family.extension.valueString = "sierra"
 * name[+].use = #usual
 * name[=].given = "Luis"
