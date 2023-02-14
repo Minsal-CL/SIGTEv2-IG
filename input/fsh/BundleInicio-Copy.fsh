@@ -1,0 +1,46 @@
+Profile: BundleInicio2
+Parent: Bundle
+Id: BundleInicio2
+Title: "BundleInicio LE 2"
+Description: "Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio."
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
+
+* id MS
+* id
+* type MS
+* type = #message
+* timestamp MS
+
+* entry ^slicing.discriminator.type = #type
+* entry ^slicing.discriminator.path = "profile"
+* entry ^slicing.rules = #closed
+* entry 0..14 MS
+* entry contains messageheader 0..1 
+        and servicerequest 0..1 
+        and encounter 0..1 
+        and appointment 0..1 
+        and patient 0..1 
+        and questionnaireresponse 0..1 
+        and conditionDiagnostico 0..1 
+        and conditionComorbilidad 0..1 
+        and conditionGes 0..1 
+        and observation 0..1 
+        and allergyintolerance 0..1
+        and practitionerrole 0..1
+        and practitioner 0..1
+        and organization 0..1
+* entry[messageheader].resource only MessageHeaderLE
+* entry[servicerequest].resource only ServiceRequestLE
+* entry[encounter].resource only EncounterInicioLE
+* entry[observation].resource only ObservationInicioLE
+* entry[conditionDiagnostico].resource only ConditionInicioDiagnosticoSospechaLE
+* entry[conditionComorbilidad].resource only ConditionInicioIndiceComorbilidadLE
+* entry[conditionGes].resource only ConditionInicioSospechaGesLE
+* entry[appointment].resource only AppointmentInicioLE
+* entry[allergyintolerance].resource only AllergyIntoleranceInicioLE
+* entry[practitionerrole].resource only PractitionerRoleLE
+* entry[questionnaireresponse].resource only QuestionnaireResponseInicioLE
+* entry[patient].resource only PatientLE
+* entry[organization].resource only OrganizationLE
+* entry[practitioner].resource only PractitionerLE

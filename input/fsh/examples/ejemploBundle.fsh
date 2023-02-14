@@ -1,8 +1,8 @@
 Instance: EjemploBundleInicio
-InstanceOf: BundleInicioLE
+InstanceOf: BundleInicio2
 Usage: #example
 Title: "Ejemplo de Bundle Evento de Inicio"
-Description: ""
+Description: "Ejemplo de Bundle Evento de Inicio"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -11,9 +11,10 @@ Description: ""
 * entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"
 * entry[messageheader].resource = EjemploMessageHeader
 
+
 * entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
 * entry[servicerequest].resource = EjemploServiceRequest
-
+/*
 * entry[encounter].fullUrl = "http://acme.com/ehr/fhir/Encounter/enc1"
 * entry[encounter].resource = EjemploEncounter
 
@@ -50,11 +51,13 @@ Description: ""
 * entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
 * entry[organization].resource = EjemploOrganization
 
+*/
+
 /*Budle Referencia*/
 Instance: EjemploBundleReferencia
 InstanceOf: BundleReferenciaLE
 Usage: #example
-Title: "Ejemplo de Bundle Evento de Inicio"
+Title: "Ejemplo de Bundle Evento de Referencia"
 Description: ""
 
 * type = #message

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="EjemploBundleReferencia"/>
+  <meta>
+    <lastUpdated value="2023-01-20T14:12:10Z"/>
+    <profile value="http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2023-02-09T17:15:22Z"/>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/MessageHeader/mh1"/>
+    <resource>
+      <MessageHeader>
+        <id value="EjemploMessageHeaderReferencia"/>
+        <meta>
+          <lastUpdated value="2023-02-13T14:12:10Z"/>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="EjemploMessageHeaderReferencia"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;EjemploMessageHeaderReferencia&quot; Updated &quot;2023-02-13 14:12:10+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a></p></div><p><b>event</b>: Referenciada (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code referenciada = 'Referenciada', stated as 'null')</p><p><b>author</b>: <a href="http://acme.com/ehr/fhir/PractitionerRole/praR1">http://acme.com/ehr/fhir/PractitionerRole/praR1</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href="http://link-to-sending.cl">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href="http://acme.com/ehr/fhir/ServiceRequest/serv1">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p></div>
+        </text>
+        <eventCoding>
+          <system value="http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE"/>
+          <code value="referenciada"/>
+        </eventCoding>
+        <author>
+          <reference value="http://acme.com/ehr/fhir/PractitionerRole/praR1"/>
+        </author>
+        <source>
+          <software value="SolucionInformatica"/>
+          <endpoint value="http://link-to-sending.cl"/>
+        </source>
+        <focus>
+          <reference value="http://acme.com/ehr/fhir/ServiceRequest/serv1"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/ServiceRequest/ser1"/>
+    <resource>
+      <ServiceRequest>
+        <id value="EjemploServiceRequestReferencia"/>
+        <meta>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestReferencia"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestReferencia&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>Especialidad Médica Destino Código</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href="http://acme.com/ehr/fhir/Patient/pat1">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>performer</b>: <a href="#Organization_EjemploOrganizationReferencia2">See above (http://acme.com/ehr/fhir/Organization/org2)</a></p><p><b>locationCode</b>: Motivo derivación <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSDestinoReferenciaCodigo.html">Destino Referencia Codigo</a>#1)</span></p></div>
+        </text>
+        <extension url="http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo">
+          <valueCodeableConcept>
+            <coding>
+              <code value="1"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo">
+          <valueCodeableConcept>
+            <coding>
+              <code value="1"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+              <code value="IdInterconsulta"/>
+            </coding>
+          </type>
+          <value value="1"/>
+        </identifier>
+        <status value="draft"/>
+        <intent value="proposal"/>
+        <priority value="urgent"/>
+        <subject>
+          <reference value="http://acme.com/ehr/fhir/Patient/pat1"/>
+        </subject>
+        <performer>
+          <reference value="http://acme.com/ehr/fhir/Organization/org2"/>
+        </performer>
+        <locationCode>
+          <coding>
+            <system value="http://minsal.cl/listaespera/CodeSystem/CSDestinoReferenciaCodigo"/>
+            <code value="1"/>
+          </coding>
+          <text value="Motivo derivación"/>
+        </locationCode>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"/>
+    <resource>
+      <PractitionerRole>
+        <id value="EjemploPractitionerRoleReferencia"/>
+        <meta>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRoleReferencia"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRoleReferencia&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="#Practitioner_EjemploPractitionerReferencia">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href="#Organization_EjemploOrganizationReferencia1">See above (http://acme.com/ehr/fhir/Organization/org1)</a></p><p><b>code</b>: referenciador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#referenciador)</span></p></div>
+        </text>
+        <practitioner>
+          <reference value="http://acme.com/ehr/fhir/Practitioner/pra1"/>
+        </practitioner>
+        <organization>
+          <reference value="http://acme.com/ehr/fhir/Organization/org1"/>
+        </organization>
+        <code>
+          <coding>
+            <code value="referenciador"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Practitioner/pra1"/>
+    <resource>
+      <Practitioner>
+        <id value="EjemploPractitionerReferencia"/>
+        <meta>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerReferencia"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerReferencia&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerLE.html">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-01-22</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Certificado(s) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (certMedicos &quot;Medico Cirujano&quot;)</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+              <code value="RUN"/>
+            </coding>
+          </type>
+          <value value="2134"/>
+        </identifier>
+        <identifier>
+          <use value="secondary"/>
+          <type>
+            <coding>
+              <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+              <code value="ValorRNPI"/>
+            </coding>
+          </type>
+          <value value="2134"/>
+        </identifier>
+        <gender value="male"/>
+        <birthDate value="1974-01-22"/>
+        <qualification>
+          <identifier>
+            <value value="cert"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.cens.cl/CodeSystem/certMedicos"/>
+              <display value="Medico Cirujano"/>
+            </coding>
+            <text value="Certificado(s)"/>
+          </code>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Organization/org1"/>
+    <resource>
+      <Organization>
+        <id value="EjemploOrganizationReferencia1"/>
+        <meta>
+          <profile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="EjemploOrganizationReferencia1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;EjemploOrganizationReferencia1&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CoreOrganizacionCl.html">CL Organización</a></p></div><p><b>identifier</b>: Placer Identifier: 1</p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PLAC"/>
+            </coding>
+          </type>
+          <value value="1"/>
+        </identifier>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Organization/org2"/>
+    <resource>
+      <Organization>
+        <id value="EjemploOrganizationReferencia2"/>
+        <meta>
+          <profile value="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CoreOrganizacionCl"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="EjemploOrganizationReferencia2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;EjemploOrganizationReferencia2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="https://hl7chile.cl/fhir/ig/CoreCL/1.7.0/StructureDefinition-CoreOrganizacionCl.html">CL Organización</a></p></div><p><b>identifier</b>: Placer Identifier: 2</p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PLAC"/>
+            </coding>
+          </type>
+          <value value="2"/>
+        </identifier>
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>

@@ -23,8 +23,8 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 Los recursos usados en este evento son los siguientes:
 
-* [BundleReferenciadaLE](StructureDefinition-BundleReferenciadaLE.html): Recurso que permite agrupar los datos del mensaje.
-[ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
+* [BundleReferenciaLE](StructureDefinition-BundleReferenciaLE.html): Recurso que permite agrupar los datos del mensaje.
+* [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
 * [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de destino
@@ -50,15 +50,15 @@ El evento inicio debe soportar las siguientes secuencias:
 
 Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
 
-* Debe incluir el recurso [BundleReferenciadaLE](StructureDefinition-BundleReferenciadaLE.html)
+* Debe incluir el recurso [BundleReferenciaLE](StructureDefinition-BundleReferenciaLE.html)
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
-* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=inicio** 
+* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=referenciada** 
 * Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
 * Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html)
 
 ## Mensaje Bundle de Ejemplo
 
-* [BundleReferenciadaLE](Bundle-EjemploBundleReferenciada.html)
+* [BundleReferenciadaLE](Bundle-EjemploBundleReferencia.html)
 
 ## Notas
 
