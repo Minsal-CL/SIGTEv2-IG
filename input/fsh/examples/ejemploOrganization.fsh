@@ -11,7 +11,7 @@ Description: ""
 Instance: EjemploOrganizationReferencia1
 InstanceOf: OrganizacionCL
 Usage: #example
-Title: "Ejemplo de Organization Evento de Inicio"
+Title: "Ejemplo de Organization Evento de Referencia"
 Description: ""
 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
@@ -20,7 +20,7 @@ Description: ""
 Instance: EjemploOrganizationReferencia2
 InstanceOf: OrganizacionCL
 Usage: #example
-Title: "Ejemplo de Organization Evento de Inicio"
+Title: "Ejemplo de Organization Evento de Referencia y Terminar"
 Description: ""
 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC

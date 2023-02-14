@@ -83,11 +83,11 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 
 * telecom.value MS
 
-* gender 1..1
+//* gender 1..1
 * gender ^short = "Sexo de nacimiento Registrado, male | female | other | unknown (requerido)"
 * gender ^definition = "Sexo de nacimiento Registrado"
 
-* birthDate 1..1
+//* birthDate 1..1
 * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 

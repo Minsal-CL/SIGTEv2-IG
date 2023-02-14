@@ -80,3 +80,31 @@ Description: ""
 
 * entry[organization][1].fullUrl = "http://acme.com/ehr/fhir/Organization/org2"
 * entry[organization][1].resource = EjemploOrganizationReferencia2
+/*FIN BUNDLE REFERENCIA*/
+
+/*Budle Terminar*/
+Instance: EjemploBundleTerminar
+InstanceOf: BundleTerminarLE
+Usage: #example
+Title: "Ejemplo de Bundle Evento de Terminar"
+Description: ""
+
+* type = #message
+* meta.lastUpdated = "2023-01-20T14:12:10Z"
+* timestamp = "2023-02-09T17:15:22Z"
+
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"
+* entry[messageheader].resource = EjemploMessageHeaderTerminar
+
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
+* entry[servicerequest].resource = EjemploServiceRequestTerminar
+
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
+* entry[practitionerRole].resource = EjemploPractitionerRoleTerminar
+
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/pra1"
+* entry[practitioner].resource = EjemploPractitionerTerminar
+
+* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
+* entry[organization][=].resource = EjemploOrganizationReferencia2
+/*FIN BUNDLE Terminar*/

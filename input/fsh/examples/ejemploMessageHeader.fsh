@@ -27,3 +27,19 @@ Description: ""
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
 /*FIN PARA BUNDLE REFERENCIA*/
+
+/*EJEMPLOS PARA BUNDLE Terminar*/
+Instance: EjemploMessageHeaderTerminar
+InstanceOf: MessageHeaderLE
+Usage: #example
+Title: "Ejemplo de MesaggeHeader Evento de Terminar"
+Description: ""
+
+
+* meta.lastUpdated = "2023-02-14T14:12:10Z"
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#terminar
+* source.software = "SolucionInformatica"
+* source.endpoint = "http://link-to-sending.cl"
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
+/*FIN PARA BUNDLE Terminar*/

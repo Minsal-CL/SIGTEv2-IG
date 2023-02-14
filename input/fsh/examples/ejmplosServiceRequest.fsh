@@ -98,7 +98,6 @@ Title: "Ejemplo de Service Request Evento de Referencia"
 Description: ""
 
 * status = #draft
-//* priority = #urgent
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
@@ -112,3 +111,20 @@ Description: ""
 * locationCode.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDestinoReferenciaCodigo"
 * performer = Reference(http://acme.com/ehr/fhir/Organization/org2)
 /*FIN PARA BUNDLE REFERENCIA*/
+
+/*EJEMPLO PARA BUNDLE TERMINAR*/
+Instance: EjemploServiceRequestTerminar
+InstanceOf: ServiceRequestLE
+Usage: #example
+Title: "Ejemplo de Service Request Evento de Terminar"
+Description: ""
+
+* status = #draft
+* intent = #proposal
+* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.value = "1"
+* extension[MotivoCierreInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta"
+* extension[MotivoCierreInterconsulta].valueCodeableConcept.coding.code = #2
+
+/*FIN PARA BUNDLE TERMINAR*/
