@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-13T20:10:13+00:00",
+  "date" : "2023-02-14T12:04:08+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -610,9 +610,9 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BundleInicioLE"
+        "reference" : "StructureDefinition/BundleInicio2"
       },
-      "name" : "BundleInicio LE",
+      "name" : "BundleInicio LE 2",
       "description" : "Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio.",
       "exampleBoolean" : false
     },
@@ -1822,7 +1822,8 @@
         "reference" : "Bundle/EjemploBundleInicio"
       },
       "name" : "Ejemplo de Bundle Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE"
+      "description" : "Ejemplo de Bundle Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleInicio2"
     },
     {
       "extension" : [{
@@ -1878,17 +1879,6 @@
       },
       "name" : "Ejemplo de Encounter Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeader"
-      },
-      "name" : "Ejemplo de MesaggeHeader Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
     },
     {
       "extension" : [{

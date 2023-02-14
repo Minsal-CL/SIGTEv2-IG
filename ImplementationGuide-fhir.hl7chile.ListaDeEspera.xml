@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-02-13T20:10:13+00:00"/>
+  <date value="2023-02-14T12:04:08+00:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -460,9 +460,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/BundleInicioLE"/>
+        <reference value="StructureDefinition/BundleInicio2"/>
       </reference>
-      <name value="BundleInicio LE"/>
+      <name value="BundleInicio LE 2"/>
       <description value="Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1571,7 +1571,8 @@
         <reference value="Bundle/EjemploBundleInicio"/>
       </reference>
       <name value="Ejemplo de Bundle Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE"/>
+      <description value="Ejemplo de Bundle Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/BundleInicio2"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1622,16 +1623,6 @@
       </reference>
       <name value="Ejemplo de Encounter Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MessageHeader"/>
-      </extension>
-      <reference>
-        <reference value="MessageHeader/EjemploMessageHeader"/>
-      </reference>
-      <name value="Ejemplo de MesaggeHeader Evento de Inicio"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
