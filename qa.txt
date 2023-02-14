@@ -1,9 +1,9 @@
 ﻿ListaEsperaChile : Validation Results
 =========================================
 
-err = 208, warn = 112, info = 26
+err = 207, warn = 111, info = 26
 IG Publisher Version: 1.2.22 Out of date - current version is 1.2.35
-Generated Tue Feb 14 12:10:15 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
+Generated Tue Feb 14 14:48:16 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
  Build Errors : 33 / 26 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointment : 2 / 0 / 1
@@ -42,7 +42,7 @@ Generated Tue Feb 14 12:10:15 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/Organization-EjemploOrganization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-EjemploOrganizationReferencia1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-EjemploOrganizationReferencia2 : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Patient-EjemploPatient : 10 / 4 / 3
+ /github/workspace/fsh-generated/resources/Patient-EjemploPatient : 9 / 4 / 3
  /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitioner : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitionerReferencia : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRole : 1 / 1 / 1
@@ -101,7 +101,7 @@ Generated Tue Feb 14 12:10:15 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerRoleLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PuebloIndigena : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-QuestionnaireResponseInicioLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-SegundoApellido : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SegundoApellido : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ServiceRequestLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SospechaPatologiaGes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SubEspecialidadMedicaDestinoCodigo : 0 / 0 / 1
@@ -414,7 +414,6 @@ WARNING: Patient/EjemploPatient: Patient.identifier[0].type.extension[0].value.o
 ERROR: Patient/EjemploPatient: Patient.identifier[0].type: None of the codings provided are in the value set 'Tipos de Documentos' (https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos|1.7.0), and a coding from this value set is required) (codes = http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador#1)
 INFORMATION: Patient/EjemploPatient: Patient.identifier[0].type.extension[0]: This element does not match any known slice defined in the profile http://minsal.cl/listaespera/StructureDefinition/PatientLE|0.1.1
 ERROR: Patient/EjemploPatient: Patient.identifier[0].type: Patient.identifier.type.extension:paises: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PatientLE|0.1.1)
-ERROR: Patient/EjemploPatient: Patient.name[0].family: Patient.name:NombreOficial.family.extension:mothers-family: max allowed = 0, but found 1 (from http://minsal.cl/listaespera/StructureDefinition/PatientLE|0.1.1)
 == fsh-generated/resources/Practitioner-EjemploPractitioner.json ==
 INFORMATION: Practitioner/EjemploPractitioner: Practitioner.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Practitioner/EjemploPractitioner: Practitioner.identifier[1].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
@@ -606,7 +605,6 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/Structure
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-QuestionnaireResponseInicioLE.json ==
 == fsh-generated/resources/StructureDefinition-SegundoApellido.json ==
-WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/SegundoApellido'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ServiceRequestLE.json ==
 == fsh-generated/resources/StructureDefinition-SospechaPatologiaGes.json ==
 == fsh-generated/resources/StructureDefinition-SubEspecialidadMedicaDestinoCodigo.json ==
