@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ListaEsperaChile"]; # 
   fhir:ImplementationGuide.title [ fhir:value "Proyecto Listas de Espera MINSAL CHILE"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-13T10:57:49-03:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-14T08:51:49-03:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "MINSAL Chile"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -687,10 +687,10 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/BundleInicioLE" ]
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleInicio2>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/BundleInicio2" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BundleInicio LE" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BundleInicio LE 2" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -887,7 +887,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/ObservationInicioLE" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Observation Inicio LE" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation Inicio LE" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Observation Inicio LE, recurso que permite agregar los examenes en el evento de inicio." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 18;
@@ -2108,12 +2108,29 @@
          fhir:Reference.reference [ fhir:value "Bundle/EjemploBundleInicio" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Bundle Evento de Inicio" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ejemplo de Bundle Evento de Inicio" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE";
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE>
+         fhir:value "http://minsal.cl/listaespera/StructureDefinition/BundleInicio2";
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleInicio2>
        ]
      ], [
        fhir:index 105;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/Bundle/EjemploBundleReferencia>;
+         fhir:Reference.reference [ fhir:value "Bundle/EjemploBundleReferencia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Bundle Evento de Referencia" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE";
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE>
+       ]
+     ], [
+       fhir:index 106;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2129,7 +2146,7 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE>
        ]
      ], [
-       fhir:index 106;
+       fhir:index 107;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2145,7 +2162,7 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE>
        ]
      ], [
-       fhir:index 107;
+       fhir:index 108;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2161,7 +2178,7 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE>
        ]
      ], [
-       fhir:index 108;
+       fhir:index 109;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2177,23 +2194,23 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE>
        ]
      ], [
-       fhir:index 109;
+       fhir:index 110;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "MessageHeader" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://minsal.cl/listaespera/MessageHeader/EjemploMessageHeader>;
-         fhir:Reference.reference [ fhir:value "MessageHeader/EjemploMessageHeader" ]
+         fhir:link <http://minsal.cl/listaespera/MessageHeader/EjemploMessageHeaderReferencia>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/EjemploMessageHeaderReferencia" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de MesaggeHeader Evento de Inicio" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de MesaggeHeader Evento de Referencia" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE";
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE>
        ]
      ], [
-       fhir:index 110;
+       fhir:index 111;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2209,7 +2226,7 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE>
        ]
      ], [
-       fhir:index 111;
+       fhir:index 112;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2222,7 +2239,33 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Organization Evento de Inicio" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 112;
+       fhir:index 113;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationReferencia1>;
+         fhir:Reference.reference [ fhir:value "Organization/EjemploOrganizationReferencia1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Organization Evento de Inicio" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 114;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationReferencia2>;
+         fhir:Reference.reference [ fhir:value "Organization/EjemploOrganizationReferencia2" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Organization Evento de Inicio" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 115;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2238,7 +2281,7 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PatientLE>
        ]
      ], [
-       fhir:index 113;
+       fhir:index 116;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2254,7 +2297,23 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
        ]
      ], [
-       fhir:index 114;
+       fhir:index 117;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/Practitioner/EjemploPractitionerReferencia>;
+         fhir:Reference.reference [ fhir:value "Practitioner/EjemploPractitionerReferencia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Practitioner Evento de Referencia" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE";
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
+       ]
+     ], [
+       fhir:index 118;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2270,7 +2329,23 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
        ]
      ], [
-       fhir:index 115;
+       fhir:index 119;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleReferencia>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/EjemploPractitionerRoleReferencia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de PractitionerRole Evento de Referencia" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE";
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
+       ]
+     ], [
+       fhir:index 120;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2286,7 +2361,7 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseInicioLE>
        ]
      ], [
-       fhir:index 116;
+       fhir:index 121;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2302,7 +2377,7 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
        ]
      ], [
-       fhir:index 117;
+       fhir:index 122;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -2313,6 +2388,22 @@
          fhir:Reference.reference [ fhir:value "ServiceRequest/EjemploServiceRequest2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Service Request 2" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE";
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
+       ]
+     ], [
+       fhir:index 123;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ServiceRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequestReferencia>;
+         fhir:Reference.reference [ fhir:value "ServiceRequest/EjemploServiceRequestReferencia" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Service Request Evento de Referencia" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE";
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>

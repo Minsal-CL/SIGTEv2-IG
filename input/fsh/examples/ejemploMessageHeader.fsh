@@ -1,6 +1,6 @@
 Instance: EjemploMessageHeader
 InstanceOf: MessageHeaderLE
-Usage: #example
+Usage: #inline
 Title: "Ejemplo de MesaggeHeader Evento de Inicio"
 Description: ""
 

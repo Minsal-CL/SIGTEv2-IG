@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "EjemploServiceRequestReferencia",
+  "meta" : {
+    "profile" : ["http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestReferencia\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestReferencia&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Especialidad Médica Destino Código</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/pat1\">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>performer</b>: <a href=\"Bundle-EjemploBundleReferencia.html#http-//acme.com/ehr/fhir/Organization/org2\">http://acme.com/ehr/fhir/Organization/org2</a></p><p><b>locationCode</b>: Motivo derivación <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSDestinoReferenciaCodigo.html\">Destino Referencia Codigo</a>#1)</span></p></div>"
+  },
+  "extension" : [{
+    "url" : "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "1"
+      }]
+    }
+  },
+  {
+    "url" : "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "code" : "1"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+        "code" : "IdInterconsulta"
+      }]
+    },
+    "value" : "1"
+  }],
+  "status" : "draft",
+  "intent" : "proposal",
+  "priority" : "urgent",
+  "subject" : {
+    "reference" : "http://acme.com/ehr/fhir/Patient/pat1"
+  },
+  "performer" : [{
+    "reference" : "http://acme.com/ehr/fhir/Organization/org2"
+  }],
+  "locationCode" : [{
+    "coding" : [{
+      "system" : "http://minsal.cl/listaespera/CodeSystem/CSDestinoReferenciaCodigo",
+      "code" : "1"
+    }],
+    "text" : "Motivo derivación"
+  }]
+}
