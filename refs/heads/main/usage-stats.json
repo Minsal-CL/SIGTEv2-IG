@@ -522,8 +522,8 @@
     ],
     "Bundle": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleInicio2",
-        "title": "BundleInicio LE 2"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE",
+        "title": "BundleInicio LE"
       },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE",
@@ -696,6 +696,8 @@
       "ImplementationGuide.definition.resource"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.identifier.type",
       "Patient",
       "Patient.identifier.type"
     ],
@@ -703,6 +705,7 @@
       "Appointment"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
+      "Bundle.entry.resource.identifier",
       "Patient.identifier"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE": [
@@ -718,6 +721,7 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia": [
@@ -756,6 +760,7 @@
       "Encounter"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion": [
@@ -765,6 +770,7 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta": [
@@ -778,6 +784,7 @@
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido": [
+      "Bundle.entry.resource.name.family",
       "Patient.name.family",
       "Practitioner.name.family"
     ],
