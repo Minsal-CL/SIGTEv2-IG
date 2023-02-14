@@ -12,5 +12,5 @@
 - (Eliminación) Se cambia cardinalidad de Appointment en incicio, debido a eliminación de campo idCita.
 - (Eliminación) Se elimina extensión de PersonaMayor, dado que se calculará.
 - (Nuevo) Se agrega ejemplo de Bundle de Inicio
-* (Eliminación) Se elimina extension apellido materno de Patient.name.family.
-* (Nuevo) Se agrega extension para segundo apellido Patient.name.family. 
+- (Eliminación) Se elimina extension apellido materno de Patient.name.family.
+- (Nuevo) Se agrega extension para segundo apellido Patient.name.family. 
