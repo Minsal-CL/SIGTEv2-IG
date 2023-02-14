@@ -1,5 +1,5 @@
 Instance: EjemploBundleInicio
-InstanceOf: BundleInicio2
+InstanceOf: BundleInicioLE
 Usage: #example
 Title: "Ejemplo de Bundle Evento de Inicio"
 Description: "Ejemplo de Bundle Evento de Inicio"
@@ -14,7 +14,7 @@ Description: "Ejemplo de Bundle Evento de Inicio"
 
 * entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
 * entry[servicerequest].resource = EjemploServiceRequest
-/*
+
 * entry[encounter].fullUrl = "http://acme.com/ehr/fhir/Encounter/enc1"
 * entry[encounter].resource = EjemploEncounter
 
@@ -51,7 +51,6 @@ Description: "Ejemplo de Bundle Evento de Inicio"
 * entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
 * entry[organization].resource = EjemploOrganization
 
-*/
 
 /*Budle Referencia*/
 Instance: EjemploBundleReferencia

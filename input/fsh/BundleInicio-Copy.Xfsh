@@ -44,3 +44,21 @@ Description: "Bundle LE recurso utilizado para transportar todos los datos del m
 * entry[patient].resource only PatientLE
 * entry[organization].resource only OrganizationLE
 * entry[practitioner].resource only PractitionerLE
+
+
+Instance: EjemploBundleInicio
+InstanceOf: BundleInicio2
+Usage: #inline
+Title: "Ejemplo de Bundle Evento de Inicio"
+Description: "Ejemplo de Bundle Evento de Inicio"
+
+* type = #message
+* meta.lastUpdated = "2023-01-20T14:12:10Z"
+* timestamp = "2023-02-09T17:15:22Z"
+
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"
+* entry[messageheader].resource = EjemploMessageHeader
+
+
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
+* entry[servicerequest].resource = EjemploServiceRequest
