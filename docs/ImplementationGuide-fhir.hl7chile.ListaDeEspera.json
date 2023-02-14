@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-14T11:46:47-03:00",
+  "date" : "2023-02-14T13:39:18-03:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -1879,6 +1879,17 @@
       },
       "name" : "Ejemplo de Encounter Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MessageHeader"
+      }],
+      "reference" : {
+        "reference" : "MessageHeader/EjemploMessageHeader"
+      },
+      "name" : "Ejemplo de MesaggeHeader Evento de Inicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
     },
     {
       "extension" : [{
