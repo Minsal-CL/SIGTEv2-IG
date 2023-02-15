@@ -1,5 +1,5 @@
 Profile: OrganizationLE
-Parent: Organization
+Parent: OrganizacionCL
 Id: OrganizationLE
 Title: "Organization LE"
 Description: "Organization LE"

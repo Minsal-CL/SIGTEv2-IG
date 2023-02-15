@@ -1,5 +1,5 @@
 Instance: EjemploOrganization
-InstanceOf: OrganizacionCL
+InstanceOf: OrganizationLE
 Usage: #example
 Title: "Ejemplo de Organization Evento de Inicio"
 Description: ""
@@ -9,7 +9,7 @@ Description: ""
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
 Instance: EjemploOrganizationReferencia1
-InstanceOf: OrganizacionCL
+InstanceOf: OrganizationLE
 Usage: #example
 Title: "Ejemplo de Organization Evento de Referencia"
 Description: ""
@@ -18,7 +18,7 @@ Description: ""
 * identifier.value = "1"
 
 Instance: EjemploOrganizationReferencia2
-InstanceOf: OrganizacionCL
+InstanceOf: OrganizationLE
 Usage: #example
 Title: "Ejemplo de Organization Evento de Referencia y Terminar"
 Description: ""
