@@ -2,7 +2,7 @@ Instance: EjemploPractitioner
 InstanceOf: PractitionerLE
 Usage: #example
 Title: "Ejemplo de Practitioner Evento de Inicio"
-Description: ""
+Description: "Ejemplo de Practitioner Evento de Inicio"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -24,7 +24,7 @@ Instance: EjemploPractitionerReferencia
 InstanceOf: PractitionerLE
 Usage: #example
 Title: "Ejemplo de Practitioner Evento de Referencia y Terminar"
-Description: ""
+Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -46,7 +46,7 @@ Instance: EjemploPractitionerTerminar
 InstanceOf: PractitionerLE
 Usage: #example
 Title: "Ejemplo de Practitioner Evento de Referencia y Terminar"
-Description: ""
+Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -56,3 +56,17 @@ Description: ""
 * identifier[OtrosID].value = "2134"
 /*FIN PARA BUNDLE TERMINAR*/
 
+/*EJEMPLOS PARA BUNDLE REVISAR*/
+Instance: EjemploPractitionerRevisar
+InstanceOf: PractitionerLE
+Usage: #example
+Title: "Ejemplo de Practitioner Evento de Referencia y Terminar"
+Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
+
+* identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
+* identifier[RUN].use = #official
+* identifier[RUN].value = "2134"
+* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
+* identifier[OtrosID].use = #secondary
+* identifier[OtrosID].value = "2134"
+/*FIN PARA BUNDLE REVISAR*/

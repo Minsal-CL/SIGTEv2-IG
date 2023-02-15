@@ -2,10 +2,10 @@ Instance: EjemploServiceRequest
 InstanceOf: ServiceRequestLE
 Usage: #example
 Title: "Ejemplo de Service Request Evento de Inicio"
-Description: ""
+Description: "Ejemplo de Service Request Evento de Inicio"
 
-* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.value = "1"
+* identifier[IdInterconsulta].type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier[IdInterconsulta].value = "1"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
 * priority = #urgent
@@ -48,10 +48,10 @@ Instance: EjemploServiceRequest2
 InstanceOf: ServiceRequestLE
 Usage: #example
 Title: "Ejemplo de Service Request 2"
-Description: ""
+Description: "Ejemplo de Service Request 2"
 
-* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.value = "1"
+* identifier[IdInterconsulta].type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier[IdInterconsulta].value = "1"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
 * priority = #urgent
@@ -95,13 +95,13 @@ Instance: EjemploServiceRequestReferencia
 InstanceOf: ServiceRequestLE
 Usage: #example
 Title: "Ejemplo de Service Request Evento de Referencia"
-Description: ""
+Description: "Ejemplo de Service Request Evento de Referencia"
 
 * status = #draft
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
-* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.value = "1"
+* identifier[IdInterconsulta].type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier[IdInterconsulta].value = "1"
 * extension[EspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo"
 * extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #1
 * extension[SubEspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo"
@@ -117,13 +117,13 @@ Instance: EjemploServiceRequestTerminar
 InstanceOf: ServiceRequestLE
 Usage: #example
 Title: "Ejemplo de Service Request Evento de Terminar"
-Description: ""
+Description: "Ejemplo de Service Request Evento de Terminar"
 
 * status = #draft
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
-* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.value = "1"
+* identifier[IdInterconsulta].type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier[IdInterconsulta].value = "1"
 * extension[MotivoCierreInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta"
 * extension[MotivoCierreInterconsulta].valueCodeableConcept.coding.code = #2
 

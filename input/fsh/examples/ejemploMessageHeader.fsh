@@ -2,7 +2,7 @@ Instance: EjemploMessageHeader
 InstanceOf: MessageHeaderLE
 Usage: #example
 Title: "Ejemplo de MesaggeHeader Evento de Inicio"
-Description: ""
+Description: "Ejemplo de MesaggeHeader Evento de Inicio"
 
 
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -17,7 +17,7 @@ Instance: EjemploMessageHeaderReferencia
 InstanceOf: MessageHeaderLE
 Usage: #example
 Title: "Ejemplo de MesaggeHeader Evento de Referencia"
-Description: ""
+Description: "Ejemplo de MesaggeHeader Evento de Referencia"
 
 
 * meta.lastUpdated = "2023-02-13T14:12:10Z"
@@ -33,7 +33,7 @@ Instance: EjemploMessageHeaderTerminar
 InstanceOf: MessageHeaderLE
 Usage: #example
 Title: "Ejemplo de MesaggeHeader Evento de Terminar"
-Description: ""
+Description: "Ejemplo de MesaggeHeader Evento de Terminar"
 
 
 * meta.lastUpdated = "2023-02-14T14:12:10Z"

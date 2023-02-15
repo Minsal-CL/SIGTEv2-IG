@@ -2,7 +2,7 @@ Instance: EjemploAppointment
 InstanceOf: AppointmentInicioLE
 Usage: #example
 Title: "Ejemplo de Appointment Evento de Inicio"
-Description: ""
+Description: "Ejemplo de Appointment Evento de Inicio"
 
 * status = #fulfilled
 * identifier.value = "21"

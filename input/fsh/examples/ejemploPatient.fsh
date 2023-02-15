@@ -2,7 +2,7 @@ Instance: EjemploPatient
 InstanceOf: PatientLE
 Usage: #example
 Title: "Ejemplo de Patient Evento de Inicio"
-Description: ""
+Description: "Ejemplo de Patient Evento de Inicio"
 
 * extension[CodigoPaises].url = "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises"
 * extension[CodigoPaises].valueCodeableConcept.coding.code = #AD
@@ -21,13 +21,13 @@ Description: ""
 * identifier.type = http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador#1 "RUN"
 * identifier.value = "15999999"
 * identifier.system = "http://www.acme.com/identifiers/patient"
-* name[0].use = #official
-* name[=].given = "Luis"
-* name[=].family = "Perez"
-* name[=].family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
-* name[=].family.extension.valueString = "sierra"
-* name[+].use = #usual
-* name[=].given = "Luis"
+* name[NombreOficial].use = #official
+* name[NombreOficial].given = "Luis"
+* name[NombreOficial].family = "Perez"
+* name[NombreOficial].family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name[NombreOficial].family.extension.valueString = "sierra"
+* name[NombreSocial].use = #usual
+* name[NombreSocial].given = "Luisa"
 * telecom[TelefonoMovil1].use = #mobile
 * telecom[TelefonoMovil1].value = "569854875457"
 * telecom[TelefonoMovil1].rank = 1

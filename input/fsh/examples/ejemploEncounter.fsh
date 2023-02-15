@@ -2,7 +2,7 @@ Instance: EjemploEncounter
 InstanceOf: EncounterInicioLE
 Usage: #example
 Title: "Ejemplo de Encounter Evento de Inicio"
-Description: ""
+Description: "Ejemplo de Encounter Evento de Inicio"
 
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdConsultaAPS
 * identifier.value = "1"

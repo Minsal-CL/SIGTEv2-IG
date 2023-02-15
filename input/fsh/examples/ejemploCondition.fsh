@@ -2,7 +2,7 @@ Instance: EjemploCondition
 InstanceOf: ConditionInicioDiagnosticoSospechaLE
 Usage: #example
 Title: "Ejemplo de Condition1 Evento de Inicio"
-Description: ""
+Description: "Ejemplo de Condition1 Evento de Inicio"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#2
 * code.text = "DiagnosticoTextoLibreSospecha"
@@ -15,7 +15,7 @@ Instance: EjemploCondition2
 InstanceOf: ConditionInicioIndiceComorbilidadLE
 Usage: #example
 Title: "Ejemplo de Condition2 Evento de Inicio"
-Description: ""
+Description: "Ejemplo de Condition2 Evento de Inicio"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSIndicecomorbilidad#G1
 * code.text = "DiagnosticoTextoLibreSospecha"
@@ -27,7 +27,7 @@ Instance: EjemploCondition3
 InstanceOf: ConditionInicioSospechaGesLE
 Usage: #example
 Title: "Ejemplo de Condition3 Evento de Inicio"
-Description: ""
+Description: "Ejemplo de Condition3 Evento de Inicio"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSSospechaPatologiaGes#A000
 * code.text = "SospechaPatologiaGesGlosa"

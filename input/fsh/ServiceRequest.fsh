@@ -6,7 +6,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
-* identifier 1..2 MS 
+* identifier 1..1 MS 
 * identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[0].path = "type.coding.code"
 * identifier ^slicing.discriminator[1].type = #value

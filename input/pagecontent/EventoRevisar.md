@@ -23,11 +23,12 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 Los recursos usados en este evento son los siguientes:
 
-* [ServiceRequest](link): Recurso principal para reflejar los datos de la interconsulta
-* [MessageHeader](link): lorem
-* [PractitionerRole](link): lorem
-* [Practitioner](link): lorem
-* [Location](link): lorem
+* [BundleRevisarLE](StructureDefinition-BundleRevisarLE.html): Recurso que permite agrupar los datos del mensaje.
+* [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la revision (MessageHeader.focus)
+* [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
+* [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
+* [PractitionerLE](StructureDefinition-PractitionerLE.html): Recurso que permite reflejar la informacion asociada a la identificación del profesional de la salud.
+* [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de destino
 
 ## Relaciones de Recursos
 
@@ -42,11 +43,28 @@ Los recursos usados en este evento son los siguientes:
 
 El evento **revisar** debe soportar a siguiente secuencia:
 
-Diagrama de Secuencia por definir
+<div align="center" >
+{% include evento-revisar.svg %}
+</div>
+## Consideraciones
+
+Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
 
 ## Consideraciones
 
 Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
+
+
+* Debe incluir el recurso [BundleRevisarLE](StructureDefinition-BundleRevisarLE.html)
+* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=revisar** 
+* Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
+* Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html)
+* Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
+* Debe incluir el recurso [PractitionerLE](StructureDefinition-PractitionerLE.html)
+
+## Mensaje Bundle de Ejemplo
+
+* [BundleTerminarLE](Bundle-EjemploBundleRevisar.html)
 
 ## Notas
 

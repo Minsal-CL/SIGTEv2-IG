@@ -2,7 +2,7 @@ Instance: EjemploAllergyIntolerance
 InstanceOf: AllergyIntoleranceInicioLE
 Usage: #example
 Title: "Ejemplo de AllergyIntolerance Evento de Inicio"
-Description: ""
+Description: "Ejemplo de AllergyIntolerance Evento de Inicio"
 
 
 * code.text = "tipo alergia"

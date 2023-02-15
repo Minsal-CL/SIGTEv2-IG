@@ -57,7 +57,7 @@ Instance: EjemploBundleReferencia
 InstanceOf: BundleReferenciaLE
 Usage: #example
 Title: "Ejemplo de Bundle Evento de Referencia"
-Description: ""
+Description: "Ejemplo de Bundle Evento de Referencia"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -87,7 +87,7 @@ Instance: EjemploBundleTerminar
 InstanceOf: BundleTerminarLE
 Usage: #example
 Title: "Ejemplo de Bundle Evento de Terminar"
-Description: ""
+Description: "Ejemplo de Bundle Evento de Terminar"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -107,4 +107,31 @@ Description: ""
 
 * entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
 * entry[organization][=].resource = EjemploOrganizationReferencia2
+/*FIN BUNDLE Terminar*/
+
+/*Budle Revisar*/
+Instance: EjemploBundleRevisar
+InstanceOf: BundleRevisarLE
+Usage: #example
+Title: "Ejemplo de Bundle Evento de Revisar"
+Description: "Ejemplo de Bundle Evento de Revisar"
+
+* type = #message
+* meta.lastUpdated = "2023-01-20T14:12:10Z"
+* timestamp = "2023-02-09T17:15:22Z"
+
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"
+* entry[messageheader].resource = EjemploMessageHeaderTerminar
+
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
+* entry[servicerequest].resource = EjemploServiceRequestTerminar
+
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
+* entry[practitionerRole].resource = EjemploPractitionerRoleRevisar
+
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/pra1"
+* entry[practitioner].resource = EjemploPractitionerRevisar
+
+* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
+* entry[organization][=].resource = EjemploOrganizationRevisar
 /*FIN BUNDLE Terminar*/
