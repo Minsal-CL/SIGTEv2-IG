@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "ListaEsperaChile"]; # 
   fhir:ImplementationGuide.title [ fhir:value "Proyecto Listas de Espera MINSAL CHILE"]; # 
   fhir:ImplementationGuide.status [ fhir:value "draft"]; # 
-  fhir:ImplementationGuide.date [ fhir:value "2023-02-15T05:04:04+00:00"^^xsd:dateTime]; # 
+  fhir:ImplementationGuide.date [ fhir:value "2023-02-15T13:37:26+00:00"^^xsd:dateTime]; # 
   fhir:ImplementationGuide.publisher [ fhir:value "MINSAL Chile"]; # 
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -2299,7 +2299,10 @@
          fhir:Reference.reference [ fhir:value "Organization/EjemploOrganization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Organization Evento de Inicio" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE";
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
+       ]
      ], [
        fhir:index 117;
        fhir:Element.extension [
@@ -2312,7 +2315,10 @@
          fhir:Reference.reference [ fhir:value "Organization/EjemploOrganizationReferencia1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Organization Evento de Referencia" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE";
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
+       ]
      ], [
        fhir:index 118;
        fhir:Element.extension [
@@ -2325,7 +2331,10 @@
          fhir:Reference.reference [ fhir:value "Organization/EjemploOrganizationReferencia2" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ejemplo de Organization Evento de Referencia y Terminar" ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE";
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
+       ]
      ], [
        fhir:index 119;
        fhir:Element.extension [
