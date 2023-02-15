@@ -1,0 +1,815 @@
+{
+  "package": "fhir.hl7chile.ListaDeEspera",
+  "version": "0.1.1",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+      "title": "Codigo de Identificación de países",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/Contactado",
+      "title": "Contactado",
+      "types": [
+        "boolean",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo",
+      "title": "Destino Atención Codigo",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
+      "title": "DigitoVerificador",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE",
+      "title": "Doc Acreditacion Cuidador",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo",
+      "title": "Especialidad Médica Destino Código",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE",
+      "title": "Estado Interconsulta Codigo",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBool",
+      "title": "ExtBool",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente",
+      "title": "ExtBool Afrodescendiente",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia",
+      "title": "ExtBool Alergia",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolCuidador",
+      "title": "ExtBool Cuidador",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor",
+      "title": "ExtBool PersonaMayor",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox",
+      "title": "ExtBool Pertinencia Atencion Box",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPresentaDiscapacidad",
+      "title": "ExtBool PresentaDiscapacidad",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen",
+      "title": "ExtBool RequiereExamen",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS",
+      "title": "ExtBool ResolutividadAPS",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolSolicitudExamenes",
+      "title": "ExtBool Solicitud Examenes",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtInteger",
+      "title": "ExtInteger",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion",
+      "title": "ExtStringFundamentoPriorizacion",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia",
+      "title": "ExtString MotivoNoPertinencia",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero",
+      "title": "Identidad de genero",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion",
+      "title": "MedioNotificacion",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta",
+      "title": "Motivo Cierre Interconsulta",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo",
+      "title": "Codigo de Identificación de Nacionalidad",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta",
+      "title": "Origen Interconsulta",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta",
+      "title": "Pertinencia Interconsulta",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena",
+      "title": "Etnia a la cual pertenece",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido",
+      "title": "Segundo Apellido",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes",
+      "title": "SospechaPatologiaGes",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo",
+      "title": "SubEspecialidad Médica Destino Código",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/TipoOtroTelefono",
+      "title": "TipoOtroTelefono",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceInicioLE",
+        "title": "AllergyIntolerance Inicio LE"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentAtenderLE",
+        "title": "Appointment Atender LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE",
+        "title": "Appointment Inicio LE"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE",
+        "title": "BundleInicio LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE",
+        "title": "Bundle Referencia LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE",
+        "title": "Bundle Terminar LE"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CarePlanAtenderLE",
+        "title": "CarePlan Atender LE"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtender1LE",
+        "title": "Condicion Atender 1 LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtender2LE",
+        "title": "Condicion Atender 2 LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtender3LE",
+        "title": "Condicion Atender 3 LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE",
+        "title": "Condition Inicio Diagnostico Sospecha LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE",
+        "title": "Condition Inicio Indice Comorbilidad LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE",
+        "title": "Condition Inicio Sospecha Ges LE"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/DocumentReferenceLE",
+        "title": "DocumentReference LE"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE",
+        "title": "Encounter Atender LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE",
+        "title": "Encounter Inicio LE"
+      }
+    ],
+    "MessageHeader": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE",
+        "title": "MessageHeader LE"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE",
+        "title": "Observation Atender LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE",
+        "title": "Observation Inicio LE"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE",
+        "title": "Organization LE"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/PatientLE",
+        "title": "Paciente LE"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE",
+        "title": "Practitioner LE"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE",
+        "title": "PractitionerRole LE"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseInicioLE",
+        "title": "QuestionnaireResponse Inicio LE"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE",
+        "title": "ServiceRequest LE"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
+      "Patient.contact.name.family",
+      "Patient.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises": [
+      "Bundle.entry.resource",
+      "Bundle.entry.resource.identifier.type",
+      "Patient",
+      "Patient.identifier.type"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/Contactado": [
+      "Appointment"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
+      "Bundle.entry.resource.identifier",
+      "Patient.identifier"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolCuidador": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox": [
+      "Encounter"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPresentaDiscapacidad": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen": [
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolSolicitudExamenes": [
+      "CarePlan"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtInteger": [
+      "DocumentReference"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia": [
+      "Encounter"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion": [
+      "Appointment"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta": [
+      "ServiceRequest.doNotPerform"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena": [
+      "Patient"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido": [
+      "Bundle.entry.resource.name.family",
+      "Patient.name.family",
+      "Practitioner.name.family"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/TipoOtroTelefono": [
+      "Patient.telecom"
+    ],
+    "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises": [
+      "Patient",
+      "Patient.identifier.type"
+    ],
+    "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto": [
+      "Patient.contact"
+    ]
+  }
+}
