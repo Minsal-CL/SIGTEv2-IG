@@ -49,7 +49,7 @@ Los recursos usados en este evento son los siguientes:
 
 ## Secuencia del Evento
 
-El evento inicio debe soportar a siguiente secuencia:
+El evento **inicio** debe soportar a siguiente secuencia:
 <div align="center" >
 {% include evento-inicio.svg %}
 </div>

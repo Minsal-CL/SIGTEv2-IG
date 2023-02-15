@@ -28,7 +28,7 @@ Los recursos usados en este evento son los siguientes:
 * [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
-* [Practitioner](StructureDefinition-PractitionerLE.html): Recurso que permite reflejar la informacion asociada a la identificación del profesional de la salud.
+* [PractitionerLE](StructureDefinition-PractitionerLE.html): Recurso que permite reflejar la informacion asociada a la identificación del profesional de la salud.
 * [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de destino
 
 ## Relaciones de Recursos
@@ -44,7 +44,9 @@ Los recursos usados en este evento son los siguientes:
 
 El evento **terminar** debe soportar a siguiente secuencia:
 
-Diagrama de Secuencia por definir
+<div align="center" >
+{% include evento-terminar.svg %}
+</div>
 
 ## Consideraciones
 
@@ -53,14 +55,16 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 
 
 
-
-* Debe incluir el recurso [BundleInicioLE](StructureDefinition-BundleTerminarLE.html)
+* Debe incluir el recurso [BundleTerminarLE](StructureDefinition-BundleTerminarLE.html)
 * Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=terminar** 
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
 * Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html)
 * Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
 * Debe incluir el recurso [PractitionerLE](StructureDefinition-PractitionerLE.html)
 
+## Mensaje Bundle de Ejemplo
+
+* [BundleTerminarLE](Bundle-EjemploBundleTerminar.html)
 
 ## Notas
 
