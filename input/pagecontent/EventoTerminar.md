@@ -25,6 +25,7 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 Los recursos usados en este evento son los siguientes:
 
+* [BundleTerminarLE](StructureDefinition-BundleTerminarLE.html): Recurso que permite agrupar los datos del mensaje.
 * [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)

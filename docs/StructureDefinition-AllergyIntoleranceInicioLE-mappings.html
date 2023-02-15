@@ -286,17 +286,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>value &lt; IntoleranceValue (Agent)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;criticality</td><td>inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=SEV, value &lt;= SeverityObservation (Severity Level)]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>substance/product:
-
-.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &lt;= ExposureAgentEntityType]
-
-negated/excluded substance/product:
-
-.participation[typeCode=CAGNT, negationInd=true].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &lt;= ExposureAgentEntityType]
-
-positive or negated/excluded condition/situation:
-
-Observation.code=ASSERTION; Observation.value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>substance/product:.participation[typeCode=CAGNT].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &lt;= ExposureAgentEntityType]negated/excluded substance/product:.participation[typeCode=CAGNT, negationInd=true].role[classCode=ADMM].player[classCode=MAT, determinerCode=KIND, code &lt;= ExposureAgentEntityType]positive or negated/excluded condition/situation:Observation.code=ASSERTION; Observation.value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
@@ -414,7 +404,7 @@ Observation.code=ASSERTION; Observation.value</td> </tr>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 14, 2023 13:39-0300">2023-02-14</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 15, 2023 12:48-0300">2023-02-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
