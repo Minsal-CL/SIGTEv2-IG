@@ -15,7 +15,7 @@ Description: "Bundle Revisar LE recurso utilizado para transportar todos los dat
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "profile"
 * entry ^slicing.rules = #closed
-* entry 5..5 MS
+* entry 4..5 MS
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
         and practitioner 1..1
