@@ -167,10 +167,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Tipo de dato para agragar la dirección de un paciente","An address expressed using postal conventions (as opposed to GPS or other location definition formats).  This data type may be used to convey addresses for use in delivering mail as well as for visiting locations which might not be valid for mail delivery.  There are a variety of postal address formats defined around the world.","Variable dirección","The home/mailing address of the practitioner is often required for employee administration purposes, and also for some rostering services where the start point (practitioners home) can be used in calculations.","","","","","","","",,,,,"",,,,"Practitioner.address",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","XAD","n/a","AD","Address"
-"Practitioner.gender","Practitioner.gender","","","",1,1,"Y","","Y","code {[]} {[]}
+"Practitioner.gender","Practitioner.gender","","","",0,1,"Y","","Y","code {[]} {[]}
 ","Sexo de nacimiento Registrado, male | female | other | unknown (requerido)","Sexo de nacimiento Registrado","","Needed to address the person correctly.","","","","","","","",,"required","The gender of a person used for administrative purposes.","http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1","",,,,"Practitioner.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","STF-5","./administrativeGender","./GenderCode"
-"Practitioner.birthDate","Practitioner.birthDate","","","",1,1,"Y","","Y","date {[]} {[]}
+"Practitioner.birthDate","Practitioner.birthDate","","","",0,1,"Y","","Y","date {[]} {[]}
 ","Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD","Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)","","Needed for identification.","","","","","","","",,,,,"",,,,"Practitioner.birthDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","STF-6","./birthTime","(not represented in ServD)"
 "Practitioner.photo","Practitioner.photo","","","",0,*,"","","","Attachment {[]} {[]}
