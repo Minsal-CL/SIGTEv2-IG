@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-02-15T16:11:45+00:00"/>
+  <date value="2023-02-15T16:20:01+00:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -475,6 +475,17 @@
       </reference>
       <name value="Bundle Referencia LE"/>
       <description value="Bundle Referencia LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento referenciada."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/BundleRevisarLE"/>
+      </reference>
+      <name value="Bundle Revisar LE"/>
+      <description value="Bundle Revisar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento revisar."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
