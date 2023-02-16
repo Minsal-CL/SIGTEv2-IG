@@ -324,6 +324,25 @@
       ]
     },
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo",
+      "title": "Motivo No Pertinencia Codigo",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo",
       "title": "Codigo de Identificación de Nacionalidad",
       "types": [
@@ -748,6 +767,7 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS": [
@@ -778,6 +798,10 @@
       "Bundle.entry.resource",
       "ServiceRequest"
     ],
+    "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo": [
+      "Bundle.entry.resource.doNotPerform",
+      "ServiceRequest.doNotPerform"
+    ],
     "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo": [
       "Bundle.entry.resource",
       "Patient"
@@ -787,7 +811,8 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta": [
-      "ServiceRequest.doNotPerform"
+      "Bundle.entry.resource",
+      "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena": [
       "Patient"

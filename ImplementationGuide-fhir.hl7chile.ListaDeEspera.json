@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-15T20:04:03+00:00",
+  "date" : "2023-02-16T23:28:10+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -1149,6 +1149,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/MotivoNoPertinenciaCodigo"
+      },
+      "name" : "Motivo No Pertinencia Codigo",
+      "description" : "Motivo No Pertinencia Codigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/NacionalidadCodigo"
       },
       "name" : "Codigo de Identificación de Nacionalidad",
@@ -1405,6 +1417,18 @@
       },
       "name" : "Motivo No Contactabilidad",
       "description" : "Motivo No Contactabilidad",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSMotivoNoPertinenciaCodigo"
+      },
+      "name" : "Motivo No Pertinencia Codigo",
+      "description" : "Motivo No Pertinencia Codigo",
       "exampleBoolean" : false
     },
     {
@@ -1689,6 +1713,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/CSMotivoNoPertinenciaCodigo"
+      },
+      "name" : "Motivo No Pertinencia Codigo",
+      "description" : "Motivo No Pertinencia Codigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/CSPertinenciaInterconsulta"
       },
       "name" : "Pertinencia Interconsulta",
@@ -1965,6 +2001,18 @@
         "valueString" : "MessageHeader"
       }],
       "reference" : {
+        "reference" : "MessageHeader/EjemploMessageHeaderRevisar"
+      },
+      "name" : "Ejemplo de MesaggeHeader Evento de Revisar",
+      "description" : "Ejemplo de MesaggeHeader Evento de Revisar",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MessageHeader"
+      }],
+      "reference" : {
         "reference" : "MessageHeader/EjemploMessageHeaderTerminar"
       },
       "name" : "Ejemplo de MesaggeHeader Evento de Terminar",
@@ -2185,6 +2233,18 @@
       },
       "name" : "Ejemplo de Service Request Evento de Referencia",
       "description" : "Ejemplo de Service Request Evento de Referencia",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/EjemploServiceRequestRevisar"
+      },
+      "name" : "Ejemplo de Service Request Evento Revisar",
+      "description" : "Ejemplo de Service Request Evento Revisar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
     },
     {
