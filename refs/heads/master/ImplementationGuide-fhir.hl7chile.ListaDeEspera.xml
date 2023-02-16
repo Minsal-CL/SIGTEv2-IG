@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-02-15T20:04:03+00:00"/>
+  <date value="2023-02-16T23:28:10+00:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -954,6 +954,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/MotivoNoPertinenciaCodigo"/>
+      </reference>
+      <name value="Motivo No Pertinencia Codigo"/>
+      <description value="Motivo No Pertinencia Codigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/NacionalidadCodigo"/>
       </reference>
       <name value="Codigo de Identificación de Nacionalidad"/>
@@ -1189,6 +1200,17 @@
       </reference>
       <name value="Motivo No Contactabilidad"/>
       <description value="Motivo No Contactabilidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSMotivoNoPertinenciaCodigo"/>
+      </reference>
+      <name value="Motivo No Pertinencia Codigo"/>
+      <description value="Motivo No Pertinencia Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1449,6 +1471,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/CSMotivoNoPertinenciaCodigo"/>
+      </reference>
+      <name value="Motivo No Pertinencia Codigo"/>
+      <description value="Motivo No Pertinencia Codigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/CSPertinenciaInterconsulta"/>
       </reference>
       <name value="Pertinencia Interconsulta"/>
@@ -1702,6 +1735,17 @@
         <valueString value="MessageHeader"/>
       </extension>
       <reference>
+        <reference value="MessageHeader/EjemploMessageHeaderRevisar"/>
+      </reference>
+      <name value="Ejemplo de MesaggeHeader Evento de Revisar"/>
+      <description value="Ejemplo de MesaggeHeader Evento de Revisar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
         <reference value="MessageHeader/EjemploMessageHeaderTerminar"/>
       </reference>
       <name value="Ejemplo de MesaggeHeader Evento de Terminar"/>
@@ -1904,6 +1948,17 @@
       </reference>
       <name value="Ejemplo de Service Request Evento de Referencia"/>
       <description value="Ejemplo de Service Request Evento de Referencia"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/EjemploServiceRequestRevisar"/>
+      </reference>
+      <name value="Ejemplo de Service Request Evento Revisar"/>
+      <description value="Ejemplo de Service Request Evento Revisar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
     </resource>
     <resource>
