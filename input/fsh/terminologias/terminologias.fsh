@@ -767,6 +767,37 @@ Description: "Sospecha Patologia"
 * #Q603 "Hipoplasia renal, unilateral"
 
 
+ValueSet: VSMotivoNoPertinenciaCodigo
+Id: VSMotivoNoPertinenciaCodigo
+Title: "Motivo No Pertinencia Codigo"
+Description: "Motivo No Pertinencia Codigo"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSMotivoNoPertinenciaCodigo
+
+CodeSystem: CSMotivoNoPertinenciaCodigo
+Id: CSMotivoNoPertinenciaCodigo
+Title: "Motivo No Pertinencia Codigo"
+Description: "Motivo No Pertinencia Codigo"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction =  urn:iso:std:iso:3166#CL "Chile"
+* #1 "No cumple reglas de derivación"
+* #2 "No respeta criterios de inclusión"
+* #3 "Otro"
 
 
 /*

@@ -5,7 +5,7 @@ Title: "ServiceRequest LE"
 Description: "ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
-
+/*
 * identifier 1..1 MS 
 * identifier ^slicing.discriminator[0].type = #value
 * identifier ^slicing.discriminator[0].path = "type.coding.code"
@@ -14,14 +14,14 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice creado para almacenar los identificadores"
 * identifier contains IdInterconsulta 1..1 MS
-
-* identifier[IdInterconsulta].type 1..1 MS
+*/
+* identifier.type 1..1 MS
   * coding 1..1 MS
     * code 1..1 MS
     * code = #"IdInterconsulta"    
     * system 1..1 MS
     * display 0..1 MS
-* identifier[IdInterconsulta].value 1..1 MS
+* identifier.value 1..1 MS
 
 // OBLIGATORIOS POR ESTANDAR
 * status MS
@@ -46,13 +46,14 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains DocAcreditacionCuidadorCodigoLE named DocAcreditacionCuidadorCodigo 0..1 MS
 * extension contains EspecialidadMedicaDestinoCodigo named EspecialidadMedicaDestinoCodigo 0..1 MS
 * extension contains SubEspecialidadMedicaDestinoCodigo named SubEspecialidadMedicaDestinoCodigo 0..1 MS
+* extension contains PertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
 * extension[FundamentoPriorizacion] ^short = "Fundamente de la Priorización"
 * extension[ResolutividadAPS] ^short = "Programa de Resolutividad local"
 * extension[Alergia] ^short = "Tiene alergia el paciente"
 // fin
 
 
-* doNotPerform.extension contains PertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
+* doNotPerform.extension contains MotivoNoPertinenciaCodigo named MotivoNoPertinenciaCodigo 0..1 MS
 * doNotPerform 0..1 MS
 
 * authoredOn 0..1 MS
@@ -74,9 +75,11 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
   * coding 1..1 MS
     * code 1..1 MS
     * display 0..1 MS
-    * system 1..1 MS
+    * system 0..1 MS
 * category.coding.code from VSModalidadAtencionCodigo
-
+* code 0..1 MS
+  * text 1..1 MS
+* code.text = "derivado a especialidad"
 * subject only Reference(PatientLE)
 * reasonReference only Reference(ObservationInicioLE)
 * encounter only Reference(EncounterInicioLE)

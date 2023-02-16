@@ -78,10 +78,22 @@ Description: "Pertinencia Interconsulta"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSPertinenciaInterconsulta
+  * code from VSMotivoNoPertinenciaCodigo
   * system 0..1 MS
   * display 0..1 MS
 
+Extension:   MotivoNoPertinenciaCodigo
+Id:          MotivoNoPertinenciaCodigo
+Title:       "Motivo No Pertinencia Codigo"
+Description: "Motivo No Pertinencia Codigo"
+* value[x] only CodeableConcept
+* value[x] ^short = "Motivo No Pertinencia"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSPertinenciaInterconsulta
+  * system 0..1 MS
+  * display 0..1 MS
 Extension:   EstadoInterconsultaCodigoLE
 Id:          EstadoInterconsultaCodigoLE
 Title:       "Estado Interconsulta Codigo"

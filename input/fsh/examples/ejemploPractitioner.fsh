@@ -69,4 +69,8 @@ Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
 * identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
 * identifier[OtrosID].use = #secondary
 * identifier[OtrosID].value = "2134"
+* qualification[Cert].identifier.value = "cert"
+* qualification[Cert].code.coding.code = #01
+* qualification[Cert].code.coding.system = "http://terminology.cens.cl"
+* qualification[Cert].code.coding.display = "Medico"
 /*FIN PARA BUNDLE REVISAR*/

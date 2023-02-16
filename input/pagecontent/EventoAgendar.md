@@ -15,7 +15,7 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 ## Bundle de Envío
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="agendar-recursos.png"> 
+  <img  style="border: 1px solid; color: black;" src="agendar-evento.png"> 
   <p></p>
 </div>
 <br>
@@ -35,7 +35,7 @@ Los recursos usados en este evento son los siguientes:
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="agendar-evento.png"> 
+  <img  style="border: 1px solid; color: black;" src="agendar-recursos.png"> 
   <p></p>
 </div>
 <br>

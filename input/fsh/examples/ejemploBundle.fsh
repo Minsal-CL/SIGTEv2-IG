@@ -124,14 +124,29 @@ Description: "Ejemplo de Bundle Evento de Revisar"
 * entry[messageheader].resource = EjemploMessageHeaderTerminar
 
 * entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
-* entry[servicerequest].resource = EjemploServiceRequestTerminar
+* entry[servicerequest].resource = EjemploServiceRequestRevisar
 
-* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
-* entry[practitionerRole].resource = EjemploPractitionerRoleRevisar
+* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
+* entry[organization].resource = EjemploOrganizationRevisar
 
 * entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/pra1"
 * entry[practitioner].resource = EjemploPractitionerRevisar
 
-* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
-* entry[organization][=].resource = EjemploOrganizationRevisar
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
+* entry[practitionerRole].resource = EjemploPractitionerRoleRevisar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*FIN BUNDLE Terminar*/

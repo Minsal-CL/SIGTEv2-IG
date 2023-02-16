@@ -4,8 +4,8 @@ Usage: #example
 Title: "Ejemplo de Service Request Evento de Inicio"
 Description: "Ejemplo de Service Request Evento de Inicio"
 
-* identifier[IdInterconsulta].type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier[IdInterconsulta].value = "1"
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.value = "1"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
 * priority = #urgent
@@ -50,8 +50,8 @@ Usage: #example
 Title: "Ejemplo de Service Request 2"
 Description: "Ejemplo de Service Request 2"
 
-* identifier[IdInterconsulta].type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier[IdInterconsulta].value = "1"
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.value = "1"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
 * priority = #urgent
@@ -100,8 +100,8 @@ Description: "Ejemplo de Service Request Evento de Referencia"
 * status = #draft
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
-* identifier[IdInterconsulta].type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier[IdInterconsulta].value = "1"
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.value = "1"
 * extension[EspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo"
 * extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #1
 * extension[SubEspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo"
@@ -122,9 +122,35 @@ Description: "Ejemplo de Service Request Evento de Terminar"
 * status = #draft
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
-* identifier[IdInterconsulta].type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier[IdInterconsulta].value = "1"
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.value = "1"
 * extension[MotivoCierreInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta"
 * extension[MotivoCierreInterconsulta].valueCodeableConcept.coding.code = #2
 
 /*FIN PARA BUNDLE TERMINAR*/
+
+
+/*EJEMPLO PARA BUNDLE REVISAR*/
+Instance: EjemploServiceRequestRevisar
+InstanceOf: ServiceRequestLE
+Usage: #example
+Title: "Ejemplo de Service Request Evento Revisar"
+Description: "Ejemplo de Service Request Evento Revisar"
+
+* identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.type.coding.code = #IdInterconsulta
+* identifier.value = "1"
+* authoredOn = "2022-01-20T13:50:20Z"
+* status = #draft
+* priority = #urgent
+* intent = #proposal
+* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
+* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
+* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text = "Texto libre"
+* priority = #routine
+* extension[RequiereExamen].valueBoolean = true
+* category.coding.code = #1
+* extension[PertinenciaInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta"
+* extension[PertinenciaInterconsulta].valueCodeableConcept.coding.code = #1
+/*EJEMPLO PARA BUNDLE REVISAR*/

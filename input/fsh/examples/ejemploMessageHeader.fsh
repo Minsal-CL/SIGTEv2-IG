@@ -43,3 +43,19 @@ Description: "Ejemplo de MesaggeHeader Evento de Terminar"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
 /*FIN PARA BUNDLE Terminar*/
+
+/*EJEMPLOS PARA BUNDLE Revisar*/
+Instance: EjemploMessageHeaderRevisar
+InstanceOf: MessageHeaderLE
+Usage: #example
+Title: "Ejemplo de MesaggeHeader Evento de Revisar"
+Description: "Ejemplo de MesaggeHeader Evento de Revisar"
+* meta.lastUpdated = "2023-02-14T14:12:10Z"
+* source.software = "SolucionInformatica"
+* source.endpoint = "http://link-to-sending.cl"
+
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#terminar
+
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
+/*FIN PARA BUNDLE Revisar*/

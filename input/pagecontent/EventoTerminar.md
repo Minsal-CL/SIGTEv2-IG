@@ -17,7 +17,7 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="terminar-recursos.png"> 
+  <img  style="border: 1px solid; color: black;" src="terminar-evento.png"> 
   <p></p>
 </div>
 <br>
@@ -36,7 +36,7 @@ Los recursos usados en este evento son los siguientes:
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="terminar-evento.png"> 
+  <img  style="border: 1px solid; color: black;" src="terminar-recursos.png"> 
   <p></p>
 </div>
 <br>

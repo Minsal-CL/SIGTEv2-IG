@@ -16,7 +16,7 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="revisar-recursos.png"> 
+  <img  style="border: 1px solid; color: black;" src="revisar-evento.png"> 
   <p></p>
 </div>
 <br>
@@ -34,7 +34,7 @@ Los recursos usados en este evento son los siguientes:
 
 <br>
 <div align="center" >
-  <img  style="border: 1px solid; color: black;" src="revisar-evento.png"> 
+  <img  style="border: 1px solid; color: black;" src="revisar-recursos.png"> 
   <p></p>
 </div>
 <br>
@@ -64,7 +64,7 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 
 ## Mensaje Bundle de Ejemplo
 
-* [BundleTerminarLE](Bundle-EjemploBundleRevisar.html)
+* [BundleRevisarLE](Bundle-EjemploBundleRevisar.html)
 
 ## Notas
 

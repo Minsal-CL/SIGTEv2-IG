@@ -9,6 +9,8 @@ Description: "MessageHeaderLE"
 
 * meta.lastUpdated 1..1 MS
 * source.software 1..1 MS
+* source.endpoint 1..1 MS
+
 
 //* focus only Reference(ServiceRequestLE)
 * author 1..1 MS

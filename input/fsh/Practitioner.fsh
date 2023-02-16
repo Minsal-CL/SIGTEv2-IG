@@ -117,8 +117,8 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
   * coding 0..1 MS
     * code 1..1 MS
     * system 0..1 MS
-    * display 1..1 MS
-  * text 1..1 MS
+    * display 0..1 MS
+  * text 0..1 MS
 * qualification[Cert].code.text ^short = "Texto libre del Título o Certificado Profesional especificado"
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
 * qualification[Cert].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  \"https://api.minsal.cl/v1/catalogos/profesiones/\""
