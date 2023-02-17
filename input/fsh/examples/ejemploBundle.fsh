@@ -135,18 +135,71 @@ Description: "Ejemplo de Bundle Evento de Revisar"
 * entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
 * entry[practitionerRole].resource = EjemploPractitionerRoleRevisar
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*FIN BUNDLE Terminar*/
+
+/*Budle Agendar*/
+Instance: EjemploBundleAgendar
+InstanceOf: BundleRevisarLE
+Usage: #example
+Title: "Ejemplo de Bundle Evento de Agendar"
+Description: "Ejemplo de Bundle Evento de Agendar"
+
+* type = #message
+* meta.lastUpdated = "2023-01-20T14:12:10Z"
+* timestamp = "2023-02-09T17:15:22Z"
+
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"
+* entry[messageheader].resource = EjemploMessageHeaderTerminar
+
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
+* entry[servicerequest].resource = EjemploServiceRequestRevisar
+
+* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
+* entry[organization].resource = EjemploOrganizationRevisar
+
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/pra1"
+* entry[practitioner].resource = EjemploPractitionerRevisar
+
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
+* entry[practitionerRole].resource = EjemploPractitionerRoleRevisar
+
+/*FIN BUNDLE Agendar*/
+
+
+
+/*Budle Atender*/
+
+/*
+
+Instance: EjemploBundleAtender
+InstanceOf: BundleRevisarLE
+Usage: #example
+Title: "Ejemplo de Bundle Evento de Atender"
+Description: "Ejemplo de Bundle Evento de Atender"
+
+* type = #message
+* meta.lastUpdated = "2023-01-20T14:12:10Z"
+* timestamp = "2023-02-09T17:15:22Z"
+
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"
+* entry[messageheader].resource = EjemploMessageHeaderAtender
+
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
+* entry[servicerequest].resource = EjemploServiceRequestAtender
+
+* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
+* entry[organization].resource = EjemploOrganizationAtender
+
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/pra1"
+* entry[practitioner].resource = EjemploPractitionerAtender
+*/
+
+
+
+
+
+//* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
+//* entry[practitionerRole].resource = EjemploPractitionerRoleRevisar
+
+/*FIN BUNDLE Atender*/
+

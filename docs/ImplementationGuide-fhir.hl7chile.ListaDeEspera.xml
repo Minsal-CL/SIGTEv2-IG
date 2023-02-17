@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-02-15T12:48:14-03:00"/>
+  <date value="2023-02-17T16:26:02-03:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -482,6 +482,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/BundleRevisarLE"/>
+      </reference>
+      <name value="Bundle Revisar LE"/>
+      <description value="Bundle Revisar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento revisar."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/BundleTerminarLE"/>
       </reference>
       <name value="Bundle Terminar LE"/>
@@ -943,6 +954,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/MotivoNoPertinenciaCodigo"/>
+      </reference>
+      <name value="Motivo No Pertinencia Codigo"/>
+      <description value="Motivo No Pertinencia Codigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/NacionalidadCodigo"/>
       </reference>
       <name value="Codigo de Identificación de Nacionalidad"/>
@@ -1178,6 +1200,17 @@
       </reference>
       <name value="Motivo No Contactabilidad"/>
       <description value="Motivo No Contactabilidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSMotivoNoPertinenciaCodigo"/>
+      </reference>
+      <name value="Motivo No Pertinencia Codigo"/>
+      <description value="Motivo No Pertinencia Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1438,6 +1471,17 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/CSMotivoNoPertinenciaCodigo"/>
+      </reference>
+      <name value="Motivo No Pertinencia Codigo"/>
+      <description value="Motivo No Pertinencia Codigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/CSPertinenciaInterconsulta"/>
       </reference>
       <name value="Pertinencia Interconsulta"/>
@@ -1562,6 +1606,7 @@
         <reference value="AllergyIntolerance/EjemploAllergyIntolerance"/>
       </reference>
       <name value="Ejemplo de AllergyIntolerance Evento de Inicio"/>
+      <description value="Ejemplo de AllergyIntolerance Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceInicioLE"/>
     </resource>
     <resource>
@@ -1572,7 +1617,19 @@
         <reference value="Appointment/EjemploAppointment"/>
       </reference>
       <name value="Ejemplo de Appointment Evento de Inicio"/>
+      <description value="Ejemplo de Appointment Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/EjemploBundleAgendar"/>
+      </reference>
+      <name value="Ejemplo de Bundle Evento de Agendar"/>
+      <description value="Ejemplo de Bundle Evento de Agendar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1593,7 +1650,19 @@
         <reference value="Bundle/EjemploBundleReferencia"/>
       </reference>
       <name value="Ejemplo de Bundle Evento de Referencia"/>
+      <description value="Ejemplo de Bundle Evento de Referencia"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/EjemploBundleRevisar"/>
+      </reference>
+      <name value="Ejemplo de Bundle Evento de Revisar"/>
+      <description value="Ejemplo de Bundle Evento de Revisar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1603,6 +1672,7 @@
         <reference value="Bundle/EjemploBundleTerminar"/>
       </reference>
       <name value="Ejemplo de Bundle Evento de Terminar"/>
+      <description value="Ejemplo de Bundle Evento de Terminar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE"/>
     </resource>
     <resource>
@@ -1613,6 +1683,7 @@
         <reference value="Condition/EjemploCondition"/>
       </reference>
       <name value="Ejemplo de Condition1 Evento de Inicio"/>
+      <description value="Ejemplo de Condition1 Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE"/>
     </resource>
     <resource>
@@ -1623,6 +1694,7 @@
         <reference value="Condition/EjemploCondition2"/>
       </reference>
       <name value="Ejemplo de Condition2 Evento de Inicio"/>
+      <description value="Ejemplo de Condition2 Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE"/>
     </resource>
     <resource>
@@ -1633,6 +1705,7 @@
         <reference value="Condition/EjemploCondition3"/>
       </reference>
       <name value="Ejemplo de Condition3 Evento de Inicio"/>
+      <description value="Ejemplo de Condition3 Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE"/>
     </resource>
     <resource>
@@ -1643,6 +1716,7 @@
         <reference value="Encounter/EjemploEncounter"/>
       </reference>
       <name value="Ejemplo de Encounter Evento de Inicio"/>
+      <description value="Ejemplo de Encounter Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"/>
     </resource>
     <resource>
@@ -1653,6 +1727,29 @@
         <reference value="MessageHeader/EjemploMessageHeader"/>
       </reference>
       <name value="Ejemplo de MesaggeHeader Evento de Inicio"/>
+      <description value="Ejemplo de MesaggeHeader Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/EjemploMessageHeaderAgendar"/>
+      </reference>
+      <name value="Ejemplo de MesaggeHeader Evento de Agendar"/>
+      <description value="Ejemplo de MesaggeHeader Evento de Agendar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/EjemploMessageHeaderAtender"/>
+      </reference>
+      <name value="Ejemplo de MesaggeHeader Evento de Atender"/>
+      <description value="Ejemplo de MesaggeHeader Evento de Atender"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1663,6 +1760,18 @@
         <reference value="MessageHeader/EjemploMessageHeaderReferencia"/>
       </reference>
       <name value="Ejemplo de MesaggeHeader Evento de Referencia"/>
+      <description value="Ejemplo de MesaggeHeader Evento de Referencia"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/EjemploMessageHeaderRevisar"/>
+      </reference>
+      <name value="Ejemplo de MesaggeHeader Evento de Revisar"/>
+      <description value="Ejemplo de MesaggeHeader Evento de Revisar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1673,6 +1782,7 @@
         <reference value="MessageHeader/EjemploMessageHeaderTerminar"/>
       </reference>
       <name value="Ejemplo de MesaggeHeader Evento de Terminar"/>
+      <description value="Ejemplo de MesaggeHeader Evento de Terminar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1683,6 +1793,7 @@
         <reference value="Observation/EjemploObservation"/>
       </reference>
       <name value="Ejemplo de Observation Evento de Inicio"/>
+      <description value="Ejemplo de Observation Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE"/>
     </resource>
     <resource>
@@ -1693,6 +1804,18 @@
         <reference value="Organization/EjemploOrganization"/>
       </reference>
       <name value="Ejemplo de Organization Evento de Inicio"/>
+      <description value="Ejemplo de Organization Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/EjemploOrganizationAtender"/>
+      </reference>
+      <name value="Ejemplo de Organization Evento de Atender"/>
+      <description value="Ejemplo de Organization Evento de Atender"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1703,6 +1826,7 @@
         <reference value="Organization/EjemploOrganizationReferencia1"/>
       </reference>
       <name value="Ejemplo de Organization Evento de Referencia"/>
+      <description value="Ejemplo de Organization Evento de Referencia"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1713,6 +1837,18 @@
         <reference value="Organization/EjemploOrganizationReferencia2"/>
       </reference>
       <name value="Ejemplo de Organization Evento de Referencia y Terminar"/>
+      <description value="Ejemplo de Organization Evento de Referencia y Terminar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/EjemploOrganizationRevisar"/>
+      </reference>
+      <name value="Ejemplo de Organization Evento de Revisar"/>
+      <description value="Ejemplo de Organization Evento de Revisar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1723,6 +1859,7 @@
         <reference value="Patient/EjemploPatient"/>
       </reference>
       <name value="Ejemplo de Patient Evento de Inicio"/>
+      <description value="Ejemplo de Patient Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PatientLE"/>
     </resource>
     <resource>
@@ -1733,6 +1870,18 @@
         <reference value="Practitioner/EjemploPractitioner"/>
       </reference>
       <name value="Ejemplo de Practitioner Evento de Inicio"/>
+      <description value="Ejemplo de Practitioner Evento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/EjemploPractitionerAtender"/>
+      </reference>
+      <name value="Ejemplo de Practitioner Evento de Atender"/>
+      <description value="Ejemplo de Practitioner Evento de Atender"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
     </resource>
     <resource>
@@ -1743,6 +1892,18 @@
         <reference value="Practitioner/EjemploPractitionerReferencia"/>
       </reference>
       <name value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
+      <description value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/EjemploPractitionerRevisar"/>
+      </reference>
+      <name value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
+      <description value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
     </resource>
     <resource>
@@ -1753,6 +1914,7 @@
         <reference value="PractitionerRole/EjemploPractitionerRole"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Inicio"/>
+      <description value="Ejemplo de PractitionerRole Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -1763,6 +1925,18 @@
         <reference value="PractitionerRole/EjemploPractitionerRoleReferencia"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Referencia"/>
+      <description value="Ejemplo de PractitionerRole Evento de Referencia"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/EjemploPractitionerRoleRevisar"/>
+      </reference>
+      <name value="Ejemplo de PractitionerRole Evento de Revisar"/>
+      <description value="Ejemplo de PractitionerRole Evento de Revisar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -1773,6 +1947,7 @@
         <reference value="PractitionerRole/EjemploPractitionerRoleTerminar"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Terminar"/>
+      <description value="Ejemplo de PractitionerRole Evento de Terminar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -1783,6 +1958,7 @@
         <reference value="Practitioner/EjemploPractitionerTerminar"/>
       </reference>
       <name value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
+      <description value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
     </resource>
     <resource>
@@ -1793,6 +1969,7 @@
         <reference value="QuestionnaireResponse/EjemploQuestionnaireResponse"/>
       </reference>
       <name value="Ejemplo de QuestionnaireResponseEvento de Inicio"/>
+      <description value="Ejemplo de QuestionnaireResponseEvento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseInicioLE"/>
     </resource>
     <resource>
@@ -1803,6 +1980,7 @@
         <reference value="ServiceRequest/EjemploServiceRequest"/>
       </reference>
       <name value="Ejemplo de Service Request Evento de Inicio"/>
+      <description value="Ejemplo de Service Request Evento de Inicio"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
     </resource>
     <resource>
@@ -1813,6 +1991,18 @@
         <reference value="ServiceRequest/EjemploServiceRequest2"/>
       </reference>
       <name value="Ejemplo de Service Request 2"/>
+      <description value="Ejemplo de Service Request 2"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/EjemploServiceRequestAtender"/>
+      </reference>
+      <name value="Ejemplo de Service Request Evento Atender"/>
+      <description value="Ejemplo de Service Request Evento Atender"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
     </resource>
     <resource>
@@ -1823,6 +2013,18 @@
         <reference value="ServiceRequest/EjemploServiceRequestReferencia"/>
       </reference>
       <name value="Ejemplo de Service Request Evento de Referencia"/>
+      <description value="Ejemplo de Service Request Evento de Referencia"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/EjemploServiceRequestRevisar"/>
+      </reference>
+      <name value="Ejemplo de Service Request Evento Revisar"/>
+      <description value="Ejemplo de Service Request Evento Revisar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
     </resource>
     <resource>
@@ -1833,6 +2035,7 @@
         <reference value="ServiceRequest/EjemploServiceRequestTerminar"/>
       </reference>
       <name value="Ejemplo de Service Request Evento de Terminar"/>
+      <description value="Ejemplo de Service Request Evento de Terminar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
     </resource>
     <page>

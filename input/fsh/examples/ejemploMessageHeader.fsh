@@ -59,3 +59,35 @@ Description: "Ejemplo de MesaggeHeader Evento de Revisar"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
 /*FIN PARA BUNDLE Revisar*/
+
+/*EJEMPLOS PARA BUNDLE Agendar*/
+Instance: EjemploMessageHeaderAgendar
+InstanceOf: MessageHeaderLE
+Usage: #example
+Title: "Ejemplo de MesaggeHeader Evento de Agendar"
+Description: "Ejemplo de MesaggeHeader Evento de Agendar"
+* meta.lastUpdated = "2023-02-14T14:12:10Z"
+* source.software = "SolucionInformatica"
+* source.endpoint = "http://link-to-sending.cl"
+
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#terminar
+
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
+/*FIN PARA BUNDLE Agendar*/
+
+/*EJEMPLOS PARA BUNDLE Atender*/
+Instance: EjemploMessageHeaderAtender
+InstanceOf: MessageHeaderLE
+Usage: #example
+Title: "Ejemplo de MesaggeHeader Evento de Atender"
+Description: "Ejemplo de MesaggeHeader Evento de Atender"
+* meta.lastUpdated = "2023-02-14T14:12:10Z"
+* source.software = "SolucionInformatica"
+* source.endpoint = "http://link-to-sending.cl"
+
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#terminar
+
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
+/*FIN PARA BUNDLE Atender*/

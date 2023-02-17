@@ -46,8 +46,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"18.25"}
-    h3,h4,h5,h6{--heading-prefix:"18.25"}</style>
+    <style type="text/css">h2{--heading-prefix:"18.26"}
+    h3,h4,h5,h6{--heading-prefix:"18.26"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -277,7 +277,6 @@
  <tr><td colspan="3"><b>ServiceRequestLE</b></td></tr>
  <tr><td>ServiceRequest</td><td>Request</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Request.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier (IdInterconsulta)</td><td>Request.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesCanonical</td><td>Request.instantiatesCanonical</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;instantiatesUri</td><td>Request.instantiatesUri</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;basedOn</td><td>Request.basedOn</td> </tr>
@@ -313,7 +312,6 @@
  <tr><td colspan="3"><b>ServiceRequestLE</b></td></tr>
  <tr><td>ServiceRequest</td><td>ORC</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ORC.2, ORC.3, RF1-6 / RF1-11,</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier (IdInterconsulta)</td><td>ORC.2, ORC.3, RF1-6 / RF1-11,</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>CX.5</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
@@ -344,6 +342,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>TQ1.9, RF1-2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>PR1-3 / OBR-4  (varies by domain)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>NTE</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;quantity[x]</td><td>NTE</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>PID</td> </tr>
@@ -385,7 +385,6 @@
  <tr><td>&nbsp;&nbsp;&nbsp;contained</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier (IdInterconsulta)</td><td>.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;use</td><td>Role.code or implied by context</td> </tr>
@@ -427,6 +426,10 @@
  <tr><td>&nbsp;&nbsp;&nbsp;priority</td><td>.priorityCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;doNotPerform</td><td>.actionNegationInd</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>.code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;quantity[x]</td><td>.quantity</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>.participation[typeCode=SBJ].role</td> </tr>
@@ -471,7 +474,6 @@
  <tr><td colspan="3"><b>ServiceRequestLE</b></td></tr>
  <tr><td>ServiceRequest</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier (IdInterconsulta)</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;intent</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>FiveWs.class</td> </tr>
@@ -493,7 +495,6 @@
  <tr><td colspan="3"><b>ServiceRequestLE</b></td></tr>
  <tr><td>ServiceRequest</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ClinicalStatement.identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;identifier (IdInterconsulta)</td><td>ClinicalStatement.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Action.currentStatus</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>Procedure.procedureCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;orderDetail</td><td>Procedure.procedureCode</td> </tr>
@@ -559,7 +560,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 15, 2023 12:48-0300">2023-02-15</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 17, 2023 16:26-0300">2023-02-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

@@ -74,3 +74,22 @@ Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
 * qualification[Cert].code.coding.system = "http://terminology.cens.cl"
 * qualification[Cert].code.coding.display = "Medico"
 /*FIN PARA BUNDLE REVISAR*/
+
+/*EJEMPLOS PARA BUNDLE Atender*/
+Instance: EjemploPractitionerAtender
+InstanceOf: PractitionerLE
+Usage: #example
+Title: "Ejemplo de Practitioner Evento de Atender"
+Description: "Ejemplo de Practitioner Evento de Atender"
+
+* identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
+* identifier[RUN].use = #official
+* identifier[RUN].value = "2134"
+* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
+* identifier[OtrosID].use = #secondary
+* identifier[OtrosID].value = "2134"
+* qualification[Cert].identifier.value = "cert"
+* qualification[Cert].code.coding.code = #01
+* qualification[Cert].code.coding.system = "http://terminology.cens.cl"
+* qualification[Cert].code.coding.display = "Medico"
+/*FIN PARA BUNDLE REVISAR*/

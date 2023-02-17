@@ -46,6 +46,9 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains DocAcreditacionCuidadorCodigoLE named DocAcreditacionCuidadorCodigo 0..1 MS
 * extension contains EspecialidadMedicaDestinoCodigo named EspecialidadMedicaDestinoCodigo 0..1 MS
 * extension contains SubEspecialidadMedicaDestinoCodigo named SubEspecialidadMedicaDestinoCodigo 0..1 MS
+* extension contains DestinoAtencionCodigo named DestinoAtencionCodigo 0..1 MS
+
+
 * extension contains PertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
 * extension[FundamentoPriorizacion] ^short = "Fundamente de la Priorización"
 * extension[ResolutividadAPS] ^short = "Programa de Resolutividad local"

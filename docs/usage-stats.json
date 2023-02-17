@@ -324,6 +324,25 @@
       ]
     },
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo",
+      "title": "Motivo No Pertinencia Codigo",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo",
       "title": "Codigo de Identificación de Nacionalidad",
       "types": [
@@ -530,6 +549,10 @@
         "title": "Bundle Referencia LE"
       },
       {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE",
+        "title": "Bundle Revisar LE"
+      },
+      {
         "url": "http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE",
         "title": "Bundle Terminar LE"
       }
@@ -708,6 +731,9 @@
     "http://minsal.cl/listaespera/StructureDefinition/Contactado": [
       "Appointment"
     ],
+    "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo": [
+      "ServiceRequest"
+    ],
     "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
       "Bundle.entry.resource.identifier",
       "Patient.identifier"
@@ -744,6 +770,7 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS": [
@@ -774,6 +801,10 @@
       "Bundle.entry.resource",
       "ServiceRequest"
     ],
+    "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo": [
+      "Bundle.entry.resource.doNotPerform",
+      "ServiceRequest.doNotPerform"
+    ],
     "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo": [
       "Bundle.entry.resource",
       "Patient"
@@ -783,7 +814,8 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta": [
-      "ServiceRequest.doNotPerform"
+      "Bundle.entry.resource",
+      "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena": [
       "Patient"

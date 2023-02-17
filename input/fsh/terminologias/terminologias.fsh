@@ -799,7 +799,6 @@ Description: "Motivo No Pertinencia Codigo"
 * #2 "No respeta criterios de inclusión"
 * #3 "Otro"
 
-
 /*
 ValueSet: VS
 Id: VS

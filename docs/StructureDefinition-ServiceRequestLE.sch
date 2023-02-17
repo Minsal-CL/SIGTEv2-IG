@@ -25,6 +25,8 @@
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:locationCode) &lt;= 1">locationCode: maximum cardinality of 'locationCode' is 1</sch:assert>
       <sch:assert test="count(f:reasonCode) &lt;= 1">reasonCode: maximum cardinality of 'reasonCode' is 1</sch:assert>
@@ -79,7 +81,6 @@
     <sch:title>f:ServiceRequest/f:category/f:coding</sch:title>
     <sch:rule context="f:ServiceRequest/f:category/f:coding">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
       <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
       <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
@@ -92,8 +93,16 @@
     <sch:title>f:ServiceRequest/f:doNotPerform</sch:title>
     <sch:rule context="f:ServiceRequest/f:doNotPerform">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:value) &lt;= 1">value: maximum cardinality of 'value' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:ServiceRequest/f:code</sch:title>
+    <sch:rule context="f:ServiceRequest/f:code">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:text) &gt;= 1">text: minimum cardinality of 'text' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

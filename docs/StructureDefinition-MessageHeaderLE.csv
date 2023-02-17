@@ -146,7 +146,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "MessageHeader.source.contact","MessageHeader.source.contact","","","",0,1,"","","Y","ContactPoint {[]} {[]}
 ","Human contact for problems","An e-mail, phone, website or other contact point to use to resolve issues with message communications.","","Allows escalation of technical issues.","","","","","","","",,,,,"",,,,"MessageHeader.source.contact",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(MSH-22?)","unique(./entity[determinerCode=""INST"" and classCode=""DEV""]/scopesRole[normalRole() and classCode=""CON"" and layer[classCode=""PSN""]/telecom[isNormalDatatype()])"
-"MessageHeader.source.endpoint","MessageHeader.source.endpoint","","","",1,1,"","","Y","url {[]} {[]}
+"MessageHeader.source.endpoint","MessageHeader.source.endpoint","","","",1,1,"Y","","Y","url {[]} {[]}
 ","Actual message source address or id","Identifies the routing target to send acknowledgements to.","The id may be a non-resolvable URI for systems that do not use standard network-based addresses.","Identifies where to send responses, may influence security permissions.","","","","","","","",,,,,"",,,,"MessageHeader.source.endpoint",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","MSH-24","./telecom[isNormalDatatype()]"
 "MessageHeader.responsible","MessageHeader.responsible","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
