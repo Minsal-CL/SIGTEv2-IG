@@ -87,7 +87,7 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentLE.html\">AppointmentLE</a></p></div><blockquote><p><b>Contacto del paciente</b></p><p><b>value</b>: Otro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p></blockquote><p><b>ExtBool Medio Notificacion </b>: true</p><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>created</b>: 2023-01-22 09:00:00+0000</p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/serv1\">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"#Practitioner_EjemploPractitionerAgendar\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></td><td>accepted</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentLE.html\">AppointmentLE</a></p></div><blockquote><p><b>Contactado</b></p><p><b>value</b>: Otro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>created</b>: 2023-01-22 09:00:00+0000</p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/serv1\">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"http://acme.com/ehr/fhir/PractitionerRoleLE/pra1\">http://acme.com/ehr/fhir/PractitionerRoleLE/pra1</a></td><td>accepted</td></tr></table></div>"
   ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -103,13 +103,10 @@
        ]
      ], [
        fhir:index 1;
-       fhir:Extension.url [ fhir:value "Contactado" ]
+       fhir:Extension.url [ fhir:value "Contactado" ];
+       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
      ];
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ContactadoLE" ]
-  ], [
-     fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolMedioNotificacion" ];
-     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/Contactado" ]
   ]; # 
   fhir:Appointment.identifier [
      fhir:index 0;
@@ -125,8 +122,8 @@
   fhir:Appointment.participant [
      fhir:index 0;
      fhir:Appointment.participant.actor [
-       fhir:link <http://acme.com/ehr/fhir/Practitioner/pra1>;
-       fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Practitioner/pra1" ]
+       fhir:link <http://acme.com/ehr/fhir/PractitionerRoleLE/pra1>;
+       fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/PractitionerRoleLE/pra1" ]
      ];
      fhir:Appointment.participant.status [ fhir:value "accepted" ]
   ] . # 

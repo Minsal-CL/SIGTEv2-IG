@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-02-20T03:26:30+00:00"/>
+  <date value="2023-02-20T22:25:44+00:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -735,17 +735,6 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ContactadoLE"/>
-      </reference>
-      <name value="Contacto del paciente"/>
-      <description value="Contacto del paciente"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/DestinoAtencionCodigo"/>
       </reference>
       <name value="Destino Atención Codigo"/>
@@ -838,17 +827,6 @@
       </reference>
       <name value="ExtBool Cuidador"/>
       <description value="ExtBool Cuidador"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ExtBoolMedioNotificacion"/>
-      </reference>
-      <name value="ExtBool Medio Notificacion "/>
-      <description value="ExtBool Medio Notificacion "/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1856,6 +1834,17 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
+        <reference value="Organization/EjemploOrganizationAgendador"/>
+      </reference>
+      <name value="Ejemplo de Organization Evento de Agendador"/>
+      <description value="Ejemplo de Organization Evento de Agendador"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
         <reference value="Organization/EjemploOrganizationAgendar"/>
       </reference>
       <name value="Ejemplo de Organization Evento de Agendar"/>
@@ -1893,6 +1882,17 @@
       </reference>
       <name value="Ejemplo de Organization Evento de Referencia y Terminar"/>
       <description value="Ejemplo de Organization Evento de Referencia y Terminar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/EjemploOrganizationReferenciador"/>
+      </reference>
+      <name value="Ejemplo de Organization Evento de referenciador"/>
+      <description value="Ejemplo de Organization Evento de Referenciador"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1988,6 +1988,17 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
+        <reference value="PractitionerRole/EjemploPractitionerRoleAgendador"/>
+      </reference>
+      <name value="Ejemplo de PractitionerRole Evento de Referencia"/>
+      <description value="Ejemplo de PractitionerRole Evento de Referencia"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
         <reference value="PractitionerRole/EjemploPractitionerRoleAgendar"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Agendar"/>
@@ -1999,7 +2010,7 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/EjemploPractitionerRoleReferencia"/>
+        <reference value="PractitionerRole/EjemploPractitionerRoleReferenciador"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Referencia"/>
       <description value="Ejemplo de PractitionerRole Evento de Referencia"/>
