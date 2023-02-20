@@ -78,7 +78,7 @@
   <name value="ServiceRequestLE"/>
   <title value="ServiceRequest LE"/>
   <status value="active"/>
-  <date value="2023-02-17T19:45:07+00:00"/>
+  <date value="2023-02-20T03:17:07+00:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -713,7 +713,7 @@
       <path value="ServiceRequest.extension"/>
       <sliceName value="FundamentoPriorizacion"/>
       <short value="Fundamente de la Priorización"/>
-      <definition value="An Extension"/>
+      <definition value="Optional Extension Element - found in all resources."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -744,6 +744,14 @@
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.extension:EstadoInterconsultaCodigo">
       <path value="ServiceRequest.extension"/>

@@ -1,13 +1,14 @@
 ﻿ListaEsperaChile : Validation Results
 =========================================
 
-err = 483, warn = 136, info = 94
+err = 503, warn = 142, info = 99
 IG Publisher Version: 1.2.22 Out of date - current version is 1.2.37
-Generated Fri Feb 17 19:51:41 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
- Build Errors : 21 / 5 / 0
+Generated Mon Feb 20 03:23:40 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
+ Build Errors : 14 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointment : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAgendar : 28 / 8 / 20
+ /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAgendar : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAgendar : 42 / 7 / 23
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleInicio : 260 / 22 / 63
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleReferencia : 34 / 8 / 23
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleRevisar : 28 / 8 / 20
@@ -40,7 +41,7 @@ Generated Fri Feb 17 19:51:41 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/Condition-EjemploCondition2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Condition-EjemploCondition3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Encounter-EjemploEncounter : 0 / 1 / 2
- /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.hl7chile.ListaDeEspera : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ImplementationGuide-fhir.hl7chile.ListaDeEspera : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeader : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderAgendar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderAtender : 0 / 0 / 1
@@ -49,30 +50,35 @@ Generated Fri Feb 17 19:51:41 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderTerminar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-EjemploObservation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-EjemploOrganization : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Organization-EjemploOrganizationAgendar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-EjemploOrganizationAtender : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-EjemploOrganizationReferencia1 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-EjemploOrganizationReferencia2 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-EjemploOrganizationRevisar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-EjemploPatient : 9 / 4 / 3
  /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitioner : 1 / 0 / 3
+ /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitionerAgendar : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitionerAtender : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitionerReferencia : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitionerRevisar : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/Practitioner-EjemploPractitionerTerminar : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRole : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleAgendar : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleReferencia : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleRevisar : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleTerminar : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponse : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 42 / 3 / 3
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest2 : 42 / 3 / 3
+ /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAgendar : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAtender : 1 / 4 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestReferencia : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestRevisar : 1 / 3 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestTerminar : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-AllergyIntoleranceInicioLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentAtenderLE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentInicioLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentLE : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BundleAgendarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleInicioLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleReferenciaLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleRevisarLE : 0 / 0 / 1
@@ -86,6 +92,7 @@ Generated Fri Feb 17 19:51:41 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/StructureDefinition-ConditionInicioIndiceComorbilidadLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ConditionInicioSospechaGesLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Contactado : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ContactadoLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DestinoAtencionCodigo : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DigitoVerificador : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DocAcreditacionCuidadorCodigoLE : 0 / 0 / 1
@@ -98,6 +105,7 @@ Generated Fri Feb 17 19:51:41 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtBoolAfrodescendiente : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtBoolAlergia : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtBoolCuidador : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ExtBoolMedioNotificacion : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtBoolPersonaMayor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtBoolPertinenciaAtencionBox : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtBoolPresentaDiscapacidad : 0 / 0 / 1
@@ -156,14 +164,7 @@ Generated Fri Feb 17 19:51:41 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ExtStringFundamentoPriorizacion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/EventoAgendar.html#/html/body/div/div/div/div/div/ul/li/a at Line 233, column 8: The link 'link' for "Appointment" cannot be resolved
-ERROR: /github/workspace/output/EventoAgendar.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'link' for "MessageHeader" cannot be resolved
-ERROR: /github/workspace/output/EventoAgendar.html#/html/body/div/div/div/div/div/ul/li/a at Line 235, column 8: The link 'link' for "ServiceRequest" cannot be resolved
-ERROR: /github/workspace/output/EventoAgendar.html#/html/body/div/div/div/div/div/ul/li/a at Line 236, column 8: The link 'link' for "PractitionerRole" cannot be resolved
-ERROR: /github/workspace/output/EventoAgendar.html#/html/body/div/div/div/div/div/ul/li/a at Line 237, column 8: The link 'link' for "Practitioner" cannot be resolved
-ERROR: /github/workspace/output/EventoAgendar.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link 'link' for "Location" cannot be resolved
-ERROR: /github/workspace/output/EventoAgendar.html#/html/body/div/div/div/div/div/ul/li/a at Line 239, column 8: The link 'link' for "PractitionerRole" cannot be resolved
-ERROR: /github/workspace/output/EventoAgendar.html#/html/body/div/div/div/div/div/ul/li/a at Line 240, column 8: The link 'link' for "Practitioner" cannot be resolved
+ERROR: /github/workspace/output/EventoAgendar.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'StructureDefinition-Appointment.html' for "MessageHeaderLE" cannot be resolved
 ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 233, column 8: The link 'link' for "Encounter" cannot be resolved
 ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'link' for "Appointment" cannot be resolved
 ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 235, column 8: The link 'link' for "MessageHeader" cannot be resolved
@@ -186,52 +187,72 @@ ERROR: AllergyIntolerance/EjemploAllergyIntolerance: AllergyIntolerance: Rule ai
 == fsh-generated/resources/Appointment-EjemploAppointment.json ==
 ERROR: Appointment/EjemploAppointment: Appointment: Rule app-2: 'Either start and end are specified, or neither' Failed
 ERROR: Appointment/EjemploAppointment: Appointment: Rule app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Failed
+== fsh-generated/resources/Appointment-EjemploAppointmentAgendar.json ==
+ERROR: Appointment/EjemploAppointmentAgendar: Appointment: Rule app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Failed
+WARNING: Appointment/EjemploAppointmentAgendar: Appointment.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Appointment/EjemploAppointmentAgendar: Appointment.extension[0].extension[1]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Appointment/EjemploAppointmentAgendar: Appointment.participant[0].actor: Unable to find a match for profile http://acme.com/ehr/fhir/Practitioner/pra1 (by type) among choices: ; [CanonicalType[http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE]]
+ERROR: Appointment/EjemploAppointmentAgendar: Appointment.participant[0].actor: Invalid Resource target type. Found Practitioner, but expected one of ([PractitionerRole])
 == fsh-generated/resources/Bundle-EjemploBundleAgendar.json ==
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
-INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:messageheader: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE|0.1.1)
-INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:servicerequest: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE|0.1.1)
-INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:practitioner: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE|0.1.1)
-INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:practitionerRole: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE|0.1.1)
-INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:organization: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE|0.1.1)
-WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.ofType(ServiceRequest).extension[1].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.ofType(ServiceRequest).identifier[0].type.coding[0]: Coding.system must be an absolute reference, not a local reference
-INFORMATION: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.ofType(ServiceRequest).identifier[0].type.coding[0]: Code System URI 'IdInterconsulta' is unknown so the code cannot be validated
-WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.ofType(ServiceRequest).category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.ofType(ServiceRequest).doNotPerform.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:servicerequest, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitioner, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:practitionerRole, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:organization, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:appointment, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:appointment, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:appointment, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:appointment, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:appointment, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE on element Bundle.entry:appointment, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE (@char 1)
+INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:messageheader: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE|0.1.1)
+INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:servicerequest: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE|0.1.1)
+INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:practitioner: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE|0.1.1)
+INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:practitionerRole: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE|0.1.1)
+INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:organization: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE|0.1.1)
+INFORMATION: Bundle/EjemploBundleAgendar: Bundle: Bundle.entry:appointment: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE|0.1.1)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.ofType(Appointment): Rule app-3: 'Only proposed or cancelled appointments can be missing start/end dates' Failed
+WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.ofType(Appointment).extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.ofType(Appointment).extension[0].extension[1]: Rule ext-1: 'Must have either extensions or value[x], not both' Failed
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.ofType(Appointment).participant[0].actor: Invalid Resource target type. Found Practitioner, but expected one of ([PractitionerRole])
+WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[2].resource.ofType(PractitionerRole).code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[2].resource.ofType(PractitionerRole).code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#terminador)
 INFORMATION: Bundle/EjemploBundleAgendar: Bundle.entry[3].resource.ofType(Practitioner).identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Bundle/EjemploBundleAgendar: Bundle.entry[3].resource.ofType(Practitioner).identifier[1].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Bundle/EjemploBundleAgendar: Bundle.entry[3].resource.ofType(Practitioner).qualification[0].code.coding[0]: Code System URI 'http://terminology.cens.cl' is unknown so the code cannot be validated
-WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[4].resource.ofType(PractitionerRole).code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4].resource.ofType(PractitionerRole).code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#terminador)
+ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[4].resource.ofType(ServiceRequest).identifier[0].type.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: Bundle/EjemploBundleAgendar: Bundle.entry[4].resource.ofType(ServiceRequest).identifier[0].type.coding[0]: Code System URI 'IdInterconsulta' is unknown so the code cannot be validated
 ERROR: Bundle/EjemploBundleAgendar: Bundle.entry[1].resource.focus[0].reference: Can't find 'http://acme.com/ehr/fhir/ServiceRequest/serv1' in the bundle (MessageHeader Data)
-WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Entry 'http://acme.com/ehr/fhir/ServiceRequest/ser1' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Entry 'http://acme.com/ehr/fhir/Organization/org1' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[2]: Entry 'http://acme.com/ehr/fhir/Appointment/apo1' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[3]: Entry 'http://acme.com/ehr/fhir/PractitionerRole/prarole1' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[4]: Entry 'http://acme.com/ehr/fhir/Practitioner/pra1' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[5]: Entry 'http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[5]: Entry 'http://acme.com/ehr/fhir/ServiceRequest/ser1' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[6]: Entry 'http://acme.com/ehr/fhir/Organization/org1' isn't reachable by traversing from first Bundle entry
 == fsh-generated/resources/Bundle-EjemploBundleInicio.json ==
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE (@char 1)
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE (@char 1)
@@ -757,6 +778,8 @@ WARNING: CodeSystem/CSSospechaPatologiaGes: CodeSystem.concept[8261].display: va
 INFORMATION: Encounter/EjemploEncounter: Encounter.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 WARNING: Encounter/EjemploEncounter: Encounter.class: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ImplementationGuide-fhir.hl7chile.ListaDeEspera.json ==
+WARNING: ImplementationGuide/fhir.hl7chile.ListaDeEspera: ImplementationGuide.definition.resource[38].name: value should not start or finish with whitespace 'ExtBool...Notificacion '
+WARNING: ImplementationGuide/fhir.hl7chile.ListaDeEspera: ImplementationGuide.definition.resource[38].description: value should not start or finish with whitespace 'ExtBool...Notificacion '
 == fsh-generated/resources/MessageHeader-EjemploMessageHeader.json ==
 == fsh-generated/resources/MessageHeader-EjemploMessageHeaderAgendar.json ==
 == fsh-generated/resources/MessageHeader-EjemploMessageHeaderAtender.json ==
@@ -765,6 +788,7 @@ WARNING: Encounter/EjemploEncounter: Encounter.class: A code with no system has 
 == fsh-generated/resources/MessageHeader-EjemploMessageHeaderTerminar.json ==
 == fsh-generated/resources/Observation-EjemploObservation.json ==
 == fsh-generated/resources/Organization-EjemploOrganization.json ==
+== fsh-generated/resources/Organization-EjemploOrganizationAgendar.json ==
 == fsh-generated/resources/Organization-EjemploOrganizationAtender.json ==
 == fsh-generated/resources/Organization-EjemploOrganizationReferencia1.json ==
 == fsh-generated/resources/Organization-EjemploOrganizationReferencia2.json ==
@@ -789,6 +813,10 @@ ERROR: Patient/EjemploPatient: Patient.identifier[0].type: Patient.identifier.ty
 INFORMATION: Practitioner/EjemploPractitioner: Practitioner.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Practitioner/EjemploPractitioner: Practitioner.identifier[1].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 ERROR: Practitioner/EjemploPractitioner: Practitioner.qualification[0].code.coding[0]: Practitioner.qualification:Cert.code.coding.code: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PractitionerLE|0.1.1)
+== fsh-generated/resources/Practitioner-EjemploPractitionerAgendar.json ==
+INFORMATION: Practitioner/EjemploPractitionerAgendar: Practitioner.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
+INFORMATION: Practitioner/EjemploPractitionerAgendar: Practitioner.identifier[1].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
+INFORMATION: Practitioner/EjemploPractitionerAgendar: Practitioner.qualification[0].code.coding[0]: Code System URI 'http://terminology.cens.cl' is unknown so the code cannot be validated
 == fsh-generated/resources/Practitioner-EjemploPractitionerAtender.json ==
 INFORMATION: Practitioner/EjemploPractitionerAtender: Practitioner.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Practitioner/EjemploPractitionerAtender: Practitioner.identifier[1].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
@@ -807,6 +835,9 @@ INFORMATION: Practitioner/EjemploPractitionerTerminar: Practitioner.identifier[1
 == fsh-generated/resources/PractitionerRole-EjemploPractitionerRole.json ==
 ERROR: PractitionerRole/EjemploPractitionerRole: PractitionerRole.code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#iniciador)
 WARNING: PractitionerRole/EjemploPractitionerRole: PractitionerRole.code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleAgendar.json ==
+ERROR: PractitionerRole/EjemploPractitionerRoleAgendar: PractitionerRole.code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#terminador)
+WARNING: PractitionerRole/EjemploPractitionerRoleAgendar: PractitionerRole.code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleReferencia.json ==
 ERROR: PractitionerRole/EjemploPractitionerRoleReferencia: PractitionerRole.code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#referenciador)
 WARNING: PractitionerRole/EjemploPractitionerRoleReferencia: PractitionerRole.code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -914,6 +945,9 @@ WARNING: ServiceRequest/EjemploServiceRequest2: ServiceRequest.extension[5].valu
 WARNING: ServiceRequest/EjemploServiceRequest2: ServiceRequest.extension[7].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: ServiceRequest/EjemploServiceRequest2: ServiceRequest.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: ServiceRequest/EjemploServiceRequest2: ServiceRequest.reasonCode[0].coding[0]: Code System URI 'http://terminology.cens.cl/codigosDeis/motivoInterconsulta' is unknown so the code cannot be validated
+== fsh-generated/resources/ServiceRequest-EjemploServiceRequestAgendar.json ==
+ERROR: ServiceRequest/EjemploServiceRequestAgendar: ServiceRequest.identifier[0].type.coding[0]: Coding.system must be an absolute reference, not a local reference
+INFORMATION: ServiceRequest/EjemploServiceRequestAgendar: ServiceRequest.identifier[0].type.coding[0]: Code System URI 'IdInterconsulta' is unknown so the code cannot be validated
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequestAtender.json ==
 WARNING: ServiceRequest/EjemploServiceRequestAtender: ServiceRequest.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: ServiceRequest/EjemploServiceRequestAtender: ServiceRequest.extension[2].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -935,9 +969,10 @@ WARNING: ServiceRequest/EjemploServiceRequestRevisar: ServiceRequest.doNotPerfor
 WARNING: ServiceRequest/EjemploServiceRequestTerminar: ServiceRequest.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: ServiceRequest/EjemploServiceRequestTerminar: ServiceRequest.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-AllergyIntoleranceInicioLE.json ==
-== fsh-generated/resources/StructureDefinition-AppointmentAtenderLE.json ==
-WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/AppointmentAtenderLE'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-AppointmentInicioLE.json ==
+== fsh-generated/resources/StructureDefinition-AppointmentLE.json ==
+WARNING: StructureDefinition/AppointmentLE: StructureDefinition.snapshot.element[8].short: value should not start or finish with whitespace 'ExtBool...Notificacion '
+== fsh-generated/resources/StructureDefinition-BundleAgendarLE.json ==
 == fsh-generated/resources/StructureDefinition-BundleInicioLE.json ==
 == fsh-generated/resources/StructureDefinition-BundleReferenciaLE.json ==
 == fsh-generated/resources/StructureDefinition-BundleRevisarLE.json ==
@@ -956,6 +991,7 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/Structure
 == fsh-generated/resources/StructureDefinition-ConditionInicioSospechaGesLE.json ==
 == fsh-generated/resources/StructureDefinition-Contactado.json ==
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/Contactado'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ContactadoLE.json ==
 == fsh-generated/resources/StructureDefinition-DestinoAtencionCodigo.json ==
 == fsh-generated/resources/StructureDefinition-DigitoVerificador.json ==
 == fsh-generated/resources/StructureDefinition-DocAcreditacionCuidadorCodigoLE.json ==
@@ -973,6 +1009,10 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/Structure
 == fsh-generated/resources/StructureDefinition-ExtBoolAfrodescendiente.json ==
 == fsh-generated/resources/StructureDefinition-ExtBoolAlergia.json ==
 == fsh-generated/resources/StructureDefinition-ExtBoolCuidador.json ==
+== fsh-generated/resources/StructureDefinition-ExtBoolMedioNotificacion.json ==
+WARNING: StructureDefinition/ExtBoolMedioNotificacion: StructureDefinition.title: value should not start or finish with whitespace 'ExtBool...Notificacion '
+WARNING: StructureDefinition/ExtBoolMedioNotificacion: StructureDefinition.snapshot.element[0].short: value should not start or finish with whitespace 'ExtBool...Notificacion '
+WARNING: StructureDefinition/ExtBoolMedioNotificacion: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace 'ExtBool...Notificacion '
 == fsh-generated/resources/StructureDefinition-ExtBoolPersonaMayor.json ==
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ExtBoolPertinenciaAtencionBox.json ==
