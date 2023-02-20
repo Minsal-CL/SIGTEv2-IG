@@ -145,10 +145,12 @@ Description: "Ejemplo de Service Request Evento Revisar"
 * priority = #urgent
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* doNotPerform = true
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text = "Texto libre"
 * priority = #routine
+* extension[RequiereExamen].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen"
 * extension[RequiereExamen].valueBoolean = true
 * category.coding.code = #1
 * extension[PertinenciaInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta"
@@ -202,7 +204,7 @@ Description: "Ejemplo de Service Request Evento Atender"
 * extension[DestinoAtencionCodigo].valueCodeableConcept.coding.code = #1
 
 
-
+* doNotPerform = true
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text = "Texto libre"

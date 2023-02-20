@@ -70,7 +70,7 @@ Description: "Ejemplo de Bundle Evento de Referencia"
 * entry[servicerequest].resource = EjemploServiceRequestReferencia
 
 * entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
-* entry[practitionerRole].resource = EjemploPractitionerRoleReferencia
+* entry[practitionerRole].resource = EjemploPractitionerRoleReferenciador
 
 * entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/pra1"
 * entry[practitioner].resource = EjemploPractitionerReferencia
