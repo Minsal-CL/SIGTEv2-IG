@@ -26,6 +26,25 @@ Description: "Ejemplo de Organization Evento de Referencia y Terminar"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "2"
 
+Instance: EjemploOrganizationReferenciador
+InstanceOf: OrganizationLE
+Usage: #example
+Title: "Ejemplo de Organization Evento de referenciador"
+Description: "Ejemplo de Organization Evento de Referenciador"
+
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
+* identifier.value = "1"
+
+Instance: EjemploOrganizationAgendador
+InstanceOf: OrganizationLE
+Usage: #example
+Title: "Ejemplo de Organization Evento de Agendador"
+Description: "Ejemplo de Organization Evento de Agendador"
+
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
+* identifier.value = "1"
+
+
 /*FIN PARA BUNDLE REFERENCIA*/
 
 

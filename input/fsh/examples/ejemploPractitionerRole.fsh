@@ -9,7 +9,7 @@ Description: "Ejemplo de PractitionerRole Evento de Inicio"
 * code = #iniciador
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
-Instance: EjemploPractitionerRoleReferencia
+Instance: EjemploPractitionerRoleReferenciador
 InstanceOf: PractitionerRoleLE
 Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Referencia"
@@ -18,6 +18,17 @@ Description: "Ejemplo de PractitionerRole Evento de Referencia"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
 * code = #referenciador
+
+Instance: EjemploPractitionerRoleAgendador
+InstanceOf: PractitionerRoleLE
+Usage: #example
+Title: "Ejemplo de PractitionerRole Evento de Referencia"
+Description: "Ejemplo de PractitionerRole Evento de Referencia"
+
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
+* code = #agendador
+
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLOS PARA BUNDLE TERMINAR*/
