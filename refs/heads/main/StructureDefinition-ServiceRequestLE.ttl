@@ -34,7 +34,7 @@
   fhir:StructureDefinition.name [ fhir:value "ServiceRequestLE"]; # 
   fhir:StructureDefinition.title [ fhir:value "ServiceRequest LE"]; # 
   fhir:StructureDefinition.status [ fhir:value "active"]; # 
-  fhir:StructureDefinition.date [ fhir:value "2023-02-15T16:20:01+00:00"^^xsd:dateTime]; # 
+  fhir:StructureDefinition.date [ fhir:value "2023-02-20T15:31:02+00:00"^^xsd:dateTime]; # 
   fhir:StructureDefinition.publisher [ fhir:value "MINSAL Chile"]; # 
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -906,7 +906,7 @@
        fhir:ElementDefinition.path [ fhir:value "ServiceRequest.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "FundamentoPriorizacion" ];
        fhir:ElementDefinition.short [ fhir:value "Fundamente de la Priorización" ];
-       fhir:ElementDefinition.definition [ fhir:value "An Extension" ];
+       fhir:ElementDefinition.definition [ fhir:value "Optional Extension Element - found in all resources." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
@@ -951,7 +951,16 @@
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
-       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
      ], [
        fhir:index 17;
        fhir:Element.id [ fhir:value "ServiceRequest.extension:EstadoInterconsultaCodigo" ];
