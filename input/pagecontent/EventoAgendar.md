@@ -53,7 +53,7 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 
 ## Mensaje Bundle de Ejemplo
 
-* [BundleAgendarLE](Bundle-EjemploBundleAgendar.html)
+* [BundleAgendarLE](Bundle-EjemploBundleAgendar".html)
 ## Notas
 
 * Notas Adicionales
