@@ -93,76 +93,6 @@
       ]
     },
     {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/ContactadoLE",
-      "title": "Contacto del paciente",
-      "types": [
-        "boolean",
-        "CodeableConcept",
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo",
       "title": "Destino Atención Codigo",
       "types": [
@@ -274,13 +204,6 @@
       ]
     },
     {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolMedioNotificacion",
-      "title": "ExtBool Medio Notificacion ",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor",
       "title": "ExtBool PersonaMayor",
       "types": [
@@ -384,25 +307,6 @@
     {
       "url": "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta",
       "title": "Motivo Cierre Interconsulta",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
-      "url": "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo",
-      "title": "Motivo No Pertinencia Codigo",
       "types": [
         "CodeableConcept",
         "CodeableConcept",
@@ -608,19 +512,15 @@
     ],
     "Appointment": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE",
-        "title": "Appointment Inicio LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentAtenderLE",
+        "title": "Appointment Atender LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE",
-        "title": "AppointmentLE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE",
+        "title": "Appointment Inicio LE"
       }
     ],
     "Bundle": [
-      {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE",
-        "title": "Bundle Agendar LE"
-      },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE",
         "title": "BundleInicio LE"
@@ -812,13 +712,6 @@
     "http://minsal.cl/listaespera/StructureDefinition/Contactado": [
       "Appointment"
     ],
-    "http://minsal.cl/listaespera/StructureDefinition/ContactadoLE": [
-      "Appointment",
-      "Bundle.entry.resource"
-    ],
-    "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo": [
-      "ServiceRequest"
-    ],
     "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
       "Bundle.entry.resource.identifier",
       "Patient.identifier"
@@ -847,10 +740,6 @@
       "Bundle.entry.resource",
       "ServiceRequest"
     ],
-    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolMedioNotificacion": [
-      "Appointment",
-      "Bundle.entry.resource"
-    ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox": [
       "Encounter"
     ],
@@ -859,7 +748,6 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen": [
-      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS": [
@@ -890,10 +778,6 @@
       "Bundle.entry.resource",
       "ServiceRequest"
     ],
-    "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo": [
-      "Bundle.entry.resource.doNotPerform",
-      "ServiceRequest.doNotPerform"
-    ],
     "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo": [
       "Bundle.entry.resource",
       "Patient"
@@ -903,8 +787,7 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta": [
-      "Bundle.entry.resource",
-      "ServiceRequest"
+      "ServiceRequest.doNotPerform"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena": [
       "Patient"

@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-20T03:26:30+00:00",
+  "date" : "2023-02-20T15:31:02+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -586,34 +586,22 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/AppointmentAtenderLE"
+      },
+      "name" : "Appointment Atender LE",
+      "description" : "Appointment Atender LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/AppointmentInicioLE"
       },
       "name" : "Appointment Inicio LE",
       "description" : "Appointment Inicio LE",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/AppointmentLE"
-      },
-      "name" : "AppointmentLE",
-      "description" : "AppointmentLE",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/BundleAgendarLE"
-      },
-      "name" : "Bundle Agendar LE",
-      "description" : "Bundle Agendar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Agendar.",
       "exampleBoolean" : false
     },
     {
@@ -910,18 +898,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ContactadoLE"
-      },
-      "name" : "Contacto del paciente",
-      "description" : "Contacto del paciente",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/DestinoAtencionCodigo"
       },
       "name" : "Destino Atención Codigo",
@@ -1022,18 +998,6 @@
       },
       "name" : "ExtBool Cuidador",
       "description" : "ExtBool Cuidador",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ExtBoolMedioNotificacion"
-      },
-      "name" : "ExtBool Medio Notificacion ",
-      "description" : "ExtBool Medio Notificacion ",
       "exampleBoolean" : false
     },
     {
@@ -1177,18 +1141,6 @@
       },
       "name" : "Motivo Cierre Interconsulta",
       "description" : "Motivo Cierre Interconsulta",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/MotivoNoPertinenciaCodigo"
-      },
-      "name" : "Motivo No Pertinencia Codigo",
-      "description" : "Motivo No Pertinencia Codigo",
       "exampleBoolean" : false
     },
     {
@@ -1453,18 +1405,6 @@
       },
       "name" : "Motivo No Contactabilidad",
       "description" : "Motivo No Contactabilidad",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSMotivoNoPertinenciaCodigo"
-      },
-      "name" : "Motivo No Pertinencia Codigo",
-      "description" : "Motivo No Pertinencia Codigo",
       "exampleBoolean" : false
     },
     {
@@ -1749,18 +1689,6 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSMotivoNoPertinenciaCodigo"
-      },
-      "name" : "Motivo No Pertinencia Codigo",
-      "description" : "Motivo No Pertinencia Codigo",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
         "reference" : "CodeSystem/CSPertinenciaInterconsulta"
       },
       "name" : "Pertinencia Interconsulta",
@@ -1896,7 +1824,6 @@
         "reference" : "AllergyIntolerance/EjemploAllergyIntolerance"
       },
       "name" : "Ejemplo de AllergyIntolerance Evento de Inicio",
-      "description" : "Ejemplo de AllergyIntolerance Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceInicioLE"
     },
     {
@@ -1908,32 +1835,7 @@
         "reference" : "Appointment/EjemploAppointment"
       },
       "name" : "Ejemplo de Appointment Evento de Inicio",
-      "description" : "Ejemplo de Appointment Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
-      }],
-      "reference" : {
-        "reference" : "Appointment/EjemploAppointmentAgendar"
-      },
-      "name" : "Ejemplo de Appointment Evento de Inicio",
-      "description" : "Ejemplo de Appointment Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/EjemploBundleAgendar"
-      },
-      "name" : "Ejemplo de Bundle Evento de Agendar",
-      "description" : "Ejemplo de Bundle Evento de Agendar",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE"
     },
     {
       "extension" : [{
@@ -1956,20 +1858,7 @@
         "reference" : "Bundle/EjemploBundleReferencia"
       },
       "name" : "Ejemplo de Bundle Evento de Referencia",
-      "description" : "Ejemplo de Bundle Evento de Referencia",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/EjemploBundleRevisar"
-      },
-      "name" : "Ejemplo de Bundle Evento de Revisar",
-      "description" : "Ejemplo de Bundle Evento de Revisar",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE"
     },
     {
       "extension" : [{
@@ -1980,7 +1869,6 @@
         "reference" : "Bundle/EjemploBundleTerminar"
       },
       "name" : "Ejemplo de Bundle Evento de Terminar",
-      "description" : "Ejemplo de Bundle Evento de Terminar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE"
     },
     {
@@ -1992,7 +1880,6 @@
         "reference" : "Condition/EjemploCondition"
       },
       "name" : "Ejemplo de Condition1 Evento de Inicio",
-      "description" : "Ejemplo de Condition1 Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE"
     },
     {
@@ -2004,7 +1891,6 @@
         "reference" : "Condition/EjemploCondition2"
       },
       "name" : "Ejemplo de Condition2 Evento de Inicio",
-      "description" : "Ejemplo de Condition2 Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE"
     },
     {
@@ -2016,7 +1902,6 @@
         "reference" : "Condition/EjemploCondition3"
       },
       "name" : "Ejemplo de Condition3 Evento de Inicio",
-      "description" : "Ejemplo de Condition3 Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE"
     },
     {
@@ -2028,7 +1913,6 @@
         "reference" : "Encounter/EjemploEncounter"
       },
       "name" : "Ejemplo de Encounter Evento de Inicio",
-      "description" : "Ejemplo de Encounter Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"
     },
     {
@@ -2040,31 +1924,6 @@
         "reference" : "MessageHeader/EjemploMessageHeader"
       },
       "name" : "Ejemplo de MesaggeHeader Evento de Inicio",
-      "description" : "Ejemplo de MesaggeHeader Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeaderAgendar"
-      },
-      "name" : "Ejemplo de MesaggeHeader Evento de Agendar",
-      "description" : "Ejemplo de MesaggeHeader Evento de Agendar",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeaderAtender"
-      },
-      "name" : "Ejemplo de MesaggeHeader Evento de Atender",
-      "description" : "Ejemplo de MesaggeHeader Evento de Atender",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
     },
     {
@@ -2076,19 +1935,6 @@
         "reference" : "MessageHeader/EjemploMessageHeaderReferencia"
       },
       "name" : "Ejemplo de MesaggeHeader Evento de Referencia",
-      "description" : "Ejemplo de MesaggeHeader Evento de Referencia",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeaderRevisar"
-      },
-      "name" : "Ejemplo de MesaggeHeader Evento de Revisar",
-      "description" : "Ejemplo de MesaggeHeader Evento de Revisar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
     },
     {
@@ -2100,7 +1946,6 @@
         "reference" : "MessageHeader/EjemploMessageHeaderTerminar"
       },
       "name" : "Ejemplo de MesaggeHeader Evento de Terminar",
-      "description" : "Ejemplo de MesaggeHeader Evento de Terminar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
     },
     {
@@ -2112,7 +1957,6 @@
         "reference" : "Observation/EjemploObservation"
       },
       "name" : "Ejemplo de Observation Evento de Inicio",
-      "description" : "Ejemplo de Observation Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE"
     },
     {
@@ -2124,31 +1968,6 @@
         "reference" : "Organization/EjemploOrganization"
       },
       "name" : "Ejemplo de Organization Evento de Inicio",
-      "description" : "Ejemplo de Organization Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationAgendar"
-      },
-      "name" : "Ejemplo de Organization Evento de Agendar",
-      "description" : "Ejemplo de Organization Evento de Agendar",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationAtender"
-      },
-      "name" : "Ejemplo de Organization Evento de Atender",
-      "description" : "Ejemplo de Organization Evento de Atender",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
     },
     {
@@ -2160,7 +1979,6 @@
         "reference" : "Organization/EjemploOrganizationReferencia1"
       },
       "name" : "Ejemplo de Organization Evento de Referencia",
-      "description" : "Ejemplo de Organization Evento de Referencia",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
     },
     {
@@ -2172,19 +1990,6 @@
         "reference" : "Organization/EjemploOrganizationReferencia2"
       },
       "name" : "Ejemplo de Organization Evento de Referencia y Terminar",
-      "description" : "Ejemplo de Organization Evento de Referencia y Terminar",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationRevisar"
-      },
-      "name" : "Ejemplo de Organization Evento de Revisar",
-      "description" : "Ejemplo de Organization Evento de Revisar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
     },
     {
@@ -2196,7 +2001,6 @@
         "reference" : "Patient/EjemploPatient"
       },
       "name" : "Ejemplo de Patient Evento de Inicio",
-      "description" : "Ejemplo de Patient Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PatientLE"
     },
     {
@@ -2208,31 +2012,6 @@
         "reference" : "Practitioner/EjemploPractitioner"
       },
       "name" : "Ejemplo de Practitioner Evento de Inicio",
-      "description" : "Ejemplo de Practitioner Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerAgendar"
-      },
-      "name" : "Ejemplo de Practitioner Evento de Agendar",
-      "description" : "Ejemplo de Practitioner Evento de Agendar",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerAtender"
-      },
-      "name" : "Ejemplo de Practitioner Evento de Atender",
-      "description" : "Ejemplo de Practitioner Evento de Atender",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
     },
     {
@@ -2244,19 +2023,6 @@
         "reference" : "Practitioner/EjemploPractitionerReferencia"
       },
       "name" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
-      "description" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerRevisar"
-      },
-      "name" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
-      "description" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
     },
     {
@@ -2268,19 +2034,6 @@
         "reference" : "PractitionerRole/EjemploPractitionerRole"
       },
       "name" : "Ejemplo de PractitionerRole Evento de Inicio",
-      "description" : "Ejemplo de PractitionerRole Evento de Inicio",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleAgendar"
-      },
-      "name" : "Ejemplo de PractitionerRole Evento de Agendar",
-      "description" : "Ejemplo de PractitionerRole Evento de Agendar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
     },
     {
@@ -2292,19 +2045,6 @@
         "reference" : "PractitionerRole/EjemploPractitionerRoleReferencia"
       },
       "name" : "Ejemplo de PractitionerRole Evento de Referencia",
-      "description" : "Ejemplo de PractitionerRole Evento de Referencia",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleRevisar"
-      },
-      "name" : "Ejemplo de PractitionerRole Evento de Revisar",
-      "description" : "Ejemplo de PractitionerRole Evento de Revisar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
     },
     {
@@ -2316,7 +2056,6 @@
         "reference" : "PractitionerRole/EjemploPractitionerRoleTerminar"
       },
       "name" : "Ejemplo de PractitionerRole Evento de Terminar",
-      "description" : "Ejemplo de PractitionerRole Evento de Terminar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
     },
     {
@@ -2328,7 +2067,6 @@
         "reference" : "Practitioner/EjemploPractitionerTerminar"
       },
       "name" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
-      "description" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
     },
     {
@@ -2340,7 +2078,6 @@
         "reference" : "QuestionnaireResponse/EjemploQuestionnaireResponse"
       },
       "name" : "Ejemplo de QuestionnaireResponseEvento de Inicio",
-      "description" : "Ejemplo de QuestionnaireResponseEvento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseInicioLE"
     },
     {
@@ -2352,7 +2089,6 @@
         "reference" : "ServiceRequest/EjemploServiceRequest"
       },
       "name" : "Ejemplo de Service Request Evento de Inicio",
-      "description" : "Ejemplo de Service Request Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
     },
     {
@@ -2364,31 +2100,6 @@
         "reference" : "ServiceRequest/EjemploServiceRequest2"
       },
       "name" : "Ejemplo de Service Request 2",
-      "description" : "Ejemplo de Service Request 2",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestAgendar"
-      },
-      "name" : "Ejemplo de Service Request Evento Agendar",
-      "description" : "Ejemplo de Service Request Evento Agendar",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestAtender"
-      },
-      "name" : "Ejemplo de Service Request Evento Atender",
-      "description" : "Ejemplo de Service Request Evento Atender",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
     },
     {
@@ -2400,19 +2111,6 @@
         "reference" : "ServiceRequest/EjemploServiceRequestReferencia"
       },
       "name" : "Ejemplo de Service Request Evento de Referencia",
-      "description" : "Ejemplo de Service Request Evento de Referencia",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestRevisar"
-      },
-      "name" : "Ejemplo de Service Request Evento Revisar",
-      "description" : "Ejemplo de Service Request Evento Revisar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
     },
     {
@@ -2424,7 +2122,6 @@
         "reference" : "ServiceRequest/EjemploServiceRequestTerminar"
       },
       "name" : "Ejemplo de Service Request Evento de Terminar",
-      "description" : "Ejemplo de Service Request Evento de Terminar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
     }],
     "page" : {
