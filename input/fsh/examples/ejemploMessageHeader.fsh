@@ -12,7 +12,7 @@ Description: "Ejemplo de MesaggeHeader Evento de Inicio"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
 
-/*EJEMPLOS PARA BUNDLE REFERENCIA*/
+/*EJEMPLOS PARA BUNDLE REFERENCIADA*/
 Instance: EjemploMessageHeaderReferencia
 InstanceOf: MessageHeaderLE
 Usage: #example
@@ -26,7 +26,7 @@ Description: "Ejemplo de MesaggeHeader Evento de Referencia"
 * source.endpoint = "http://link-to-sending.cl"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
-/*FIN PARA BUNDLE REFERENCIA*/
+/*FIN PARA BUNDLE REFERENCIADA*/
 
 /*EJEMPLOS PARA BUNDLE Terminar*/
 Instance: EjemploMessageHeaderTerminar

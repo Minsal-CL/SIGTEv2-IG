@@ -79,15 +79,20 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
     * code 1..1 MS
     * display 0..1 MS
     * system 0..1 MS
-* category.coding.code from VSModalidadAtencionCodigo
+* category from VSModalidadAtencionCodigo
 * code 0..1 MS
   * text 1..1 MS
 * code.text = "derivado a especialidad"
 * subject only Reference(PatientLE)
 * reasonReference only Reference(ObservationInicioLE)
 * encounter only Reference(EncounterInicioLE)
-* requester MS
-* requester only Reference(PractitionerRoleLE)
+//* requester MS
+//* requester only Reference(PractitionerRoleLE)
+
+* performer 0..1 MS
+* performer only Reference(PractitionerRoleLE)
+
+
 
 * supportingInfo 0..* MS 
 * supportingInfo ^slicing.discriminator.type = #value

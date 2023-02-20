@@ -23,9 +23,9 @@ Description: "Ejemplo de Appointment Evento de Inicio"
 * created = "2023-01-22T09:00:00Z"
 * basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
 * participant.status = #accepted
-* participant.actor = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
+* participant.actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/pra1)
 
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.text = "Otro"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding.code = #1
 
-* extension[ExtBoolMedioNotificacion].valueBoolean = true
+* extension[ContactadoLE].extension[Contactado].valueBoolean = true

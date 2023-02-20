@@ -7,7 +7,7 @@ Description: "AppointmentLE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 // EXTESIONES
-* extension contains ExtBoolMedioNotificacion named ExtBoolMedioNotificacion 0..1 MS
+* extension contains MedioNotificacion named MedioNotificacion 0..1 MS
 * extension contains ContactadoLE named ContactadoLE 0..1 MS
 
 
