@@ -1,10 +1,14 @@
-Profile: AppointmentAtenderLE
+Profile: AppointmentLE
 Parent: Appointment
-Id: AppointmentAtenderLE
-Title: "Appointment Atender LE"
-Description: "Appointment Atender LE"
+Id: AppointmentLE
+Title: "AppointmentLE"
+Description: "AppointmentLE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
+
+// EXTESIONES
+* extension contains ExtBoolMedioNotificacion named ExtBoolMedioNotificacion 0..1 MS
+* extension contains ContactadoLE named ContactadoLE 0..1 MS
 
 
 * identifier 1..1 MS
@@ -17,7 +21,10 @@ Description: "Appointment Atender LE"
 * created 0..1 MS //agendar
 * start 0..1 MS // atender
 
-* appointmentType 1..1 MS
+
+
+
+* appointmentType 0..1 MS
   * coding 1..1 MS
     * system 1..1 MS
     * code 1..1 MS
@@ -25,4 +32,5 @@ Description: "Appointment Atender LE"
   * text 0..1 MS
 
 
-  // agendar y atender
+* participant MS
+* participant.actor only Reference(PractitionerRoleLE)

@@ -70,7 +70,7 @@ Description: "Ejemplo de MesaggeHeader Evento de Agendar"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 
-* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#terminar
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#agendar
 
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)

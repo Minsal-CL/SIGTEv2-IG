@@ -155,6 +155,34 @@ Description: "Ejemplo de Service Request Evento Revisar"
 * extension[PertinenciaInterconsulta].valueCodeableConcept.coding.code = #1
 /*EJEMPLO PARA BUNDLE REVISAR*/
 
+/*EJEMPLO PARA BUNDLE Agendar*/
+Instance: EjemploServiceRequestAgendar
+InstanceOf: ServiceRequestLE
+Usage: #example
+Title: "Ejemplo de Service Request Evento Agendar"
+Description: "Ejemplo de Service Request Evento Agendar"
+
+* identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.type.coding.code = #IdInterconsulta
+* identifier.value = "1"
+* authoredOn = "2022-01-20T13:50:20Z"
+* status = #draft
+* priority = #urgent
+* intent = #proposal
+* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+
+/*
+* doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
+* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
+* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text = "Texto libre"
+* priority = #routine
+* extension[RequiereExamen].valueBoolean = true
+* category.coding.code = #1
+* extension[PertinenciaInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta"
+* extension[PertinenciaInterconsulta].valueCodeableConcept.coding.code = #1
+*/
+/*EJEMPLO PARA BUNDLE Agendar*/
+
 
 /*EJEMPLO PARA BUNDLE Atender*/
 Instance: EjemploServiceRequestAtender

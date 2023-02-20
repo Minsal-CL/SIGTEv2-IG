@@ -15,3 +15,4 @@
 - (Eliminación) Se elimina extension apellido materno de Patient.name.family.
 - (Nuevo) Se agrega extension para segundo apellido Patient.name.family. 
 - (Nuevo) Se agrega Bundle para evento Terminar
+- AppointmentAtenderLE renombrado a AppointmentLE

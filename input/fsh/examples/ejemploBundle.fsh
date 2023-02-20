@@ -139,7 +139,7 @@ Description: "Ejemplo de Bundle Evento de Revisar"
 
 /*Budle Agendar*/
 Instance: EjemploBundleAgendar
-InstanceOf: BundleRevisarLE
+InstanceOf: BundleAgendarLE
 Usage: #example
 Title: "Ejemplo de Bundle Evento de Agendar"
 Description: "Ejemplo de Bundle Evento de Agendar"
@@ -149,19 +149,27 @@ Description: "Ejemplo de Bundle Evento de Agendar"
 * timestamp = "2023-02-09T17:15:22Z"
 
 * entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"
-* entry[messageheader].resource = EjemploMessageHeaderTerminar
+* entry[messageheader].resource = EjemploMessageHeaderAgendar
 
-* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
-* entry[servicerequest].resource = EjemploServiceRequestRevisar
+* entry[appointment].fullUrl = "http://acme.com/ehr/fhir/Appointment/apo1"
+* entry[appointment].resource = EjemploAppointmentAgendar
 
-* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
-* entry[organization].resource = EjemploOrganizationRevisar
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/prarole1"
+* entry[practitionerRole].resource = EjemploPractitionerRoleAgendar
 
 * entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/pra1"
-* entry[practitioner].resource = EjemploPractitionerRevisar
+* entry[practitioner].resource = EjemploPractitionerAgendar
 
-* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
-* entry[practitionerRole].resource = EjemploPractitionerRoleRevisar
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
+* entry[servicerequest].resource = EjemploServiceRequestAgendar
+
+* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
+* entry[organization].resource = EjemploOrganizationAgendar
+
+
+
+//* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"
+//* entry[practitionerRole].resource = EjemploPractitionerRoleAgendar
 
 /*FIN BUNDLE Agendar*/
 

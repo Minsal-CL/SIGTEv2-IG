@@ -23,14 +23,15 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 Los recursos usados en este evento son los siguientes:
 
-* [Appointment](link): Recurso principal para reflejar los datos de la interconsulta
-* [MessageHeader](link): lorem
-* [ServiceRequest](link): lorem
-* [PractitionerRole](link): asociado al agendador
-* [Practitioner](link): asociado al agendador
-* [Location](link): asociado al agendador
-* [PractitionerRole](link): asociado al médico asignado
-* [Practitioner](link): asociado al médico asignado
+* [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
+* [MessageHeaderLE](StructureDefinition-Appointment.html): Recurso que contiene datos relacionados a la agenda
+* [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso
+* [PractitionerLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al profesional de la salud que realiza la atencion
+* [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
+* [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de destino
+* [BundleAgendarLE](StructureDefinition-BundleAgendarLE.html): Recurso que permite agrupar los datos del mensaje.
+
+
 ## Relaciones de Recursos
 
 <br>
@@ -50,6 +51,9 @@ Diagrama de Secuencia por definir
 
 Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
 
+## Mensaje Bundle de Ejemplo
+
+* [BundleAgendarLE](Bundle-EjemploBundleAgendar.html)
 ## Notas
 
 * Notas Adicionales

@@ -94,6 +94,7 @@ Description: "Motivo No Pertinencia Codigo"
   * code from VSPertinenciaInterconsulta
   * system 0..1 MS
   * display 0..1 MS
+
 Extension:   EstadoInterconsultaCodigoLE
 Id:          EstadoInterconsultaCodigoLE
 Title:       "Estado Interconsulta Codigo"
@@ -135,6 +136,7 @@ Description: "TipoOtroTelefono"
   * system 0..1 MS
   * display 0..1 MS
 
+
 Extension:   IdentidadGenero
 Id:          IdentidadGenero
 Title:       "Identidad de genero"
@@ -170,6 +172,28 @@ Description: "Etnia a la cual pertenece"
 
 * extension[PuebloIndigenaPertenencia].value[x] only boolean
 
+
+Extension: ContactadoLE
+Id: ContactadoLE
+Title: "Contacto del paciente"
+Description: "Contacto del paciente"
+* extension contains
+	Contactado 1..* MS and
+	MotivoNoContactabilidad 1..1 MS
+* url MS
+
+* extension[MotivoNoContactabilidad].value[x] only CodeableConcept
+* extension[MotivoNoContactabilidad].url 1..1 MS
+* extension[MotivoNoContactabilidad].valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSMotivoNoContactabilidad
+  * system 0..1 MS
+  * display 0..1 MS
+* extension[MotivoNoContactabilidad].valueCodeableConcept.text MS
+
+
+* extension[Contactado].value[x] only boolean
+
 Extension: Contactado
 Id: Contactado
 Title: "Contactado"
@@ -200,6 +224,13 @@ Id: ExtBool
 Title:       "ExtBool"
 Description: "ExtBool"
 * value[x] only boolean
+
+Extension: ExtBoolMedioNotificacion
+Id: ExtBoolMedioNotificacion
+Title:       "ExtBool Medio Notificacion "
+Description: "ExtBool Medio Notificacion "
+* value[x] only boolean
+
 
 Extension: ExtBoolSolicitudExamenes
 Id: ExtBoolSolicitudExamenes

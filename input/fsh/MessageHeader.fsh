@@ -15,8 +15,8 @@ Description: "MessageHeaderLE"
 //* focus only Reference(ServiceRequestLE)
 * author 1..1 MS
 * focus 1..1 MS
-* eventCoding 1..1
-* eventCoding.code 1..1
+* eventCoding 1..1 MS
+//* eventCoding.code 1..1
 
 * author only Reference(PractitionerRoleLE)
 * focus only Reference(ServiceRequestLE or AppointmentInicioLE)

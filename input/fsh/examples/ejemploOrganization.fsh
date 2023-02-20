@@ -41,6 +41,19 @@ Description: "Ejemplo de Organization Evento de Revisar"
 
 /*FIN PARA BUNDLE REVISAR*/
 
+/*EJEMPLOS PARA BUNDLE Agendar*/
+Instance: EjemploOrganizationAgendar
+InstanceOf: OrganizationLE
+Usage: #example
+Title: "Ejemplo de Organization Evento de Agendar"
+Description: "Ejemplo de Organization Evento de Agendar"
+
+//* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
+* identifier.value = "1"
+
+/*FIN PARA BUNDLE REVISAR*/
+
+
 /*EJEMPLOS PARA BUNDLE Atender*/
 Instance: EjemploOrganizationAtender
 InstanceOf: OrganizationLE
