@@ -12,13 +12,10 @@
   <sch:pattern>
     <sch:title>f:Appointment</sch:title>
     <sch:rule context="f:Appointment">
-      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion': maximum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/Contactado']) &gt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/Contactado': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/Contactado']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/Contactado': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/ExtBoolMedioNotificacion']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/ExtBoolMedioNotificacion': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/ContactadoLE']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/ContactadoLE': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
-      <sch:assert test="count(f:basedOn) &gt;= 1">basedOn: minimum cardinality of 'basedOn' is 1</sch:assert>
-      <sch:assert test="count(f:basedOn) &lt;= 1">basedOn: maximum cardinality of 'basedOn' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -156,8 +153,86 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Appointment/f:appointmentType</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:coding) &gt;= 1">coding: minimum cardinality of 'coding' is 1</sch:assert>
+      <sch:assert test="count(f:coding) &lt;= 1">coding: maximum cardinality of 'coding' is 1</sch:assert>
+      <sch:assert test="count(f:text) &lt;= 1">text: maximum cardinality of 'text' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Appointment.appointmentType</sch:title>
     <sch:rule context="f:Appointment/f:appointmentType">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Appointment.appointmentType.extension</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Appointment/f:appointmentType/f:coding</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:coding">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:system) &lt;= 1">system: maximum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:version) &lt;= 1">version: maximum cardinality of 'version' is 1</sch:assert>
+      <sch:assert test="count(f:code) &gt;= 1">code: minimum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:code) &lt;= 1">code: maximum cardinality of 'code' is 1</sch:assert>
+      <sch:assert test="count(f:display) &lt;= 1">display: maximum cardinality of 'display' is 1</sch:assert>
+      <sch:assert test="count(f:userSelected) &lt;= 1">userSelected: maximum cardinality of 'userSelected' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Appointment.appointmentType.coding</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:coding">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Appointment.appointmentType.coding.extension</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:coding/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Appointment.appointmentType.coding.system</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:coding/f:system">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Appointment.appointmentType.coding.version</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:coding/f:version">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Appointment.appointmentType.coding.code</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:coding/f:code">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Appointment.appointmentType.coding.display</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:coding/f:display">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Appointment.appointmentType.coding.userSelected</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:coding/f:userSelected">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Appointment.appointmentType.text</sch:title>
+    <sch:rule context="f:Appointment/f:appointmentType/f:text">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

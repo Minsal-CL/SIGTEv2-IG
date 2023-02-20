@@ -227,17 +227,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Los recursos usados en este evento son los siguientes:</p>
 
 <ul>
-  <li><a name="l400">​</a><a href="link">Appointment</a>: Recurso principal para reflejar los datos de la interconsulta</li>
-  <li><a name="l405">​</a><a href="link">MessageHeader</a>: lorem</li>
-  <li><a name="l410">​</a><a href="link">ServiceRequest</a>: lorem</li>
-  <li><a name="l415">​</a><a href="link">PractitionerRole</a>: asociado al agendador</li>
-  <li><a name="l420">​</a><a href="link">Practitioner</a>: asociado al agendador</li>
-  <li><a name="l425">​</a><a href="link">Location</a>: asociado al agendador</li>
-  <li><a name="l430">​</a><a href="link">PractitionerRole</a>: asociado al médico asignado</li>
-  <li><a name="l435">​</a><a href="link">Practitioner</a>: asociado al médico asignado
-    <h2 id="relaciones-de-recursos">Relaciones de Recursos</h2>
-  </li>
+  <li><a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a>: Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.</li>
+  <li><a name="l405">​</a><a href="StructureDefinition-Appointment.html">MessageHeaderLE</a>: Recurso que contiene datos relacionados a la agenda</li>
+  <li><a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a>: Recurso que permite reflejar la información relacionada al invididuo autor del proceso</li>
+  <li><a href="StructureDefinition-PractitionerRoleLE.html">PractitionerLE</a>: Recurso que permite reflejar la información relacionada al profesional de la salud que realiza la atencion</li>
+  <li><a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a>: Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)</li>
+  <li><a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a>: Recurso que permite relacionar la interconsulta con el establecimiento de destino</li>
+  <li><a href="StructureDefinition-BundleAgendarLE.html">BundleAgendarLE</a>: Recurso que permite agrupar los datos del mensaje.</li>
 </ul>
+
+<h2 id="relaciones-de-recursos">Relaciones de Recursos</h2>
 
 <p><br/></p>
 <div align="center">
@@ -256,9 +255,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en <a href="http://link">Conjunto mínimo de datos</a></p>
 
-<h2 id="notas">Notas</h2>
+<h2 id="mensaje-bundle-de-ejemplo">Mensaje Bundle de Ejemplo</h2>
 
 <ul>
+  <li><a href="Bundle-EjemploBundleAgendar.html">BundleAgendarLE</a>
+    <h2 id="notas">Notas</h2>
+  </li>
   <li>Notas Adicionales</li>
 </ul>
 
@@ -287,7 +289,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 17, 2023 19:45+0000">2023-02-17</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 20, 2023 03:17+0000">2023-02-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
