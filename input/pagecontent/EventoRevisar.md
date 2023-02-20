@@ -5,7 +5,7 @@ El evento REVISAR tiene asociado los siguientes códigos de evento:
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| revisar | Revisar | Este evento registra la información asociada a la revisión de pertinencia del Gestor de casos del nivel secundario. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido revisada |
+| revisar | Revisar | Este evento registra la información asociada a la revisión de pertinencia del Gestor de casos del nivel secundario. | La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido revisada |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
