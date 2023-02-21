@@ -8,7 +8,7 @@
   "type" : "message",
   "timestamp" : "2023-02-09T17:15:22Z",
   "entry" : [{
-    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/mh1",
+    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/agendar",
     "resource" : {
       "resourceType" : "MessageHeader",
       "id" : "EjemploMessageHeaderAgendar",
@@ -18,26 +18,26 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderAgendar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Agendar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code agendar = 'Agendar', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/praR1\">http://acme.com/ehr/fhir/PractitionerRole/praR1</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/Appointment/serv1\">http://acme.com/ehr/fhir/Appointment/serv1</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderAgendar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Agendar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code agendar = 'Agendar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleAgendarMH\">See above (http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#Appointment_EjemploAppointmentAgendar\">See above (http://acme.com/ehr/fhir/Appointment/agendar)</a></p></div>"
       },
       "eventCoding" : {
         "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE",
         "code" : "agendar"
       },
       "author" : {
-        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/praR1"
+        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador"
       },
       "source" : {
         "software" : "SolucionInformatica",
         "endpoint" : "http://link-to-sending.cl"
       },
       "focus" : [{
-        "reference" : "http://acme.com/ehr/fhir/Appointment/serv1"
+        "reference" : "http://acme.com/ehr/fhir/Appointment/agendar"
       }]
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/Appointment/apo1",
+    "fullUrl" : "http://acme.com/ehr/fhir/Appointment/agendar",
     "resource" : {
       "resourceType" : "Appointment",
       "id" : "EjemploAppointmentAgendar",
@@ -46,7 +46,7 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentLE.html\">AppointmentLE</a></p></div><blockquote><p><b>Contactado</b></p><p><b>value</b>: Otro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>created</b>: 2023-01-22 09:00:00+0000</p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/serv1\">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"http://acme.com/ehr/fhir/PractitionerRoleLE/pra1\">http://acme.com/ehr/fhir/PractitionerRoleLE/pra1</a></td><td>accepted</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentLE.html\">AppointmentLE</a></p></div><blockquote><p><b>Contactado</b></p><p><b>value</b>: Otro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>created</b>: 2023-01-22 09:00:00+0000</p><p><b>basedOn</b>: <a href=\"#ServiceRequest_EjemploServiceRequestAgendar\">See above (http://acme.com/ehr/fhir/ServiceRequest/agendar)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor\">http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor</a></td><td>accepted</td></tr></table></div>"
       },
       "extension" : [{
         "extension" : [{
@@ -70,18 +70,48 @@
       "status" : "booked",
       "created" : "2023-01-22T09:00:00Z",
       "basedOn" : [{
-        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/serv1"
+        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/agendar"
       }],
       "participant" : [{
         "actor" : {
-          "reference" : "http://acme.com/ehr/fhir/PractitionerRoleLE/pra1"
+          "reference" : "http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor"
         },
         "status" : "accepted"
       }]
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/prarole1",
+    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/agendar",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "EjemploServiceRequestAgendar",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1\">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "IdInterconsulta",
+            "code" : "IdInterconsulta"
+          }]
+        },
+        "value" : "1"
+      }],
+      "status" : "draft",
+      "intent" : "proposal",
+      "priority" : "urgent",
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/pat1"
+      },
+      "authoredOn" : "2022-01-20T13:50:20Z"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador",
     "resource" : {
       "resourceType" : "PractitionerRole",
       "id" : "EjemploPractitionerRoleAgendarMH",
@@ -90,13 +120,13 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendarMH\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendarMH&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerAgendar\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendar\">See above (http://acme.com/ehr/fhir/Organization/org1)</a></p><p><b>code</b>: agendador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#agendador)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendarMH\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendarMH&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador\">http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendar\">See above (http://acme.com/ehr/fhir/Organization/agendar)</a></p><p><b>code</b>: agendador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#agendador)</span></p></div>"
       },
       "practitioner" : {
-        "reference" : "http://acme.com/ehr/fhir/Practitioner/pra1"
+        "reference" : "http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador"
       },
       "organization" : {
-        "reference" : "http://acme.com/ehr/fhir/Organization/org1"
+        "reference" : "http://acme.com/ehr/fhir/Organization/agendar"
       },
       "code" : [{
         "coding" : [{
@@ -106,7 +136,7 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/prarole1",
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/agendarAtendedor",
     "resource" : {
       "resourceType" : "PractitionerRole",
       "id" : "EjemploPractitionerRoleAgendarAPPO",
@@ -115,13 +145,10 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendarAPPO\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendarAPPO&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerAgendar\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendar\">See above (http://acme.com/ehr/fhir/Organization/org1)</a></p><p><b>code</b>: atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#atendedor)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendarAPPO\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendarAPPO&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerAgendarAtendedor\">See above (http://acme.com/ehr/fhir/Practitioner/agendarAtendedor)</a></p><p><b>code</b>: atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#atendedor)</span></p></div>"
       },
       "practitioner" : {
-        "reference" : "http://acme.com/ehr/fhir/Practitioner/pra1"
-      },
-      "organization" : {
-        "reference" : "http://acme.com/ehr/fhir/Organization/org1"
+        "reference" : "http://acme.com/ehr/fhir/Practitioner/agendarAtendedor"
       },
       "code" : [{
         "coding" : [{
@@ -131,16 +158,16 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/pra1",
+    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/agendarAtendedor",
     "resource" : {
       "resourceType" : "Practitioner",
-      "id" : "EjemploPractitionerAgendar",
+      "id" : "EjemploPractitionerAgendarAtendedor",
       "meta" : {
         "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Medico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (terminology.cens.cl#01)</span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAgendarAtendedor\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAgendarAtendedor&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Medico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (terminology.cens.cl#01)</span></td></tr></table></div>"
       },
       "identifier" : [{
         "use" : "official",
@@ -177,37 +204,53 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/ser1",
+    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/agendarAgendador",
     "resource" : {
-      "resourceType" : "ServiceRequest",
-      "id" : "EjemploServiceRequestAgendar",
+      "resourceType" : "Practitioner",
+      "id" : "EjemploPractitionerAgendarAgendador",
       "meta" : {
-        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"]
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1\">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAgendarAgendador\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAgendarAgendador&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Medico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (terminology.cens.cl#01)</span></td></tr></table></div>"
       },
       "identifier" : [{
+        "use" : "official",
         "type" : {
           "coding" : [{
-            "system" : "IdInterconsulta",
-            "code" : "IdInterconsulta"
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "RUN"
           }]
         },
-        "value" : "1"
-      }],
-      "status" : "draft",
-      "intent" : "proposal",
-      "priority" : "urgent",
-      "subject" : {
-        "reference" : "http://acme.com/ehr/fhir/Patient/pat1"
+        "value" : "2134"
       },
-      "authoredOn" : "2022-01-20T13:50:20Z"
+      {
+        "use" : "secondary",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "ValorRNPI"
+          }]
+        },
+        "value" : "2134"
+      }],
+      "qualification" : [{
+        "identifier" : [{
+          "value" : "cert"
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl",
+            "code" : "01",
+            "display" : "Medico"
+          }]
+        }
+      }]
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/Organization/org1",
+    "fullUrl" : "http://acme.com/ehr/fhir/Organization/agendar",
     "resource" : {
       "resourceType" : "Organization",
       "id" : "EjemploOrganizationAgendar",

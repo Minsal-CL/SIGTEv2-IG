@@ -8,7 +8,7 @@
   "type" : "message",
   "timestamp" : "2023-02-09T17:15:22Z",
   "entry" : [{
-    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/mhref",
+    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/referencia",
     "resource" : {
       "resourceType" : "MessageHeader",
       "id" : "EjemploMessageHeaderReferencia",
@@ -18,26 +18,26 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderReferencia\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderReferencia&quot; Updated &quot;2023-02-13 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Referenciada (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code referenciada = 'Referenciada', stated as 'null')</p><p><b>author</b>: <a href=\"#Organization_EjemploOrganizationReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/orgMHREF)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/serv1\">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderReferencia\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderReferencia&quot; Updated &quot;2023-02-13 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Referenciada (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code referenciada = 'Referenciada', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/Organization/referencia\">http://acme.com/ehr/fhir/Organization/referencia</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestReferencia\">See above (http://acme.com/ehr/fhir/ServiceRequest/referencia)</a></p></div>"
       },
       "eventCoding" : {
         "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE",
         "code" : "referenciada"
       },
       "author" : {
-        "reference" : "http://acme.com/ehr/fhir/Organization/orgMHREF"
+        "reference" : "http://acme.com/ehr/fhir/Organization/referencia"
       },
       "source" : {
         "software" : "SolucionInformatica",
         "endpoint" : "http://link-to-sending.cl"
       },
       "focus" : [{
-        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/serv1"
+        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/referencia"
       }]
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/serref",
+    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/referencia",
     "resource" : {
       "resourceType" : "ServiceRequest",
       "id" : "EjemploServiceRequestReferencia",
@@ -46,7 +46,7 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestReferencia\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestReferencia&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Especialidad Médica Destino Código</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1\">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>performer</b>: <a href=\"http://acme.com/ehr/fhir/Organization/org2\">http://acme.com/ehr/fhir/Organization/org2</a></p><p><b>locationCode</b>: Motivo derivación <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSDestinoReferenciaCodigo.html\">Destino Referencia Codigo</a>#1)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestReferencia\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestReferencia&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Especialidad Médica Destino Código</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1\">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>performer</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleAgendadorSRREFERENCIADA\">See above (http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor)</a></p><p><b>locationCode</b>: Motivo derivación <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSDestinoReferenciaCodigo.html\">Destino Referencia Codigo</a>#1)</span></p></div>"
       },
       "extension" : [{
         "url" : "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo",
@@ -79,7 +79,7 @@
         "reference" : "http://acme.com/ehr/fhir/Patient/pat1"
       },
       "performer" : [{
-        "reference" : "http://acme.com/ehr/fhir/Organization/org2"
+        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor"
       }],
       "locationCode" : [{
         "coding" : [{
@@ -91,7 +91,7 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR2",
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor",
     "resource" : {
       "resourceType" : "PractitionerRole",
       "id" : "EjemploPractitionerRoleAgendadorSRREFERENCIADA",
@@ -100,13 +100,10 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendadorSRREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendadorSRREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href=\"Bundle-EjemploBundleRevisar.html#http-//acme.com/ehr/fhir/Organization/org1\">http://acme.com/ehr/fhir/Organization/org1</a></p><p><b>code</b>: agendador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#agendador)</span></p></div>"
-      },
-      "practitioner" : {
-        "reference" : "http://acme.com/ehr/fhir/Practitioner/pra1"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendadorSRREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendadorSRREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendadorSRREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/referenciaAtendedor)</a></p><p><b>code</b>: agendador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#agendador)</span></p></div>"
       },
       "organization" : {
-        "reference" : "http://acme.com/ehr/fhir/Organization/org1"
+        "reference" : "http://acme.com/ehr/fhir/Organization/referenciaAtendedor"
       },
       "code" : [{
         "coding" : [{
@@ -116,7 +113,7 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR3",
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador",
     "resource" : {
       "resourceType" : "PractitionerRole",
       "id" : "EjemploPractitionerRoleReferenciadorMHREFERENCIADA",
@@ -125,13 +122,13 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href=\"Bundle-EjemploBundleRevisar.html#http-//acme.com/ehr/fhir/Organization/org1\">http://acme.com/ehr/fhir/Organization/org1</a></p><p><b>code</b>: referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#referenciador)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Practitioner/referencia)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/referenciaAgendador)</a></p><p><b>code</b>: referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#referenciador)</span></p></div>"
       },
       "practitioner" : {
-        "reference" : "http://acme.com/ehr/fhir/Practitioner/pra1"
+        "reference" : "http://acme.com/ehr/fhir/Practitioner/referencia"
       },
       "organization" : {
-        "reference" : "http://acme.com/ehr/fhir/Organization/org1"
+        "reference" : "http://acme.com/ehr/fhir/Organization/referenciaAgendador"
       },
       "code" : [{
         "coding" : [{
@@ -141,7 +138,7 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/pra1",
+    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/referencia",
     "resource" : {
       "resourceType" : "Practitioner",
       "id" : "EjemploPractitionerReferenciadorMHREFERENCIADA",
@@ -187,7 +184,7 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/Organization/orgMHREF",
+    "fullUrl" : "http://acme.com/ehr/fhir/Organization/referenciaAgendador",
     "resource" : {
       "resourceType" : "Organization",
       "id" : "EjemploOrganizationReferenciadorMHREFERENCIADA",
@@ -210,7 +207,7 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/Organization/orgSEREF",
+    "fullUrl" : "http://acme.com/ehr/fhir/Organization/referenciaAtendedor",
     "resource" : {
       "resourceType" : "Organization",
       "id" : "EjemploOrganizationAgendadorSRREFERENCIADA",

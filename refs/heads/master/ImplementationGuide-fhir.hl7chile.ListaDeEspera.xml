@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-02-21T14:23:26+00:00"/>
+  <date value="2023-02-21T19:28:17+00:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -1878,17 +1878,6 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/EjemploOrganizationReferencia2"/>
-      </reference>
-      <name value="Ejemplo de Organization Evento de Referencia y Terminar"/>
-      <description value="Ejemplo de Organization Evento de Referencia y Terminar"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
         <reference value="Organization/EjemploOrganizationReferenciadorMHREFERENCIADA"/>
       </reference>
       <name value="Ejemplo de Organization Evento de referenciador"/>
@@ -1904,6 +1893,17 @@
       </reference>
       <name value="Ejemplo de Organization Evento de Revisar"/>
       <description value="Ejemplo de Organization Evento de Revisar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/EjemploOrganizationTerminar"/>
+      </reference>
+      <name value="Ejemplo de Organization Evento de Referencia y Terminar"/>
+      <description value="Ejemplo de Organization Evento de Referencia y Terminar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1933,7 +1933,18 @@
         <valueString value="Practitioner"/>
       </extension>
       <reference>
-        <reference value="Practitioner/EjemploPractitionerAgendar"/>
+        <reference value="Practitioner/EjemploPractitionerAgendarAgendador"/>
+      </reference>
+      <name value="Ejemplo de Practitioner Evento de Agendar"/>
+      <description value="Ejemplo de Practitioner Evento de Agendar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/EjemploPractitionerAgendarAtendedor"/>
       </reference>
       <name value="Ejemplo de Practitioner Evento de Agendar"/>
       <description value="Ejemplo de Practitioner Evento de Agendar"/>
@@ -2056,8 +2067,8 @@
       <reference>
         <reference value="Practitioner/EjemploPractitionerTerminar"/>
       </reference>
-      <name value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
-      <description value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
+      <name value="Ejemplo de Practitioner Evento Terminar"/>
+      <description value="Ejemplo de Practitioner Evento Terminar"/>
       <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
     </resource>
     <resource>

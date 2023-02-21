@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-21T14:23:26+00:00",
+  "date" : "2023-02-21T19:28:17+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -2157,18 +2157,6 @@
         "valueString" : "Organization"
       }],
       "reference" : {
-        "reference" : "Organization/EjemploOrganizationReferencia2"
-      },
-      "name" : "Ejemplo de Organization Evento de Referencia y Terminar",
-      "description" : "Ejemplo de Organization Evento de Referencia y Terminar",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
         "reference" : "Organization/EjemploOrganizationReferenciadorMHREFERENCIADA"
       },
       "name" : "Ejemplo de Organization Evento de referenciador",
@@ -2185,6 +2173,18 @@
       },
       "name" : "Ejemplo de Organization Evento de Revisar",
       "description" : "Ejemplo de Organization Evento de Revisar",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/EjemploOrganizationTerminar"
+      },
+      "name" : "Ejemplo de Organization Evento de Referencia y Terminar",
+      "description" : "Ejemplo de Organization Evento de Referencia y Terminar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
     },
     {
@@ -2217,7 +2217,19 @@
         "valueString" : "Practitioner"
       }],
       "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerAgendar"
+        "reference" : "Practitioner/EjemploPractitionerAgendarAgendador"
+      },
+      "name" : "Ejemplo de Practitioner Evento de Agendar",
+      "description" : "Ejemplo de Practitioner Evento de Agendar",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/EjemploPractitionerAgendarAtendedor"
       },
       "name" : "Ejemplo de Practitioner Evento de Agendar",
       "description" : "Ejemplo de Practitioner Evento de Agendar",
@@ -2351,8 +2363,8 @@
       "reference" : {
         "reference" : "Practitioner/EjemploPractitionerTerminar"
       },
-      "name" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
-      "description" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
+      "name" : "Ejemplo de Practitioner Evento Terminar",
+      "description" : "Ejemplo de Practitioner Evento Terminar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
     },
     {
