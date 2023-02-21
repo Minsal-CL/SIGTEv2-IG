@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-02-20T22:25:44+00:00"/>
+  <date value="2023-02-21T14:23:26+00:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -1834,7 +1834,7 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/EjemploOrganizationAgendador"/>
+        <reference value="Organization/EjemploOrganizationAgendadorSRREFERENCIADA"/>
       </reference>
       <name value="Ejemplo de Organization Evento de Agendador"/>
       <description value="Ejemplo de Organization Evento de Agendador"/>
@@ -1889,7 +1889,7 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/EjemploOrganizationReferenciador"/>
+        <reference value="Organization/EjemploOrganizationReferenciadorMHREFERENCIADA"/>
       </reference>
       <name value="Ejemplo de Organization Evento de referenciador"/>
       <description value="Ejemplo de Organization Evento de Referenciador"/>
@@ -1955,7 +1955,7 @@
         <valueString value="Practitioner"/>
       </extension>
       <reference>
-        <reference value="Practitioner/EjemploPractitionerReferencia"/>
+        <reference value="Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA"/>
       </reference>
       <name value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
       <description value="Ejemplo de Practitioner Evento de Referencia y Terminar"/>
@@ -1988,7 +1988,7 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/EjemploPractitionerRoleAgendador"/>
+        <reference value="PractitionerRole/EjemploPractitionerRoleAgendadorSRREFERENCIADA"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Referencia"/>
       <description value="Ejemplo de PractitionerRole Evento de Referencia"/>
@@ -1999,7 +1999,7 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/EjemploPractitionerRoleAgendar"/>
+        <reference value="PractitionerRole/EjemploPractitionerRoleAgendarAPPO"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Agendar"/>
       <description value="Ejemplo de PractitionerRole Evento de Agendar"/>
@@ -2010,7 +2010,18 @@
         <valueString value="PractitionerRole"/>
       </extension>
       <reference>
-        <reference value="PractitionerRole/EjemploPractitionerRoleReferenciador"/>
+        <reference value="PractitionerRole/EjemploPractitionerRoleAgendarMH"/>
+      </reference>
+      <name value="Ejemplo de PractitionerRole Evento de Agendar"/>
+      <description value="Ejemplo de PractitionerRole Evento de Agendar"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA"/>
       </reference>
       <name value="Ejemplo de PractitionerRole Evento de Referencia"/>
       <description value="Ejemplo de PractitionerRole Evento de Referencia"/>

@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-20T22:25:44+00:00",
+  "date" : "2023-02-21T14:23:26+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -2109,7 +2109,7 @@
         "valueString" : "Organization"
       }],
       "reference" : {
-        "reference" : "Organization/EjemploOrganizationAgendador"
+        "reference" : "Organization/EjemploOrganizationAgendadorSRREFERENCIADA"
       },
       "name" : "Ejemplo de Organization Evento de Agendador",
       "description" : "Ejemplo de Organization Evento de Agendador",
@@ -2169,7 +2169,7 @@
         "valueString" : "Organization"
       }],
       "reference" : {
-        "reference" : "Organization/EjemploOrganizationReferenciador"
+        "reference" : "Organization/EjemploOrganizationReferenciadorMHREFERENCIADA"
       },
       "name" : "Ejemplo de Organization Evento de referenciador",
       "description" : "Ejemplo de Organization Evento de Referenciador",
@@ -2241,7 +2241,7 @@
         "valueString" : "Practitioner"
       }],
       "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerReferencia"
+        "reference" : "Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA"
       },
       "name" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
       "description" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
@@ -2277,7 +2277,7 @@
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleAgendador"
+        "reference" : "PractitionerRole/EjemploPractitionerRoleAgendadorSRREFERENCIADA"
       },
       "name" : "Ejemplo de PractitionerRole Evento de Referencia",
       "description" : "Ejemplo de PractitionerRole Evento de Referencia",
@@ -2289,7 +2289,7 @@
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleAgendar"
+        "reference" : "PractitionerRole/EjemploPractitionerRoleAgendarAPPO"
       },
       "name" : "Ejemplo de PractitionerRole Evento de Agendar",
       "description" : "Ejemplo de PractitionerRole Evento de Agendar",
@@ -2301,7 +2301,19 @@
         "valueString" : "PractitionerRole"
       }],
       "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleReferenciador"
+        "reference" : "PractitionerRole/EjemploPractitionerRoleAgendarMH"
+      },
+      "name" : "Ejemplo de PractitionerRole Evento de Agendar",
+      "description" : "Ejemplo de PractitionerRole Evento de Agendar",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA"
       },
       "name" : "Ejemplo de PractitionerRole Evento de Referencia",
       "description" : "Ejemplo de PractitionerRole Evento de Referencia",

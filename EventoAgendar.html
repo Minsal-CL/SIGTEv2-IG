@@ -252,7 +252,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>El evento <strong>agendar</strong> debe soportar a siguiente secuencia:</p>
 
-<p>Diagrama de Secuencia por definir</p>
+<div align="center">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="144px" preserveAspectRatio="none" style="width:283px;height:144px;background:#FFFFFF;" version="1.1" viewBox="0 0 283 144" width="283px" zoomAndPan="magnify"><defs><filter height="300%" id="fyzrnkemvmmtn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><text fill="#000000" font-family="Roboto Condensed" font-size="18" lengthAdjust="spacing" textLength="258" x="9" y="28.708">Transacción: Evento Agendar</text><line style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="72.75" x2="72.75" y1="75.25" y2="137.3828" /><rect fill="#FFFFFF" filter="url(#fyzrnkemvmmtn)" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:1.5;" width="69" x="36.75" y="39.9531" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="55" x="43.75" y="59.9482">Hospital</text><line style="stroke:#107050;stroke-width:1.0;" x1="73.25" x2="115.25" y1="106.3828" y2="106.3828" /><line style="stroke:#107050;stroke-width:1.0;" x1="115.25" x2="115.25" y1="106.3828" y2="119.3828" /><line style="stroke:#107050;stroke-width:1.0;" x1="74.25" x2="115.25" y1="119.3828" y2="119.3828" /><polygon fill="#107050" points="84.25,115.3828,74.25,119.3828,84.25,123.3828,80.25,119.3828" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="80.25" y="101.3169">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="116" x="121.25" y="101.3169">Agendar de la cita</text></g></svg>
+</div>
 
 <h2 id="consideraciones">Consideraciones</h2>
 
@@ -261,7 +263,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El Bundle de envío debe cumplir con las siguientes condiciones en este evento:</p>
 
 <ul>
-  <li>Debe incluir el recurso <a href="StructureDefinition-BundleInicioLE.html">BundleInicioLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-BundleAgendarLE.html">BundleAgendarLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a> con los valores de <strong>ServiceRequest.status=draft</strong> <strong>ServiceRequest.intent=proposal</strong></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a> con el valor <strong>MessageHeader.evenCoding.code=inicio</strong></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-PatientLE.html">PatientLE</a></li>
@@ -318,7 +320,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 20, 2023 22:25+0000">2023-02-20</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Feb 21, 2023 14:23+0000">2023-02-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

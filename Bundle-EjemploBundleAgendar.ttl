@@ -32,14 +32,18 @@
      fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/PractitionerRole/prarole1>
   ], [
      fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/PractitionerRole/prarole1" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/PractitionerRole/prarole1>
+  ], [
+     fhir:index 4;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Practitioner/pra1" ];
      fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Practitioner/pra1>
   ], [
-     fhir:index 4;
+     fhir:index 5;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/ser1" ];
      fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/ServiceRequest/ser1>
   ], [
-     fhir:index 5;
+     fhir:index 6;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Organization/org1" ];
      fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Organization/org1>
   ] . # 
@@ -56,7 +60,7 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderAgendar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Agendar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code agendar = 'Agendar', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/praR1\">http://acme.com/ehr/fhir/PractitionerRole/praR1</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/serv1\">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderAgendar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Agendar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code agendar = 'Agendar', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/praR1\">http://acme.com/ehr/fhir/PractitionerRole/praR1</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/Appointment/serv1\">http://acme.com/ehr/fhir/Appointment/serv1</a></p></div>"
   ]; # 
   fhir:MessageHeader.eventCoding [
      fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE" ];
@@ -72,8 +76,8 @@
   ]; # 
   fhir:MessageHeader.focus [
      fhir:index 0;
-     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/serv1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/serv1" ]
+     fhir:link <http://acme.com/ehr/fhir/Appointment/serv1>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Appointment/serv1" ]
   ] . # 
 
 <http://acme.com/ehr/fhir/Appointment/apo1> a fhir:Appointment;
@@ -128,9 +132,15 @@
      fhir:Appointment.participant.status [ fhir:value "accepted" ]
   ] . # 
 
-<http://acme.com/ehr/fhir/PractitionerRole/prarole1> a fhir:PractitionerRole;
-  fhir:Resource.id [ fhir:value "EjemploPractitionerRoleAgendar"]; # 
+<http://acme.com/ehr/fhir/PractitionerRole/prarole1> a fhir:PractitionerRole, fhir:PractitionerRole;
+  fhir:Resource.id [ fhir:value "EjemploPractitionerRoleAgendarMH"], [ fhir:value "EjemploPractitionerRoleAgendarAPPO"]; # 
   fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
+     ]
+  ], [
      fhir:Meta.profile [
        fhir:value "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE";
        fhir:index 0;
@@ -139,13 +149,22 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerAgendar\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendar\">See above (http://acme.com/ehr/fhir/Organization/org1)</a></p><p><b>code</b>: terminador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#terminador)</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendarMH\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendarMH&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerAgendar\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendar\">See above (http://acme.com/ehr/fhir/Organization/org1)</a></p><p><b>code</b>: agendador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#agendador)</span></p></div>"
+  ], [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendarAPPO\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendarAPPO&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerAgendar\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendar\">See above (http://acme.com/ehr/fhir/Organization/org1)</a></p><p><b>code</b>: atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#atendedor)</span></p></div>"
   ]; # 
   fhir:PractitionerRole.practitioner [
      fhir:link <http://acme.com/ehr/fhir/Practitioner/pra1>;
      fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Practitioner/pra1" ]
+  ], [
+     fhir:link <http://acme.com/ehr/fhir/Practitioner/pra1>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Practitioner/pra1" ]
   ]; # 
   fhir:PractitionerRole.organization [
+     fhir:link <http://acme.com/ehr/fhir/Organization/org1>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Organization/org1" ]
+  ], [
      fhir:link <http://acme.com/ehr/fhir/Organization/org1>;
      fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Organization/org1" ]
   ]; # 
@@ -153,7 +172,13 @@
      fhir:index 0;
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.code [ fhir:value "terminador" ]
+       fhir:Coding.code [ fhir:value "agendador" ]
+     ]
+  ], [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "atendedor" ]
      ]
   ] . # 
 
