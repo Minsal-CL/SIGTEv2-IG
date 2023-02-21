@@ -7,7 +7,7 @@ Description: "Ejemplo de Organization Evento de Inicio"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
 
-/*EJEMPLOS PARA BUNDLE REFERENCIA*/
+/*EJEMPLOS PARA BUNDLE REFERENCIADA*/
 Instance: EjemploOrganizationReferencia1
 InstanceOf: OrganizationLE
 Usage: #example
@@ -26,7 +26,7 @@ Description: "Ejemplo de Organization Evento de Referencia y Terminar"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "2"
 
-Instance: EjemploOrganizationReferenciador
+Instance: EjemploOrganizationReferenciadorMHREFERENCIADA
 InstanceOf: OrganizationLE
 Usage: #example
 Title: "Ejemplo de Organization Evento de referenciador"
@@ -35,7 +35,7 @@ Description: "Ejemplo de Organization Evento de Referenciador"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
 
-Instance: EjemploOrganizationAgendador
+Instance: EjemploOrganizationAgendadorSRREFERENCIADA
 InstanceOf: OrganizationLE
 Usage: #example
 Title: "Ejemplo de Organization Evento de Agendador"

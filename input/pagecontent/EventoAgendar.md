@@ -45,7 +45,9 @@ Los recursos usados en este evento son los siguientes:
 
 El evento **agendar** debe soportar a siguiente secuencia:
 
-Diagrama de Secuencia por definir
+<div align="center" >
+{% include evento-agendar.svg %}
+</div>
 
 ## Consideraciones
 
@@ -53,7 +55,7 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 
 El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 
-* Debe incluir el recurso [BundleInicioLE](StructureDefinition-BundleInicioLE.html)
+* Debe incluir el recurso [BundleAgendarLE](StructureDefinition-BundleAgendarLE.html)
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
 * Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=inicio** 
 * Debe incluir el recurso [PatientLE](StructureDefinition-PatientLE.html)

@@ -20,7 +20,7 @@ Description: "Ejemplo de Practitioner Evento de Inicio"
 
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
-Instance: EjemploPractitionerReferencia
+Instance: EjemploPractitionerReferenciadorMHREFERENCIADA
 InstanceOf: PractitionerLE
 Usage: #example
 Title: "Ejemplo de Practitioner Evento de Referencia y Terminar"
@@ -32,9 +32,6 @@ Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
 * identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
 * identifier[OtrosID].use = #secondary
 * identifier[OtrosID].value = "2134"
-
-//* gender = #male
-//* birthDate = "1974-01-22"
 * qualification.identifier.value = "cert"
 * qualification.code.coding.system = "http://terminology.cens.cl/CodeSystem/certMedicos"
 * qualification.code.coding.display = "Medico Cirujano"
