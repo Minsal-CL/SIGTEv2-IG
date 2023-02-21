@@ -54,11 +54,11 @@ Description: "Ejemplo de PractitionerRole Evento de Revisar"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
-* code = #terminador
+* code = #revisor
 /*FIN PARA BUNDLE Revisar*/
 
 /*EJEMPLOS PARA BUNDLE Agendar*/
-Instance: EjemploPractitionerRoleAgendar
+Instance: EjemploPractitionerRoleAgendarMH
 InstanceOf: PractitionerRoleLE
 Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Agendar"
@@ -66,5 +66,19 @@ Description: "Ejemplo de PractitionerRole Evento de Agendar"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
-* code = #terminador
+* code = #agendador
+
+Instance: EjemploPractitionerRoleAgendarAPPO
+InstanceOf: PractitionerRoleLE
+Usage: #example
+Title: "Ejemplo de PractitionerRole Evento de Agendar"
+Description: "Ejemplo de PractitionerRole Evento de Agendar"
+
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
+* code = #atendedor
+
+
+
+
 /*FIN PARA BUNDLE Agendar*/

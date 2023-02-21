@@ -80,6 +80,8 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
     * display 0..1 MS
     * system 0..1 MS
 * category from VSModalidadAtencionCodigo
+
+
 * code 0..1 MS
   * text 1..1 MS
 * code.text = "derivado a especialidad"

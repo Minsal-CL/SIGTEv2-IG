@@ -54,7 +54,7 @@ Description: "Ejemplo de MesaggeHeader Evento de Revisar"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 
-* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#terminar
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#revisar
 
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
@@ -72,7 +72,7 @@ Description: "Ejemplo de MesaggeHeader Evento de Agendar"
 
 * eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#agendar
 
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
+* focus = Reference(http://acme.com/ehr/fhir/Appointment/serv1)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
 /*FIN PARA BUNDLE Agendar*/
 

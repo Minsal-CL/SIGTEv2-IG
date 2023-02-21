@@ -15,11 +15,11 @@ Description: "Bundle Agendar LE recurso utilizado para transportar todos los dat
 * entry ^slicing.discriminator.type = #type
 * entry ^slicing.discriminator.path = "profile"
 * entry ^slicing.rules = #closed
-* entry 6..6 MS
+* entry 7..7 MS
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
         and practitioner 1..1
-        and practitionerRole 1..1
+        and practitionerRole 2..2
         and organization 1..1
         and appointment 1..1
         
