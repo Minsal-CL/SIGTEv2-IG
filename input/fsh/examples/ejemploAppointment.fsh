@@ -11,7 +11,7 @@ Description: "Ejemplo de Appointment Evento de Inicio"
 * participant.status = #accepted
 * participant.actor = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
 
-
+//revisado JM
 Instance: EjemploAppointmentAgendar
 InstanceOf: AppointmentLE
 Usage: #example
@@ -21,9 +21,9 @@ Description: "Ejemplo de Appointment Evento de Inicio"
 * status = #booked
 * identifier.value = "21"
 * created = "2023-01-22T09:00:00Z"
-* basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
+* basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/agendar)
 * participant.status = #accepted
-* participant.actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/pra1)
+* participant.actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor)
 
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.text = "Otro"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding.code = #1

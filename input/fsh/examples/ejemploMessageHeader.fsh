@@ -24,8 +24,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Referencia"
 * eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#referenciada
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
-* author = Reference(http://acme.com/ehr/fhir/Organization/orgMHREF)
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/referencia)
+* author = Reference(http://acme.com/ehr/fhir/Organization/referencia)
 /*FIN PARA BUNDLE REFERENCIADA*/
 
 /*EJEMPLOS PARA BUNDLE Terminar*/
@@ -40,8 +40,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Terminar"
 * eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#terminar
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/terminar)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/terminar)
 /*FIN PARA BUNDLE Terminar*/
 
 /*EJEMPLOS PARA BUNDLE Revisar*/
@@ -56,8 +56,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Revisar"
 
 * eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#revisar
 
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/revisar)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/revisar)
 /*FIN PARA BUNDLE Revisar*/
 
 /*EJEMPLOS PARA BUNDLE Agendar*/
@@ -72,8 +72,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Agendar"
 
 * eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#agendar
 
-* focus = Reference(http://acme.com/ehr/fhir/Appointment/serv1)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
+* focus = Reference(http://acme.com/ehr/fhir/Appointment/agendar)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador)
 /*FIN PARA BUNDLE Agendar*/
 
 /*EJEMPLOS PARA BUNDLE Atender*/

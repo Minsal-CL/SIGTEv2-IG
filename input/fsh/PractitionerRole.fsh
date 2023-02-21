@@ -6,7 +6,7 @@ Description: "PractitionerRole LE recurso que se utiliza para representar la inf
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
-* organization 1..1 MS
+* organization 0..1 MS
 * organization only Reference(OrganizationLE)
 * organization ^short = "Organización que se identifica con el código de establecimiento"
 

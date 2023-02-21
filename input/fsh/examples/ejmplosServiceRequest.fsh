@@ -109,7 +109,7 @@ Description: "Ejemplo de Service Request Evento de Referencia"
 * locationCode.text = "Motivo derivación"
 * locationCode.coding.code = #1
 * locationCode.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDestinoReferenciaCodigo"
-* performer = Reference(http://acme.com/ehr/fhir/Organization/org2)
+* performer = Reference(http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor)
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLO PARA BUNDLE TERMINAR*/
@@ -121,7 +121,7 @@ Description: "Ejemplo de Service Request Evento de Terminar"
 
 * status = #draft
 * intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/terminar"
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "1"
 * extension[MotivoCierreInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta"
@@ -152,12 +152,10 @@ Description: "Ejemplo de Service Request Evento Revisar"
 * priority = #routine
 * extension[RequiereExamen].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen"
 * extension[RequiereExamen].valueBoolean = true
-* category.coding.code = #1
 * extension[PertinenciaInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta"
 * extension[PertinenciaInterconsulta].valueCodeableConcept.coding.code = #1
 * category.coding.code = #1
 * category.coding.display = "Presencial"
-* category.coding.system = "https://cens.cl/examples"
 
 
 /*EJEMPLO PARA BUNDLE REVISAR*/

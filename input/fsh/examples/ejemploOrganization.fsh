@@ -17,7 +17,7 @@ Description: "Ejemplo de Organization Evento de Referencia"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
 
-Instance: EjemploOrganizationReferencia2
+Instance: EjemploOrganizationTerminar
 InstanceOf: OrganizationLE
 Usage: #example
 Title: "Ejemplo de Organization Evento de Referencia y Terminar"

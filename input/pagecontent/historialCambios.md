@@ -16,3 +16,4 @@
 - (Nuevo) Se agrega extension para segundo apellido Patient.name.family. 
 - (Nuevo) Se agrega Bundle para evento Terminar
 - AppointmentAtenderLE renombrado a AppointmentLE
+- practitionerROle.organization se cambia la cardinaldiad a 0..1

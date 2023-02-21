@@ -15,8 +15,8 @@ Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Referencia"
 Description: "Ejemplo de PractitionerRole Evento de Referencia"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/referencia)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAgendador)
 * code = #referenciador
 
 Instance: EjemploPractitionerRoleAgendadorSRREFERENCIADA
@@ -25,8 +25,8 @@ Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Referencia"
 Description: "Ejemplo de PractitionerRole Evento de Referencia"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
+//* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAtendedor)
 * code = #agendador
 
 /*FIN PARA BUNDLE REFERENCIA*/
@@ -38,8 +38,8 @@ Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Terminar"
 Description: "Ejemplo de PractitionerRole Evento de Terminar"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/terminar)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/terminar)
 * code = #terminador
 /*FIN PARA BUNDLE TERMINAR*/
 
@@ -52,8 +52,8 @@ Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Revisar"
 Description: "Ejemplo de PractitionerRole Evento de Revisar"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/revisar)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/revisar)
 * code = #revisor
 /*FIN PARA BUNDLE Revisar*/
 
@@ -64,18 +64,20 @@ Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Agendar"
 Description: "Ejemplo de PractitionerRole Evento de Agendar"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/agendar)
 * code = #agendador
 
+
+//revisado JM
 Instance: EjemploPractitionerRoleAgendarAPPO
 InstanceOf: PractitionerRoleLE
 Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Agendar"
 Description: "Ejemplo de PractitionerRole Evento de Agendar"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/agendarAtendedor)
+//* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
 * code = #atendedor
 
 
