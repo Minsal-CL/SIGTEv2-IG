@@ -1,17 +1,17 @@
 ﻿ListaEsperaChile : Validation Results
 =========================================
 
-err = 526, warn = 116, info = 119
+err = 525, warn = 109, info = 121
 IG Publisher Version: 1.2.22 Out of date - current version is 1.2.37
-Generated Tue Feb 21 19:33:54 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
+Generated Wed Feb 22 15:46:25 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
  Build Errors : 13 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointment : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAgendar : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAgendar : 54 / 6 / 34
- /github/workspace/fsh-generated/resources/Bundle-EjemploBundleInicio : 261 / 11 / 65
- /github/workspace/fsh-generated/resources/Bundle-EjemploBundleReferencia : 41 / 7 / 28
- /github/workspace/fsh-generated/resources/Bundle-EjemploBundleRevisar : 30 / 4 / 23
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleInicio : 261 / 9 / 65
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleReferencia : 42 / 4 / 30
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleRevisar : 29 / 3 / 23
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleTerminar : 27 / 2 / 21
  /github/workspace/fsh-generated/resources/CodeSystem-CSDerivadoParaCodigo : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-CSDestinoAtencionCodigo : 0 / 0 / 1
@@ -78,7 +78,7 @@ Generated Tue Feb 21 19:33:54 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAgendar : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAtender : 2 / 4 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestReferencia : 0 / 2 / 2
- /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestRevisar : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestRevisar : 1 / 2 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestTerminar : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-AllergyIntoleranceInicioLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentInicioLE : 0 / 0 / 1
@@ -481,12 +481,13 @@ INFORMATION: Bundle/EjemploBundleInicio: Bundle: Bundle.entry:organization: Foun
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader).author: Details for http://acme.com/ehr/fhir/PractitionerRole/praR1 matching against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader).author: Unable to find a match for profile http://acme.com/ehr/fhir/PractitionerRole/praR1 among choices: http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader).author: Details for http://acme.com/ehr/fhir/PractitionerRole/praR1 matching against profile http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE|0.1.1
+ERROR: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader).focus[0]: Unable to find a match for profile http://acme.com/ehr/fhir/ServiceRequest/serv1 among choices: http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE, http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE
+INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader).focus[0]: Details for http://acme.com/ehr/fhir/ServiceRequest/serv1 matching against profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE|0.1.1
 WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[4].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[7].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).subject: Details for http://acme.com/ehr/fhir/Patient/pat1 matching against profile http://hl7.org/fhir/StructureDefinition/Patient|4.0.1
-INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).encounter: Details for http://acme.com/ehr/fhir/Encounter/enc1 matching against profile http://hl7.org/fhir/StructureDefinition/Encounter|4.0.1
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).reasonCode[0].coding[0]: Code System URI 'http://terminology.cens.cl/codigosDeis/motivoInterconsulta' is unknown so the code cannot be validated
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).supportingInfo[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:cita, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).supportingInfo[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:cita, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
@@ -576,9 +577,6 @@ ERROR: Bundle/EjemploBundleInicio: Bundle.entry[11].resource.ofType(Practitioner
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[12].resource.ofType(Practitioner).identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[12].resource.ofType(Practitioner).identifier[1].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[12].resource.ofType(Practitioner).qualification[0].code.coding[0]: Practitioner.qualification:Cert.code.coding.code: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PractitionerLE|0.1.1)
-ERROR: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.focus[0].reference: Can't find 'http://acme.com/ehr/fhir/ServiceRequest/serv1' in the bundle (MessageHeader Data)
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[15]: Entry 'http://acme.com/ehr/fhir/Appointment/app1' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[15]: Entry 'http://acme.com/ehr/fhir/ServiceRequest/ser1' isn't reachable by traversing forwards from first Bundle entry, and isn't a resource type that is typically used that way - check this is not missed somewhere
 == fsh-generated/resources/Bundle-EjemploBundleReferencia.json ==
 ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE (@char 1)
 ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE (@char 1)
@@ -620,6 +618,9 @@ INFORMATION: Bundle/EjemploBundleReferencia: Bundle: Bundle.entry:servicerequest
 INFORMATION: Bundle/EjemploBundleReferencia: Bundle: Bundle.entry:practitioner: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE|0.1.1)
 INFORMATION: Bundle/EjemploBundleReferencia: Bundle: Bundle.entry:practitionerRole: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE|0.1.1)
 INFORMATION: Bundle/EjemploBundleReferencia: Bundle: Bundle.entry:organization: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE|0.1.1)
+INFORMATION: Bundle/EjemploBundleReferencia: Bundle.entry[0].resource.ofType(MessageHeader).author: Details for http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador matching against profile http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1
+ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[0].resource.ofType(MessageHeader).author: Unable to find a match for profile http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador among choices: http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE
+INFORMATION: Bundle/EjemploBundleReferencia: Bundle.entry[0].resource.ofType(MessageHeader).author: Details for http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador matching against profile http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE|0.1.1
 ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[0].resource.ofType(MessageHeader).focus[0]: Unable to find a match for profile http://acme.com/ehr/fhir/ServiceRequest/referencia among choices: http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE, http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE
 INFORMATION: Bundle/EjemploBundleReferencia: Bundle.entry[0].resource.ofType(MessageHeader).focus[0]: Details for http://acme.com/ehr/fhir/ServiceRequest/referencia matching against profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE|0.1.1
 WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[1].resource.ofType(ServiceRequest).extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -629,7 +630,7 @@ INFORMATION: Bundle/EjemploBundleReferencia: Bundle.entry[1].resource.ofType(Ser
 ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[1].resource.ofType(ServiceRequest).performer[0]: Unable to find a match for profile http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor among choices: http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE
 INFORMATION: Bundle/EjemploBundleReferencia: Bundle.entry[1].resource.ofType(ServiceRequest).performer[0]: Details for http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor matching against profile http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE|0.1.1
 WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[2].resource.ofType(PractitionerRole).code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[2].resource.ofType(PractitionerRole).code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#agendador)
+ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[2].resource.ofType(PractitionerRole).code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#atendedor)
 INFORMATION: Bundle/EjemploBundleReferencia: Bundle.entry[3].resource.ofType(PractitionerRole).practitioner: Details for http://acme.com/ehr/fhir/Practitioner/referencia matching against profile http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1
 WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[3].resource.ofType(PractitionerRole).code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[3].resource.ofType(PractitionerRole).practitioner: Unable to find a match for profile http://acme.com/ehr/fhir/Practitioner/referencia among choices: http://minsal.cl/listaespera/StructureDefinition/PractitionerLE
@@ -638,9 +639,6 @@ ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[3].resource.ofType(Practitio
 INFORMATION: Bundle/EjemploBundleReferencia: Bundle.entry[4].resource.ofType(Practitioner).identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Bundle/EjemploBundleReferencia: Bundle.entry[4].resource.ofType(Practitioner).identifier[1].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 ERROR: Bundle/EjemploBundleReferencia: Bundle.entry[4].resource.ofType(Practitioner).qualification[0].code.coding[0]: Practitioner.qualification:Cert.code.coding.code: minimum required = 1, but only found 0 (from http://minsal.cl/listaespera/StructureDefinition/PractitionerLE|0.1.1)
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[4]: Entry 'http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[5]: Entry 'http://acme.com/ehr/fhir/Practitioner/referencia' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[6]: Entry 'http://acme.com/ehr/fhir/Organization/referenciaAgendador' isn't reachable by traversing from first Bundle entry
 == fsh-generated/resources/Bundle-EjemploBundleRevisar.json ==
 ERROR: Bundle/EjemploBundleRevisar: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
 ERROR: Bundle/EjemploBundleRevisar: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE (@char 1)
@@ -680,9 +678,7 @@ INFORMATION: Bundle/EjemploBundleRevisar: Bundle.entry[0].resource.ofType(Messag
 WARNING: Bundle/EjemploBundleRevisar: Bundle.entry[1].resource.ofType(ServiceRequest).extension[1].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/EjemploBundleRevisar: Bundle.entry[1].resource.ofType(ServiceRequest).identifier[0].type.coding[0]: Coding.system must be an absolute reference, not a local reference
 INFORMATION: Bundle/EjemploBundleRevisar: Bundle.entry[1].resource.ofType(ServiceRequest).identifier[0].type.coding[0]: Code System URI 'IdInterconsulta' is unknown so the code cannot be validated
-WARNING: Bundle/EjemploBundleRevisar: Bundle.entry[1].resource.ofType(ServiceRequest).category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Bundle/EjemploBundleRevisar: Bundle.entry[1].resource.ofType(ServiceRequest).doNotPerform.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/EjemploBundleRevisar: Bundle.entry[1].resource.ofType(ServiceRequest).category[0]: None of the codings provided are in the value set 'Modalidad Atencion Codigo' (http://minsal.cl/listaespera/ValueSet/VSModalidadAtencionCodigo|0.1.1), and a coding from this value set is required) (codes = null#1)
 WARNING: Bundle/EjemploBundleRevisar: Bundle.entry[2].resource.ofType(PractitionerRole).code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/EjemploBundleRevisar: Bundle.entry[2].resource.ofType(PractitionerRole).code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#revisor)
 INFORMATION: Bundle/EjemploBundleRevisar: Bundle.entry[4].resource.ofType(Practitioner).identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
@@ -857,7 +853,7 @@ INFORMATION: Practitioner/EjemploPractitionerTerminar: Practitioner.identifier[1
 ERROR: PractitionerRole/EjemploPractitionerRole: PractitionerRole.code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#iniciador)
 WARNING: PractitionerRole/EjemploPractitionerRole: PractitionerRole.code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleAgendadorSRREFERENCIADA.json ==
-ERROR: PractitionerRole/EjemploPractitionerRoleAgendadorSRREFERENCIADA: PractitionerRole.code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#agendador)
+ERROR: PractitionerRole/EjemploPractitionerRoleAgendadorSRREFERENCIADA: PractitionerRole.code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#atendedor)
 WARNING: PractitionerRole/EjemploPractitionerRoleAgendadorSRREFERENCIADA: PractitionerRole.code[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleAgendarAPPO.json ==
 ERROR: PractitionerRole/EjemploPractitionerRoleAgendarAPPO: PractitionerRole.code[0]: None of the codings provided are in the value set 'Rol de médicos' (http://minsal.cl/listaespera/ValueSet/VSPractitionerTipoRolLE|0.1.1), and a coding from this value set is required) (codes = null#atendedor)
@@ -991,8 +987,6 @@ INFORMATION: ServiceRequest/EjemploServiceRequestReferencia: ServiceRequest.iden
 WARNING: ServiceRequest/EjemploServiceRequestRevisar: ServiceRequest.extension[1].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: ServiceRequest/EjemploServiceRequestRevisar: ServiceRequest.identifier[0].type.coding[0]: Coding.system must be an absolute reference, not a local reference
 INFORMATION: ServiceRequest/EjemploServiceRequestRevisar: ServiceRequest.identifier[0].type.coding[0]: Code System URI 'IdInterconsulta' is unknown so the code cannot be validated
-ERROR: ServiceRequest/EjemploServiceRequestRevisar: ServiceRequest.category[0]: None of the codings provided are in the value set 'Modalidad Atencion Codigo' (http://minsal.cl/listaespera/ValueSet/VSModalidadAtencionCodigo|0.1.1), and a coding from this value set is required) (codes = null#1)
-WARNING: ServiceRequest/EjemploServiceRequestRevisar: ServiceRequest.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: ServiceRequest/EjemploServiceRequestRevisar: ServiceRequest.doNotPerform.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequestTerminar.json ==
 WARNING: ServiceRequest/EjemploServiceRequestTerminar: ServiceRequest.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
