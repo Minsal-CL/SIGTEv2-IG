@@ -8,7 +8,7 @@
   "type" : "message",
   "timestamp" : "2023-02-09T17:15:22Z",
   "entry" : [{
-    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/mh1",
+    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/terminar",
     "resource" : {
       "resourceType" : "MessageHeader",
       "id" : "EjemploMessageHeaderTerminar",
@@ -18,26 +18,26 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderTerminar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/praR1\">http://acme.com/ehr/fhir/PractitionerRole/praR1</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/serv1\">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderTerminar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleTerminar\">See above (http://acme.com/ehr/fhir/PractitionerRole/terminar)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestTerminar\">See above (http://acme.com/ehr/fhir/ServiceRequest/terminar)</a></p></div>"
       },
       "eventCoding" : {
         "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE",
         "code" : "terminar"
       },
       "author" : {
-        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/praR1"
+        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/terminar"
       },
       "source" : {
         "software" : "SolucionInformatica",
         "endpoint" : "http://link-to-sending.cl"
       },
       "focus" : [{
-        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/serv1"
+        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/terminar"
       }]
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/ser1",
+    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/terminar",
     "resource" : {
       "resourceType" : "ServiceRequest",
       "id" : "EjemploServiceRequestTerminar",
@@ -46,7 +46,7 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Motivo Cierre Interconsulta</b>: 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#2)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1\">http://acme.com/ehr/fhir/Patient/pat1</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Motivo Cierre Interconsulta</b>: 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#2)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/terminar\">http://acme.com/ehr/fhir/Patient/terminar</a></p></div>"
       },
       "extension" : [{
         "url" : "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta",
@@ -68,12 +68,12 @@
       "status" : "draft",
       "intent" : "proposal",
       "subject" : {
-        "reference" : "http://acme.com/ehr/fhir/Patient/pat1"
+        "reference" : "http://acme.com/ehr/fhir/Patient/terminar"
       }
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1",
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/terminar",
     "resource" : {
       "resourceType" : "PractitionerRole",
       "id" : "EjemploPractitionerRoleTerminar",
@@ -82,13 +82,13 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerTerminar\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationReferencia2\">See above (http://acme.com/ehr/fhir/Organization/org1)</a></p><p><b>code</b>: terminador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#terminador)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerTerminar\">See above (http://acme.com/ehr/fhir/Practitioner/terminar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationTerminar\">See above (http://acme.com/ehr/fhir/Organization/terminar)</a></p><p><b>code</b>: terminador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#terminador)</span></p></div>"
       },
       "practitioner" : {
-        "reference" : "http://acme.com/ehr/fhir/Practitioner/pra1"
+        "reference" : "http://acme.com/ehr/fhir/Practitioner/terminar"
       },
       "organization" : {
-        "reference" : "http://acme.com/ehr/fhir/Organization/org1"
+        "reference" : "http://acme.com/ehr/fhir/Organization/terminar"
       },
       "code" : [{
         "coding" : [{
@@ -98,7 +98,7 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/pra1",
+    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/terminar",
     "resource" : {
       "resourceType" : "Practitioner",
       "id" : "EjemploPractitionerTerminar",
@@ -132,16 +132,16 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/Organization/org1",
+    "fullUrl" : "http://acme.com/ehr/fhir/Organization/terminar",
     "resource" : {
       "resourceType" : "Organization",
-      "id" : "EjemploOrganizationReferencia2",
+      "id" : "EjemploOrganizationTerminar",
       "meta" : {
         "profile" : ["http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"]
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationReferencia2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationReferencia2&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: Placer Identifier: 2</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: Placer Identifier: 2</p></div>"
       },
       "identifier" : [{
         "type" : {

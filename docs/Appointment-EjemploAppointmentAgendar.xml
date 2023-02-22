@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Appointment xmlns="http://hl7.org/fhir">
+  <id value="EjemploAppointmentAgendar"/>
+  <meta>
+    <profile value="http://minsal.cl/listaespera/StructureDefinition/AppointmentLE"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Appointment</b><a name="EjemploAppointmentAgendar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AppointmentLE.html">AppointmentLE</a></p></div><blockquote><p><b>Contactado</b></p><p><b>value</b>: Otro <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>created</b>: 2023-01-22 09:00:00+0000</p><p><b>basedOn</b>: <a href="Bundle-EjemploBundleAgendar.html#http-//acme.com/ehr/fhir/ServiceRequest/agendar">http://acme.com/ehr/fhir/ServiceRequest/agendar</a></p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href="http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor">http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor</a></td><td>accepted</td></tr></table></div>
+  </text>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/Contactado">
+    <extension url="MotivoNoContactabilidad">
+      <valueCodeableConcept>
+        <coding>
+          <code value="1"/>
+        </coding>
+        <text value="Otro"/>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="Contactado">
+      <valueBoolean value="true"/>
+    </extension>
+  </extension>
+  <identifier>
+    <value value="21"/>
+  </identifier>
+  <status value="booked"/>
+  <created value="2023-01-22T09:00:00Z"/>
+  <basedOn>
+    <reference value="http://acme.com/ehr/fhir/ServiceRequest/agendar"/>
+  </basedOn>
+  <participant>
+    <actor>
+      <reference value="http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor"/>
+    </actor>
+    <status value="accepted"/>
+  </participant>
+</Appointment>

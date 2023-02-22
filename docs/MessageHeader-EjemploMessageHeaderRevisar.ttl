@@ -18,15 +18,15 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderRevisar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/praR1\">http://acme.com/ehr/fhir/PractitionerRole/praR1</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/serv1\">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderRevisar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Revisar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code revisar = 'Revisar', stated as 'null')</p><p><b>author</b>: <a href=\"Bundle-EjemploBundleRevisar.html#http-//acme.com/ehr/fhir/PractitionerRole/revisar\">http://acme.com/ehr/fhir/PractitionerRole/revisar</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"Bundle-EjemploBundleRevisar.html#http-//acme.com/ehr/fhir/ServiceRequest/revisar\">http://acme.com/ehr/fhir/ServiceRequest/revisar</a></p></div>"
   ]; # 
   fhir:MessageHeader.eventCoding [
      fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE" ];
-     fhir:Coding.code [ fhir:value "terminar" ]
+     fhir:Coding.code [ fhir:value "revisar" ]
   ]; # 
   fhir:MessageHeader.author [
-     fhir:link <http://acme.com/ehr/fhir/PractitionerRole/praR1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/PractitionerRole/praR1" ]
+     fhir:link <http://acme.com/ehr/fhir/PractitionerRole/revisar>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/PractitionerRole/revisar" ]
   ]; # 
   fhir:MessageHeader.source [
      fhir:MessageHeader.source.software [ fhir:value "SolucionInformatica" ];
@@ -34,8 +34,8 @@
   ]; # 
   fhir:MessageHeader.focus [
      fhir:index 0;
-     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/serv1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/serv1" ]
+     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/revisar>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/revisar" ]
   ] . # 
 
 # - ontology header ------------------------------------------------------------

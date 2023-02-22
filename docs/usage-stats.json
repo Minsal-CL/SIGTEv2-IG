@@ -531,15 +531,19 @@
     ],
     "Appointment": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentAtenderLE",
-        "title": "Appointment Atender LE"
-      },
-      {
         "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE",
         "title": "Appointment Inicio LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE",
+        "title": "AppointmentLE"
       }
     ],
     "Bundle": [
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE",
+        "title": "Bundle Agendar LE"
+      },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE",
         "title": "BundleInicio LE"
@@ -729,7 +733,8 @@
       "Patient.identifier.type"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/Contactado": [
-      "Appointment"
+      "Appointment",
+      "Bundle.entry.resource"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo": [
       "ServiceRequest"

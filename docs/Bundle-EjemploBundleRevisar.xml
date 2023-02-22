@@ -9,36 +9,36 @@
   <type value="message"/>
   <timestamp value="2023-02-09T17:15:22Z"/>
   <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/MessageHeader/mh1"/>
+    <fullUrl value="http://acme.com/ehr/fhir/MessageHeader/revisar"/>
     <resource>
       <MessageHeader>
-        <id value="EjemploMessageHeaderTerminar"/>
+        <id value="EjemploMessageHeaderRevisar"/>
         <meta>
           <lastUpdated value="2023-02-14T14:12:10Z"/>
           <profile value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="EjemploMessageHeaderTerminar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;EjemploMessageHeaderTerminar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href="http://acme.com/ehr/fhir/PractitionerRole/praR1">http://acme.com/ehr/fhir/PractitionerRole/praR1</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href="http://link-to-sending.cl">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href="http://acme.com/ehr/fhir/ServiceRequest/serv1">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="EjemploMessageHeaderRevisar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;EjemploMessageHeaderRevisar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a></p></div><p><b>event</b>: Revisar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code revisar = 'Revisar', stated as 'null')</p><p><b>author</b>: <a href="#PractitionerRole_EjemploPractitionerRoleRevisar">See above (http://acme.com/ehr/fhir/PractitionerRole/revisar)</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href="http://link-to-sending.cl">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href="#ServiceRequest_EjemploServiceRequestRevisar">See above (http://acme.com/ehr/fhir/ServiceRequest/revisar)</a></p></div>
         </text>
         <eventCoding>
           <system value="http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE"/>
-          <code value="terminar"/>
+          <code value="revisar"/>
         </eventCoding>
         <author>
-          <reference value="http://acme.com/ehr/fhir/PractitionerRole/praR1"/>
+          <reference value="http://acme.com/ehr/fhir/PractitionerRole/revisar"/>
         </author>
         <source>
           <software value="SolucionInformatica"/>
           <endpoint value="http://link-to-sending.cl"/>
         </source>
         <focus>
-          <reference value="http://acme.com/ehr/fhir/ServiceRequest/serv1"/>
+          <reference value="http://acme.com/ehr/fhir/ServiceRequest/revisar"/>
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/ServiceRequest/ser1"/>
+    <fullUrl value="http://acme.com/ehr/fhir/ServiceRequest/revisar"/>
     <resource>
       <ServiceRequest>
         <id value="EjemploServiceRequestRevisar"/>
@@ -46,7 +46,7 @@
           <profile value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestRevisar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestRevisar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>ExtBool RequiereExamen</b>: true</p><p><b>Pertinencia Interconsulta</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>category</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>priority</b>: routine</p><p><b>doNotPerform</b>: </p><p><b style="color: maroon">Exception generating Narrative: null</b></p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestRevisar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestRevisar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>ExtBool RequiereExamen</b>: true</p><p><b>Pertinencia Interconsulta</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>category</b>: Presencial <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSModalidadAtencionCodigo.html">Modalidad Atencion Codigo</a>#1)</span></p><p><b>priority</b>: routine</p><p><b>doNotPerform</b>: true</p><p><b>subject</b>: <a href="Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>
         </text>
         <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen">
           <valueBoolean value="true"/>
@@ -71,11 +71,13 @@
         <intent value="proposal"/>
         <category>
           <coding>
+            <system value="http://minsal.cl/listaespera/CodeSystem/CSModalidadAtencionCodigo"/>
             <code value="1"/>
+            <display value="Presencial"/>
           </coding>
         </category>
         <priority value="routine"/>
-        <doNotPerform>
+        <doNotPerform value="true">
           <extension url="http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo">
             <valueCodeableConcept>
               <coding>
@@ -93,7 +95,32 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/Organization/org1"/>
+    <fullUrl value="http://acme.com/ehr/fhir/PractitionerRole/revisar"/>
+    <resource>
+      <PractitionerRole>
+        <id value="EjemploPractitionerRoleRevisar"/>
+        <meta>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRoleRevisar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRoleRevisar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="#Practitioner_EjemploPractitionerRevisar">See above (http://acme.com/ehr/fhir/Practitioner/revisar)</a></p><p><b>organization</b>: <a href="#Organization_EjemploOrganizationRevisar">See above (http://acme.com/ehr/fhir/Organization/revisar)</a></p><p><b>code</b>: revisor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#revisor)</span></p></div>
+        </text>
+        <practitioner>
+          <reference value="http://acme.com/ehr/fhir/Practitioner/revisar"/>
+        </practitioner>
+        <organization>
+          <reference value="http://acme.com/ehr/fhir/Organization/revisar"/>
+        </organization>
+        <code>
+          <coding>
+            <code value="revisor"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Organization/revisar"/>
     <resource>
       <Organization>
         <id value="EjemploOrganizationRevisar"/>
@@ -116,7 +143,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/Practitioner/pra1"/>
+    <fullUrl value="http://acme.com/ehr/fhir/Practitioner/revisar"/>
     <resource>
       <Practitioner>
         <id value="EjemploPractitionerRevisar"/>
@@ -159,31 +186,6 @@
           </code>
         </qualification>
       </Practitioner>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1"/>
-    <resource>
-      <PractitionerRole>
-        <id value="EjemploPractitionerRoleRevisar"/>
-        <meta>
-          <profile value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
-        </meta>
-        <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRoleRevisar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRoleRevisar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="#Practitioner_EjemploPractitionerRevisar">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href="#Organization_EjemploOrganizationRevisar">See above (http://acme.com/ehr/fhir/Organization/org1)</a></p><p><b>code</b>: terminador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#terminador)</span></p></div>
-        </text>
-        <practitioner>
-          <reference value="http://acme.com/ehr/fhir/Practitioner/pra1"/>
-        </practitioner>
-        <organization>
-          <reference value="http://acme.com/ehr/fhir/Organization/org1"/>
-        </organization>
-        <code>
-          <coding>
-            <code value="terminador"/>
-          </coding>
-        </code>
-      </PractitionerRole>
     </resource>
   </entry>
 </Bundle>

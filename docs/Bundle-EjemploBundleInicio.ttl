@@ -24,8 +24,8 @@
      fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/MessageHeader/mh1>
   ], [
      fhir:index 1;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/ser1" ];
-     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/ServiceRequest/ser1>
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/serv1" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/ServiceRequest/serv1>
   ], [
      fhir:index 2;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Encounter/enc1" ];
@@ -64,8 +64,8 @@
      fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/AllergyIntolerance/all1>
   ], [
      fhir:index 11;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1" ];
-     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1>
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/PractitionerRole/praR1" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/PractitionerRole/praR1>
   ], [
      fhir:index 12;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Practitioner/pra1" ];
@@ -88,7 +88,7 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeader\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeader&quot; Updated &quot;2023-01-20 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Inicio (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code inicio = 'Inicio', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/praR1\">http://acme.com/ehr/fhir/PractitionerRole/praR1</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/serv1\">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeader\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeader&quot; Updated &quot;2023-01-20 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Inicio (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code inicio = 'Inicio', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRole\">See above (http://acme.com/ehr/fhir/PractitionerRole/praR1)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequest\">See above (http://acme.com/ehr/fhir/ServiceRequest/serv1)</a></p></div>"
   ]; # 
   fhir:MessageHeader.eventCoding [
      fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE" ];
@@ -108,7 +108,7 @@
      fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/serv1" ]
   ] . # 
 
-<http://acme.com/ehr/fhir/ServiceRequest/ser1> a fhir:ServiceRequest;
+<http://acme.com/ehr/fhir/ServiceRequest/serv1> a fhir:ServiceRequest;
   fhir:Resource.id [ fhir:value "EjemploServiceRequest"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -281,7 +281,7 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointment\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointment&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentInicioLE.html\">Appointment Inicio LE</a></p></div><p><b>identifier</b>: id: 21</p><p><b>status</b>: fulfilled</p><p><b>start</b>: Jan 22, 2023, 6:00:00 AM</p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/serv1\">http://acme.com/ehr/fhir/ServiceRequest/serv1</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"#Practitioner_EjemploPractitioner\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></td><td>accepted</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointment\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointment&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentInicioLE.html\">Appointment Inicio LE</a></p></div><p><b>identifier</b>: id: 21</p><p><b>status</b>: fulfilled</p><p><b>start</b>: Jan 22, 2023, 6:00:00 AM</p><p><b>basedOn</b>: <a href=\"#ServiceRequest_EjemploServiceRequest\">See above (http://acme.com/ehr/fhir/ServiceRequest/serv1)</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"#Practitioner_EjemploPractitioner\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></td><td>accepted</td></tr></table></div>"
   ]; # 
   fhir:Appointment.identifier [
      fhir:index 0;
@@ -581,7 +581,7 @@
      fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/pat12" ]
   ] . # 
 
-<http://acme.com/ehr/fhir/EjemploPractitionerRole/praR1> a fhir:PractitionerRole;
+<http://acme.com/ehr/fhir/PractitionerRole/praR1> a fhir:PractitionerRole;
   fhir:Resource.id [ fhir:value "EjemploPractitionerRole"]; # 
   fhir:Resource.meta [
      fhir:Meta.profile [
