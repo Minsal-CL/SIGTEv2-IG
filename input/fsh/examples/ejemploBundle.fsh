@@ -12,7 +12,7 @@ Description: "Ejemplo de Bundle Evento de Inicio"
 * entry[messageheader].resource = EjemploMessageHeader
 
 
-* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/ser1"
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/serv1"
 * entry[servicerequest].resource = EjemploServiceRequest
 
 * entry[encounter].fullUrl = "http://acme.com/ehr/fhir/Encounter/enc1"
@@ -79,13 +79,10 @@ Description: "Ejemplo de Bundle Evento de Referencia"
 * entry[practitioner].resource = EjemploPractitionerReferenciadorMHREFERENCIADA
 
 * entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/referenciaAgendador"
-* entry[organization][=].resource = EjemploOrganizationReferenciadorMHREFERENCIADA
+* entry[organization][=].resource = EjemploOrganizationAgendadorSRREFERENCIADA
 
-* entry[organization][1].fullUrl = 
-
-
-"http://acme.com/ehr/fhir/Organization/referenciaAtendedor"
-* entry[organization][1].resource = EjemploOrganizationAgendadorSRREFERENCIADA
+* entry[organization][1].fullUrl = "http://acme.com/ehr/fhir/Organization/referenciaAtendedor"
+* entry[organization][1].resource = EjemploOrganizationReferenciadorMHREFERENCIADA
 /*FIN BUNDLE REFERENCIA*/
 
 /*Budle Terminar*/

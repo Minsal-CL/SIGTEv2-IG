@@ -155,6 +155,7 @@ Description: "Ejemplo de Service Request Evento Revisar"
 * extension[PertinenciaInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta"
 * extension[PertinenciaInterconsulta].valueCodeableConcept.coding.code = #1
 * category.coding.code = #1
+* category.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSModalidadAtencionCodigo"
 * category.coding.display = "Presencial"
 
 

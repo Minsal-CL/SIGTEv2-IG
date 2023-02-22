@@ -57,7 +57,7 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 
 * Debe incluir el recurso [BundleAgendarLE](StructureDefinition-BundleAgendarLE.html)
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
-* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=inicio** 
+* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=agendar** 
 * Debe incluir el recurso [PatientLE](StructureDefinition-PatientLE.html)
 * Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html) el cual debe tener dos instancias:
   1.  Un *PractitionerRole* desde el recurso *MessageHeader* que indica quien sera el profesional que atenderá al paciente

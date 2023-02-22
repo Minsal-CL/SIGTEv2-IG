@@ -27,7 +27,7 @@ Description: "Ejemplo de PractitionerRole Evento de Referencia"
 
 //* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAtendedor)
-* code = #agendador
+* code = #atendedor
 
 /*FIN PARA BUNDLE REFERENCIA*/
 
