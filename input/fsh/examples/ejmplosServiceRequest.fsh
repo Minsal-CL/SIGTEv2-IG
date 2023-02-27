@@ -142,7 +142,7 @@ Description: "Ejemplo de Service Request Evento Revisar"
 * identifier.value = "1"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
-* priority = #urgent
+//* priority = #urgent
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
 * doNotPerform = true

@@ -12,6 +12,21 @@ Description: "Esta extensión incluye códigos de paises de origen"
   * display 0..1 MS
 * valueCodeableConcept.text 1..1 MS
 
+Extension:   PrevisionCodigoLE
+Id:          PrevisionCodigoLE
+Title:       "Previsión determinada  de aseguramiento de salud del paciente."
+Description: "La previsión es la  variable determinada el sistema de aseguramiento de salud del paciente."
+* value[x] only CodeableConcept
+* value[x] ^short = "Prevision Codigo"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from VSPrevisionCodigo
+  * system 0..1 MS
+  * display 0..1 MS
+* valueCodeableConcept.text 0..1 MS
+
+
 Extension:   NacionalidadCodigoClLE
 Id:          NacionalidadCodigo
 Title:       "Codigo de Identificación de Nacionalidad"
