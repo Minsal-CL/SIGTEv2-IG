@@ -10,6 +10,8 @@ Description: "Ejemplo de Service Request Evento de Inicio"
 * status = #draft
 * priority = #urgent
 * intent = #proposal
+* extension[PrevisionCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE"
+* extension[PrevisionCodigo].valueCodeableConcept.coding.code = #1
 * extension[FundamentoPriorizacion].url = "http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion"
 * extension[FundamentoPriorizacion].valueString = "FundamentoPriorizacion"
 * extension[SospechaGES].url = "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes"
@@ -173,7 +175,7 @@ Description: "Ejemplo de Service Request Evento Agendar"
 * identifier.value = "1"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
-* priority = #urgent
+//* priority = #urgent
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
 
@@ -202,7 +204,7 @@ Description: "Ejemplo de Service Request Evento Atender"
 * identifier.value = "323121"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
-* priority = #urgent
+//* priority = #urgent
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
 * extension[DestinoAtencionCodigo].valueCodeableConcept.coding.code = #1
@@ -212,7 +214,7 @@ Description: "Ejemplo de Service Request Evento Atender"
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text = "Texto libre"
-* priority = #routine
+//* priority = #routine
 * extension[RequiereExamen].valueBoolean = true
 * category.coding.code = #1
 * extension[PertinenciaInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta"
