@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-22T20:35:25+00:00",
+  "date" : "2023-02-27T14:20:24+00:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -1221,6 +1221,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/PrevisionCodigoLE"
+      },
+      "name" : "Previsión determinada  de aseguramiento de salud del paciente.",
+      "description" : "La previsión es la  variable determinada el sistema de aseguramiento de salud del paciente.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/PuebloIndigena"
       },
       "name" : "Etnia a la cual pertenece",
@@ -1465,6 +1477,18 @@
       },
       "name" : "Rol de médicos",
       "description" : "Rol de médicos(Practitioner) en algún evento, durante la intercosulta.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSPrevisionCodigo"
+      },
+      "name" : "PrevisionCodigo",
+      "description" : "PrevisionCodigo",
       "exampleBoolean" : false
     },
     {
@@ -1753,6 +1777,18 @@
       },
       "name" : "Rol de médicos",
       "description" : "CodeSystem con códigos definidos para representar cada rol de los médicos dentro de la interconsulta",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSPrevisionCodigo"
+      },
+      "name" : "PrevisionCodigo",
+      "description" : "PrevisionCodigo",
       "exampleBoolean" : false
     },
     {
@@ -2541,6 +2577,15 @@
         }],
         "nameUrl" : "EventoInicio.html",
         "title" : "Evento Inicio",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "EventoPriorizar.html"
+        }],
+        "nameUrl" : "EventoPriorizar.html",
+        "title" : "Evento Priorizar",
         "generation" : "markdown"
       },
       {

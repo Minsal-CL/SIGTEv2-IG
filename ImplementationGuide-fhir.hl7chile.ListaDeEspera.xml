@@ -11,7 +11,7 @@
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-02-22T20:35:25+00:00"/>
+  <date value="2023-02-27T14:20:24+00:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -1020,6 +1020,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/PrevisionCodigoLE"/>
+      </reference>
+      <name value="Previsión determinada  de aseguramiento de salud del paciente."/>
+      <description value="La previsión es la  variable determinada el sistema de aseguramiento de salud del paciente."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/PuebloIndigena"/>
       </reference>
       <name value="Etnia a la cual pertenece"/>
@@ -1244,6 +1255,17 @@
       </reference>
       <name value="Rol de médicos"/>
       <description value="Rol de médicos(Practitioner) en algún evento, durante la intercosulta."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSPrevisionCodigo"/>
+      </reference>
+      <name value="PrevisionCodigo"/>
+      <description value="PrevisionCodigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1508,6 +1530,17 @@
       </reference>
       <name value="Rol de médicos"/>
       <description value="CodeSystem con códigos definidos para representar cada rol de los médicos dentro de la interconsulta"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSPrevisionCodigo"/>
+      </reference>
+      <name value="PrevisionCodigo"/>
+      <description value="PrevisionCodigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2228,6 +2261,14 @@
         </extension>
         <nameUrl value="EventoInicio.html"/>
         <title value="Evento Inicio"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="EventoPriorizar.html"/>
+        </extension>
+        <nameUrl value="EventoPriorizar.html"/>
+        <title value="Evento Priorizar"/>
         <generation value="markdown"/>
       </page>
       <page>

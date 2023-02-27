@@ -1,15 +1,15 @@
 ﻿ListaEsperaChile : Validation Results
 =========================================
 
-err = 525, warn = 109, info = 121
-IG Publisher Version: 1.2.22 Out of date - current version is 1.2.37
-Generated Wed Feb 22 20:41:01 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
+err = 525, warn = 111, info = 121
+IG Publisher Version: 1.2.22 Out of date - current version is ?pub-ver-1?
+Generated Mon Feb 27 14:27:37 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
  Build Errors : 13 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointment : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAgendar : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAgendar : 54 / 6 / 34
- /github/workspace/fsh-generated/resources/Bundle-EjemploBundleInicio : 261 / 9 / 65
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleInicio : 261 / 10 / 65
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleReferencia : 42 / 4 / 30
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleRevisar : 29 / 3 / 23
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleTerminar : 27 / 2 / 21
@@ -28,6 +28,7 @@ Generated Wed Feb 22 20:41:01 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/CodeSystem-CSMotivoNoPertinenciaCodigo : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-CSPertinenciaInterconsulta : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-CSPractitionerTipoRolLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/CodeSystem-CSPrevisionCodigo : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-CSPuebloIndigena : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-CSSospechaPatologia : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-CSSospechaPatologiaGes : 0 / 29 / 1
@@ -73,7 +74,7 @@ Generated Wed Feb 22 20:41:01 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleRevisar : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleTerminar : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponse : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 42 / 3 / 3
+ /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 42 / 4 / 3
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest2 : 42 / 3 / 3
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAgendar : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAtender : 2 / 4 / 2
@@ -132,6 +133,7 @@ Generated Wed Feb 22 20:41:01 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/StructureDefinition-PertinenciaInterconsulta : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PractitionerRoleLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PrevisionCodigoLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PuebloIndigena : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-QuestionnaireResponseInicioLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SegundoApellido : 0 / 0 / 1
@@ -155,6 +157,7 @@ Generated Wed Feb 22 20:41:01 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/ValueSet-VSMotivoNoPertinenciaCodigo : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-VSPertinenciaInterconsulta : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-VSPractitionerTipoRolLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-VSPrevisionCodigo : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-VSPuebloIndigena : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-VSSospechaPatologia : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-VSSospechaPatologiaGes : 0 / 0 / 1
@@ -167,19 +170,19 @@ Generated Wed Feb 22 20:41:01 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ExtStringFundamentoPriorizacion.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 233, column 8: The link 'link' for "Encounter" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 234, column 8: The link 'link' for "Appointment" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 235, column 8: The link 'link' for "MessageHeader" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 236, column 8: The link 'link' for "ServiceRequest" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 237, column 8: The link 'link' for "PractitionerRole" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link 'link' for "Practitioner" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 239, column 8: The link 'link' for "Location" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 240, column 8: The link 'link' for "DocumentReference" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 241, column 8: The link 'link' for "QuestionaireResponse" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 242, column 8: The link 'link' for "Observation" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 243, column 8: The link 'link' for "CarePlan" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 244, column 8: The link 'link' for "Observation" cannot be resolved
-ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'link' for "Condition" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 236, column 8: The link 'link' for "Encounter" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 237, column 8: The link 'link' for "Appointment" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 238, column 8: The link 'link' for "MessageHeader" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 239, column 8: The link 'link' for "ServiceRequest" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 240, column 8: The link 'link' for "PractitionerRole" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 241, column 8: The link 'link' for "Practitioner" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 242, column 8: The link 'link' for "Location" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 243, column 8: The link 'link' for "DocumentReference" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 244, column 8: The link 'link' for "QuestionaireResponse" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 245, column 8: The link 'link' for "Observation" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 246, column 8: The link 'link' for "CarePlan" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 247, column 8: The link 'link' for "Observation" cannot be resolved
+ERROR: /github/workspace/output/EventoAtender.html#/html/body/div/div/div/div/div/ul/li/a at Line 248, column 8: The link 'link' for "Condition" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -483,9 +486,10 @@ ERROR: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader).author: Details for http://acme.com/ehr/fhir/PractitionerRole/praR1 matching against profile http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE|0.1.1
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader).focus[0]: Unable to find a match for profile http://acme.com/ehr/fhir/ServiceRequest/serv1 among choices: http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE, http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader).focus[0]: Details for http://acme.com/ehr/fhir/ServiceRequest/serv1 matching against profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE|0.1.1
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[4].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[7].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[6].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[8].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).subject: Details for http://acme.com/ehr/fhir/Patient/pat1 matching against profile http://hl7.org/fhir/StructureDefinition/Patient|4.0.1
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).reasonCode[0].coding[0]: Code System URI 'http://terminology.cens.cl/codigosDeis/motivoInterconsulta' is unknown so the code cannot be validated
@@ -744,6 +748,7 @@ WARNING: CodeSystem/CSIndicecomorbilidad: CodeSystem.concept[0].display: value s
 == fsh-generated/resources/CodeSystem-CSMotivoNoPertinenciaCodigo.json ==
 == fsh-generated/resources/CodeSystem-CSPertinenciaInterconsulta.json ==
 == fsh-generated/resources/CodeSystem-CSPractitionerTipoRolLE.json ==
+== fsh-generated/resources/CodeSystem-CSPrevisionCodigo.json ==
 == fsh-generated/resources/CodeSystem-CSPuebloIndigena.json ==
 == fsh-generated/resources/CodeSystem-CSSospechaPatologia.json ==
 WARNING: CodeSystem/CSSospechaPatologia: CodeSystem.concept[1].display: value should not start or finish with whitespace 'Enfermedad...4 '
@@ -915,9 +920,10 @@ ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[2]: S
 ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:IndiceComorbilidad, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:IndiceComorbilidad, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:IndiceComorbilidad, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
-WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[4].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[7].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[6].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[8].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: ServiceRequest/EjemploServiceRequest: ServiceRequest.identifier[0].type.coding[0]: Code System URI 'http://terminology.cens.cl/CodeSystem/listaespera' is unknown so the code cannot be validated
 INFORMATION: ServiceRequest/EjemploServiceRequest: ServiceRequest.reasonCode[0].coding[0]: Code System URI 'http://terminology.cens.cl/codigosDeis/motivoInterconsulta' is unknown so the code cannot be validated
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequest2.json ==
@@ -1059,6 +1065,7 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/Structure
 == fsh-generated/resources/StructureDefinition-PertinenciaInterconsulta.json ==
 == fsh-generated/resources/StructureDefinition-PractitionerLE.json ==
 == fsh-generated/resources/StructureDefinition-PractitionerRoleLE.json ==
+== fsh-generated/resources/StructureDefinition-PrevisionCodigoLE.json ==
 == fsh-generated/resources/StructureDefinition-PuebloIndigena.json ==
 WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-QuestionnaireResponseInicioLE.json ==
@@ -1084,6 +1091,7 @@ WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/Structure
 == fsh-generated/resources/ValueSet-VSMotivoNoPertinenciaCodigo.json ==
 == fsh-generated/resources/ValueSet-VSPertinenciaInterconsulta.json ==
 == fsh-generated/resources/ValueSet-VSPractitionerTipoRolLE.json ==
+== fsh-generated/resources/ValueSet-VSPrevisionCodigo.json ==
 == fsh-generated/resources/ValueSet-VSPuebloIndigena.json ==
 == fsh-generated/resources/ValueSet-VSSospechaPatologia.json ==
 == fsh-generated/resources/ValueSet-VSSospechaPatologiaGes.json ==
