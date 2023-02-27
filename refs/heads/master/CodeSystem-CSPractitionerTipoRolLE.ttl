@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "CSPractitionerTipoRolLE"]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">iniciador<a name=\"CSPractitionerTipoRolLE-iniciador\"> </a></td><td>Iniciador</td></tr><tr><td style=\"white-space:nowrap\">referenciador<a name=\"CSPractitionerTipoRolLE-referenciador\"> </a></td><td>Referenciador</td></tr><tr><td style=\"white-space:nowrap\">revisor<a name=\"CSPractitionerTipoRolLE-revisor\"> </a></td><td>Revisor</td></tr><tr><td style=\"white-space:nowrap\">agendador<a name=\"CSPractitionerTipoRolLE-agendador\"> </a></td><td>Agendador</td></tr><tr><td style=\"white-space:nowrap\">atendedor<a name=\"CSPractitionerTipoRolLE-atendedor\"> </a></td><td>Atendedor</td></tr><tr><td style=\"white-space:nowrap\">terminador<a name=\"CSPractitionerTipoRolLE-terminador\"> </a></td><td>Terminador</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">iniciador<a name=\"CSPractitionerTipoRolLE-iniciador\"> </a></td><td>Iniciador</td></tr><tr><td style=\"white-space:nowrap\">referenciador<a name=\"CSPractitionerTipoRolLE-referenciador\"> </a></td><td>Referenciador</td></tr><tr><td style=\"white-space:nowrap\">revisor<a name=\"CSPractitionerTipoRolLE-revisor\"> </a></td><td>Revisor</td></tr><tr><td style=\"white-space:nowrap\">priorizador<a name=\"CSPractitionerTipoRolLE-priorizador\"> </a></td><td>Priorizador</td></tr><tr><td style=\"white-space:nowrap\">agendador<a name=\"CSPractitionerTipoRolLE-agendador\"> </a></td><td>Agendador</td></tr><tr><td style=\"white-space:nowrap\">atendedor<a name=\"CSPractitionerTipoRolLE-atendedor\"> </a></td><td>Atendedor</td></tr><tr><td style=\"white-space:nowrap\">terminador<a name=\"CSPractitionerTipoRolLE-terminador\"> </a></td><td>Terminador</td></tr></table></div>"
   ]; # 
   fhir:CodeSystem.url [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"]; # 
   fhir:CodeSystem.version [ fhir:value "0.1.1"]; # 
@@ -41,7 +41,7 @@
   ]; # 
   fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
   fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "6"^^xsd:nonNegativeInteger]; # 
+  fhir:CodeSystem.count [ fhir:value "7"^^xsd:nonNegativeInteger]; # 
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "iniciador" ];
@@ -56,14 +56,18 @@
      fhir:CodeSystem.concept.display [ fhir:value "Revisor" ]
   ], [
      fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "priorizador" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Priorizador" ]
+  ], [
+     fhir:index 4;
      fhir:CodeSystem.concept.code [ fhir:value "agendador" ];
      fhir:CodeSystem.concept.display [ fhir:value "Agendador" ]
   ], [
-     fhir:index 4;
+     fhir:index 5;
      fhir:CodeSystem.concept.code [ fhir:value "atendedor" ];
      fhir:CodeSystem.concept.display [ fhir:value "Atendedor" ]
   ], [
-     fhir:index 5;
+     fhir:index 6;
      fhir:CodeSystem.concept.code [ fhir:value "terminador" ];
      fhir:CodeSystem.concept.display [ fhir:value "Terminador" ]
   ] . # 
