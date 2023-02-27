@@ -904,3 +904,42 @@ Description: "CodeSystem con códigos definidos para representar cada rol de los
 * #agendador "Agendador"
 * #atendedor "Atendedor"
 * #terminador "Terminador"
+
+
+ValueSet: VSPrevisionCodigo
+Id: VSPrevisionCodigo
+Title: "PrevisionCodigo"
+Description: "PrevisionCodigo"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSPrevisionCodigo
+
+CodeSystem: CSPrevisionCodigo
+Id: CSPrevisionCodigo
+Title: "PrevisionCodigo"
+Description: "PrevisionCodigo"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = terminologias.fsh  urn:iso:std:iso:3166#CL "Chile"
+
+* #1   "FONASA Fondo Nacional de Salud."
+* #2   "ISAPRE  Instituciones de Salud Previsional."
+* #3   "CAPREDENA Caja de Previsión de la Defensa Nacional."
+* #4   "DIPRECA Dirección de Previsión de Carabineros, PDI y Gendarmería"
+* #5   "SISA Sistema de Salud de las Fuerzas Armadas (Ejército, Armada y Fuerza Aérea)."
+* #96  "NINGUNA"
+* #99  "DESCONOCIDO"
+
