@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="EjemploBundlePriorizar"/>
+  <meta>
+    <lastUpdated value="2023-01-20T14:12:10Z"/>
+    <profile value="http://minsal.cl/listaespera/StructureDefinition/BundlePriorizarLE"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2023-02-09T17:15:22Z"/>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/MessageHeader/priorizar"/>
+    <resource>
+      <MessageHeader>
+        <id value="EjemploMessageHeaderPriorizar"/>
+        <meta>
+          <lastUpdated value="2023-02-14T14:12:10Z"/>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="EjemploMessageHeaderPriorizar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;EjemploMessageHeaderPriorizar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a></p></div><p><b>event</b>: Priorizar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code priorizar = 'Priorizar', stated as 'null')</p><p><b>author</b>: <a href="#PractitionerRole_EjemploPractitionerRolePriorizar">See above (http://acme.com/ehr/fhir/PractitionerRole/priorizar)</a></p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href="http://link-to-sending.cl">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href="#ServiceRequest_EjemploServiceRequestPriorizar">See above (http://acme.com/ehr/fhir/ServiceRequest/priorizar)</a></p></div>
+        </text>
+        <eventCoding>
+          <system value="http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE"/>
+          <code value="priorizar"/>
+        </eventCoding>
+        <author>
+          <reference value="http://acme.com/ehr/fhir/PractitionerRole/priorizar"/>
+        </author>
+        <source>
+          <software value="SolucionInformatica"/>
+          <endpoint value="http://link-to-sending.cl"/>
+        </source>
+        <focus>
+          <reference value="http://acme.com/ehr/fhir/ServiceRequest/priorizar"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/ServiceRequest/priorizar"/>
+    <resource>
+      <ServiceRequest>
+        <id value="EjemploServiceRequestPriorizar"/>
+        <meta>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestPriorizar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestPriorizar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>identifier</b>: IdInterconsulta: 323121</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href="Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="IdInterconsulta"/>
+              <code value="IdInterconsulta"/>
+            </coding>
+          </type>
+          <value value="323121"/>
+        </identifier>
+        <status value="draft"/>
+        <intent value="proposal"/>
+        <priority value="urgent"/>
+        <subject>
+          <reference value="http://acme.com/ehr/fhir/Patient/pat1"/>
+        </subject>
+        <authoredOn value="2022-01-20T13:50:20Z"/>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/PractitionerRole/priorizar"/>
+    <resource>
+      <PractitionerRole>
+        <id value="EjemploPractitionerRolePriorizar"/>
+        <meta>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRolePriorizar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRolePriorizar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="#Practitioner_EjemploPractitionerPriorizar">See above (http://acme.com/ehr/fhir/Practitioner/priorizar)</a></p><p><b>organization</b>: <a href="#Organization_EjemploOrganizationPriorizar">See above (http://acme.com/ehr/fhir/Organization/priorizar)</a></p><p><b>code</b>: Priorizador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Priorizador)</span></p></div>
+        </text>
+        <practitioner>
+          <reference value="http://acme.com/ehr/fhir/Practitioner/priorizar"/>
+        </practitioner>
+        <organization>
+          <reference value="http://acme.com/ehr/fhir/Organization/priorizar"/>
+        </organization>
+        <code>
+          <coding>
+            <code value="Priorizador"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Organization/priorizar"/>
+    <resource>
+      <Organization>
+        <id value="EjemploOrganizationPriorizar"/>
+        <meta>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="EjemploOrganizationPriorizar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;EjemploOrganizationPriorizar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-OrganizationLE.html">Organization LE</a></p></div><p><b>identifier</b>: id: 1</p></div>
+        </text>
+        <identifier>
+          <value value="1"/>
+        </identifier>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Practitioner/priorizar"/>
+    <resource>
+      <Practitioner>
+        <id value="EjemploPractitionerPriorizar"/>
+        <meta>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerPriorizar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerPriorizar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerLE.html">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Medico <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (terminology.cens.cl#01)</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+              <code value="RUN"/>
+            </coding>
+          </type>
+          <value value="2134"/>
+        </identifier>
+        <identifier>
+          <use value="secondary"/>
+          <type>
+            <coding>
+              <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+              <code value="ValorRNPI"/>
+            </coding>
+          </type>
+          <value value="2134"/>
+        </identifier>
+        <qualification>
+          <identifier>
+            <value value="cert"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://terminology.cens.cl"/>
+              <code value="01"/>
+              <display value="Medico"/>
+            </coding>
+          </code>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Patient/priorizar"/>
+    <resource>
+      <Patient>
+        <id value="EjemploPatient"/>
+        <meta>
+          <profile value="http://minsal.cl/listaespera/StructureDefinition/PatientLE"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="EjemploPatient"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;EjemploPatient&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PatientLE.html">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#AD)</span></p><p><b>Identidad de genero</b>: 01 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#01)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>
+        </text>
+        <extension url="http://minsal.cl/listaespera/StructureDefinition/CodigoPaises">
+          <valueCodeableConcept>
+            <coding>
+              <code value="AD"/>
+            </coding>
+            <text value="Andorra"/>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo">
+          <valueCodeableConcept>
+            <coding>
+              <code value="AD"/>
+            </coding>
+            <text value="Andorra"/>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero">
+          <valueCodeableConcept>
+            <coding>
+              <code value="01"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente">
+          <valueBoolean value="false"/>
+        </extension>
+        <identifier>
+          <extension url="http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador">
+            <valueString value="K"/>
+          </extension>
+          <type>
+            <extension url="http://minsal.cl/listaespera/StructureDefinition/CodigoPaises">
+              <valueCoding>
+                <code value="AD"/>
+              </valueCoding>
+            </extension>
+            <coding>
+              <system value="http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador"/>
+              <code value="1"/>
+              <display value="RUN"/>
+            </coding>
+          </type>
+          <system value="http://www.acme.com/identifiers/patient"/>
+          <value value="15999999"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Perez">
+            <extension url="http://minsal.cl/listaespera/StructureDefinition/SegundoApellido">
+              <valueString value="sierra"/>
+            </extension>
+          </family>
+          <given value="Luis"/>
+        </name>
+        <name>
+          <use value="usual"/>
+          <given value="Luisa"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="569854875457"/>
+          <use value="mobile"/>
+          <rank value="1"/>
+        </telecom>
+        <gender value="male"/>
+        <birthDate value="1995-12-12"/>
+      </Patient>
+    </resource>
+  </entry>
+</Bundle>
