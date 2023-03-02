@@ -1,15 +1,16 @@
 ﻿ListaEsperaChile : Validation Results
 =========================================
 
-err = 580, warn = 115, info = 141
+err = 582, warn = 114, info = 142
 IG Publisher Version: 1.2.22 Out of date - current version is 1.2.38
-Generated Thu Mar 02 15:20:21 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
+Generated Thu Mar 02 20:07:26 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
  Build Errors : 13 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointment : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAgendar : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAtender : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAgendar : 54 / 6 / 34
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAtender : 2 / 0 / 4
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleInicio : 261 / 10 / 65
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundlePriorizar : 49 / 6 / 28
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleReferencia : 42 / 4 / 30
@@ -99,7 +100,7 @@ Generated Thu Mar 02 15:20:21 UTC 2023. FHIR version 4.0.1 for fhir.hl7chile.Lis
  /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentInicioLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleAgendarLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BundleAtenderLE : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BundleAtenderLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleInicioLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundlePriorizarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleReferenciaLE : 0 / 0 / 1
@@ -292,6 +293,10 @@ INFORMATION: Bundle/EjemploBundleAgendar: Bundle.entry[6].resource.ofType(Practi
 WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[5]: Entry 'http://acme.com/ehr/fhir/PractitionerRole/agendarAtendedor' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[6]: Entry 'http://acme.com/ehr/fhir/Practitioner/agendarAtendedor' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/EjemploBundleAgendar: Bundle.entry[7]: Entry 'http://acme.com/ehr/fhir/Practitioner/agendarAgendador' isn't reachable by traversing from first Bundle entry
+== fsh-generated/resources/Bundle-EjemploBundleAtender.json ==
+ERROR: Bundle/EjemploBundleAtender: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleAtenderLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleAtenderLE (@char 1)
+INFORMATION: Bundle/EjemploBundleAtender: Bundle: Bundle.entry:messageheader: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://minsal.cl/listaespera/StructureDefinition/BundleAtenderLE|0.1.1)
+ERROR: Bundle/EjemploBundleAtender: Bundle.entry[1].resource.focus[0].reference: Can't find 'http://acme.com/ehr/fhir/ServiceRequest/atender' in the bundle (MessageHeader Data)
 == fsh-generated/resources/Bundle-EjemploBundleInicio.json ==
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE (@char 1)
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: profile in profile http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE on element Bundle.entry:messageheader, looking in profile http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE (@char 1)
@@ -1120,7 +1125,6 @@ INFORMATION: ServiceRequest/EjemploServiceRequestTerminar: ServiceRequest.identi
 == fsh-generated/resources/StructureDefinition-AppointmentLE.json ==
 == fsh-generated/resources/StructureDefinition-BundleAgendarLE.json ==
 == fsh-generated/resources/StructureDefinition-BundleAtenderLE.json ==
-WARNING: StructureDefinition.where(url = 'http://minsal.cl/listaespera/StructureDefinition/BundleAtenderLE'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-BundleInicioLE.json ==
 == fsh-generated/resources/StructureDefinition-BundlePriorizarLE.json ==
 == fsh-generated/resources/StructureDefinition-BundleReferenciaLE.json ==
