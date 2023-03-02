@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="EjemploEncounterAtender"/>
+  <meta>
+    <profile value="http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="EjemploEncounterAtender"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;EjemploEncounterAtender&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-EncounterAtenderLE.html">Encounter Atender LE</a></p></div><p><b>ExtBool Pertinencia Atencion Box</b>: true</p><p><b>ExtString MotivoNoPertinencia</b>: lorem ipsum</p><p><b>identifier</b>: IdConsultaAPS: 1</p><p><b>status</b>: finished</p><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>subject</b>: <a href="http://acme.com/ehr/fhir/Patient/PatientLE">http://acme.com/ehr/fhir/Patient/PatientLE</a></p><p><b>basedOn</b>: <a href="http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE">http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE</a></p><p><b>appointment</b>: <a href="Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1">http://acme.com/ehr/fhir/Appointment/app1</a></p></div>
+  </text>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia">
+    <valueString value="lorem ipsum"/>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+        <code value="IdConsultaAPS"/>
+      </coding>
+    </type>
+    <value value="1"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <code value="AMB"/>
+  </class>
+  <subject>
+    <reference value="http://acme.com/ehr/fhir/Patient/PatientLE"/>
+  </subject>
+  <basedOn>
+    <reference value="http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE"/>
+  </basedOn>
+  <appointment>
+    <reference value="http://acme.com/ehr/fhir/Appointment/app1"/>
+  </appointment>
+</Encounter>

@@ -17,24 +17,11 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Destino Atención Codigo</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtBool RequiereExamen</b>: true</p><p><b>Pertinencia Interconsulta</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 323121</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>category</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>priority</b>: routine</p><p><b>doNotPerform</b>: true</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1\">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Destino Atención Codigo</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 323121</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/atender\">http://acme.com/ehr/fhir/Patient/atender</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>performer</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/atender\">http://acme.com/ehr/fhir/PractitionerRole/atender</a></p></div>"
   ]; # 
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "1" ]
-       ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen" ];
-     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-  ], [
-     fhir:index 2;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta" ];
      fhir:Extension.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0;
@@ -55,33 +42,16 @@
   ]; # 
   fhir:ServiceRequest.status [ fhir:value "draft"]; # 
   fhir:ServiceRequest.intent [ fhir:value "proposal"]; # 
-  fhir:ServiceRequest.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.code [ fhir:value "1" ]
-     ]
-  ]; # 
-  fhir:ServiceRequest.priority [ fhir:value "routine"]; # 
-  fhir:ServiceRequest.doNotPerform [
-     fhir:value "true"^^xsd:boolean;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.code [ fhir:value "1" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "Texto libre" ]
-       ]
-     ]
-  ]; # 
   fhir:ServiceRequest.subject [
-     fhir:link <http://acme.com/ehr/fhir/Patient/pat1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/pat1" ]
+     fhir:link <http://acme.com/ehr/fhir/Patient/atender>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/atender" ]
   ]; # 
-  fhir:ServiceRequest.authoredOn [ fhir:value "2022-01-20T13:50:20Z"^^xsd:dateTime] . # 
+  fhir:ServiceRequest.authoredOn [ fhir:value "2022-01-20T13:50:20Z"^^xsd:dateTime]; # 
+  fhir:ServiceRequest.performer [
+     fhir:index 0;
+     fhir:link <http://acme.com/ehr/fhir/PractitionerRole/atender>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/PractitionerRole/atender" ]
+  ] . # 
 
 # - ontology header ------------------------------------------------------------
 

@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Appointment/EjemploAppointmentAtender> a fhir:Appointment;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EjemploAppointmentAtender"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentLE.html\">AppointmentLE</a></p></div><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>start</b>: Jan 22, 2023, 6:00:00 AM</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor\">http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor</a></td><td>accepted</td></tr></table></div>"
+  ]; # 
+  fhir:Appointment.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "21" ]
+  ]; # 
+  fhir:Appointment.status [ fhir:value "booked"]; # 
+  fhir:Appointment.start [ fhir:value "2023-01-22T09:00:00Z"^^xsd:dateTime]; # 
+  fhir:Appointment.participant [
+     fhir:index 0;
+     fhir:Appointment.participant.actor [
+       fhir:link <http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor>;
+       fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Appointment/EjemploAppointmentAtender.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

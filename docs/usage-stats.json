@@ -400,6 +400,25 @@
       ]
     },
     {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE",
+      "title": "Previsión determinada  de aseguramiento de salud del paciente.",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
       "url": "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena",
       "title": "Etnia a la cual pertenece",
       "types": [
@@ -545,8 +564,16 @@
         "title": "Bundle Agendar LE"
       },
       {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/BundleAtenderLE",
+        "title": "Bundle Atender LE"
+      },
+      {
         "url": "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE",
         "title": "BundleInicio LE"
+      },
+      {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/BundlePriorizarLE",
+        "title": "Bundle Priorizar LE"
       },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE",
@@ -569,16 +596,16 @@
     ],
     "Condition": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtender1LE",
-        "title": "Condicion Atender 1 LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE",
+        "title": "Condicion Atender Diagnostico Confirmacion LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtender2LE",
-        "title": "Condicion Atender 2 LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE",
+        "title": "Condicion Atender Diagnostico Sospecha LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtender3LE",
-        "title": "Condicion Atender 3 LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE",
+        "title": "Condicion Atender Hipotesis Diagnostica Codigo"
       },
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE",
@@ -591,12 +618,6 @@
       {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE",
         "title": "Condition Inicio Sospecha Ges LE"
-      }
-    ],
-    "DocumentReference": [
-      {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/DocumentReferenceLE",
-        "title": "DocumentReference LE"
       }
     ],
     "Encounter": [
@@ -651,6 +672,10 @@
     ],
     "QuestionnaireResponse": [
       {
+        "url": "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseAtenderLE",
+        "title": "QuestionnaireResponse Atender LE"
+      },
+      {
         "url": "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseInicioLE",
         "title": "QuestionnaireResponse Inicio LE"
       }
@@ -688,9 +713,6 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -705,9 +727,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
-      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition",
@@ -785,9 +804,6 @@
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolSolicitudExamenes": [
       "CarePlan"
     ],
-    "http://minsal.cl/listaespera/StructureDefinition/ExtInteger": [
-      "DocumentReference"
-    ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion": [
       "Bundle.entry.resource",
       "ServiceRequest"
@@ -819,6 +835,10 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE": [
       "Bundle.entry.resource",
       "ServiceRequest"
     ],

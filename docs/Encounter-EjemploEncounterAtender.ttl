@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Encounter/EjemploEncounterAtender> a fhir:Encounter;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "EjemploEncounterAtender"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EjemploEncounterAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EjemploEncounterAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EncounterAtenderLE.html\">Encounter Atender LE</a></p></div><p><b>ExtBool Pertinencia Atencion Box</b>: true</p><p><b>ExtString MotivoNoPertinencia</b>: lorem ipsum</p><p><b>identifier</b>: IdConsultaAPS: 1</p><p><b>status</b>: finished</p><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/PatientLE\">http://acme.com/ehr/fhir/Patient/PatientLE</a></p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE\">http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE</a></p><p><b>appointment</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1\">http://acme.com/ehr/fhir/Appointment/app1</a></p></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia" ];
+     fhir:Extension.valueString [ fhir:value "lorem ipsum" ]
+  ]; # 
+  fhir:Encounter.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.cens.cl/CodeSystem/listaespera" ];
+         fhir:Coding.code [ fhir:value "IdConsultaAPS" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ]; # 
+  fhir:Encounter.status [ fhir:value "finished"]; # 
+  fhir:Encounter.class [
+     fhir:Coding.code [ fhir:value "AMB" ]
+  ]; # 
+  fhir:Encounter.subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/PatientLE>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/PatientLE" ]
+  ]; # 
+  fhir:Encounter.basedOn [
+     fhir:index 0;
+     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE" ]
+  ]; # 
+  fhir:Encounter.appointment [
+     fhir:index 0;
+     fhir:link <http://acme.com/ehr/fhir/Appointment/app1>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Appointment/app1" ]
+  ] . # 
+
+# - ontology header ------------------------------------------------------------
+
+<http://minsal.cl/listaespera/Encounter/EjemploEncounterAtender.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -164,8 +164,6 @@ Description: "Ejemplo de Bundle Evento de Agendar"
 * entry[practitionerRole][1].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/agendarAtendedor"
 * entry[practitionerRole][1].resource = EjemploPractitionerRoleAgendarAPPO
 
-
-
 * entry[practitioner][0].fullUrl = "http://acme.com/ehr/fhir/Practitioner/agendarAtendedor"
 * entry[practitioner][0].resource = EjemploPractitionerAgendarAtendedor
 
@@ -221,7 +219,7 @@ Description: "Ejemplo de Bundle Evento de Priorizar"
 
 
 /*Bundle Atender*/
-/*
+
 Instance: EjemploBundleAtender
 InstanceOf: BundleAtenderLE
 Usage: #example
@@ -234,7 +232,7 @@ Description: "Ejemplo de Bundle Evento de Atender"
 
 * entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/atender"
 * entry[messageheader].resource = EjemploMessageHeaderAtender
-
+/*
 * entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/atender"
 * entry[servicerequest].resource = EjemploServiceRequestAtender
 

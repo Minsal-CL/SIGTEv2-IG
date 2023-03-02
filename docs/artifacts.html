@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"18"}
-    h3,h4,h5,h6{--heading-prefix:"18.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"19"}
+    h3,h4,h5,h6{--heading-prefix:"19.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -131,6 +131,9 @@
       </li>
       <li>
         <a href="EventoRevisar.html">Evento Revisar</a>
+      </li>
+      <li>
+        <a href="EventoPriorizar.html">Evento Priorizar</a>
       </li>
       <li>
         <a href="EventoAgendar.html">Evento Agendar</a>
@@ -254,11 +257,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-BundleAtenderLE.html"
+                     title="StructureDefinition/BundleAtenderLE">Bundle Atender LE</a>
+               </td>
+               <td>
+<p>Bundle Atender LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Atender.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-BundleInicioLE.html"
                      title="StructureDefinition/BundleInicioLE">BundleInicio LE</a>
                </td>
                <td>
 <p>Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BundlePriorizarLE.html"
+                     title="StructureDefinition/BundlePriorizarLE">Bundle Priorizar LE</a>
+               </td>
+               <td>
+<p>Bundle Priorizar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Priorizar.</p>
 </td>
             </tr>
             <tr>
@@ -299,29 +320,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CondicionAtender1LE.html"
-                     title="StructureDefinition/CondicionAtender1LE">Condicion Atender 1 LE</a>
+                  <a href="StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html"
+                     title="StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE">Condicion Atender Diagnostico Confirmacion LE</a>
                </td>
                <td>
-<p>Condicion Atender 1 LE</p>
+<p>Condicion Atender Diagnostico Confirmacion LE</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CondicionAtender2LE.html"
-                     title="StructureDefinition/CondicionAtender2LE">Condicion Atender 2 LE</a>
+                  <a href="StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html"
+                     title="StructureDefinition/CondicionAtenderDiagnosticoSospechaLE">Condicion Atender Diagnostico Sospecha LE</a>
                </td>
                <td>
-<p>Condicion Atender 2 LE</p>
+<p>Condicion Atender Diagnostico Sospecha LE</p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-CondicionAtender3LE.html"
-                     title="StructureDefinition/CondicionAtender3LE">Condicion Atender 3 LE</a>
+                  <a href="StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html"
+                     title="StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE">Condicion Atender Hipotesis Diagnostica Codigo</a>
                </td>
                <td>
-<p>Condicion Atender 3 LE</p>
+<p>Condicion Atender Hipotesis Diagnostica Codigo</p>
 </td>
             </tr>
             <tr>
@@ -349,15 +370,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Condicion Inicio 3 LE recurso que se utiliza para indicar la sospecha de patología GES.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DocumentReferenceLE.html"
-                     title="StructureDefinition/DocumentReferenceLE">DocumentReference LE</a>
-               </td>
-               <td>
-<p>DocumentReference LE</p>
 </td>
             </tr>
             <tr>
@@ -439,6 +451,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-QuestionnaireResponseAtenderLE.html"
+                     title="StructureDefinition/QuestionnaireResponseAtenderLE">QuestionnaireResponse Atender LE</a>
+               </td>
+               <td>
+<p>QuestionnaireResponse Atender LE</p>
 </td>
             </tr>
             <tr>
@@ -716,6 +737,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-PrevisionCodigoLE.html"
+                     title="StructureDefinition/PrevisionCodigoLE">Previsión determinada  de aseguramiento de salud del paciente.</a>
+               </td>
+               <td>
+<p>La previsión es la  variable determinada el sistema de aseguramiento de salud del paciente.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-PuebloIndigena.html"
                      title="StructureDefinition/PuebloIndigena">Etnia a la cual pertenece</a>
                </td>
@@ -912,6 +942,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Rol de médicos(Practitioner) en algún evento, durante la intercosulta.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSPrevisionCodigo.html"
+                     title="ValueSet/VSPrevisionCodigo">PrevisionCodigo</a>
+               </td>
+               <td>
+<p>PrevisionCodigo</p>
 </td>
             </tr>
             <tr>
@@ -1140,6 +1179,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-CSPrevisionCodigo.html"
+                     title="CodeSystem/CSPrevisionCodigo">PrevisionCodigo</a>
+               </td>
+               <td>
+<p>PrevisionCodigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-CSPuebloIndigena.html"
                      title="CodeSystem/CSPuebloIndigena">Pueblo Indigena</a>
                </td>
@@ -1258,6 +1306,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Appointment-EjemploAppointmentAtender.html"
+                     title="Appointment/EjemploAppointmentAtender">Ejemplo de Appointment Evento de Atender</a>
+               </td>
+               <td>
+<p>Ejemplo de Appointment Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Bundle-EjemploBundleAgendar.html"
                      title="Bundle/EjemploBundleAgendar">Ejemplo de Bundle Evento de Agendar</a>
                </td>
@@ -1267,11 +1324,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundleAtender.html"
+                     title="Bundle/EjemploBundleAtender">Ejemplo de Bundle Evento de Atender</a>
+               </td>
+               <td>
+<p>Ejemplo de Bundle Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Bundle-EjemploBundleInicio.html"
                      title="Bundle/EjemploBundleInicio">Ejemplo de Bundle Evento de Inicio</a>
                </td>
                <td>
 <p>Ejemplo de Bundle Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundlePriorizar.html"
+                     title="Bundle/EjemploBundlePriorizar">Ejemplo de Bundle Evento de Priorizar</a>
+               </td>
+               <td>
+<p>Ejemplo de Bundle Evento de Priorizar</p>
 </td>
             </tr>
             <tr>
@@ -1299,6 +1374,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Ejemplo de Bundle Evento de Terminar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-EjemploCarePlanLE.html"
+                     title="CarePlan/EjemploCarePlanLE">Ejemplo de Condition1 Evento de Atender</a>
+               </td>
+               <td>
+<p>Ejemplo de Condition1 Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-EjemploCondicionAtenderDiagnosticoConfirmacionLE.html"
+                     title="Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE">Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender</a>
+               </td>
+               <td>
+<p>Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-EjemploCondicionAtenderDiagnosticoSospechaLE.html"
+                     title="Condition/EjemploCondicionAtenderDiagnosticoSospechaLE">Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender</a>
+               </td>
+               <td>
+<p>Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE.html"
+                     title="Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE">Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender</a>
+               </td>
+               <td>
+<p>Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender</p>
 </td>
             </tr>
             <tr>
@@ -1339,6 +1450,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Encounter-EjemploEncounterAtender.html"
+                     title="Encounter/EjemploEncounterAtender">Ejemplo de Encounter Evento de Atender</a>
+               </td>
+               <td>
+<p>Ejemplo de Encounter Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="MessageHeader-EjemploMessageHeader.html"
                      title="MessageHeader/EjemploMessageHeader">Ejemplo de MesaggeHeader Evento de Inicio</a>
                </td>
@@ -1362,6 +1482,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Ejemplo de MesaggeHeader Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-EjemploMessageHeaderPriorizar.html"
+                     title="MessageHeader/EjemploMessageHeaderPriorizar">Ejemplo de MesaggeHeader Evento de Priorizar</a>
+               </td>
+               <td>
+<p>Ejemplo de MesaggeHeader Evento de Priorizar</p>
 </td>
             </tr>
             <tr>
@@ -1402,6 +1531,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Observation-EjemploObservationAtender.html"
+                     title="Observation/EjemploObservationAtender">Ejemplo de Observation Evento de AtenderInicio</a>
+               </td>
+               <td>
+<p>Ejemplo de Observation Evento de AtenderInicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Organization-EjemploOrganization.html"
                      title="Organization/EjemploOrganization">Ejemplo de Organization Evento de Inicio</a>
                </td>
@@ -1434,6 +1572,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Ejemplo de Organization Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganizationPriorizar.html"
+                     title="Organization/EjemploOrganizationPriorizar">Ejemplo de Organization Evento de Priorizar</a>
+               </td>
+               <td>
+<p>Ejemplo de Organization Evento de Priorizar</p>
 </td>
             </tr>
             <tr>
@@ -1518,6 +1665,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Practitioner-EjemploPractitionerPriorizar.html"
+                     title="Practitioner/EjemploPractitionerPriorizar">Ejemplo de Practitioner Evento de Priorizar</a>
+               </td>
+               <td>
+<p>Ejemplo de Practitioner Evento de Priorizar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Practitioner-EjemploPractitionerReferenciadorMHREFERENCIADA.html"
                      title="Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA">Ejemplo de Practitioner Evento de Referencia y Terminar</a>
                </td>
@@ -1568,6 +1724,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                </td>
                <td>
 <p>Ejemplo de PractitionerRole Evento de Agendar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRoleAtender.html"
+                     title="PractitionerRole/EjemploPractitionerRoleAtender">Ejemplo de PractitionerRole Evento de Atender</a>
+               </td>
+               <td>
+<p>Ejemplo de PractitionerRole Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRolePriorizar.html"
+                     title="PractitionerRole/EjemploPractitionerRolePriorizar">Ejemplo de PractitionerRole Evento de Priorizar</a>
+               </td>
+               <td>
+<p>Ejemplo de PractitionerRole Evento de Priorizar</p>
 </td>
             </tr>
             <tr>
@@ -1653,6 +1827,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="ServiceRequest-EjemploServiceRequestPriorizar.html"
+                     title="ServiceRequest/EjemploServiceRequestPriorizar">Ejemplo de Service Request Evento Priorizar</a>
+               </td>
+               <td>
+<p>Ejemplo de Service Request Evento Priorizar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ServiceRequest-EjemploServiceRequestReferencia.html"
                      title="ServiceRequest/EjemploServiceRequestReferencia">Ejemplo de Service Request Evento de Referencia</a>
                </td>
@@ -1705,7 +1888,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 22, 2023 17:19-0300">2023-02-22</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 16:47-0300">2023-03-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

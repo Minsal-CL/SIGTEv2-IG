@@ -10,7 +10,7 @@
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-02-22T17:19:22-03:00",
+  "date" : "2023-03-02T16:47:17-03:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -622,10 +622,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/BundleAtenderLE"
+      },
+      "name" : "Bundle Atender LE",
+      "description" : "Bundle Atender LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Atender.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/BundleInicioLE"
       },
       "name" : "BundleInicio LE",
       "description" : "Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento inicio.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/BundlePriorizarLE"
+      },
+      "name" : "Bundle Priorizar LE",
+      "description" : "Bundle Priorizar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Priorizar.",
       "exampleBoolean" : false
     },
     {
@@ -682,10 +706,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CondicionAtender1LE"
+        "reference" : "StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE"
       },
-      "name" : "Condicion Atender 1 LE",
-      "description" : "Condicion Atender 1 LE",
+      "name" : "Condicion Atender Diagnostico Confirmacion LE",
+      "description" : "Condicion Atender Diagnostico Confirmacion LE",
       "exampleBoolean" : false
     },
     {
@@ -694,10 +718,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CondicionAtender2LE"
+        "reference" : "StructureDefinition/CondicionAtenderDiagnosticoSospechaLE"
       },
-      "name" : "Condicion Atender 2 LE",
-      "description" : "Condicion Atender 2 LE",
+      "name" : "Condicion Atender Diagnostico Sospecha LE",
+      "description" : "Condicion Atender Diagnostico Sospecha LE",
       "exampleBoolean" : false
     },
     {
@@ -706,10 +730,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CondicionAtender3LE"
+        "reference" : "StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE"
       },
-      "name" : "Condicion Atender 3 LE",
-      "description" : "Condicion Atender 3 LE",
+      "name" : "Condicion Atender Hipotesis Diagnostica Codigo",
+      "description" : "Condicion Atender Hipotesis Diagnostica Codigo",
       "exampleBoolean" : false
     },
     {
@@ -746,18 +770,6 @@
       },
       "name" : "Condition Inicio Sospecha Ges LE",
       "description" : "Condicion Inicio 3 LE recurso que se utiliza para indicar la sospecha de patología GES.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DocumentReferenceLE"
-      },
-      "name" : "DocumentReference LE",
-      "description" : "DocumentReference LE",
       "exampleBoolean" : false
     },
     {
@@ -866,6 +878,18 @@
       },
       "name" : "PractitionerRole LE",
       "description" : "PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/QuestionnaireResponseAtenderLE"
+      },
+      "name" : "QuestionnaireResponse Atender LE",
+      "description" : "QuestionnaireResponse Atender LE",
       "exampleBoolean" : false
     },
     {
@@ -1221,6 +1245,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/PrevisionCodigoLE"
+      },
+      "name" : "Previsión determinada  de aseguramiento de salud del paciente.",
+      "description" : "La previsión es la  variable determinada el sistema de aseguramiento de salud del paciente.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/PuebloIndigena"
       },
       "name" : "Etnia a la cual pertenece",
@@ -1465,6 +1501,18 @@
       },
       "name" : "Rol de médicos",
       "description" : "Rol de médicos(Practitioner) en algún evento, durante la intercosulta.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSPrevisionCodigo"
+      },
+      "name" : "PrevisionCodigo",
+      "description" : "PrevisionCodigo",
       "exampleBoolean" : false
     },
     {
@@ -1761,6 +1809,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/CSPrevisionCodigo"
+      },
+      "name" : "PrevisionCodigo",
+      "description" : "PrevisionCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/CSPuebloIndigena"
       },
       "name" : "Pueblo Indigena",
@@ -1902,6 +1962,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/EjemploAppointmentAtender"
+      },
+      "name" : "Ejemplo de Appointment Evento de Atender",
+      "description" : "Ejemplo de Appointment Evento de Atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
@@ -1917,11 +1989,35 @@
         "valueString" : "Bundle"
       }],
       "reference" : {
+        "reference" : "Bundle/EjemploBundleAtender"
+      },
+      "name" : "Ejemplo de Bundle Evento de Atender",
+      "description" : "Ejemplo de Bundle Evento de Atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleAtenderLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
         "reference" : "Bundle/EjemploBundleInicio"
       },
       "name" : "Ejemplo de Bundle Evento de Inicio",
       "description" : "Ejemplo de Bundle Evento de Inicio",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/EjemploBundlePriorizar"
+      },
+      "name" : "Ejemplo de Bundle Evento de Priorizar",
+      "description" : "Ejemplo de Bundle Evento de Priorizar",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundlePriorizarLE"
     },
     {
       "extension" : [{
@@ -1958,6 +2054,54 @@
       "name" : "Ejemplo de Bundle Evento de Terminar",
       "description" : "Ejemplo de Bundle Evento de Terminar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CarePlan"
+      }],
+      "reference" : {
+        "reference" : "CarePlan/EjemploCarePlanLE"
+      },
+      "name" : "Ejemplo de Condition1 Evento de Atender",
+      "description" : "Ejemplo de Condition1 Evento de Atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CarePlanAtenderLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE"
+      },
+      "name" : "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender",
+      "description" : "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/EjemploCondicionAtenderDiagnosticoSospechaLE"
+      },
+      "name" : "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender",
+      "description" : "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE"
+      },
+      "name" : "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender",
+      "description" : "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE"
     },
     {
       "extension" : [{
@@ -2010,6 +2154,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/EjemploEncounterAtender"
+      },
+      "name" : "Ejemplo de Encounter Evento de Atender",
+      "description" : "Ejemplo de Encounter Evento de Atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MessageHeader"
       }],
       "reference" : {
@@ -2041,6 +2197,18 @@
       },
       "name" : "Ejemplo de MesaggeHeader Evento de Atender",
       "description" : "Ejemplo de MesaggeHeader Evento de Atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MessageHeader"
+      }],
+      "reference" : {
+        "reference" : "MessageHeader/EjemploMessageHeaderPriorizar"
+      },
+      "name" : "Ejemplo de MesaggeHeader Evento de Priorizar",
+      "description" : "Ejemplo de MesaggeHeader Evento de Priorizar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"
     },
     {
@@ -2094,6 +2262,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/EjemploObservationAtender"
+      },
+      "name" : "Ejemplo de Observation Evento de AtenderInicio",
+      "description" : "Ejemplo de Observation Evento de AtenderInicio",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Organization"
       }],
       "reference" : {
@@ -2137,6 +2317,18 @@
       },
       "name" : "Ejemplo de Organization Evento de Atender",
       "description" : "Ejemplo de Organization Evento de Atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/EjemploOrganizationPriorizar"
+      },
+      "name" : "Ejemplo de Organization Evento de Priorizar",
+      "description" : "Ejemplo de Organization Evento de Priorizar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"
     },
     {
@@ -2253,6 +2445,18 @@
         "valueString" : "Practitioner"
       }],
       "reference" : {
+        "reference" : "Practitioner/EjemploPractitionerPriorizar"
+      },
+      "name" : "Ejemplo de Practitioner Evento de Priorizar",
+      "description" : "Ejemplo de Practitioner Evento de Priorizar",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
         "reference" : "Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA"
       },
       "name" : "Ejemplo de Practitioner Evento de Referencia y Terminar",
@@ -2317,6 +2521,30 @@
       },
       "name" : "Ejemplo de PractitionerRole Evento de Agendar",
       "description" : "Ejemplo de PractitionerRole Evento de Agendar",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/EjemploPractitionerRoleAtender"
+      },
+      "name" : "Ejemplo de PractitionerRole Evento de Atender",
+      "description" : "Ejemplo de PractitionerRole Evento de Atender",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/EjemploPractitionerRolePriorizar"
+      },
+      "name" : "Ejemplo de PractitionerRole Evento de Priorizar",
+      "description" : "Ejemplo de PractitionerRole Evento de Priorizar",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"
     },
     {
@@ -2433,6 +2661,18 @@
         "valueString" : "ServiceRequest"
       }],
       "reference" : {
+        "reference" : "ServiceRequest/EjemploServiceRequestPriorizar"
+      },
+      "name" : "Ejemplo de Service Request Evento Priorizar",
+      "description" : "Ejemplo de Service Request Evento Priorizar",
+      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
         "reference" : "ServiceRequest/EjemploServiceRequestReferencia"
       },
       "name" : "Ejemplo de Service Request Evento de Referencia",
@@ -2541,6 +2781,15 @@
         }],
         "nameUrl" : "EventoInicio.html",
         "title" : "Evento Inicio",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "EventoPriorizar.html"
+        }],
+        "nameUrl" : "EventoPriorizar.html",
+        "title" : "Evento Priorizar",
         "generation" : "markdown"
       },
       {

@@ -55,13 +55,13 @@ El evento **terminar** debe soportar a siguiente secuencia:
 
 Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
 
-* Debe incluir el recurso [BundleTerminarLE](StructureDefinition-BundleTerminarLE.html)
+* Debe incluir el recurso [BundlePriorizarLE](StructureDefinition-BundlePriorizarLE.html)
 * Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=priorizar** 
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
 * Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html) on el valor **PractitionerRole.code=Priorizador** 
 * Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
 * Debe incluir el recurso [PractitionerLE](StructureDefinition-PractitionerLE.html)
-* Debe incluir el recurso [PatientLE](StructureDefinition-PatientLE.html)
+
 
 ## Mensaje Bundle de Ejemplo
 
