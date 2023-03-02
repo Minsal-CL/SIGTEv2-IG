@@ -221,7 +221,7 @@ Description: "Ejemplo de Bundle Evento de Priorizar"
 
 
 /*Bundle Atender*/
-
+/*
 Instance: EjemploBundleAtender
 InstanceOf: BundleAtenderLE
 Usage: #example
@@ -273,6 +273,8 @@ Description: "Ejemplo de Bundle Evento de Atender"
 
 * entry[conditionDiagnosticoConfirmacion].fullUrl = "http://acme.com/ehr/fhir/Condition/atenderDiagnosticoConfirmacion"
 * entry[conditionDiagnosticoConfirmacion].resource = EjemploPractitionerAtender
+
+*/
 
 /*FIN BUNDLE Atender*/
 

@@ -36,43 +36,40 @@ Description: "Ejemplo de Condition3 Evento de Inicio"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
 
 
-/*
-Instance: EjemploConditionInicioDiagnosticoSospechaLE
-InstanceOf: ConditionInicioDiagnosticoSospechaLE
+Instance: EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE
+InstanceOf: CondicionAtenderHipotesisDiagnosticaCodigoLE
 Usage: #example
-Title: "Ejemplo de ConditionInicioDiagnosticoSospechaLE Evento de atender"
-Description: "Ejemplo de ConditionInicioDiagnosticoSospechaLE Evento de atender"
+Title: "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender"
+Description: "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender"
 
-* code = http://minsal.cl/listaespera/CodeSystem/TipoCodDiagnostica#CIE11
-* code.text = "TipoCodDiagnostica"
-* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
-* category.text = "sospechaGes"
+* verificationStatus.coding.code = #provisional
 * subject = Reference(http://acme.com/ehr/fhir/Patient/patientLE)
 
 
-Instance: EjemploConditionInicioIndiceComorbilidadLE
+Instance: EjemploCondicionAtenderDiagnosticoSospechaLE
+InstanceOf: CondicionAtenderDiagnosticoSospechaLE
+Usage: #example
+Title: "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender"
+Description: "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender"
+
+* code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#1
+* code.text = "CIE11"
+* subject = Reference(http://acme.com/ehr/fhir/Patient/patientLE)
+
+* verificationStatus.coding.code = #unconfirmed
+
+
+
+
+Instance: EjemploCondicionAtenderDiagnosticoConfirmacionLE
 InstanceOf: ConditionInicioIndiceComorbilidadLE
 Usage: #example
-Title: "Ejemplo de Condition3 Evento de Inicio"
-Description: "Ejemplo de Condition3 Evento de Inicio"
+Title: "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender"
+Description: "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender"
 
-* code = http://minsal.cl/listaespera/CodeSystem/CSSospechaPatologiaGes#A000
-* code.text = "SospechaPatologiaGesGlosa"
-* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
-* category.text = "sospechaGes"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
+* code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#1
+* code.text = "CIE11"
+* subject = Reference(http://acme.com/ehr/fhir/Patient/patientLE)
 
+* verificationStatus.coding.code = #confirmed
 
-Instance: EjemploConditionInicioSospechaGesLE
-InstanceOf: ConditionInicioSospechaGesLE
-Usage: #example
-Title: "Ejemplo de Condition3 Evento de Inicio"
-Description: "Ejemplo de Condition3 Evento de Inicio"
-
-* code = http://minsal.cl/listaespera/CodeSystem/CSSospechaPatologiaGes#A000
-* code.text = "SospechaPatologiaGesGlosa"
-* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
-* category.text = "sospechaGes"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
-
-*/

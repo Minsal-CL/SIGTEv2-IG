@@ -14,7 +14,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
   * value 1..1 MS
 
 
-
+/*
 * extension contains ExtBoolPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
 * extension contains ExtStringMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
 
@@ -34,3 +34,6 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * subject 1..1 MS
   * reference 1..1 MS
 * subject only Reference(PatientLE)
+
+* class MS
+*/
