@@ -222,6 +222,63 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Los codigos de evento deben ser incluidos en el recurso <strong>MessageHeader.evenCoding.code</strong></p>
 
+<h2 id="bundle-de-envío">Bundle de Envío</h2>
+
+<p><br /></p>
+<div align="center">
+  <img style="border: 1px solid; color: black;" src="priorizar-evento.png" /> 
+  <p></p>
+</div>
+<p><br /></p>
+
+<p>Los recursos usados en este evento son los siguientes:</p>
+
+<ul>
+  <li><a href="StructureDefinition-BundlePriorizarLE.html">BundlePriorizarLE</a>: Recurso que permite agrupar los datos del mensaje.</li>
+  <li><a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a>: Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)</li>
+  <li><a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a>: Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.</li>
+  <li><a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a>: Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)</li>
+  <li><a href="StructureDefinition-PractitionerLE.html">PractitionerLE</a>: Recurso que permite reflejar la informacion asociada a la identificación del profesional de la salud.</li>
+  <li><a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a>: Recurso que permite relacionar la interconsulta con el establecimiento de destino</li>
+</ul>
+
+<h2 id="relaciones-de-recursos">Relaciones de Recursos</h2>
+
+<p><br /></p>
+<div align="center">
+  <img style="border: 1px solid; color: black;" src="priorizar-recursos.png" /> 
+  <p></p>
+</div>
+<p><br /></p>
+
+<h2 id="secuencia-del-evento">Secuencia del Evento</h2>
+
+<p>El evento <strong>terminar</strong> debe soportar a siguiente secuencia:</p>
+
+<div align="center">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="144px" preserveAspectRatio="none" style="width:284px;height:144px;background:#FFFFFF;" version="1.1" viewBox="0 0 284 144" width="284px" zoomAndPan="magnify"><defs><filter height="300%" id="f1pxutxsjrbwsw" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><text fill="#000000" font-family="Roboto Condensed" font-size="18" lengthAdjust="spacing" textLength="259" x="9" y="28.708">Transacción: Evento Priorizar</text><line style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="54.25" x2="54.25" y1="75.25" y2="137.3828" /><rect fill="#FFFFFF" filter="url(#f1pxutxsjrbwsw)" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:1.5;" width="69" x="18.25" y="39.9531" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="55" x="25.25" y="59.9482">Hospital</text><line style="stroke:#107050;stroke-width:1.0;" x1="54.75" x2="96.75" y1="106.3828" y2="106.3828" /><line style="stroke:#107050;stroke-width:1.0;" x1="96.75" x2="96.75" y1="106.3828" y2="119.3828" /><line style="stroke:#107050;stroke-width:1.0;" x1="55.75" x2="96.75" y1="119.3828" y2="119.3828" /><polygon fill="#107050" points="65.75,115.3828,55.75,119.3828,65.75,123.3828,61.75,119.3828" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="61.75" y="101.3169">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="154" x="102.75" y="101.3169">Priorizar la Interconsulta</text></g></svg>
+</div>
+
+<h2 id="consideraciones">Consideraciones</h2>
+
+<p>Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en <a href="http://link">Conjunto mínimo de datos</a></p>
+
+<ul>
+  <li>Debe incluir el recurso <a href="StructureDefinition-BundleTerminarLE.html">BundleTerminarLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a> con el valor <strong>MessageHeader.evenCoding.code=priorizar</strong></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a> con los valores de <strong>ServiceRequest.status=draft</strong> <strong>ServiceRequest.intent=proposal</strong></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a> on el valor <strong>PractitionerRole.code=Priorizador</strong></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-PractitionerLE.html">PractitionerLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-PatientLE.html">PatientLE</a></li>
+</ul>
+
+<h2 id="mensaje-bundle-de-ejemplo">Mensaje Bundle de Ejemplo</h2>
+
+<ul>
+  <li><a href="Bundle-EjemploBundlePriorizar.html">BundlePriorizarLE</a></li>
+</ul>
+
 <h2 id="notas">Notas</h2>
 
 <ul>
@@ -253,7 +310,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Feb 27, 2023 15:22+0000">2023-02-27</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 15:13+0000">2023-03-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

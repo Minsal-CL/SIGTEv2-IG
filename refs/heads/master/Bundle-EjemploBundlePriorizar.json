@@ -1,0 +1,245 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "EjemploBundlePriorizar",
+  "meta" : {
+    "lastUpdated" : "2023-01-20T14:12:10Z",
+    "profile" : ["http://minsal.cl/listaespera/StructureDefinition/BundlePriorizarLE"]
+  },
+  "type" : "message",
+  "timestamp" : "2023-02-09T17:15:22Z",
+  "entry" : [{
+    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/priorizar",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "EjemploMessageHeaderPriorizar",
+      "meta" : {
+        "lastUpdated" : "2023-02-14T14:12:10Z",
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderPriorizar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Priorizar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code priorizar = 'Priorizar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRolePriorizar\">See above (http://acme.com/ehr/fhir/PractitionerRole/priorizar)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestPriorizar\">See above (http://acme.com/ehr/fhir/ServiceRequest/priorizar)</a></p></div>"
+      },
+      "eventCoding" : {
+        "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE",
+        "code" : "priorizar"
+      },
+      "author" : {
+        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/priorizar"
+      },
+      "source" : {
+        "software" : "SolucionInformatica",
+        "endpoint" : "http://link-to-sending.cl"
+      },
+      "focus" : [{
+        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/priorizar"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/priorizar",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "EjemploServiceRequestPriorizar",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>identifier</b>: IdInterconsulta: 323121</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1\">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "IdInterconsulta",
+            "code" : "IdInterconsulta"
+          }]
+        },
+        "value" : "323121"
+      }],
+      "status" : "draft",
+      "intent" : "proposal",
+      "priority" : "urgent",
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/pat1"
+      },
+      "authoredOn" : "2022-01-20T13:50:20Z"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/priorizar",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "EjemploPractitionerRolePriorizar",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRolePriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRolePriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerPriorizar\">See above (http://acme.com/ehr/fhir/Practitioner/priorizar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationPriorizar\">See above (http://acme.com/ehr/fhir/Organization/priorizar)</a></p><p><b>code</b>: Priorizador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Priorizador)</span></p></div>"
+      },
+      "practitioner" : {
+        "reference" : "http://acme.com/ehr/fhir/Practitioner/priorizar"
+      },
+      "organization" : {
+        "reference" : "http://acme.com/ehr/fhir/Organization/priorizar"
+      },
+      "code" : [{
+        "coding" : [{
+          "code" : "Priorizador"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Organization/priorizar",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "EjemploOrganizationPriorizar",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: id: 1</p></div>"
+      },
+      "identifier" : [{
+        "value" : "1"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/priorizar",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "EjemploPractitionerPriorizar",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Medico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (terminology.cens.cl#01)</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "RUN"
+          }]
+        },
+        "value" : "2134"
+      },
+      {
+        "use" : "secondary",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "ValorRNPI"
+          }]
+        },
+        "value" : "2134"
+      }],
+      "qualification" : [{
+        "identifier" : [{
+          "value" : "cert"
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl",
+            "code" : "01",
+            "display" : "Medico"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Patient/priorizar",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "EjemploPatient",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PatientLE"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"EjemploPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;EjemploPatient&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientLE.html\">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AD)</span></p><p><b>Identidad de genero</b>: 01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#01)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "code" : "AD"
+          }],
+          "text" : "Andorra"
+        }
+      },
+      {
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "code" : "AD"
+          }],
+          "text" : "Andorra"
+        }
+      },
+      {
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "code" : "01"
+          }]
+        }
+      },
+      {
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente",
+        "valueBoolean" : false
+      }],
+      "identifier" : [{
+        "extension" : [{
+          "url" : "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
+          "valueString" : "K"
+        }],
+        "type" : {
+          "extension" : [{
+            "url" : "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+            "valueCoding" : {
+              "code" : "AD"
+            }
+          }],
+          "coding" : [{
+            "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador",
+            "code" : "1",
+            "display" : "RUN"
+          }]
+        },
+        "system" : "http://www.acme.com/identifiers/patient",
+        "value" : "15999999"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Perez",
+        "_family" : {
+          "extension" : [{
+            "url" : "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido",
+            "valueString" : "sierra"
+          }]
+        },
+        "given" : ["Luis"]
+      },
+      {
+        "use" : "usual",
+        "given" : ["Luisa"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "569854875457",
+        "use" : "mobile",
+        "rank" : 1
+      }],
+      "gender" : "male",
+      "birthDate" : "1995-12-12"
+    }
+  }]
+}

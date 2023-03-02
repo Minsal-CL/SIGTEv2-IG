@@ -1,0 +1,26 @@
+{
+  "resourceType" : "Condition",
+  "id" : "EjemploCondicionAtenderDiagnosticoSospechaLE",
+  "meta" : {
+    "profile" : ["http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondicionAtenderDiagnosticoSospechaLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondicionAtenderDiagnosticoSospechaLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html\">Condicion Atender Diagnostico Sospecha LE</a></p></div><p><b>verificationStatus</b>: unconfirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#unconfirmed)</span></p><p><b>code</b>: CIE11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTipoCodDiagnostica.html\">Tipo Codificación Diagnostica</a>#1)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/patientLE\">http://acme.com/ehr/fhir/Patient/patientLE</a></p></div>"
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "code" : "unconfirmed"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica",
+      "code" : "1"
+    }],
+    "text" : "CIE11"
+  },
+  "subject" : {
+    "reference" : "http://acme.com/ehr/fhir/Patient/patientLE"
+  }
+}
