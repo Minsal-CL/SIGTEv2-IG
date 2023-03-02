@@ -204,19 +204,28 @@ Description: "Ejemplo de Service Request Evento Atender"
 * identifier.value = "323121"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
-//* priority = #urgent
+* intent = #proposal
+* subject.reference = "http://acme.com/ehr/fhir/Patient/atender"
+* performer.reference = "http://acme.com/ehr/fhir/PractitionerRole/atender"
+
+* extension[DestinoAtencionCodigo].valueCodeableConcept.coding.code = #1
+/*EJEMPLO PARA BUNDLE REVISAR*/
+
+
+/*EJEMPLO PARA BUNDLE PRIORIZAR*/
+Instance: EjemploServiceRequestPriorizar
+InstanceOf: ServiceRequestLE
+Usage: #example
+Title: "Ejemplo de Service Request Evento Priorizar"
+Description: "Ejemplo de Service Request Evento Priorizar"
+
+* identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.type.coding.code = #IdInterconsulta
+* identifier.value = "323121"
+* authoredOn = "2022-01-20T13:50:20Z"
+* status = #draft
+* priority = #urgent
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
-* extension[DestinoAtencionCodigo].valueCodeableConcept.coding.code = #1
 
-
-* doNotPerform = true
-* doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
-* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
-* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text = "Texto libre"
-//* priority = #routine
-* extension[RequiereExamen].valueBoolean = true
-* category.coding.code = #1
-* extension[PertinenciaInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta"
-* extension[PertinenciaInterconsulta].valueCodeableConcept.coding.code = #1
-/*EJEMPLO PARA BUNDLE REVISAR*/
+/*EJEMPLO PARA BUNDLE PRIORIZAR*/

@@ -108,7 +108,9 @@ Description: "Ejemplo de Practitioner Evento de Agendar"
 * qualification[Cert].code.coding.code = #01
 * qualification[Cert].code.coding.system = "http://terminology.cens.cl"
 * qualification[Cert].code.coding.display = "Medico"
+/*FIN PARA BUNDLE REVISAR*/
 
+/*EJEMPLOS PARA BUNDLE Agendar*/
 Instance: EjemploPractitionerAgendarAgendador
 InstanceOf: PractitionerLE
 Usage: #example
@@ -127,4 +129,21 @@ Description: "Ejemplo de Practitioner Evento de Agendar"
 * qualification[Cert].code.coding.display = "Medico"
 /*FIN PARA BUNDLE REVISAR*/
 
-/*FIN PARA BUNDLE REVISAR*/
+/*EJEMPLOS PARA BUNDLE PRIORIZAR*/
+Instance: EjemploPractitionerPriorizar
+InstanceOf: PractitionerLE
+Usage: #example
+Title: "Ejemplo de Practitioner Evento de Priorizar"
+Description: "Ejemplo de Practitioner Evento de Priorizar"
+
+* identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
+* identifier[RUN].use = #official
+* identifier[RUN].value = "2134"
+* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
+* identifier[OtrosID].use = #secondary
+* identifier[OtrosID].value = "2134"
+* qualification[Cert].identifier.value = "cert"
+* qualification[Cert].code.coding.code = #01
+* qualification[Cert].code.coding.system = "http://terminology.cens.cl"
+* qualification[Cert].code.coding.display = "Medico"
+/*FIN PARA BUNDLE PRIORIZAR*/

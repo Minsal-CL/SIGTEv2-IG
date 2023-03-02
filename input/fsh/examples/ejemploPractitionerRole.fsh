@@ -18,17 +18,17 @@ Description: "Ejemplo de PractitionerRole Evento de Referencia"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/referencia)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAgendador)
 * code = #referenciador
+/*FIN PARA BUNDLE REFERENCIA*/
 
+/*EJEMPLOS PARA BUNDLE REFERENCIA*/
 Instance: EjemploPractitionerRoleAgendadorSRREFERENCIADA
 InstanceOf: PractitionerRoleLE
 Usage: #example
 Title: "Ejemplo de PractitionerRole Evento de Referencia"
 Description: "Ejemplo de PractitionerRole Evento de Referencia"
 
-//* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAtendedor)
 * code = #atendedor
-
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLOS PARA BUNDLE TERMINAR*/
@@ -45,7 +45,7 @@ Description: "Ejemplo de PractitionerRole Evento de Terminar"
 
 
 
-/*EJEMPLOS PARA BUNDLE Revisar*/
+/*EJEMPLOS PARA BUNDLE REVISAR*/
 Instance: EjemploPractitionerRoleRevisar
 InstanceOf: PractitionerRoleLE
 Usage: #example
@@ -55,9 +55,9 @@ Description: "Ejemplo de PractitionerRole Evento de Revisar"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/revisar)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/revisar)
 * code = #revisor
-/*FIN PARA BUNDLE Revisar*/
+/*FIN PARA BUNDLE REVISAR*/
 
-/*EJEMPLOS PARA BUNDLE Agendar*/
+/*EJEMPLOS PARA BUNDLE AGENDARMH*/
 Instance: EjemploPractitionerRoleAgendarMH
 InstanceOf: PractitionerRoleLE
 Usage: #example
@@ -67,9 +67,9 @@ Description: "Ejemplo de PractitionerRole Evento de Agendar"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/agendar)
 * code = #agendador
+/*FIN PARA BUNDLE AGENDARMH*/
 
-
-//revisado JM
+/*EJEMPLOS PARA BUNDLE AGENDARAPPO*/
 Instance: EjemploPractitionerRoleAgendarAPPO
 InstanceOf: PractitionerRoleLE
 Usage: #example
@@ -79,8 +79,32 @@ Description: "Ejemplo de PractitionerRole Evento de Agendar"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/agendarAtendedor)
 //* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
 * code = #atendedor
+/*FIN PARA BUNDLE AGENDARAPPO*/
 
 
 
+/*EJEMPLOS PARA BUNDLE PRIORIZAR*/
+Instance: EjemploPractitionerRolePriorizar
+InstanceOf: PractitionerRoleLE
+Usage: #example
+Title: "Ejemplo de PractitionerRole Evento de Priorizar"
+Description: "Ejemplo de PractitionerRole Evento de Priorizar"
 
-/*FIN PARA BUNDLE Agendar*/
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/priorizar)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/priorizar)
+* code = #Priorizador
+/*FIN PARA BUNDLE PRIORIZAR*/
+
+
+
+/*EJEMPLOS PARA BUNDLE Atender*/
+Instance: EjemploPractitionerRoleAtender
+InstanceOf: PractitionerRoleLE
+Usage: #example
+Title: "Ejemplo de PractitionerRole Evento de Atender"
+Description: "Ejemplo de PractitionerRole Evento de Atender"
+
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/atender)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/atender)
+* code = #Atendedor
+/*FIN PARA BUNDLE Atender*/

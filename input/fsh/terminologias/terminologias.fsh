@@ -644,7 +644,7 @@ Description: "Tipo Codificación Diagnostica"
 
 * #1 "CIE11"
 * #2 "CIE10"
-* #3 "Snomed CT"
+* #3 "SNOMED CT"
 
 
 ValueSet: VSMotivoCierreInterconsulta

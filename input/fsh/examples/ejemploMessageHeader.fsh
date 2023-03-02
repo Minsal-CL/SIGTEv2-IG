@@ -86,8 +86,27 @@ Description: "Ejemplo de MesaggeHeader Evento de Atender"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 
-* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#terminar
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#atender
 
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/atender)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/atender)
 /*FIN PARA BUNDLE Atender*/
+
+
+/*EJEMPLOS PARA BUNDLE PRIORIZAR*/
+Instance: EjemploMessageHeaderPriorizar
+InstanceOf: MessageHeaderLE
+Usage: #example
+Title: "Ejemplo de MesaggeHeader Evento de Priorizar"
+Description: "Ejemplo de MesaggeHeader Evento de Priorizar"
+* meta.lastUpdated = "2023-02-14T14:12:10Z"
+* source.software = "SolucionInformatica"
+* source.endpoint = "http://link-to-sending.cl"
+
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#priorizar
+
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/priorizar) //----------
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/priorizar) //-----
+
+
+/*FIN PARA BUNDLE PRIORIZAR*/

@@ -5,16 +5,8 @@ Title: "ServiceRequest LE"
 Description: "ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
-/*
-* identifier 1..1 MS 
-* identifier ^slicing.discriminator[0].type = #value
-* identifier ^slicing.discriminator[0].path = "type.coding.code"
-* identifier ^slicing.discriminator[1].type = #value
-* identifier ^slicing.discriminator[1].path = "type.coding.system"
-* identifier ^slicing.rules = #open
-* identifier ^slicing.description = "Slice creado para almacenar los identificadores"
-* identifier contains IdInterconsulta 1..1 MS
-*/
+
+
 * identifier.type 1..1 MS
   * coding 1..1 MS
     * code 1..1 MS

@@ -34,3 +34,45 @@ Description: "Ejemplo de Condition3 Evento de Inicio"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * category.text = "sospechaGes"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
+
+
+/*
+Instance: EjemploConditionInicioDiagnosticoSospechaLE
+InstanceOf: ConditionInicioDiagnosticoSospechaLE
+Usage: #example
+Title: "Ejemplo de ConditionInicioDiagnosticoSospechaLE Evento de atender"
+Description: "Ejemplo de ConditionInicioDiagnosticoSospechaLE Evento de atender"
+
+* code = http://minsal.cl/listaespera/CodeSystem/TipoCodDiagnostica#CIE11
+* code.text = "TipoCodDiagnostica"
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* category.text = "sospechaGes"
+* subject = Reference(http://acme.com/ehr/fhir/Patient/patientLE)
+
+
+Instance: EjemploConditionInicioIndiceComorbilidadLE
+InstanceOf: ConditionInicioIndiceComorbilidadLE
+Usage: #example
+Title: "Ejemplo de Condition3 Evento de Inicio"
+Description: "Ejemplo de Condition3 Evento de Inicio"
+
+* code = http://minsal.cl/listaespera/CodeSystem/CSSospechaPatologiaGes#A000
+* code.text = "SospechaPatologiaGesGlosa"
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* category.text = "sospechaGes"
+* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
+
+
+Instance: EjemploConditionInicioSospechaGesLE
+InstanceOf: ConditionInicioSospechaGesLE
+Usage: #example
+Title: "Ejemplo de Condition3 Evento de Inicio"
+Description: "Ejemplo de Condition3 Evento de Inicio"
+
+* code = http://minsal.cl/listaespera/CodeSystem/CSSospechaPatologiaGes#A000
+* code.text = "SospechaPatologiaGesGlosa"
+* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
+* category.text = "sospechaGes"
+* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
+
+*/

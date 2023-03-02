@@ -29,3 +29,17 @@ Description: "Ejemplo de Appointment Evento de Inicio"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding.code = #1
 
 * extension[ContactadoLE].extension[Contactado].valueBoolean = true
+
+
+//ejemplo bundle atender
+Instance: EjemploAppointmentAtender
+InstanceOf: AppointmentLE
+Usage: #example
+Title: "Ejemplo de Appointment Evento de Atender"
+Description: "Ejemplo de Appointment Evento de Atender"
+
+* status = #booked
+* identifier.value = "21"
+* start = "2023-01-22T09:00:00Z"
+* participant.status = #accepted
+* participant.actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor)

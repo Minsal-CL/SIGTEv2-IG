@@ -43,8 +43,6 @@ Description: "Ejemplo de Organization Evento de Agendador"
 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
-
-
 /*FIN PARA BUNDLE REFERENCIA*/
 
 
@@ -80,7 +78,18 @@ Usage: #example
 Title: "Ejemplo de Organization Evento de Atender"
 Description: "Ejemplo de Organization Evento de Atender"
 
-//* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
 
 /*FIN PARA BUNDLE REVISAR*/
+
+
+/*EJEMPLOS PARA BUNDLE PRIORIZAR*/
+Instance: EjemploOrganizationPriorizar
+InstanceOf: OrganizationLE
+Usage: #example
+Title: "Ejemplo de Organization Evento de Priorizar"
+Description: "Ejemplo de Organization Evento de Priorizar"
+
+* identifier.value = "1"
+
+/*FIN PARA BUNDLE PRIORIZAR*/

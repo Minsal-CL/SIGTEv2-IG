@@ -19,4 +19,18 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * extension contains ExtStringMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
 
 * basedOn 1..1 MS
+* basedOn only Reference(ServiceRequestLE)
 
+* diagnosis 2..2 MS
+  * condition 1..1 MS
+* diagnosis.condition only Reference(CondicionAtenderDiagnosticoSospechaLE or CondicionAtenderHipotesisDiagnosticaCodigoLE)
+* reasonReference 2..2 MS
+* reasonReference only Reference(CondicionAtenderDiagnosticoConfirmacionLE or ObservationAtenderLE)
+
+* appointment 1..1 MS
+  * reference 1..1 MS
+* appointment only Reference(AppointmentLE)
+
+* subject 1..1 MS
+  * reference 1..1 MS
+* subject only Reference(PatientLE)

@@ -1,8 +1,8 @@
-Profile: CondicionAtender2LE
+Profile: CondicionAtenderDiagnosticoSospechaLE
 Parent: Condition
-Id: CondicionAtender2LE
-Title: "Condicion Atender 2 LE"
-Description: "Condicion Atender 2 LE"
+Id: CondicionAtenderDiagnosticoSospechaLE
+Title: "Condicion Atender Diagnostico Sospecha LE"
+Description: "Condicion Atender Diagnostico Sospecha LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
