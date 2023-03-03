@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -22,6 +23,58 @@
      fhir:index 0;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/MessageHeader/atender" ];
      fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/MessageHeader/atender>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/ServiceRequest/atender>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Practitioner/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Practitioner/atender>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/PractitionerRole/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/PractitionerRole/atender>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Organization/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Organization/atender>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Appointment/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Appointment/atender>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Encounter/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Encounter/atender>
+  ], [
+     fhir:index 7;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Patient/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Patient/atender>
+  ], [
+     fhir:index 8;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/CarePlan/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/CarePlan/atender>
+  ], [
+     fhir:index 9;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/QuestionnaireResponse/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/QuestionnaireResponse/atender>
+  ], [
+     fhir:index 10;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Observation/atender" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Observation/atender>
+  ], [
+     fhir:index 11;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Condition/atenderHipotesis" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Condition/atenderHipotesis>
+  ], [
+     fhir:index 12;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Condition/atenderDiagnosticoSospecha" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Condition/atenderDiagnosticoSospecha>
+  ], [
+     fhir:index 13;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Condition/atenderDiagnosticoConfirmacion" ];
+     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Condition/atenderDiagnosticoConfirmacion>
   ] . # 
 
 <http://acme.com/ehr/fhir/MessageHeader/atender> a fhir:MessageHeader;
@@ -36,7 +89,7 @@
   ]; # 
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderAtender&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Atender (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code atender = 'Atender', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/atender\">http://acme.com/ehr/fhir/PractitionerRole/atender</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/atender\">http://acme.com/ehr/fhir/ServiceRequest/atender</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderAtender&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Atender (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code atender = 'Atender', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleAtender\">See above (http://acme.com/ehr/fhir/PractitionerRole/atender)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestAtender\">See above (http://acme.com/ehr/fhir/ServiceRequest/atender)</a></p></div>"
   ]; # 
   fhir:MessageHeader.eventCoding [
      fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE" ];
@@ -54,6 +107,524 @@
      fhir:index 0;
      fhir:link <http://acme.com/ehr/fhir/ServiceRequest/atender>;
      fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/atender" ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/ServiceRequest/atender> a fhir:ServiceRequest;
+  fhir:Resource.id [ fhir:value "EjemploServiceRequestAtender"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Destino Atención Codigo</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 323121</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/atender)</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>performer</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleAtender\">See above (http://acme.com/ehr/fhir/PractitionerRole/atender)</a></p></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "1" ]
+       ]
+     ]
+  ]; # 
+  fhir:ServiceRequest.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "IdInterconsulta" ];
+         fhir:Coding.code [ fhir:value "IdInterconsulta" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "323121" ]
+  ]; # 
+  fhir:ServiceRequest.status [ fhir:value "draft"]; # 
+  fhir:ServiceRequest.intent [ fhir:value "proposal"]; # 
+  fhir:ServiceRequest.subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/atender>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/atender" ]
+  ]; # 
+  fhir:ServiceRequest.authoredOn [ fhir:value "2022-01-20T13:50:20Z"^^xsd:dateTime]; # 
+  fhir:ServiceRequest.performer [
+     fhir:index 0;
+     fhir:link <http://acme.com/ehr/fhir/PractitionerRole/atender>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/PractitionerRole/atender" ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/Practitioner/atender> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "EjemploPractitionerAtender"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Medico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (terminology.cens.cl#01)</span></td></tr></table></div>"
+  ]; # 
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.cens.cl/CodeSystem/listaespera" ];
+         fhir:Coding.code [ fhir:value "RUN" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "2134" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "secondary" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.cens.cl/CodeSystem/listaespera" ];
+         fhir:Coding.code [ fhir:value "ValorRNPI" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "2134" ]
+  ]; # 
+  fhir:Practitioner.qualification [
+     fhir:index 0;
+     fhir:Practitioner.qualification.identifier [
+       fhir:index 0;
+       fhir:Identifier.value [ fhir:value "cert" ]
+     ];
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.cens.cl" ];
+         fhir:Coding.code [ fhir:value "01" ];
+         fhir:Coding.display [ fhir:value "Medico" ]
+       ]
+     ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/PractitionerRole/atender> a fhir:PractitionerRole;
+  fhir:Resource.id [ fhir:value "EjemploPractitionerRoleAtender"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerAtender\">See above (http://acme.com/ehr/fhir/Practitioner/atender)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAtender\">See above (http://acme.com/ehr/fhir/Organization/atender)</a></p><p><b>code</b>: Atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Atendedor)</span></p></div>"
+  ]; # 
+  fhir:PractitionerRole.practitioner [
+     fhir:link <http://acme.com/ehr/fhir/Practitioner/atender>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Practitioner/atender" ]
+  ]; # 
+  fhir:PractitionerRole.organization [
+     fhir:link <http://acme.com/ehr/fhir/Organization/atender>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Organization/atender" ]
+  ]; # 
+  fhir:PractitionerRole.code [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "Atendedor" ]
+     ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/Organization/atender> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "EjemploOrganizationAtender"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: id: 1</p></div>"
+  ]; # 
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "1" ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/Appointment/atender> a fhir:Appointment;
+  fhir:Resource.id [ fhir:value "EjemploAppointmentAtender"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentLE.html\">AppointmentLE</a></p></div><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>start</b>: Jan 22, 2023, 9:00:00 AM</p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"http://acme.com/ehr/fhir/PractitionerRoleLE/EjemploPractitionerRoleAtender\">http://acme.com/ehr/fhir/PractitionerRoleLE/EjemploPractitionerRoleAtender</a></td><td>accepted</td></tr></table></div>"
+  ]; # 
+  fhir:Appointment.identifier [
+     fhir:index 0;
+     fhir:Identifier.value [ fhir:value "21" ]
+  ]; # 
+  fhir:Appointment.status [ fhir:value "booked"]; # 
+  fhir:Appointment.start [ fhir:value "2023-01-22T09:00:00Z"^^xsd:dateTime]; # 
+  fhir:Appointment.participant [
+     fhir:index 0;
+     fhir:Appointment.participant.actor [
+       fhir:link <http://acme.com/ehr/fhir/PractitionerRoleLE/EjemploPractitionerRoleAtender>;
+       fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/PractitionerRoleLE/EjemploPractitionerRoleAtender" ]
+     ];
+     fhir:Appointment.participant.status [ fhir:value "accepted" ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/Encounter/atender> a fhir:Encounter;
+  fhir:Resource.id [ fhir:value "EjemploEncounterAtender"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EjemploEncounterAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EjemploEncounterAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EncounterAtenderLE.html\">Encounter Atender LE</a></p></div><p><b>ExtBool Pertinencia Atencion Box</b>: true</p><p><b>ExtString MotivoNoPertinencia</b>: lorem ipsum</p><p><b>identifier</b>: IdConsultaAPS: 1</p><p><b>status</b>: finished</p><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/PatientLE\">http://acme.com/ehr/fhir/Patient/PatientLE</a></p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE\">http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE</a></p><p><b>appointment</b>: <a href=\"http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender\">http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender</a></p></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia" ];
+     fhir:Extension.valueString [ fhir:value "lorem ipsum" ]
+  ]; # 
+  fhir:Encounter.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.cens.cl/CodeSystem/listaespera" ];
+         fhir:Coding.code [ fhir:value "IdConsultaAPS" ]
+       ]
+     ];
+     fhir:Identifier.value [ fhir:value "1" ]
+  ]; # 
+  fhir:Encounter.status [ fhir:value "finished"]; # 
+  fhir:Encounter.class [
+     fhir:Coding.code [ fhir:value "AMB" ]
+  ]; # 
+  fhir:Encounter.subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/PatientLE>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/PatientLE" ]
+  ]; # 
+  fhir:Encounter.basedOn [
+     fhir:index 0;
+     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE" ]
+  ]; # 
+  fhir:Encounter.appointment [
+     fhir:index 0;
+     fhir:link <http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender" ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/Patient/atender> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "EjemploPatient"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/PatientLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/PatientLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"EjemploPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;EjemploPatient&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientLE.html\">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AD)</span></p><p><b>Identidad de genero</b>: 01 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#01)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "AD" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Andorra" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "AD" ]
+       ];
+       fhir:CodeableConcept.text [ fhir:value "Andorra" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero" ];
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "01" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente" ];
+     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
+  ]; # 
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador" ];
+       fhir:Extension.valueString [ fhir:value "K" ]
+     ];
+     fhir:Identifier.type [
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises" ];
+         fhir:Extension.valueCoding [
+           fhir:Coding.code [ fhir:value "AD" ]
+         ]
+       ];
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador" ];
+         fhir:Coding.code [ fhir:value "1" ];
+         fhir:Coding.display [ fhir:value "RUN" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "http://www.acme.com/identifiers/patient" ];
+     fhir:Identifier.value [ fhir:value "15999999" ]
+  ]; # 
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [
+       fhir:value "Perez";
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido" ];
+         fhir:Extension.valueString [ fhir:value "sierra" ]
+       ]
+     ];
+     fhir:HumanName.given [
+       fhir:value "Luis";
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.given [
+       fhir:value "Luisa";
+       fhir:index 0
+     ]
+  ]; # 
+  fhir:Patient.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "569854875457" ];
+     fhir:ContactPoint.use [ fhir:value "mobile" ];
+     fhir:ContactPoint.rank [ fhir:value "1"^^xsd:positiveInteger ]
+  ]; # 
+  fhir:Patient.gender [ fhir:value "male"]; # 
+  fhir:Patient.birthDate [ fhir:value "1995-12-12"^^xsd:date] . # 
+
+<http://acme.com/ehr/fhir/CarePlan/atender> a fhir:CarePlan;
+  fhir:Resource.id [ fhir:value "EjemploCarePlanLE"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/CarePlanAtenderLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/CarePlanAtenderLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"EjemploCarePlanLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;EjemploCarePlanLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CarePlanAtenderLE.html\">CarePlan Atender LE</a></p></div><p><b>ExtBool Solicitud Examenes</b>: true</p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>description</b>: test</p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/atender)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td>MedicationRequest</td><td>farmacos <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#farmacos)</span></td><td>not-started</td><td>123323 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></blockquote></div>"
+  ]; # 
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolSolicitudExamenes" ];
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ]; # 
+  fhir:CarePlan.status [ fhir:value "active"]; # 
+  fhir:CarePlan.intent [ fhir:value "plan"]; # 
+  fhir:CarePlan.description [ fhir:value "test"]; # 
+  fhir:CarePlan.subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/atender>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/atender" ]
+  ]; # 
+  fhir:CarePlan.activity [
+     fhir:index 0;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.kind [ fhir:value "MedicationRequest" ];
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a sct:farmacos;
+           fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+           fhir:Coding.code [ fhir:value "farmacos" ]
+         ]
+       ];
+       fhir:CarePlan.activity.detail.status [ fhir:value "not-started" ];
+       fhir:CarePlan.activity.detail.productCodeableConcept [
+         fhir:CodeableConcept.text [ fhir:value "123323" ]
+       ]
+     ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/QuestionnaireResponse/atender> a fhir:QuestionnaireResponse;
+  fhir:Resource.id [ fhir:value "EjemploQuestionnaireResponseAtenderLE"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseAtenderLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseAtenderLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: QuestionnaireResponse</b><a name=\"EjemploQuestionnaireResponseAtenderLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource QuestionnaireResponse &quot;EjemploQuestionnaireResponseAtenderLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-QuestionnaireResponseAtenderLE.html\">QuestionnaireResponse Atender LE</a></p></div><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/atender)</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Resumen</p><p><b>text</b>: Resumen</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Anamnesis</td></tr></table></blockquote></div>"
+  ]; # 
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"]; # 
+  fhir:QuestionnaireResponse.subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/atender>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/atender" ]
+  ]; # 
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "Resumen" ];
+     fhir:QuestionnaireResponse.item.text [ fhir:value "Resumen" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Anamnesis" ]
+     ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/Observation/atender> a fhir:Observation;
+  fhir:Resource.id [ fhir:value "EjemploObservationAtender"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"EjemploObservationAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;EjemploObservationAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationAtenderLE.html\">Observation Atender LE</a></p></div><p><b>status</b>: registered</p><p><b>code</b>: examenes anteriores <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: examenes anteriores</p></div>"
+  ]; # 
+  fhir:Observation.status [ fhir:value "registered"]; # 
+  fhir:Observation.code [
+     fhir:CodeableConcept.text [ fhir:value "examenes anteriores" ]
+  ]; # 
+  fhir:Observation.valueString [ fhir:value "examenes anteriores"] . # 
+
+<http://acme.com/ehr/fhir/Condition/atenderHipotesis> a fhir:Condition;
+  fhir:Resource.id [ fhir:value "EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html\">Condicion Atender Hipotesis Diagnostica Codigo</a></p></div><p><b>verificationStatus</b>: provisional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#provisional)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/patientLE\">http://acme.com/ehr/fhir/Patient/patientLE</a></p></div>"
+  ]; # 
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "provisional" ]
+     ]
+  ]; # 
+  fhir:Condition.subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/patientLE>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/patientLE" ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/Condition/atenderDiagnosticoSospecha> a fhir:Condition;
+  fhir:Resource.id [ fhir:value "EjemploCondicionAtenderDiagnosticoSospechaLE"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondicionAtenderDiagnosticoSospechaLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondicionAtenderDiagnosticoSospechaLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html\">Condicion Atender Diagnostico Sospecha LE</a></p></div><p><b>verificationStatus</b>: unconfirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#unconfirmed)</span></p><p><b>code</b>: CIE11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTipoCodDiagnostica.html\">Tipo Codificación Diagnostica</a>#1)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/patientLE\">http://acme.com/ehr/fhir/Patient/patientLE</a></p></div>"
+  ]; # 
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "unconfirmed" ]
+     ]
+  ]; # 
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica" ];
+       fhir:Coding.code [ fhir:value "1" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "CIE11" ]
+  ]; # 
+  fhir:Condition.subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/patientLE>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/patientLE" ]
+  ] . # 
+
+<http://acme.com/ehr/fhir/Condition/atenderDiagnosticoConfirmacion> a fhir:Condition;
+  fhir:Resource.id [ fhir:value "EjemploCondicionAtenderDiagnosticoConfirmacionLE"]; # 
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE";
+       fhir:index 0;
+       fhir:link <http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE>
+     ]
+  ]; # 
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondicionAtenderDiagnosticoConfirmacionLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondicionAtenderDiagnosticoConfirmacionLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConditionInicioIndiceComorbilidadLE.html\">Condition Inicio Indice Comorbilidad LE</a></p></div><p><b>verificationStatus</b>: confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#confirmed)</span></p><p><b>category</b>: Indice Comorbilidad <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#problem-list-item)</span></p><p><b>code</b>: CIE11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTipoCodDiagnostica.html\">Tipo Codificación Diagnostica</a>#1)</span></p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/patientLE\">http://acme.com/ehr/fhir/Patient/patientLE</a></p></div>"
+  ]; # 
+  fhir:Condition.verificationStatus [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "confirmed" ]
+     ]
+  ]; # 
+  fhir:Condition.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "problem-list-item" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Indice Comorbilidad" ]
+  ]; # 
+  fhir:Condition.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica" ];
+       fhir:Coding.code [ fhir:value "1" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "CIE11" ]
+  ]; # 
+  fhir:Condition.subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/patientLE>;
+     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/patientLE" ]
   ] . # 
 
 # - ontology header ------------------------------------------------------------
