@@ -42,4 +42,4 @@ Description: "Ejemplo de Appointment Evento de Atender"
 * identifier.value = "21"
 * start = "2023-01-22T09:00:00Z"
 * participant.status = #accepted
-* participant.actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor)
+* participant.actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/EjemploPractitionerRoleAtender)

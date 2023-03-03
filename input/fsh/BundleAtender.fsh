@@ -17,7 +17,7 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry ^slicing.rules = #closed
 * entry 0..14 MS
 * entry contains messageheader 1..1 
-       /* and servicerequest 1..1 
+        and servicerequest 1..1 
         and practitioner 1..1
         and practitionerRole 1..1
         and organization 1..1
@@ -31,13 +31,13 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
         and conditionDiagnosticoSospecha 1..1
         and conditionDiagnosticoConfirmacion 1..1
 
-*/
+
 
 * entry[messageheader].resource only MessageHeaderLE
-/* entry[servicerequest].resource only ServiceRequestLE
-* entry[organization].resource only OrganizationLE
+* entry[servicerequest].resource only ServiceRequestLE
 * entry[practitioner].resource only PractitionerLE
 * entry[practitionerRole].resource only PractitionerRoleLE
+* entry[organization].resource only OrganizationLE
 * entry[appointment].resource only AppointmentLE
 * entry[encounter].resource only EncounterAtenderLE
 * entry[patient].resource only PatientLE  
@@ -46,4 +46,4 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[observation].resource only ObservationAtenderLE  
 * entry[conditionHipotesis].resource only CondicionAtenderHipotesisDiagnosticaCodigoLE  
 * entry[conditionDiagnosticoSospecha].resource only CondicionAtenderDiagnosticoSospechaLE  
-* entry[conditionDiagnosticoConfirmacion].resource only CondicionAtenderDiagnosticoConfirmacionLE  */
+* entry[conditionDiagnosticoConfirmacion].resource only CondicionAtenderDiagnosticoConfirmacionLE

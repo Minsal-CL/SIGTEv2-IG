@@ -21,3 +21,4 @@ Description: "QuestionnaireResponse Atender LE"
 * item.linkId = "Resumen"
 * item.text = "Resumen"
 * item.answer[0].valueString 
+* subject 1..1 MS

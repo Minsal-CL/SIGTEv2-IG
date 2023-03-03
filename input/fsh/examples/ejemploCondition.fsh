@@ -45,7 +45,6 @@ Description: "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de 
 * verificationStatus.coding.code = #provisional
 * subject = Reference(http://acme.com/ehr/fhir/Patient/patientLE)
 
-
 Instance: EjemploCondicionAtenderDiagnosticoSospechaLE
 InstanceOf: CondicionAtenderDiagnosticoSospechaLE
 Usage: #example
@@ -58,9 +57,6 @@ Description: "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender
 
 * verificationStatus.coding.code = #unconfirmed
 
-
-
-
 Instance: EjemploCondicionAtenderDiagnosticoConfirmacionLE
 InstanceOf: ConditionInicioIndiceComorbilidadLE
 Usage: #example
@@ -72,4 +68,3 @@ Description: "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Ate
 * subject = Reference(http://acme.com/ehr/fhir/Patient/patientLE)
 
 * verificationStatus.coding.code = #confirmed
-
