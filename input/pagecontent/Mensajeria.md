@@ -8,7 +8,7 @@ El intercambio de mensajes entre los actores se debe realizar siguiendo las defi
 
 * Agrupador de Recursos: Un recurso del tipo **Bundle** del tipo **message**(type=message)
 * Cabecera del mensaje: Un recurso del tipo **MessageHeader** con la identificación del [tipo evento](ValueSet-VSTipoEventoLE.html)(ejemplo: eventCoding.code=terminar), una referencia a un autor(author), detalles del sistema emisor(source) y una referencia a un recurso el cual es el foco del mensaje(focus)
-* Otros recursos: Necesariamente los recursos referenciados deben ser incluidos dentro del mismo Bundle como entradas adicionales, por ejemplo en el caso del **Mensaje de Envío** los recursos referenciados en el MessageHeader(autor, focus, etc) y en el caso del **Mensaje de Respuesta** un recurso **[OperationOutcome]**(https://www.hl7.org/fhir/R4/operationoutcome.html) con información de la operación, advertencias o lista de errores(OperationOutcome.issue)
+* Otros recursos: Necesariamente los recursos referenciados deben ser incluidos dentro del mismo Bundle como entradas adicionales, por ejemplo en el caso del **Mensaje de Envío** los recursos referenciados en el MessageHeader(autor, focus, etc) y en el caso del **Mensaje de Respuesta** un recurso [**OperationOutcome**](https://www.hl7.org/fhir/R4/operationoutcome.html) con información de la operación, advertencias o lista de errores(OperationOutcome.issue)
 
 
 ### Mensajería de Envío
