@@ -58,7 +58,7 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 * Debe incluir el recurso [BundlePriorizarLE](StructureDefinition-BundlePriorizarLE.html)
 * Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=priorizar** 
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
-* Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html) on el valor **PractitionerRole.code=Priorizador** 
+* Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html) con el valor **PractitionerRole.code=Priorizador** 
 * Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
 * Debe incluir el recurso [PractitionerLE](StructureDefinition-PractitionerLE.html)
 

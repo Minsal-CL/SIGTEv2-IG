@@ -11,7 +11,7 @@ Description: "Ejemplo de Patient Evento de Inicio"
 * extension[NacionalidadCodigo].valueCodeableConcept.coding.code = #AD
 * extension[NacionalidadCodigo].valueCodeableConcept.text = "Andorra"
 * extension[IdentidadGenero].url = "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero"
-* extension[IdentidadGenero].valueCodeableConcept.coding.code = #01
+* extension[GeneroCodigo].valueCodeableConcept.coding.code = #male
 * extension[ExtBoolAfrodescendiente].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente"
 * extension[ExtBoolAfrodescendiente].valueBoolean = false
 * identifier.extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"

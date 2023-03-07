@@ -21,6 +21,7 @@ Description: "Ejemplo de Appointment Evento de Inicio"
 * status = #booked
 * identifier.value = "21"
 * created = "2023-01-22T09:00:00Z"
+* end = "2023-01-22T09:00:30Z"
 * basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/agendar)
 * participant.status = #accepted
 * participant.actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor)
@@ -41,5 +42,6 @@ Description: "Ejemplo de Appointment Evento de Atender"
 * status = #booked
 * identifier.value = "21"
 * start = "2023-01-22T09:00:00Z"
+* end = "2023-01-22T09:00:30Z"
 * participant.status = #accepted
 * participant.actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/EjemploPractitionerRoleAtender)
