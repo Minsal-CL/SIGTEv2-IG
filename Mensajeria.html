@@ -221,7 +221,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Agrupador de Recursos: Un recurso del tipo <strong>Bundle</strong> del tipo <strong>message</strong>(type=message)</li>
   <li>Cabecera del mensaje: Un recurso del tipo <strong>MessageHeader</strong> con la identificación del <a href="ValueSet-VSTipoEventoLE.html">tipo evento</a>(ejemplo: eventCoding.code=terminar), una referencia a un autor(author), detalles del sistema emisor(source) y una referencia a un recurso el cual es el foco del mensaje(focus)</li>
-  <li>Otros recursos: Necesariamente los recursos referenciados deben ser incluidos dentro del mismo Bundle como entradas adicionales, por ejemplo en el caso del <strong>Mensaje de Envío</strong> los recursos referenciados en el MessageHeader(autor, focus, etc) y en el caso del <strong>Mensaje de Respuesta</strong> un recurso <strong>[OperationOutcome]</strong>(https://www.hl7.org/fhir/R4/operationoutcome.html) con información de la operación, advertencias o lista de errores(OperationOutcome.issue)</li>
+  <li>Otros recursos: Necesariamente los recursos referenciados deben ser incluidos dentro del mismo Bundle como entradas adicionales, por ejemplo en el caso del <strong>Mensaje de Envío</strong> los recursos referenciados en el MessageHeader(autor, focus, etc) y en el caso del <strong>Mensaje de Respuesta</strong> un recurso <a href="https://www.hl7.org/fhir/R4/operationoutcome.html"><strong>OperationOutcome</strong></a> con información de la operación, advertencias o lista de errores(OperationOutcome.issue)</li>
 </ul>
 
 <h3 id="mensajería-de-envío">Mensajería de Envío</h3>
@@ -267,7 +267,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 6, 2023 14:18+0000">2023-03-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 8, 2023 00:16+0000">2023-03-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
