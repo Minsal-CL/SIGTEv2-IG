@@ -64,7 +64,7 @@ El evento **atender** debe soportar a siguiente secuencia:
 Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
 
 
-* Debe incluir el recurso [BundleAtender](StructureDefinition-BundleReferenciaLE.html)
+* Debe incluir el recurso [BundleAtender](StructureDefinition-BundleAtenderLE.html)
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
 * Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=atender** 
 * Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
