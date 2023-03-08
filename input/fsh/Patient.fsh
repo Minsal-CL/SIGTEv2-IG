@@ -9,8 +9,8 @@ Description: "Paciente LE recurso que se utiliza para representar la informació
 // EXTESIONES
 * extension contains PaisOrigenClLE named PaisOrigenCodigo 1..1 MS
 * extension contains NacionalidadCodigoClLE named NacionalidadCodigo 1..1 MS
-//* extension contains IdentidadGenero named GeneroCodigo 1..1 MS
-* extension contains http://hl7.org/fhir/StructureDefinition/patient-genderIdentity named GeneroCodigo 1..1 MS
+* extension contains IdentidadGenero named GeneroCodigo 1..1 MS
+//* extension contains http://hl7.org/fhir/StructureDefinition/patient-genderIdentity named GeneroCodigo 1..1 MS
 
 * extension contains PuebloIndigena named PuebloIndigena 0..1 MS
 * extension contains ExtBoolAfrodescendiente named Afrodescendiente 1..1 MS
