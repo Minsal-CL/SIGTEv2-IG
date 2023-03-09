@@ -13,16 +13,6 @@ Description: "Encounter Inicio LE recurso que se utiliza para representar el enc
 * identifier 1..1 MS
   * value 1..1 MS
 
-
-
-* identifier.type 1..1 MS
-  * coding 1..1 MS
-    * code 1..1 MS
-    * code = #"IdConsultaAPS"
-    * system 1..1 MS
-    * display 0..1 MS
-* identifier.value 1..1 MS
-
 * diagnosis.condition only Reference(ConditionInicioDiagnosticoSospechaLE)
 
 * appointment 1..1 MS

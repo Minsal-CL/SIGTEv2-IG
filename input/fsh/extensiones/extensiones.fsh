@@ -7,13 +7,12 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * url 1..1 MS
 
 * valueCodeableConcept from CodPais
-
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from CodPais
   * system 0..1 MS
   * display 0..1 MS
 * valueCodeableConcept.text 1..1 MS
+
 
 Extension:   PrevisionCodigoLE
 Id:          PrevisionCodigoLE
@@ -313,9 +312,9 @@ Description: "Origen Interconsulta"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSinterconsulta
   * system 0..1 MS
   * display 0..1 MS
+* valueCodeableConcept from VSinterconsulta
 * valueCodeableConcept.text MS
 
 Extension: DigitoVerificador 
@@ -368,6 +367,7 @@ Description: "SubEspecialidad Médica Destino Código"
   * code 1..1 MS
   * system 0..1 MS
   * display 0..1 MS
+* valueCodeableConcept 1..1 MS
 
 
 /*
