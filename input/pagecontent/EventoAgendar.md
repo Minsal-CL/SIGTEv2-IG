@@ -30,7 +30,7 @@ Los recursos usados en este evento son los siguientes:
 * [PractitionerLE](StructureDefinition-PractitionerLE.html): Recurso que permite reflejar la información relacionada al profesional de la salud que realiza la atencion
 * [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
 * [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de destino
-
+* [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (ServiceRequest.subject)
 
 ## Relaciones de Recursos
 
@@ -51,7 +51,7 @@ El evento **agendar** debe soportar a siguiente secuencia:
 
 ## Consideraciones
 
-Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
+Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](https://docs.google.com/spreadsheets/d/1FfW2gQvTMJbNpr2mH2DFpsftkMEPr5CW2ed9MkryuH4/edit#gid=493163919&range=A4)
 
 El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 

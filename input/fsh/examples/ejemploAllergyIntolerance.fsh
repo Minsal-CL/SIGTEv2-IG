@@ -6,4 +6,4 @@ Description: "Ejemplo de AllergyIntolerance Evento de Inicio"
 
 
 * code.text = "tipo alergia"
-* patient = Reference(http://acme.com/ehr/fhir/Patient/pat12)
+* patient = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)

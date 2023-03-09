@@ -32,5 +32,5 @@ Description: "AppointmentLE"
   * text 0..1 MS
 
 
-* participant MS
-* participant.actor only Reference(PractitionerRoleLE)
+* participant 1..1 MS 
+* participant.actor only Reference(PatientLE)

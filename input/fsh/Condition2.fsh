@@ -18,7 +18,7 @@ Description: "Condicion Inicio 2 LE recurso que se utiliza para indicar el índi
     * display 0..1 MS
   * text 0..1 MS
 
-* code.coding.code from VSIndicecomorbilidad
+* code from VSIndicecomorbilidad
 
 //* code.coding.system = #http://id.who.int/icd/release/11/mms
 

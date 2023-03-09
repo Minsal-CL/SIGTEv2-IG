@@ -8,7 +8,7 @@ Description: "Ejemplo de Condition1 Evento de Atender"
 * intent = #plan
 * description = "test"
 
-* subject = Reference(http://acme.com/ehr/fhir/Patient/atender)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 * activity.detail.productCodeableConcept.text = "123323"
 * activity
   * detail.kind = #MedicationRequest

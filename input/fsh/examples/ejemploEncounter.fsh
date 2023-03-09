@@ -9,6 +9,7 @@ Description: "Ejemplo de Encounter Evento de Inicio"
 * status = #finished
 * appointment = Reference(http://acme.com/ehr/fhir/Appointment/app1)
 * class.code = #AMB
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 Instance: EjemploEncounterAtender
 InstanceOf: EncounterAtenderLE
@@ -22,8 +23,16 @@ Description: "Ejemplo de Encounter Evento de Atender"
 * extension[ExtBoolPertinenciaAtencionBox].valueBoolean = true
 * extension[ExtStringMotivoNoPertinencia].valueString = "lorem ipsum"
 * basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)
-* subject = Reference(http://acme.com/ehr/fhir/Patient/PatientLE)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 * appointment = Reference(http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender)
 * class.code = #AMB
+
+* reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] = Reference(http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE)
+* reasonReference[ObservationAtenderLE] = Reference(http://acme.com/ehr/fhir/Observation/ObservationAtenderLE)
+
+* diagnosis[CondicionAtenderDiagnosticoSospechaLE].condition = Reference(CondicionAtenderDiagnosticoSospechaLE)
+* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition = Reference(CondicionAtenderHipotesisDiagnosticaCodigoLE)
+
+
 //* diagnosis[0] = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)
 //* diagnosis[0] = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)

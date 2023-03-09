@@ -35,7 +35,7 @@ Description: "Ejemplo de Service Request Evento de Inicio"
 * extension[PresentaDiscapacidad].valueBoolean = false
 //* extension[PersonaMayor].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor"
 //* extension[PersonaMayor].valueBoolean = false
-* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * reasonReference = Reference(http://acme.com/ehr/fhir/Observation/obs1)
 * encounter = Reference(http://acme.com/ehr/fhir/Encounter/enc1)
 * reasonCode = http://terminology.cens.cl/codigosDeis/motivoInterconsulta#1 "confirmacion"
@@ -81,7 +81,7 @@ Description: "Ejemplo de Service Request 2"
 * extension[PresentaDiscapacidad].valueBoolean = false
 //* extension[PersonaMayor].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor"
 //* extension[PersonaMayor].valueBoolean = false
-* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * reasonReference = Reference(http://acme.com/ehr/fhir/Observation/obs1)
 * encounter = Reference(http://acme.com/ehr/fhir/Encounter/enc1)
 * reasonCode = http://terminology.cens.cl/codigosDeis/motivoInterconsulta#1 "confirmacion"
@@ -101,7 +101,7 @@ Description: "Ejemplo de Service Request Evento de Referencia"
 
 * status = #draft
 * intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "1"
 * extension[EspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo"
@@ -123,7 +123,7 @@ Description: "Ejemplo de Service Request Evento de Terminar"
 
 * status = #draft
 * intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/terminar"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "1"
 * extension[MotivoCierreInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta"
@@ -146,7 +146,7 @@ Description: "Ejemplo de Service Request Evento Revisar"
 * status = #draft
 //* priority = #urgent
 * intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * doNotPerform = true
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
@@ -177,7 +177,7 @@ Description: "Ejemplo de Service Request Evento Agendar"
 * status = #draft
 //* priority = #urgent
 * intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 
 /*
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
@@ -205,7 +205,7 @@ Description: "Ejemplo de Service Request Evento Atender"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
 * intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/atender"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * performer.reference = "http://acme.com/ehr/fhir/PractitionerRole/atender"
 
 * extension[DestinoAtencionCodigo].valueCodeableConcept.coding.code = #1
@@ -226,6 +226,6 @@ Description: "Ejemplo de Service Request Evento Priorizar"
 * status = #draft
 * priority = #urgent
 * intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/pat1"
+* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 
 /*EJEMPLO PARA BUNDLE PRIORIZAR*/

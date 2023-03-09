@@ -945,3 +945,34 @@ Description: "PrevisionCodigo"
 * #96  "NINGUNA"
 * #99  "DESCONOCIDO"
 
+ValueSet: VSHipotesisDiagnosticaCodigo
+Id: VSHipotesisDiagnosticaCodigo
+Title: "HipotesisDiagnosticaCodigo"
+Description: "HipotesisDiagnosticaCodigo"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSHipotesisDiagnosticaCodigo
+
+CodeSystem: CSHipotesisDiagnosticaCodigo
+Id: CSHipotesisDiagnosticaCodigo
+Title: "HipotesisDiagnosticaCodigo"
+Description: "HipotesisDiagnosticaCodigo"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1  "Confirmada"
+* #2  "Descartada"

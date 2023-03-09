@@ -22,3 +22,4 @@ Description: "QuestionnaireResponse Atender LE"
 * item.text = "Resumen"
 * item.answer[0].valueString 
 * subject 1..1 MS
+* subject only Reference(PatientLE)

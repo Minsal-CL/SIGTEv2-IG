@@ -18,7 +18,7 @@ Description: "Condicion Inicio 3 LE recurso que se utiliza para indicar la sospe
     * display 0..1 MS
   * text 0..1 MS
 
-* code.coding.code from VSSospechaPatologiaGes
+* code from VSSospechaPatologiaGes
 
 
 

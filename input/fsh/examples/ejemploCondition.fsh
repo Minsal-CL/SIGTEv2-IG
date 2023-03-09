@@ -9,7 +9,7 @@ Description: "Ejemplo de Condition1 Evento de Inicio"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 * category.text = "diagnostico"
 * note.text = "FundamentoDiagnostico"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 Instance: EjemploCondition2
 InstanceOf: ConditionInicioIndiceComorbilidadLE
@@ -21,7 +21,7 @@ Description: "Ejemplo de Condition2 Evento de Inicio"
 * code.text = "DiagnosticoTextoLibreSospecha"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * category.text = "Indice Comorbilidad"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 Instance: EjemploCondition3
 InstanceOf: ConditionInicioSospechaGesLE
@@ -33,7 +33,7 @@ Description: "Ejemplo de Condition3 Evento de Inicio"
 * code.text = "SospechaPatologiaGesGlosa"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * category.text = "sospechaGes"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/pat1)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 
 Instance: EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE
@@ -43,7 +43,9 @@ Title: "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atende
 Description: "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender"
 
 * verificationStatus.coding.code = #provisional
-* subject = Reference(http://acme.com/ehr/fhir/Patient/patientLE)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
+* code.coding.code = #1
+
 
 Instance: EjemploCondicionAtenderDiagnosticoSospechaLE
 InstanceOf: CondicionAtenderDiagnosticoSospechaLE
@@ -53,18 +55,18 @@ Description: "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#1
 * code.text = "CIE11"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/patientLE)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 * verificationStatus.coding.code = #unconfirmed
 
 Instance: EjemploCondicionAtenderDiagnosticoConfirmacionLE
-InstanceOf: ConditionInicioIndiceComorbilidadLE
+InstanceOf: CondicionAtenderDiagnosticoConfirmacionLE
 Usage: #example
 Title: "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender"
 Description: "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#1
 * code.text = "CIE11"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/patientLE)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 * verificationStatus.coding.code = #confirmed

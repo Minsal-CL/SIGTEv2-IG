@@ -23,7 +23,7 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 Los recursos usados en este evento son los siguientes:
 
-* [BundleInicioLE](StructureDefinition-BundleAtender.html): Recurso que permite agrupar los datos del mensaje.
+* [BundleAtenderLE](StructureDefinition-BundleAtenderLE.html): Recurso que permite agrupar los datos del mensaje.
 * [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
@@ -35,7 +35,7 @@ Los recursos usados en este evento son los siguientes:
 * [Id: EncounterAtenderLE
 ](StructureDefinition-Id: EncounterAtenderLE
 .html): Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)
-* [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (ServiceRequest.subject)
+* [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (CarePlan.subject / Encounter.subject / Appointment.participant.actor)
 * [QuestionnaireResponseAtenderLE](StructureDefinition-QuestionnaireResponseAtenderLE.html): Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)
 * [AppointmentLE](StructureDefinition-AppointmentLE.html): Recurso utilizado para registrar información de la cita que da inicio a la solicitud de interconsulta (ServiceRequest.supportingInfo)
 * [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html): Recurso utilizado para registrar información 
@@ -61,7 +61,7 @@ El evento **atender** debe soportar a siguiente secuencia:
 
 ## Consideraciones
 
-Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
+Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](https://docs.google.com/spreadsheets/d/1FfW2gQvTMJbNpr2mH2DFpsftkMEPr5CW2ed9MkryuH4/edit#gid=2133026629&range=A3)
 
 
 * Debe incluir el recurso [BundleAtender](StructureDefinition-BundleAtenderLE.html)

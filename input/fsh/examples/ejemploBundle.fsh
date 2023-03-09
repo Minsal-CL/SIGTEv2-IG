@@ -21,7 +21,7 @@ Description: "Ejemplo de Bundle Evento de Inicio"
 * entry[appointment].fullUrl = "http://acme.com/ehr/fhir/Appointment/app1"
 * entry[appointment].resource = EjemploAppointment
 
-* entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/pat1"
+* entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * entry[patient].resource = EjemploPatient
 
 * entry[questionnaireresponse].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/que1"
@@ -211,7 +211,7 @@ Description: "Ejemplo de Bundle Evento de Priorizar"
 * entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/priorizar"
 * entry[practitioner].resource = EjemploPractitionerPriorizar
 
-* entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/priorizar"
+* entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * entry[patient].resource = EjemploPatient
 
 /*FIN BUNDLE PRIORIZAR*/
@@ -251,7 +251,7 @@ Description: "Ejemplo de Bundle Evento de Atender"
 * entry[encounter].fullUrl = "http://acme.com/ehr/fhir/Encounter/atender"
 * entry[encounter].resource = EjemploEncounterAtender
 
-* entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/atender"
+* entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * entry[patient].resource = EjemploPatient
 
 * entry[carePlan].fullUrl = "http://acme.com/ehr/fhir/CarePlan/atender"

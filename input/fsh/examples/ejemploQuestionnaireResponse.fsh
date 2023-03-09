@@ -19,5 +19,5 @@ Description: "Ejemplo de QuestionnaireResponseEvento de Inicio"
 * item.text = "Resumen"
 * item.answer.valueString = "Anamnesis"
 * status = #completed
-* subject = Reference(http://acme.com/ehr/fhir/Patient/atender)
+* subject = Reference(http://acme.com/ehr/fhir/Encounter/atender)
 

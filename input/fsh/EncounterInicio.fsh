@@ -27,3 +27,6 @@ Description: "Encounter Inicio LE recurso que se utiliza para representar el enc
 
 * appointment 1..1 MS
 * appointment only Reference(AppointmentInicioLE)
+
+* subject 1..1 MS
+* subject only Reference(PatientLE)

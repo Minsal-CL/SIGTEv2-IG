@@ -16,7 +16,7 @@ Description: "Condicion Atender Diagnostico Confirmacion LE"
     * display 0..1 MS
   * text 1..1 MS
 
-* code.coding.code from VSTipoCodDiagnostica
+* code from VSTipoCodDiagnostica
 
 * verificationStatus 1..1 MS
   * coding 1..1 MS

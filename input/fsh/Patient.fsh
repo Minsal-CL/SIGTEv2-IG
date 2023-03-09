@@ -25,7 +25,7 @@ Description: "Paciente LE recurso que se utiliza para representar la informació
 * identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice creado para almacenar diferentes tipos de identificación"
-* identifier contains identificacionPrincipal 1..1 MS and OtraIdentificacion 0..1 MS
+* identifier contains identificacionPrincipal 1..1 MS and OtraIdentificacion 0..* MS
 
 
 
@@ -35,7 +35,7 @@ Description: "Paciente LE recurso que se utiliza para representar la informació
 * identifier[identificacionPrincipal].type 1..1 MS
 * identifier[identificacionPrincipal].type.coding.code = #1
 
-* identifier[identificacionPrincipal].type.coding.code from VSTipoIdentificador
+* identifier[identificacionPrincipal].type from VSTipoIdentificador
 * identifier[identificacionPrincipal].value 1..1 MS
 * identifier[identificacionPrincipal].value ^short = "Numero de RUN sin digito verificador ni puntos"
 * identifier[identificacionPrincipal].extension[DigitoVerificador] ^short = "Digito verificador del RUN"
@@ -43,7 +43,7 @@ Description: "Paciente LE recurso que se utiliza para representar la informació
 * identifier[OtraIdentificacion] MS
 * identifier[OtraIdentificacion] MS
 * identifier[OtraIdentificacion].type 1..1 MS
-* identifier[OtraIdentificacion].type.coding.code from VSTipoIdentificador
+* identifier[OtraIdentificacion].type from VSTipoIdentificador
 
 * birthDate 1..1 MS
 

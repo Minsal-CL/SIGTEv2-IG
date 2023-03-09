@@ -13,6 +13,30 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * identifier 1..1 MS
   * value 1..1 MS
 
+* reasonReference 2..2 MS
+* reasonReference ^slicing.discriminator.type = #value
+* reasonReference ^slicing.discriminator.path = "reference"
+* reasonReference ^slicing.rules = #open
+* reasonReference ^slicing.description = "Slice creado para almacenar diferentes tipos de reasonReference"
+* reasonReference contains CondicionAtenderDiagnosticoConfirmacionLE 1..1 MS and ObservationAtenderLE 1..1 MS
+* reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] only Reference(CondicionAtenderDiagnosticoConfirmacionLE)
+* reasonReference[ObservationAtenderLE] only Reference(ObservationAtenderLE)
+
+* diagnosis 2..2 MS
+* diagnosis ^slicing.discriminator.type = #value
+* diagnosis ^slicing.discriminator.path = "reference"
+* diagnosis ^slicing.rules = #open
+* diagnosis ^slicing.description = "Slice creado para almacenar diferentes tipos de reasonReference"
+
+* diagnosis contains CondicionAtenderDiagnosticoSospechaLE 0..1 MS and CondicionAtenderHipotesisDiagnosticaCodigoLE 0..1 MS
+* diagnosis[CondicionAtenderDiagnosticoSospechaLE] 1..1 MS
+* diagnosis[CondicionAtenderDiagnosticoSospechaLE].condition only Reference(CondicionAtenderDiagnosticoSospechaLE)
+* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE] 1..1 MS
+* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition only Reference(CondicionAtenderHipotesisDiagnosticaCodigoLE)
+
+* subject 1..1 MS
+* subject only Reference(PatientLE)
+
 
 /*
 * extension contains ExtBoolPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
@@ -21,11 +45,11 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * basedOn 1..1 MS
 * basedOn only Reference(ServiceRequestLE)
 
-* diagnosis 2..2 MS
-  * condition 1..1 MS
-* diagnosis.condition only Reference(CondicionAtenderDiagnosticoSospechaLE or CondicionAtenderHipotesisDiagnosticaCodigoLE)
-* reasonReference 2..2 MS
-* reasonReference only Reference(CondicionAtenderDiagnosticoConfirmacionLE or ObservationAtenderLE)
+
+
+
+
+
 
 * appointment 1..1 MS
   * reference 1..1 MS

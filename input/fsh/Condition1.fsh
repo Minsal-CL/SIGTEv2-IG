@@ -17,7 +17,7 @@ Description: "Condicion Inicio 1 LE recurso que se utiliza para indicar la sospe
     * display 0..1 MS
   * text 0..1 MS
 
-* code.coding.code from VSTipoCodDiagnostica
+* code from VSTipoCodDiagnostica
 
 
 * category 1..1 MS

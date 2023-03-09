@@ -5,6 +5,9 @@ Description: "Esta extensión incluye códigos de paises de origen"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
 * url 1..1 MS
+
+* valueCodeableConcept from CodPais
+
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
   * code from CodPais
@@ -19,9 +22,9 @@ Description: "La previsión es la  variable determinada el sistema de aseguramie
 * value[x] only CodeableConcept
 * value[x] ^short = "Prevision Codigo"
 * url 1..1 MS
+* valueCodeableConcept from VSPrevisionCodigo
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSPrevisionCodigo
   * system 0..1 MS
   * display 0..1 MS
 * valueCodeableConcept.text 0..1 MS
@@ -34,9 +37,9 @@ Description: "Esta extensión incluye códigos de las Nacionalidades"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de la Nacionalidad"
 * url 1..1 MS
+* valueCodeableConcept from CodPais
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from CodPais
   * system 0..1 MS
   * display 0..1 MS
 * valueCodeableConcept.text 1..1 MS
@@ -49,9 +52,9 @@ Description: "Motivo Cierre Interconsulta"
 * value[x] only CodeableConcept
 * value[x] ^short = "Motivo Cierre Interconsulta"
 * url 1..1 MS
+* valueCodeableConcept from VSMotivoCierreInterconsulta
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSMotivoCierreInterconsulta
   * system 0..1 MS
   * display 0..1 MS
 * valueCodeableConcept.text 0..1 MS
@@ -63,9 +66,9 @@ Description: "Destino Atención Codigo"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código Destino Atención"
 * url 1..1 MS
+* valueCodeableConcept from VSDestinoAtencionCodigo
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSDestinoAtencionCodigo
   * system 0..1 MS
   * display 0..1 MS
 
@@ -77,9 +80,11 @@ Description: "MedioNotificacion"
 * value[x] only CodeableConcept
 * value[x] ^short = "MedioNotificacion"
 * url 1..1 MS
+* valueCodeableConcept from VSMedioNotificacion
+* valueCodeableConcept 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSMedioNotificacion
+  
   * system 0..1 MS
   * display 0..1 MS
 
@@ -91,9 +96,9 @@ Description: "Pertinencia Interconsulta"
 * value[x] only CodeableConcept
 * value[x] ^short = "Motivo No Pertinencia"
 * url 1..1 MS
+* valueCodeableConcept from VSMotivoNoPertinenciaCodigo
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSMotivoNoPertinenciaCodigo
   * system 0..1 MS
   * display 0..1 MS
 
@@ -106,9 +111,9 @@ Description: "Motivo No Pertinencia Codigo"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSPertinenciaInterconsulta
   * system 0..1 MS
   * display 0..1 MS
+* valueCodeableConcept from VSPertinenciaInterconsulta
 
 Extension:   EstadoInterconsultaCodigoLE
 Id:          EstadoInterconsultaCodigoLE
@@ -119,9 +124,9 @@ Description: "Estado Interconsulta Codigo"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSEstadoInterconsulta
   * system 0..1 MS
   * display 0..1 MS
+* valueCodeableConcept from VSEstadoInterconsulta
 
 Extension:   DocAcreditacionCuidadorCodigoLE
 Id:          DocAcreditacionCuidadorCodigoLE
@@ -132,10 +137,11 @@ Description: "Doc Acreditacion Cuidador"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSDocAcreditacionCuidador
   * system 0..1 MS
   * display 0..1 MS
   //* text 1..1 MS
+* valueCodeableConcept from VSDocAcreditacionCuidador
+
 
 
 Extension:   TipoOtroTelefono
@@ -147,9 +153,10 @@ Description: "TipoOtroTelefono"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSTipoOtroTelefono
   * system 0..1 MS
   * display 0..1 MS
+* valueCodeableConcept from VSTipoOtroTelefono
+
 
 
 Extension:   IdentidadGenero
@@ -161,9 +168,9 @@ Description: "Identidad de genero"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * code from VSIdentidaddeGenero
   * system 0..1 MS
   * display 0..1 MS
+* valueCodeableConcept from VSIdentidaddeGenero
 
 Extension: PuebloIndigena
 Id: PuebloIndigena
@@ -179,11 +186,11 @@ Description: "Etnia a la cual pertenece"
 * extension[PuebloIndigenaCodigo].url 1..1 MS
 * extension[PuebloIndigenaCodigo].valueCodeableConcept.coding 1..1 MS
   * code 0..1 MS
-  * code from VSPuebloIndigena
   * system 0..1 MS
   * display 0..1 MS
 * extension[PuebloIndigenaCodigo].valueCodeableConcept.text MS
 * extension[PuebloIndigenaCodigo].valueCodeableConcept.text ^short = "Ingresar pueblo pertenciente, en caso que no se encuentre en la lista"
+* extension[PuebloIndigenaCodigo].valueCodeableConcept from VSPuebloIndigena
 
 * extension[PuebloIndigenaPertenencia].value[x] only boolean
 
@@ -199,9 +206,10 @@ Description: "Contactado"
 * extension[MotivoNoContactabilidad].value[x] only CodeableConcept
 * extension[MotivoNoContactabilidad].value[x] ^short = "Codigo de la etnia"
 * extension[MotivoNoContactabilidad].url 1..1 MS
+* extension[MotivoNoContactabilidad].valueCodeableConcept from VSMotivoNoContactabilidad
+
 * extension[MotivoNoContactabilidad].valueCodeableConcept.coding 1..1 MS
   * code 0..1 MS
-  * code from VSMotivoNoContactabilidad
   * system 0..1 MS
   * display 0..1 MS
 * extension[MotivoNoContactabilidad].valueCodeableConcept.text MS

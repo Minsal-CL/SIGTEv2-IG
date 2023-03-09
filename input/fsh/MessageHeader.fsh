@@ -20,5 +20,5 @@ Description: "MessageHeaderLE"
 
 * author only Reference(PractitionerRoleLE)
 * focus only Reference(ServiceRequestLE or AppointmentInicioLE)
-* eventCoding.code from VSTipoEventoLE
+* eventCoding from VSTipoEventoLE
 

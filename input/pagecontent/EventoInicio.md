@@ -57,7 +57,7 @@ El evento **inicio** debe soportar a siguiente secuencia:
 
 ## Consideraciones
 
-Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](http://link)
+Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](https://docs.google.com/spreadsheets/d/1FfW2gQvTMJbNpr2mH2DFpsftkMEPr5CW2ed9MkryuH4/edit#gid=0&range=A2)
 
 El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 
