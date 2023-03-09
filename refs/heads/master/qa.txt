@@ -1,9 +1,9 @@
 ﻿ListaEsperaChile : Validation Results
 =========================================
 
-err = 866, warn = 131, info = 198
+err = 869, warn = 131, info = 198
 IG Publisher Version: 1.2.22 Out of date - current version is 1.2.41
-Generated Thu Mar 09 19:18:25 UTC 2023. FHIR version 4.0.1 for fhir.minsal.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
+Generated Thu Mar 09 19:29:16 UTC 2023. FHIR version 4.0.1 for fhir.minsal.ListaDeEspera#0.1.1 (canonical = http://minsal.cl/listaespera)
  Build Errors : 3 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointment : 2 / 0 / 1
@@ -11,7 +11,7 @@ Generated Thu Mar 09 19:18:25 UTC 2023. FHIR version 4.0.1 for fhir.minsal.Lista
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAtender : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAgendar : 56 / 6 / 34
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAtender : 239 / 20 / 73
- /github/workspace/fsh-generated/resources/Bundle-EjemploBundleInicio : 268 / 10 / 70
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleInicio : 269 / 10 / 70
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundlePriorizar : 52 / 5 / 30
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleReferencia : 42 / 4 / 30
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleRevisar : 31 / 3 / 23
@@ -90,8 +90,8 @@ Generated Thu Mar 09 19:18:25 UTC 2023. FHIR version 4.0.1 for fhir.minsal.Lista
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleTerminar : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponse : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseAtenderLE : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 45 / 4 / 3
- /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest2 : 44 / 3 / 3
+ /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 46 / 4 / 3
+ /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest2 : 45 / 3 / 3
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAgendar : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAtender : 2 / 1 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestPriorizar : 1 / 0 / 2
@@ -810,6 +810,7 @@ ERROR: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader
 INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[0].resource.ofType(MessageHeader).focus[0]: Details for http://acme.com/ehr/fhir/ServiceRequest/serv1 matching against profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE|0.1.1
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'PrevisionCodigo' (http://minsal.cl/listaespera/ValueSet/VSPrevisionCodigo|0.1.1), and a coding from this value set is required) (codes = null#1)
 WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[5].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Interconsulta' (http://minsal.cl/listaespera/ValueSet/VSinterconsulta|0.1.1), and a coding from this value set is required) (codes = null#1)
 WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[6].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Estado Interconsulta' (http://minsal.cl/listaespera/ValueSet/VSEstadoInterconsulta|0.1.1), and a coding from this value set is required) (codes = null#1)
 WARNING: Bundle/EjemploBundleInicio: Bundle.entry[1].resource.ofType(ServiceRequest).extension[6].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -1388,6 +1389,7 @@ ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[4]: S
 ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:IndiceComorbilidad, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'PrevisionCodigo' (http://minsal.cl/listaespera/ValueSet/VSPrevisionCodigo|0.1.1), and a coding from this value set is required) (codes = null#1)
 WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[5].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Interconsulta' (http://minsal.cl/listaespera/ValueSet/VSinterconsulta|0.1.1), and a coding from this value set is required) (codes = null#1)
 WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[6].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Estado Interconsulta' (http://minsal.cl/listaespera/ValueSet/VSEstadoInterconsulta|0.1.1), and a coding from this value set is required) (codes = null#1)
 WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.extension[6].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -1438,6 +1440,7 @@ ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.supportingInfo[2]: 
 ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.supportingInfo[3]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:IndiceComorbilidad, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.supportingInfo[4]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:IndiceComorbilidad, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
 ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.supportingInfo[5]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: use in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE on element ServiceRequest.supportingInfo:IndiceComorbilidad, looking in profile http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE (@char 1)
+ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.extension[4].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Interconsulta' (http://minsal.cl/listaespera/ValueSet/VSinterconsulta|0.1.1), and a coding from this value set is required) (codes = null#1)
 WARNING: ServiceRequest/EjemploServiceRequest2: ServiceRequest.extension[4].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: ServiceRequest/EjemploServiceRequest2: ServiceRequest.extension[5].value.ofType(CodeableConcept): None of the codings provided are in the value set 'Estado Interconsulta' (http://minsal.cl/listaespera/ValueSet/VSEstadoInterconsulta|0.1.1), and a coding from this value set is required) (codes = null#1)
 WARNING: ServiceRequest/EjemploServiceRequest2: ServiceRequest.extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
