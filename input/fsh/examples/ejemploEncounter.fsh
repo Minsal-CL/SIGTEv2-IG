@@ -33,6 +33,7 @@ Description: "Ejemplo de Encounter Evento de Atender"
 * diagnosis[CondicionAtenderDiagnosticoSospechaLE].condition = Reference(CondicionAtenderDiagnosticoSospechaLE)
 * diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition = Reference(CondicionAtenderHipotesisDiagnosticaCodigoLE)
 
-
+* period.start = "2023-01-22T09:00:00Z"
+* class.code = #1
 //* diagnosis[0] = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)
 //* diagnosis[0] = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)

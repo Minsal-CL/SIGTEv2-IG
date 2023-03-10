@@ -230,46 +230,43 @@ Description: "Ejemplo de Bundle Evento de Atender"
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
 * timestamp = "2023-02-09T17:15:22Z"
 
-* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/atender"
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeaderAtender"
 * entry[messageheader].resource = EjemploMessageHeaderAtender
 
-* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/atender"
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestAtender"
 * entry[servicerequest].resource = EjemploServiceRequestAtender
 
-* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/atender"
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerAtender"
 * entry[practitioner].resource = EjemploPractitionerAtender
 
-* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/atender"
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleAtender"
 * entry[practitionerRole].resource = EjemploPractitionerRoleAtender
 
-* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/atender"
+* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/EjemploOrganizationAtender"
 * entry[organization].resource = EjemploOrganizationAtender
 
-* entry[appointment].fullUrl = "http://acme.com/ehr/fhir/Appointment/atender"
-* entry[appointment].resource = EjemploAppointmentAtender
-
-* entry[encounter].fullUrl = "http://acme.com/ehr/fhir/Encounter/atender"
+* entry[encounter].fullUrl = "http://acme.com/ehr/fhir/Encounter/EjemploEncounterAtender"
 * entry[encounter].resource = EjemploEncounterAtender
 
 * entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * entry[patient].resource = EjemploPatient
 
-* entry[carePlan].fullUrl = "http://acme.com/ehr/fhir/CarePlan/atender"
+* entry[carePlan].fullUrl = "http://acme.com/ehr/fhir/CarePlan/EjemploCarePlanLE"
 * entry[carePlan].resource = EjemploCarePlanLE
 
-* entry[questionnaireResponse].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/atender"
+* entry[questionnaireResponse].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE"
 * entry[questionnaireResponse].resource = EjemploQuestionnaireResponseAtenderLE
 
-* entry[observation].fullUrl = "http://acme.com/ehr/fhir/Observation/atender"
+* entry[observation].fullUrl = "http://acme.com/ehr/fhir/Observation/EjemploObservationAtender"
 * entry[observation].resource = EjemploObservationAtender
 
-* entry[conditionHipotesis].fullUrl = "http://acme.com/ehr/fhir/Condition/atenderHipotesis"
+* entry[conditionHipotesis].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE"
 * entry[conditionHipotesis].resource = EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE
 
-* entry[conditionDiagnosticoSospecha].fullUrl = "http://acme.com/ehr/fhir/Condition/atenderDiagnosticoSospecha"
+* entry[conditionDiagnosticoSospecha].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoSospechaLE"
 * entry[conditionDiagnosticoSospecha].resource = EjemploCondicionAtenderDiagnosticoSospechaLE
 
-* entry[conditionDiagnosticoConfirmacion].fullUrl = "http://acme.com/ehr/fhir/Condition/atenderDiagnosticoConfirmacion"
+* entry[conditionDiagnosticoConfirmacion].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE"
 * entry[conditionDiagnosticoConfirmacion].resource = EjemploCondicionAtenderDiagnosticoConfirmacionLE
 /*FIN BUNDLE Atender*/
 

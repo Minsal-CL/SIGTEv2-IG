@@ -5,7 +5,7 @@ El evento ATENDER tiene asociado los siguientes códigos de evento:
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| atender | Atender | Este evento permite registrar información asociada a la atención de consulta de especialidad. | La respuesta debe indicar si hay errores o indicar que la interconsulta se ha llevado a cabao con el paciente |
+| atender | Atender | Este evento permite registrar información asociada a la atención de consulta de especialidad. | La respuesta debe indicar si hay errores o indicar que la interconsulta se ha llevado a cabo con el paciente |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
@@ -24,22 +24,21 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 Los recursos usados en este evento son los siguientes:
 
 * [BundleAtenderLE](StructureDefinition-BundleAtenderLE.html): Recurso que permite agrupar los datos del mensaje.
-* [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
+* [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
 * [Condition](https://www.hl7.org/FHIR/condition.html): Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
-  * [CondicionAtenderHipotesisDiagnosticaCodigoLE](StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html): Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo) ??????
-  * [CondicionAtenderDiagnosticoSospechaLE](StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)?????
-  * [CondicionAtenderDiagnosticoConfirmacionLE](StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)?????
+  * [CondicionAtenderHipotesisDiagnosticaCodigoLE](StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html): Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)
+  * [CondicionAtenderDiagnosticoSospechaLE](StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)
+  * [CondicionAtenderDiagnosticoConfirmacionLE](StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)
 * [ObservationAtenderLE](StructureDefinition-ObservationAtenderLE.html): Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)
-* [Id: EncounterAtenderLE
+* [EncounterAtenderLE
 ](StructureDefinition-Id: EncounterAtenderLE
 .html): Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)
 * [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (CarePlan.subject / Encounter.subject / Appointment.participant.actor)
 * [QuestionnaireResponseAtenderLE](StructureDefinition-QuestionnaireResponseAtenderLE.html): Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)
-* [AppointmentLE](StructureDefinition-AppointmentLE.html): Recurso utilizado para registrar información de la cita que da inicio a la solicitud de interconsulta (ServiceRequest.supportingInfo)
 * [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html): Recurso utilizado para registrar información 
-* [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de destino
+* [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de atención
 * [PractitionerLE](StructureDefinition-PractitionerLE.html): Recurso que permite reflejar la informacion asociada a la identificación del profesional de la salud.
 
 ## Relaciones de Recursos

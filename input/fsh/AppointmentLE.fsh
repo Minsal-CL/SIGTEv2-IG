@@ -18,12 +18,8 @@ Description: "AppointmentLE"
 * status 1..1 MS
 * status = #booked
 
-* created 0..1 MS //agendar
 * start 0..1 MS // atender
-
-
-
-
+* end 0..1 MS
 * appointmentType 0..1 MS
   * coding 1..1 MS
     * system 1..1 MS

@@ -37,6 +37,9 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * subject 1..1 MS
 * subject only Reference(PatientLE)
 
+* period.start 1..1 MS
+
+* class from VSTipoConsulta
 
 /*
 * extension contains ExtBoolPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS

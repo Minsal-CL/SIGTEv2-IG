@@ -21,7 +21,6 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
         and practitioner 1..1
         and practitionerRole 1..1
         and organization 1..1
-        and appointment 1..1
         and encounter 1..1
         and patient 1..1
         and carePlan 1..1
@@ -38,7 +37,6 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[practitioner].resource only PractitionerLE
 * entry[practitionerRole].resource only PractitionerRoleLE
 * entry[organization].resource only OrganizationLE
-* entry[appointment].resource only AppointmentLE
 * entry[encounter].resource only EncounterAtenderLE
 * entry[patient].resource only PatientLE  
 * entry[carePlan].resource only CarePlanAtenderLE  

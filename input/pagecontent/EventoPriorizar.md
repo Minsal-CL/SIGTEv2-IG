@@ -45,7 +45,7 @@ Los recursos usados en este evento son los siguientes:
 
 ## Secuencia del Evento
 
-El evento **terminar** debe soportar a siguiente secuencia:
+El evento **priorizar** debe soportar a siguiente secuencia:
 
 <div align="center" >
 {% include evento-priorizar.svg %}

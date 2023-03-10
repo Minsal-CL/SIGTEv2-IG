@@ -26,8 +26,12 @@ Los recursos usados en este evento son los siguientes:
 * [BundleAgendarLE](StructureDefinition-BundleAgendarLE.html): Recurso que permite agrupar los datos del mensaje.
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [MessageAppointmentLE](StructureDefinition-AppointmentLE.html): Recurso que contiene datos relacionados a la agenda
-* [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso
+* [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al rol del individuo que atiende o agenda la cita
+  * PractitionerRole1: Rol del individuo que atenderá al paciente
+  * PractitionerRole2: Rol del individuo que agenda la cita
 * [PractitionerLE](StructureDefinition-PractitionerLE.html): Recurso que permite reflejar la información relacionada al profesional de la salud que realiza la atencion
+  * Practitioner1: Individuo que atenderá al paciente
+  * Practitioner2: Individuo que agenda la cita
 * [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)
 * [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de destino
 * [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (ServiceRequest.subject)
