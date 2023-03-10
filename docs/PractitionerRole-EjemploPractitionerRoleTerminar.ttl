@@ -5,40 +5,32 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleTerminar> a fhir:PractitionerRole;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "EjemploPractitionerRoleTerminar"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE";
-       fhir:index 0;
+<http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleTerminar> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploPractitionerRoleTerminar"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-EjemploBundleTerminar.html#http-//acme.com/ehr/fhir/Practitioner/terminar\">http://acme.com/ehr/fhir/Practitioner/terminar</a></p><p><b>organization</b>: <a href=\"Bundle-EjemploBundleTerminar.html#http-//acme.com/ehr/fhir/Organization/terminar\">http://acme.com/ehr/fhir/Organization/terminar</a></p><p><b>code</b>: terminador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#terminador)</span></p></div>"
-  ]; # 
-  fhir:PractitionerRole.practitioner [
-     fhir:link <http://acme.com/ehr/fhir/Practitioner/terminar>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Practitioner/terminar" ]
-  ]; # 
-  fhir:PractitionerRole.organization [
-     fhir:link <http://acme.com/ehr/fhir/Organization/terminar>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Organization/terminar" ]
-  ]; # 
-  fhir:PractitionerRole.code [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.code [ fhir:value "terminador" ]
-     ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleTerminar.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-EjemploBundleTerminar.html#http-//acme.com/ehr/fhir/Practitioner/terminar\">http://acme.com/ehr/fhir/Practitioner/terminar</a></p><p><b>organization</b>: <a href=\"Bundle-EjemploBundleTerminar.html#http-//acme.com/ehr/fhir/Organization/terminar\">http://acme.com/ehr/fhir/Organization/terminar</a></p><p><b>code</b>: terminador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#terminador)</span></p></div>"
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <http://acme.com/ehr/fhir/Practitioner/terminar> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Practitioner/terminar" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://acme.com/ehr/fhir/Organization/terminar> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Organization/terminar" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:code [ fhir:v "terminador" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

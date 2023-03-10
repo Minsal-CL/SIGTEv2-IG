@@ -5,45 +5,40 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/listaespera/Encounter/EjemploEncounter> a fhir:Encounter;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "EjemploEncounter"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE";
-       fhir:index 0;
+<http://minsal.cl/listaespera/Encounter/EjemploEncounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploEncounter"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EjemploEncounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EjemploEncounter&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EncounterInicioLE.html\">Encounter Inicio LE</a></p></div><p><b>identifier</b>: IdConsultaAPS: 1</p><p><b>status</b>: finished</p><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>appointment</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1\">http://acme.com/ehr/fhir/Appointment/app1</a></p></div>"
-  ]; # 
-  fhir:Encounter.identifier [
-     fhir:index 0;
-     fhir:Identifier.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.cens.cl/CodeSystem/listaespera" ];
-         fhir:Coding.code [ fhir:value "IdConsultaAPS" ]
-       ]
-     ];
-     fhir:Identifier.value [ fhir:value "1" ]
-  ]; # 
-  fhir:Encounter.status [ fhir:value "finished"]; # 
-  fhir:Encounter.class [
-     fhir:Coding.code [ fhir:value "AMB" ]
-  ]; # 
-  fhir:Encounter.appointment [
-     fhir:index 0;
-     fhir:link <http://acme.com/ehr/fhir/Appointment/app1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Appointment/app1" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://minsal.cl/listaespera/Encounter/EjemploEncounter.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EjemploEncounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EjemploEncounter&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EncounterInicioLE.html\">Encounter Inicio LE</a></p></div><p><b>identifier</b>: IdConsultaAPS: 1</p><p><b>status</b>: finished</p><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>appointment</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1\">http://acme.com/ehr/fhir/Appointment/app1</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "IdConsultaAPS" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:code [ fhir:v "AMB" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/EjemploPatient> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient" ]
+  ] ; # 
+  fhir:appointment ( [
+     fhir:link <http://acme.com/ehr/fhir/Appointment/app1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Appointment/app1" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

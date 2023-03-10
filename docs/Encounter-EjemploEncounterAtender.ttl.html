@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FHIR.HL7CHILE.LISTADEESPERA\Ejemplo de Encounter Evento de Atender - TTL Representation - FHIR v4.0.1</title>
+    <title>FHIR.MINSAL.LISTADEESPERA\Ejemplo de Encounter Evento de Atender - TTL Representation - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"19.133"}
-    h3,h4,h5,h6{--heading-prefix:"19.133"}</style>
+    <style type="text/css">h2{--heading-prefix:"20.135"}
+    h3,h4,h5,h6{--heading-prefix:"20.135"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -122,6 +122,9 @@
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
+      <li>
+        <a href="Mensajeria.html">Mensajería</a>
+      </li>
       <li>
         <a href="Eventos.html">Eventos</a>
       </li>
@@ -249,60 +252,65 @@
 
 # - resource -------------------------------------------------------------------
 
- a fhir:Encounter;
-  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot;
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:value</a> &quot;EjemploEncounterAtender&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">fhir:Resource.meta</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:value</a> &quot;http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE&quot;;
-       <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-       <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE&gt;     ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">fhir:DomainResource.text</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;extensions&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Encounter&lt;/b&gt;&lt;a name=\&quot;EjemploEncounterAtender\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Encounter &amp;quot;EjemploEncounterAtender&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-EncounterAtenderLE.html\&quot;&gt;Encounter Atender LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;ExtBool Pertinencia Atencion Box&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;ExtString MotivoNoPertinencia&lt;/b&gt;: lorem ipsum&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: IdConsultaAPS: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;http://acme.com/ehr/fhir/Patient/PatientLE\&quot;&gt;http://acme.com/ehr/fhir/Patient/PatientLE&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE\&quot;&gt;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;appointment&lt;/b&gt;: &lt;a href=\&quot;Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1\&quot;&gt;http://acme.com/ehr/fhir/Appointment/app1&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">fhir:DomainResource.extension</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox&quot; ];
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueBoolean</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:value</a> &quot;true&quot;^^xsd:boolean ]
-  ], [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:Extension.url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia&quot; ];
-     <a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:Extension.valueString</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;lorem ipsum&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">fhir:Encounter.identifier</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:Identifier.type</a> [
-       <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:CodeableConcept.coding</a> [
-         <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;http://terminology.cens.cl/CodeSystem/listaespera&quot; ];
-         <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;IdConsultaAPS&quot; ]       ]     ];
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:Identifier.value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;1&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">fhir:Encounter.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;finished&quot;]; # 
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">fhir:Encounter.class</a> [
-     <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;AMB&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">fhir:Encounter.subject</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://acme.com/ehr/fhir/Patient/PatientLE&gt;;
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://acme.com/ehr/fhir/Patient/PatientLE&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.basedOn">fhir:Encounter.basedOn</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE&gt;;
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE&quot; ]
-  ]; # 
-  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.appointment">fhir:Encounter.appointment</a> [
-     <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://acme.com/ehr/fhir/Appointment/app1&gt;;
-     <a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:Reference.reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;http://acme.com/ehr/fhir/Appointment/app1&quot; ]
-  ]. # 
-
-# - ontology header ------------------------------------------------------------
-
- a owl:Ontology;
-  owl:imports fhir:fhir.ttl.
+ a fhir:Encounter ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploEncounterAtender&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Encounter&lt;/b&gt;&lt;a name=\&quot;EjemploEncounterAtender\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Encounter &amp;quot;EjemploEncounterAtender&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-EncounterAtenderLE.html\&quot;&gt;Encounter Atender LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;ExtBool Pertinencia Atencion Box&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;ExtString MotivoNoPertinencia&lt;/b&gt;: lorem ipsum&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: IdConsultaAPS: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: 1 (Details: [not stated] code 1 = '1', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\&quot;&gt;http://acme.com/ehr/fhir/Patient/EjemploPatient&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE\&quot;&gt;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;appointment&lt;/b&gt;: &lt;a href=\&quot;http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender\&quot;&gt;http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-01-22 09:00:00+0000 --&amp;gt; (ongoing)&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE\&quot;&gt;http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;http://acme.com/ehr/fhir/Observation/ObservationAtenderLE\&quot;&gt;http://acme.com/ehr/fhir/Observation/ObservationAtenderLE&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;diagnosis&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;: &lt;a href=\&quot;CondicionAtenderDiagnosticoSospechaLE\&quot;&gt;CondicionAtenderDiagnosticoSospechaLE&lt;/a&gt; &amp;quot;CondicionAtenderDiagnosticoSospechaLE&amp;quot;&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;diagnosis&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;condition&lt;/b&gt;: &lt;a href=\&quot;CondicionAtenderHipotesisDiagnosticaCodigoLE\&quot;&gt;CondicionAtenderHipotesisDiagnosticaCodigoLE&lt;/a&gt; &amp;quot;CondicionAtenderHipotesisDiagnosticaCodigoLE&amp;quot;&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;lorem ipsum&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.cens.cl/CodeSystem/listaespera&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;IdConsultaAPS&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finished&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">fhir:class</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://acme.com/ehr/fhir/Patient/EjemploPatient&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://acme.com/ehr/fhir/Patient/EjemploPatient&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.basedOn">fhir:basedOn</a> ( [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.appointment">fhir:appointment</a> ( [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">fhir:period</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-01-22T09:00:00Z&quot;^^xsd:dateTime ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonReference">fhir:reasonReference</a> ( [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://acme.com/ehr/fhir/Observation/ObservationAtenderLE&gt; ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://acme.com/ehr/fhir/Observation/ObservationAtenderLE&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis">fhir:diagnosis</a> ( [
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">fhir:condition</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CondicionAtenderDiagnosticoSospechaLE&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">fhir:condition</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CondicionAtenderHipotesisDiagnosticaCodigoLE&quot; ]     ]
+  ] ) . # 
 
 </code></pre>
 
@@ -335,7 +343,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 16:47-0300">2023-03-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 10, 2023 16:52-0300">2023-03-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

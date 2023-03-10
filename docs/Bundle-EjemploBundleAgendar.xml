@@ -46,7 +46,7 @@
           <profile value="http://minsal.cl/listaespera/StructureDefinition/AppointmentLE"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Appointment</b><a name="EjemploAppointmentAgendar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AppointmentLE.html">AppointmentLE</a></p></div><blockquote><p><b>Contactado</b></p><p><b>value</b>: Otro <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>created</b>: 2023-01-22 09:00:00+0000</p><p><b>basedOn</b>: <a href="#ServiceRequest_EjemploServiceRequestAgendar">See above (http://acme.com/ehr/fhir/ServiceRequest/agendar)</a></p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href="http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor">http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor</a></td><td>accepted</td></tr></table></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Appointment</b><a name="EjemploAppointmentAgendar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AppointmentLE.html">AppointmentLE</a></p></div><blockquote><p><b>Contactado</b></p><blockquote><p><b>url</b></p><code>MotivoNoContactabilidad</code></blockquote><p><b>value</b>: Otro <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#1)</span></p><blockquote><p><b>url</b></p><a href="StructureDefinition-Contactado.html">Contactado</a></blockquote><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>start</b>: Jan 22, 2023, 6:00:00 AM</p><p><b>end</b>: Jan 22, 2023, 6:30:00 AM</p><p><b>basedOn</b>: <a href="#ServiceRequest_EjemploServiceRequestAgendar">See above (http://acme.com/ehr/fhir/ServiceRequest/agendar)</a></p><h3>Participants</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href="http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor">http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor</a></td><td>accepted</td></tr></table></div>
         </text>
         <extension url="http://minsal.cl/listaespera/StructureDefinition/Contactado">
           <extension url="MotivoNoContactabilidad">
@@ -65,7 +65,8 @@
           <value value="21"/>
         </identifier>
         <status value="booked"/>
-        <created value="2023-01-22T09:00:00Z"/>
+        <start value="2023-01-22T09:00:00Z"/>
+        <end value="2023-01-22T09:30:00Z"/>
         <basedOn>
           <reference value="http://acme.com/ehr/fhir/ServiceRequest/agendar"/>
         </basedOn>
@@ -87,7 +88,7 @@
           <profile value="http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestAgendar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestAgendar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href="Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestAgendar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestAgendar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href="Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>
         </text>
         <identifier>
           <type>
@@ -101,7 +102,7 @@
         <status value="draft"/>
         <intent value="proposal"/>
         <subject>
-          <reference value="http://acme.com/ehr/fhir/Patient/pat1"/>
+          <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
         </subject>
         <authoredOn value="2022-01-20T13:50:20Z"/>
       </ServiceRequest>

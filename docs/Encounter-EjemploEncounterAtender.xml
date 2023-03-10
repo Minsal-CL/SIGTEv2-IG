@@ -6,7 +6,7 @@
     <profile value="http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="EjemploEncounterAtender"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;EjemploEncounterAtender&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-EncounterAtenderLE.html">Encounter Atender LE</a></p></div><p><b>ExtBool Pertinencia Atencion Box</b>: true</p><p><b>ExtString MotivoNoPertinencia</b>: lorem ipsum</p><p><b>identifier</b>: IdConsultaAPS: 1</p><p><b>status</b>: finished</p><p><b>class</b>: AMB (Details: [not stated] code AMB = 'AMB', stated as 'null')</p><p><b>subject</b>: <a href="http://acme.com/ehr/fhir/Patient/PatientLE">http://acme.com/ehr/fhir/Patient/PatientLE</a></p><p><b>basedOn</b>: <a href="http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE">http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE</a></p><p><b>appointment</b>: <a href="Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1">http://acme.com/ehr/fhir/Appointment/app1</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="EjemploEncounterAtender"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;EjemploEncounterAtender&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-EncounterAtenderLE.html">Encounter Atender LE</a></p></div><p><b>ExtBool Pertinencia Atencion Box</b>: true</p><p><b>ExtString MotivoNoPertinencia</b>: lorem ipsum</p><p><b>identifier</b>: IdConsultaAPS: 1</p><p><b>status</b>: finished</p><p><b>class</b>: 1 (Details: [not stated] code 1 = '1', stated as 'null')</p><p><b>subject</b>: <a href="Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>basedOn</b>: <a href="http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE">http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE</a></p><p><b>appointment</b>: <a href="http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender">http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender</a></p><p><b>period</b>: 2023-01-22 09:00:00+0000 --&gt; (ongoing)</p><p><b>reasonReference</b>: </p><ul><li><a href="http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE">http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE</a></li><li><a href="http://acme.com/ehr/fhir/Observation/ObservationAtenderLE">http://acme.com/ehr/fhir/Observation/ObservationAtenderLE</a></li></ul><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href="CondicionAtenderDiagnosticoSospechaLE">CondicionAtenderDiagnosticoSospechaLE</a> &quot;CondicionAtenderDiagnosticoSospechaLE&quot;</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href="CondicionAtenderHipotesisDiagnosticaCodigoLE">CondicionAtenderHipotesisDiagnosticaCodigoLE</a> &quot;CondicionAtenderHipotesisDiagnosticaCodigoLE&quot;</p></blockquote></div>
   </text>
   <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox">
     <valueBoolean value="true"/>
@@ -25,15 +25,34 @@
   </identifier>
   <status value="finished"/>
   <class>
-    <code value="AMB"/>
+    <code value="1"/>
   </class>
   <subject>
-    <reference value="http://acme.com/ehr/fhir/Patient/PatientLE"/>
+    <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
   </subject>
   <basedOn>
     <reference value="http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE"/>
   </basedOn>
   <appointment>
-    <reference value="http://acme.com/ehr/fhir/Appointment/app1"/>
+    <reference value="http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender"/>
   </appointment>
+  <period>
+    <start value="2023-01-22T09:00:00Z"/>
+  </period>
+  <reasonReference>
+    <reference value="http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE"/>
+  </reasonReference>
+  <reasonReference>
+    <reference value="http://acme.com/ehr/fhir/Observation/ObservationAtenderLE"/>
+  </reasonReference>
+  <diagnosis>
+    <condition>
+      <reference value="CondicionAtenderDiagnosticoSospechaLE"/>
+    </condition>
+  </diagnosis>
+  <diagnosis>
+    <condition>
+      <reference value="CondicionAtenderHipotesisDiagnosticaCodigoLE"/>
+    </condition>
+  </diagnosis>
 </Encounter>

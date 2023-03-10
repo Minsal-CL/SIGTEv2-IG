@@ -5,69 +5,55 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "CSDerivadoParaCodigo"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSDerivadoParaCodigo-1\"> </a></td><td>Confirmación</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSDerivadoParaCodigo-2\"> </a></td><td>Control Especialista</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CSDerivadoParaCodigo-3\"> </a></td><td>Realiza Tratamiento</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CSDerivadoParaCodigo-4\"> </a></td><td>Seguimiento</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CSDerivadoParaCodigo-5\"> </a></td><td>Otro</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo"]; # 
-  fhir:CodeSystem.version [ fhir:value "0.1.1"]; # 
-  fhir:CodeSystem.name [ fhir:value "CSDerivadoParaCodigo"]; # 
-  fhir:CodeSystem.title [ fhir:value "Derivado Para"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-01-15"^^xsd:date]; # 
-  fhir:CodeSystem.publisher [ fhir:value "MINSAL Chile"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "MINSAL Chile" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://minsal.cl" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "Derivado Para"]; # 
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "CL" ];
-       fhir:Coding.display [ fhir:value "Chile" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "1" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Confirmación" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "2" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Control Especialista" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "3" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Realiza Tratamiento" ]
-  ], [
-     fhir:index 3;
-     fhir:CodeSystem.concept.code [ fhir:value "4" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Seguimiento" ]
-  ], [
-     fhir:index 4;
-     fhir:CodeSystem.concept.code [ fhir:value "5" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Otro" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSDerivadoParaCodigo"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSDerivadoParaCodigo-1\"> </a></td><td>Confirmación</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSDerivadoParaCodigo-2\"> </a></td><td>Control Especialista</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CSDerivadoParaCodigo-3\"> </a></td><td>Realiza Tratamiento</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CSDerivadoParaCodigo-4\"> </a></td><td>Seguimiento</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CSDerivadoParaCodigo-5\"> </a></td><td>Otro</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "CSDerivadoParaCodigo"] ; # 
+  fhir:title [ fhir:v "Derivado Para"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-01-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MINSAL Chile"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MINSAL Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Derivado Para"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Confirmación" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Control Especialista" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Realiza Tratamiento" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Seguimiento" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Otro" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

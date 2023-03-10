@@ -9,4 +9,10 @@
     you may need to use this schematron fragment to build a, 
     single schematron that validates contained resources (if you have any) 
   -->
+  <sch:pattern>
+    <sch:title>f:QuestionnaireResponse</sch:title>
+    <sch:rule context="f:QuestionnaireResponse">
+      <sch:assert test="count(f:encounter) &gt;= 1">encounter: minimum cardinality of 'encounter' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

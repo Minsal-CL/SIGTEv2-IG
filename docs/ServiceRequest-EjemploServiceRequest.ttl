@@ -5,148 +5,121 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequest> a fhir:ServiceRequest;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "EjemploServiceRequest"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE";
-       fhir:index 0;
+<http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequest> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploServiceRequest"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Previsión determinada  de aseguramiento de salud del paciente.</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtStringFundamentoPriorizacion</b>: FundamentoPriorizacion</p><p><b>SospechaPatologiaGes</b>: true</p><p><b>ExtBool ResolutividadAPS</b>: true</p><p><b>ExtBool Alergia</b>: false</p><p><b>Origen Interconsulta</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>Estado Interconsulta Codigo</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtBool Cuidador</b>: true</p><p><b>Doc Acreditacion Cuidador</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtBool PresentaDiscapacidad</b>: false</p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>encounter</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Encounter/enc1\">http://acme.com/ehr/fhir/Encounter/enc1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>reasonCode</b>: confirmacion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (motivoInterconsulta#1)</span></p><p><b>reasonReference</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Observation/obs1\">http://acme.com/ehr/fhir/Observation/obs1</a></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1\">http://acme.com/ehr/fhir/Appointment/app1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/QuestionnaireResponse/que1\">http://acme.com/ehr/fhir/QuestionnaireResponse/que1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/AllergyIntolerance/all1\">http://acme.com/ehr/fhir/AllergyIntolerance/all1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con1\">http://acme.com/ehr/fhir/Condition/con1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con2\">http://acme.com/ehr/fhir/Condition/con2</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con3\">http://acme.com/ehr/fhir/Condition/con3</a></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "1" ]
+       ] )
      ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Previsión determinada  de aseguramiento de salud del paciente.</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtStringFundamentoPriorizacion</b>: FundamentoPriorizacion</p><p><b>SospechaPatologiaGes</b>: true</p><p><b>ExtBool ResolutividadAPS</b>: true</p><p><b>ExtBool Alergia</b>: false</p><p><b>Origen Interconsulta</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>Estado Interconsulta Codigo</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtBool Cuidador</b>: true</p><p><b>Doc Acreditacion Cuidador</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtBool PresentaDiscapacidad</b>: false</p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/pat1\">http://acme.com/ehr/fhir/Patient/pat1</a></p><p><b>encounter</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Encounter/enc1\">http://acme.com/ehr/fhir/Encounter/enc1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>reasonCode</b>: confirmacion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (motivoInterconsulta#1)</span></p><p><b>reasonReference</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Observation/obs1\">http://acme.com/ehr/fhir/Observation/obs1</a></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1\">http://acme.com/ehr/fhir/Appointment/app1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/QuestionnaireResponse/que1\">http://acme.com/ehr/fhir/QuestionnaireResponse/que1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/AllergyIntolerance/all1\">http://acme.com/ehr/fhir/AllergyIntolerance/all1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con1\">http://acme.com/ehr/fhir/Condition/con1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con2\">http://acme.com/ehr/fhir/Condition/con2</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con3\">http://acme.com/ehr/fhir/Condition/con3</a></li></ul></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "1" ]
-       ]
+  ] [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "FundamentoPriorizacion" ]
+  ] [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "1" ]
+       ] )
      ]
-  ], [
-     fhir:index 1;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion" ];
-     fhir:Extension.valueString [ fhir:value "FundamentoPriorizacion" ]
-  ], [
-     fhir:index 2;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes" ];
-     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-  ], [
-     fhir:index 3;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS" ];
-     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-  ], [
-     fhir:index 4;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia" ];
-     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
-  ], [
-     fhir:index 5;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "1" ]
-       ]
+  ] [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "1" ]
+       ] )
      ]
-  ], [
-     fhir:index 6;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "1" ]
-       ]
+  ] [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/ExtBoolCuidador"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "1" ]
+       ] )
      ]
-  ], [
-     fhir:index 7;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolCuidador" ];
-     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-  ], [
-     fhir:index 8;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "1" ]
-       ]
-     ]
-  ], [
-     fhir:index 9;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPresentaDiscapacidad" ];
-     fhir:Extension.valueBoolean [ fhir:value "false"^^xsd:boolean ]
-  ]; # 
-  fhir:ServiceRequest.identifier [
-     fhir:index 0;
-     fhir:Identifier.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.cens.cl/CodeSystem/listaespera" ];
-         fhir:Coding.code [ fhir:value "IdInterconsulta" ]
-       ]
-     ];
-     fhir:Identifier.value [ fhir:value "1" ]
-  ]; # 
-  fhir:ServiceRequest.status [ fhir:value "draft"]; # 
-  fhir:ServiceRequest.intent [ fhir:value "proposal"]; # 
-  fhir:ServiceRequest.priority [ fhir:value "urgent"]; # 
-  fhir:ServiceRequest.subject [
-     fhir:link <http://acme.com/ehr/fhir/Patient/pat1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/pat1" ]
-  ]; # 
-  fhir:ServiceRequest.encounter [
-     fhir:link <http://acme.com/ehr/fhir/Encounter/enc1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Encounter/enc1" ]
-  ]; # 
-  fhir:ServiceRequest.authoredOn [ fhir:value "2022-01-20T13:50:20Z"^^xsd:dateTime]; # 
-  fhir:ServiceRequest.reasonCode [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.cens.cl/codigosDeis/motivoInterconsulta" ];
-       fhir:Coding.code [ fhir:value "1" ];
-       fhir:Coding.display [ fhir:value "confirmacion" ]
-     ]
-  ]; # 
-  fhir:ServiceRequest.reasonReference [
-     fhir:index 0;
-     fhir:link <http://acme.com/ehr/fhir/Observation/obs1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Observation/obs1" ]
-  ]; # 
-  fhir:ServiceRequest.supportingInfo [
-     fhir:index 0;
-     fhir:link <http://acme.com/ehr/fhir/Appointment/app1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Appointment/app1" ]
-  ], [
-     fhir:index 1;
-     fhir:link <http://acme.com/ehr/fhir/QuestionnaireResponse/que1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/QuestionnaireResponse/que1" ]
-  ], [
-     fhir:index 2;
-     fhir:link <http://acme.com/ehr/fhir/AllergyIntolerance/all1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/AllergyIntolerance/all1" ]
-  ], [
-     fhir:index 3;
-     fhir:link <http://acme.com/ehr/fhir/Condition/con1>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Condition/con1" ]
-  ], [
-     fhir:index 4;
-     fhir:link <http://acme.com/ehr/fhir/Condition/con2>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Condition/con2" ]
-  ], [
-     fhir:index 5;
-     fhir:link <http://acme.com/ehr/fhir/Condition/con3>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Condition/con3" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequest.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPresentaDiscapacidad"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "IdInterconsulta" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:priority [ fhir:v "urgent"] ; # 
+  fhir:subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/EjemploPatient> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://acme.com/ehr/fhir/Encounter/enc1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Encounter/enc1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2022-01-20T13:50:20Z"^^xsd:dateTime] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.cens.cl/codigosDeis/motivoInterconsulta"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "confirmacion" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://acme.com/ehr/fhir/Observation/obs1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Observation/obs1" ]
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:link <http://acme.com/ehr/fhir/Appointment/app1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Appointment/app1" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/QuestionnaireResponse/que1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/QuestionnaireResponse/que1" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/AllergyIntolerance/all1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/AllergyIntolerance/all1" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/Condition/con1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Condition/con1" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/Condition/con2> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Condition/con2" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/Condition/con3> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Condition/con3" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

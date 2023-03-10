@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="fhir.hl7chile.ListaDeEspera"/>
+  <id value="fhir.minsal.ListaDeEspera"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ListaEsperaChile</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/listaespera/ImplementationGuide/fhir.hl7chile.ListaDeEspera</pre><div><p>Proyecto Listas de Espera MINSAL CHILE</p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ListaEsperaChile</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera</pre><div><p>Proyecto Listas de Espera MINSAL CHILE</p>
 </div></div>
   </text>
-  <url value="http://minsal.cl/listaespera/ImplementationGuide/fhir.hl7chile.ListaDeEspera"/>
+  <url value="http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera"/>
   <version value="0.1.1"/>
   <name value="ListaEsperaChile"/>
   <title value="Proyecto Listas de Espera MINSAL CHILE"/>
   <status value="draft"/>
-  <date value="2023-03-02T16:47:17-03:00"/>
+  <date value="2023-03-10T16:52:05-03:00"/>
   <publisher value="MINSAL Chile"/>
   <contact>
     <name value="MINSAL Chile"/>
@@ -21,7 +21,7 @@
     </telecom>
   </contact>
   <description value="Proyecto Listas de Espera MINSAL CHILE"/>
-  <packageId value="fhir.hl7chile.ListaDeEspera"/>
+  <packageId value="fhir.minsal.ListaDeEspera"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
@@ -1185,6 +1185,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/VSHipotesisDiagnosticaCodigo"/>
+      </reference>
+      <name value="HipotesisDiagnosticaCodigo"/>
+      <description value="HipotesisDiagnosticaCodigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VSIdentidaddeGenero"/>
       </reference>
       <name value="Identidad de Genero"/>
@@ -1453,6 +1464,17 @@
       </reference>
       <name value="Estado Interconsulta"/>
       <description value="Estado Interconsulta"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSHipotesisDiagnosticaCodigo"/>
+      </reference>
+      <name value="HipotesisDiagnosticaCodigo"/>
+      <description value="HipotesisDiagnosticaCodigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1805,7 +1827,7 @@
       </reference>
       <name value="Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender"/>
       <description value="Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender"/>
-      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2293,6 +2315,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE"/>
+      </reference>
+      <name value="Ejemplo de QuestionnaireResponseEvento de Inicio"/>
+      <description value="Ejemplo de QuestionnaireResponseEvento de Inicio"/>
+      <exampleCanonical value="http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseAtenderLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
@@ -2496,6 +2529,14 @@
         </extension>
         <nameUrl value="historialCambios.html"/>
         <title value="Historial Cambios"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="Mensajeria.html"/>
+        </extension>
+        <nameUrl value="Mensajeria.html"/>
+        <title value="Mensajeria"/>
         <generation value="markdown"/>
       </page>
       <page>

@@ -8,7 +8,7 @@
   "type" : "message",
   "timestamp" : "2023-02-09T17:15:22Z",
   "entry" : [{
-    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/atender",
+    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeaderAtender",
     "resource" : {
       "resourceType" : "MessageHeader",
       "id" : "EjemploMessageHeaderAtender",
@@ -18,7 +18,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderAtender&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Atender (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code atender = 'Atender', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/atender\">http://acme.com/ehr/fhir/PractitionerRole/atender</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/atender\">http://acme.com/ehr/fhir/ServiceRequest/atender</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderAtender&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Atender (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code atender = 'Atender', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/atender\">http://acme.com/ehr/fhir/PractitionerRole/atender</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"http://acme.com/ehr/fhir/Encounter/atender\">http://acme.com/ehr/fhir/Encounter/atender</a></p></div>"
       },
       "eventCoding" : {
         "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE",
@@ -32,8 +32,455 @@
         "endpoint" : "http://link-to-sending.cl"
       },
       "focus" : [{
-        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/atender"
+        "reference" : "http://acme.com/ehr/fhir/Encounter/atender"
       }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestAtender",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "EjemploServiceRequestAtender",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Destino Atención Codigo</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 323121</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/EjemploPatient)</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>performer</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/atender\">http://acme.com/ehr/fhir/PractitionerRole/atender</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/DestinoAtencionCodigo",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "code" : "1"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "IdInterconsulta",
+            "code" : "IdInterconsulta"
+          }]
+        },
+        "value" : "323121"
+      }],
+      "status" : "draft",
+      "intent" : "proposal",
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+      },
+      "authoredOn" : "2022-01-20T13:50:20Z",
+      "performer" : [{
+        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/atender"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerAtender",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "EjemploPractitionerAtender",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), ValorRNPI: 2134\u00a0(use:\u00a0SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id:\u00a0cert</td><td>Medico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (terminology.cens.cl#01)</span></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "RUN"
+          }]
+        },
+        "value" : "2134"
+      },
+      {
+        "use" : "secondary",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "ValorRNPI"
+          }]
+        },
+        "value" : "2134"
+      }],
+      "qualification" : [{
+        "identifier" : [{
+          "value" : "cert"
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl",
+            "code" : "01",
+            "display" : "Medico"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleAtender",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "EjemploPractitionerRoleAtender",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"http://acme.com/ehr/fhir/Practitioner/atender\">http://acme.com/ehr/fhir/Practitioner/atender</a></p><p><b>organization</b>: <a href=\"http://acme.com/ehr/fhir/Organization/atender\">http://acme.com/ehr/fhir/Organization/atender</a></p><p><b>code</b>: Atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Atendedor)</span></p></div>"
+      },
+      "practitioner" : {
+        "reference" : "http://acme.com/ehr/fhir/Practitioner/atender"
+      },
+      "organization" : {
+        "reference" : "http://acme.com/ehr/fhir/Organization/atender"
+      },
+      "code" : [{
+        "coding" : [{
+          "code" : "Atendedor"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Organization/EjemploOrganizationAtender",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "EjemploOrganizationAtender",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: id:\u00a01</p></div>"
+      },
+      "identifier" : [{
+        "value" : "1"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Encounter/EjemploEncounterAtender",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "EjemploEncounterAtender",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EjemploEncounterAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EjemploEncounterAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EncounterAtenderLE.html\">Encounter Atender LE</a></p></div><p><b>ExtBool Pertinencia Atencion Box</b>: true</p><p><b>ExtString MotivoNoPertinencia</b>: lorem ipsum</p><p><b>identifier</b>: IdConsultaAPS: 1</p><p><b>status</b>: finished</p><p><b>class</b>: 1 (Details: [not stated] code 1 = '1', stated as 'null')</p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/EjemploPatient)</a></p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE\">http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE</a></p><p><b>appointment</b>: <a href=\"http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender\">http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender</a></p><p><b>period</b>: 2023-01-22 09:00:00+0000 --&gt; (ongoing)</p><p><b>reasonReference</b>: </p><ul><li><a href=\"http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE\">http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE</a></li><li><a href=\"http://acme.com/ehr/fhir/Observation/ObservationAtenderLE\">http://acme.com/ehr/fhir/Observation/ObservationAtenderLE</a></li></ul><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href=\"CondicionAtenderDiagnosticoSospechaLE\">CondicionAtenderDiagnosticoSospechaLE</a> &quot;CondicionAtenderDiagnosticoSospechaLE&quot;</p></blockquote><blockquote><p><b>diagnosis</b></p><p><b>condition</b>: <a href=\"CondicionAtenderHipotesisDiagnosticaCodigoLE\">CondicionAtenderHipotesisDiagnosticaCodigoLE</a> &quot;CondicionAtenderHipotesisDiagnosticaCodigoLE&quot;</p></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPertinenciaAtencionBox",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/ExtStringMotivoNoPertinencia",
+        "valueString" : "lorem ipsum"
+      }],
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "IdConsultaAPS"
+          }]
+        },
+        "value" : "1"
+      }],
+      "status" : "finished",
+      "class" : {
+        "code" : "1"
+      },
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+      },
+      "basedOn" : [{
+        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE"
+      }],
+      "appointment" : [{
+        "reference" : "http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender"
+      }],
+      "period" : {
+        "start" : "2023-01-22T09:00:00Z"
+      },
+      "reasonReference" : [{
+        "reference" : "http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE"
+      },
+      {
+        "reference" : "http://acme.com/ehr/fhir/Observation/ObservationAtenderLE"
+      }],
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "CondicionAtenderDiagnosticoSospechaLE"
+        }
+      },
+      {
+        "condition" : {
+          "reference" : "CondicionAtenderHipotesisDiagnosticaCodigoLE"
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Patient/EjemploPatient",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "EjemploPatient",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/PatientLE"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"EjemploPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;EjemploPatient&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientLE.html\">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AD)</span></p><p><b>Identidad de genero</b>: male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#male)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "code" : "AD"
+          }],
+          "text" : "Andorra"
+        }
+      },
+      {
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "code" : "AD"
+          }],
+          "text" : "Andorra"
+        }
+      },
+      {
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "code" : "male"
+          }]
+        }
+      },
+      {
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente",
+        "valueBoolean" : false
+      }],
+      "identifier" : [{
+        "extension" : [{
+          "url" : "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
+          "valueString" : "K"
+        }],
+        "type" : {
+          "extension" : [{
+            "url" : "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises",
+            "valueCoding" : {
+              "code" : "AD"
+            }
+          }],
+          "coding" : [{
+            "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador",
+            "code" : "1",
+            "display" : "RUN"
+          }]
+        },
+        "system" : "http://www.acme.com/identifiers/patient",
+        "value" : "15999999"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Perez",
+        "_family" : {
+          "extension" : [{
+            "url" : "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido",
+            "valueString" : "sierra"
+          }]
+        },
+        "given" : ["Luis"]
+      },
+      {
+        "use" : "usual",
+        "given" : ["Luisa"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "569854875457",
+        "use" : "mobile",
+        "rank" : 1
+      }],
+      "gender" : "male",
+      "birthDate" : "1995-12-12"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/CarePlan/EjemploCarePlanLE",
+    "resource" : {
+      "resourceType" : "CarePlan",
+      "id" : "EjemploCarePlanLE",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/CarePlanAtenderLE"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CarePlan</b><a name=\"EjemploCarePlanLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CarePlan &quot;EjemploCarePlanLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CarePlanAtenderLE.html\">CarePlan Atender LE</a></p></div><p><b>ExtBool Solicitud Examenes</b>: true</p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>description</b>: test</p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/EjemploPatient)</a></p><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td>-</td><td><b>Kind</b></td><td><b>Code</b></td><td><b>Status</b></td><td><b>Product[x]</b></td></tr><tr><td>*</td><td>MedicationRequest</td><td>farmacos <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#farmacos)</span></td><td>not-started</td><td>123323 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td></tr></table></blockquote></div>"
+      },
+      "extension" : [{
+        "url" : "http://minsal.cl/listaespera/StructureDefinition/ExtBoolSolicitudExamenes",
+        "valueBoolean" : true
+      }],
+      "status" : "active",
+      "intent" : "plan",
+      "description" : "test",
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+      },
+      "activity" : [{
+        "detail" : {
+          "kind" : "MedicationRequest",
+          "code" : {
+            "coding" : [{
+              "system" : "http://snomed.info/sct",
+              "code" : "farmacos"
+            }]
+          },
+          "status" : "not-started",
+          "productCodeableConcept" : {
+            "text" : "123323"
+          }
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE",
+    "resource" : {
+      "resourceType" : "QuestionnaireResponse",
+      "id" : "EjemploQuestionnaireResponseAtenderLE",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseAtenderLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: QuestionnaireResponse</b><a name=\"EjemploQuestionnaireResponseAtenderLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource QuestionnaireResponse &quot;EjemploQuestionnaireResponseAtenderLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-QuestionnaireResponseAtenderLE.html\">QuestionnaireResponse Atender LE</a></p></div><p><b>status</b>: completed</p><p><b>encounter</b>: <a href=\"#Encounter_EjemploEncounterAtender\">See above (http://acme.com/ehr/fhir/Encounter/EjemploEncounterAtender)</a></p><blockquote><p><b>item</b></p><p><b>linkId</b>: Resumen</p><p><b>text</b>: Resumen</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>Anamnesis</td></tr></table></blockquote></div>"
+      },
+      "status" : "completed",
+      "encounter" : {
+        "reference" : "http://acme.com/ehr/fhir/Encounter/EjemploEncounterAtender"
+      },
+      "item" : [{
+        "linkId" : "Resumen",
+        "text" : "Resumen",
+        "answer" : [{
+          "valueString" : "Anamnesis"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Observation/EjemploObservationAtender",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "EjemploObservationAtender",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"EjemploObservationAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;EjemploObservationAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationAtenderLE.html\">Observation Atender LE</a></p></div><p><b>status</b>: registered</p><p><b>code</b>: examenes anteriores <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>value</b>: examenes anteriores</p></div>"
+      },
+      "status" : "registered",
+      "code" : {
+        "text" : "examenes anteriores"
+      },
+      "valueString" : "examenes anteriores"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html\">Condicion Atender Hipotesis Diagnostica Codigo</a></p></div><p><b>verificationStatus</b>: provisional <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#provisional)</span></p><p><b>code</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/EjemploPatient)</a></p></div>"
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "code" : "provisional"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "code" : "1"
+        }]
+      },
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoSospechaLE",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "EjemploCondicionAtenderDiagnosticoSospechaLE",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondicionAtenderDiagnosticoSospechaLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondicionAtenderDiagnosticoSospechaLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html\">Condicion Atender Diagnostico Sospecha LE</a></p></div><p><b>verificationStatus</b>: unconfirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#unconfirmed)</span></p><p><b>code</b>: CIE11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTipoCodDiagnostica.html\">Tipo Codificación Diagnostica</a>#1)</span></p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/EjemploPatient)</a></p></div>"
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "code" : "unconfirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica",
+          "code" : "1"
+        }],
+        "text" : "CIE11"
+      },
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "EjemploCondicionAtenderDiagnosticoConfirmacionLE",
+      "meta" : {
+        "profile" : ["http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondicionAtenderDiagnosticoConfirmacionLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondicionAtenderDiagnosticoConfirmacionLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html\">Condicion Atender Diagnostico Confirmacion LE</a></p></div><p><b>verificationStatus</b>: confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#confirmed)</span></p><p><b>code</b>: CIE11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTipoCodDiagnostica.html\">Tipo Codificación Diagnostica</a>#1)</span></p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/EjemploPatient)</a></p></div>"
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "code" : "confirmed"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica",
+          "code" : "1"
+        }],
+        "text" : "CIE11"
+      },
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+      }
     }
   }]
 }

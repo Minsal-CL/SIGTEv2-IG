@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FHIR.HL7CHILE.LISTADEESPERA\Eventos - FHIR v4.0.1</title>
+    <title>FHIR.MINSAL.LISTADEESPERA\Eventos - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -121,6 +121,9 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="Mensajeria.html">Mensajería</a>
+      </li>
+      <li>
         <a href="Eventos.html">Eventos</a>
       </li>
       <li>
@@ -215,43 +218,43 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>inicio</td>
       <td>Inicio</td>
       <td>Este evento es el inicial, permite registrar información asociada a la interconsulta. Puede ser iniciado por un médico de APS, Servicio de Urgencia de nivel secundario, médico nivel secundario. Cada Interconsulta posee un número único nacional, entregado desde nivel central.</td>
-      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido creada</td>
+      <td>La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido creada</td>
     </tr>
     <tr>
       <td>referenciada</td>
       <td>Referenciada</td>
       <td>Este evento permite registrar información asociada a una derivación, la cual puede ser: APS a Nivel Secundario, Nivel Secundario a APS, Nivel Secundario a Hospital Digital, etc. El detalle de la derivación es registrado en el campo MotivoDerivación.</td>
-      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido derivada</td>
+      <td>La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido referenciada</td>
     </tr>
     <tr>
       <td>revisar</td>
       <td>Revisar</td>
-      <td>Este evento registra la información asociada a la revisión de pertinencia del Gestor de casos del nivel secundario.</td>
-      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido revisada</td>
+      <td>Este evento registra la información asociada a la revisión de pertinencia del gestor de casos del nivel secundario.</td>
+      <td>La respuesta debe indicar si errores hay o indicar que la interconsulta ha sido revisada</td>
     </tr>
     <tr>
       <td>priorizar</td>
       <td>Priorizar</td>
-      <td>Este evento registra la información asociada a la asignación de priorización del Gestor de casos.</td>
-      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido revisada</td>
+      <td>Este evento registra la información asociada a la asignación de priorización del gestor de casos.</td>
+      <td>La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido priorizada</td>
     </tr>
     <tr>
       <td>agendar</td>
       <td>Agendar</td>
       <td>Este evento permite registrar información asociada a la programación de la cita con el especialista.</td>
-      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido agendada con el paciente</td>
+      <td>La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido agendada con el paciente</td>
     </tr>
     <tr>
       <td>atender</td>
       <td>Atender</td>
       <td>Este evento permite registrar información asociada a la atención de consulta de especialidad.</td>
-      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido agendada con el paciente</td>
+      <td>La respuesta debe indicar si hay errores o indicar que la interconsulta se ha llevado a cabao con el paciente</td>
     </tr>
     <tr>
       <td>terminar</td>
       <td>Terminar</td>
       <td>Este evento permite registrar información asociada a los motivos de cierre o término de la interconsulta.</td>
-      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido revisada</td>
+      <td>La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido terminada</td>
     </tr>
   </tbody>
 </table>
@@ -293,7 +296,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 16:47-0300">2023-03-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 10, 2023 16:52-0300">2023-03-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

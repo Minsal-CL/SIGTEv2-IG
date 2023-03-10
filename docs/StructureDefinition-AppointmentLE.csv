@@ -138,7 +138,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Appointment.start","Appointment.start","","","",0,1,"Y","","Y","instant {[]} {[]}
 ","When appointment is to take place","Date/Time that the appointment is to take place.","","","","","","","","","",,,,,"",,,,"Appointment.start",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.occurrence[x]",".effectiveTime.low","DTSTART","FiveWs.init","ARQ-11.1, SCH-11.4 / TQ1-7"
-"Appointment.end","Appointment.end","","","",0,1,"","","Y","instant {[]} {[]}
+"Appointment.end","Appointment.end","","","",0,1,"Y","","Y","instant {[]} {[]}
 ","When appointment is to conclude","Date/Time that the appointment is to conclude.","","","","","","","","","",,,,,"",,,,"Appointment.end",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.occurrence[x]",".effectiveTime.high","DTEND","FiveWs.done[x]","SCH-11.5 / TQ1-8/ calculated based on the start and the duration which is in ARQ-9"
 "Appointment.minutesDuration","Appointment.minutesDuration","","","",0,1,"","","","positiveInt {[]} {[]}
@@ -147,7 +147,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Appointment.slot","Appointment.slot","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Slot]]}
 ","The slots that this appointment is filling","The slots from the participants' schedules that will be filled by the appointment.","","","","","","","","","",,,,,"",,,,"Appointment.slot",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[@typeCode = 'REFR'].act[@classCode = 'ACT'][@moodCode = 'SLOT']"
-"Appointment.created","Appointment.created","","","",0,1,"Y","","","dateTime {[]} {[]}
+"Appointment.created","Appointment.created","","","",0,1,"","","","dateTime {[]} {[]}
 ","The date that this appointment was initially created","The date that this appointment was initially created. This could be different to the meta.lastModified value on the initial entry, as this could have been before the resource was created on the FHIR server, and should remain unchanged over the lifespan of the appointment.","This property is required for many use cases where the age of an appointment is considered in processing workflows for scheduling and billing of appointments.","","","","","","","","",,,,,"",,,,"Appointment.created",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.authoredOn",".author.time","CREATED"
 "Appointment.comment","Appointment.comment","","","",0,1,"","","","string {[]} {[]}
@@ -160,7 +160,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ServiceRequest]]}
 ","The service request this appointment is allocated to assess","The service request this appointment is allocated to assess (e.g. incoming referral or procedure request).","","","","","","","","","",,,,,"",,,,"Appointment.basedOn",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.basedOn",".outboundRelationship[@typeCode = 'FLFS'].act[@classCode < 'ActCareProvisionRequestType'][@moodCode = 'RQO']"
-"Appointment.participant","Appointment.participant","","","",1,*,"Y","","","BackboneElement {[]} {[]}
+"Appointment.participant","Appointment.participant","","","",1,1,"Y","","","BackboneElement {[]} {[]}
 ","Participants involved in appointment","List of participants involved in the appointment.","","","","","","","","","",,,,,"",,,,"Appointment.participant",1,*,"","app-1:Either the type or actor on the participant SHALL be specified {type.exists() or actor.exists()}
 ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}","Request.performer, Request.subject","performer | reusableDevice | subject | location","ATTENDEE component to be created","PID, AIP, AIG, AIL"
 "Appointment.participant.id","Appointment.participant.id","","","",0,1,"","","","string {[]} {[]}
@@ -178,7 +178,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Appointment.participant.type","Appointment.participant.type","","","",0,*,"","","Y","CodeableConcept {[]} {[]}
 ","Role of participant in the appointment","Role of participant in the appointment.","The role of the participant can be used to declare what the actor will be doing in the scope of this appointment.If the actor is not specified, then it is expected that the actor will be filled in at a later stage of planning.This value SHALL be the same when creating an AppointmentResponse so that they can be matched, and subsequently update the Appointment.","","","","","","","","",,"extensible","Role of participant in encounter.","http://hl7.org/fhir/ValueSet/encounter-participant-type","",,,,"Appointment.participant.type",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","(performer | reusableDevice | subject | location).@typeCode","n/a","AIP-4, AIG-4"
-"Appointment.participant.actor","Appointment.participant.actor","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE]]}
+"Appointment.participant.actor","Appointment.participant.actor","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://minsal.cl/listaespera/StructureDefinition/PatientLE]]}
 ","Person, Location/HealthcareService or Device","A Person, Location/HealthcareService or Device that is participating in the appointment.","","","","","","","","","",,,,,"",,,,"Appointment.participant.actor",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","performer.person | reusableDevice.manufacturedDevice | subject.patient | location.serviceDeliveryLocation","ATTENDEE: (Need to provide the common name CN and also the MAILTO properties from the practitioner resource) where the participant type is not ""information-only""","FiveWs.who","PID-3-Patient ID List | AIL-3 | AIG-3 | AIP-3"
 "Appointment.participant.required","Appointment.participant.required","","","",0,1,"","","Y","code {[]} {[]}

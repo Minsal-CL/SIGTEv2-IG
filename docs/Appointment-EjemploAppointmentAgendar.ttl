@@ -5,63 +5,52 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/listaespera/Appointment/EjemploAppointmentAgendar> a fhir:Appointment;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "EjemploAppointmentAgendar"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE";
-       fhir:index 0;
+<http://minsal.cl/listaespera/Appointment/EjemploAppointmentAgendar> a fhir:Appointment ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploAppointmentAgendar"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentLE>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentLE.html\">AppointmentLE</a></p></div><blockquote><p><b>Contactado</b></p><p><b>value</b>: Otro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>created</b>: 2023-01-22 09:00:00+0000</p><p><b>basedOn</b>: <a href=\"Bundle-EjemploBundleAgendar.html#http-//acme.com/ehr/fhir/ServiceRequest/agendar\">http://acme.com/ehr/fhir/ServiceRequest/agendar</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor\">http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor</a></td><td>accepted</td></tr></table></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "MotivoNoContactabilidad" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.code [ fhir:value "1" ]
-         ];
-         fhir:CodeableConcept.text [ fhir:value "Otro" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentLE.html\">AppointmentLE</a></p></div><blockquote><p><b>Contactado</b></p><blockquote><p><b>url</b></p><code>MotivoNoContactabilidad</code></blockquote><p><b>value</b>: Otro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-Contactado.html\">Contactado</a></blockquote><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>start</b>: Jan 22, 2023, 6:00:00 AM</p><p><b>end</b>: Jan 22, 2023, 6:30:00 AM</p><p><b>basedOn</b>: <a href=\"Bundle-EjemploBundleAgendar.html#http-//acme.com/ehr/fhir/ServiceRequest/agendar\">http://acme.com/ehr/fhir/ServiceRequest/agendar</a></p><h3>Participants</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td><td><b>Status</b></td></tr><tr><td>*</td><td><a href=\"http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor\">http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor</a></td><td>accepted</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "MotivoNoContactabilidad"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:code [ fhir:v "1" ]
+         ] ) ;
+         fhir:text [ fhir:v "Otro" ]
        ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "Contactado" ];
-       fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
-     ];
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/Contactado" ]
-  ]; # 
-  fhir:Appointment.identifier [
-     fhir:index 0;
-     fhir:Identifier.value [ fhir:value "21" ]
-  ]; # 
-  fhir:Appointment.status [ fhir:value "booked"]; # 
-  fhir:Appointment.created [ fhir:value "2023-01-22T09:00:00Z"^^xsd:dateTime]; # 
-  fhir:Appointment.basedOn [
-     fhir:index 0;
-     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/agendar>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/agendar" ]
-  ]; # 
-  fhir:Appointment.participant [
-     fhir:index 0;
-     fhir:Appointment.participant.actor [
-       fhir:link <http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor>;
-       fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor" ]
-     ];
-     fhir:Appointment.participant.status [ fhir:value "accepted" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://minsal.cl/listaespera/Appointment/EjemploAppointmentAgendar.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] [
+       fhir:url [ fhir:v "Contactado"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/Contactado"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "21" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "booked"] ; # 
+  fhir:start [ fhir:v "2023-01-22T09:00:00Z"^^xsd:dateTime] ; # 
+  fhir:end [ fhir:v "2023-01-22T09:30:00Z"^^xsd:dateTime] ; # 
+  fhir:basedOn ( [
+     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/agendar> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/ServiceRequest/agendar" ]
+  ] ) ; # 
+  fhir:participant ( [
+     fhir:actor [
+       fhir:link <http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor> ;
+       fhir:reference [ fhir:v "http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor" ]
+     ] ;
+     fhir:status [ fhir:v "accepted" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

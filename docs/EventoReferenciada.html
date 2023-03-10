@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FHIR.HL7CHILE.LISTADEESPERA\Evento Referenciada - FHIR v4.0.1</title>
+    <title>FHIR.MINSAL.LISTADEESPERA\Evento Referenciada - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -121,6 +121,9 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="Mensajeria.html">Mensajería</a>
+      </li>
+      <li>
         <a href="Eventos.html">Eventos</a>
       </li>
       <li>
@@ -215,7 +218,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>referenciada</td>
       <td>Referenciada</td>
       <td>Este evento permite registrar información asociada a una derivación, la cual puede ser: APS a Nivel Secundario, Nivel Secundario a APS, Nivel Secundario a Hospital Digital, etc. El detalle de la derivación es registrado en el campo MotivoDerivación.</td>
-      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido derivada</td>
+      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido referenciada</td>
     </tr>
   </tbody>
 </table>
@@ -239,6 +242,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a>: Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.</li>
   <li><a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a>: Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)</li>
   <li><a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a>: Recurso que permite relacionar la interconsulta con el establecimiento de destino</li>
+  <li><a href="StructureDefinition-PatientLE.html">PatientLE</a>: Recurso utilizado para registrar información relacionada al paciente (ServiceRequest.subject)</li>
+  <li><a href="StructureDefinition-PractitionerLE.html">PractitionerLE</a>: Recurso que permite reflejar la informacion asociada a la identificación del profesional de la salud.</li>
 </ul>
 
 <h2 id="relaciones-de-recursos">Relaciones de Recursos</h2>
@@ -259,7 +264,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h2 id="consideraciones">Consideraciones</h2>
 
-<p>Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en <a href="http://link">Conjunto mínimo de datos</a></p>
+<p>Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en <a href="https://docs.google.com/spreadsheets/d/1FfW2gQvTMJbNpr2mH2DFpsftkMEPr5CW2ed9MkryuH4/edit#gid=1586023761&amp;range=A3">Conjunto mínimo de datos</a></p>
 
 <ul>
   <li>Debe incluir el recurso <a href="StructureDefinition-BundleReferenciaLE.html">BundleReferenciaLE</a></li>
@@ -306,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 16:47-0300">2023-03-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 10, 2023 16:52-0300">2023-03-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

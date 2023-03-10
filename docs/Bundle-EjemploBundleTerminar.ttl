@@ -5,209 +5,182 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/listaespera/Bundle/EjemploBundleTerminar> a fhir:Bundle;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "EjemploBundleTerminar"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.lastUpdated [ fhir:value "2023-01-20T14:12:10Z"^^xsd:dateTime ];
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE";
-       fhir:index 0;
+<http://minsal.cl/listaespera/Bundle/EjemploBundleTerminar> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploBundleTerminar"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2023-01-20T14:12:10Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE>
-     ]
-  ]; # 
-  fhir:Bundle.type [ fhir:value "message"]; # 
-  fhir:Bundle.timestamp [ fhir:value "2023-02-09T17:15:22Z"^^xsd:dateTime]; # 
-  fhir:Bundle.entry [
-     fhir:index 0;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/MessageHeader/terminar" ];
-     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/MessageHeader/terminar>
-  ], [
-     fhir:index 1;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/terminar" ];
-     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/ServiceRequest/terminar>
-  ], [
-     fhir:index 2;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/PractitionerRole/terminar" ];
-     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/PractitionerRole/terminar>
-  ], [
-     fhir:index 3;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Practitioner/terminar" ];
-     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Practitioner/terminar>
-  ], [
-     fhir:index 4;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://acme.com/ehr/fhir/Organization/terminar" ];
-     fhir:Bundle.entry.resource <http://acme.com/ehr/fhir/Organization/terminar>
-  ] . # 
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2023-02-09T17:15:22Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/MessageHeader/terminar"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/MessageHeader/terminar> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/ServiceRequest/terminar"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/ServiceRequest/terminar> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/terminar"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/terminar> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Practitioner/terminar"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/Practitioner/terminar> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Organization/terminar"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/Organization/terminar> )
+  ] ) . # 
 
-<http://acme.com/ehr/fhir/MessageHeader/terminar> a fhir:MessageHeader;
-  fhir:Resource.id [ fhir:value "EjemploMessageHeaderTerminar"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.lastUpdated [ fhir:value "2023-02-14T14:12:10Z"^^xsd:dateTime ];
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE";
-       fhir:index 0;
+<http://acme.com/ehr/fhir/MessageHeader/terminar> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "EjemploMessageHeaderTerminar"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2023-02-14T14:12:10Z"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderTerminar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleTerminar\">See above (http://acme.com/ehr/fhir/PractitionerRole/terminar)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestTerminar\">See above (http://acme.com/ehr/fhir/ServiceRequest/terminar)</a></p></div>"
-  ]; # 
-  fhir:MessageHeader.eventCoding [
-     fhir:Coding.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE" ];
-     fhir:Coding.code [ fhir:value "terminar" ]
-  ]; # 
-  fhir:MessageHeader.author [
-     fhir:link <http://acme.com/ehr/fhir/PractitionerRole/terminar>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/PractitionerRole/terminar" ]
-  ]; # 
-  fhir:MessageHeader.source [
-     fhir:MessageHeader.source.software [ fhir:value "SolucionInformatica" ];
-     fhir:MessageHeader.source.endpoint [ fhir:value "http://link-to-sending.cl" ]
-  ]; # 
-  fhir:MessageHeader.focus [
-     fhir:index 0;
-     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/terminar>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/ServiceRequest/terminar" ]
-  ] . # 
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderTerminar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleTerminar\">See above (http://acme.com/ehr/fhir/PractitionerRole/terminar)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestTerminar\">See above (http://acme.com/ehr/fhir/ServiceRequest/terminar)</a></p></div>"
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "terminar" ]
+  ] ; # 
+  fhir:author [
+     fhir:link <http://acme.com/ehr/fhir/PractitionerRole/terminar> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/terminar" ]
+  ] ; # 
+  fhir:source [
+     fhir:software [ fhir:v "SolucionInformatica" ] ;
+     fhir:endpoint [ fhir:v "http://link-to-sending.cl"^^xsd:anyURI ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/terminar> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/ServiceRequest/terminar" ]
+  ] ) . # 
 
-<http://acme.com/ehr/fhir/ServiceRequest/terminar> a fhir:ServiceRequest;
-  fhir:Resource.id [ fhir:value "EjemploServiceRequestTerminar"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE";
-       fhir:index 0;
+<http://acme.com/ehr/fhir/ServiceRequest/terminar> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "EjemploServiceRequestTerminar"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Motivo Cierre Interconsulta</b>: 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#2)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:code [ fhir:v "2" ]
+       ] )
      ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Motivo Cierre Interconsulta</b>: 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#2)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"http://acme.com/ehr/fhir/Patient/terminar\">http://acme.com/ehr/fhir/Patient/terminar</a></p></div>"
-  ]; # 
-  fhir:DomainResource.extension [
-     fhir:index 0;
-     fhir:Extension.url [ fhir:value "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta" ];
-     fhir:Extension.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.code [ fhir:value "2" ]
-       ]
-     ]
-  ]; # 
-  fhir:ServiceRequest.identifier [
-     fhir:index 0;
-     fhir:Identifier.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.cens.cl/CodeSystem/listaespera" ];
-         fhir:Coding.code [ fhir:value "IdInterconsulta" ]
-       ]
-     ];
-     fhir:Identifier.value [ fhir:value "1" ]
-  ]; # 
-  fhir:ServiceRequest.status [ fhir:value "draft"]; # 
-  fhir:ServiceRequest.intent [ fhir:value "proposal"]; # 
-  fhir:ServiceRequest.subject [
-     fhir:link <http://acme.com/ehr/fhir/Patient/terminar>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Patient/terminar" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "IdInterconsulta" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/EjemploPatient> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient" ]
   ] . # 
 
-<http://acme.com/ehr/fhir/PractitionerRole/terminar> a fhir:PractitionerRole;
-  fhir:Resource.id [ fhir:value "EjemploPractitionerRoleTerminar"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE";
-       fhir:index 0;
+<http://acme.com/ehr/fhir/PractitionerRole/terminar> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "EjemploPractitionerRoleTerminar"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerTerminar\">See above (http://acme.com/ehr/fhir/Practitioner/terminar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationTerminar\">See above (http://acme.com/ehr/fhir/Organization/terminar)</a></p><p><b>code</b>: terminador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#terminador)</span></p></div>"
-  ]; # 
-  fhir:PractitionerRole.practitioner [
-     fhir:link <http://acme.com/ehr/fhir/Practitioner/terminar>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Practitioner/terminar" ]
-  ]; # 
-  fhir:PractitionerRole.organization [
-     fhir:link <http://acme.com/ehr/fhir/Organization/terminar>;
-     fhir:Reference.reference [ fhir:value "http://acme.com/ehr/fhir/Organization/terminar" ]
-  ]; # 
-  fhir:PractitionerRole.code [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.code [ fhir:value "terminador" ]
-     ]
-  ] . # 
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerTerminar\">See above (http://acme.com/ehr/fhir/Practitioner/terminar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationTerminar\">See above (http://acme.com/ehr/fhir/Organization/terminar)</a></p><p><b>code</b>: terminador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#terminador)</span></p></div>"
+  ] ; # 
+  fhir:practitioner [
+     fhir:link <http://acme.com/ehr/fhir/Practitioner/terminar> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Practitioner/terminar" ]
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://acme.com/ehr/fhir/Organization/terminar> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Organization/terminar" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:code [ fhir:v "terminador" ]
+     ] )
+  ] ) . # 
 
-<http://acme.com/ehr/fhir/Practitioner/terminar> a fhir:Practitioner;
-  fhir:Resource.id [ fhir:value "EjemploPractitionerTerminar"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE";
-       fhir:index 0;
+<http://acme.com/ehr/fhir/Practitioner/terminar> a fhir:Practitioner ;
+  fhir:id [ fhir:v "EjemploPractitionerTerminar"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p></div>"
-  ]; # 
-  fhir:Practitioner.identifier [
-     fhir:index 0;
-     fhir:Identifier.use [ fhir:value "official" ];
-     fhir:Identifier.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.cens.cl/CodeSystem/listaespera" ];
-         fhir:Coding.code [ fhir:value "RUN" ]
-       ]
-     ];
-     fhir:Identifier.value [ fhir:value "2134" ]
-  ], [
-     fhir:index 1;
-     fhir:Identifier.use [ fhir:value "secondary" ];
-     fhir:Identifier.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.cens.cl/CodeSystem/listaespera" ];
-         fhir:Coding.code [ fhir:value "ValorRNPI" ]
-       ]
-     ];
-     fhir:Identifier.value [ fhir:value "2134" ]
-  ] . # 
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "RUN" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "2134" ]
+  ] [
+     fhir:use [ fhir:v "secondary" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ValorRNPI" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "2134" ]
+  ] ) . # 
 
-<http://acme.com/ehr/fhir/Organization/terminar> a fhir:Organization;
-  fhir:Resource.id [ fhir:value "EjemploOrganizationTerminar"]; # 
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE";
-       fhir:index 0;
+<http://acme.com/ehr/fhir/Organization/terminar> a fhir:Organization ;
+  fhir:id [ fhir:v "EjemploOrganizationTerminar"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
        fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
-     ]
-  ]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: Placer Identifier: 2</p></div>"
-  ]; # 
-  fhir:Organization.identifier [
-     fhir:index 0;
-     fhir:Identifier.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
-         fhir:Coding.code [ fhir:value "PLAC" ]
-       ]
-     ];
-     fhir:Identifier.value [ fhir:value "2" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://minsal.cl/listaespera/Bundle/EjemploBundleTerminar.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: Placer Identifier: 2</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PLAC" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "2" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

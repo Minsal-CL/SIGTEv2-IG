@@ -5,51 +5,41 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/listaespera/ValueSet/VSTipoCodDiagnostica> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "VSTipoCodDiagnostica"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSTipoCodDiagnostica.html\"><code>http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica</code></a></li></ul></div>"
-  ]; # 
-  fhir:ValueSet.url [ fhir:value "http://minsal.cl/listaespera/ValueSet/VSTipoCodDiagnostica"]; # 
-  fhir:ValueSet.version [ fhir:value "0.1.1"]; # 
-  fhir:ValueSet.name [ fhir:value "VSTipoCodDiagnostica"]; # 
-  fhir:ValueSet.title [ fhir:value "Tipo Codificación Diagnostica"]; # 
-  fhir:ValueSet.status [ fhir:value "active"]; # 
-  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:ValueSet.date [ fhir:value "2023-01-15"^^xsd:date]; # 
-  fhir:ValueSet.publisher [ fhir:value "MINSAL Chile"]; # 
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "MINSAL Chile" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://minsal.cl" ]
-     ]
-  ]; # 
-  fhir:ValueSet.description [ fhir:value "Tipo Codificación Diagnostica"]; # 
-  fhir:ValueSet.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "CL" ];
-       fhir:Coding.display [ fhir:value "Chile" ]
-     ]
-  ]; # 
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica" ]
-     ]
+<http://minsal.cl/listaespera/ValueSet/VSTipoCodDiagnostica> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VSTipoCodDiagnostica"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSTipoCodDiagnostica.html\"><code>http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://minsal.cl/listaespera/ValueSet/VSTipoCodDiagnostica"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "VSTipoCodDiagnostica"] ; # 
+  fhir:title [ fhir:v "Tipo Codificación Diagnostica"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-01-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MINSAL Chile"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MINSAL Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipo Codificación Diagnostica"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica"^^xsd:anyURI ]
+     ] )
   ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://minsal.cl/listaespera/ValueSet/VSTipoCodDiagnostica.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
 

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.HL7CHILE.LISTADEESPERA\Evento Atender - FHIR v4.0.1</title>
+    <title>FHIR.MINSAL.LISTADEESPERA\Evento Atender - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -118,6 +118,9 @@
     </a>
     <ul class="dropdown-menu">
       <li>
+        <a href="Mensajeria.html">Mensajería</a>
+      </li>
+      <li>
         <a href="Eventos.html">Eventos</a>
       </li>
       <li>
@@ -212,7 +215,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>atender</td>
       <td>Atender</td>
       <td>Este evento permite registrar información asociada a la atención de consulta de especialidad.</td>
-      <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido agendada con el paciente</td>
+      <td>La respuesta debe indicar si hay errores o indicar que la interconsulta se ha llevado a cabo con el paciente</td>
     </tr>
   </tbody>
 </table>
@@ -230,19 +233,26 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Los recursos usados en este evento son los siguientes:</p>
 
 <ul>
-  <li><a name="l406">​</a><a href="link">Encounter</a>: Recurso principal para reflejar los datos de una atención de interconsulta</li>
-  <li><a name="l411">​</a><a href="link">Appointment</a>: Recurso principal para reflejar los datos de la cita de la interconsulta</li>
-  <li><a name="l416">​</a><a href="link">MessageHeader</a>: lorem</li>
-  <li><a name="l421">​</a><a href="link">ServiceRequest</a>: lorem</li>
-  <li><a name="l426">​</a><a href="link">PractitionerRole</a>: lorem</li>
-  <li><a name="l431">​</a><a href="link">Practitioner</a>: lorem</li>
-  <li><a name="l436">​</a><a href="link">Location</a>: lorem</li>
-  <li><a name="l441">​</a><a href="link">DocumentReference</a>: lorem</li>
-  <li><a name="l446">​</a><a href="link">QuestionaireResponse</a>: lorem</li>
-  <li><a name="l451">​</a><a href="link">Observation</a>: lorem</li>
-  <li><a name="l456">​</a><a href="link">CarePlan</a>: lorem</li>
-  <li><a name="l461">​</a><a href="link">Observation</a>: lorem</li>
-  <li><a name="l466">​</a><a href="link">Condition</a>: lorem</li>
+  <li><a href="StructureDefinition-BundleAtenderLE.html">BundleAtenderLE</a>: Recurso que permite agrupar los datos del mensaje.</li>
+  <li><a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a>: Recurso principal para reflejar los datos de la interconsulta</li>
+  <li><a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a>: Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.</li>
+  <li><a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a>: Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)</li>
+  <li><a href="https://www.hl7.org/FHIR/condition.html">Condition</a>: Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
+    <ul>
+      <li><a href="StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html">CondicionAtenderHipotesisDiagnosticaCodigoLE</a>: Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)</li>
+      <li><a href="StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html">CondicionAtenderDiagnosticoSospechaLE</a>: Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)</li>
+      <li><a href="StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html">CondicionAtenderDiagnosticoConfirmacionLE</a>: Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)</li>
+    </ul>
+  </li>
+  <li><a href="StructureDefinition-ObservationAtenderLE.html">ObservationAtenderLE</a>: Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)</li>
+  <li><a name="l460">​</a><a href="StructureDefinition-Id: EncounterAtenderLE
+.html">EncounterAtenderLE
+</a>: Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)</li>
+  <li><a href="StructureDefinition-PatientLE.html">PatientLE</a>: Recurso utilizado para registrar información relacionada al paciente (CarePlan.subject / Encounter.subject / Appointment.participant.actor)</li>
+  <li><a href="StructureDefinition-QuestionnaireResponseAtenderLE.html">QuestionnaireResponseAtenderLE</a>: Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)</li>
+  <li><a href="StructureDefinition-CarePlanAtenderLE.html">CarePlanAtenderLE</a>: Recurso utilizado para registrar información</li>
+  <li><a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a>: Recurso que permite relacionar la interconsulta con el establecimiento de atención</li>
+  <li><a href="StructureDefinition-PractitionerLE.html">PractitionerLE</a>: Recurso que permite reflejar la informacion asociada a la identificación del profesional de la salud.</li>
 </ul>
 
 <h2 id="relaciones-de-recursos">Relaciones de Recursos</h2>
@@ -257,15 +267,45 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>El evento <strong>atender</strong> debe soportar a siguiente secuencia:</p>
 
-<p>Diagrama de Secuencia por definir</p>
+<div align="center">
+  <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 229 144" zoomAndPan="magnify" preserveAspectRatio="none" width="229px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:229px;height:144px;background:#FFFFFF;" contentScriptType="application/ecmascript" version="1.1" height="144px"><defs><filter width="300%" x="-1" y="-1" id="fui7br638fy27" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"/><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"/><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"/></filter></defs><g><text lengthAdjust="spacing" x="12.5" font-size="18" textLength="201" y="28.6992" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Atender</text><line y1="75.5" x1="37" y2="137.7344" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="37"/><rect filter="url(#fui7br638fy27)" rx="4.5" ry="4.5" width="60" x="5" y="40.0938" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.4063"/><text lengthAdjust="spacing" x="12" font-size="14" textLength="46" y="60.082" font-family="Roboto Condensed" fill="#000000">Hospital</text><line y1="106.7344" x1="37" y2="106.7344" style="stroke:#107050;stroke-width:1.0;" x2="79"/><line y1="106.7344" x1="79" y2="119.7344" style="stroke:#107050;stroke-width:1.0;" x2="79"/><line y1="119.7344" x1="38" y2="119.7344" style="stroke:#107050;stroke-width:1.0;" x2="79"/><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="48,115.7344,38,119.7344,48,123.7344,44,119.7344"/><text font-weight="bold" lengthAdjust="spacing" x="44" font-size="13" textLength="29" y="101.5605" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="77" font-size="13" textLength="142" y="101.5605" font-family="Roboto Condensed" fill="#000000">Atención de la interconsulta</text></g></svg>
+</div>
 
 <h2 id="consideraciones">Consideraciones</h2>
 
-<p>Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en <a href="http://link">Conjunto mínimo de datos</a></p>
-
-<h2 id="notas">Notas</h2>
+<p>Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en <a href="https://docs.google.com/spreadsheets/d/1FfW2gQvTMJbNpr2mH2DFpsftkMEPr5CW2ed9MkryuH4/edit#gid=2133026629&amp;range=A3">Conjunto mínimo de datos</a></p>
 
 <ul>
+  <li>Debe incluir el recurso <a href="StructureDefinition-BundleAtenderLE.html">BundleAtender</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a> con los valores de <strong>ServiceRequest.status=draft</strong> <strong>ServiceRequest.intent=proposal</strong></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a> con el valor <strong>MessageHeader.evenCoding.code=atender</strong></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a> con el valor <strong>PractitionerRole.code=Atendedor</strong></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-PractitionerLE.html">PractitionerLE</a> con el valor <strong>PractitionerRole.code=Atendedor</strong></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-PatientLE.html">PatientLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-EncounterAtenderLE.html">EncounterAtenderLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-QuestionnaireResponseAtenderLE.html">QuestionnaireResponseAtenderLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-CarePlanAtenderLE.html">CarePlanAtenderLE</a></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-AppointmentLE.html">AppointmentLE</a> con el valor <strong>Appointment.status=booked</strong></li>
+  <li>
+    <p>Debe incluir el recurso <a href="StructureDefinition-ObservationAtenderLE.html">ObservationAtenderLE</a></p>
+  </li>
+  <li>
+    <p>Debe incluir el recurso <a href="StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html">CondicionAtenderHipotesisDiagnosticaCodigoLE</a> con el valor <strong>verificationStatus.coding.code=provisional</strong></p>
+  </li>
+  <li>
+    <p>Debe incluir el recurso <a href="StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html">CondicionAtenderDiagnosticoSospechaLE</a> con el valor <strong>verificationStatus.coding.code=unconfirmed</strong></p>
+  </li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html">CondicionAtenderDiagnosticoConfirmacionLE</a> con el valor <strong>verificationStatus.coding.code=confirmed</strong></li>
+</ul>
+
+<h2 id="mensaje-bundle-de-ejemplo">Mensaje Bundle de Ejemplo</h2>
+
+<ul>
+  <li><a href="Bundle-EjemploBundleAtender.html">BundleAtenderLE</a></li>
+  <li>
+    <h2 id="notas">Notas</h2>
+  </li>
   <li>Notas Adicionales</li>
 </ul>
 
@@ -294,7 +334,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.hl7chile.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 2, 2023 16:47-0300">2023-03-02</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 10, 2023 16:52-0300">2023-03-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

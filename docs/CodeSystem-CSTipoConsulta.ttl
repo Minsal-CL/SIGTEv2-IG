@@ -5,57 +5,46 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://minsal.cl/listaespera/CodeSystem/CSTipoConsulta> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "CSTipoConsulta"]; # 
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/listaespera/CodeSystem/CSTipoConsulta</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSTipoConsulta-1\"> </a></td><td>Nueva</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSTipoConsulta-2\"> </a></td><td>Control</td></tr></table></div>"
-  ]; # 
-  fhir:CodeSystem.url [ fhir:value "http://minsal.cl/listaespera/CodeSystem/CSTipoConsulta"]; # 
-  fhir:CodeSystem.version [ fhir:value "0.1.1"]; # 
-  fhir:CodeSystem.name [ fhir:value "CSTipoConsulta"]; # 
-  fhir:CodeSystem.title [ fhir:value "Tipo Consulta"]; # 
-  fhir:CodeSystem.status [ fhir:value "active"]; # 
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean]; # 
-  fhir:CodeSystem.date [ fhir:value "2023-01-15"^^xsd:date]; # 
-  fhir:CodeSystem.publisher [ fhir:value "MINSAL Chile"]; # 
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "MINSAL Chile" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://minsal.cl" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.description [ fhir:value "Tipo Consulta"]; # 
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "CL" ];
-       fhir:Coding.display [ fhir:value "Chile" ]
-     ]
-  ]; # 
-  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean]; # 
-  fhir:CodeSystem.content [ fhir:value "complete"]; # 
-  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger]; # 
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "1" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Nueva" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "2" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Control" ]
-  ] . # 
-
-# - ontology header ------------------------------------------------------------
-
-<http://minsal.cl/listaespera/CodeSystem/CSTipoConsulta.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://minsal.cl/listaespera/CodeSystem/CSTipoConsulta> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSTipoConsulta"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/listaespera/CodeSystem/CSTipoConsulta</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSTipoConsulta-1\"> </a></td><td>Nueva</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSTipoConsulta-2\"> </a></td><td>Control</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSTipoConsulta"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:name [ fhir:v "CSTipoConsulta"] ; # 
+  fhir:title [ fhir:v "Tipo Consulta"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-01-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MINSAL Chile"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MINSAL Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Tipo Consulta"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Nueva" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Control" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 
