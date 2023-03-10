@@ -215,7 +215,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>atender</td>
       <td>Atender</td>
       <td>Este evento permite registrar información asociada a la atención de consulta de especialidad.</td>
-      <td>La respuesta debe indicar si hay errores o indicar que la interconsulta se ha llevado a cabao con el paciente</td>
+      <td>La respuesta debe indicar si hay errores o indicar que la interconsulta se ha llevado a cabo con el paciente</td>
     </tr>
   </tbody>
 </table>
@@ -234,25 +234,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><a href="StructureDefinition-BundleAtenderLE.html">BundleAtenderLE</a>: Recurso que permite agrupar los datos del mensaje.</li>
-  <li><a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a>: Recurso principal para reflejar los datos de la interconsulta (MessageHeader.focus)</li>
+  <li><a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a>: Recurso principal para reflejar los datos de la interconsulta</li>
   <li><a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a>: Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.</li>
   <li><a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a>: Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)</li>
   <li><a href="https://www.hl7.org/FHIR/condition.html">Condition</a>: Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
     <ul>
-      <li><a href="StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html">CondicionAtenderHipotesisDiagnosticaCodigoLE</a>: Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo) ??????</li>
-      <li><a href="StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html">CondicionAtenderDiagnosticoSospechaLE</a>: Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)?????</li>
-      <li><a href="StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html">CondicionAtenderDiagnosticoConfirmacionLE</a>: Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)?????</li>
+      <li><a href="StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html">CondicionAtenderHipotesisDiagnosticaCodigoLE</a>: Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)</li>
+      <li><a href="StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html">CondicionAtenderDiagnosticoSospechaLE</a>: Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)</li>
+      <li><a href="StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html">CondicionAtenderDiagnosticoConfirmacionLE</a>: Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)</li>
     </ul>
   </li>
   <li><a href="StructureDefinition-ObservationAtenderLE.html">ObservationAtenderLE</a>: Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)</li>
   <li><a name="l460">​</a><a href="StructureDefinition-Id: EncounterAtenderLE
-.html">Id: EncounterAtenderLE
+.html">EncounterAtenderLE
 </a>: Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)</li>
   <li><a href="StructureDefinition-PatientLE.html">PatientLE</a>: Recurso utilizado para registrar información relacionada al paciente (CarePlan.subject / Encounter.subject / Appointment.participant.actor)</li>
   <li><a href="StructureDefinition-QuestionnaireResponseAtenderLE.html">QuestionnaireResponseAtenderLE</a>: Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)</li>
-  <li><a href="StructureDefinition-AppointmentLE.html">AppointmentLE</a>: Recurso utilizado para registrar información de la cita que da inicio a la solicitud de interconsulta (ServiceRequest.supportingInfo)</li>
   <li><a href="StructureDefinition-CarePlanAtenderLE.html">CarePlanAtenderLE</a>: Recurso utilizado para registrar información</li>
-  <li><a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a>: Recurso que permite relacionar la interconsulta con el establecimiento de destino</li>
+  <li><a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a>: Recurso que permite relacionar la interconsulta con el establecimiento de atención</li>
   <li><a href="StructureDefinition-PractitionerLE.html">PractitionerLE</a>: Recurso que permite reflejar la informacion asociada a la identificación del profesional de la salud.</li>
 </ul>
 
@@ -335,7 +334,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 9, 2023 19:42+0000">2023-03-09</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 10, 2023 17:11+0000">2023-03-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
