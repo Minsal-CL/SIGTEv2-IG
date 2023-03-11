@@ -24,7 +24,7 @@ Description: "Ejemplo de Encounter Evento de Atender"
 * extension[ExtStringMotivoNoPertinencia].valueString = "lorem ipsum"
 * basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-* appointment = Reference(http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender)
+//* appointment = Reference(http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender)
 * class.code = #AMB
 
 * reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] = Reference(http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE)

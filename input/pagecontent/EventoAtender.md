@@ -35,7 +35,7 @@ Los recursos usados en este evento son los siguientes:
 * [EncounterAtenderLE
 ](StructureDefinition-Id: EncounterAtenderLE
 .html): Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)
-* [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (CarePlan.subject / Encounter.subject / Appointment.participant.actor)
+* [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (CarePlan.subject / Encounter.subject)
 * [QuestionnaireResponseAtenderLE](StructureDefinition-QuestionnaireResponseAtenderLE.html): Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)
 * [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html): Recurso utilizado para registrar información 
 * [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de atención
@@ -73,7 +73,6 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 * Debe incluir el recurso [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
 * Debe incluir el recurso [QuestionnaireResponseAtenderLE](StructureDefinition-QuestionnaireResponseAtenderLE.html)
 * Debe incluir el recurso [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html)
-* Debe incluir el recurso [AppointmentLE](StructureDefinition-AppointmentLE.html) con el valor **Appointment.status=booked**
 * Debe incluir el recurso [ObservationAtenderLE](StructureDefinition-ObservationAtenderLE.html)
 
 * Debe incluir el recurso [CondicionAtenderHipotesisDiagnosticaCodigoLE](StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html) con el valor **verificationStatus.coding.code=provisional**
