@@ -1,8 +1,8 @@
 Instance: EjemploMessageHeader
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "Ejemplo de MesaggeHeader Evento de Inicio"
-Description: "Ejemplo de MesaggeHeader Evento de Inicio"
+Title: "MesaggeHeader Evento de Inicio"
+Description: "MesaggeHeader Evento de Inicio"
 
 
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -16,8 +16,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Inicio"
 Instance: EjemploMessageHeaderReferencia
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "Ejemplo de MesaggeHeader Evento de Referencia"
-Description: "Ejemplo de MesaggeHeader Evento de Referencia"
+Title: "MesaggeHeader Evento de Referencia"
+Description: "MesaggeHeader Evento de Referencia"
 
 
 * meta.lastUpdated = "2023-02-13T14:12:10Z"
@@ -32,8 +32,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Referencia"
 Instance: EjemploMessageHeaderTerminar
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "Ejemplo de MesaggeHeader Evento de Terminar"
-Description: "Ejemplo de MesaggeHeader Evento de Terminar"
+Title: "MesaggeHeader Evento de Terminar"
+Description: "MesaggeHeader Evento de Terminar"
 
 
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
@@ -48,8 +48,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Terminar"
 Instance: EjemploMessageHeaderRevisar
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "Ejemplo de MesaggeHeader Evento de Revisar"
-Description: "Ejemplo de MesaggeHeader Evento de Revisar"
+Title: "MesaggeHeader Evento de Revisar"
+Description: "MesaggeHeader Evento de Revisar"
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
@@ -64,8 +64,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Revisar"
 Instance: EjemploMessageHeaderAgendar
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "Ejemplo de MesaggeHeader Evento de Agendar"
-Description: "Ejemplo de MesaggeHeader Evento de Agendar"
+Title: "MesaggeHeader Evento de Agendar"
+Description: "MesaggeHeader Evento de Agendar"
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
@@ -80,8 +80,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Agendar"
 Instance: EjemploMessageHeaderAtender
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "Ejemplo de MesaggeHeader Evento de Atender"
-Description: "Ejemplo de MesaggeHeader Evento de Atender"
+Title: "MesaggeHeader Evento de Atender"
+Description: "MesaggeHeader Evento de Atender"
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
@@ -97,8 +97,8 @@ Description: "Ejemplo de MesaggeHeader Evento de Atender"
 Instance: EjemploMessageHeaderPriorizar
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "Ejemplo de MesaggeHeader Evento de Priorizar"
-Description: "Ejemplo de MesaggeHeader Evento de Priorizar"
+Title: "MesaggeHeader Evento de Priorizar"
+Description: "MesaggeHeader Evento de Priorizar"
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"

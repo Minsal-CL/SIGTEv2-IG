@@ -25,7 +25,7 @@ Los recursos usados en este evento son los siguientes:
 
 * [BundleAgendarLE](StructureDefinition-BundleAgendarLE.html): Recurso que permite agrupar los datos del mensaje.
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
-* [MessageAppointmentLE](StructureDefinition-AppointmentLE.html): Recurso que contiene datos relacionados a la agenda
+* [MessageAppointmentAgendarLE](StructureDefinition-AppointmentAgendarLE.html): Recurso que contiene datos relacionados a la agenda
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al rol del individuo que atiende o agenda la cita
   * PractitionerRole1: Rol del individuo que atenderá al paciente
   * PractitionerRole2: Rol del individuo que agenda la cita
@@ -70,7 +70,7 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
   1. Un *PractitionerLE* desde el recurso *PractitionerRoleLE* que hace referencia a quien sera el profesional que atenderá al paciente
   2. Un *PractitionerLE* desde el recurso *PractitionerRoleLE* que hace referncia a quien hace el agendamiento de la cita
 
-* Debe incluir el recurso [AppointmentLE](StructureDefinition-AppointmentLE.html) con el valor **Appointment.status=booked**
+* Debe incluir el recurso [AppointmentAgendarLE](StructureDefinition-AppointmentAgendarLE.html) con el valor **Appointment.status=booked**
 * Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
 
 

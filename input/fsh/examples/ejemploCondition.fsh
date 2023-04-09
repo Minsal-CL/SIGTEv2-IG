@@ -1,8 +1,8 @@
 Instance: EjemploCondition
 InstanceOf: ConditionInicioDiagnosticoSospechaLE
 Usage: #example
-Title: "Ejemplo de Condition1 Evento de Inicio"
-Description: "Ejemplo de Condition1 Evento de Inicio"
+Title: "Condition Diagnóstico Sospecha Evento de Inicio"
+Description: "Condition Diagnóstico Sospecha Evento de Inicio"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#2
 * code.text = "DiagnosticoTextoLibreSospecha"
@@ -14,8 +14,8 @@ Description: "Ejemplo de Condition1 Evento de Inicio"
 Instance: EjemploCondition2
 InstanceOf: ConditionInicioIndiceComorbilidadLE
 Usage: #example
-Title: "Ejemplo de Condition2 Evento de Inicio"
-Description: "Ejemplo de Condition2 Evento de Inicio"
+Title: "Condition Índice Comorbilidad Evento de Inicio"
+Description: "de Conditio Índice Comorbilidadn Evento de Inicio"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSIndicecomorbilidad#G1
 * code.text = "DiagnosticoTextoLibreSospecha"
@@ -26,8 +26,8 @@ Description: "Ejemplo de Condition2 Evento de Inicio"
 Instance: EjemploCondition3
 InstanceOf: ConditionInicioSospechaGesLE
 Usage: #example
-Title: "Ejemplo de Condition3 Evento de Inicio"
-Description: "Ejemplo de Condition3 Evento de Inicio"
+Title: "Condition Sospecha GES Evento de Inicio"
+Description: "Condition Inicio Sospechvento de Inicio"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSSospechaPatologiaGes#A000
 * code.text = "SospechaPatologiaGesGlosa"
@@ -39,8 +39,8 @@ Description: "Ejemplo de Condition3 Evento de Inicio"
 Instance: EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE
 InstanceOf: CondicionAtenderHipotesisDiagnosticaCodigoLE
 Usage: #example
-Title: "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender"
-Description: "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender"
+Title: "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender"
+Description: "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender"
 
 * verificationStatus.coding.code = #provisional
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
@@ -50,8 +50,8 @@ Description: "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de 
 Instance: EjemploCondicionAtenderDiagnosticoSospechaLE
 InstanceOf: CondicionAtenderDiagnosticoSospechaLE
 Usage: #example
-Title: "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender"
-Description: "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender"
+Title: "Condicion Atender Diagnostico Sospecha Evento de Atender"
+Description: "Condicion Atender Diagnostico Sospecha Evento de Atender"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#1
 * code.text = "CIE11"
@@ -62,8 +62,8 @@ Description: "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender
 Instance: EjemploCondicionAtenderDiagnosticoConfirmacionLE
 InstanceOf: CondicionAtenderDiagnosticoConfirmacionLE
 Usage: #example
-Title: "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender"
-Description: "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender"
+Title: "Condicion Atender Diagnostico Confirmacion Evento de Atender"
+Description: "Condicion Atender Diagnostico Confirmacion Evento de Atender"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#1
 * code.text = "CIE11"

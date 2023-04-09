@@ -1,8 +1,8 @@
 Instance: EjemploPractitioner
 InstanceOf: PractitionerLE
 Usage: #example
-Title: "Ejemplo de Practitioner Evento de Inicio"
-Description: "Ejemplo de Practitioner Evento de Inicio"
+Title: "Practitioner Evento de Inicio"
+Description: "Practitioner Evento de Inicio"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -23,8 +23,8 @@ Description: "Ejemplo de Practitioner Evento de Inicio"
 Instance: EjemploPractitionerReferenciadorMHREFERENCIADA
 InstanceOf: PractitionerLE
 Usage: #example
-Title: "Ejemplo de Practitioner Evento de Referencia y Terminar"
-Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
+Title: "Practitioner Referenciador Evento de Referenciada"
+Description: "Practitioner Referenciador Evento de Referenciada"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -42,8 +42,8 @@ Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
 Instance: EjemploPractitionerTerminar
 InstanceOf: PractitionerLE
 Usage: #example
-Title: "Ejemplo de Practitioner Evento Terminar"
-Description: "Ejemplo de Practitioner Evento Terminar"
+Title: "Practitioner Evento Terminar"
+Description: "Practitioner Evento Terminar"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -57,8 +57,8 @@ Description: "Ejemplo de Practitioner Evento Terminar"
 Instance: EjemploPractitionerRevisar
 InstanceOf: PractitionerLE
 Usage: #example
-Title: "Ejemplo de Practitioner Evento de Referencia y Terminar"
-Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
+Title: "Practitioner Evento Revisar"
+Description: "Practitioner Evento Revisar"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -76,8 +76,8 @@ Description: "Ejemplo de Practitioner Evento de Referencia y Terminar"
 Instance: EjemploPractitionerAtender
 InstanceOf: PractitionerLE
 Usage: #example
-Title: "Ejemplo de Practitioner Evento de Atender"
-Description: "Ejemplo de Practitioner Evento de Atender"
+Title: "Practitioner Evento de Atender"
+Description: "Practitioner Evento de Atender"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -95,8 +95,8 @@ Description: "Ejemplo de Practitioner Evento de Atender"
 Instance: EjemploPractitionerAgendarAtendedor
 InstanceOf: PractitionerLE
 Usage: #example
-Title: "Ejemplo de Practitioner Evento de Agendar"
-Description: "Ejemplo de Practitioner Evento de Agendar"
+Title: "Practitioner Atendedor Evento de Agendar"
+Description: "Practitioner Atendedor Evento de Agendar"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -114,8 +114,8 @@ Description: "Ejemplo de Practitioner Evento de Agendar"
 Instance: EjemploPractitionerAgendarAgendador
 InstanceOf: PractitionerLE
 Usage: #example
-Title: "Ejemplo de Practitioner Evento de Agendar"
-Description: "Ejemplo de Practitioner Evento de Agendar"
+Title: "Practitioner Agendador Evento de Agendar"
+Description: "Practitioner Agendador Evento de Agendar"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
@@ -133,8 +133,8 @@ Description: "Ejemplo de Practitioner Evento de Agendar"
 Instance: EjemploPractitionerPriorizar
 InstanceOf: PractitionerLE
 Usage: #example
-Title: "Ejemplo de Practitioner Evento de Priorizar"
-Description: "Ejemplo de Practitioner Evento de Priorizar"
+Title: "Practitioner Evento de Priorizar"
+Description: "Practitioner Evento de Priorizar"
 
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official

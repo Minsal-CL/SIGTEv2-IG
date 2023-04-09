@@ -16,8 +16,8 @@ Description: "Esta extensión incluye códigos de paises de origen"
 
 Extension:   PrevisionCodigoLE
 Id:          PrevisionCodigoLE
-Title:       "Previsión determinada  de aseguramiento de salud del paciente."
-Description: "La previsión es la  variable determinada el sistema de aseguramiento de salud del paciente."
+Title:       "Previsión determinada de aseguramiento de salud del paciente."
+Description: "La previsión es la variable que determina sistema de aseguramiento de salud del paciente."
 * value[x] only CodeableConcept
 * value[x] ^short = "Prevision Codigo"
 * url 1..1 MS
@@ -32,7 +32,7 @@ Description: "La previsión es la  variable determinada el sistema de aseguramie
 Extension:   NacionalidadCodigoClLE
 Id:          NacionalidadCodigo
 Title:       "Codigo de Identificación de Nacionalidad"
-Description: "Esta extensión incluye códigos de las Nacionalidades"
+Description: "Codigo de Identificación de Nacionalidad"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de la Nacionalidad"
 * url 1..1 MS
@@ -327,21 +327,6 @@ Extension: SospechaPatologiaGes
 Id: SospechaPatologiaGes
 Title: "SospechaPatologiaGes"
 Description: "SospechaPatologiaGes"
-/*
-* extension contains
-	sospecha 1..1 MS and
-	patologia 1..1 MS
-  * url MS
-
-* extension[patologia].value[x] only CodeableConcept
-* extension[patologia].value[x] ^short = "Codigo de la identidad de gneero"
-* extension[patologia].url 1..1 MS
-* extension[patologia].valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  * code from VSSospechaPatologiaGes
-  * system 0..1 MS
-  * display 0..1 MS
-*/
 * value[x] only boolean
 
 Extension:   EspecialidadMedicaDestinoCodigo
@@ -368,20 +353,3 @@ Description: "SubEspecialidad Médica Destino Código"
   * system 0..1 MS
   * display 0..1 MS
 * valueCodeableConcept 1..1 MS
-
-
-/*
-Extension:   
-Id:          
-Title:       ""
-Description: ""
-* value[x] only CodeableConcept
-* value[x] ^short = "Codigo de la identidad de gneero"
-* url 1..1 MS
-* valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  //* code from CodPais
-  * system 0..1 MS
-  * display 0..1 MS
-
-*/

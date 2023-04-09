@@ -56,7 +56,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 
 * appointment 1..1 MS
   * reference 1..1 MS
-* appointment only Reference(AppointmentLE)
+* appointment only Reference(AppointmentAgendarLE)
 
 * subject 1..1 MS
   * reference 1..1 MS

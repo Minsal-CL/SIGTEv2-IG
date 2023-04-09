@@ -6,19 +6,19 @@ Description: "Appointment Inicio LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+// EXTESIONES
+* extension contains MedioNotificacion named MedioNotificacion 0..1 MS
+* extension contains Contactado named Contactado 0..1 MS
 
-//* identifier 1..1 MS
-//  * value 1..1 MS
-  
+// Obligatorio por estandar
 * status 1..1 MS
 * status = #fulfilled
 
 * start 0..1 MS
 
-* extension contains MedioNotificacion named MedioNotificacion 0..1 MS
-
-* extension contains Contactado named Contactado 0..1 MS
-
+//* identifier 1..1 MS
+//  * value 1..1 MS
+  
 * basedOn 1..1 MS
 
 

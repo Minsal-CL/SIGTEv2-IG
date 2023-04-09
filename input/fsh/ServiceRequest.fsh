@@ -10,9 +10,10 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * identifier.type 1..1 MS
   * coding 1..1 MS
     * code 1..1 MS
-    * code = #"IdInterconsulta"    
+    * code = #IdInterconsulta
     * system 1..1 MS
     * display 0..1 MS
+* identifier.type.coding from http://terminology.cens.cl/CodeSystem/listaespera
 * identifier.value 1..1 MS
 
 // OBLIGATORIOS POR ESTANDAR
@@ -25,7 +26,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains MotivoCierreInterconsulta named MotivoCierreInterconsulta 0..1 MS
 * extension contains ExtBoolRequiereExamen named RequiereExamen 0..1 MS
 
-// Service Request Inicio
+// ServiceRequest Inicio
 * extension contains SospechaPatologiaGes named SospechaGES 0..1 MS
 * extension contains ExtBoolResolutividadAPS named ResolutividadAPS 0..1 MS
 * extension contains ExtBoolAlergia named Alergia 0..1 MS

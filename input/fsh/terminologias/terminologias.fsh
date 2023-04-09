@@ -48,6 +48,7 @@ Description: "Tipo Identificador"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * codes from system CSTipoIdentificador
+* codes from system https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos
 
 CodeSystem: CSTipoIdentificador
 Id: CSTipoIdentificador

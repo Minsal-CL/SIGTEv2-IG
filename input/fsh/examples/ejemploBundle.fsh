@@ -1,8 +1,8 @@
 Instance: EjemploBundleInicio
 InstanceOf: BundleInicioLE
 Usage: #example
-Title: "Ejemplo de Bundle Evento de Inicio"
-Description: "Ejemplo de Bundle Evento de Inicio"
+Title: "Bundle Evento de Inicio"
+Description: "Bundle Evento de Inicio"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -56,8 +56,8 @@ Description: "Ejemplo de Bundle Evento de Inicio"
 Instance: EjemploBundleReferencia
 InstanceOf: BundleReferenciaLE
 Usage: #example
-Title: "Ejemplo de Bundle Evento de Referencia"
-Description: "Ejemplo de Bundle Evento de Referencia"
+Title: "Bundle Evento de Referencia"
+Description: "Bundle Evento de Referencia"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -67,7 +67,7 @@ Description: "Ejemplo de Bundle Evento de Referencia"
 * entry[messageheader].resource = EjemploMessageHeaderReferencia
 
 * entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/referencia"
-* entry[servicerequest].resource = EjemploServiceRequestReferencia
+* entry[servicerequest].resource = EjemploServiceRequestReferenciada
 
 * entry[practitionerRole][0].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor"
 * entry[practitionerRole][0].resource = EjemploPractitionerRoleAgendadorSRREFERENCIADA
@@ -89,8 +89,8 @@ Description: "Ejemplo de Bundle Evento de Referencia"
 Instance: EjemploBundleTerminar
 InstanceOf: BundleTerminarLE
 Usage: #example
-Title: "Ejemplo de Bundle Evento de Terminar"
-Description: "Ejemplo de Bundle Evento de Terminar"
+Title: "Bundle Evento de Terminar"
+Description: "Bundle Evento de Terminar"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -116,8 +116,8 @@ Description: "Ejemplo de Bundle Evento de Terminar"
 Instance: EjemploBundleRevisar
 InstanceOf: BundleRevisarLE
 Usage: #example
-Title: "Ejemplo de Bundle Evento de Revisar"
-Description: "Ejemplo de Bundle Evento de Revisar"
+Title: "Bundle Evento de Revisar"
+Description: "Bundle Evento de Revisar"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -145,8 +145,8 @@ Description: "Ejemplo de Bundle Evento de Revisar"
 Instance: EjemploBundleAgendar
 InstanceOf: BundleAgendarLE
 Usage: #example
-Title: "Ejemplo de Bundle Evento de Agendar"
-Description: "Ejemplo de Bundle Evento de Agendar"
+Title: "Bundle Evento de Agendar"
+Description: "Bundle Evento de Agendar"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -189,8 +189,8 @@ Description: "Ejemplo de Bundle Evento de Agendar"
 Instance: EjemploBundlePriorizar
 InstanceOf: BundlePriorizarLE
 Usage: #example
-Title: "Ejemplo de Bundle Evento de Priorizar"
-Description: "Ejemplo de Bundle Evento de Priorizar"
+Title: "Bundle Evento de Priorizar"
+Description: "Bundle Evento de Priorizar"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
@@ -223,8 +223,8 @@ Description: "Ejemplo de Bundle Evento de Priorizar"
 Instance: EjemploBundleAtender
 InstanceOf: BundleAtenderLE
 Usage: #example
-Title: "Ejemplo de Bundle Evento de Atender"
-Description: "Ejemplo de Bundle Evento de Atender"
+Title: "Bundle Evento de Atender"
+Description: "Bundle Evento de Atender"
 
 * type = #message
 * meta.lastUpdated = "2023-01-20T14:12:10Z"

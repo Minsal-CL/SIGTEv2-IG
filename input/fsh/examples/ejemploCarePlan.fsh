@@ -1,8 +1,8 @@
 Instance: EjemploCarePlanLE
 InstanceOf: CarePlanAtenderLE
 Usage: #example
-Title: "Ejemplo de Condition1 Evento de Atender"
-Description: "Ejemplo de Condition1 Evento de Atender"
+Title: "CarePlan Evento de Atender"
+Description: "de CarePlan Evento de Atender"
 
 * status = #active
 * intent = #plan

@@ -1,8 +1,8 @@
 Instance: EjemploQuestionnaireResponse
 InstanceOf: QuestionnaireResponseInicioLE
 Usage: #example
-Title: "Ejemplo de QuestionnaireResponseEvento de Inicio"
-Description: "Ejemplo de QuestionnaireResponseEvento de Inicio"
+Title: "QuestionnaireResponseEvento de Inicio"
+Description: "QuestionnaireResponseEvento de Inicio"
 
 * item.linkId = "Resumen"
 * item.text = "Resumen"
@@ -12,8 +12,8 @@ Description: "Ejemplo de QuestionnaireResponseEvento de Inicio"
 Instance: EjemploQuestionnaireResponseAtenderLE
 InstanceOf: QuestionnaireResponseAtenderLE
 Usage: #example
-Title: "Ejemplo de QuestionnaireResponseEvento de Inicio"
-Description: "Ejemplo de QuestionnaireResponseEvento de Inicio"
+Title: "QuestionnaireResponse Evento de Atender"
+Description: "QuestionnaireResponse Evento de Atender"
 
 * item.linkId = "Resumen"
 * item.text = "Resumen"

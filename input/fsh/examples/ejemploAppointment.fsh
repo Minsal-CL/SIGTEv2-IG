@@ -1,8 +1,8 @@
 Instance: EjemploAppointment
 InstanceOf: AppointmentInicioLE
 Usage: #example
-Title: "Ejemplo de Appointment Evento de Inicio"
-Description: "Ejemplo de Appointment Evento de Inicio"
+Title: "Appointment Evento de Inicio"
+Description: "Appointment Evento de Inicio"
 
 * status = #fulfilled
 * identifier.value = "21"
@@ -13,10 +13,10 @@ Description: "Ejemplo de Appointment Evento de Inicio"
 
 //revisado JM
 Instance: EjemploAppointmentAgendar
-InstanceOf: AppointmentLE
+InstanceOf: AppointmentAgendarLE
 Usage: #example
-Title: "Ejemplo de Appointment Evento de Inicio"
-Description: "Ejemplo de Appointment Evento de Inicio"
+Title: "Appointment Evento de Inicio"
+Description: "Appointment Evento de Inicio"
 
 * status = #booked
 * identifier.value = "21"
@@ -30,20 +30,3 @@ Description: "Ejemplo de Appointment Evento de Inicio"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding.code = #1
 
 * extension[ContactadoLE].extension[Contactado].valueBoolean = true
-
-
-//ejemplo bundle atender
-Instance: EjemploAppointmentAtender
-InstanceOf: AppointmentLE
-Usage: #example
-Title: "Ejemplo de Appointment Evento de Atender"
-Description: "Ejemplo de Appointment Evento de Atender"
-
-* status = #booked
-* identifier.value = "21"
-* start = "2023-01-22T09:00:00Z"
-* end = "2023-01-22T09:00:30Z"
-* participant.status = #accepted
-* participant.actor = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-* appointmentType.coding.code = #ROUNTINE
-* appointmentType.coding.system = "http://hl7.org/fhir/r4/v2/0276/index.html"

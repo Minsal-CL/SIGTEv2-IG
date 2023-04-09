@@ -1,8 +1,8 @@
 Instance: EjemploPractitionerRole
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "Ejemplo de PractitionerRole Evento de Inicio"
-Description: "Ejemplo de PractitionerRole Evento de Inicio"
+Title: "PractitionerRole Evento de Inicio"
+Description: "PractitionerRole Evento de Inicio"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
@@ -12,8 +12,8 @@ Description: "Ejemplo de PractitionerRole Evento de Inicio"
 Instance: EjemploPractitionerRoleReferenciadorMHREFERENCIADA
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "Ejemplo de PractitionerRole Evento de Referencia"
-Description: "Ejemplo de PractitionerRole Evento de Referencia"
+Title: "PractitionerRole Referenciador Evento de Referenciada"
+Description: "PractitionerRole Referenciador Evento de Referenciada"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/referencia)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAgendador)
@@ -24,8 +24,8 @@ Description: "Ejemplo de PractitionerRole Evento de Referencia"
 Instance: EjemploPractitionerRoleAgendadorSRREFERENCIADA
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "Ejemplo de PractitionerRole Evento de Referencia"
-Description: "Ejemplo de PractitionerRole Evento de Referencia"
+Title: "PractitionerRole Agendador Evento de Referenciada"
+Description: "PractitionerRole Agendador Evento de Referenciada"
 
 * organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAtendedor)
 * code = #atendedor
@@ -35,8 +35,8 @@ Description: "Ejemplo de PractitionerRole Evento de Referencia"
 Instance: EjemploPractitionerRoleTerminar
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "Ejemplo de PractitionerRole Evento de Terminar"
-Description: "Ejemplo de PractitionerRole Evento de Terminar"
+Title: "PractitionerRole Evento de Terminar"
+Description: "PractitionerRole Evento de Terminar"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/terminar)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/terminar)
@@ -49,8 +49,8 @@ Description: "Ejemplo de PractitionerRole Evento de Terminar"
 Instance: EjemploPractitionerRoleRevisar
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "Ejemplo de PractitionerRole Evento de Revisar"
-Description: "Ejemplo de PractitionerRole Evento de Revisar"
+Title: "PractitionerRole Evento de Revisar"
+Description: "PractitionerRole Evento de Revisar"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/revisar)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/revisar)
@@ -61,8 +61,8 @@ Description: "Ejemplo de PractitionerRole Evento de Revisar"
 Instance: EjemploPractitionerRoleAgendarMH
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "Ejemplo de PractitionerRole Evento de Agendar"
-Description: "Ejemplo de PractitionerRole Evento de Agendar"
+Title: "PractitionerRole Evento de Agendar MessageHeader"
+Description: "PractitionerRole Evento de Agendar MessageHeader"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/agendar)
@@ -73,8 +73,8 @@ Description: "Ejemplo de PractitionerRole Evento de Agendar"
 Instance: EjemploPractitionerRoleAgendarAPPO
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "Ejemplo de PractitionerRole Evento de Agendar"
-Description: "Ejemplo de PractitionerRole Evento de Agendar"
+Title: "PractitionerRole Evento de Agendar Apponitment"
+Description: "PractitionerRole Evento de Agendar Apponitment"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/agendarAtendedor)
 //* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
@@ -87,8 +87,8 @@ Description: "Ejemplo de PractitionerRole Evento de Agendar"
 Instance: EjemploPractitionerRolePriorizar
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "Ejemplo de PractitionerRole Evento de Priorizar"
-Description: "Ejemplo de PractitionerRole Evento de Priorizar"
+Title: "PractitionerRole Evento de Priorizar"
+Description: "PractitionerRole Evento de Priorizar"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/priorizar)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/priorizar)
@@ -101,8 +101,8 @@ Description: "Ejemplo de PractitionerRole Evento de Priorizar"
 Instance: EjemploPractitionerRoleAtender
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "Ejemplo de PractitionerRole Evento de Atender"
-Description: "Ejemplo de PractitionerRole Evento de Atender"
+Title: "PractitionerRole Evento de Atender"
+Description: "PractitionerRole Evento de Atender"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/atender)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/atender)

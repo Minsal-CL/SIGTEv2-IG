@@ -1,18 +1,18 @@
 Instance: EjemploOrganization
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Ejemplo de Organization Evento de Inicio"
-Description: "Ejemplo de Organization Evento de Inicio"
+Title: "Organization Evento de Inicio"
+Description: "Organization Evento de Inicio"
 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
 
 /*EJEMPLOS PARA BUNDLE REFERENCIADA*/
-Instance: EjemploOrganizationReferencia1
+Instance: EjemploOrganizationReferencia
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Ejemplo de Organization Evento de Referencia"
-Description: "Ejemplo de Organization Evento de Referencia"
+Title: "Organization Evento de Referencia"
+Description: "Organization Evento de Referencia"
 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
@@ -20,8 +20,8 @@ Description: "Ejemplo de Organization Evento de Referencia"
 Instance: EjemploOrganizationTerminar
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Ejemplo de Organization Evento de Referencia y Terminar"
-Description: "Ejemplo de Organization Evento de Referencia y Terminar"
+Title: "Organization Evento de Terminar"
+Description: "Organization Evento de Terminar"
 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "2"
@@ -29,8 +29,8 @@ Description: "Ejemplo de Organization Evento de Referencia y Terminar"
 Instance: EjemploOrganizationReferenciadorMHREFERENCIADA
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Ejemplo de Organization Evento de referenciador"
-Description: "Ejemplo de Organization Evento de Referenciador"
+Title: "Organization Referenciador Evento de Referenciada"
+Description: "Organization Referenciador Evento de Referenciada"
 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
@@ -38,8 +38,8 @@ Description: "Ejemplo de Organization Evento de Referenciador"
 Instance: EjemploOrganizationAgendadorSRREFERENCIADA
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Ejemplo de Organization Evento de Agendador"
-Description: "Ejemplo de Organization Evento de Agendador"
+Title: "Organization Evento de Agendador"
+Description: "Organization Evento de Agendador"
 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
@@ -50,8 +50,8 @@ Description: "Ejemplo de Organization Evento de Agendador"
 Instance: EjemploOrganizationRevisar
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Ejemplo de Organization Evento de Revisar"
-Description: "Ejemplo de Organization Evento de Revisar"
+Title: "Organization Evento de Revisar"
+Description: "Organization Evento de Revisar"
 
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
@@ -62,8 +62,8 @@ Description: "Ejemplo de Organization Evento de Revisar"
 Instance: EjemploOrganizationAgendar
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Ejemplo de Organization Evento de Agendar"
-Description: "Ejemplo de Organization Evento de Agendar"
+Title: "Organization Evento de Agendar"
+Description: "Organization Evento de Agendar"
 
 //* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
 * identifier.value = "1"
@@ -75,8 +75,8 @@ Description: "Ejemplo de Organization Evento de Agendar"
 Instance: EjemploOrganizationAtender
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Ejemplo de Organization Evento de Atender"
-Description: "Ejemplo de Organization Evento de Atender"
+Title: "Organization Evento de Atender"
+Description: "Organization Evento de Atender"
 
 * identifier.value = "1"
 
@@ -87,8 +87,8 @@ Description: "Ejemplo de Organization Evento de Atender"
 Instance: EjemploOrganizationPriorizar
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Ejemplo de Organization Evento de Priorizar"
-Description: "Ejemplo de Organization Evento de Priorizar"
+Title: "Organization Evento de Priorizar"
+Description: "Organization Evento de Priorizar"
 
 * identifier.value = "1"
 

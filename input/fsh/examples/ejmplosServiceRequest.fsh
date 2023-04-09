@@ -1,8 +1,8 @@
 Instance: EjemploServiceRequest
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "Ejemplo de Service Request Evento de Inicio"
-Description: "Ejemplo de Service Request Evento de Inicio"
+Title: "ServiceRequest Evento de Inicio"
+Description: "ServiceRequest Evento de Inicio"
 
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "1"
@@ -46,11 +46,13 @@ Description: "Ejemplo de Service Request Evento de Inicio"
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con2)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con3)
 
+/*
+
 Instance: EjemploServiceRequest2
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "Ejemplo de Service Request 2"
-Description: "Ejemplo de Service Request 2"
+Title: "ServiceRequest 2"
+Description: "ServiceRequest 2"
 
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "1"
@@ -92,12 +94,15 @@ Description: "Ejemplo de Service Request 2"
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/cond2)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/cond3)
 
+*/
+
+
 /*EJEMPLO PARA BUNDLE REFERENCIA*/
-Instance: EjemploServiceRequestReferencia
+Instance: EjemploServiceRequestReferenciada
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "Ejemplo de Service Request Evento de Referencia"
-Description: "Ejemplo de Service Request Evento de Referencia"
+Title: "ServiceRequest Evento de Referenciada"
+Description: "ServiceRequest Evento de Referenciada"
 
 * status = #draft
 * intent = #proposal
@@ -118,8 +123,8 @@ Description: "Ejemplo de Service Request Evento de Referencia"
 Instance: EjemploServiceRequestTerminar
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "Ejemplo de Service Request Evento de Terminar"
-Description: "Ejemplo de Service Request Evento de Terminar"
+Title: "ServiceRequest Evento de Terminar"
+Description: "ServiceRequest Evento de Terminar"
 
 * status = #draft
 * intent = #proposal
@@ -136,8 +141,8 @@ Description: "Ejemplo de Service Request Evento de Terminar"
 Instance: EjemploServiceRequestRevisar
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "Ejemplo de Service Request Evento Revisar"
-Description: "Ejemplo de Service Request Evento Revisar"
+Title: "ServiceRequest Evento Revisar"
+Description: "ServiceRequest Evento Revisar"
 
 * identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.type.coding.code = #IdInterconsulta
@@ -167,8 +172,8 @@ Description: "Ejemplo de Service Request Evento Revisar"
 Instance: EjemploServiceRequestAgendar
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "Ejemplo de Service Request Evento Agendar"
-Description: "Ejemplo de Service Request Evento Agendar"
+Title: "ServiceRequest Evento Agendar"
+Description: "ServiceRequest Evento Agendar"
 
 * identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.type.coding.code = #IdInterconsulta
@@ -196,8 +201,8 @@ Description: "Ejemplo de Service Request Evento Agendar"
 Instance: EjemploServiceRequestAtender
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "Ejemplo de Service Request Evento Atender"
-Description: "Ejemplo de Service Request Evento Atender"
+Title: "ServiceRequest Evento Atender"
+Description: "ServiceRequest Evento Atender"
 
 * identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.type.coding.code = #IdInterconsulta
@@ -216,10 +221,10 @@ Description: "Ejemplo de Service Request Evento Atender"
 Instance: EjemploServiceRequestPriorizar
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "Ejemplo de Service Request Evento Priorizar"
-Description: "Ejemplo de Service Request Evento Priorizar"
+Title: "ServiceRequest Evento Priorizar"
+Description: "ServiceRequest Evento Priorizar"
 
-* identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
+* identifier.type.coding.system = "http://terminology.cens.cl/CodeSystem/listaespera"
 * identifier.type.coding.code = #IdInterconsulta
 * identifier.value = "323121"
 * authoredOn = "2022-01-20T13:50:20Z"

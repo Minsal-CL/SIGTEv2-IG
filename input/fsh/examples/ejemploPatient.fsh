@@ -1,8 +1,8 @@
 Instance: EjemploPatient
 InstanceOf: PatientLE
 Usage: #example
-Title: "Ejemplo de Patient Evento de Inicio"
-Description: "Ejemplo de Patient Evento de Inicio"
+Title: "Patient Lista de Espera"
+Description: "Patient Lista de Espera"
 
 * extension[CodigoPaises].url = "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises"
 * extension[CodigoPaises].valueCodeableConcept.coding.code = #AD

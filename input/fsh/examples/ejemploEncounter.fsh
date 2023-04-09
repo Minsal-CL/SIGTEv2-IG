@@ -1,8 +1,8 @@
 Instance: EjemploEncounter
 InstanceOf: EncounterInicioLE
 Usage: #example
-Title: "Ejemplo de Encounter Evento de Inicio"
-Description: "Ejemplo de Encounter Evento de Inicio"
+Title: "Encounter Evento de Inicio"
+Description: "Encounter Evento de Inicio"
 
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdConsultaAPS
 * identifier.value = "1"
@@ -14,8 +14,8 @@ Description: "Ejemplo de Encounter Evento de Inicio"
 Instance: EjemploEncounterAtender
 InstanceOf: EncounterAtenderLE
 Usage: #example
-Title: "Ejemplo de Encounter Evento de Atender"
-Description: "Ejemplo de Encounter Evento de Atender"
+Title: "Encounter Evento de Atender"
+Description: "Encounter Evento de Atender"
 
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdConsultaAPS
 * identifier.value = "1"
@@ -35,5 +35,3 @@ Description: "Ejemplo de Encounter Evento de Atender"
 
 * period.start = "2023-01-22T09:00:00Z"
 * class.code = #1
-//* diagnosis[0] = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)
-//* diagnosis[0] = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)
