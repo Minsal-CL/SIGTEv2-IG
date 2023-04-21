@@ -83,7 +83,7 @@
   fhir:identifier ( [
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "IdInterconsulta"^^xsd:anyURI ] ;
+         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "IdInterconsulta" ]
        ] )
      ] ;
@@ -194,13 +194,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"EjemploPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;EjemploPatient&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientLE.html\">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#AD)</span></p><p><b>Identidad de genero</b>: male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#male)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"EjemploPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;EjemploPatient&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientLE.html\">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Identidad de genero</b>: Masculino <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSIdentidaddeGenero.html\">Identidad de Genero</a>#1)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "AD" ]
        ] ) ;
        fhir:text [ fhir:v "Andorra" ]
@@ -210,6 +211,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
+         fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "AD" ]
        ] ) ;
        fhir:text [ fhir:v "Andorra" ]
@@ -219,7 +221,8 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
-         fhir:code [ fhir:v "male" ]
+         fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSIdentidaddeGenero"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ]
        ] )
      ]
   ] [
@@ -233,16 +236,18 @@
      ] ) ;
      fhir:type [
        fhir:extension ( [
-         fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
          fhir:value [
-           a fhir:Coding ;
-           fhir:code [ fhir:v "AD" ]
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "AD" ]
+           ] )
          ]
        ] ) ;
        fhir:coding ( [
          fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "1" ] ;
-         fhir:display [ fhir:v "RUN" ]
+         fhir:code [ fhir:v "1" ]
        ] )
      ] ;
      fhir:system [ fhir:v "http://www.acme.com/identifiers/patient"^^xsd:anyURI ] ;

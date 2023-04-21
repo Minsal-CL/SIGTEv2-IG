@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7"}
-    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -64,7 +64,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Proyecto Listas de Espera MINSAL CHILE</span>
             <br/>
-            <span style="display:inline-block;">0.1.1 - ci-build
+            <span style="display:inline-block;">0.1.2 - ci-build
 
 
             </span>
@@ -95,7 +95,10 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefactos</a>
+    <a href="Alcance.html">Alcance</a>
+  </li>
+  <li>
+    <a href="Objetivos.html">Objetivos</a>
   </li>
   <li>
     <a href="Actores.html">Actores</a>
@@ -104,13 +107,13 @@
     <a href="Casosdeuso.html">Casos de Uso</a>
   </li>
   <li>
-    <a href="Objetivos.html">Objetivos</a>
-  </li>
-  <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
   <li>
     <a href="Terminologias.html">Terminologias</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificaciones Técnicas
@@ -178,7 +181,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.1). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.2). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Evento Atender</h2>
   
 
@@ -245,7 +248,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li><a href="StructureDefinition-ObservationAtenderLE.html">ObservationAtenderLE</a>: Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)</li>
-  <li><a name="l460">​</a><a href="StructureDefinition-Id: EncounterAtenderLE
+  <li><a name="l466">​</a><a href="StructureDefinition-Id: EncounterAtenderLE
 .html">EncounterAtenderLE
 </a>: Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)</li>
   <li><a href="StructureDefinition-PatientLE.html">PatientLE</a>: Recurso utilizado para registrar información relacionada al paciente (CarePlan.subject / Encounter.subject)</li>
@@ -268,7 +271,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El evento <strong>atender</strong> debe soportar a siguiente secuencia:</p>
 
 <div align="center">
-  <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 229 144" zoomAndPan="magnify" preserveAspectRatio="none" width="229px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:229px;height:144px;background:#FFFFFF;" contentScriptType="application/ecmascript" version="1.1" height="144px"><defs><filter width="300%" x="-1" y="-1" id="fui7br638fy27" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"/><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"/><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"/></filter></defs><g><text lengthAdjust="spacing" x="12.5" font-size="18" textLength="201" y="28.6992" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Atender</text><line y1="75.5" x1="37" y2="137.7344" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="37"/><rect filter="url(#fui7br638fy27)" rx="4.5" ry="4.5" width="60" x="5" y="40.0938" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.4063"/><text lengthAdjust="spacing" x="12" font-size="14" textLength="46" y="60.082" font-family="Roboto Condensed" fill="#000000">Hospital</text><line y1="106.7344" x1="37" y2="106.7344" style="stroke:#107050;stroke-width:1.0;" x2="79"/><line y1="106.7344" x1="79" y2="119.7344" style="stroke:#107050;stroke-width:1.0;" x2="79"/><line y1="119.7344" x1="38" y2="119.7344" style="stroke:#107050;stroke-width:1.0;" x2="79"/><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="48,115.7344,38,119.7344,48,123.7344,44,119.7344"/><text font-weight="bold" lengthAdjust="spacing" x="44" font-size="13" textLength="29" y="101.5605" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="77" font-size="13" textLength="142" y="101.5605" font-family="Roboto Condensed" fill="#000000">Atención de la interconsulta</text></g></svg>
+  <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 280 144" zoomAndPan="magnify" preserveAspectRatio="none" width="280px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:280px;height:144px;background:#FFFFFF;" contentScriptType="application/ecmascript" version="1.1" height="144px"><defs><filter width="300%" x="-1" y="-1" id="fui7br638fy27" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"/><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"/><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"/></filter></defs><g><text lengthAdjust="spacing" x="9.75" font-size="18" textLength="255" y="28.708" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Atender</text><line y1="75.25" x1="41" y2="137.3828" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="41"/><rect filter="url(#fui7br638fy27)" rx="4.5" ry="4.5" width="69" x="5" y="39.9531" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="12" font-size="14" textLength="55" y="59.9482" font-family="Roboto Condensed" fill="#000000">Hospital</text><line y1="106.3828" x1="41.5" y2="106.3828" style="stroke:#107050;stroke-width:1.0;" x2="83.5"/><line y1="106.3828" x1="83.5" y2="119.3828" style="stroke:#107050;stroke-width:1.0;" x2="83.5"/><line y1="119.3828" x1="42.5" y2="119.3828" style="stroke:#107050;stroke-width:1.0;" x2="83.5"/><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="52.5,115.3828,42.5,119.3828,52.5,123.3828,48.5,119.3828"/><text font-weight="bold" lengthAdjust="spacing" x="48.5" font-size="13" textLength="37" y="101.3169" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="89.5" font-size="13" textLength="178" y="101.3169" font-family="Roboto Condensed" fill="#000000">Atención de la interconsulta</text></g></svg>
 </div>
 
 <h2 id="consideraciones">Consideraciones</h2>
@@ -333,7 +336,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Mar 11, 2023 07:17-0300">2023-03-11</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 21, 2023 12:02-0400">2023-04-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -67,7 +67,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Proyecto Listas de Espera MINSAL CHILE</span>
             <br/>
-            <span style="display:inline-block;">0.1.1 - ci-build
+            <span style="display:inline-block;">0.1.2 - ci-build
 
 
             </span>
@@ -98,7 +98,10 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefactos</a>
+    <a href="Alcance.html">Alcance</a>
+  </li>
+  <li>
+    <a href="Objetivos.html">Objetivos</a>
   </li>
   <li>
     <a href="Actores.html">Actores</a>
@@ -107,13 +110,13 @@
     <a href="Casosdeuso.html">Casos de Uso</a>
   </li>
   <li>
-    <a href="Objetivos.html">Objetivos</a>
-  </li>
-  <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
   <li>
     <a href="Terminologias.html">Terminologias</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificaciones Técnicas
@@ -181,7 +184,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.1). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.2). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Evento Agendar</h2>
   
 
@@ -238,7 +241,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li><a href="StructureDefinition-BundleAgendarLE.html">BundleAgendarLE</a>: Recurso que permite agrupar los datos del mensaje.</li>
   <li><a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a>: Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.</li>
-  <li><a href="StructureDefinition-AppointmentLE.html">MessageAppointmentLE</a>: Recurso que contiene datos relacionados a la agenda</li>
+  <li><a href="StructureDefinition-AppointmentAgendarLE.html">MessageAppointmentAgendarLE</a>: Recurso que contiene datos relacionados a la agenda</li>
   <li><a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a>: Recurso que permite reflejar la información relacionada al rol del individuo que atiende o agenda la cita
     <ul>
       <li>PractitionerRole1: Rol del individuo que atenderá al paciente</li>
@@ -270,7 +273,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El evento <strong>agendar</strong> debe soportar a siguiente secuencia:</p>
 
 <div align="center">
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="144px" preserveAspectRatio="none" style="width:231px;height:144px;background:#FFFFFF;" version="1.1" viewBox="0 0 231 144" width="231px" zoomAndPan="magnify"><defs><filter height="300%" id="fyzrnkemvmmtn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><text fill="#000000" font-family="Roboto Condensed" font-size="18" lengthAdjust="spacing" textLength="206" x="9" y="28.6992">Transacción: Evento Agendar</text><line style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="62" x2="62" y1="75.5" y2="137.7344" /><rect fill="#FFFFFF" filter="url(#fyzrnkemvmmtn)" height="30.4063" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:1.5;" width="60" x="30" y="40.0938" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="46" x="37" y="60.082">Hospital</text><line style="stroke:#107050;stroke-width:1.0;" x1="62" x2="104" y1="106.7344" y2="106.7344" /><line style="stroke:#107050;stroke-width:1.0;" x1="104" x2="104" y1="106.7344" y2="119.7344" /><line style="stroke:#107050;stroke-width:1.0;" x1="63" x2="104" y1="119.7344" y2="119.7344" /><polygon fill="#107050" points="73,115.7344,63,119.7344,73,123.7344,69,119.7344" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="69" y="101.5605">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="90" x="102" y="101.5605">Agendar de la cita</text></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="144px" preserveAspectRatio="none" style="width:283px;height:144px;background:#FFFFFF;" version="1.1" viewBox="0 0 283 144" width="283px" zoomAndPan="magnify"><defs><filter height="300%" id="fyzrnkemvmmtn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0" /><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" /><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3" /><feBlend in="SourceGraphic" in2="blurOut3" mode="normal" /></filter></defs><g><text fill="#000000" font-family="Roboto Condensed" font-size="18" lengthAdjust="spacing" textLength="258" x="9" y="28.708">Transacción: Evento Agendar</text><line style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="72.75" x2="72.75" y1="75.25" y2="137.3828" /><rect fill="#FFFFFF" filter="url(#fyzrnkemvmmtn)" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:1.5;" width="69" x="36.75" y="39.9531" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="55" x="43.75" y="59.9482">Hospital</text><line style="stroke:#107050;stroke-width:1.0;" x1="73.25" x2="115.25" y1="106.3828" y2="106.3828" /><line style="stroke:#107050;stroke-width:1.0;" x1="115.25" x2="115.25" y1="106.3828" y2="119.3828" /><line style="stroke:#107050;stroke-width:1.0;" x1="74.25" x2="115.25" y1="119.3828" y2="119.3828" /><polygon fill="#107050" points="84.25,115.3828,74.25,119.3828,84.25,123.3828,80.25,119.3828" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="80.25" y="101.3169">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="116" x="121.25" y="101.3169">Agendar de la cita</text></g></svg>
 </div>
 
 <h2 id="consideraciones">Consideraciones</h2>
@@ -296,7 +299,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Un <em>PractitionerLE</em> desde el recurso <em>PractitionerRoleLE</em> que hace referncia a quien hace el agendamiento de la cita</li>
     </ol>
   </li>
-  <li>Debe incluir el recurso <a href="StructureDefinition-AppointmentLE.html">AppointmentLE</a> con el valor <strong>Appointment.status=booked</strong></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-AppointmentAgendarLE.html">AppointmentAgendarLE</a> con el valor <strong>Appointment.status=booked</strong></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a></li>
 </ul>
 
@@ -337,7 +340,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Mar 11, 2023 07:17-0300">2023-03-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 21, 2023 12:02-0400">2023-04-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

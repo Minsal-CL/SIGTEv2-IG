@@ -3,10 +3,10 @@
   "id" : "VSTipoIdentificador",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-CSTipoIdentificador.html\"><code>http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-CSTipoIdentificador.html\"><code>http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador</code></a></li><li>Include all codes defined in <code>https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos</code></li></ul></div>"
   },
   "url" : "http://minsal.cl/listaespera/ValueSet/VSTipoIdentificador",
-  "version" : "0.1.1",
+  "version" : "0.1.2",
   "name" : "VSTipoIdentificador",
   "title" : "Tipo Identificador",
   "status" : "active",
@@ -31,6 +31,9 @@
   "compose" : {
     "include" : [{
       "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador"
+    },
+    {
+      "system" : "https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos"
     }]
   }
 }

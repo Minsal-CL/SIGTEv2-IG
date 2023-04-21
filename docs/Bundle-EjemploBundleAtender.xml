@@ -231,11 +231,12 @@
           <profile value="http://minsal.cl/listaespera/StructureDefinition/PatientLE"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="EjemploPatient"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;EjemploPatient&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PatientLE.html">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#AD)</span></p><p><b>Identidad de genero</b>: male <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#male)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="EjemploPatient"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;EjemploPatient&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PatientLE.html">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Identidad de genero</b>: Masculino <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSIdentidaddeGenero.html">Identidad de Genero</a>#1)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>
         </text>
         <extension url="http://minsal.cl/listaespera/StructureDefinition/CodigoPaises">
           <valueCodeableConcept>
             <coding>
+              <system value="urn:iso:std:iso:3166"/>
               <code value="AD"/>
             </coding>
             <text value="Andorra"/>
@@ -244,6 +245,7 @@
         <extension url="http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo">
           <valueCodeableConcept>
             <coding>
+              <system value="urn:iso:std:iso:3166"/>
               <code value="AD"/>
             </coding>
             <text value="Andorra"/>
@@ -252,7 +254,8 @@
         <extension url="http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero">
           <valueCodeableConcept>
             <coding>
-              <code value="male"/>
+              <system value="http://minsal.cl/listaespera/CodeSystem/CSIdentidaddeGenero"/>
+              <code value="1"/>
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -264,15 +267,17 @@
             <valueString value="K"/>
           </extension>
           <type>
-            <extension url="http://minsal.cl/listaespera/StructureDefinition/CodigoPaises">
-              <valueCoding>
-                <code value="AD"/>
-              </valueCoding>
+            <extension url="https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises">
+              <valueCodeableConcept>
+                <coding>
+                  <system value="urn:iso:std:iso:3166"/>
+                  <code value="AD"/>
+                </coding>
+              </valueCodeableConcept>
             </extension>
             <coding>
               <system value="http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador"/>
               <code value="1"/>
-              <display value="RUN"/>
             </coding>
           </type>
           <system value="http://www.acme.com/identifiers/patient"/>

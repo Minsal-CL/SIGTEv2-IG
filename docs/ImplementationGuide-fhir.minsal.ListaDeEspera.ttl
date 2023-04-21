@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ListaEsperaChile</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera</pre><div><p>Proyecto Listas de Espera MINSAL CHILE</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.1"] ; # 
+  fhir:version [ fhir:v "0.1.2"] ; # 
   fhir:name [ fhir:v "ListaEsperaChile"] ; # 
   fhir:title [ fhir:v "Proyecto Listas de Espera MINSAL CHILE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-11T07:17:50-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-21T12:02:08-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MINSAL Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MINSAL Chile" ] ;
@@ -503,11 +503,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/AppointmentInicioLE" ]
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentAgendarLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/AppointmentAgendarLE" ]
        ] ;
-       fhir:name [ fhir:v "Appointment Inicio LE" ] ;
-       fhir:description [ fhir:v "Appointment Inicio LE" ] ;
+       fhir:name [ fhir:v "AppointmentAgendarLE" ] ;
+       fhir:description [ fhir:v "AppointmentAgendarLE" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -515,11 +515,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/AppointmentLE" ]
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/AppointmentInicioLE" ]
        ] ;
-       fhir:name [ fhir:v "AppointmentLE" ] ;
-       fhir:description [ fhir:v "AppointmentLE" ] ;
+       fhir:name [ fhir:v "Appointment Inicio LE" ] ;
+       fhir:description [ fhir:v "Appointment Inicio LE" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1118,7 +1118,7 @@
          fhir:reference [ fhir:v "StructureDefinition/NacionalidadCodigo" ]
        ] ;
        fhir:name [ fhir:v "Codigo de Identificación de Nacionalidad" ] ;
-       fhir:description [ fhir:v "Esta extensión incluye códigos de las Nacionalidades" ] ;
+       fhir:description [ fhir:v "Codigo de Identificación de Nacionalidad" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1165,8 +1165,8 @@
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE> ;
          fhir:reference [ fhir:v "StructureDefinition/PrevisionCodigoLE" ]
        ] ;
-       fhir:name [ fhir:v "Previsión determinada  de aseguramiento de salud del paciente." ] ;
-       fhir:description [ fhir:v "La previsión es la  variable determinada el sistema de aseguramiento de salud del paciente." ] ;
+       fhir:name [ fhir:v "Previsión determinada de aseguramiento de salud del paciente." ] ;
+       fhir:description [ fhir:v "La previsión es la variable que determina sistema de aseguramiento de salud del paciente." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1873,8 +1873,8 @@
          fhir:link <http://minsal.cl/listaespera/AllergyIntolerance/EjemploAllergyIntolerance> ;
          fhir:reference [ fhir:v "AllergyIntolerance/EjemploAllergyIntolerance" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de AllergyIntolerance Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de AllergyIntolerance Evento de Inicio" ] ;
+       fhir:name [ fhir:v "AllergyIntolerance Evento de Inicio" ] ;
+       fhir:description [ fhir:v "AllergyIntolerance Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceInicioLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/AllergyIntoleranceInicioLE>
@@ -1888,8 +1888,8 @@
          fhir:link <http://minsal.cl/listaespera/Appointment/EjemploAppointment> ;
          fhir:reference [ fhir:v "Appointment/EjemploAppointment" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Appointment Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Appointment Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Appointment Evento de Inicio" ] ;
+       fhir:description [ fhir:v "Appointment Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE>
@@ -1903,26 +1903,11 @@
          fhir:link <http://minsal.cl/listaespera/Appointment/EjemploAppointmentAgendar> ;
          fhir:reference [ fhir:v "Appointment/EjemploAppointmentAgendar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Appointment Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Appointment Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Appointment Evento de Inicio" ] ;
+       fhir:description [ fhir:v "Appointment Evento de Inicio" ] ;
        fhir:example [
-         fhir:v "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE"^^xsd:anyURI ;
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentLE>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Appointment" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://minsal.cl/listaespera/Appointment/EjemploAppointmentAtender> ;
-         fhir:reference [ fhir:v "Appointment/EjemploAppointmentAtender" ]
-       ] ;
-       fhir:name [ fhir:v "Ejemplo de Appointment Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de Appointment Evento de Atender" ] ;
-       fhir:example [
-         fhir:v "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE"^^xsd:anyURI ;
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentLE>
+         fhir:v "http://minsal.cl/listaespera/StructureDefinition/AppointmentAgendarLE"^^xsd:anyURI ;
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/AppointmentAgendarLE>
        ]
      ] [
        fhir:extension ( [
@@ -1933,8 +1918,8 @@
          fhir:link <http://minsal.cl/listaespera/Bundle/EjemploBundleAgendar> ;
          fhir:reference [ fhir:v "Bundle/EjemploBundleAgendar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Bundle Evento de Agendar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Bundle Evento de Agendar" ] ;
+       fhir:name [ fhir:v "Bundle Evento de Agendar" ] ;
+       fhir:description [ fhir:v "Bundle Evento de Agendar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleAgendarLE>
@@ -1948,8 +1933,8 @@
          fhir:link <http://minsal.cl/listaespera/Bundle/EjemploBundleAtender> ;
          fhir:reference [ fhir:v "Bundle/EjemploBundleAtender" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Bundle Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de Bundle Evento de Atender" ] ;
+       fhir:name [ fhir:v "Bundle Evento de Atender" ] ;
+       fhir:description [ fhir:v "Bundle Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/BundleAtenderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleAtenderLE>
@@ -1963,8 +1948,8 @@
          fhir:link <http://minsal.cl/listaespera/Bundle/EjemploBundleInicio> ;
          fhir:reference [ fhir:v "Bundle/EjemploBundleInicio" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Bundle Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Bundle Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Bundle Evento de Inicio" ] ;
+       fhir:description [ fhir:v "Bundle Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleInicioLE>
@@ -1978,8 +1963,8 @@
          fhir:link <http://minsal.cl/listaespera/Bundle/EjemploBundlePriorizar> ;
          fhir:reference [ fhir:v "Bundle/EjemploBundlePriorizar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Bundle Evento de Priorizar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Bundle Evento de Priorizar" ] ;
+       fhir:name [ fhir:v "Bundle Evento de Priorizar" ] ;
+       fhir:description [ fhir:v "Bundle Evento de Priorizar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/BundlePriorizarLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundlePriorizarLE>
@@ -1993,8 +1978,8 @@
          fhir:link <http://minsal.cl/listaespera/Bundle/EjemploBundleReferencia> ;
          fhir:reference [ fhir:v "Bundle/EjemploBundleReferencia" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Bundle Evento de Referencia" ] ;
-       fhir:description [ fhir:v "Ejemplo de Bundle Evento de Referencia" ] ;
+       fhir:name [ fhir:v "Bundle Evento de Referencia" ] ;
+       fhir:description [ fhir:v "Bundle Evento de Referencia" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleReferenciaLE>
@@ -2008,8 +1993,8 @@
          fhir:link <http://minsal.cl/listaespera/Bundle/EjemploBundleRevisar> ;
          fhir:reference [ fhir:v "Bundle/EjemploBundleRevisar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Bundle Evento de Revisar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Bundle Evento de Revisar" ] ;
+       fhir:name [ fhir:v "Bundle Evento de Revisar" ] ;
+       fhir:description [ fhir:v "Bundle Evento de Revisar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleRevisarLE>
@@ -2023,8 +2008,8 @@
          fhir:link <http://minsal.cl/listaespera/Bundle/EjemploBundleTerminar> ;
          fhir:reference [ fhir:v "Bundle/EjemploBundleTerminar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Bundle Evento de Terminar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Bundle Evento de Terminar" ] ;
+       fhir:name [ fhir:v "Bundle Evento de Terminar" ] ;
+       fhir:description [ fhir:v "Bundle Evento de Terminar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/BundleTerminarLE>
@@ -2038,8 +2023,8 @@
          fhir:link <http://minsal.cl/listaespera/CarePlan/EjemploCarePlanLE> ;
          fhir:reference [ fhir:v "CarePlan/EjemploCarePlanLE" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Condition1 Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de Condition1 Evento de Atender" ] ;
+       fhir:name [ fhir:v "CarePlan Evento de Atender" ] ;
+       fhir:description [ fhir:v "de CarePlan Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/CarePlanAtenderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/CarePlanAtenderLE>
@@ -2053,8 +2038,8 @@
          fhir:link <http://minsal.cl/listaespera/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE> ;
          fhir:reference [ fhir:v "Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de CondicionAtenderDiagnosticoConfirmacionLE Evento de Atender" ] ;
+       fhir:name [ fhir:v "Condicion Atender Diagnostico Confirmacion Evento de Atender" ] ;
+       fhir:description [ fhir:v "Condicion Atender Diagnostico Confirmacion Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE>
@@ -2068,8 +2053,8 @@
          fhir:link <http://minsal.cl/listaespera/Condition/EjemploCondicionAtenderDiagnosticoSospechaLE> ;
          fhir:reference [ fhir:v "Condition/EjemploCondicionAtenderDiagnosticoSospechaLE" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de CondicionAtenderDiagnosticoSospechaLE Evento de Atender" ] ;
+       fhir:name [ fhir:v "Condicion Atender Diagnostico Sospecha Evento de Atender" ] ;
+       fhir:description [ fhir:v "Condicion Atender Diagnostico Sospecha Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE>
@@ -2083,8 +2068,8 @@
          fhir:link <http://minsal.cl/listaespera/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE> ;
          fhir:reference [ fhir:v "Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de CondicionAtenderHipotesisDiagnosticaCodigoLE Evento de atender" ] ;
+       fhir:name [ fhir:v "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender" ] ;
+       fhir:description [ fhir:v "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE>
@@ -2098,8 +2083,8 @@
          fhir:link <http://minsal.cl/listaespera/Condition/EjemploCondition> ;
          fhir:reference [ fhir:v "Condition/EjemploCondition" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Condition1 Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Condition1 Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Condition Diagnóstico Sospecha Evento de Inicio" ] ;
+       fhir:description [ fhir:v "Condition Diagnóstico Sospecha Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE>
@@ -2113,8 +2098,8 @@
          fhir:link <http://minsal.cl/listaespera/Condition/EjemploCondition2> ;
          fhir:reference [ fhir:v "Condition/EjemploCondition2" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Condition2 Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Condition2 Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Condition Índice Comorbilidad Evento de Inicio" ] ;
+       fhir:description [ fhir:v "de Conditio Índice Comorbilidadn Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ConditionInicioIndiceComorbilidadLE>
@@ -2128,8 +2113,8 @@
          fhir:link <http://minsal.cl/listaespera/Condition/EjemploCondition3> ;
          fhir:reference [ fhir:v "Condition/EjemploCondition3" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Condition3 Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Condition3 Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Condition Sospecha GES Evento de Inicio" ] ;
+       fhir:description [ fhir:v "Condition Inicio Sospechvento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ConditionInicioSospechaGesLE>
@@ -2143,8 +2128,8 @@
          fhir:link <http://minsal.cl/listaespera/Encounter/EjemploEncounter> ;
          fhir:reference [ fhir:v "Encounter/EjemploEncounter" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Encounter Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Encounter Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Encounter Evento de Inicio" ] ;
+       fhir:description [ fhir:v "Encounter Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/EncounterInicioLE>
@@ -2158,8 +2143,8 @@
          fhir:link <http://minsal.cl/listaespera/Encounter/EjemploEncounterAtender> ;
          fhir:reference [ fhir:v "Encounter/EjemploEncounterAtender" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Encounter Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de Encounter Evento de Atender" ] ;
+       fhir:name [ fhir:v "Encounter Evento de Atender" ] ;
+       fhir:description [ fhir:v "Encounter Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/EncounterAtenderLE>
@@ -2173,8 +2158,8 @@
          fhir:link <http://minsal.cl/listaespera/MessageHeader/EjemploMessageHeader> ;
          fhir:reference [ fhir:v "MessageHeader/EjemploMessageHeader" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de MesaggeHeader Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de MesaggeHeader Evento de Inicio" ] ;
+       fhir:name [ fhir:v "MesaggeHeader Evento de Inicio" ] ;
+       fhir:description [ fhir:v "MesaggeHeader Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE>
@@ -2188,8 +2173,8 @@
          fhir:link <http://minsal.cl/listaespera/MessageHeader/EjemploMessageHeaderAgendar> ;
          fhir:reference [ fhir:v "MessageHeader/EjemploMessageHeaderAgendar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de MesaggeHeader Evento de Agendar" ] ;
-       fhir:description [ fhir:v "Ejemplo de MesaggeHeader Evento de Agendar" ] ;
+       fhir:name [ fhir:v "MesaggeHeader Evento de Agendar" ] ;
+       fhir:description [ fhir:v "MesaggeHeader Evento de Agendar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE>
@@ -2203,8 +2188,8 @@
          fhir:link <http://minsal.cl/listaespera/MessageHeader/EjemploMessageHeaderAtender> ;
          fhir:reference [ fhir:v "MessageHeader/EjemploMessageHeaderAtender" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de MesaggeHeader Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de MesaggeHeader Evento de Atender" ] ;
+       fhir:name [ fhir:v "MesaggeHeader Evento de Atender" ] ;
+       fhir:description [ fhir:v "MesaggeHeader Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE>
@@ -2218,8 +2203,8 @@
          fhir:link <http://minsal.cl/listaespera/MessageHeader/EjemploMessageHeaderPriorizar> ;
          fhir:reference [ fhir:v "MessageHeader/EjemploMessageHeaderPriorizar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de MesaggeHeader Evento de Priorizar" ] ;
-       fhir:description [ fhir:v "Ejemplo de MesaggeHeader Evento de Priorizar" ] ;
+       fhir:name [ fhir:v "MesaggeHeader Evento de Priorizar" ] ;
+       fhir:description [ fhir:v "MesaggeHeader Evento de Priorizar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE>
@@ -2233,8 +2218,8 @@
          fhir:link <http://minsal.cl/listaespera/MessageHeader/EjemploMessageHeaderReferencia> ;
          fhir:reference [ fhir:v "MessageHeader/EjemploMessageHeaderReferencia" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de MesaggeHeader Evento de Referencia" ] ;
-       fhir:description [ fhir:v "Ejemplo de MesaggeHeader Evento de Referencia" ] ;
+       fhir:name [ fhir:v "MesaggeHeader Evento de Referencia" ] ;
+       fhir:description [ fhir:v "MesaggeHeader Evento de Referencia" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE>
@@ -2248,8 +2233,8 @@
          fhir:link <http://minsal.cl/listaespera/MessageHeader/EjemploMessageHeaderRevisar> ;
          fhir:reference [ fhir:v "MessageHeader/EjemploMessageHeaderRevisar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de MesaggeHeader Evento de Revisar" ] ;
-       fhir:description [ fhir:v "Ejemplo de MesaggeHeader Evento de Revisar" ] ;
+       fhir:name [ fhir:v "MesaggeHeader Evento de Revisar" ] ;
+       fhir:description [ fhir:v "MesaggeHeader Evento de Revisar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE>
@@ -2263,8 +2248,8 @@
          fhir:link <http://minsal.cl/listaespera/MessageHeader/EjemploMessageHeaderTerminar> ;
          fhir:reference [ fhir:v "MessageHeader/EjemploMessageHeaderTerminar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de MesaggeHeader Evento de Terminar" ] ;
-       fhir:description [ fhir:v "Ejemplo de MesaggeHeader Evento de Terminar" ] ;
+       fhir:name [ fhir:v "MesaggeHeader Evento de Terminar" ] ;
+       fhir:description [ fhir:v "MesaggeHeader Evento de Terminar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/MessageHeaderLE>
@@ -2278,8 +2263,8 @@
          fhir:link <http://minsal.cl/listaespera/Observation/EjemploObservation> ;
          fhir:reference [ fhir:v "Observation/EjemploObservation" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Observation Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Observation Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Observation Evento de Inicio" ] ;
+       fhir:description [ fhir:v "Observation Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ObservationInicioLE>
@@ -2293,8 +2278,8 @@
          fhir:link <http://minsal.cl/listaespera/Observation/EjemploObservationAtender> ;
          fhir:reference [ fhir:v "Observation/EjemploObservationAtender" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Observation Evento de AtenderInicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Observation Evento de AtenderInicio" ] ;
+       fhir:name [ fhir:v "Observation Evento de Atender" ] ;
+       fhir:description [ fhir:v "Observation Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ObservationAtenderLE>
@@ -2308,8 +2293,8 @@
          fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganization> ;
          fhir:reference [ fhir:v "Organization/EjemploOrganization" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Organization Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Organization Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Organization Evento de Inicio" ] ;
+       fhir:description [ fhir:v "Organization Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
@@ -2323,8 +2308,8 @@
          fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationAgendadorSRREFERENCIADA> ;
          fhir:reference [ fhir:v "Organization/EjemploOrganizationAgendadorSRREFERENCIADA" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Organization Evento de Agendador" ] ;
-       fhir:description [ fhir:v "Ejemplo de Organization Evento de Agendador" ] ;
+       fhir:name [ fhir:v "Organization Evento de Agendador" ] ;
+       fhir:description [ fhir:v "Organization Evento de Agendador" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
@@ -2338,8 +2323,8 @@
          fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationAgendar> ;
          fhir:reference [ fhir:v "Organization/EjemploOrganizationAgendar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Organization Evento de Agendar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Organization Evento de Agendar" ] ;
+       fhir:name [ fhir:v "Organization Evento de Agendar" ] ;
+       fhir:description [ fhir:v "Organization Evento de Agendar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
@@ -2353,8 +2338,8 @@
          fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationAtender> ;
          fhir:reference [ fhir:v "Organization/EjemploOrganizationAtender" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Organization Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de Organization Evento de Atender" ] ;
+       fhir:name [ fhir:v "Organization Evento de Atender" ] ;
+       fhir:description [ fhir:v "Organization Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
@@ -2368,8 +2353,8 @@
          fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationPriorizar> ;
          fhir:reference [ fhir:v "Organization/EjemploOrganizationPriorizar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Organization Evento de Priorizar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Organization Evento de Priorizar" ] ;
+       fhir:name [ fhir:v "Organization Evento de Priorizar" ] ;
+       fhir:description [ fhir:v "Organization Evento de Priorizar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
@@ -2380,11 +2365,11 @@
          fhir:value [ fhir:v "Organization" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationReferencia1> ;
-         fhir:reference [ fhir:v "Organization/EjemploOrganizationReferencia1" ]
+         fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationReferencia> ;
+         fhir:reference [ fhir:v "Organization/EjemploOrganizationReferencia" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Organization Evento de Referencia" ] ;
-       fhir:description [ fhir:v "Ejemplo de Organization Evento de Referencia" ] ;
+       fhir:name [ fhir:v "Organization Evento de Referencia" ] ;
+       fhir:description [ fhir:v "Organization Evento de Referencia" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
@@ -2398,8 +2383,8 @@
          fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationReferenciadorMHREFERENCIADA> ;
          fhir:reference [ fhir:v "Organization/EjemploOrganizationReferenciadorMHREFERENCIADA" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Organization Evento de referenciador" ] ;
-       fhir:description [ fhir:v "Ejemplo de Organization Evento de Referenciador" ] ;
+       fhir:name [ fhir:v "Organization Referenciador Evento de Referenciada" ] ;
+       fhir:description [ fhir:v "Organization Referenciador Evento de Referenciada" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
@@ -2413,8 +2398,8 @@
          fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationRevisar> ;
          fhir:reference [ fhir:v "Organization/EjemploOrganizationRevisar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Organization Evento de Revisar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Organization Evento de Revisar" ] ;
+       fhir:name [ fhir:v "Organization Evento de Revisar" ] ;
+       fhir:description [ fhir:v "Organization Evento de Revisar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
@@ -2428,8 +2413,8 @@
          fhir:link <http://minsal.cl/listaespera/Organization/EjemploOrganizationTerminar> ;
          fhir:reference [ fhir:v "Organization/EjemploOrganizationTerminar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Organization Evento de Referencia y Terminar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Organization Evento de Referencia y Terminar" ] ;
+       fhir:name [ fhir:v "Organization Evento de Terminar" ] ;
+       fhir:description [ fhir:v "Organization Evento de Terminar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/OrganizationLE>
@@ -2443,8 +2428,8 @@
          fhir:link <http://minsal.cl/listaespera/Patient/EjemploPatient> ;
          fhir:reference [ fhir:v "Patient/EjemploPatient" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Patient Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Patient Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Patient Lista de Espera" ] ;
+       fhir:description [ fhir:v "Patient Lista de Espera" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PatientLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PatientLE>
@@ -2458,8 +2443,8 @@
          fhir:link <http://minsal.cl/listaespera/Practitioner/EjemploPractitioner> ;
          fhir:reference [ fhir:v "Practitioner/EjemploPractitioner" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Practitioner Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Practitioner Evento de Inicio" ] ;
+       fhir:name [ fhir:v "Practitioner Evento de Inicio" ] ;
+       fhir:description [ fhir:v "Practitioner Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
@@ -2473,8 +2458,8 @@
          fhir:link <http://minsal.cl/listaespera/Practitioner/EjemploPractitionerAgendarAgendador> ;
          fhir:reference [ fhir:v "Practitioner/EjemploPractitionerAgendarAgendador" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Practitioner Evento de Agendar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Practitioner Evento de Agendar" ] ;
+       fhir:name [ fhir:v "Practitioner Agendador Evento de Agendar" ] ;
+       fhir:description [ fhir:v "Practitioner Agendador Evento de Agendar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
@@ -2488,8 +2473,8 @@
          fhir:link <http://minsal.cl/listaespera/Practitioner/EjemploPractitionerAgendarAtendedor> ;
          fhir:reference [ fhir:v "Practitioner/EjemploPractitionerAgendarAtendedor" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Practitioner Evento de Agendar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Practitioner Evento de Agendar" ] ;
+       fhir:name [ fhir:v "Practitioner Atendedor Evento de Agendar" ] ;
+       fhir:description [ fhir:v "Practitioner Atendedor Evento de Agendar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
@@ -2503,8 +2488,8 @@
          fhir:link <http://minsal.cl/listaespera/Practitioner/EjemploPractitionerAtender> ;
          fhir:reference [ fhir:v "Practitioner/EjemploPractitionerAtender" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Practitioner Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de Practitioner Evento de Atender" ] ;
+       fhir:name [ fhir:v "Practitioner Evento de Atender" ] ;
+       fhir:description [ fhir:v "Practitioner Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
@@ -2518,8 +2503,8 @@
          fhir:link <http://minsal.cl/listaespera/Practitioner/EjemploPractitionerPriorizar> ;
          fhir:reference [ fhir:v "Practitioner/EjemploPractitionerPriorizar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Practitioner Evento de Priorizar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Practitioner Evento de Priorizar" ] ;
+       fhir:name [ fhir:v "Practitioner Evento de Priorizar" ] ;
+       fhir:description [ fhir:v "Practitioner Evento de Priorizar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
@@ -2533,8 +2518,8 @@
          fhir:link <http://minsal.cl/listaespera/Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA> ;
          fhir:reference [ fhir:v "Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Practitioner Evento de Referencia y Terminar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Practitioner Evento de Referencia y Terminar" ] ;
+       fhir:name [ fhir:v "Practitioner Referenciador Evento de Referenciada" ] ;
+       fhir:description [ fhir:v "Practitioner Referenciador Evento de Referenciada" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
@@ -2548,8 +2533,8 @@
          fhir:link <http://minsal.cl/listaespera/Practitioner/EjemploPractitionerRevisar> ;
          fhir:reference [ fhir:v "Practitioner/EjemploPractitionerRevisar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Practitioner Evento de Referencia y Terminar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Practitioner Evento de Referencia y Terminar" ] ;
+       fhir:name [ fhir:v "Practitioner Evento Revisar" ] ;
+       fhir:description [ fhir:v "Practitioner Evento Revisar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
@@ -2563,8 +2548,8 @@
          fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRole> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRole" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de PractitionerRole Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de PractitionerRole Evento de Inicio" ] ;
+       fhir:name [ fhir:v "PractitionerRole Evento de Inicio" ] ;
+       fhir:description [ fhir:v "PractitionerRole Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
@@ -2578,8 +2563,8 @@
          fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleAgendadorSRREFERENCIADA> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRoleAgendadorSRREFERENCIADA" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de PractitionerRole Evento de Referencia" ] ;
-       fhir:description [ fhir:v "Ejemplo de PractitionerRole Evento de Referencia" ] ;
+       fhir:name [ fhir:v "PractitionerRole Agendador Evento de Referenciada" ] ;
+       fhir:description [ fhir:v "PractitionerRole Agendador Evento de Referenciada" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
@@ -2593,8 +2578,8 @@
          fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleAgendarAPPO> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRoleAgendarAPPO" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de PractitionerRole Evento de Agendar" ] ;
-       fhir:description [ fhir:v "Ejemplo de PractitionerRole Evento de Agendar" ] ;
+       fhir:name [ fhir:v "PractitionerRole Evento de Agendar Apponitment" ] ;
+       fhir:description [ fhir:v "PractitionerRole Evento de Agendar Apponitment" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
@@ -2608,8 +2593,8 @@
          fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleAgendarMH> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRoleAgendarMH" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de PractitionerRole Evento de Agendar" ] ;
-       fhir:description [ fhir:v "Ejemplo de PractitionerRole Evento de Agendar" ] ;
+       fhir:name [ fhir:v "PractitionerRole Evento de Agendar MessageHeader" ] ;
+       fhir:description [ fhir:v "PractitionerRole Evento de Agendar MessageHeader" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
@@ -2623,8 +2608,8 @@
          fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleAtender> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRoleAtender" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de PractitionerRole Evento de Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de PractitionerRole Evento de Atender" ] ;
+       fhir:name [ fhir:v "PractitionerRole Evento de Atender" ] ;
+       fhir:description [ fhir:v "PractitionerRole Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
@@ -2638,8 +2623,8 @@
          fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRolePriorizar> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRolePriorizar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de PractitionerRole Evento de Priorizar" ] ;
-       fhir:description [ fhir:v "Ejemplo de PractitionerRole Evento de Priorizar" ] ;
+       fhir:name [ fhir:v "PractitionerRole Evento de Priorizar" ] ;
+       fhir:description [ fhir:v "PractitionerRole Evento de Priorizar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
@@ -2653,8 +2638,8 @@
          fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de PractitionerRole Evento de Referencia" ] ;
-       fhir:description [ fhir:v "Ejemplo de PractitionerRole Evento de Referencia" ] ;
+       fhir:name [ fhir:v "PractitionerRole Referenciador Evento de Referenciada" ] ;
+       fhir:description [ fhir:v "PractitionerRole Referenciador Evento de Referenciada" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
@@ -2668,8 +2653,8 @@
          fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleRevisar> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRoleRevisar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de PractitionerRole Evento de Revisar" ] ;
-       fhir:description [ fhir:v "Ejemplo de PractitionerRole Evento de Revisar" ] ;
+       fhir:name [ fhir:v "PractitionerRole Evento de Revisar" ] ;
+       fhir:description [ fhir:v "PractitionerRole Evento de Revisar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
@@ -2683,8 +2668,8 @@
          fhir:link <http://minsal.cl/listaespera/PractitionerRole/EjemploPractitionerRoleTerminar> ;
          fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRoleTerminar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de PractitionerRole Evento de Terminar" ] ;
-       fhir:description [ fhir:v "Ejemplo de PractitionerRole Evento de Terminar" ] ;
+       fhir:name [ fhir:v "PractitionerRole Evento de Terminar" ] ;
+       fhir:description [ fhir:v "PractitionerRole Evento de Terminar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE>
@@ -2698,8 +2683,8 @@
          fhir:link <http://minsal.cl/listaespera/Practitioner/EjemploPractitionerTerminar> ;
          fhir:reference [ fhir:v "Practitioner/EjemploPractitionerTerminar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Practitioner Evento Terminar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Practitioner Evento Terminar" ] ;
+       fhir:name [ fhir:v "Practitioner Evento Terminar" ] ;
+       fhir:description [ fhir:v "Practitioner Evento Terminar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/PractitionerLE>
@@ -2713,8 +2698,8 @@
          fhir:link <http://minsal.cl/listaespera/QuestionnaireResponse/EjemploQuestionnaireResponse> ;
          fhir:reference [ fhir:v "QuestionnaireResponse/EjemploQuestionnaireResponse" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de QuestionnaireResponseEvento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de QuestionnaireResponseEvento de Inicio" ] ;
+       fhir:name [ fhir:v "QuestionnaireResponseEvento de Inicio" ] ;
+       fhir:description [ fhir:v "QuestionnaireResponseEvento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseInicioLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseInicioLE>
@@ -2728,8 +2713,8 @@
          fhir:link <http://minsal.cl/listaespera/QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE> ;
          fhir:reference [ fhir:v "QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de QuestionnaireResponseEvento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de QuestionnaireResponseEvento de Inicio" ] ;
+       fhir:name [ fhir:v "QuestionnaireResponse Evento de Atender" ] ;
+       fhir:description [ fhir:v "QuestionnaireResponse Evento de Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseAtenderLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/QuestionnaireResponseAtenderLE>
@@ -2743,23 +2728,8 @@
          fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequest> ;
          fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequest" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Service Request Evento de Inicio" ] ;
-       fhir:description [ fhir:v "Ejemplo de Service Request Evento de Inicio" ] ;
-       fhir:example [
-         fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ServiceRequest" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequest2> ;
-         fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequest2" ]
-       ] ;
-       fhir:name [ fhir:v "Ejemplo de Service Request 2" ] ;
-       fhir:description [ fhir:v "Ejemplo de Service Request 2" ] ;
+       fhir:name [ fhir:v "ServiceRequest Evento de Inicio" ] ;
+       fhir:description [ fhir:v "ServiceRequest Evento de Inicio" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
@@ -2773,8 +2743,8 @@
          fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequestAgendar> ;
          fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequestAgendar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Service Request Evento Agendar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Service Request Evento Agendar" ] ;
+       fhir:name [ fhir:v "ServiceRequest Evento Agendar" ] ;
+       fhir:description [ fhir:v "ServiceRequest Evento Agendar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
@@ -2788,8 +2758,8 @@
          fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequestAtender> ;
          fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequestAtender" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Service Request Evento Atender" ] ;
-       fhir:description [ fhir:v "Ejemplo de Service Request Evento Atender" ] ;
+       fhir:name [ fhir:v "ServiceRequest Evento Atender" ] ;
+       fhir:description [ fhir:v "ServiceRequest Evento Atender" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
@@ -2803,8 +2773,8 @@
          fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequestPriorizar> ;
          fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequestPriorizar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Service Request Evento Priorizar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Service Request Evento Priorizar" ] ;
+       fhir:name [ fhir:v "ServiceRequest Evento Priorizar" ] ;
+       fhir:description [ fhir:v "ServiceRequest Evento Priorizar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
@@ -2815,11 +2785,11 @@
          fhir:value [ fhir:v "ServiceRequest" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequestReferencia> ;
-         fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequestReferencia" ]
+         fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequestReferenciada> ;
+         fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequestReferenciada" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Service Request Evento de Referencia" ] ;
-       fhir:description [ fhir:v "Ejemplo de Service Request Evento de Referencia" ] ;
+       fhir:name [ fhir:v "ServiceRequest Evento de Referenciada" ] ;
+       fhir:description [ fhir:v "ServiceRequest Evento de Referenciada" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
@@ -2833,8 +2803,8 @@
          fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequestRevisar> ;
          fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequestRevisar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Service Request Evento Revisar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Service Request Evento Revisar" ] ;
+       fhir:name [ fhir:v "ServiceRequest Evento Revisar" ] ;
+       fhir:description [ fhir:v "ServiceRequest Evento Revisar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
@@ -2848,8 +2818,8 @@
          fhir:link <http://minsal.cl/listaespera/ServiceRequest/EjemploServiceRequestTerminar> ;
          fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequestTerminar" ]
        ] ;
-       fhir:name [ fhir:v "Ejemplo de Service Request Evento de Terminar" ] ;
-       fhir:description [ fhir:v "Ejemplo de Service Request Evento de Terminar" ] ;
+       fhir:name [ fhir:v "ServiceRequest Evento de Terminar" ] ;
+       fhir:description [ fhir:v "ServiceRequest Evento de Terminar" ] ;
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/ServiceRequestLE>
@@ -2878,6 +2848,14 @@
          ] ) ;
          fhir:name [ fhir:v "Actores.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Actores" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "Alcance.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "Alcance.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Alcance" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

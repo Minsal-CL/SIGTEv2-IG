@@ -1,6 +1,6 @@
 {
   "package": "fhir.minsal.ListaDeEspera",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -401,7 +401,7 @@
     },
     {
       "url": "http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE",
-      "title": "Previsión determinada  de aseguramiento de salud del paciente.",
+      "title": "Previsión determinada de aseguramiento de salud del paciente.",
       "types": [
         "CodeableConcept",
         "CodeableConcept",
@@ -550,12 +550,12 @@
     ],
     "Appointment": [
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE",
-        "title": "Appointment Inicio LE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentAgendarLE",
+        "title": "AppointmentAgendarLE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentLE",
-        "title": "AppointmentLE"
+        "url": "http://minsal.cl/listaespera/StructureDefinition/AppointmentInicioLE",
+        "title": "Appointment Inicio LE"
       }
     ],
     "Bundle": [
@@ -706,10 +706,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
-      "Patient.contact.name.family",
-      "Patient.name.family"
-    ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -747,9 +743,7 @@
     ],
     "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises": [
       "Bundle.entry.resource",
-      "Bundle.entry.resource.identifier.type",
-      "Patient",
-      "Patient.identifier.type"
+      "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/Contactado": [
       "Appointment",
@@ -866,11 +860,8 @@
       "Patient.telecom"
     ],
     "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/CodigoPaises": [
-      "Patient",
+      "Bundle.entry.resource.identifier.type",
       "Patient.identifier.type"
-    ],
-    "https://hl7chile.cl/fhir/ig/CoreCL/StructureDefinition/IdContacto": [
-      "Patient.contact"
     ]
   }
 }

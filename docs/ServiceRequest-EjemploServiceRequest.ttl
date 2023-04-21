@@ -16,13 +16,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Previsión determinada  de aseguramiento de salud del paciente.</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtStringFundamentoPriorizacion</b>: FundamentoPriorizacion</p><p><b>SospechaPatologiaGes</b>: true</p><p><b>ExtBool ResolutividadAPS</b>: true</p><p><b>ExtBool Alergia</b>: false</p><p><b>Origen Interconsulta</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>Estado Interconsulta Codigo</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtBool Cuidador</b>: true</p><p><b>Doc Acreditacion Cuidador</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>ExtBool PresentaDiscapacidad</b>: false</p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>encounter</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Encounter/enc1\">http://acme.com/ehr/fhir/Encounter/enc1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>reasonCode</b>: confirmacion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (motivoInterconsulta#1)</span></p><p><b>reasonReference</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Observation/obs1\">http://acme.com/ehr/fhir/Observation/obs1</a></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1\">http://acme.com/ehr/fhir/Appointment/app1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/QuestionnaireResponse/que1\">http://acme.com/ehr/fhir/QuestionnaireResponse/que1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/AllergyIntolerance/all1\">http://acme.com/ehr/fhir/AllergyIntolerance/all1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con1\">http://acme.com/ehr/fhir/Condition/con1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con2\">http://acme.com/ehr/fhir/Condition/con2</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con3\">http://acme.com/ehr/fhir/Condition/con3</a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Previsión determinada de aseguramiento de salud del paciente.</b>: FONASA Fondo Nacional de Salud. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPrevisionCodigo.html\">PrevisionCodigo</a>#1)</span></p><p><b>ExtStringFundamentoPriorizacion</b>: FundamentoPriorizacion</p><p><b>SospechaPatologiaGes</b>: true</p><p><b>ExtBool ResolutividadAPS</b>: true</p><p><b>ExtBool Alergia</b>: false</p><p><b>Origen Interconsulta</b>: APS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSinterconsulta.html\">Interconsulta</a>#1)</span></p><p><b>Estado Interconsulta Codigo</b>: En borrador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEstadoInterconsulta.html\">Estado Interconsulta</a>#1)</span></p><p><b>ExtBool Cuidador</b>: true</p><p><b>Doc Acreditacion Cuidador</b>: Documento que acredita calidad de cuidador/a del Programa Red Local de Apoyos y Cuidados (MIDESOF) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSDocAcreditacionCuidador.html\">Documento Acreditacion Cuidador</a>#1)</span></p><p><b>ExtBool PresentaDiscapacidad</b>: false</p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>encounter</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Encounter/enc1\">http://acme.com/ehr/fhir/Encounter/enc1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>reasonCode</b>: confirmacion <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (motivoInterconsulta#1)</span></p><p><b>reasonReference</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Observation/obs1\">http://acme.com/ehr/fhir/Observation/obs1</a></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Appointment/app1\">http://acme.com/ehr/fhir/Appointment/app1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/QuestionnaireResponse/que1\">http://acme.com/ehr/fhir/QuestionnaireResponse/que1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/AllergyIntolerance/all1\">http://acme.com/ehr/fhir/AllergyIntolerance/all1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con1\">http://acme.com/ehr/fhir/Condition/con1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con2\">http://acme.com/ehr/fhir/Condition/con2</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con3\">http://acme.com/ehr/fhir/Condition/con3</a></li></ul></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
+         fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSPrevisionCodigo"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "1" ]
        ] )
      ]
@@ -43,6 +44,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
+         fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSinterconsulta"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "1" ]
        ] )
      ]
@@ -51,6 +53,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
+         fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSEstadoInterconsulta"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "1" ]
        ] )
      ]
@@ -62,6 +65,7 @@
      fhir:value [
        a fhir:CodeableConcept ;
        fhir:coding ( [
+         fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSDocAcreditacionCuidador"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "1" ]
        ] )
      ]

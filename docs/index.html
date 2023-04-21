@@ -67,7 +67,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Proyecto Listas de Espera MINSAL CHILE</span>
             <br/>
-            <span style="display:inline-block;">0.1.1 - ci-build
+            <span style="display:inline-block;">0.1.2 - ci-build
 
 
             </span>
@@ -98,7 +98,10 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefactos</a>
+    <a href="Alcance.html">Alcance</a>
+  </li>
+  <li>
+    <a href="Objetivos.html">Objetivos</a>
   </li>
   <li>
     <a href="Actores.html">Actores</a>
@@ -107,13 +110,13 @@
     <a href="Casosdeuso.html">Casos de Uso</a>
   </li>
   <li>
-    <a href="Objetivos.html">Objetivos</a>
-  </li>
-  <li>
     <a href="Operaciones.html">Operaciones</a>
   </li>
   <li>
     <a href="Terminologias.html">Terminologias</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificaciones Técnicas
@@ -181,7 +184,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.1). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.2). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -196,7 +199,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.1.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera|0.1.1"/></span>
+      <span class="copy-text">0.1.2<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera|0.1.2"/></span>
       </td>
     </tr>
 
@@ -212,7 +215,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-03-11
+            as of 2023-04-21
           
         
       </td>
@@ -239,6 +242,40 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
+<h2 id="descripción">Descripción</h2>
+<p>Primera consulta de especialidad médica no GES derivada desde Atención Primaria a nivel secundario</p>
+
+<h2 id="qué-hacemos">¿Qué hacemos?</h2>
+<p>Una representación de los puntos de intercambio de datos entre sistemas de información en salud de los eventos críticos de los procesos clínico administrativos ya existentes. Bajo el estándar de Interoperabilidad FHIR</p>
+
+<h2 id="interoperabilidad">Interoperabilidad</h2>
+<p>La interoperabilidad es la capacidad de diferentes sistemas de tecnología de la información, aplicaciones de software y redes para comunicar e intercambiar datos con exactitud, efectividad y consistencia, y para utilizar la información que se ha intercambiado.</p>
+
+<h2 id="estándar-fhir-recursos-de-interoperabilidad-rápida-de-salud">Estándar FHIR (Recursos de interoperabilidad rápida de salud)</h2>
+<p>Es un estándar de interoperabilidad sintáctica en salud para representar y transmitir información médica mediante APIs.</p>
+
+<p>Un recurso FHIR puede contener datos sobre un paciente, un dispositivo, una observación del médico que atiende al paciente, diagnósticos, recomendaciones terapéuticas y mucho más.</p>
+
+<h2 id="plataforma-de-interoperabilidad-sintáctica">Plataforma de Interoperabilidad Sintáctica</h2>
+<ul>
+  <li>Definición CMBD</li>
+  <li>Definición eventos</li>
+  <li>Guía de Implementación</li>
+  <li>Configuración Servidor</li>
+</ul>
+
+<h2 id="eventos">Eventos</h2>
+<p><br /></p>
+<div align="center">
+  <img style="border: 1px solid; color: black;" src="Index-eventos.png" /> 
+  <p></p>
+</div>
+<p><br /></p>
+
+<h2 id="guía-de-implementación">Guía de Implementación</h2>
+<p>Define los requerimientos mínimos para comunicarse con la plataforma de Interoperabilidad y está compuesta por instrucciones que se deben seguir para implementar el estándar FHIR en undeterminado ámbito.</p>
+
+<p>Es una herramienta para los implementadores, pero puede ser entendida por todos los usuarios de la plataforma.</p>
 
 
 
@@ -265,7 +302,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Mar 11, 2023 07:17-0300">2023-03-11</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 21, 2023 12:02-0400">2023-04-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
