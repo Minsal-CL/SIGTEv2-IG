@@ -12,6 +12,7 @@ Description: "ServiceRequest Evento de Inicio"
 * intent = #proposal
 * extension[PrevisionCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE"
 * extension[PrevisionCodigo].valueCodeableConcept.coding.code = #1
+* extension[PrevisionCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPrevisionCodigo"
 * extension[FundamentoPriorizacion].url = "http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion"
 * extension[FundamentoPriorizacion].valueString = "FundamentoPriorizacion"
 * extension[SospechaGES].url = "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes"
@@ -22,15 +23,15 @@ Description: "ServiceRequest Evento de Inicio"
 * extension[Alergia].valueBoolean = false
 * extension[OrigenInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/OrigenInterconsulta"
 * extension[OrigenInterconsulta].valueCodeableConcept.coding.code = #1
-//* extension[OrigenInterconsulta].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSinterconsulta"
+* extension[OrigenInterconsulta].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSinterconsulta"
 * extension[EstadoInterconsultaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #1
-//* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = http://minsal.cl/listaespera/ValueSet/VSEstadoInterconsulta
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEstadoInterconsulta"
 * extension[Cuidador].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolCuidador"
 * extension[Cuidador].valueBoolean = true
 * extension[DocAcreditacionCuidadorCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE"
 * extension[DocAcreditacionCuidadorCodigo].valueCodeableConcept.coding.code = #1
-//* extension[DocAcreditacionCuidadorCodigo].valueCodeableConcept.coding.system = http://minsal.cl/listaespera/ValueSet/VSDocAcreditacionCuidador
+* extension[DocAcreditacionCuidadorCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDocAcreditacionCuidador"
 * extension[PresentaDiscapacidad].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPresentaDiscapacidad"
 * extension[PresentaDiscapacidad].valueBoolean = false
 //* extension[PersonaMayor].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor"

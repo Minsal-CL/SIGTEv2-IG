@@ -6,7 +6,8 @@ Description: "PractitionerRole Evento de Inicio"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
-* code = #iniciador
+* code.coding.code = #iniciador
+* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
 Instance: EjemploPractitionerRoleReferenciadorMHREFERENCIADA

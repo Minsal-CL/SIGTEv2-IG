@@ -90,8 +90,8 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 
 
 * supportingInfo 0..* MS 
-* supportingInfo ^slicing.discriminator.type = #value
-* supportingInfo ^slicing.discriminator.path = "use"
+* supportingInfo ^slicing.discriminator.type = #profile
+* supportingInfo ^slicing.discriminator.path = "resolve()"
 * supportingInfo ^slicing.rules = #open
 * supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
 * supportingInfo contains cita 0..1 MS and paciente 0..1 MS and Anamnesis 0..1 MS and DiagnosticoSospecha 0..1 MS 

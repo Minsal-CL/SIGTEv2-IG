@@ -12,8 +12,8 @@ Description: "Bundle LE recurso utilizado para transportar todos los datos del m
 * type = #message
 * timestamp MS
 
-* entry ^slicing.discriminator.type = #type
-* entry ^slicing.discriminator.path = "profile"
+* entry ^slicing.discriminator.type = #profile
+* entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
 * entry 11..14 MS
 * entry contains messageheader 1..1 

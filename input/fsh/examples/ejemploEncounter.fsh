@@ -9,6 +9,7 @@ Description: "Encounter Evento de Inicio"
 * status = #finished
 * appointment = Reference(http://acme.com/ehr/fhir/Appointment/app1)
 * class.code = #AMB
+* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 Instance: EjemploEncounterAtender

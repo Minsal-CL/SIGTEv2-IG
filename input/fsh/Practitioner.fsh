@@ -115,9 +115,9 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification[Cert].identifier.value ^definition = "Valor del tipo de calificación, en este caso cert"
 * qualification[Cert].code 1..1 MS
   * coding 0..1 MS
-    * code 1..1 MS
+    * code 0..1 MS
     * system 0..1 MS
-    * display 0..1 MS
+    * display 1..1 MS
   * text 0..1 MS
 * qualification[Cert].code.text ^short = "Texto libre del Título o Certificado Profesional especificado"
 * qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
