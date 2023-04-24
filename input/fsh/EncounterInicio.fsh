@@ -12,6 +12,8 @@ Description: "Encounter Inicio LE recurso que se utiliza para representar el enc
 
 * identifier 1..1 MS
   * value 1..1 MS
+  * type 1..1 MS
+  * type = #FILL
 
 * diagnosis.condition only Reference(ConditionInicioDiagnosticoSospechaLE)
 

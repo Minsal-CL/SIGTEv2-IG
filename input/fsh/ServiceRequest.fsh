@@ -6,7 +6,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
-
+* identifier 0..1 MS
 * identifier.type 1..1 MS
   * coding 1..1 MS
     * code 1..1 MS
@@ -55,7 +55,8 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * authoredOn 0..1 MS
 * authoredOn ^short = "Fecha Asigna la Interconsulta"
 
-* reasonCode 0..1 MS
+* reasonCode 0..1 MS 
+* reasonCode from VSDerivadoParaCodigo
 
 * priority 0..1 MS
 * priority ^short = "Pertinencia Interconsulta"

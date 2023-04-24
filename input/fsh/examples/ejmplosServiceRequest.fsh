@@ -4,8 +4,7 @@ Usage: #example
 Title: "ServiceRequest Evento de Inicio"
 Description: "ServiceRequest Evento de Inicio"
 
-* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.value = "1"
+
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
 * priority = #urgent
@@ -39,7 +38,8 @@ Description: "ServiceRequest Evento de Inicio"
 * subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * reasonReference = Reference(http://acme.com/ehr/fhir/Observation/obs1)
 * encounter = Reference(http://acme.com/ehr/fhir/Encounter/enc1)
-* reasonCode = http://terminology.cens.cl/codigosDeis/motivoInterconsulta#1 "confirmacion"
+* reasonCode.coding.code = #1
+* reasonCode.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo"
 * supportingInfo[0] = Reference(http://acme.com/ehr/fhir/Appointment/app1)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/QuestionnaireResponse/que1)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/AllergyIntolerance/all1)

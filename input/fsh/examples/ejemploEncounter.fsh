@@ -4,7 +4,7 @@ Usage: #example
 Title: "Encounter Evento de Inicio"
 Description: "Encounter Evento de Inicio"
 
-* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdConsultaAPS
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#FILL
 * identifier.value = "1"
 * status = #finished
 * appointment = Reference(http://acme.com/ehr/fhir/Appointment/app1)
