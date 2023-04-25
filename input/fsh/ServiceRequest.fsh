@@ -25,6 +25,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 
 * extension contains MotivoCierreInterconsulta named MotivoCierreInterconsulta 0..1 MS
 * extension contains ExtBoolRequiereExamen named RequiereExamen 0..1 MS
+* extension contains ExtBoolAtencionPreferente named AtencionPreferente 0..1 MS
 
 // ServiceRequest Inicio
 * extension contains SospechaPatologiaGes named SospechaGES 0..1 MS

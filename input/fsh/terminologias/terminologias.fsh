@@ -334,7 +334,8 @@ Description: "Codigos definidos para la identificación de países segun norma I
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 * ^copyright = "All content on ISO Online is copyright protected. The copyright is owned by ISO. Any use of the content, including copying of it in whole or in part, for example to another Internet site, is prohibited and would require written permission from ISO."
 
-* include codes from system urn:iso:std:iso:3166
+* include codes from system urn:iso:std:iso:3166 where code regex "[0-9]{3}"
+
 
 
 ValueSet: VSEstadoInterconsulta

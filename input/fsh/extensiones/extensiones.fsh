@@ -353,3 +353,9 @@ Description: "SubEspecialidad Médica Destino Código"
   * system 0..1 MS
   * display 0..1 MS
 * valueCodeableConcept 1..1 MS
+
+Extension: ExtBoolAtencionPreferente
+Id: ExtBoolAtencionPreferente
+Title:       "ExtBool Atención Preferente"
+Description: "ExtBool ¿Hace uso de atención preferente?"
+* value[x] only boolean

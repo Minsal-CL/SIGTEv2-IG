@@ -7,9 +7,9 @@ Description: "Practitioner Evento de Inicio"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
-* identifier[OtrosID].use = #secondary
-* identifier[OtrosID].value = "2134"
+* identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
+* identifier[RNPI].use = #secondary
+* identifier[RNPI].value = "2134"
 
 //* gender = #male
 //* birthDate = "1974-01-22"
@@ -29,9 +29,9 @@ Description: "Practitioner Referenciador Evento de Referenciada"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
-* identifier[OtrosID].use = #secondary
-* identifier[OtrosID].value = "2134"
+* identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
+* identifier[RNPI].use = #secondary
+* identifier[RNPI].value = "2134"
 * qualification.identifier.value = "cert"
 * qualification.code.coding.system = "http://terminology.cens.cl/CodeSystem/certMedicos"
 * qualification.code.coding.display = "Medico Cirujano"
@@ -48,9 +48,9 @@ Description: "Practitioner Evento Terminar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
-* identifier[OtrosID].use = #secondary
-* identifier[OtrosID].value = "2134"
+* identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
+* identifier[RNPI].use = #secondary
+* identifier[RNPI].value = "2134"
 /*FIN PARA BUNDLE TERMINAR*/
 
 /*EJEMPLOS PARA BUNDLE REVISAR*/
@@ -63,9 +63,9 @@ Description: "Practitioner Evento Revisar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
-* identifier[OtrosID].use = #secondary
-* identifier[OtrosID].value = "2134"
+* identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
+* identifier[RNPI].use = #secondary
+* identifier[RNPI].value = "2134"
 * qualification[Cert].identifier.value = "cert"
 * qualification[Cert].code.coding.code = #01
 * qualification[Cert].code.coding.system = "http://terminology.cens.cl"
@@ -82,9 +82,9 @@ Description: "Practitioner Evento de Atender"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
-* identifier[OtrosID].use = #secondary
-* identifier[OtrosID].value = "2134"
+* identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
+* identifier[RNPI].use = #secondary
+* identifier[RNPI].value = "2134"
 * qualification[Cert].identifier.value = "cert"
 * qualification[Cert].code.coding.code = #01
 * qualification[Cert].code.coding.system = "http://terminology.cens.cl"
@@ -101,9 +101,9 @@ Description: "Practitioner Atendedor Evento de Agendar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
-* identifier[OtrosID].use = #secondary
-* identifier[OtrosID].value = "2134"
+* identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
+* identifier[RNPI].use = #secondary
+* identifier[RNPI].value = "2134"
 * qualification[Cert].identifier.value = "cert"
 * qualification[Cert].code.coding.code = #01
 * qualification[Cert].code.coding.system = "http://terminology.cens.cl"
@@ -120,9 +120,9 @@ Description: "Practitioner Agendador Evento de Agendar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
-* identifier[OtrosID].use = #secondary
-* identifier[OtrosID].value = "2134"
+* identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
+* identifier[RNPI].use = #secondary
+* identifier[RNPI].value = "2134"
 * qualification[Cert].identifier.value = "cert"
 * qualification[Cert].code.coding.code = #01
 * qualification[Cert].code.coding.system = "http://terminology.cens.cl"
@@ -139,9 +139,9 @@ Description: "Practitioner Evento de Priorizar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[OtrosID].type = http://terminology.cens.cl/CodeSystem/listaespera#ValorRNPI
-* identifier[OtrosID].use = #secondary
-* identifier[OtrosID].value = "2134"
+* identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
+* identifier[RNPI].use = #secondary
+* identifier[RNPI].value = "2134"
 * qualification[Cert].identifier.value = "cert"
 * qualification[Cert].code.coding.code = #01
 * qualification[Cert].code.coding.system = "http://terminology.cens.cl"

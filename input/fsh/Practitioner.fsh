@@ -18,7 +18,7 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * identifier ^slicing.discriminator.path = "use"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Este slice permite agregar una identificacion basada RUN y/o basada en el RNPI"
-* identifier contains RUN 1..1 MS and OtrosID 0..* MS
+* identifier contains RUN 1..1 MS and RNPI 0..1 MS
 
 * identifier[RUN]
   * use 1..1 MS
@@ -35,21 +35,21 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * identifier[RUN].value ^short = "Número de RUN"
 * identifier[RUN].value ^definition = "Valor del RUN en la Cédula de Identidad entregada por el Registro Civil, en formato sin puntos y con guión para diferencia el dígito verificador"
 
-* identifier[OtrosID]
+* identifier[RNPI]
   * use 1..1 MS
   * system 0..1 MS
   * value 1..1 MS
-* identifier[OtrosID] ^short = "Para otros identificadores como: RNPI, Pasaporte o el que el notificador estime conveniente" 
-* identifier[OtrosID] ^definition = "Para otros identificadores como: RNPI, Pasaporte o el que el notificador estime conveniente"
-* identifier[OtrosID].system ^short = "endPoint para validar los códigos"
-* identifier[OtrosID].system ^definition = "Define la url del endPoint a la cual apunta la API"
-* identifier[OtrosID].system ^comment = "Se define el endPoint al cual debe apuntar a la API"
-* identifier[OtrosID].use ^short = "Se define el uso de este identificador"
-* identifier[OtrosID].use ^definition = "Se definirá este uso siempre como \"secondary\" debido a que cualquier RNPI sera un identificador secundario y alternativo, ya que el oficial es el RUN"
-* identifier[OtrosID].use = #secondary
-* identifier[OtrosID].value ^short = "Valor identificador"
-* identifier[OtrosID].value ^definition = "Valor identificador"
- 
+* identifier[RNPI] ^short = "Valor de RNPI" 
+* identifier[RNPI] ^definition = "Valor de RNPI"
+* identifier[RNPI].system ^short = "endPoint para validar los códigos"
+* identifier[RNPI].system ^definition = "Define la url del endPoint a la cual apunta la API"
+* identifier[RNPI].system ^comment = "Se define el endPoint al cual debe apuntar a la API"
+* identifier[RNPI].use ^short = "Se define el uso de este identificador"
+* identifier[RNPI].use ^definition = "RNPI sera un identificador secundario y alternativo, ya que el oficial es el RUN"
+* identifier[RNPI].use = #secondary
+* identifier[RNPI].value ^short = "Valor identificador"
+* identifier[RNPI].value ^definition = "Valor identificador"
+* identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 
 * active MS
 
