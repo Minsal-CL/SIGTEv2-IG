@@ -6,7 +6,7 @@ Description: "MesaggeHeader Evento de Inicio"
 
 
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
-* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#inicio
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#iniciar
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
@@ -21,7 +21,7 @@ Description: "MesaggeHeader Evento de Referencia"
 
 
 * meta.lastUpdated = "2023-02-13T14:12:10Z"
-* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#referenciada
+* eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#referenciar
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/referencia)

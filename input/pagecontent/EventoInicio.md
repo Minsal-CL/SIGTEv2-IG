@@ -5,7 +5,7 @@ El evento INICIO tiene asociado los siguientes códigos de evento:
 
 | Código | Evento| Descripción | Respuesta |
 |--------|----|-----|---|
-| inicio | Inicio | Este evento es el inicial, permite registrar información asociada a la interconsulta. Puede ser iniciado por un médico de APS, Servicio de Urgencia de nivel secundario, médico nivel secundario. Cada Interconsulta posee un número único nacional, entregado desde nivel central. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido creada |
+| iniciar | Iniciar | Este evento es el inicial, permite registrar información asociada a la interconsulta. Puede ser iniciado por un médico de APS, Servicio de Urgencia de nivel secundario, médico nivel secundario. Cada Interconsulta posee un número único nacional, entregado desde nivel central. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
@@ -63,7 +63,7 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 
 * Debe incluir el recurso [BundleInicioLE](StructureDefinition-BundleInicioLE.html)
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
-* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=inicio** 
+* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=iniciar** 
 * Debe incluir el recurso [PatientLE](StructureDefinition-PatientLE.html)
 * Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html)
 * Debe incluir el recurso [EncounterInicioLE](StructureDefinition-EncounterInicioLE.html)

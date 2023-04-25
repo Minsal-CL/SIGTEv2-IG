@@ -864,8 +864,8 @@ Description: "CodeSystem con códigos definidos para representar cada evento en 
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #inicio "Inicio"
-* #referenciada "Referenciada"
+* #iniciar "Iniciar"
+* #referenciar "Referenciar"
 * #revisar "Revisar"
 * #priorizar "Priorizar"
 * #agendar "Agendar"

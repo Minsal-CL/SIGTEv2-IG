@@ -4,8 +4,8 @@
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| inicio | Inicio | Este evento es el inicial, permite registrar información asociada a la interconsulta. Puede ser iniciado por un médico de APS, Servicio de Urgencia de nivel secundario, médico nivel secundario. Cada Interconsulta posee un número único nacional, entregado desde nivel central. | La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido creada |
-| referenciada | Referenciada | Este evento permite registrar información asociada a una derivación, la cual puede ser: APS a Nivel Secundario, Nivel Secundario a APS, Nivel Secundario a Hospital Digital, etc. El detalle de la derivación es registrado en el campo MotivoDerivación. | La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido referenciada |
+| iniciar | Iniciar| Este evento es el inicial, permite registrar información asociada a la interconsulta. Puede ser iniciado por un médico de APS, Servicio de Urgencia de nivel secundario, médico nivel secundario. Cada Interconsulta posee un número único nacional, entregado desde nivel central. | La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido creada |
+| referenciar | Referenciar | Este evento permite registrar información asociada a una derivación, la cual puede ser: APS a Nivel Secundario, Nivel Secundario a APS, Nivel Secundario a Hospital Digital, etc. El detalle de la derivación es registrado en el campo MotivoDerivación. | La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido referenciada |
 | revisar | Revisar | Este evento registra la información asociada a la revisión de pertinencia del gestor de casos del nivel secundario. | La respuesta debe indicar si errores hay o indicar que la interconsulta ha sido revisada |
 | priorizar | Priorizar | Este evento registra la información asociada a la asignación de priorización del gestor de casos. | La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido priorizada |
 | agendar | Agendar | Este evento permite registrar información asociada a la programación de la cita con el especialista.| La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido agendada con el paciente |
@@ -15,8 +15,8 @@
 
 ## Definicion de Eventos
 
-* [Evento Inicio](EventoInicio.html)
-* [Evento Referenciada](EventoReferenciada.html)
+* [Evento Iniciar](EventoInicio.html)
+* [Evento Referenciar](EventoReferenciada.html)
 * [Evento Revisar](EventoRevisar.html)
 * [Evento Priorizar](EventoPriorizar.html)
 * [Evento Agendar](EventoAgendar.html)

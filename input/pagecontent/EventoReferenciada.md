@@ -5,7 +5,7 @@ El evento REFERENCIADA tiene asociado los siguientes códigos de evento:
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| referenciada | Referenciada | Este evento permite registrar información asociada a una derivación, la cual puede ser: APS a Nivel Secundario, Nivel Secundario a APS, Nivel Secundario a Hospital Digital, etc. El detalle de la derivación es registrado en el campo MotivoDerivación. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido referenciada |
+| referenciar | Referenciar | Este evento permite registrar información asociada a una derivación, la cual puede ser: APS a Nivel Secundario, Nivel Secundario a APS, Nivel Secundario a Hospital Digital, etc. El detalle de la derivación es registrado en el campo MotivoDerivación. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido referenciada |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
@@ -55,7 +55,7 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 
 * Debe incluir el recurso [BundleReferenciaLE](StructureDefinition-BundleReferenciaLE.html)
 * Debe incluir el recurso [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html) con los valores de **ServiceRequest.status=draft** **ServiceRequest.intent=proposal** 
-* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=referenciada** 
+* Debe incluir el recurso [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html) con el valor **MessageHeader.evenCoding.code=referenciar** 
 * Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
 * Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html)
 
