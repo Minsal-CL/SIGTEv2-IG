@@ -4,7 +4,7 @@ Usage: #example
 Title: "Condition Diagnóstico Sospecha Evento de Inicio"
 Description: "Condition Diagnóstico Sospecha Evento de Inicio"
 
-* code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#2
+* code = http://diagnosticos.cl/uno#1 "Diagnostico1"
 * code.text = "DiagnosticoTextoLibreSospecha"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 * category.text = "diagnostico"
@@ -45,6 +45,7 @@ Description: "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender"
 * verificationStatus.coding.code = #provisional
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 * code.coding.code = #1
+* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSHipotesisDiagnosticaCodigo"
 
 
 Instance: EjemploCondicionAtenderDiagnosticoSospechaLE
@@ -53,8 +54,8 @@ Usage: #example
 Title: "Condicion Atender Diagnostico Sospecha Evento de Atender"
 Description: "Condicion Atender Diagnostico Sospecha Evento de Atender"
 
-* code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#1
-* code.text = "CIE11"
+* code = http://diagnosticos.cl/uno#1 "Diagnostico1"
+* code.text = "Diagnostico1"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 * verificationStatus.coding.code = #unconfirmed
@@ -65,8 +66,8 @@ Usage: #example
 Title: "Condicion Atender Diagnostico Confirmacion Evento de Atender"
 Description: "Condicion Atender Diagnostico Confirmacion Evento de Atender"
 
-* code = http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica#1
-* code.text = "CIE11"
+* code = http://diagnosticos.cl/uno#1 "Diagnostico1"
+* code.text = "Diagnostico1"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 * verificationStatus.coding.code = #confirmed

@@ -18,6 +18,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 
 // OBLIGATORIOS POR ESTANDAR
 * status MS
+* status = #draft
 * intent MS
 * subject MS
 
@@ -60,7 +61,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * reasonCode from VSDerivadoParaCodigo
 
 * priority 0..1 MS
-* priority ^short = "Pertinencia Interconsulta"
+* priority ^short = "Pertinencia Interconsulta routine=normal | urgent=urgente | asap=prioritario"
 
 * locationCode 0..1 MS
   * coding 1..1 MS

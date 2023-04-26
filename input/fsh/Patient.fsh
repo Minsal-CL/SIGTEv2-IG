@@ -12,7 +12,7 @@ Description: "Paciente LE recurso que se utiliza para representar la informació
 * extension contains IdentidadGenero named GeneroCodigo 1..1 MS
 //* extension contains http://hl7.org/fhir/StructureDefinition/patient-genderIdentity named GeneroCodigo 1..1 MS
 
-* extension contains PuebloIndigena named PuebloIndigena 0..1 MS
+* extension contains PuebloIndigena named PuebloIndigena 1..1 MS
 * extension contains ExtBoolAfrodescendiente named Afrodescendiente 1..1 MS
 
 * name ^slicing.discriminator.type = #value

@@ -4,6 +4,11 @@ Usage: #example
 Title: "Patient Lista de Espera"
 Description: "Patient Lista de Espera"
 
+* extension[PuebloIndigena].url = "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena"
+* extension[PuebloIndigena].extension[PuebloIndigenaCodigo].valueCodeableConcept.coding.code = #1
+* extension[PuebloIndigena].extension[PuebloIndigenaCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPuebloIndigena"
+* extension[PuebloIndigena].extension[PuebloIndigenaCodigo].valueCodeableConcept.text = "Mapuche"
+* extension[PuebloIndigena].extension[PuebloIndigenaPertenencia].valueBoolean = true
 * extension[CodigoPaises].url = "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises"
 * extension[CodigoPaises].valueCodeableConcept.coding.code = #AD
 * extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"

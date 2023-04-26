@@ -40,13 +40,13 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * period.start 1..1 MS
 
 * class from VSTipoConsulta
-
+* basedOn 1..1 MS
+* basedOn only Reference(ServiceRequestLE)
 /*
 * extension contains ExtBoolPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
 * extension contains ExtStringMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
 
-* basedOn 1..1 MS
-* basedOn only Reference(ServiceRequestLE)
+
 
 
 

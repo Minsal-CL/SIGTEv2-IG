@@ -176,7 +176,7 @@ Id: PuebloIndigena
 Title: "Etnia a la cual pertenece"
 Description: "Etnia a la cual pertenece"
 * extension contains
-	PuebloIndigenaCodigo 1..* MS and
+	PuebloIndigenaCodigo 0..* MS and
 	PuebloIndigenaPertenencia 1..1 MS
 * url MS
 
