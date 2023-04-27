@@ -4,7 +4,7 @@ Usage: #example
 Title: "Condition Diagnóstico Sospecha Evento de Inicio"
 Description: "Condition Diagnóstico Sospecha Evento de Inicio"
 
-* code = http://diagnosticos.cl/uno#1 "Diagnostico1"
+* code = #1 "Diagnostico1"
 * code.text = "DiagnosticoTextoLibreSospecha"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 * category.text = "diagnostico"

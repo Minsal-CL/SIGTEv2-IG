@@ -28,7 +28,7 @@ Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnósti
 
 * code 1..1 MS
   * coding 1..1 MS
-    * system 1..1 MS
+    * system 0..1 MS
     * code 1..1 MS
     * display 1..1 MS
   * text 0..1 MS

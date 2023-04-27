@@ -18,7 +18,8 @@ Description: "PractitionerRole Referenciador Evento de Referenciada"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/referencia)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAgendador)
-* code = #referenciador
+* code.coding.code = #referenciador
+* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
@@ -29,7 +30,8 @@ Title: "PractitionerRole Agendador Evento de Referenciada"
 Description: "PractitionerRole Agendador Evento de Referenciada"
 
 * organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAtendedor)
-* code = #atendedor
+* code.coding.code = #atendedor
+* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLOS PARA BUNDLE TERMINAR*/

@@ -69,10 +69,10 @@ Description: "Bundle Evento de Referencia"
 * entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/referencia"
 * entry[servicerequest].resource = EjemploServiceRequestReferenciada
 
-* entry[practitionerRole][0].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor"
+* entry[practitionerRole][0].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador"
 * entry[practitionerRole][0].resource = EjemploPractitionerRoleAgendadorSRREFERENCIADA
 
-* entry[practitionerRole][1].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador"
+* entry[practitionerRole][1].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor"
 * entry[practitionerRole][1].resource = EjemploPractitionerRoleReferenciadorMHREFERENCIADA
 
 * entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/referencia"
