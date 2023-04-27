@@ -5,14 +5,14 @@ Title: "Condicion Atender Diagnostico Confirmacion LE"
 Description: """
 Condicion Atender Diagnostico Confirmacion LE
 
-* Para el caso de uso de terminología propia el elemento **code** quedaria de la siguiente forma:
+* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:
   ```
   "code": {
     "coding": [
       {
         "system": "url fuente",
-        "code": "codigo que representa el diagnostico",
-        "display": "texto que representa el codigo usado"
+        "code": "código que representa el diagnóstico",
+        "display": "texto que representa el código usado"
       }
     ],
     "text": "representación en texto del diagnóstico"

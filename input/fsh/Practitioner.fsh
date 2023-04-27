@@ -24,6 +24,7 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
   * use 1..1 MS
   * system 0..1 MS
   * value 1..1 MS
+* identifier[RUN].extension contains DigitoVerificador named DigitoVerificador 1..1 MS
 * identifier[RUN] ^short = "Identificador destinado a almacenar el número de RUN" 
 * identifier[RUN] ^definition = "Corresponde al identificador (RUN) otorgado el Registro Civil de Chile"
 * identifier[RUN].use ^short = "Se define el uso de este identificador"
@@ -104,35 +105,35 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification ^slicing.description = "Debido a que los profesisonales de la salud pueden tener titulo y ademas poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos. El de Certificados tiene identifier.value el valor cert y el slice de especialidad el valor esp"
 
 
-* qualification contains Cert 0..* MS and Esp 0..* MS and SubEsp 0..* MS
+* qualification contains Tit 0..* MS and Esp 0..* MS and SubEsp 0..* MS
 
-* qualification[Cert] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
-* qualification[Cert] ^definition = "Listado de Títulos o Cetificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
-* qualification[Cert].identifier 1..1 MS
-* qualification[Cert].identifier.value 1..1 MS
-* qualification[Cert].identifier.value = "cert"
-* qualification[Cert].identifier.value ^short = "Valor del tipo de calificación, en este caso cert"
-* qualification[Cert].identifier.value ^definition = "Valor del tipo de calificación, en este caso cert"
-* qualification[Cert].code 1..1 MS
-  * coding 0..1 MS
-    * code 0..1 MS
-    * system 0..1 MS
-    * display 1..1 MS
+* qualification[Tit] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
+* qualification[Tit] ^definition = "Listado de Títulos o Cetificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
+* qualification[Tit].identifier 1..1 MS
+* qualification[Tit].identifier.value 1..1 MS
+* qualification[Tit].identifier.value = "tit"
+* qualification[Tit].identifier.value ^short = "Valor del tipo de calificación, en este caso cert"
+* qualification[Tit].identifier.value ^definition = "Valor del tipo de calificación, en este caso cert"
+* qualification[Tit].code 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * system 1..1 MS
+    * display 0..1 MS
   * text 0..1 MS
-* qualification[Cert].code.text ^short = "Texto libre del Título o Certificado Profesional especificado"
-* qualification[Cert].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
-* qualification[Cert].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  \"https://api.minsal.cl/v1/catalogos/profesiones/\""
-* qualification[Cert].code.coding.display ^short = "Nombre del titulo o certificado agregado"
-* qualification[Cert].code.coding.display ^definition = "Nombre del titulo o certificado agregado. Agregar un poco mas de informacion acerca del item que se esta agregando."
+* qualification[Tit].code.text ^short = "Texto libre del Título o Certificado Profesional especificado"
+* qualification[Tit].code.coding.system ^short = "El sistema sobre el cual se verificarán los titulos o certificados de los Prestadores"
+* qualification[Tit].code.coding.system ^definition = "La url sobre la cual se encuentra el endPoint para el acceso a  los códigos de titulos y/o certificados de prestadores. El perfil especifica que se debe usar la siguiente url:  \"https://api.minsal.cl/v1/catalogos/profesiones/\""
+* qualification[Tit].code.coding.display ^short = "Nombre del titulo o certificado agregado"
+* qualification[Tit].code.coding.display ^definition = "Nombre del titulo o certificado agregado. Agregar un poco mas de informacion acerca del item que se esta agregando."
 //* qualification[Cert].code.coding.code MS
-* qualification[Cert].code.coding.code ^short = "Nombre del titulo o certificado agregado"
-* qualification[Cert].code.coding.code ^definition = "Nombre del titulo o certificado agregado. Agregar un poco mas de informacion acerca del item que se esta agregando."
-* qualification[Cert].issuer MS
-* qualification[Cert].issuer.display MS
-* qualification[Cert].issuer ^short = "Organizacion que entrega el certificado o título"
-* qualification[Cert].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
-* qualification[Cert].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
-
+* qualification[Tit].code.coding.code ^short = "Nombre del titulo o certificado agregado"
+* qualification[Tit].code.coding.code ^definition = "Nombre del titulo o certificado agregado. Agregar un poco mas de informacion acerca del item que se esta agregando."
+* qualification[Tit].issuer MS
+* qualification[Tit].issuer.display MS
+* qualification[Tit].issuer ^short = "Organizacion que entrega el certificado o título"
+* qualification[Tit].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
+* qualification[Tit].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
+* qualification[Tit].code from VSTituloProfesional
 
 //especialidades
 * qualification[Esp] ^short = "Especificación de la o las  especialidades que posea el prestador"
@@ -143,11 +144,11 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification[Esp].identifier.value ^short = "Valor del tipo de calificación, en este caso esp"
 * qualification[Esp].identifier.value ^definition = "Valor del tipo de calificación, en este caso esp"
 * qualification[Esp].code 1..1 MS
-  * coding 0..1 MS
+  * coding 1..1 MS
     * code 1..1 MS
-    * system 0..1 MS
-    * display 1..1 MS
-  * text 1..1 MS
+    * system 1..1 MS
+    * display 0..1 MS
+  * text 0..1 MS
 * qualification[Esp].code.coding.system MS
 * qualification[Esp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
 * qualification[Esp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores. El perfil especifica  \"https://api.minsal.cl/v1/catalogos/tiposEspecialidadMedica/\""
@@ -159,6 +160,7 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification[Esp].issuer ^short = "Organizacion que entrega el certificado o título"
 * qualification[Esp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
 * qualification[Esp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
+* qualification[Esp].code from VSEspecialidadMed
 
 //subespecialidades
 * qualification[SubEsp] ^short = "Especificación de la o las subespecialidades que posea el prestador"
@@ -169,11 +171,11 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification[SubEsp].identifier.value ^short = "Valor del tipo de calificación, en este caso subesp"
 * qualification[SubEsp].identifier.value ^definition = "Valor del tipo de calificación, en este caso subesp"
 * qualification[SubEsp].code 1..1 MS
-  * coding 0..1 MS
+  * coding 1..1 MS
     * code 1..1 MS
-    * system 0..1 MS
-    * display 1..1 MS
-  * text 1..1 MS
+    * system 1..1 MS
+    * display 0..1 MS
+  * text 0..1 MS
 * qualification[SubEsp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
 * qualification[SubEsp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores."
 * qualification[SubEsp].code.text ^short = "Texto libre de la subespecialidad del profesional"
@@ -184,4 +186,4 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification[SubEsp].issuer ^short = "Organizacion que entrega el certificado o título"
 * qualification[SubEsp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
 * qualification[SubEsp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
-
+* qualification[SubEsp].code from VSEspecialidadMed

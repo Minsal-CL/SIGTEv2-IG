@@ -45,25 +45,26 @@ Description: "Paciente LE recurso que se utiliza para representar la informació
 * identifier ^slicing.discriminator.path = "type.coding.code"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Slice creado para almacenar diferentes tipos de identificación"
-* identifier contains RUT 1..1 MS and RUTMaterno 0..* MS and FolioParto 0..* MS and Pasaporte 0..* MS and OtroDocumento 0..* MS and IDFonasa 0..* MS
+* identifier contains RUN 1..1 MS and RUNMaterno 0..* MS and FolioParto 0..* MS and Pasaporte 0..* MS and OtroDocumento 0..* MS and IDFonasa 0..* MS
 
 
 
-* identifier[RUT] MS
+* identifier[RUN] MS
 
-* identifier[RUT].extension contains DigitoVerificador named DigitoVerificador 1..1 MS
-* identifier[RUT].type 1..1 MS
-* identifier[RUT].type.coding.code = #1
+* identifier[RUN].extension contains DigitoVerificador named DigitoVerificador 1..1 MS
+* identifier[RUN].type 1..1 MS
+* identifier[RUN].type.coding.code = #1
 
-* identifier[RUT].type from VSTipoIdentificador
-* identifier[RUT].value 1..1 MS
-* identifier[RUT].value ^short = "Numero de RUN sin digito verificador ni puntos"
-* identifier[RUT].extension[DigitoVerificador] ^short = "Digito verificador del RUN"
+* identifier[RUN].type from VSTipoIdentificador
+* identifier[RUN].value 1..1 MS
+* identifier[RUN].value ^short = "Numero de RUN sin digito verificador ni puntos"
+* identifier[RUN].extension[DigitoVerificador] ^short = "Digito verificador del RUN"
 
-* identifier[RUTMaterno] MS
-* identifier[RUTMaterno].type 1..1 MS
-* identifier[RUTMaterno].type.coding.code = #2
-* identifier[RUTMaterno].type from VSTipoIdentificador
+* identifier[RUNMaterno] MS
+* identifier[RUNMaterno].extension contains DigitoVerificador named DigitoVerificador 1..1 MS
+* identifier[RUNMaterno].type 1..1 MS
+* identifier[RUNMaterno].type.coding.code = #2
+* identifier[RUNMaterno].type from VSTipoIdentificador
 
 * identifier[FolioParto] MS
 * identifier[FolioParto].type 1..1 MS

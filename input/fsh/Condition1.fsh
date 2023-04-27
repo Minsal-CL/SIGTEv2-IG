@@ -5,21 +5,19 @@ Title: "Condition Inicio Diagnostico Sospecha LE"
 Description: """
 Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta.
 
-* Para el caso de uso de terminología propia el elemento **code** quedaria de la siguiente forma:
+* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:
   ```
   "code": {
     "coding": [
       {
         "system": "url fuente",
-        "code": "codigo que representa el diagnostico",
-        "display": "texto que representa el codigo usado"
+        "code": "código que representa el diagnóstico",
+        "display": "texto que representa el código usado"
       }
     ],
     "text": "representación en texto del diagnóstico"
   }
   ```
-
-
 """
 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0

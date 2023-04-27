@@ -338,8 +338,9 @@ Description: "Especialidad Médica Destino Código"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * system 0..1 MS
+  * system 1..1 MS
   * display 0..1 MS
+* valueCodeableConcept from VSEspecialidadMed
 
 Extension:   SubEspecialidadMedicaDestinoCodigo
 Id:          SubEspecialidadMedicaDestinoCodigo
@@ -350,8 +351,9 @@ Description: "SubEspecialidad Médica Destino Código"
 * url 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
-  * system 0..1 MS
+  * system 1..1 MS
   * display 0..1 MS
+* valueCodeableConcept from VSEspecialidadMed
 * valueCodeableConcept 1..1 MS
 
 Extension: ExtBoolAtencionPreferente

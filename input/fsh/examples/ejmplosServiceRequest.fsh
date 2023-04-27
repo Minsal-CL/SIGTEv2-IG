@@ -111,9 +111,11 @@ Description: "ServiceRequest Evento de Referenciada"
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "1"
 * extension[EspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo"
-* extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #1
+* extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #3
+* extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
 * extension[SubEspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo"
-* extension[SubEspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #1
+* extension[SubEspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #4
+* extension[SubEspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
 * locationCode.text = "Motivo derivación"
 * locationCode.coding.code = #1
 * locationCode.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDestinoReferenciaCodigo"

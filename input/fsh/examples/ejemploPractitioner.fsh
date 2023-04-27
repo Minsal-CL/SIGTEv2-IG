@@ -7,16 +7,17 @@ Description: "Practitioner Evento de Inicio"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
+* identifier[RUN].extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
 
 //* gender = #male
 //* birthDate = "1974-01-22"
-* qualification.identifier.value = "cert"
-* qualification.code.coding.system = "http://terminology.cens.cl/CodeSystem/certMedicos"
-* qualification.code.coding.display = "Medico Cirujano"
-* qualification.code.text = "Certificado(s)"
+* qualification[Tit].identifier.value = "tit"
+* qualification[Tit].code.coding.code = #1
+* qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
 
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
@@ -29,13 +30,14 @@ Description: "Practitioner Referenciador Evento de Referenciada"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
+* identifier[RUN].extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
-* qualification.identifier.value = "cert"
-* qualification.code.coding.system = "http://terminology.cens.cl/CodeSystem/certMedicos"
-* qualification.code.coding.display = "Medico Cirujano"
-* qualification.code.text = "Certificado(s)"
+* qualification[Tit].identifier.value = "tit"
+* qualification[Tit].code.coding.code = #1
+* qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLOS PARA BUNDLE TERMINAR*/
@@ -48,6 +50,8 @@ Description: "Practitioner Evento Terminar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
+* identifier[RUN].extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
@@ -63,13 +67,17 @@ Description: "Practitioner Evento Revisar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
+* identifier[RUN].extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
-* qualification[Cert].identifier.value = "cert"
-* qualification[Cert].code.coding.code = #01
-* qualification[Cert].code.coding.system = "http://terminology.cens.cl"
-* qualification[Cert].code.coding.display = "Medico"
+* qualification[Tit].identifier.value = "tit"
+* qualification[Tit].code.coding.code = #1
+* qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
+* qualification[Esp].identifier.value = "esp"
+* qualification[Esp].code.coding.code = #2
+* qualification[Esp].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
 /*FIN PARA BUNDLE REVISAR*/
 
 /*EJEMPLOS PARA BUNDLE Atender*/
@@ -82,13 +90,14 @@ Description: "Practitioner Evento de Atender"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
+* identifier[RUN].extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
-* qualification[Cert].identifier.value = "cert"
-* qualification[Cert].code.coding.code = #01
-* qualification[Cert].code.coding.system = "http://terminology.cens.cl"
-* qualification[Cert].code.coding.display = "Medico"
+* qualification[Tit].identifier.value = "tit"
+* qualification[Tit].code.coding.code = #1
+* qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
 /*FIN PARA BUNDLE REVISAR*/
 
 /*EJEMPLOS PARA BUNDLE Agendar*/
@@ -101,13 +110,16 @@ Description: "Practitioner Atendedor Evento de Agendar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
+* identifier[RUN].extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.valueString = "K"
+* identifier[RUN].extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
-* qualification[Cert].identifier.value = "cert"
-* qualification[Cert].code.coding.code = #01
-* qualification[Cert].code.coding.system = "http://terminology.cens.cl"
-* qualification[Cert].code.coding.display = "Medico"
+* qualification[Tit].identifier.value = "tit"
+* qualification[Tit].code.coding.code = #1
+* qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
 /*FIN PARA BUNDLE REVISAR*/
 
 /*EJEMPLOS PARA BUNDLE Agendar*/
@@ -120,14 +132,18 @@ Description: "Practitioner Agendador Evento de Agendar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
+* identifier[RUN].extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
-* qualification[Cert].identifier.value = "cert"
-* qualification[Cert].code.coding.code = #01
-* qualification[Cert].code.coding.system = "http://terminology.cens.cl"
-* qualification[Cert].code.coding.display = "Medico"
-/*FIN PARA BUNDLE REVISAR*/
+* qualification[Tit].identifier.value = "tit"
+* qualification[Tit].code.coding.code = #1
+* qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
+* qualification[SubEsp].identifier.value = "subesp"
+* qualification[SubEsp].code.coding.code = #3
+* qualification[SubEsp].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
+/*FIN PARA BUNDLE Agendar*/
 
 /*EJEMPLOS PARA BUNDLE PRIORIZAR*/
 Instance: EjemploPractitionerPriorizar
@@ -139,11 +155,15 @@ Description: "Practitioner Evento de Priorizar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
+* identifier[RUN].extension.url = "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
-* qualification[Cert].identifier.value = "cert"
-* qualification[Cert].code.coding.code = #01
-* qualification[Cert].code.coding.system = "http://terminology.cens.cl"
-* qualification[Cert].code.coding.display = "Medico"
+* qualification[Tit].identifier.value = "tit"
+* qualification[Tit].code.coding.code = #1
+* qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
+* qualification[Esp].identifier.value = "esp"
+* qualification[Esp].code.coding.code = #2
+* qualification[Esp].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
 /*FIN PARA BUNDLE PRIORIZAR*/
