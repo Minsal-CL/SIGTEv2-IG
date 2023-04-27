@@ -14,7 +14,8 @@ Description: "Appointment Inicio LE"
 * status 1..1 MS
 * status = #fulfilled
 
-* start 0..1 MS
+* start 1..1 MS
+* start ^short = "Fecha de la Cita"
 
 //* identifier 1..1 MS
 //  * value 1..1 MS

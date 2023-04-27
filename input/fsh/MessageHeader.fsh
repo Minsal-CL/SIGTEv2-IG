@@ -8,6 +8,7 @@ Description: "MessageHeaderLE"
 
 
 * meta.lastUpdated 1..1 MS
+* meta.lastUpdated ^short = "Fecha del envío del Evento"
 * source.software 1..1 MS
 * source.endpoint 1..1 MS
 
