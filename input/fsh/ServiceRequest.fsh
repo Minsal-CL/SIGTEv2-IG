@@ -11,7 +11,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
   * coding 1..1 MS
     * code 1..1 MS
     * code = #IdInterconsulta
-    * system 1..1 MS
+    * system 0..1 MS
     * display 0..1 MS
 * identifier.type.coding from http://terminology.cens.cl/CodeSystem/listaespera
 * identifier.value 1..1 MS
