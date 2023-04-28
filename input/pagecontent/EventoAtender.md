@@ -28,7 +28,6 @@ Los recursos usados en este evento son los siguientes:
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
 * [Condition](https://www.hl7.org/FHIR/condition.html): Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
-  * [CondicionAtenderHipotesisDiagnosticaCodigoLE](StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html): Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)
   * [CondicionAtenderDiagnosticoSospechaLE](StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)
   * [CondicionAtenderDiagnosticoConfirmacionLE](StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)
 * [ObservationAtenderLE](StructureDefinition-ObservationAtenderLE.html): Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)
@@ -72,8 +71,6 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 * Debe incluir el recurso [QuestionnaireResponseAtenderLE](StructureDefinition-QuestionnaireResponseAtenderLE.html)
 * Debe incluir el recurso [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html)
 * Debe incluir el recurso [ObservationAtenderLE](StructureDefinition-ObservationAtenderLE.html)
-
-* Debe incluir el recurso [CondicionAtenderHipotesisDiagnosticaCodigoLE](StructureDefinition-CondicionAtenderHipotesisDiagnosticaCodigoLE.html) con el valor **verificationStatus.coding.code=provisional**
 
 * Debe incluir el recurso [CondicionAtenderDiagnosticoSospechaLE](StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html) con el valor **verificationStatus.coding.code=unconfirmed**
 

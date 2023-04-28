@@ -15,4 +15,4 @@ Description: "ObservationAtender LE"
   * text 1..1 MS
 
 * code
-  * text = #"examenes anteriores"
+  * text = "examenes anteriores"

@@ -40,4 +40,6 @@ Condicion Atender Diagnostico Sospecha LE
     * code 1..1 MS
     * display 0..1 MS
   
-* verificationStatus.coding.code = #unconfirmed
+//* verificationStatus.coding.code = #confirmed
+* verificationStatus.coding.code ^short = "confirmed=Confirmado | refuted=Descartada"
+* verificationStatus ^short = "Evaluación de Hipótesis Diagnóstica realizada por el médico especialista"

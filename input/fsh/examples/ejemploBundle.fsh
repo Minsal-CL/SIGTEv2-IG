@@ -260,8 +260,8 @@ Description: "Bundle Evento de Atender"
 * entry[observation].fullUrl = "http://acme.com/ehr/fhir/Observation/EjemploObservationAtender"
 * entry[observation].resource = EjemploObservationAtender
 
-* entry[conditionHipotesis].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE"
-* entry[conditionHipotesis].resource = EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE
+//* entry[conditionHipotesis].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE"
+//* entry[conditionHipotesis].resource = EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE
 
 * entry[conditionDiagnosticoSospecha].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoSospechaLE"
 * entry[conditionDiagnosticoSospecha].resource = EjemploCondicionAtenderDiagnosticoSospechaLE

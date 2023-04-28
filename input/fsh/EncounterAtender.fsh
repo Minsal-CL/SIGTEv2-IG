@@ -22,17 +22,21 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] only Reference(CondicionAtenderDiagnosticoConfirmacionLE)
 * reasonReference[ObservationAtenderLE] only Reference(ObservationAtenderLE)
 
-* diagnosis 2..2 MS
-* diagnosis ^slicing.discriminator.type = #profile
-* diagnosis ^slicing.discriminator.path = "condition.resolve()"
-* diagnosis ^slicing.rules = #open
-* diagnosis ^slicing.description = "Slice creado para almacenar diferentes tipos de reasonReference"
+// * diagnosis 1..1 MS
+// * diagnosis ^slicing.discriminator.type = #profile
+// * diagnosis ^slicing.discriminator.path = "condition.resolve()"
+// * diagnosis ^slicing.rules = #open
+// * diagnosis ^slicing.description = "Slice creado para almacenar diferentes tipos de diagnosis"
 
-* diagnosis contains CondicionAtenderDiagnosticoSospechaLE 0..1 MS and CondicionAtenderHipotesisDiagnosticaCodigoLE 0..1 MS
-* diagnosis[CondicionAtenderDiagnosticoSospechaLE] 1..1 MS
-* diagnosis[CondicionAtenderDiagnosticoSospechaLE].condition only Reference(CondicionAtenderDiagnosticoSospechaLE)
-* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE] 1..1 MS
-* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition only Reference(CondicionAtenderHipotesisDiagnosticaCodigoLE)
+* diagnosis 1..1 MS
+* diagnosis.condition 1..1 MS
+* diagnosis.condition only Reference(CondicionAtenderDiagnosticoSospechaLE)
+
+// * diagnosis contains CondicionAtenderDiagnosticoSospechaLE 0..1 MS
+// * diagnosis[CondicionAtenderDiagnosticoSospechaLE] 1..1 MS
+// * diagnosis[CondicionAtenderDiagnosticoSospechaLE].condition only Reference(CondicionAtenderDiagnosticoSospechaLE)
+//* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE] 1..1 MS
+//* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition only Reference(CondicionAtenderHipotesisDiagnosticaCodigoLE)
 
 * subject 1..1 MS
 * subject only Reference(PatientLE)

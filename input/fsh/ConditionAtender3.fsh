@@ -33,10 +33,4 @@ Condicion Atender Diagnostico Confirmacion LE
   * text 0..1 MS
 
 
-* verificationStatus 1..1 MS
-  * coding 1..1 MS
-    * system 0..1 MS
-    * code 1..1 MS
-    * display 0..1 MS
-  
-* verificationStatus.coding.code = #confirmed
+* verificationStatus 0..0

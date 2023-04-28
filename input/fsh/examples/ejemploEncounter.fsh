@@ -31,8 +31,8 @@ Description: "Encounter Evento de Atender"
 * reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE)
 * reasonReference[ObservationAtenderLE] = Reference(http://acme.com/ehr/fhir/Observation/EjemploObservationAtender)
 
-* diagnosis[CondicionAtenderDiagnosticoSospechaLE].condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoSospechaLE)
-* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE)
+* diagnosis.condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoSospechaLE)
+//* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE)
 
 * period.start = "2023-01-22T09:00:00Z"
 * class.code = #1

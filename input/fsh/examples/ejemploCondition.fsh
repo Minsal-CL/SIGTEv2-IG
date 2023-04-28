@@ -36,16 +36,16 @@ Description: "Condition Inicio Sospechvento de Inicio"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 
-Instance: EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE
-InstanceOf: CondicionAtenderHipotesisDiagnosticaCodigoLE
-Usage: #example
-Title: "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender"
-Description: "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender"
+// Instance: EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE
+// InstanceOf: CondicionAtenderHipotesisDiagnosticaCodigoLE
+// Usage: #example
+// Title: "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender"
+// Description: "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender"
 
-* verificationStatus.coding = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
-* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-* code.coding.code = #1
-* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSHipotesisDiagnosticaCodigo"
+// * verificationStatus.coding = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
+// * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
+// * code.coding.code = #1
+// * code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSHipotesisDiagnosticaCodigo"
 
 
 Instance: EjemploCondicionAtenderDiagnosticoSospechaLE
@@ -69,5 +69,3 @@ Description: "Condicion Atender Diagnostico Confirmacion Evento de Atender"
 * code = http://diagnosticos.cl/uno#1 "Diagnostico1"
 * code.text = "Diagnostico1"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-
-* verificationStatus.coding = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
