@@ -28,11 +28,11 @@ Description: "Encounter Evento de Atender"
 //* appointment = Reference(http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender)
 * class.code = #AMB
 
-* reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] = Reference(http://acme.com/ehr/fhir/Condition/CondicionAtenderDiagnosticoConfirmacionLE)
-* reasonReference[ObservationAtenderLE] = Reference(http://acme.com/ehr/fhir/Observation/ObservationAtenderLE)
+* reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE)
+* reasonReference[ObservationAtenderLE] = Reference(http://acme.com/ehr/fhir/Observation/EjemploObservationAtender)
 
-* diagnosis[CondicionAtenderDiagnosticoSospechaLE].condition = Reference(CondicionAtenderDiagnosticoSospechaLE)
-* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition = Reference(CondicionAtenderHipotesisDiagnosticaCodigoLE)
+* diagnosis[CondicionAtenderDiagnosticoSospechaLE].condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoSospechaLE)
+* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE)
 
 * period.start = "2023-01-22T09:00:00Z"
 * class.code = #1

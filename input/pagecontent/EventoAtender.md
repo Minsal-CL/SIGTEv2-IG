@@ -32,9 +32,7 @@ Los recursos usados en este evento son los siguientes:
   * [CondicionAtenderDiagnosticoSospechaLE](StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)
   * [CondicionAtenderDiagnosticoConfirmacionLE](StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)
 * [ObservationAtenderLE](StructureDefinition-ObservationAtenderLE.html): Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)
-* [EncounterAtenderLE
-](StructureDefinition-Id: EncounterAtenderLE
-.html): Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)
+* [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html): Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)
 * [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (CarePlan.subject / Encounter.subject)
 * [QuestionnaireResponseAtenderLE](StructureDefinition-QuestionnaireResponseAtenderLE.html): Recurso utilizado para registrar información relacionada a la anamnesis (ServiceRequest.supportingInfo)
 * [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html): Recurso utilizado para registrar información 

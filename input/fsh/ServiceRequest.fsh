@@ -61,7 +61,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * reasonCode from VSDerivadoParaCodigo
 
 * priority 0..1 MS
-* priority ^short = "Pertinencia Interconsulta routine=normal | urgent=urgente | asap=prioritario"
+* priority ^short = "Prioridad Recomendada Interconsulta de Origen: routine=normal | urgent=urgente | asap=prioritario"
 
 * locationCode 0..1 MS
   * coding 1..1 MS

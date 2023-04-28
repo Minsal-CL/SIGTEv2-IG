@@ -20,6 +20,6 @@ Description: "MessageHeaderLE"
 //* eventCoding.code 1..1
 
 * author only Reference(PractitionerRoleLE)
-* focus only Reference(ServiceRequestLE or AppointmentInicioLE)
+* focus only Reference(ServiceRequestLE or AppointmentAgendarLE or EncounterAtenderLE)
 * eventCoding from VSTipoEventoLE
 

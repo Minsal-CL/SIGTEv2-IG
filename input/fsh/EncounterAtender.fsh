@@ -14,8 +14,8 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
   * value 1..1 MS
 
 * reasonReference 2..2 MS
-* reasonReference ^slicing.discriminator.type = #value
-* reasonReference ^slicing.discriminator.path = "reference"
+* reasonReference ^slicing.discriminator.type = #profile
+* reasonReference ^slicing.discriminator.path = "resolve()"
 * reasonReference ^slicing.rules = #open
 * reasonReference ^slicing.description = "Slice creado para almacenar diferentes tipos de reasonReference"
 * reasonReference contains CondicionAtenderDiagnosticoConfirmacionLE 1..1 MS and ObservationAtenderLE 1..1 MS
@@ -23,8 +23,8 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * reasonReference[ObservationAtenderLE] only Reference(ObservationAtenderLE)
 
 * diagnosis 2..2 MS
-* diagnosis ^slicing.discriminator.type = #value
-* diagnosis ^slicing.discriminator.path = "reference"
+* diagnosis ^slicing.discriminator.type = #profile
+* diagnosis ^slicing.discriminator.path = "condition.resolve()"
 * diagnosis ^slicing.rules = #open
 * diagnosis ^slicing.description = "Slice creado para almacenar diferentes tipos de reasonReference"
 

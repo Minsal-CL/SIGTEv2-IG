@@ -135,7 +135,7 @@ Description: "ServiceRequest Evento de Terminar"
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "1"
 * extension[MotivoCierreInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta"
-* extension[MotivoCierreInterconsulta].valueCodeableConcept.coding.code = #2
+* extension[MotivoCierreInterconsulta].valueCodeableConcept.coding = http://minsal.cl/listaespera/CodeSystem/CSMotivoCierreInterconsulta#2
 
 /*FIN PARA BUNDLE TERMINAR*/
 
@@ -147,8 +147,7 @@ Usage: #example
 Title: "ServiceRequest Evento Revisar"
 Description: "ServiceRequest Evento Revisar"
 
-* identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.type.coding.code = #IdInterconsulta
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "1"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
@@ -157,13 +156,13 @@ Description: "ServiceRequest Evento Revisar"
 * subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * doNotPerform = true
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
-* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
+* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding = http://minsal.cl/listaespera/CodeSystem/CSMotivoNoPertinenciaCodigo#1
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text = "Texto libre"
 * priority = #routine
 * extension[RequiereExamen].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen"
 * extension[RequiereExamen].valueBoolean = true
 * extension[PertinenciaInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta"
-* extension[PertinenciaInterconsulta].valueCodeableConcept.coding.code = #1
+* extension[PertinenciaInterconsulta].valueCodeableConcept.coding = http://minsal.cl/listaespera/CodeSystem/CSPertinenciaInterconsulta#1
 * category.coding.code = #1
 * category.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSModalidadAtencionCodigo"
 * category.coding.display = "Presencial"
@@ -178,8 +177,7 @@ Usage: #example
 Title: "ServiceRequest Evento Agendar"
 Description: "ServiceRequest Evento Agendar"
 
-* identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.type.coding.code = #IdInterconsulta
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "1"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
@@ -207,8 +205,7 @@ Usage: #example
 Title: "ServiceRequest Evento Atender"
 Description: "ServiceRequest Evento Atender"
 
-* identifier.type.coding.system = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.type.coding.code = #IdInterconsulta
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "323121"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
@@ -216,7 +213,7 @@ Description: "ServiceRequest Evento Atender"
 * subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * performer.reference = "http://acme.com/ehr/fhir/PractitionerRole/atender"
 
-* extension[DestinoAtencionCodigo].valueCodeableConcept.coding.code = #1
+* extension[DestinoAtencionCodigo].valueCodeableConcept.coding = http://minsal.cl/listaespera/CodeSystem/CSDestinoAtencionCodigo#1
 /*EJEMPLO PARA BUNDLE REVISAR*/
 
 
@@ -227,8 +224,7 @@ Usage: #example
 Title: "ServiceRequest Evento Priorizar"
 Description: "ServiceRequest Evento Priorizar"
 
-* identifier.type.coding.system = "http://terminology.cens.cl/CodeSystem/listaespera"
-* identifier.type.coding.code = #IdInterconsulta
+* identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "323121"
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft

@@ -88,7 +88,7 @@ Description: "MesaggeHeader Evento de Atender"
 
 * eventCoding = http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE#atender
 
-* focus = Reference(http://acme.com/ehr/fhir/Encounter/atender)
+* focus = Reference(http://acme.com/ehr/fhir/Encounter/EjemploEncounterAtender)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/atender)
 /*FIN PARA BUNDLE Atender*/
 

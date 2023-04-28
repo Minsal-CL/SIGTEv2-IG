@@ -28,6 +28,6 @@ Description: "Appointment Evento de Inicio"
 * participant.actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor)
 
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.text = "Otro"
-* extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding.code = #1
+* extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = http://minsal.cl/listaespera/CodeSystem/CSMotivoNoContactabilidad#1
 
 * extension[ContactadoLE].extension[Contactado].valueBoolean = true

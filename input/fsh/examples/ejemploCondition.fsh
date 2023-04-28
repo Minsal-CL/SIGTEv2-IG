@@ -42,7 +42,7 @@ Usage: #example
 Title: "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender"
 Description: "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender"
 
-* verificationStatus.coding.code = #provisional
+* verificationStatus.coding = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 * code.coding.code = #1
 * code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSHipotesisDiagnosticaCodigo"
@@ -58,7 +58,7 @@ Description: "Condicion Atender Diagnostico Sospecha Evento de Atender"
 * code.text = "Diagnostico1"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
-* verificationStatus.coding.code = #unconfirmed
+* verificationStatus.coding = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed
 
 Instance: EjemploCondicionAtenderDiagnosticoConfirmacionLE
 InstanceOf: CondicionAtenderDiagnosticoConfirmacionLE
@@ -70,4 +70,4 @@ Description: "Condicion Atender Diagnostico Confirmacion Evento de Atender"
 * code.text = "Diagnostico1"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
-* verificationStatus.coding.code = #confirmed
+* verificationStatus.coding = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
