@@ -30,7 +30,11 @@ Description: "Encounter Evento de Atender"
 
 * reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE)
 * reasonReference[ObservationAtenderLE] = Reference(http://acme.com/ehr/fhir/Observation/EjemploObservationAtender)
-
+//* reasonReference[CondicionAtenderDiagnosticoConfirmacionLE].reference = http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE
+* reasonReference[CondicionAtenderDiagnosticoConfirmacionLE].type = "Condition"
+//* reasonReference[ObservationAtenderLE].reference = http://acme.com/ehr/fhir/Observation/EjemploObservationAtender
+* reasonReference[ObservationAtenderLE].type = "Observation"
+ 
 * diagnosis.condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoSospechaLE)
 //* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE)
 
