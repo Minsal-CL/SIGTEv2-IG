@@ -14,6 +14,7 @@
     <sch:rule context="f:Appointment">
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/MedioNotificacion': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/Contactado']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/Contactado': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:start) &gt;= 1">start: minimum cardinality of 'start' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &gt;= 1">basedOn: minimum cardinality of 'basedOn' is 1</sch:assert>
       <sch:assert test="count(f:basedOn) &lt;= 1">basedOn: maximum cardinality of 'basedOn' is 1</sch:assert>
     </sch:rule>

@@ -67,7 +67,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Proyecto Listas de Espera MINSAL CHILE</span>
             <br/>
-            <span style="display:inline-block;">0.1.2 - ci-build
+            <span style="display:inline-block;">0.1.3 - ci-build
 
 
             </span>
@@ -184,7 +184,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.2). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.3). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Evento Referenciada</h2>
   
 
@@ -218,8 +218,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td>referenciada</td>
-      <td>Referenciada</td>
+      <td>referenciar</td>
+      <td>Referenciar</td>
       <td>Este evento permite registrar información asociada a una derivación, la cual puede ser: APS a Nivel Secundario, Nivel Secundario a APS, Nivel Secundario a Hospital Digital, etc. El detalle de la derivación es registrado en el campo MotivoDerivación.</td>
       <td>La respuesta debe indicar si errores o indicar que la interconsulta ha sido referenciada</td>
     </tr>
@@ -272,7 +272,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Debe incluir el recurso <a href="StructureDefinition-BundleReferenciaLE.html">BundleReferenciaLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a> con los valores de <strong>ServiceRequest.status=draft</strong> <strong>ServiceRequest.intent=proposal</strong></li>
-  <li>Debe incluir el recurso <a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a> con el valor <strong>MessageHeader.evenCoding.code=referenciada</strong></li>
+  <li>Debe incluir el recurso <a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a> con el valor <strong>MessageHeader.evenCoding.code=referenciar</strong></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-OrganizationLE.html">OrganizationLE</a></li>
   <li>Debe incluir el recurso <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRoleLE</a></li>
 </ul>
@@ -314,7 +314,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 21, 2023 12:02-0400">2023-04-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 8, 2023 17:35-0400">2023-05-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

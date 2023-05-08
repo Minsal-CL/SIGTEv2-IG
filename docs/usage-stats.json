@@ -1,6 +1,6 @@
 {
   "package": "fhir.minsal.ListaDeEspera",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "fhirVersion": "4.0.1",
   "extensions": [
     {
@@ -192,6 +192,13 @@
     {
       "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia",
       "title": "ExtBool Alergia",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAtencionPreferente",
+      "title": "ExtBool Atención Preferente",
       "types": [
         "boolean"
       ]
@@ -604,10 +611,6 @@
         "title": "Condicion Atender Diagnostico Sospecha LE"
       },
       {
-        "url": "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE",
-        "title": "Condicion Atender Hipotesis Diagnostica Codigo"
-      },
-      {
         "url": "http://minsal.cl/listaespera/StructureDefinition/ConditionInicioDiagnosticoSospechaLE",
         "title": "Condition Inicio Diagnostico Sospecha LE"
       },
@@ -755,7 +758,8 @@
     ],
     "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador": [
       "Bundle.entry.resource.identifier",
-      "Patient.identifier"
+      "Patient.identifier",
+      "Practitioner.identifier"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE": [
       "Bundle.entry.resource",
@@ -775,6 +779,9 @@
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia": [
       "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
+    "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAtencionPreferente": [
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/ExtBoolCuidador": [
@@ -841,6 +848,7 @@
       "ServiceRequest"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena": [
+      "Bundle.entry.resource",
       "Patient"
     ],
     "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido": [

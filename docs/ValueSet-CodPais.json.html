@@ -69,7 +69,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Proyecto Listas de Espera MINSAL CHILE</span>
             <br/>
-            <span style="display:inline-block;">0.1.2 - ci-build
+            <span style="display:inline-block;">0.1.3 - ci-build
 
 
             </span>
@@ -179,7 +179,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.2). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.3). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -255,10 +255,10 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "CodPais",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\&quot;&gt;&lt;code&gt;urn:iso:std:iso:3166&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include codes from &lt;a href=\&quot;http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\&quot;&gt;&lt;code&gt;urn:iso:std:iso:3166&lt;/code&gt;&lt;/a&gt; where code  matches (by regex)  [0-9]{3}&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "http://minsal.cl/listaespera/ValueSet/CodPais",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.2",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.1.3",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "CodPaises",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "Códigos de Países",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
@@ -292,7 +292,14 @@
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
     "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
       {
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:iso:std:iso:3166"
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "urn:iso:std:iso:3166",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter">filter</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.property">property</a>" : "code",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.op">op</a>" : "regex",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.filter.value">value</a>" : "[0-9]{3}"
+          }
+        ]
       }
     ]
   }
@@ -326,7 +333,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 21, 2023 12:02-0400">2023-04-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 8, 2023 17:35-0400">2023-05-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ListaEsperaChile</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera</pre><div><p>Proyecto Listas de Espera MINSAL CHILE</p>\n</div></div>"
   },
   "url" : "http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera",
-  "version" : "0.1.2",
+  "version" : "0.1.3",
   "name" : "ListaEsperaChile",
   "title" : "Proyecto Listas de Espera MINSAL CHILE",
   "status" : "draft",
-  "date" : "2023-04-21T12:02:08-04:00",
+  "date" : "2023-05-08T17:35:30-04:00",
   "publisher" : "MINSAL Chile",
   "contact" : [{
     "name" : "MINSAL Chile",
@@ -709,7 +709,7 @@
         "reference" : "StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE"
       },
       "name" : "Condicion Atender Diagnostico Confirmacion LE",
-      "description" : "Condicion Atender Diagnostico Confirmacion LE",
+      "description" : "Condicion Atender Diagnostico Confirmacion LE\n\n* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:\n  ```\n  \"code\": {\n    \"coding\": [\n      {\n        \"system\": \"url fuente\",\n        \"code\": \"código que representa el diagnóstico\",\n        \"display\": \"texto que representa el código usado\"\n      }\n    ],\n    \"text\": \"representación en texto del diagnóstico\"\n  }\n  ```",
       "exampleBoolean" : false
     },
     {
@@ -721,19 +721,7 @@
         "reference" : "StructureDefinition/CondicionAtenderDiagnosticoSospechaLE"
       },
       "name" : "Condicion Atender Diagnostico Sospecha LE",
-      "description" : "Condicion Atender Diagnostico Sospecha LE",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE"
-      },
-      "name" : "Condicion Atender Hipotesis Diagnostica Codigo",
-      "description" : "Condicion Atender Hipotesis Diagnostica Codigo",
+      "description" : "Condicion Atender Diagnostico Sospecha LE\n\n* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:\n  ```\n  \"code\": {\n    \"coding\": [\n      {\n        \"system\": \"url fuente\",\n        \"code\": \"código que representa el diagnóstico\",\n        \"display\": \"texto que representa el código usado\"\n      }\n    ],\n    \"text\": \"representación en texto del diagnóstico\"\n  }\n  ```",
       "exampleBoolean" : false
     },
     {
@@ -745,7 +733,7 @@
         "reference" : "StructureDefinition/ConditionInicioDiagnosticoSospechaLE"
       },
       "name" : "Condition Inicio Diagnostico Sospecha LE",
-      "description" : "Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta.",
+      "description" : "Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta.\n\n* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:\n  ```\n  \"code\": {\n    \"coding\": [\n      {\n        \"system\": \"url fuente\",\n        \"code\": \"código que representa el diagnóstico\",\n        \"display\": \"texto que representa el código usado\"\n      }\n    ],\n    \"text\": \"representación en texto del diagnóstico\"\n  }\n  ```",
       "exampleBoolean" : false
     },
     {
@@ -841,7 +829,7 @@
         "reference" : "StructureDefinition/OrganizationLE"
       },
       "name" : "Organization LE",
-      "description" : "Organization LE",
+      "description" : "Organization LE según [Códigos del establecimientos](https://repositoriodeis.minsal.cl/DatosAbiertos/Establecimientos_ChileDEIS_MINSAL%2021-04-2023.xlsx)",
       "exampleBoolean" : false
     },
     {
@@ -1022,6 +1010,18 @@
       },
       "name" : "ExtBool Alergia",
       "description" : "ExtBool Alergia",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ExtBoolAtencionPreferente"
+      },
+      "name" : "ExtBool Atención Preferente",
+      "description" : "ExtBool ¿Hace uso de atención preferente?",
       "exampleBoolean" : false
     },
     {
@@ -1377,6 +1377,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSEspecialidadMed"
+      },
+      "name" : "EspecialidadMed",
+      "description" : "EspecialidadMed",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSEstablecimientoDestinoCodigo"
       },
       "name" : "Establecimiento Destino Codigo",
@@ -1629,6 +1641,18 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSTituloProfesional"
+      },
+      "name" : "TituloProfesional",
+      "description" : "TituloProfesional",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSinterconsulta"
       },
       "name" : "Interconsulta",
@@ -1681,6 +1705,18 @@
       },
       "name" : "Documento Acreditacion Cuidador",
       "description" : "Documento Acreditacion Cuidador",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSEspecialidadMed"
+      },
+      "name" : "EspecialidadMed",
+      "description" : "EspecialidadMed",
       "exampleBoolean" : false
     },
     {
@@ -1941,10 +1977,34 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/CSTituloProfesional"
+      },
+      "name" : "TituloProfesional",
+      "description" : "TituloProfesional",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/CSinterconsulta"
       },
       "name" : "Interconsulta",
       "description" : "Interconsulta",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
+      },
+      "name" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
+      "description" : "Mapping de codigos confirmación diagnostica a condition verfication status",
       "exampleBoolean" : false
     },
     {
@@ -2102,18 +2162,6 @@
       "name" : "Condicion Atender Diagnostico Sospecha Evento de Atender",
       "description" : "Condicion Atender Diagnostico Sospecha Evento de Atender",
       "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE"
-      },
-      "name" : "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender",
-      "description" : "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender",
-      "exampleCanonical" : "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE"
     },
     {
       "extension" : [{

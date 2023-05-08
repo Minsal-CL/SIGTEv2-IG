@@ -46,7 +46,7 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>ExtBool RequiereExamen</b>: true</p><p><b>Pertinencia Interconsulta</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>category</b>: Presencial <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSModalidadAtencionCodigo.html\">Modalidad Atencion Codigo</a>#1)</span></p><p><b>priority</b>: routine</p><p><b>doNotPerform</b>: true</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>ExtBool RequiereExamen</b>: true</p><p><b>Pertinencia Interconsulta</b>: Pertinente <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPertinenciaInterconsulta.html\">Pertinencia Interconsulta</a>#1)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>category</b>: Presencial <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSModalidadAtencionCodigo.html\">Modalidad Atencion Codigo</a>#1)</span></p><p><b>priority</b>: routine</p><p><b>doNotPerform</b>: true</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>"
       },
       "extension" : [{
         "url" : "http://minsal.cl/listaespera/StructureDefinition/ExtBoolRequiereExamen",
@@ -56,6 +56,7 @@
         "url" : "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta",
         "valueCodeableConcept" : {
           "coding" : [{
+            "system" : "http://minsal.cl/listaespera/CodeSystem/CSPertinenciaInterconsulta",
             "code" : "1"
           }]
         }
@@ -63,7 +64,7 @@
       "identifier" : [{
         "type" : {
           "coding" : [{
-            "system" : "IdInterconsulta",
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
             "code" : "IdInterconsulta"
           }]
         },
@@ -85,6 +86,7 @@
           "url" : "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo",
           "valueCodeableConcept" : {
             "coding" : [{
+              "system" : "http://minsal.cl/listaespera/CodeSystem/CSMotivoNoPertinenciaCodigo",
               "code" : "1"
             }],
             "text" : "Texto libre"
@@ -107,7 +109,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerRevisar\">See above (http://acme.com/ehr/fhir/Practitioner/revisar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationRevisar\">See above (http://acme.com/ehr/fhir/Organization/revisar)</a></p><p><b>code</b>: revisor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#revisor)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerRevisar\">See above (http://acme.com/ehr/fhir/Practitioner/revisar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationRevisar\">See above (http://acme.com/ehr/fhir/Organization/revisar)</a></p><p><b>code</b>: Revisor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#revisor)</span></p></div>"
       },
       "practitioner" : {
         "reference" : "http://acme.com/ehr/fhir/Practitioner/revisar"
@@ -117,6 +119,7 @@
       },
       "code" : [{
         "coding" : [{
+          "system" : "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE",
           "code" : "revisor"
         }]
       }]
@@ -155,9 +158,13 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), ValorRNPI: 2134\u00a0(use:\u00a0SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id:\u00a0cert</td><td>Medico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (terminology.cens.cl#01)</span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#2)</span></p></blockquote></div>"
       },
       "identifier" : [{
+        "extension" : [{
+          "url" : "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
+          "valueString" : "K"
+        }],
         "use" : "official",
         "type" : {
           "coding" : [{
@@ -169,23 +176,28 @@
       },
       {
         "use" : "secondary",
-        "type" : {
-          "coding" : [{
-            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
-            "code" : "ValorRNPI"
-          }]
-        },
+        "system" : "http://rnpi.superdesalud.gob.cl",
         "value" : "2134"
       }],
       "qualification" : [{
         "identifier" : [{
-          "value" : "cert"
+          "value" : "tit"
         }],
         "code" : {
           "coding" : [{
-            "system" : "http://terminology.cens.cl",
-            "code" : "01",
-            "display" : "Medico"
+            "system" : "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional",
+            "code" : "1"
+          }]
+        }
+      },
+      {
+        "identifier" : [{
+          "value" : "esp"
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed",
+            "code" : "2"
           }]
         }
       }]

@@ -71,7 +71,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Proyecto Listas de Espera MINSAL CHILE</span>
             <br/>
-            <span style="display:inline-block;">0.1.2 - ci-build
+            <span style="display:inline-block;">0.1.3 - ci-build
 
 
             </span>
@@ -181,7 +181,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.2). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Proyecto Listas de Espera MINSAL CHILE - Local Development build (v0.1.3). See the <a href="http://minsal.cl/listaespera/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -287,7 +287,6 @@
  <tr><td>Condition</td><td>Event</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Event.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;clinicalStatus</td><td>Event.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;verificationStatus</td><td>Event.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>Event.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;subject</td><td>Event.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;encounter</td><td>Event.context</td> </tr>
@@ -300,7 +299,6 @@
  <tr><td colspan="3"><b>CondicionAtenderDiagnosticoConfirmacionLE</b></td></tr>
  <tr><td>Condition</td><td>&lt; 243796009 |Situation with explicit context| : 246090004 |Associated finding| = ( ( &lt; 404684003 |Clinical finding| MINUS ( &lt;&lt; 420134006 |Propensity to adverse reactions| OR &lt;&lt; 473010000 |Hypersensitivity condition| OR &lt;&lt; 79899007 |Drug interaction| OR &lt;&lt; 69449002 |Drug action| OR &lt;&lt; 441742003 |Evaluation finding| OR &lt;&lt; 307824009 |Administrative status| OR &lt;&lt; 385356007 |Tumor stage finding|)) OR &lt; 272379006 |Event|)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;clinicalStatus</td><td>&lt; 303105007 |Disease phases|</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;verificationStatus</td><td>&lt; 410514004 |Finding context value|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>&lt; 404684003 |Clinical finding|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;severity</td><td>&lt; 272141005 |Severities|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>code 246090004 |Associated finding| (&lt; 404684003 |Clinical finding| MINUS
@@ -323,14 +321,6 @@ OR &lt; 272379006 |Event|</td> </tr>
  <tr><td colspan="3"><b>CondicionAtenderDiagnosticoConfirmacionLE</b></td></tr>
  <tr><td>Condition</td><td>PPR message</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;clinicalStatus</td><td>PRB-14</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;verificationStatus</td><td>PRB-13</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>C*E.1-8, C*E.10-22</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>C*E.3</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>C*E.7</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>C*E.1</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>C*E.2 - but note this is not well followed</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>Sometimes implied by being first</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>C*E.9. But note many systems use C*E.2 for this</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>'problem' if from PRB-3. 'diagnosis' if from DG1 segment in PV1 message</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;severity</td><td>PRB-26 / ABS-3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>PRB-3</td> </tr>
@@ -360,19 +350,6 @@ OR &lt; 272379006 |Event|</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;clinicalStatus</td><td>Observation ACT
 .inboundRelationship[typeCode=COMP].source[classCode=OBS, code=&quot;clinicalStatus&quot;, moodCode=EVN].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;verificationStatus</td><td>Observation ACT
-.inboundRelationship[typeCode=COMP].source[classCode=OBS, code=&quot;verificationStatus&quot;, moodCode=EVN].value</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;coding</td><td>union(., ./translation)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./codeSystem</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>./codeSystemVersion</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>./code</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>CV.displayName</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;userSelected</td><td>CD.codingRationale</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>./originalText[mediaType/code=&quot;text/plain&quot;]/data</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>.code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;severity</td><td>Can be pre/post-coordinated into value.  Or ./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=&quot;severity&quot;].value</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>.value</td> </tr>
@@ -415,7 +392,6 @@ OR &lt; 272379006 |Event|</td> </tr>
  <tr><td>Condition</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;clinicalStatus</td><td>FiveWs.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;verificationStatus</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;category</td><td>FiveWs.class</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;severity</td><td>FiveWs.grade</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>FiveWs.what[x]</td> </tr>
@@ -433,7 +409,6 @@ OR &lt; 272379006 |Event|</td> </tr>
 <a name="sct-attr"> </a><h3>Mappings for SNOMED CT Attribute Binding (http://snomed.org/attributebinding)</h3><table class="grid">
  <tr><td colspan="3"><b>CondicionAtenderDiagnosticoConfirmacionLE</b></td></tr>
  <tr><td>Condition</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;verificationStatus</td><td>408729009</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;severity</td><td>246112005</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;code</td><td>246090004</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;bodySite</td><td>363698007</td> </tr>
@@ -491,7 +466,7 @@ OR &lt; 272379006 |Event|</td> </tr>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 21, 2023 12:02-0400">2023-04-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://minsal.cl">MINSAL Chile</a>.  Package fhir.minsal.ListaDeEspera#0.1.3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, May 8, 2023 17:35-0400">2023-05-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Luisa </b> male, DoB: 1995-12-12 ( RUN: 15999999)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Luis Perez (OFFICIAL)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">ph: 569854875457(MOBILE)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Identidad de genero\"><a href=\"StructureDefinition-IdentidadGenero.html\">Identidad de genero:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://minsal.cl/listaespera/CodeSystem/CSIdentidaddeGenero 1}\">Masculino</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Codigo de Identificación de Nacionalidad\"><a href=\"StructureDefinition-NacionalidadCodigo.html\">Codigo de Identificación de Nacionalidad:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {urn:iso:std:iso:3166 AD}\">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de paises de origen\"><a href=\"StructureDefinition-CodigoPaises.html\">Codigo de Identificación de países:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {urn:iso:std:iso:3166 AD}\">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"ExtBool Afrodescendiente\"><a href=\"StructureDefinition-ExtBoolAfrodescendiente.html\">ExtBool Afrodescendiente:</a></td><td colspan=\"3\"><ul><li>false</li></ul></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Luisa </b> male, DoB: 1995-12-12 ( RUN: 15999999)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Luis Perez (OFFICIAL)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">ph: 569854875457(MOBILE)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Identidad de genero\"><a href=\"StructureDefinition-IdentidadGenero.html\">Identidad de genero:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://minsal.cl/listaespera/CodeSystem/CSIdentidaddeGenero 1}\">Masculino</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Codigo de Identificación de Nacionalidad\"><a href=\"StructureDefinition-NacionalidadCodigo.html\">Codigo de Identificación de Nacionalidad:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {urn:iso:std:iso:3166 AD}\">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Esta extensión incluye códigos de paises de origen\"><a href=\"StructureDefinition-CodigoPaises.html\">Codigo de Identificación de países:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {urn:iso:std:iso:3166 AD}\">Andorra</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Etnia a la cual pertenece\">Etnia a la cual pertenece:</td><td colspan=\"3\"><ul><li>PuebloIndigenaPertenencia: true</li><li>PuebloIndigenaCodigo: <span title=\"Codes: {http://minsal.cl/listaespera/CodeSystem/CSPuebloIndigena 1}\">Mapuche</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"ExtBool Afrodescendiente\"><a href=\"StructureDefinition-ExtBoolAfrodescendiente.html\">ExtBool Afrodescendiente:</a></td><td colspan=\"3\"><ul><li>false</li></ul></td></tr></table></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
@@ -47,6 +47,22 @@
          fhir:code [ fhir:v "1" ]
        ] )
      ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "PuebloIndigenaPertenencia"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "PuebloIndigenaCodigo"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSPuebloIndigena"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1" ]
+         ] ) ;
+         fhir:text [ fhir:v "Mapuche" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena"^^xsd:anyURI ]
   ] [
      fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "false"^^xsd:boolean ]

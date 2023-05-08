@@ -108,7 +108,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRolePriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRolePriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerPriorizar\">See above (http://acme.com/ehr/fhir/Practitioner/priorizar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationPriorizar\">See above (http://acme.com/ehr/fhir/Organization/priorizar)</a></p><p><b>code</b>: Priorizador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Priorizador)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRolePriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRolePriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerPriorizar\">See above (http://acme.com/ehr/fhir/Practitioner/priorizar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationPriorizar\">See above (http://acme.com/ehr/fhir/Organization/priorizar)</a></p><p><b>code</b>: Priorizador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#priorizador)</span></p></div>"
   ] ; # 
   fhir:practitioner [
      fhir:link <http://acme.com/ehr/fhir/Practitioner/priorizar> ;
@@ -120,7 +120,8 @@
   ] ; # 
   fhir:code ( [
      fhir:coding ( [
-       fhir:code [ fhir:v "Priorizador" ]
+       fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "priorizador" ]
      ] )
   ] ) . # 
 
@@ -150,9 +151,13 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Medico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (terminology.cens.cl#01)</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), id: 2134 (use: SECONDARY)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#2)</span></p></blockquote></div>"
   ] ; # 
   fhir:identifier ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "K" ]
+     ] ) ;
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -163,23 +168,27 @@
      fhir:value [ fhir:v "2134" ]
   ] [
      fhir:use [ fhir:v "secondary" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "ValorRNPI" ]
-       ] )
-     ] ;
+     fhir:system [ fhir:v "http://rnpi.superdesalud.gob.cl"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "2134" ]
   ] ) ; # 
   fhir:qualification ( [
      fhir:identifier ( [
-       fhir:value [ fhir:v "cert" ]
+       fhir:value [ fhir:v "tit" ]
      ] ) ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.cens.cl"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "01" ] ;
-         fhir:display [ fhir:v "Medico" ]
+         fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ]
+       ] )
+     ]
+  ] [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "esp" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2" ]
        ] )
      ]
   ] ) . # 
@@ -194,7 +203,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"EjemploPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;EjemploPatient&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientLE.html\">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Identidad de genero</b>: Masculino <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSIdentidaddeGenero.html\">Identidad de Genero</a>#1)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"EjemploPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;EjemploPatient&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientLE.html\">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Identidad de genero</b>: Masculino <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSIdentidaddeGenero.html\">Identidad de Genero</a>#1)</span></p><blockquote><p><b>Etnia a la cual pertenece</b></p><blockquote><p><b>url</b></p><code>PuebloIndigenaPertenencia</code></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><code>PuebloIndigenaCodigo</code></blockquote><p><b>value</b>: Mapuche <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPuebloIndigena.html\">Pueblo Indigena</a>#1)</span></p></blockquote><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
@@ -225,6 +234,22 @@
          fhir:code [ fhir:v "1" ]
        ] )
      ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "PuebloIndigenaPertenencia"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "PuebloIndigenaCodigo"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSPuebloIndigena"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1" ]
+         ] ) ;
+         fhir:text [ fhir:v "Mapuche" ]
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena"^^xsd:anyURI ]
   ] [
      fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "false"^^xsd:boolean ]

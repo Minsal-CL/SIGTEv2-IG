@@ -18,6 +18,7 @@
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/NacionalidadCodigo': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero']) &gt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/IdentidadGenero': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena']) &gt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente']) &gt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente': maximum cardinality of 'extension' is 1</sch:assert>
@@ -39,6 +40,8 @@
       <sch:assert test="count(f:period) &lt;= 1">period: maximum cardinality of 'period' is 1</sch:assert>
       <sch:assert test="count(f:assigner) &lt;= 1">assigner: maximum cardinality of 'assigner' is 1</sch:assert>
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador']) &gt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador']) &lt;= 1">extension with URL = 'http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:use) &lt;= 1">use: maximum cardinality of 'use' is 1</sch:assert>
       <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
       <sch:assert test="count(f:type) &lt;= 1">type: maximum cardinality of 'type' is 1</sch:assert>

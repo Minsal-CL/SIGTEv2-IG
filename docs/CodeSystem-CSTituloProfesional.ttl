@@ -1,0 +1,134 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSTituloProfesional"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CSTituloProfesional-1\"> </a></td><td>MÉDICO CIRUJANO</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CSTituloProfesional-2\"> </a></td><td>CIRUJANO DENTISTA</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CSTituloProfesional-3\"> </a></td><td>ENFERMERAS(OS)</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CSTituloProfesional-4\"> </a></td><td>ENFERMERAS(OS) MATRONAS(ES)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CSTituloProfesional-5\"> </a></td><td>MATRONAS(ES)</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"CSTituloProfesional-6\"> </a></td><td>TECNÓLOGOS MÉDICOS</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"CSTituloProfesional-7\"> </a></td><td>PSICÓLOGOS/AS</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"CSTituloProfesional-8\"> </a></td><td>KINESIÓLOGOS/AS</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"CSTituloProfesional-9\"> </a></td><td>FARMACÉUTICOS Y QUÍMICO-FARMACÉUTICOS</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"CSTituloProfesional-10\"> </a></td><td>BIOQUÍMICOS</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"CSTituloProfesional-11\"> </a></td><td>NUTRICIONISTAS</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"CSTituloProfesional-12\"> </a></td><td>FONOAUDIÓLOGOS/AS</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"CSTituloProfesional-13\"> </a></td><td>TERAPEUTAS OCUPACIONALES</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"CSTituloProfesional-14\"> </a></td><td>AUXILIARES PARAMÉDICOS DE ALIMENTACIÓN</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"CSTituloProfesional-15\"> </a></td><td>A.P. DE RADIOLOGÍA, RADIOTERAPIA, LAB</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"CSTituloProfesional-16\"> </a></td><td>AUXILIARES PARAMÉDICOS DE ODONTOLOGÍA</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"CSTituloProfesional-17\"> </a></td><td>AUXILIARES PARAMÉDICOS DE FARMACIA</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"CSTituloProfesional-18\"> </a></td><td>AUXILIARES DE ENFERMERÍA</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"CSTituloProfesional-19\"> </a></td><td>TÉCNICO EN NIVEL SUPERIOR EN SALUD</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"CSTituloProfesional-20\"> </a></td><td>TÉCNICOS EN SALUD</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"CSTituloProfesional-21\"> </a></td><td>TÉCNICOS NIVEL MEDIO EN SALUD</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"CSTituloProfesional-22\"> </a></td><td>LABORATORISTAS DENTALES</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"CSTituloProfesional-23\"> </a></td><td>PODÓLOGOS/AS</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"CSTituloProfesional-24\"> </a></td><td>ÓPTICOS/AS</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"CSTituloProfesional-25\"> </a></td><td>CONTACTÓLOGOS/AS</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"CSTituloProfesional-26\"> </a></td><td>HOMEÓPATAS</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"CSTituloProfesional-27\"> </a></td><td>ACUPUNTURISTAS</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"CSTituloProfesional-28\"> </a></td><td>NATURÓPATAS</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"CSTituloProfesional-29\"> </a></td><td>COSMETÓLOGOS/AS</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"CSTituloProfesional-99\"> </a></td><td>DESCONOCIDA</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.3"] ; # 
+  fhir:name [ fhir:v "CSTituloProfesional"] ; # 
+  fhir:title [ fhir:v "TituloProfesional"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-01-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "MINSAL Chile"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "MINSAL Chile" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "TituloProfesional"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "30"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "MÉDICO CIRUJANO" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "CIRUJANO DENTISTA" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "ENFERMERAS(OS)" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "ENFERMERAS(OS) MATRONAS(ES)" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "MATRONAS(ES)" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "TECNÓLOGOS MÉDICOS" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "PSICÓLOGOS/AS" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "KINESIÓLOGOS/AS" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "FARMACÉUTICOS Y QUÍMICO-FARMACÉUTICOS" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "BIOQUÍMICOS" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "NUTRICIONISTAS" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "FONOAUDIÓLOGOS/AS" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "TERAPEUTAS OCUPACIONALES" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "AUXILIARES PARAMÉDICOS DE ALIMENTACIÓN" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "A.P. DE RADIOLOGÍA, RADIOTERAPIA, LAB" ]
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "AUXILIARES PARAMÉDICOS DE ODONTOLOGÍA" ]
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "AUXILIARES PARAMÉDICOS DE FARMACIA" ]
+  ] [
+     fhir:code [ fhir:v "18" ] ;
+     fhir:display [ fhir:v "AUXILIARES DE ENFERMERÍA" ]
+  ] [
+     fhir:code [ fhir:v "19" ] ;
+     fhir:display [ fhir:v "TÉCNICO EN NIVEL SUPERIOR EN SALUD" ]
+  ] [
+     fhir:code [ fhir:v "20" ] ;
+     fhir:display [ fhir:v "TÉCNICOS EN SALUD" ]
+  ] [
+     fhir:code [ fhir:v "21" ] ;
+     fhir:display [ fhir:v "TÉCNICOS NIVEL MEDIO EN SALUD" ]
+  ] [
+     fhir:code [ fhir:v "22" ] ;
+     fhir:display [ fhir:v "LABORATORISTAS DENTALES" ]
+  ] [
+     fhir:code [ fhir:v "23" ] ;
+     fhir:display [ fhir:v "PODÓLOGOS/AS" ]
+  ] [
+     fhir:code [ fhir:v "24" ] ;
+     fhir:display [ fhir:v "ÓPTICOS/AS" ]
+  ] [
+     fhir:code [ fhir:v "25" ] ;
+     fhir:display [ fhir:v "CONTACTÓLOGOS/AS" ]
+  ] [
+     fhir:code [ fhir:v "26" ] ;
+     fhir:display [ fhir:v "HOMEÓPATAS" ]
+  ] [
+     fhir:code [ fhir:v "27" ] ;
+     fhir:display [ fhir:v "ACUPUNTURISTAS" ]
+  ] [
+     fhir:code [ fhir:v "28" ] ;
+     fhir:display [ fhir:v "NATURÓPATAS" ]
+  ] [
+     fhir:code [ fhir:v "29" ] ;
+     fhir:display [ fhir:v "COSMETÓLOGOS/AS" ]
+  ] [
+     fhir:code [ fhir:v "99" ] ;
+     fhir:display [ fhir:v "DESCONOCIDA" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

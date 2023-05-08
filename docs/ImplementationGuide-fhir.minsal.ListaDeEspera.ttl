@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ListaEsperaChile</h2><p>The official URL for this implementation guide is: </p><pre>http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera</pre><div><p>Proyecto Listas de Espera MINSAL CHILE</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "http://minsal.cl/listaespera/ImplementationGuide/fhir.minsal.ListaDeEspera"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.2"] ; # 
+  fhir:version [ fhir:v "0.1.3"] ; # 
   fhir:name [ fhir:v "ListaEsperaChile"] ; # 
   fhir:title [ fhir:v "Proyecto Listas de Espera MINSAL CHILE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-04-21T12:02:08-04:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-05-08T17:35:30-04:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "MINSAL Chile"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "MINSAL Chile" ] ;
@@ -627,7 +627,7 @@
          fhir:reference [ fhir:v "StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE" ]
        ] ;
        fhir:name [ fhir:v "Condicion Atender Diagnostico Confirmacion LE" ] ;
-       fhir:description [ fhir:v "Condicion Atender Diagnostico Confirmacion LE" ] ;
+       fhir:description [ fhir:v "Condicion Atender Diagnostico Confirmacion LE\n\n* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:\n  ```\n  \"code\": {\n    \"coding\": [\n      {\n        \"system\": \"url fuente\",\n        \"code\": \"código que representa el diagnóstico\",\n        \"display\": \"texto que representa el código usado\"\n      }\n    ],\n    \"text\": \"representación en texto del diagnóstico\"\n  }\n  ```" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -639,19 +639,7 @@
          fhir:reference [ fhir:v "StructureDefinition/CondicionAtenderDiagnosticoSospechaLE" ]
        ] ;
        fhir:name [ fhir:v "Condicion Atender Diagnostico Sospecha LE" ] ;
-       fhir:description [ fhir:v "Condicion Atender Diagnostico Sospecha LE" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE" ]
-       ] ;
-       fhir:name [ fhir:v "Condicion Atender Hipotesis Diagnostica Codigo" ] ;
-       fhir:description [ fhir:v "Condicion Atender Hipotesis Diagnostica Codigo" ] ;
+       fhir:description [ fhir:v "Condicion Atender Diagnostico Sospecha LE\n\n* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:\n  ```\n  \"code\": {\n    \"coding\": [\n      {\n        \"system\": \"url fuente\",\n        \"code\": \"código que representa el diagnóstico\",\n        \"display\": \"texto que representa el código usado\"\n      }\n    ],\n    \"text\": \"representación en texto del diagnóstico\"\n  }\n  ```" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -663,7 +651,7 @@
          fhir:reference [ fhir:v "StructureDefinition/ConditionInicioDiagnosticoSospechaLE" ]
        ] ;
        fhir:name [ fhir:v "Condition Inicio Diagnostico Sospecha LE" ] ;
-       fhir:description [ fhir:v "Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta." ] ;
+       fhir:description [ fhir:v "Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta.\n\n* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:\n  ```\n  \"code\": {\n    \"coding\": [\n      {\n        \"system\": \"url fuente\",\n        \"code\": \"código que representa el diagnóstico\",\n        \"display\": \"texto que representa el código usado\"\n      }\n    ],\n    \"text\": \"representación en texto del diagnóstico\"\n  }\n  ```" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -759,7 +747,7 @@
          fhir:reference [ fhir:v "StructureDefinition/OrganizationLE" ]
        ] ;
        fhir:name [ fhir:v "Organization LE" ] ;
-       fhir:description [ fhir:v "Organization LE" ] ;
+       fhir:description [ fhir:v "Organization LE según [Códigos del establecimientos](https://repositoriodeis.minsal.cl/DatosAbiertos/Establecimientos_ChileDEIS_MINSAL%2021-04-2023.xlsx)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -940,6 +928,18 @@
        ] ;
        fhir:name [ fhir:v "ExtBool Alergia" ] ;
        fhir:description [ fhir:v "ExtBool Alergia" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://minsal.cl/listaespera/StructureDefinition/ExtBoolAtencionPreferente> ;
+         fhir:reference [ fhir:v "StructureDefinition/ExtBoolAtencionPreferente" ]
+       ] ;
+       fhir:name [ fhir:v "ExtBool Atención Preferente" ] ;
+       fhir:description [ fhir:v "ExtBool ¿Hace uso de atención preferente?" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1294,6 +1294,18 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://minsal.cl/listaespera/ValueSet/VSEspecialidadMed> ;
+         fhir:reference [ fhir:v "ValueSet/VSEspecialidadMed" ]
+       ] ;
+       fhir:name [ fhir:v "EspecialidadMed" ] ;
+       fhir:description [ fhir:v "EspecialidadMed" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://minsal.cl/listaespera/ValueSet/VSEstablecimientoDestinoCodigo> ;
          fhir:reference [ fhir:v "ValueSet/VSEstablecimientoDestinoCodigo" ]
        ] ;
@@ -1546,6 +1558,18 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://minsal.cl/listaespera/ValueSet/VSTituloProfesional> ;
+         fhir:reference [ fhir:v "ValueSet/VSTituloProfesional" ]
+       ] ;
+       fhir:name [ fhir:v "TituloProfesional" ] ;
+       fhir:description [ fhir:v "TituloProfesional" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://minsal.cl/listaespera/ValueSet/VSinterconsulta> ;
          fhir:reference [ fhir:v "ValueSet/VSinterconsulta" ]
        ] ;
@@ -1599,6 +1623,18 @@
        ] ;
        fhir:name [ fhir:v "Documento Acreditacion Cuidador" ] ;
        fhir:description [ fhir:v "Documento Acreditacion Cuidador" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed> ;
+         fhir:reference [ fhir:v "CodeSystem/CSEspecialidadMed" ]
+       ] ;
+       fhir:name [ fhir:v "EspecialidadMed" ] ;
+       fhir:description [ fhir:v "EspecialidadMed" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1858,11 +1894,35 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional> ;
+         fhir:reference [ fhir:v "CodeSystem/CSTituloProfesional" ]
+       ] ;
+       fhir:name [ fhir:v "TituloProfesional" ] ;
+       fhir:description [ fhir:v "TituloProfesional" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://minsal.cl/listaespera/CodeSystem/CSinterconsulta> ;
          fhir:reference [ fhir:v "CodeSystem/CSinterconsulta" ]
        ] ;
        fhir:name [ fhir:v "Interconsulta" ] ;
        fhir:description [ fhir:v "Interconsulta" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ConceptMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://minsal.cl/listaespera/ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus> ;
+         fhir:reference [ fhir:v "ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus" ]
+       ] ;
+       fhir:name [ fhir:v "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus" ] ;
+       fhir:description [ fhir:v "Mapping de codigos confirmación diagnostica a condition verfication status" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2058,21 +2118,6 @@
        fhir:example [
          fhir:v "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE"^^xsd:anyURI ;
          fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderDiagnosticoSospechaLE>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Condition" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://minsal.cl/listaespera/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE> ;
-         fhir:reference [ fhir:v "Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE" ]
-       ] ;
-       fhir:name [ fhir:v "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender" ] ;
-       fhir:description [ fhir:v "Condicion Atender Hipotesis Diagnostica Codigo Evento de atender" ] ;
-       fhir:example [
-         fhir:v "http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE"^^xsd:anyURI ;
-         fhir:link <http://minsal.cl/listaespera/StructureDefinition/CondicionAtenderHipotesisDiagnosticaCodigoLE>
        ]
      ] [
        fhir:extension ( [

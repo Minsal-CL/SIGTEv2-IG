@@ -75,8 +75,8 @@ This element is labeled as a modifier because the status contains the code enter
 "Appointment.supportingInformation","Appointment.supportingInformation","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
 ","Additional information to support the appointment","Additional information to support the appointment provided when making the appointment.","","","","","","","","","",,,,,"",,,,"Appointment.supportingInformation",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo",".inboundRelationship[@typeCode = 'SPRT'].observation","ATTACH","FiveWs.context"
-"Appointment.start","Appointment.start","","","",0,1,"Y","","Y","instant {[]} {[]}
-","When appointment is to take place","Date/Time that the appointment is to take place.","","","","","","","","","",,,,,"",,,,"Appointment.start",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Appointment.start","Appointment.start","","","",1,1,"Y","","Y","instant {[]} {[]}
+","Fecha de la Cita","Date/Time that the appointment is to take place.","","","","","","","","","",,,,,"",,,,"Appointment.start",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.occurrence[x]",".effectiveTime.low","DTSTART","FiveWs.init","ARQ-11.1, SCH-11.4 / TQ1-7"
 "Appointment.end","Appointment.end","","","",0,1,"","","Y","instant {[]} {[]}
 ","When appointment is to conclude","Date/Time that the appointment is to conclude.","","","","","","","","","",,,,,"",,,,"Appointment.end",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

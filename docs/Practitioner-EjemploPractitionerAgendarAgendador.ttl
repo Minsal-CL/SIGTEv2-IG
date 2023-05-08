@@ -16,9 +16,13 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAgendarAgendador\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAgendarAgendador&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Medico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (terminology.cens.cl#01)</span></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAgendarAgendador\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAgendarAgendador&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), id: 2134 (use: SECONDARY)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: subesp</p><p><b>code</b>: CARDIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#3)</span></p></blockquote></div>"
   ] ; # 
   fhir:identifier ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "K" ]
+     ] ) ;
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
@@ -29,23 +33,27 @@
      fhir:value [ fhir:v "2134" ]
   ] [
      fhir:use [ fhir:v "secondary" ] ;
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "ValorRNPI" ]
-       ] )
-     ] ;
+     fhir:system [ fhir:v "http://rnpi.superdesalud.gob.cl"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "2134" ]
   ] ) ; # 
   fhir:qualification ( [
      fhir:identifier ( [
-       fhir:value [ fhir:v "cert" ]
+       fhir:value [ fhir:v "tit" ]
      ] ) ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.cens.cl"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "01" ] ;
-         fhir:display [ fhir:v "Medico" ]
+         fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ]
+       ] )
+     ]
+  ] [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "subesp" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "3" ]
        ] )
      ]
   ] ) . # 

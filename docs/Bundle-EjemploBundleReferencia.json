@@ -18,11 +18,11 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderReferencia\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderReferencia&quot; Updated &quot;2023-02-13 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Referenciada (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code referenciada = 'Referenciada', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestReferenciada\">See above (http://acme.com/ehr/fhir/ServiceRequest/referencia)</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderReferencia\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderReferencia&quot; Updated &quot;2023-02-13 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Referenciar (Details: http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE code referenciar = 'Referenciar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleAgendadorSRREFERENCIADA\">See above (http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestReferenciada\">See above (http://acme.com/ehr/fhir/ServiceRequest/referencia)</a></p></div>"
       },
       "eventCoding" : {
         "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoEventoLE",
-        "code" : "referenciada"
+        "code" : "referenciar"
       },
       "author" : {
         "reference" : "http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador"
@@ -46,13 +46,14 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestReferenciada\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestReferenciada&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Especialidad Médica Destino Código</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#1)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>performer</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleAgendadorSRREFERENCIADA\">See above (http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor)</a></p><p><b>locationCode</b>: Motivo derivación <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSDestinoReferenciaCodigo.html\">Destino Referencia Codigo</a>#1)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestReferenciada\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestReferenciada&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Especialidad Médica Destino Código</b>: CARDIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#3)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: CIRUGÍA GENERAL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#4)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>performer</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor)</a></p><p><b>locationCode</b>: Motivo derivación <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSDestinoReferenciaCodigo.html\">Destino Referencia Codigo</a>#1)</span></p></div>"
       },
       "extension" : [{
         "url" : "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo",
         "valueCodeableConcept" : {
           "coding" : [{
-            "code" : "1"
+            "system" : "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed",
+            "code" : "3"
           }]
         }
       },
@@ -60,7 +61,8 @@
         "url" : "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo",
         "valueCodeableConcept" : {
           "coding" : [{
-            "code" : "1"
+            "system" : "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed",
+            "code" : "4"
           }]
         }
       }],
@@ -91,7 +93,7 @@
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor",
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador",
     "resource" : {
       "resourceType" : "PractitionerRole",
       "id" : "EjemploPractitionerRoleAgendadorSRREFERENCIADA",
@@ -100,20 +102,21 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendadorSRREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendadorSRREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/referenciaAtendedor)</a></p><p><b>code</b>: atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#atendedor)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendadorSRREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendadorSRREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/referenciaAtendedor)</a></p><p><b>code</b>: Atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#atendedor)</span></p></div>"
       },
       "organization" : {
         "reference" : "http://acme.com/ehr/fhir/Organization/referenciaAtendedor"
       },
       "code" : [{
         "coding" : [{
+          "system" : "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE",
           "code" : "atendedor"
         }]
       }]
     }
   },
   {
-    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador",
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor",
     "resource" : {
       "resourceType" : "PractitionerRole",
       "id" : "EjemploPractitionerRoleReferenciadorMHREFERENCIADA",
@@ -122,7 +125,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Practitioner/referencia)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendadorSRREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/referenciaAgendador)</a></p><p><b>code</b>: referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#referenciador)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Practitioner/referencia)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendadorSRREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/referenciaAgendador)</a></p><p><b>code</b>: Referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#referenciador)</span></p></div>"
       },
       "practitioner" : {
         "reference" : "http://acme.com/ehr/fhir/Practitioner/referencia"
@@ -132,6 +135,7 @@
       },
       "code" : [{
         "coding" : [{
+          "system" : "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE",
           "code" : "referenciador"
         }]
       }]
@@ -147,9 +151,13 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), ValorRNPI: 2134\u00a0(use:\u00a0SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id:\u00a0cert</td><td>Certificado(s) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (certMedicos &quot;Medico Cirujano&quot;)</span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id:\u00a0tit</td><td>MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></td></tr></table></div>"
       },
       "identifier" : [{
+        "extension" : [{
+          "url" : "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
+          "valueString" : "K"
+        }],
         "use" : "official",
         "type" : {
           "coding" : [{
@@ -161,24 +169,18 @@
       },
       {
         "use" : "secondary",
-        "type" : {
-          "coding" : [{
-            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
-            "code" : "ValorRNPI"
-          }]
-        },
+        "system" : "http://rnpi.superdesalud.gob.cl",
         "value" : "2134"
       }],
       "qualification" : [{
         "identifier" : [{
-          "value" : "cert"
+          "value" : "tit"
         }],
         "code" : {
           "coding" : [{
-            "system" : "http://terminology.cens.cl/CodeSystem/certMedicos",
-            "display" : "Medico Cirujano"
-          }],
-          "text" : "Certificado(s)"
+            "system" : "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional",
+            "code" : "1"
+          }]
         }
       }]
     }

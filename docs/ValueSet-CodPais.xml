@@ -3,10 +3,10 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="CodPais"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html"><code>urn:iso:std:iso:3166</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html"><code>urn:iso:std:iso:3166</code></a> where code  matches (by regex)  [0-9]{3}</li></ul></div>
   </text>
   <url value="http://minsal.cl/listaespera/ValueSet/CodPais"/>
-  <version value="0.1.2"/>
+  <version value="0.1.3"/>
   <name value="CodPaises"/>
   <title value="Códigos de Países"/>
   <status value="active"/>
@@ -32,6 +32,11 @@
   <compose>
     <include>
       <system value="urn:iso:std:iso:3166"/>
+      <filter>
+        <property value="code"/>
+        <op value="regex"/>
+        <value value="[0-9]{3}"/>
+      </filter>
     </include>
   </compose>
 </ValueSet>

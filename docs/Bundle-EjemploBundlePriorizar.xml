@@ -76,7 +76,7 @@
           <profile value="http://minsal.cl/listaespera/StructureDefinition/PractitionerRoleLE"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRolePriorizar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRolePriorizar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="#Practitioner_EjemploPractitionerPriorizar">See above (http://acme.com/ehr/fhir/Practitioner/priorizar)</a></p><p><b>organization</b>: <a href="#Organization_EjemploOrganizationPriorizar">See above (http://acme.com/ehr/fhir/Organization/priorizar)</a></p><p><b>code</b>: Priorizador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#Priorizador)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRolePriorizar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRolePriorizar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="#Practitioner_EjemploPractitionerPriorizar">See above (http://acme.com/ehr/fhir/Practitioner/priorizar)</a></p><p><b>organization</b>: <a href="#Organization_EjemploOrganizationPriorizar">See above (http://acme.com/ehr/fhir/Organization/priorizar)</a></p><p><b>code</b>: Priorizador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPractitionerTipoRolLE.html">Rol de médicos</a>#priorizador)</span></p></div>
         </text>
         <practitioner>
           <reference value="http://acme.com/ehr/fhir/Practitioner/priorizar"/>
@@ -86,7 +86,8 @@
         </organization>
         <code>
           <coding>
-            <code value="Priorizador"/>
+            <system value="http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"/>
+            <code value="priorizador"/>
           </coding>
         </code>
       </PractitionerRole>
@@ -118,9 +119,12 @@
           <profile value="http://minsal.cl/listaespera/StructureDefinition/PractitionerLE"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerPriorizar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerPriorizar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerLE.html">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), ValorRNPI: 2134 (use: SECONDARY)</p><h3>Qualifications</h3><table class="grid"><tr><td>-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td>*</td><td>id: cert</td><td>Medico <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (terminology.cens.cl#01)</span></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerPriorizar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerPriorizar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerLE.html">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), id: 2134 (use: SECONDARY)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSTituloProfesional.html">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadMed.html">EspecialidadMed</a>#2)</span></p></blockquote></div>
         </text>
         <identifier>
+          <extension url="http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador">
+            <valueString value="K"/>
+          </extension>
           <use value="official"/>
           <type>
             <coding>
@@ -132,23 +136,28 @@
         </identifier>
         <identifier>
           <use value="secondary"/>
-          <type>
-            <coding>
-              <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
-              <code value="ValorRNPI"/>
-            </coding>
-          </type>
+          <system value="http://rnpi.superdesalud.gob.cl"/>
           <value value="2134"/>
         </identifier>
         <qualification>
           <identifier>
-            <value value="cert"/>
+            <value value="tit"/>
           </identifier>
           <code>
             <coding>
-              <system value="http://terminology.cens.cl"/>
-              <code value="01"/>
-              <display value="Medico"/>
+              <system value="http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"/>
+              <code value="1"/>
+            </coding>
+          </code>
+        </qualification>
+        <qualification>
+          <identifier>
+            <value value="esp"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"/>
+              <code value="2"/>
             </coding>
           </code>
         </qualification>
@@ -164,7 +173,7 @@
           <profile value="http://minsal.cl/listaespera/StructureDefinition/PatientLE"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="EjemploPatient"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;EjemploPatient&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PatientLE.html">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Identidad de genero</b>: Masculino <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSIdentidaddeGenero.html">Identidad de Genero</a>#1)</span></p><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Patient</b><a name="EjemploPatient"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Patient &quot;EjemploPatient&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PatientLE.html">Paciente LE</a></p></div><p><b>Codigo de Identificación de países</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Codigo de Identificación de Nacionalidad</b>: Andorra <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#AD)</span></p><p><b>Identidad de genero</b>: Masculino <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSIdentidaddeGenero.html">Identidad de Genero</a>#1)</span></p><blockquote><p><b>Etnia a la cual pertenece</b></p><blockquote><p><b>url</b></p><code>PuebloIndigenaPertenencia</code></blockquote><p><b>value</b>: true</p><blockquote><p><b>url</b></p><code>PuebloIndigenaCodigo</code></blockquote><p><b>value</b>: Mapuche <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPuebloIndigena.html">Pueblo Indigena</a>#1)</span></p></blockquote><p><b>ExtBool Afrodescendiente</b>: false</p><p><b>identifier</b>: RUN: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p></div>
         </text>
         <extension url="http://minsal.cl/listaespera/StructureDefinition/CodigoPaises">
           <valueCodeableConcept>
@@ -191,6 +200,20 @@
               <code value="1"/>
             </coding>
           </valueCodeableConcept>
+        </extension>
+        <extension url="http://minsal.cl/listaespera/StructureDefinition/PuebloIndigena">
+          <extension url="PuebloIndigenaPertenencia">
+            <valueBoolean value="true"/>
+          </extension>
+          <extension url="PuebloIndigenaCodigo">
+            <valueCodeableConcept>
+              <coding>
+                <system value="http://minsal.cl/listaespera/CodeSystem/CSPuebloIndigena"/>
+                <code value="1"/>
+              </coding>
+              <text value="Mapuche"/>
+            </valueCodeableConcept>
+          </extension>
         </extension>
         <extension url="http://minsal.cl/listaespera/StructureDefinition/ExtBoolAfrodescendiente">
           <valueBoolean value="false"/>

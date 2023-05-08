@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendadorSRREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendadorSRREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>organization</b>: <a href=\"Bundle-EjemploBundleReferencia.html#http-//acme.com/ehr/fhir/Organization/referenciaAtendedor\">http://acme.com/ehr/fhir/Organization/referenciaAtendedor</a></p><p><b>code</b>: atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#atendedor)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendadorSRREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendadorSRREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>organization</b>: <a href=\"Bundle-EjemploBundleReferencia.html#http-//acme.com/ehr/fhir/Organization/referenciaAtendedor\">http://acme.com/ehr/fhir/Organization/referenciaAtendedor</a></p><p><b>code</b>: Atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#atendedor)</span></p></div>"
   ] ; # 
   fhir:organization [
      fhir:link <http://acme.com/ehr/fhir/Organization/referenciaAtendedor> ;
@@ -24,6 +24,7 @@
   ] ; # 
   fhir:code ( [
      fhir:coding ( [
+       fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "atendedor" ]
      ] )
   ] ) . # 

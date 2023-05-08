@@ -6,19 +6,15 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondicionAtenderDiagnosticoConfirmacionLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondicionAtenderDiagnosticoConfirmacionLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html\">Condicion Atender Diagnostico Confirmacion LE</a></p></div><p><b>verificationStatus</b>: confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#confirmed)</span></p><p><b>code</b>: CIE11 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTipoCodDiagnostica.html\">Tipo Codificación Diagnostica</a>#1)</span></p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>"
-  },
-  "verificationStatus" : {
-    "coding" : [{
-      "code" : "confirmed"
-    }]
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondicionAtenderDiagnosticoConfirmacionLE\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondicionAtenderDiagnosticoConfirmacionLE&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html\">Condicion Atender Diagnostico Confirmacion LE</a></p></div><p><b>code</b>: Diagnostico1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (uno#1)</span></p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>"
   },
   "code" : {
     "coding" : [{
-      "system" : "http://minsal.cl/listaespera/CodeSystem/CSTipoCodDiagnostica",
-      "code" : "1"
+      "system" : "http://diagnosticos.cl/uno",
+      "code" : "1",
+      "display" : "Diagnostico1"
     }],
-    "text" : "CIE11"
+    "text" : "Diagnostico1"
   },
   "subject" : {
     "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"

@@ -46,12 +46,13 @@
       },
       "text" : {
         "status" : "extensions",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Motivo Cierre Interconsulta</b>: 2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#2)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Motivo Cierre Interconsulta</b>: Atención Realizada (1) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSMotivoCierreInterconsulta.html\">Motivo Cierre Interconsulta</a>#2)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>"
       },
       "extension" : [{
         "url" : "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta",
         "valueCodeableConcept" : {
           "coding" : [{
+            "system" : "http://minsal.cl/listaespera/CodeSystem/CSMotivoCierreInterconsulta",
             "code" : "2"
           }]
         }
@@ -82,7 +83,7 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerTerminar\">See above (http://acme.com/ehr/fhir/Practitioner/terminar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationTerminar\">See above (http://acme.com/ehr/fhir/Organization/terminar)</a></p><p><b>code</b>: terminador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#terminador)</span></p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerTerminar\">See above (http://acme.com/ehr/fhir/Practitioner/terminar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationTerminar\">See above (http://acme.com/ehr/fhir/Organization/terminar)</a></p><p><b>code</b>: Terminador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#terminador)</span></p></div>"
       },
       "practitioner" : {
         "reference" : "http://acme.com/ehr/fhir/Practitioner/terminar"
@@ -92,6 +93,7 @@
       },
       "code" : [{
         "coding" : [{
+          "system" : "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE",
           "code" : "terminador"
         }]
       }]
@@ -107,9 +109,13 @@
       },
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), ValorRNPI: 2134\u00a0(use:\u00a0SECONDARY)</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerTerminar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p></div>"
       },
       "identifier" : [{
+        "extension" : [{
+          "url" : "http://minsal.cl/listaespera/StructureDefinition/DigitoVerificador",
+          "valueString" : "K"
+        }],
         "use" : "official",
         "type" : {
           "coding" : [{
@@ -121,12 +127,7 @@
       },
       {
         "use" : "secondary",
-        "type" : {
-          "coding" : [{
-            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
-            "code" : "ValorRNPI"
-          }]
-        },
+        "system" : "http://rnpi.superdesalud.gob.cl",
         "value" : "2134"
       }]
     }

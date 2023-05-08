@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-EjemploBundleReferencia.html#http-//acme.com/ehr/fhir/Practitioner/referencia\">http://acme.com/ehr/fhir/Practitioner/referencia</a></p><p><b>organization</b>: <a href=\"Bundle-EjemploBundleReferencia.html#http-//acme.com/ehr/fhir/Organization/referenciaAgendador\">http://acme.com/ehr/fhir/Organization/referenciaAgendador</a></p><p><b>code</b>: referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#referenciador)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"Bundle-EjemploBundleReferencia.html#http-//acme.com/ehr/fhir/Practitioner/referencia\">http://acme.com/ehr/fhir/Practitioner/referencia</a></p><p><b>organization</b>: <a href=\"Bundle-EjemploBundleReferencia.html#http-//acme.com/ehr/fhir/Organization/referenciaAgendador\">http://acme.com/ehr/fhir/Organization/referenciaAgendador</a></p><p><b>code</b>: Referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#referenciador)</span></p></div>"
   ] ; # 
   fhir:practitioner [
      fhir:link <http://acme.com/ehr/fhir/Practitioner/referencia> ;
@@ -28,6 +28,7 @@
   ] ; # 
   fhir:code ( [
      fhir:coding ( [
+       fhir:system [ fhir:v "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "referenciador" ]
      ] )
   ] ) . # 
