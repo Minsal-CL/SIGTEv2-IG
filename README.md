@@ -7,8 +7,8 @@ Esta es la Documentación Digital del Sistema de Lista de Espera Interoperable (
 Esta Guía de Implementación está publicada en las siguientes ubicaciones:
 
 
-Continuous Build:  __https://github.com/Minsal-CL/minsal-cl.github.io__  
-Canonical / permanent URL: __https://minsal-cl.github.io__  
+Continuous Build:  __https://build.fhir.org/ig/Minsal-CL/SIGTEv2-IG/__  
+Canonical / permanent URL: __https://minsal-cl.github.io/SIGTEv2-IG/__  
 
 <br> </br>
 
