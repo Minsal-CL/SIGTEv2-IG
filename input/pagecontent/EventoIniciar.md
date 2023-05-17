@@ -1,6 +1,6 @@
-# Evento: Inicio
+# Evento: Iniciar
 
-El evento INICIO tiene asociado los siguientes códigos de evento: 
+El evento INICIAR tiene asociado los siguientes códigos de evento: 
 
 
 | Código | Evento| Descripción | Respuesta |

@@ -15,8 +15,8 @@
 
 ## Definicion de Eventos
 
-* [Evento Iniciar](EventoInicio.html)
-* [Evento Referenciar](EventoReferenciada.html)
+* [Evento Iniciar](EventoIniciar.html)
+* [Evento Referenciar](EventoReferenciar.html)
 * [Evento Revisar](EventoRevisar.html)
 * [Evento Priorizar](EventoPriorizar.html)
 * [Evento Agendar](EventoAgendar.html)

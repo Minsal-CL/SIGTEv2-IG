@@ -1,6 +1,6 @@
-# Evento: Referenciada
+# Evento: Referenciar
 
-El evento REFERENCIADA tiene asociado los siguientes códigos de evento: 
+El evento REFERENCIAR tiene asociado los siguientes códigos de evento: 
 
 
 | Código | Evento| Descripción | Respuesta |
@@ -44,7 +44,7 @@ Los recursos usados en este evento son los siguientes:
 
 ## Secuencia del Evento
 
-El evento inicio debe soportar las siguientes secuencias:
+El evento iniciar debe soportar las siguientes secuencias:
 <div align="center" >
 {% include evento-referenciada.svg %}
 </div>

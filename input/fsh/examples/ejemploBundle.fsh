@@ -176,6 +176,9 @@ Description: "Bundle Evento de Agendar"
 * entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/agendar"
 * entry[organization].resource = EjemploOrganizationAgendar
 
+* entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+* entry[patient].resource = EjemploPatient
+
 
 
 //* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/praR1"

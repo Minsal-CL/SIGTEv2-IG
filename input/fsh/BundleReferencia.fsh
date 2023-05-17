@@ -2,7 +2,7 @@ Profile: BundleReferenciaLE
 Parent: Bundle
 Id: BundleReferenciaLE
 Title: "Bundle Referencia LE"
-Description: "Bundle Referencia LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento referenciada."
+Description: "Bundle Referencia LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento referenciar."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
