@@ -15,7 +15,7 @@ Description: "Bundle LE recurso utilizado para transportar todos los datos del m
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
-* entry 11..14 MS
+* entry 10..14 MS
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
         and encounter 1..1 
