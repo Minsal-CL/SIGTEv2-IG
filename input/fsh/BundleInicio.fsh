@@ -25,7 +25,7 @@ Description: "Bundle LE recurso utilizado para transportar todos los datos del m
         and conditionDiagnostico 1..1 
         and conditionComorbilidad 0..1 
         and conditionGes 0..1 
-        and observation 1..1 
+        and observation 0..1 
         and allergyintolerance 0..1
         and practitionerrole 1..1
         and practitioner 1..1
