@@ -74,9 +74,12 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 * Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
 
 
-## Mensaje Bundle de Ejemplo
+## Mensajes de Ejemplo
 
-* [BundleAgendarLE](Bundle-EjemploBundleAgendar.html)
+* [BundleAgendarLE Agendar](Bundle-EjemploBundleAgendar.html)
+  * Appointment usado para agendar cita([Appointment Agendar](Appointment-EjemploAppointmentAgendar.html))
+  * Appointment usado para cancelar cita([Appointment Cancelar](Appointment-EjemploAppointmentAgendarCancelar.html))
+  * Appointment usado para marcar una cita sin presentación([Appointment Sin Presentación](Appointment-EjemploAppointmentAgendarSinPresentacion.html))
 
 ## Notas
 
