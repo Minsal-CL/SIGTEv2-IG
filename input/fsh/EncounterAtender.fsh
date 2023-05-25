@@ -13,12 +13,12 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * identifier 1..1 MS
   * value 1..1 MS
 
-* reasonReference 2..2 MS
+* reasonReference 1..* MS
 * reasonReference ^slicing.discriminator.type = #value
 * reasonReference ^slicing.discriminator.path = "type"
 * reasonReference ^slicing.rules = #open
 * reasonReference ^slicing.description = "Slice creado para almacenar diferentes tipos de reasonReference"
-* reasonReference contains CondicionAtenderDiagnosticoConfirmacionLE 1..1 MS and ObservationAtenderLE 1..1 MS
+* reasonReference contains CondicionAtenderDiagnosticoConfirmacionLE 1..1 MS and ObservationAtenderLE 0..* MS
 * reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] only Reference(CondicionAtenderDiagnosticoConfirmacionLE)
 * reasonReference[ObservationAtenderLE] only Reference(ObservationAtenderLE)
 * reasonReference[ObservationAtenderLE].type = "Observation"

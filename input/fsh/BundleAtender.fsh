@@ -15,7 +15,7 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
-* entry 0..13 MS
+* entry 0..* MS
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
         and practitioner 1..1
@@ -25,7 +25,7 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
         and patient 1..1
         and carePlan 1..1
         and questionnaireResponse 1..1
-        and observation 1..1
+        and observation 0..*
         and conditionDiagnosticoSospecha 1..1
         and conditionDiagnosticoConfirmacion 1..1
 

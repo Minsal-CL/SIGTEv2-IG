@@ -27,9 +27,9 @@ Los recursos usados en este evento son los siguientes:
 * [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html): Recurso principal para reflejar los datos de la interconsulta
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
-* [Condition](https://www.hl7.org/FHIR/condition.html): Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
-  * [CondicionAtenderDiagnosticoSospechaLE](StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)
-  * [CondicionAtenderDiagnosticoConfirmacionLE](StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)
+* [Condition](https://www.hl7.org/FHIR/condition.html): Este recurso tiene 2 usos en el evento de Inicio representados por sus perfiles:
+  * [CondicionAtenderDiagnosticoSospechaLE](StructureDefinition-CondicionAtenderDiagnosticoSospechaLE.html): Recurso utilizado para representar el diagnostico de sospecha (Encounter.diagnosis.condition)
+  * [CondicionAtenderDiagnosticoConfirmacionLE](StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html): Recurso utilizado para representar el diagnostico de confirmación (Encounter.reasonReference)
 * [ObservationAtenderLE](StructureDefinition-ObservationAtenderLE.html): Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)
 * [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html): Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)
 * [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (CarePlan.subject / Encounter.subject)
