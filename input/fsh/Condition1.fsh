@@ -1,9 +1,9 @@
-Profile: ConditionInicioDiagnosticoSospechaLE
+Profile: ConditionInicioDiagnosticoLE
 Parent: Condition
-Id: ConditionInicioDiagnosticoSospechaLE
-Title: "Condition Inicio Diagnostico Sospecha LE"
+Id: ConditionInicioDiagnosticoLE
+Title: "Condition Inicio Diagnostico LE"
 Description: """
-Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnóstica del motivo que origina la interconsulta.
+Condicion Inicio 1 LE recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta.
 
 * Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:
   ```
@@ -57,4 +57,5 @@ Condicion Inicio 1 LE recurso que se utiliza para indicar la sospecha diagnósti
     * system = #http://terminology.hl7.org/CodeSystem/condition-category
   * text = #diagnostico
 
-* note 1..1 MS
+* clinicalStatus 1..1 MS
+* verificationStatus 1..1 MS

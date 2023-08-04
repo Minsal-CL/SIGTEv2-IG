@@ -7,9 +7,10 @@ Description: "Encounter Evento de Inicio"
 * identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#FILL
 * identifier.value = "1"
 * status = #finished
+* period.start = "2023-01-22T09:00:00Z"
+* period.end = "2023-01-22T09:00:00Z"
 * appointment = Reference(http://acme.com/ehr/fhir/Appointment/app1)
-* class.code = #AMB
-* class.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+* class = http://minsal.cl/listaespera/CodeSystem/CSModalidadAtencionCodigo#1
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 Instance: EjemploEncounterAtender

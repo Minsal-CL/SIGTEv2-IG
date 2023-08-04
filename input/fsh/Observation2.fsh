@@ -1,8 +1,8 @@
-Profile: ConditionInicioIndiceComorbilidadLE
-Parent: Condition
-Id: ConditionInicioIndiceComorbilidadLE
-Title: "Condition Inicio Indice Comorbilidad LE"
-Description: "Condicion Inicio 2 LE recurso que se utiliza para indicar el índice de comorbilidad de un paciente."
+Profile: ObservationInicioIndiceComorbilidadLE
+Parent: Observation
+Id: ObservationInicioIndiceComorbilidadLE
+Title: "Observation Inicio Indice Comorbilidad LE"
+Description: "Observation Inicio 2 LE recurso que se utiliza para indicar el índice de comorbilidad de un paciente."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
@@ -32,8 +32,8 @@ Description: "Condicion Inicio 2 LE recurso que se utiliza para indicar el índi
 
 * category
   * coding
-    * code = #problem-list-item
-    * system = #http://terminology.hl7.org/CodeSystem/condition-category
+    * code = #vital-signs
+    * system = #http://terminology.hl7.org/CodeSystem/observation-category
   * text = #"Indice Comorbilidad"
 
 //* note 1..1 MS

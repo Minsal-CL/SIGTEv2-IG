@@ -367,12 +367,12 @@ Description: "Estado Interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "En borrador"
-* #2 "En análisis de pertinencia nivel secundario"
-* #3 "En análisis de gestor atención primaria"
-* #4 "En espera de agendamiento"
-* #5 "En esperara de la atención"
-* #6 "En espera de exámenes y procedimientos"
+* #1 "A la espera de referencia"
+* #2 "A la espera de revisión"
+* #3 "A la espera de priorización"
+* #4 "A la espera de agendamiento"
+* #5 "En espera de la atención"
+* #6 "A la espera de cierre"
 * #7 "Cerrada"
 
 

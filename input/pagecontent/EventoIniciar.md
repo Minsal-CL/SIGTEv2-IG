@@ -28,9 +28,9 @@ Los recursos usados en este evento son los siguientes:
 * [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html): Recurso que contiene datos relacionados al mensaje, como el autor, tipo de evento y foco del mensaje.
 * [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html): Recurso que permite reflejar la información relacionada al invididuo autor del proceso (MessageHeader.author)
 * [Condition](https://www.hl7.org/FHIR/condition.html): Este recurso tiene 3 usos en el evento de Inicio representados por sus perfiles:
-  * [ConditionInicioDiagnosticoSospechaLE](StructureDefinition-ConditionInicioDiagnosticoSospechaLE.html): Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)
-  * [ConditionInicioIndiceComorbilidadLE](StructureDefinition-ConditionInicioIndiceComorbilidadLE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)
-  * [ConditionInicioSospechaGesLE](StructureDefinition-ConditionInicioSospechaGesLE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)
+  * [ConditionInicioDiagnosticoLE](StructureDefinition-ConditionInicioDiagnosticoLE.html): Recurso utilizado para representar ciertos elementos del diagnóstico (ServiceRequest.supportingInfo)
+  * [ObservationInicioIndiceComorbilidadLE](StructureDefinition-ObservationInicioIndiceComorbilidadLE.html): Recurso utilizado para representar el índice de comorbilidad (ServiceRequest.supportingInfo)
+  * [ConditionInicioGesLE](StructureDefinition-ConditionInicioGesLE.html): Recurso utilizado para representar datos relacionados a la patología GES (ServiceRequest.supportingInfo)
 * [ObservationInicioLE](StructureDefinition-ObservationInicioLE.html): Recurso utilizado para registrar datos relacionados a la realización de exámenes (ServiceRequest.reasonReference)
 * [EncounterInicioLE](StructureDefinition-EncounterInicioLE.html): Recurso utilizado para registrar el identificador de la consulta en APS(ServiceRequest.encounter)
 * [AllergyIntoleranceInicioLE](StructureDefinition-AllergyIntoleranceInicioLE.html): Recurso utilizado para registrar información relacionada al tipo de alergia en caso de tener (ServiceRequest.supportingInfo)
@@ -68,7 +68,7 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 * Debe incluir el recurso [PractitionerRoleLE](StructureDefinition-PractitionerRoleLE.html)
 * Debe incluir el recurso [EncounterInicioLE](StructureDefinition-EncounterInicioLE.html)
 * Debe incluir el recurso [AppointmentInicioLE](StructureDefinition-AppointmentInicioLE.html)
-* Debe incluir el recurso [ConditionInicioDiagnosticoSospechaLE](StructureDefinition-ConditionInicioDiagnosticoSospechaLE.html)
+* Debe incluir el recurso [ConditionInicioDiagnosticoLE](StructureDefinition-ConditionInicioDiagnosticoLE.html)
 * Debe incluir el recurso [QuestionnaireResponseInicioLE](StructureDefinition-QuestionnaireResponseInicioLE.html)
 * Debe incluir el recurso [ObservationInicioLE](StructureDefinition-ObservationInicioLE.html)
 

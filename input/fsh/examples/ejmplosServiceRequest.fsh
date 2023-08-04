@@ -9,13 +9,10 @@ Description: "ServiceRequest Evento de Inicio"
 * status = #draft
 * priority = #urgent
 * intent = #proposal
-* extension[PrevisionCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE"
-* extension[PrevisionCodigo].valueCodeableConcept.coding.code = #1
-* extension[PrevisionCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPrevisionCodigo"
 * extension[FundamentoPriorizacion].url = "http://minsal.cl/listaespera/StructureDefinition/ExtStringFundamentoPriorizacion"
 * extension[FundamentoPriorizacion].valueString = "FundamentoPriorizacion"
-* extension[SospechaGES].url = "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes"
-* extension[SospechaGES].valueBoolean = true
+* extension[CorrespondeGES].url = "http://minsal.cl/listaespera/StructureDefinition/SospechaPatologiaGes"
+* extension[CorrespondeGES].valueBoolean = true
 * extension[ResolutividadAPS].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolResolutividadAPS"
 * extension[ResolutividadAPS].valueBoolean = true
 * extension[Alergia].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolAlergia"
@@ -26,13 +23,6 @@ Description: "ServiceRequest Evento de Inicio"
 * extension[EstadoInterconsultaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #1
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEstadoInterconsulta"
-* extension[Cuidador].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolCuidador"
-* extension[Cuidador].valueBoolean = true
-* extension[DocAcreditacionCuidadorCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/DocAcreditacionCuidadorCodigoLE"
-* extension[DocAcreditacionCuidadorCodigo].valueCodeableConcept.coding.code = #1
-* extension[DocAcreditacionCuidadorCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDocAcreditacionCuidador"
-* extension[PresentaDiscapacidad].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPresentaDiscapacidad"
-* extension[PresentaDiscapacidad].valueBoolean = false
 //* extension[PersonaMayor].url = "http://minsal.cl/listaespera/StructureDefinition/ExtBoolPersonaMayor"
 //* extension[PersonaMayor].valueBoolean = false
 * subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
@@ -41,11 +31,15 @@ Description: "ServiceRequest Evento de Inicio"
 * reasonCode.coding.code = #1
 * reasonCode.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo"
 * supportingInfo[0] = Reference(http://acme.com/ehr/fhir/Appointment/app1)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/QuestionnaireResponse/que1)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/AllergyIntolerance/all1)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con1)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con2)
+* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Observvation/obs2)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con3)
+* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Observation/obs3)
+* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/DocumentReference/doc1)
+* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Coverage/cov1)
+* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/QuestionnaireResponse/que1)
+
 
 /*
 

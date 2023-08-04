@@ -1,5 +1,5 @@
 Instance: EjemploCondition
-InstanceOf: ConditionInicioDiagnosticoSospechaLE
+InstanceOf: ConditionInicioDiagnosticoLE
 Usage: #example
 Title: "Condition Diagnóstico Sospecha Evento de Inicio"
 Description: "Condition Diagnóstico Sospecha Evento de Inicio"
@@ -8,26 +8,15 @@ Description: "Condition Diagnóstico Sospecha Evento de Inicio"
 * code.text = "DiagnosticoTextoLibreSospecha"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 * category.text = "diagnostico"
-* note.text = "FundamentoDiagnostico"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-
-Instance: EjemploCondition2
-InstanceOf: ConditionInicioIndiceComorbilidadLE
-Usage: #example
-Title: "Condition Índice Comorbilidad Evento de Inicio"
-Description: "de Conditio Índice Comorbilidadn Evento de Inicio"
-
-* code = http://minsal.cl/listaespera/CodeSystem/CSIndicecomorbilidad#G1
-* code.text = "DiagnosticoTextoLibreSospecha"
-* category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
-* category.text = "Indice Comorbilidad"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 
 Instance: EjemploCondition3
-InstanceOf: ConditionInicioSospechaGesLE
+InstanceOf: ConditionInicioGesLE
 Usage: #example
-Title: "Condition Sospecha GES Evento de Inicio"
-Description: "Condition Inicio Sospechvento de Inicio"
+Title: "Patología GES (número)"
+Description: "Patología GES (número)"
 
 * code = http://minsal.cl/listaespera/CodeSystem/CSSospechaPatologiaGes#A000
 * code.text = "SospechaPatologiaGesGlosa"

@@ -29,20 +29,16 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains ExtBoolAtencionPreferente named AtencionPreferente 0..1 MS
 
 // ServiceRequest Inicio
-* extension contains SospechaPatologiaGes named SospechaGES 0..1 MS
+* extension contains SospechaPatologiaGes named CorrespondeGES 0..1 MS
 * extension contains ExtBoolResolutividadAPS named ResolutividadAPS 0..1 MS
 * extension contains ExtBoolAlergia named Alergia 0..1 MS
-* extension contains ExtBoolCuidador named Cuidador 0..1 MS
-* extension contains ExtBoolPresentaDiscapacidad named PresentaDiscapacidad 0..1 MS
 //* extension contains ExtBoolPersonaMayor named PersonaMayor 0..1 MS
 * extension contains OrigenInterconsulta named OrigenInterconsulta 0..1 MS
 * extension contains ExtStringFundamentoPriorizacion named FundamentoPriorizacion 0..1 MS
 * extension contains EstadoInterconsultaCodigoLE named EstadoInterconsultaCodigo 0..1 MS
-* extension contains DocAcreditacionCuidadorCodigoLE named DocAcreditacionCuidadorCodigo 0..1 MS
 * extension contains EspecialidadMedicaDestinoCodigo named EspecialidadMedicaDestinoCodigo 0..1 MS
 * extension contains SubEspecialidadMedicaDestinoCodigo named SubEspecialidadMedicaDestinoCodigo 0..1 MS
 * extension contains DestinoAtencionCodigo named DestinoAtencionCodigo 0..1 MS
-* extension contains PrevisionCodigoLE named PrevisionCodigo 0..1 MS
 
 * extension contains PertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
 * extension[FundamentoPriorizacion] ^short = "Fundamente de la Priorización"
@@ -55,7 +51,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * doNotPerform 0..1 MS
 
 * authoredOn 0..1 MS
-* authoredOn ^short = "Fecha Asigna la Interconsulta"
+* authoredOn ^short = "Fecha Solicita la Interconsulta"
 
 * reasonCode 0..1 MS 
 * reasonCode from VSDerivadoParaCodigo
@@ -97,13 +93,17 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * supportingInfo ^slicing.discriminator.path = "resolve()"
 * supportingInfo ^slicing.rules = #open
 * supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
-* supportingInfo contains cita 0..1 MS and paciente 0..1 MS and Anamnesis 0..1 MS and DiagnosticoSospecha 0..1 MS 
-and SospechaPatologiaGes 0..1 MS and TipoAlergia 0..1 MS and IndiceComorbilidad 0..1 MS 
+* supportingInfo contains paciente 0..1 MS and DiagnosticoSospecha 0..1 MS 
+and SospechaPatologiaGes 0..1 MS and TipoAlergia 0..1 MS and IndiceComorbilidad 0..1 MS
+and Cuidador 0..1 MS and DocCuidador 0..1 MS and Prevision 0..1 MS and motivoDerivacion 0..1 MS
 
-* supportingInfo[cita] only Reference(AppointmentInicioLE)
+// * supportingInfo[cita] only Reference(AppointmentInicioLE)
 //* supportingInfo[paciente] only Reference(PatientLE)
-* supportingInfo[Anamnesis] only Reference(QuestionnaireResponseInicioLE)
-* supportingInfo[DiagnosticoSospecha] only Reference(ConditionInicioDiagnosticoSospechaLE)
-* supportingInfo[IndiceComorbilidad] only Reference(ConditionInicioIndiceComorbilidadLE)
-* supportingInfo[SospechaPatologiaGes] only Reference(ConditionInicioSospechaGesLE)
+* supportingInfo[DiagnosticoSospecha] only Reference(ConditionInicioDiagnosticoLE)
+* supportingInfo[IndiceComorbilidad] only Reference(ObservationInicioIndiceComorbilidadLE)
+* supportingInfo[SospechaPatologiaGes] only Reference(ConditionInicioGesLE)
 * supportingInfo[TipoAlergia] only Reference(AllergyIntoleranceInicioLE)
+* supportingInfo[Cuidador] only Reference(ObservationInicioCuidadorLE)
+* supportingInfo[DocCuidador] only Reference(DocumentReferenceInicioLE)
+* supportingInfo[Prevision] only Reference(CoverageInicioLE)
+* supportingInfo[motivoDerivacion] only Reference(QuestionnaireResponseInicioLE)

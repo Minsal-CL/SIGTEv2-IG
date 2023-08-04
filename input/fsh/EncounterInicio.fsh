@@ -15,10 +15,14 @@ Description: "Encounter Inicio LE recurso que se utiliza para representar el enc
   * type 1..1 MS
   * type = #FILL
 
-* diagnosis.condition only Reference(ConditionInicioDiagnosticoSospechaLE)
+* diagnosis.condition only Reference(ConditionInicioDiagnosticoLE)
+* class from VSModalidadAtencionCodigo
+* period 1..1 MS
+  * start 1..1 MS
+  * start ^short = "Fecha Comienzo del encuentro Atención APS"
+  * end 1..1 MS
+  * end ^short = "Fecha de término del encuentro Atención APS"
 
-* appointment 1..1 MS
-* appointment only Reference(AppointmentInicioLE)
 
 * subject 1..1 MS
 * subject only Reference(PatientLE)

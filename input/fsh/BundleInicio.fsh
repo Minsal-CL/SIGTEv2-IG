@@ -15,32 +15,38 @@ Description: "Bundle LE recurso utilizado para transportar todos los datos del m
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
-* entry 10..14 MS
+* entry 9..17 MS
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
         and encounter 1..1 
         and appointment 1..1 
         and patient 1..1 
-        and questionnaireresponse 1..1 
         and conditionDiagnostico 1..1 
-        and conditionComorbilidad 0..1 
+        and observationComorbilidad 0..1
+        and observationCuidador 0..1 
         and conditionGes 0..1 
         and observation 0..1 
         and allergyintolerance 0..1
         and practitionerrole 1..1
         and practitioner 1..1
         and organization 1..1
+        and docCuidador 0..1
+        and prevision 0..1
+        and motivoDerivacion 0..1
 * entry[messageheader].resource only MessageHeaderLE
 * entry[servicerequest].resource only ServiceRequestLE
 * entry[encounter].resource only EncounterInicioLE
 * entry[observation].resource only ObservationInicioLE
-* entry[conditionDiagnostico].resource only ConditionInicioDiagnosticoSospechaLE
-* entry[conditionComorbilidad].resource only ConditionInicioIndiceComorbilidadLE
-* entry[conditionGes].resource only ConditionInicioSospechaGesLE
+* entry[conditionDiagnostico].resource only ConditionInicioDiagnosticoLE
+* entry[observationComorbilidad].resource only ObservationInicioIndiceComorbilidadLE
+* entry[observationCuidador].resource only ObservationInicioCuidadorLE
+* entry[conditionGes].resource only ConditionInicioGesLE
 * entry[appointment].resource only AppointmentInicioLE
 * entry[allergyintolerance].resource only AllergyIntoleranceInicioLE
 * entry[practitionerrole].resource only PractitionerRoleLE
-* entry[questionnaireresponse].resource only QuestionnaireResponseInicioLE
 * entry[patient].resource only PatientLE
 * entry[organization].resource only OrganizationLE
 * entry[practitioner].resource only PractitionerLE
+* entry[docCuidador].resource only DocumentReferenceInicioLE
+* entry[prevision].resource only CoverageInicioLE
+* entry[motivoDerivacion].resource only QuestionnaireResponseInicioLE

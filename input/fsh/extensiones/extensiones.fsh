@@ -255,12 +255,6 @@ Title:       "ExtBool Alergia"
 Description: "ExtBool Alergia"
 * value[x] only boolean
 
-Extension: ExtBoolCuidador 
-Id: ExtBoolCuidador
-Title:       "ExtBool Cuidador"
-Description: "ExtBool Cuidador"
-* value[x] only boolean
-
 Extension: ExtBoolPresentaDiscapacidad 
 Id: ExtBoolPresentaDiscapacidad
 Title:       "ExtBool PresentaDiscapacidad"
@@ -326,7 +320,7 @@ Description: "DigitoVerificador"
 Extension: SospechaPatologiaGes
 Id: SospechaPatologiaGes
 Title: "SospechaPatologiaGes"
-Description: "SospechaPatologiaGes"
+Description: "Indica si corresponde a GES"
 * value[x] only boolean
 
 Extension:   EspecialidadMedicaDestinoCodigo

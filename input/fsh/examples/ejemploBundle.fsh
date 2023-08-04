@@ -24,20 +24,20 @@ Description: "Bundle Evento de Inicio"
 * entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * entry[patient].resource = EjemploPatient
 
-* entry[questionnaireresponse].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/que1"
-* entry[questionnaireresponse].resource = EjemploQuestionnaireResponse
-
 * entry[conditionDiagnostico].fullUrl = "http://acme.com/ehr/fhir/Condition/con1"
 * entry[conditionDiagnostico].resource = EjemploCondition
 
-* entry[conditionComorbilidad].fullUrl = "http://acme.com/ehr/fhir/Condition/con2"
-* entry[conditionComorbilidad].resource = EjemploCondition2
+* entry[observationComorbilidad].fullUrl = "http://acme.com/ehr/fhir/Observvation/obs2"
+* entry[observationComorbilidad].resource = EjemploObservation2
 
 * entry[conditionGes].fullUrl = "http://acme.com/ehr/fhir/Condition/con3"
 * entry[conditionGes].resource = EjemploCondition3
 
 * entry[observation].fullUrl = "http://acme.com/ehr/fhir/Observation/obs1"
 * entry[observation].resource = EjemploObservation
+
+* entry[observationCuidador].fullUrl = "http://acme.com/ehr/fhir/Observation/obs3"
+* entry[observationCuidador].resource = EjemploObservationCuidador
 
 * entry[allergyintolerance].fullUrl = "http://acme.com/ehr/fhir/AllergyIntolerance/all1"
 * entry[allergyintolerance].resource = EjemploAllergyIntolerance
@@ -50,6 +50,15 @@ Description: "Bundle Evento de Inicio"
 
 * entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/org1"
 * entry[organization].resource = EjemploOrganization
+
+* entry[docCuidador].fullUrl = "http://acme.com/ehr/fhir/DocumentReference/doc1"
+* entry[docCuidador].resource = EjemploDocumentReference
+
+* entry[prevision].fullUrl = "http://acme.com/ehr/fhir/Coverage/cov1"
+* entry[prevision].resource = EjemploCoverage
+
+* entry[motivoDerivacion].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/que1"
+* entry[motivoDerivacion].resource = EjemploQuestionnaireResponseInicioLE
 
 
 /*Budle Referencia*/
