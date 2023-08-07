@@ -11,6 +11,7 @@ Description: "Condition Diagnóstico Sospecha Evento de Inicio"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* severity = http://snomed.info/sct#6736007
 
 Instance: EjemploCondition3
 InstanceOf: ConditionInicioGesLE

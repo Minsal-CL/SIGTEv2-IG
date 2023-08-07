@@ -75,8 +75,11 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 
 
 * code 0..1 MS
-  * text 1..1 MS
-* code.text = "derivado a especialidad"
+  * coding 1..1 MS
+    * code 1..1 MS
+    * display 0..1 MS
+    * system 0..1 MS
+* code from VSServicioRequerido
 * subject only Reference(PatientLE)
 * reasonReference only Reference(ObservationInicioLE)
 * encounter only Reference(EncounterInicioLE)

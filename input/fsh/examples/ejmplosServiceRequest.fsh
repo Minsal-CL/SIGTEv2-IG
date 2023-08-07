@@ -110,8 +110,12 @@ Description: "ServiceRequest Evento de Referenciada"
 * extension[SubEspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo"
 * extension[SubEspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #4
 * extension[SubEspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
+* extension[EstadoInterconsultaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE"
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #2
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEstadoInterconsulta"
 * locationCode.text = "Motivo derivación"
 * locationCode.coding.code = #1
+* code = http://snomed.info/sct#758598006
 * locationCode.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDestinoReferenciaCodigo"
 * performer = Reference(http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor)
 /*FIN PARA BUNDLE REFERENCIA*/
