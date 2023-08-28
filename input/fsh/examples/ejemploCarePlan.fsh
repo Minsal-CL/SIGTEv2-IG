@@ -9,13 +9,7 @@ Description: "de CarePlan Evento de Atender"
 * description = "test"
 
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-* activity.detail.productCodeableConcept.text = "123323"
-* activity
-  * detail.kind = #MedicationRequest
-  * detail.status = #not-started
-
-  * detail.code.coding.code = #farmacos
-  * detail.code.coding.system = "http://snomed.info/sct"
+* activity.reference.display = "http://link-a-mi-receta.cl/ID"
 
 * extension[SolicitudExamenes].valueBoolean = true
 

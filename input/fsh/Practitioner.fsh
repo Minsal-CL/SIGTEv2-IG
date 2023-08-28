@@ -15,10 +15,10 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 
 
 * identifier ^slicing.discriminator.type = #value
-* identifier ^slicing.discriminator.path = "use"
+* identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier ^slicing.description = "Este slice permite agregar una identificacion basada RUN y/o basada en el RNPI"
-* identifier contains RUN 1..1 MS and RNPI 0..1 MS
+* identifier contains RUN 1..1 MS and RNPI 0..1 MS and PASAPORTE 0..1 MS
 
 * identifier[RUN]
   * use 1..1 MS
@@ -35,6 +35,7 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * identifier[RUN].system ^comment = "Se define el el endPoint al cual debe apuntar a la API, con el fin de validar que el numero de RUN ingresado exista y que sea correcto. Por momento se usará la url = \"http://api_run/run\""
 * identifier[RUN].value ^short = "Número de RUN"
 * identifier[RUN].value ^definition = "Valor del RUN en la Cédula de Identidad entregada por el Registro Civil, en formato sin puntos y con guión para diferencia el dígito verificador"
+* identifier[RUN].system = "http://registrocivil/RUN"
 
 * identifier[RNPI]
   * use 1..1 MS
@@ -52,10 +53,25 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * identifier[RNPI].value ^definition = "Valor identificador"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 
-* active MS
+* identifier[PASAPORTE]
+  * use 1..1 MS
+  * system 0..1 MS
+  * value 1..1 MS
+* identifier[PASAPORTE] ^short = "Valor de PASAPORTE" 
+* identifier[PASAPORTE] ^definition = "Valor de PASAPORTE"
+* identifier[PASAPORTE].system ^short = "endPoint para validar los códigos"
+* identifier[PASAPORTE].system ^definition = "Define la url del endPoint a la cual apunta la API"
+* identifier[PASAPORTE].system ^comment = "Se define el endPoint al cual debe apuntar a la API"
+* identifier[PASAPORTE].use ^short = "Se define el uso de este identificador"
+* identifier[PASAPORTE].use ^definition = "PASAPORTE sera un identificador secundario y alternativo, ya que el oficial es el RUN"
+* identifier[PASAPORTE].use = #secondary
+* identifier[PASAPORTE].value ^short = "Valor identificador"
+* identifier[PASAPORTE].value ^definition = "Valor identificador"
+* identifier[PASAPORTE].system = "http://PASAPORTE.superdesalud.gob.cl"
 
 
-* name and name.use and name.family and name.given  MS 
+* name 1..1 
+* name.use and name.family and name.given  MS 
 
 * name.use ^short = "Uso del nombre del prestador"
 * name.use ^definition = "Este es el uso que se le da al nombre del Prestador considerando que puede ser nombre oficial, temporal, seudonimo, entre otros, Pero por motivos legales este uso es Oficial "
@@ -105,7 +121,7 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification ^slicing.description = "Debido a que los profesisonales de la salud pueden tener titulo y ademas poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos. El de Certificados tiene identifier.value el valor cert y el slice de especialidad el valor esp"
 
 
-* qualification contains Tit 0..* MS and Esp 0..* MS and SubEsp 0..* MS
+* qualification contains Tit 1..* MS and Esp 0..* MS and SubEsp 0..* MS
 
 * qualification[Tit] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
 * qualification[Tit] ^definition = "Listado de Títulos o Cetificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
@@ -160,7 +176,7 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification[Esp].issuer ^short = "Organizacion que entrega el certificado o título"
 * qualification[Esp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
 * qualification[Esp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
-* qualification[Esp].code from VSEspecialidadMed
+* qualification[Esp].code from VSEspecialidades
 
 //subespecialidades
 * qualification[SubEsp] ^short = "Especificación de la o las subespecialidades que posea el prestador"
@@ -171,19 +187,10 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification[SubEsp].identifier.value ^short = "Valor del tipo de calificación, en este caso subesp"
 * qualification[SubEsp].identifier.value ^definition = "Valor del tipo de calificación, en este caso subesp"
 * qualification[SubEsp].code 1..1 MS
-  * coding 1..1 MS
-    * code 1..1 MS
-    * system 1..1 MS
-    * display 0..1 MS
-  * text 0..1 MS
-* qualification[SubEsp].code.coding.system ^short = "El sistema sobre el cual se verificarán las especialidades de los Prestadores"
-* qualification[SubEsp].code.coding.system ^definition = "la url sobre la cual se encuentra el endPoint para el acceso a  los códigos de especialidades de prestadores."
+  * text 1..1 MS
 * qualification[SubEsp].code.text ^short = "Texto libre de la subespecialidad del profesional"
-* qualification[SubEsp].code.coding.display ^short = "Nombre de la subespecialidad"
-* qualification[SubEsp].code.coding.display ^definition = "Nombre la subespecialidad agregada. Agregar un poco mas de informacion acerca del item que se esta agregando."
 * qualification[SubEsp].issuer MS
 * qualification[SubEsp].issuer.display MS
 * qualification[SubEsp].issuer ^short = "Organizacion que entrega el certificado o título"
 * qualification[SubEsp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
 * qualification[SubEsp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
-* qualification[SubEsp].code from VSEspecialidadMed

@@ -134,6 +134,9 @@ Description: "ServiceRequest Evento de Terminar"
 * identifier.value = "1"
 * extension[MotivoCierreInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoCierreInterconsulta"
 * extension[MotivoCierreInterconsulta].valueCodeableConcept.coding = http://minsal.cl/listaespera/CodeSystem/CSMotivoCierreInterconsulta#2
+* extension[EstadoInterconsultaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE"
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #7
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEstadoInterconsulta"
 
 /*FIN PARA BUNDLE TERMINAR*/
 
@@ -161,10 +164,20 @@ Description: "ServiceRequest Evento Revisar"
 * extension[RequiereExamen].valueBoolean = true
 * extension[PertinenciaInterconsulta].url = "http://minsal.cl/listaespera/StructureDefinition/PertinenciaInterconsulta"
 * extension[PertinenciaInterconsulta].valueCodeableConcept.coding = http://minsal.cl/listaespera/CodeSystem/CSPertinenciaInterconsulta#1
+* extension[EstadoInterconsultaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE"
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #3
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEstadoInterconsulta"
+* extension[EspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EspecialidadMedicaDestinoCodigo"
+* extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #3
+* extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
+* extension[SubEspecialidadMedicaDestinoCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/SubEspecialidadMedicaDestinoCodigo"
+* extension[SubEspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #4
+* extension[SubEspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
 * category.coding.code = #1
 * category.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSModalidadAtencionCodigo"
 * category.coding.display = "Presencial"
-
+* performer = Reference(http://acme.com/ehr/fhir/PractitionerRole/revisar)
+* supportingInfo[Examen] = Reference(http://acme.com/ehr/fhir/ServiceRequest/examen)
 
 /*EJEMPLO PARA BUNDLE REVISAR*/
 
@@ -182,7 +195,9 @@ Description: "ServiceRequest Evento Agendar"
 //* priority = #urgent
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
-
+* extension[EstadoInterconsultaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE"
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #5
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEstadoInterconsulta"
 /*
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/MotivoNoPertinenciaCodigo"
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
@@ -210,7 +225,9 @@ Description: "ServiceRequest Evento Atender"
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * performer.reference = "http://acme.com/ehr/fhir/PractitionerRole/atender"
-
+* extension[EstadoInterconsultaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE"
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #6
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEstadoInterconsulta"
 * extension[DestinoAtencionCodigo].valueCodeableConcept.coding = http://minsal.cl/listaespera/CodeSystem/CSDestinoAtencionCodigo#1
 /*EJEMPLO PARA BUNDLE REVISAR*/
 
@@ -229,5 +246,34 @@ Description: "ServiceRequest Evento Priorizar"
 * priority = #urgent
 * intent = #proposal
 * subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
-
+* extension[EstadoInterconsultaCodigo].url = "http://minsal.cl/listaespera/StructureDefinition/EstadoInterconsultaCodigoLE"
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #4
+* extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEstadoInterconsulta"
 /*EJEMPLO PARA BUNDLE PRIORIZAR*/
+
+
+/*EJEMPLO EXAMEN*/
+Instance: EjemploServiceRequestExamen
+InstanceOf: ServiceRequestExamenLE
+Usage: #example
+Title: "ServiceRequest Examen"
+Description: "ServiceRequest Examen"
+
+
+* identifier.value = "dec791f8-406c-11ee-be56-0242ac120002"
+* status = #draft
+* intent = #proposal
+* requester = Reference(http://acme.com/ehr/fhir/Practitioner/revisar)
+* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
+* occurrenceDateTime = "2022-01-20T13:50:20Z"
+* reasonCode.text = "Descartar enfermedad metastásica."
+* note.text = "Realizar sin uso de medio de contaste por mala función renal."
+* basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/examen)
+* code.extension[CodigoSolicitud].url = "http://minsal.cl/listaespera/StructureDefinition/CodigoSolicitud"
+* code.extension[CodigoSolicitud].valueCodeableConcept.coding.code = #24627-2
+* code.extension[CodigoSolicitud].valueCodeableConcept.coding.system = "http://loinc.org"
+* code.extension[CodigoSolicitud].valueCodeableConcept.text = "TC de tórax"
+* code.extension[CodigoSolicitud].url = "http://minsal.cl/listaespera/StructureDefinition/CodigoSolicitud"
+* code.extension[CodigoSolicitud].valueCodeableConcept.coding.code = #20570-8
+* code.extension[CodigoSolicitud].valueCodeableConcept.coding.system = "http://loinc.org"
+* code.extension[CodigoSolicitud].valueCodeableConcept.text = "Hematocrito"

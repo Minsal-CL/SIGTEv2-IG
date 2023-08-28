@@ -31,7 +31,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 
 * diagnosis 1..1 MS
 * diagnosis.condition 1..1 MS
-* diagnosis.condition only Reference(CondicionAtenderDiagnosticoSospechaLE)
+* diagnosis.condition only Reference(CondicionAtenderDiagnosticoSospechaLE or ConditionInicioDiagnosticoLE)
 
 // * diagnosis contains CondicionAtenderDiagnosticoSospechaLE 0..1 MS
 // * diagnosis[CondicionAtenderDiagnosticoSospechaLE] 1..1 MS
@@ -44,7 +44,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 
 * period.start 1..1 MS
 
-* class from VSTipoConsulta
+* type from VSTipoConsulta
 * basedOn 1..1 MS
 * basedOn only Reference(ServiceRequestLE)
 /*

@@ -12,7 +12,11 @@ Description: "Practitioner Evento de Inicio"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
-
+* name.use = #official
+* name.given = "Luis"
+* name.family = "Perez"
+* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
 //* gender = #male
 //* birthDate = "1974-01-22"
 * qualification[Tit].identifier.value = "tit"
@@ -35,6 +39,11 @@ Description: "Practitioner Referenciador Evento de Referenciada"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
+* name.use = #official
+* name.given = "Luis"
+* name.family = "Perez"
+* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
 * qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
@@ -55,6 +64,14 @@ Description: "Practitioner Evento Terminar"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
+* name.use = #official
+* name.given = "Luis"
+* name.family = "Perez"
+* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
+* qualification[Tit].identifier.value = "tit"
+* qualification[Tit].code.coding.code = #1
+* qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
 /*FIN PARA BUNDLE TERMINAR*/
 
 /*EJEMPLOS PARA BUNDLE REVISAR*/
@@ -72,6 +89,11 @@ Description: "Practitioner Evento Revisar"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
+* name.use = #official
+* name.given = "Luis"
+* name.family = "Perez"
+* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
 * qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
@@ -95,9 +117,19 @@ Description: "Practitioner Evento de Atender"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
+* name.use = #official
+* name.given = "Luis"
+* name.family = "Perez"
+* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
 * qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
+* qualification[Esp].identifier.value = "esp"
+* qualification[Esp].code.coding.code = #2
+* qualification[Esp].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
+* qualification[SubEsp].identifier.value = "subesp"
+* qualification[SubEsp].code.text = "Alergia e Inmunología Clínica"
 /*FIN PARA BUNDLE REVISAR*/
 
 /*EJEMPLOS PARA BUNDLE Agendar*/
@@ -117,9 +149,19 @@ Description: "Practitioner Atendedor Evento de Agendar"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
+* name.use = #official
+* name.given = "Luis"
+* name.family = "Perez"
+* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
 * qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
+* qualification[Esp].identifier.value = "esp"
+* qualification[Esp].code.coding.code = #2
+* qualification[Esp].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
+* qualification[SubEsp].identifier.value = "subesp"
+* qualification[SubEsp].code.text = "Alergia e Inmunología Clínica"
 /*FIN PARA BUNDLE REVISAR*/
 
 /*EJEMPLOS PARA BUNDLE Agendar*/
@@ -137,12 +179,14 @@ Description: "Practitioner Agendador Evento de Agendar"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
+* name.use = #official
+* name.given = "Luis"
+* name.family = "Perez"
+* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
 * qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"
-* qualification[SubEsp].identifier.value = "subesp"
-* qualification[SubEsp].code.coding.code = #3
-* qualification[SubEsp].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed"
 /*FIN PARA BUNDLE Agendar*/
 
 /*EJEMPLOS PARA BUNDLE PRIORIZAR*/
@@ -160,6 +204,11 @@ Description: "Practitioner Evento de Priorizar"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
 * identifier[RNPI].value = "2134"
+* name.use = #official
+* name.given = "Luis"
+* name.family = "Perez"
+* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
 * qualification[Tit].code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSTituloProfesional"

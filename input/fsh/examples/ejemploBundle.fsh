@@ -148,6 +148,9 @@ Description: "Bundle Evento de Revisar"
 * entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/revisar"
 * entry[practitioner].resource = EjemploPractitionerRevisar
 
+* entry[servicerequestexamen].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/examen"
+* entry[servicerequestexamen].resource = EjemploServiceRequestExamen
+
 /*FIN BUNDLE revisar*/
 
 /*Budle Agendar*/

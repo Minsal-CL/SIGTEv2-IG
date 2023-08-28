@@ -441,9 +441,8 @@ Description: "Pertinencia Interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Pertinente"
-* #2 "Pertinente Incompleta"
-* #3 "No Pertinente"
+* #1 "Pertinente Incompleta"
+* #2 "No Pertinente"
 
 ValueSet: VSModalidadAtencionCodigo
 Id: VSModalidadAtencionCodigo
@@ -1236,3 +1235,154 @@ Description: "Corresponde al servicio que se requiere"
 * http://snomed.info/sct#183521007	"derivación al servicio de neurología"
 * http://snomed.info/sct#183519002	"derivación al servicio de cardiología"
 * http://snomed.info/sct#183518005	"derivación a servicio de dermatología"
+
+
+CodeSystem: CSEspecialidadOdont
+Id: CSEspecialidadOdont
+Title: "Especialidades Odontológicas"
+Description: "Especialidades Odontológicas"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Cirugía y Traumatología Buco Maxilofacial"
+* #2 "Cirugía Bucal"
+* #3 "Endodoncia"
+* #4 "Imagenología Oral y Maxilofacial"
+* #5 "Implantología Buco Maxilofacial"
+* #6 "Odontología legal"
+* #7 "Odontopediatría"
+* #8 "Ortodoncia y Ortopedia Dento Máxilo Facial"
+* #9 "Patología Oral"
+* #10 "Periodoncia"
+* #11 "Rehabilitación Oral"
+* #12 "Salud Pública"
+* #13 "Somato-Prótesis"
+* #14 "Trastornos Temporomandibulares Y Dolor Orofacial"
+
+ValueSet: VSEspecialidadOdont
+Id: VSEspecialidadOdont
+Title: "Especialidades Odontológicas"
+Description: "Especialidades Odontológicas"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSEspecialidadOdont
+
+CodeSystem: CSEspecialidadFarma
+Id: CSEspecialidadFarma
+Title: "Especialidades Farmaceúticas o Química Farmaceúticas"
+Description: "Especialidades Farmaceúticas o Química Farmaceúticas"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Farmacia Clínica"
+* #2 "Farmacia Hospitalaria"
+* #3 "Laboratorio Clínico"
+* #4 "Salud Pública"
+* #5 "Laboratorio Forense"
+
+
+ValueSet: VSEspecialidadFarma
+Id: VSEspecialidadFarma
+Title: "Especialidades Farmaceúticas o Química Farmaceúticas"
+Description: "Especialidades Farmaceúticas o Química Farmaceúticas"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSEspecialidadFarma
+
+CodeSystem: CSEspecialidadBioqca
+Id: CSEspecialidadBioqca
+Title: "Especialidades y Subespecialidades Bioquímicas"
+Description: "Especialidades y Subespecialidades Bioquímicas"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #1 "Laboratorio Clínico"
+* #2 "Laboratorio Forense"
+* #3 "Salud Pública"
+
+
+ValueSet: VSEspecialidadBioqca
+Id: VSEspecialidadBioqca
+Title: "Especialidades y Subespecialidades Bioquímicas"
+Description: "Especialidades y Subespecialidades Bioquímicas"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSEspecialidadBioqca
+
+
+ValueSet: VSEspecialidades
+Id: VSEspecialidades
+Title: "Especialidades"
+Description: "Especialidades"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSEspecialidadMed 
+* codes from system CSEspecialidadOdont
+* codes from system CSEspecialidadFarma
+* codes from system CSEspecialidadBioqca
+
+
+ValueSet: CodigoExamen
+Id: CodigoExamen
+Title: "Códigos de Examenes"
+Description: "Codigos de Examenes"
+* ^experimental = false
+* ^version = "1.0.0"
+* ^status = #active
+* ^date = "2022-01-18T00:00:00-03:00"
+* ^contact.name = "HL7 Chile"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "chair@hl7chile.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^copyright = "All content on ISO Online is copyright protected. The copyright is owned by ISO. Any use of the content, including copying of it in whole or in part, for example to another Internet site, is prohibited and would require written permission from ISO."
+
+* include codes from system http://loinc.org

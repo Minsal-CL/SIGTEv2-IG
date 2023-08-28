@@ -40,4 +40,4 @@ Description: "Encounter Evento de Atender"
 //* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE)
 
 * period.start = "2023-01-22T09:00:00Z"
-* class.code = #1
+* type = http://minsal.cl/listaespera/CodeSystem/CSTipoConsulta#1

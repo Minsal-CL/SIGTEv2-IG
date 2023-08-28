@@ -14,13 +14,7 @@ Description: "CarePlan Atender LE"
 * subject only Reference(PatientLE)
 
 * description 1..1 MS
-* activity.detail.code  1..1 MS
-* activity.detail.kind 1..1 MS
-* activity.detail.kind = #MedicationRequest
-* activity.detail.status 1..1 MS
-* activity.detail.status = #not-started
-* activity.detail.productCodeableConcept.text 1..1 MS
-
+* activity.reference MS
 * extension contains ExtBoolSolicitudExamenes named SolicitudExamenes 1..1 MS
 
 

@@ -355,3 +355,19 @@ Id: ExtBoolAtencionPreferente
 Title:       "ExtBool Atención Preferente"
 Description: "ExtBool ¿Hace uso de atención preferente?"
 * value[x] only boolean
+
+
+Extension:   CodigoSolicitud
+Id:          CodigoSolicitud
+Title:       "Codigo de Solicitud de examen"
+Description: "Esta extensión incluye códigos de Solicitud de examen"
+* value[x] only CodeableConcept
+* value[x] ^short = "Código de Examen"
+* url 1..1 MS
+
+* valueCodeableConcept from CodigoExamen
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * system 1..1 MS
+  * display 0..1 MS
+* valueCodeableConcept.text 1..1 MS
