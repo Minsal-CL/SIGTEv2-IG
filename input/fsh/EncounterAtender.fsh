@@ -9,7 +9,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 // Obligatorios por estandar
 * status MS
 * status = #finished
-
+* class from VSModalidadAtencionCodigo
 * identifier 1..1 MS
   * value 1..1 MS
 
@@ -31,7 +31,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 
 * diagnosis 1..1 MS
 * diagnosis.condition 1..1 MS
-* diagnosis.condition only Reference(CondicionAtenderDiagnosticoSospechaLE or ConditionInicioDiagnosticoLE)
+* diagnosis.condition only Reference(ConditionInicioDiagnosticoLE)
 
 // * diagnosis contains CondicionAtenderDiagnosticoSospechaLE 0..1 MS
 // * diagnosis[CondicionAtenderDiagnosticoSospechaLE] 1..1 MS

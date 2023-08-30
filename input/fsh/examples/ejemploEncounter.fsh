@@ -27,7 +27,7 @@ Description: "Encounter Evento de Atender"
 * basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 //* appointment = Reference(http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender)
-* class.code = #AMB
+* class = http://minsal.cl/listaespera/CodeSystem/CSModalidadAtencionCodigo#1
 
 * reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE)
 * reasonReference[ObservationAtenderLE] = Reference(http://acme.com/ehr/fhir/Observation/EjemploObservationAtender)
@@ -36,7 +36,7 @@ Description: "Encounter Evento de Atender"
 //* reasonReference[ObservationAtenderLE].reference = http://acme.com/ehr/fhir/Observation/EjemploObservationAtender
 * reasonReference[ObservationAtenderLE].type = "Observation"
  
-* diagnosis.condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoSospechaLE)
+* diagnosis.condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondition)
 //* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE)
 
 * period.start = "2023-01-22T09:00:00Z"

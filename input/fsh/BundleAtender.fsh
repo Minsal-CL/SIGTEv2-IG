@@ -42,6 +42,6 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[questionnaireResponse].resource only QuestionnaireResponseAtenderLE  
 * entry[observation].resource only ObservationAtenderLE  
 * entry[conditionDiagnosticoConfirmacion].resource only CondicionAtenderDiagnosticoConfirmacionLE
-* entry[conditionDiagnosticoSospecha].resource only CondicionAtenderDiagnosticoSospechaLE  
+* entry[conditionDiagnosticoSospecha].resource only ConditionInicioDiagnosticoLE  
 
 //* entry[conditionHipotesis].resource only CondicionAtenderHipotesisDiagnosticaCodigoLE  
