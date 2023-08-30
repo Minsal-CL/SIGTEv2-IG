@@ -23,7 +23,7 @@ Condicion Atender Diagnostico Confirmacion LE
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 //OBLIGATORIO POR ESTANDAR
-* subject only Reference(PatientLE)
+* subject only Reference(PacienteMinsalMPI)
 
 * code 1..1 MS
   * coding 1..1 MS

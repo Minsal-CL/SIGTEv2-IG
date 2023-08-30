@@ -24,7 +24,7 @@ Condicion Inicio 1 LE recurso que se utiliza para indicar el diagnóstico del mo
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 //OBLIGATORIO POR ESTANDAR
-* subject only Reference(PatientLE)
+* subject only Reference(PacienteMinsalMPI)
 
 * code 1..1 MS
   * coding 1..1 MS

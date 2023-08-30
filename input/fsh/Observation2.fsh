@@ -7,7 +7,7 @@ Description: "Observation Inicio 2 LE recurso que se utiliza para indicar el ín
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 //OBLIGATORIO POR ESTANDAR
-* subject only Reference(PatientLE)
+* subject only Reference(PacienteMinsalMPI)
 
 
 

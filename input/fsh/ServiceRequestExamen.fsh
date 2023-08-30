@@ -13,7 +13,7 @@ Description: "ServiceRequestExamen LE recurso utilizado para la representación 
 * status MS
 * intent MS
 * subject 1..1 MS 
-* subject only Reference(PatientLE)
+* subject only Reference(PacienteMinsalMPI)
 
 * occurrenceDateTime 1..1 MS
 * requester 1..1 MS 

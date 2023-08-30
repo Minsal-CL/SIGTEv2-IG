@@ -25,4 +25,4 @@ Description: "Encounter Inicio LE recurso que se utiliza para representar el enc
 
 
 * subject 1..1 MS
-* subject only Reference(PatientLE)
+* subject only Reference(PacienteMinsalMPI)

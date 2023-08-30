@@ -47,7 +47,7 @@ Description: "AppointmentAgendarLE"
 * participant ^slicing.description = "Slice creado para almacenar diferentes tipos de participante"
 * participant contains patientLE 1..1 MS and practitionerRoleLE 1..1 MS
 * participant[patientLE].actor 1..1 MS
-* participant[patientLE].actor only Reference(PatientLE)
+* participant[patientLE].actor only Reference(PacienteMinsalMPI)
 * participant[patientLE].status = #accepted
 * participant[patientLE].actor.type = #Patient
 * participant[practitionerRoleLE].actor 1..1 MS

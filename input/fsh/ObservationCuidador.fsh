@@ -7,7 +7,7 @@ Description: "Observation Inicio para describir si necesita cuidador"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 //OBLIGATORIO POR ESTANDAR
-* subject only Reference(PatientLE)
+* subject only Reference(PacienteMinsalMPI)
 * status = #final
 
 * code 1..1 MS

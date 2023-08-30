@@ -1,17 +1,17 @@
-Extension:   PaisOrigenClLE
-Id:          CodigoPaises
-Title:       "Codigo de Identificación de países"
-Description: "Esta extensión incluye códigos de paises de origen"
-* value[x] only CodeableConcept
-* value[x] ^short = "Código de País"
-* url 1..1 MS
+// Extension:   PaisOrigenClLE
+// Id:          CodigoPaises
+// Title:       "Codigo de Identificación de países"
+// Description: "Esta extensión incluye códigos de paises de origen"
+// * value[x] only CodeableConcept
+// * value[x] ^short = "Código de País"
+// * url 1..1 MS
 
-* valueCodeableConcept from CodPais
-* valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  * system 0..1 MS
-  * display 0..1 MS
-* valueCodeableConcept.text 1..1 MS
+// * valueCodeableConcept from CodPais
+// * valueCodeableConcept.coding 1..1 MS
+//   * code 1..1 MS
+//   * system 0..1 MS
+//   * display 0..1 MS
+// * valueCodeableConcept.text 1..1 MS
 
 
 Extension:   PrevisionCodigoLE
@@ -29,19 +29,19 @@ Description: "La previsión es la variable que determina sistema de aseguramient
 * valueCodeableConcept.text 0..1 MS
 
 
-Extension:   NacionalidadCodigoClLE
-Id:          NacionalidadCodigo
-Title:       "Codigo de Identificación de Nacionalidad"
-Description: "Codigo de Identificación de Nacionalidad"
-* value[x] only CodeableConcept
-* value[x] ^short = "Código de la Nacionalidad"
-* url 1..1 MS
-* valueCodeableConcept from CodPais
-* valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  * system 0..1 MS
-  * display 0..1 MS
-* valueCodeableConcept.text 1..1 MS
+// Extension:   NacionalidadCodigoClLE
+// Id:          NacionalidadCodigo
+// Title:       "Codigo de Identificación de Nacionalidad"
+// Description: "Codigo de Identificación de Nacionalidad"
+// * value[x] only CodeableConcept
+// * value[x] ^short = "Código de la Nacionalidad"
+// * url 1..1 MS
+// * valueCodeableConcept from CodPais
+// * valueCodeableConcept.coding 1..1 MS
+//   * code 1..1 MS
+//   * system 0..1 MS
+//   * display 0..1 MS
+// * valueCodeableConcept.text 1..1 MS
 
 
 Extension:   MotivoCierreInterconsulta
@@ -143,55 +143,55 @@ Description: "Doc Acreditacion Cuidador"
 
 
 
-Extension:   TipoOtroTelefono
-Id:          TipoOtroTelefono
-Title:       "TipoOtroTelefono"
-Description: "TipoOtroTelefono"
-* value[x] only CodeableConcept
-* value[x] ^short = "TipoOtroTelefonos"
-* url 1..1 MS
-* valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  * system 0..1 MS
-  * display 0..1 MS
-* valueCodeableConcept from VSTipoOtroTelefono
+// Extension:   TipoOtroTelefono
+// Id:          TipoOtroTelefono
+// Title:       "TipoOtroTelefono"
+// Description: "TipoOtroTelefono"
+// * value[x] only CodeableConcept
+// * value[x] ^short = "TipoOtroTelefonos"
+// * url 1..1 MS
+// * valueCodeableConcept.coding 1..1 MS
+//   * code 1..1 MS
+//   * system 0..1 MS
+//   * display 0..1 MS
+// * valueCodeableConcept from VSTipoOtroTelefono
 
 
 
-Extension:   IdentidadGenero
-Id:          IdentidadGenero
-Title:       "Identidad de genero"
-Description: "Identidad de genero"
-* value[x] only CodeableConcept
-* value[x] ^short = "Codigo de la identidad de gneero"
-* url 1..1 MS
-* valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  * system 0..1 MS
-  * display 0..1 MS
-* valueCodeableConcept from VSIdentidaddeGenero
+// Extension:   IdentidadGenero
+// Id:          IdentidadGenero
+// Title:       "Identidad de genero"
+// Description: "Identidad de genero"
+// * value[x] only CodeableConcept
+// * value[x] ^short = "Codigo de la identidad de gneero"
+// * url 1..1 MS
+// * valueCodeableConcept.coding 1..1 MS
+//   * code 1..1 MS
+//   * system 0..1 MS
+//   * display 0..1 MS
+// * valueCodeableConcept from VSIdentidaddeGenero
 
-Extension: PuebloIndigena
-Id: PuebloIndigena
-Title: "Etnia a la cual pertenece"
-Description: "Etnia a la cual pertenece"
-* extension contains
-	PuebloIndigenaCodigo 0..* MS and
-	PuebloIndigenaPertenencia 1..1 MS
-* url MS
+// Extension: PuebloIndigena
+// Id: PuebloIndigena
+// Title: "Etnia a la cual pertenece"
+// Description: "Etnia a la cual pertenece"
+// * extension contains
+// 	PuebloIndigenaCodigo 0..* MS and
+// 	PuebloIndigenaPertenencia 1..1 MS
+// * url MS
 
-* extension[PuebloIndigenaCodigo].value[x] only CodeableConcept
-* extension[PuebloIndigenaCodigo].value[x] ^short = "Codigo de la etnia"
-* extension[PuebloIndigenaCodigo].url 1..1 MS
-* extension[PuebloIndigenaCodigo].valueCodeableConcept.coding 1..1 MS
-  * code 0..1 MS
-  * system 0..1 MS
-  * display 0..1 MS
-* extension[PuebloIndigenaCodigo].valueCodeableConcept.text MS
-* extension[PuebloIndigenaCodigo].valueCodeableConcept.text ^short = "Ingresar pueblo pertenciente, en caso que no se encuentre en la lista"
-* extension[PuebloIndigenaCodigo].valueCodeableConcept from VSPuebloIndigena
+// * extension[PuebloIndigenaCodigo].value[x] only CodeableConcept
+// * extension[PuebloIndigenaCodigo].value[x] ^short = "Codigo de la etnia"
+// * extension[PuebloIndigenaCodigo].url 1..1 MS
+// * extension[PuebloIndigenaCodigo].valueCodeableConcept.coding 1..1 MS
+//   * code 0..1 MS
+//   * system 0..1 MS
+//   * display 0..1 MS
+// * extension[PuebloIndigenaCodigo].valueCodeableConcept.text MS
+// * extension[PuebloIndigenaCodigo].valueCodeableConcept.text ^short = "Ingresar pueblo pertenciente, en caso que no se encuentre en la lista"
+// * extension[PuebloIndigenaCodigo].valueCodeableConcept from VSPuebloIndigena
 
-* extension[PuebloIndigenaPertenencia].value[x] only boolean
+// * extension[PuebloIndigenaPertenencia].value[x] only boolean
 
 Extension: ContactadoLE
 Id: Contactado
@@ -237,11 +237,11 @@ Title:       "ExtBool Pertinencia Atencion Box"
 Description: "ExtBool Pertinencia Atencion Box"
 * value[x] only boolean
 
-Extension: ExtBoolAfrodescendiente 
-Id: ExtBoolAfrodescendiente
-Title:       "ExtBool Afrodescendiente"
-Description: "ExtBool Afrodescendiente"
-* value[x] only boolean
+// Extension: ExtBoolAfrodescendiente 
+// Id: ExtBoolAfrodescendiente
+// Title:       "ExtBool Afrodescendiente"
+// Description: "ExtBool Afrodescendiente"
+// * value[x] only boolean
 
 Extension: ExtBoolResolutividadAPS 
 Id: ExtBoolResolutividadAPS
@@ -371,3 +371,101 @@ Description: "Esta extensión incluye códigos de Solicitud de examen"
   * system 1..1 MS
   * display 0..1 MS
 * valueCodeableConcept.text 1..1 MS
+
+
+//############## EXTENSIONES MPI-IG-FHIR #############
+
+Extension:   PaisOrigenMPI
+Id:          PaisOrigenMPI
+Title:       "País de origen del paciente"
+Description: "País de origen del paciente"
+* value[x] only CodeableConcept
+* value[x] ^short = "Código de País"
+* url 1..1 MS
+* valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * code from CodPais
+  * system 0..1 MS
+  * display 0..1 MS
+
+
+Extension: Religion
+Title: "Religión"
+Description: "Religión"
+* value[x] only CodeableConcept
+* value[x] ^short = "Religión del paciente"
+* url and value[x].coding and value[x] and value[x].coding.system and value[x].coding.display and value[x].coding.code MS
+* value[x].coding.system 1..1
+* value[x].coding.display 0..1
+* value[x].coding.code 1..1
+* value[x].coding.code from VSReligion (required)
+* value[x].coding.system ^short = "URI del system para validar"
+* value[x].coding.display ^short = "Nombre de la religión"
+* value[x].coding.code ^short = "Nombre de la religión"
+
+
+Extension: SexoBiologico
+Id: SexoBiologico
+Title: "Sexo Biologico del paciente"
+Description: "Sexo Biologico del paciente"
+* value[x] only CodeableConcept
+//* valueReference = Reference()
+* valueCodeableConcept ^short = "SexoBiologico"
+
+
+Extension: IdentidadDeGenero
+Id: IdentidadDeGenero
+Title: "Identidad De Genero"
+Description: "Identidad De Genero"
+
+//* value[x] only CodeSystem
+//* valueReference = Reference()
+* valueCodeableConcept ^short = "Identidad De Genero"
+
+
+Extension: PueblosOriginariosPerteneciente
+Id: PueblosOriginariosPerteneciente
+Title: "PueblosOriginariosPerteneciente"
+Description: "PueblosOriginariosPerteneciente"
+
+//* value[x] only Boolean
+//* valueReference = Reference()
+* valueBoolean ^short = "PueblosOriginariosPerteneciente"
+
+
+Extension: PueblosAfrodescendiente
+Id: PueblosAfrodescendiente
+Title: "PueblosAfrodescendiente"
+Description: "PueblosAfrodescendiente"
+* value[x] only boolean
+* url and valueBoolean MS
+* valueBoolean 1..1
+* valueBoolean ^short = "PueblosAfrodescendiente"
+* valueBoolean ^definition = "PueblosAfrodescendiente"
+
+
+Extension: PueblosOriginarios
+Title: "Pueblos Originarios"
+Description: "Almacenar si el paciente pertenece a algun pueblo originario"
+* value[x] only CodeableConcept
+* value[x] ^short = "Código Pueblo Originario"
+* url and value[x].coding and value[x] and value[x].coding.system and value[x].coding.display and value[x].coding.code MS
+* value[x].coding.system 1..1
+* value[x].coding.display 0..1
+* value[x].coding.code 1..1
+* value[x].coding.code from PueblosOriginariosVS (required)
+* value[x].coding.system ^short = "URI del system para validar"
+* value[x].coding.display ^short = "Nombre del pueblo"
+* value[x].coding.code ^short = "Código del pueblo"
+* value[x].text 0..1 MS
+* value[x].text ^short = "Otro pueblo originario"
+
+
+Extension: SituacionCalle
+Id: SituacionCalle
+Title: "SituacionCalle"
+Description: "SituacionCalle"
+
+//* value[x] only Boolean
+//* valueReference = Reference()
+* valueBoolean ^short = "SituacionCalle"

@@ -80,7 +80,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
     * display 0..1 MS
     * system 0..1 MS
 * code from VSServicioRequerido
-* subject only Reference(PatientLE)
+* subject only Reference(PacienteMinsalMPI)
 * reasonReference only Reference(ObservationInicioLE)
 * encounter only Reference(EncounterInicioLE)
 //* requester MS

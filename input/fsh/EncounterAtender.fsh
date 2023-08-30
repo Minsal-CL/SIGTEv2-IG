@@ -40,7 +40,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 //* diagnosis[CondicionAtenderHipotesisDiagnosticaCodigoLE].condition only Reference(CondicionAtenderHipotesisDiagnosticaCodigoLE)
 
 * subject 1..1 MS
-* subject only Reference(PatientLE)
+* subject only Reference(PacienteMinsalMPI)
 
 * period.start 1..1 MS
 

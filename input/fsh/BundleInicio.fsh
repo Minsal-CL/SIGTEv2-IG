@@ -44,7 +44,7 @@ Description: "Bundle LE recurso utilizado para transportar todos los datos del m
 * entry[appointment].resource only AppointmentInicioLE
 * entry[allergyintolerance].resource only AllergyIntoleranceInicioLE
 * entry[practitionerrole].resource only PractitionerRoleLE
-* entry[patient].resource only PatientLE
+* entry[patient].resource only PacienteMinsalMPI
 * entry[organization].resource only OrganizationLE
 * entry[practitioner].resource only PractitionerLE
 * entry[docCuidador].resource only DocumentReferenceInicioLE

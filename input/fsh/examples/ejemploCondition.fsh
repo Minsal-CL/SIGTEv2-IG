@@ -38,17 +38,17 @@ Description: "Patología GES (número)"
 // * code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSHipotesisDiagnosticaCodigo"
 
 
-Instance: EjemploCondicionAtenderDiagnosticoSospechaLE
-InstanceOf: CondicionAtenderDiagnosticoSospechaLE
-Usage: #example
-Title: "Condicion Atender Diagnostico Sospecha Evento de Atender"
-Description: "Condicion Atender Diagnostico Sospecha Evento de Atender"
+// Instance: EjemploCondicionAtenderDiagnosticoSospechaLE
+// InstanceOf: CondicionAtenderDiagnosticoSospechaLE
+// Usage: #example
+// Title: "Condicion Atender Diagnostico Sospecha Evento de Atender"
+// Description: "Condicion Atender Diagnostico Sospecha Evento de Atender"
 
-* code = http://diagnosticos.cl/uno#1 "Diagnostico1"
-* code.text = "Diagnostico1"
-* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
+// * code = http://diagnosticos.cl/uno#1 "Diagnostico1"
+// * code.text = "Diagnostico1"
+// * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
-* verificationStatus.coding = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed
+// * verificationStatus.coding = http://terminology.hl7.org/CodeSystem/condition-ver-status#unconfirmed
 
 Instance: EjemploCondicionAtenderDiagnosticoConfirmacionLE
 InstanceOf: CondicionAtenderDiagnosticoConfirmacionLE

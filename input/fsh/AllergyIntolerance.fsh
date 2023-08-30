@@ -9,7 +9,7 @@ Description: "AllergyIntolerance Inicio LE"
 * patient 1..1 MS
   * reference 1..1 MS
   * display 0..1 MS
-* patient only Reference(PatientLE)
+* patient only Reference(PacienteMinsalMPI)
 * patient ^short = "Referencia al paciente"
 * patient ^definition = "Referencia al paciente"
 * patient.reference ^short = "URL del paciente"
