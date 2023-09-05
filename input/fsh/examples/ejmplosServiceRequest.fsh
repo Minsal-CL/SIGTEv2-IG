@@ -269,11 +269,6 @@ Description: "ServiceRequest Examen"
 * reasonCode.text = "Descartar enfermedad metastásica."
 * note.text = "Realizar sin uso de medio de contaste por mala función renal."
 * basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/examen)
-* code.extension[CodigoSolicitud].url = "http://minsal.cl/listaespera/StructureDefinition/CodigoSolicitud"
-* code.extension[CodigoSolicitud].valueCodeableConcept.coding.code = #24627-2
-* code.extension[CodigoSolicitud].valueCodeableConcept.coding.system = "http://loinc.org"
-* code.extension[CodigoSolicitud].valueCodeableConcept.text = "TC de tórax"
-* code.extension[CodigoSolicitud].url = "http://minsal.cl/listaespera/StructureDefinition/CodigoSolicitud"
-* code.extension[CodigoSolicitud].valueCodeableConcept.coding.code = #20570-8
-* code.extension[CodigoSolicitud].valueCodeableConcept.coding.system = "http://loinc.org"
-* code.extension[CodigoSolicitud].valueCodeableConcept.text = "Hematocrito"
+* code.coding.code = #24627-2
+* code.coding.system = "http://loinc.org"
+* code.text = "TC de tórax"

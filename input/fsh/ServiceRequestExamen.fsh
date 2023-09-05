@@ -24,4 +24,5 @@ Description: "ServiceRequestExamen LE recurso utilizado para la representación 
   * text 1..1 MS
 * basedOn 1..1 MS 
 * basedOn only Reference(ServiceRequestLE)
-* code.extension contains CodigoSolicitud named CodigoSolicitud 1..* MS
+* code 1..1 MS
+* code from CodigoExamen

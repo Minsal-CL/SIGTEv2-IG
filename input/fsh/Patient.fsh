@@ -158,7 +158,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * identifier.type ^short = "Tipo de documento de Id (Extensible)"
 * identifier.type ^definition = "Tipo de documento de Id (Extensible)"
 * identifier.type ^comment = "Tipo de documento de Id (Extensible)"
-* identifier.type.coding from VSTipoIdentificador 
+* identifier.type from VSTipoIdentificador
 * identifier.type ^binding.description = "Identificadores definidos por DEIS"
 
 * gender ^short = "Sexo Registral del paciente"

@@ -57,9 +57,11 @@ Description: "Patient Lista de Espera"
 * extension[Religion].valueCodeableConcept.coding.code = #1
 * extension[Religion].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSReligion"
 * extension[SexoBiologico].url = "http://minsal.cl/listaespera/StructureDefinition/SexoBiologico"
-* extension[SexoBiologico].valueCodeableConcept.coding.display = "Hombre"
+* extension[SexoBiologico].valueCodeableConcept.coding.system = "http://hl7.org/fhir/administrative-gender"
+* extension[SexoBiologico].valueCodeableConcept.coding.code = #male
 * extension[identidadGenero].url = "http://minsal.cl/listaespera/StructureDefinition/IdentidadDeGenero"
-* extension[identidadGenero].valueCodeableConcept.coding.display = "Hombre"
+* extension[identidadGenero].valueCodeableConcept.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSIdentidaddeGenero"
+* extension[identidadGenero].valueCodeableConcept.coding.code = #1
 * extension[LugarDeNacimiento].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[LugarDeNacimiento].valueAddress.text = "Curicó"
 * extension[PueblosOriginariosPerteneciente].url = "http://minsal.cl/listaespera/StructureDefinition/PueblosOriginariosPerteneciente"
@@ -75,12 +77,10 @@ Description: "Patient Lista de Espera"
 
 
 * identifier.type.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* identifier.type.extension.valueCodeableConcept.coding.code = #AD
-* identifier.type.extension.valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
-// * identifier.type.coding[0].code = #01
-// * identifier.type.coding[0].system = "http://minsal.cl/listaespera/CodeSystem/CSTipoIdentificador"
-* identifier.type.coding[0].code = #NNCHL
-* identifier.type.coding[0].system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoDNI"
+* identifier.type.extension.valueCodeableConcept.coding.code = #032
+* identifier.type.extension.valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* identifier.type.coding[0].code = #01
+* identifier.type.coding[0].system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
 
 
 * identifier.value = "15999999"
@@ -98,13 +98,9 @@ Description: "Patient Lista de Espera"
 * address.extension[SituacionCalle].url = "http://minsal.cl/listaespera/StructureDefinition/SituacionCalle"
 * address.extension[SituacionCalle].valueBoolean = true
 
-
 * maritalStatus.coding.code = #01
 * maritalStatus.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSEstadoCivil"
 * deceasedBoolean = false
-
-
-
 
 * name[NombreOficial].use = #official
 * name[NombreOficial].given = "Luis"

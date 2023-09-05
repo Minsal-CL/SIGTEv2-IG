@@ -1457,46 +1457,6 @@ Description:  "Pueblos Originarios de Chile"
 * #96	"Otro (Especificar)"
 
 
-ValueSet: VSTipoIdentificador
-Id: VSTipoIdentificador
-Title: "Tipo Identificador"
-Description: "Tipo Identificador"
-* ^experimental = false
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-07-03T00:00:00-03:00"
-* ^contact.name = "MINSAL TIC/Interoperabilidad"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "interoperabilidad@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSTipoIdentificador
-
-CodeSystem: CSTipoIdentificador
-Id: CSTipoIdentificador
-Title: "Tipo Identificador"
-Description: "Tipo Identificador"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "1.0.0"
-* ^status = #active
-* ^date = "2023-07-03T00:00:00-03:00"
-* ^contact.name = "MINSAL TIC/Interoperabilidad"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "interoperabilidad@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #01 "Run"
-* #02 "Run materno/progenitor(a)"
-* #03 "Número de Folio de comprobante de parto"
-* #04 "Número de pasaporte"
-* #05 "Número de documento identificador de país de origen"
-* #06 "Número de identificador FONASA"
-* #07 "Identificador Provisorio Escolar"
-* #08 "Identificador Provisorio Apoderado"
-* #09 "Registro Único de Contribuyentes"
-
-
 ValueSet: VSEstadoCivil
 Id: VSEstadoCivil
 Title: "EstadoCivil"
