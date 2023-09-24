@@ -15,11 +15,10 @@ Description: "Bundle LE recurso utilizado para transportar todos los datos del m
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
-* entry 9..17 MS
+* entry 8..17 MS
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
         and encounter 1..1 
-        and appointment 1..1 
         and patient 1..1 
         and conditionDiagnostico 1..1 
         and observationComorbilidad 0..1
@@ -41,7 +40,6 @@ Description: "Bundle LE recurso utilizado para transportar todos los datos del m
 * entry[observationComorbilidad].resource only ObservationInicioIndiceComorbilidadLE
 * entry[observationCuidador].resource only ObservationInicioCuidadorLE
 * entry[conditionGes].resource only ConditionInicioGesLE
-* entry[appointment].resource only AppointmentInicioLE
 * entry[allergyintolerance].resource only AllergyIntoleranceInicioLE
 * entry[practitionerrole].resource only PractitionerRoleLE
 * entry[patient].resource only PacienteMinsalMPI

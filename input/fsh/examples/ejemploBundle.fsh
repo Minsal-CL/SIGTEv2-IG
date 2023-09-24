@@ -18,8 +18,8 @@ Description: "Bundle Evento de Inicio"
 * entry[encounter].fullUrl = "http://acme.com/ehr/fhir/Encounter/enc1"
 * entry[encounter].resource = EjemploEncounter
 
-* entry[appointment].fullUrl = "http://acme.com/ehr/fhir/Appointment/app1"
-* entry[appointment].resource = EjemploAppointment
+// * entry[appointment].fullUrl = "http://acme.com/ehr/fhir/Appointment/app1"
+// * entry[appointment].resource = EjemploAppointment
 
 * entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * entry[patient].resource = EjemploPatient

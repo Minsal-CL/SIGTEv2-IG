@@ -90,26 +90,26 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 //* name.family.extension ^short = "Extensión para apellido paterno"
 * name.given 1..
  
-* telecom and gender and birthDate  MS
-* telecom ^definition = "Contacto del prestador"
-* telecom.system ^short = "Debe utilizar \"phone\" o \"email\"."
-* telecom.system MS 
+// * telecom and gender and birthDate  MS
+// * telecom ^definition = "Contacto del prestador"
+// * telecom.system ^short = "Debe utilizar \"phone\" o \"email\"."
+// * telecom.system MS 
 
-* telecom.use MS
-* telecom.use ^short = "Uso del contacto descrito. Puede usar \"home | work | temp | old | mobile\""
+// * telecom.use MS
+// * telecom.use ^short = "Uso del contacto descrito. Puede usar \"home | work | temp | old | mobile\""
 
-* telecom.value MS
+// * telecom.value MS
 
-//* gender 1..1
-* gender ^short = "Sexo de nacimiento Registrado, male | female | other | unknown (requerido)"
-* gender ^definition = "Sexo de nacimiento Registrado"
+// //* gender 1..1
+// * gender ^short = "Sexo de nacimiento Registrado, male | female | other | unknown (requerido)"
+// * gender ^definition = "Sexo de nacimiento Registrado"
 
-//* birthDate 1..1
-* birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
-* birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
+// //* birthDate 1..1
+// * birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
+// * birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
-* address only Address or ClAddress
-* address MS
+// * address only Address or ClAddress
+// * address MS
 
 * qualification MS
 * qualification ^short = "Certificados, títulos y/o Especialidad(es) obtenidas por el Prestador"
@@ -171,11 +171,11 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification[Esp].code.text ^short = "Texto libre de la especialidad del profesional"
 * qualification[Esp].code.coding.display ^short = "Nombre de la especialidad"
 * qualification[Esp].code.coding.display ^definition = "Nombre la especialidad agregada. Agregar un poco mas de informacion acerca del item que se esta agregando."
-* qualification[Esp].issuer MS 
-* qualification[Esp].issuer.display MS
-* qualification[Esp].issuer ^short = "Organizacion que entrega el certificado o título"
-* qualification[Esp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
-* qualification[Esp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
+// * qualification[Esp].issuer MS 
+// * qualification[Esp].issuer.display MS
+// * qualification[Esp].issuer ^short = "Organizacion que entrega el certificado o título"
+// * qualification[Esp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
+// * qualification[Esp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
 * qualification[Esp].code from VSEspecialidades
 
 //subespecialidades
@@ -189,8 +189,8 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * qualification[SubEsp].code 1..1 MS
   * text 1..1 MS
 * qualification[SubEsp].code.text ^short = "Texto libre de la subespecialidad del profesional"
-* qualification[SubEsp].issuer MS
-* qualification[SubEsp].issuer.display MS
-* qualification[SubEsp].issuer ^short = "Organizacion que entrega el certificado o título"
-* qualification[SubEsp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
-* qualification[SubEsp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
+// * qualification[SubEsp].issuer MS
+// * qualification[SubEsp].issuer.display MS
+// * qualification[SubEsp].issuer ^short = "Organizacion que entrega el certificado o título"
+// * qualification[SubEsp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
+// * qualification[SubEsp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"

@@ -43,6 +43,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * subject only Reference(PacienteMinsalMPI)
 
 * period.start 1..1 MS
+* period.end 0..1 MS
 
 * type from VSTipoConsulta
 * basedOn 1..1 MS
