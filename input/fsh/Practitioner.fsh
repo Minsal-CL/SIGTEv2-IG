@@ -79,7 +79,7 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 * name.family ^short = "Primer Apellido"
 * name.family ^definition = "Se debe ingresar el primer apellido, segun indica su identificacion personal"
 * name.family 1..1
-* name.family.extension contains SegundoApellido named segundoApellido 0..1 MS
+* name.family.extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido named segundoApellido 0..1 MS
 * name.family.extension ^short = "Extensión para el segundo apellido"
 
 

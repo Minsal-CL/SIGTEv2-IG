@@ -15,7 +15,7 @@ Description: "Practitioner Evento de Inicio"
 * name.use = #official
 * name.given = "Luis"
 * name.family = "Perez"
-* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
 * name.family.extension.valueString = "Sierra"
 //* gender = #male
 //* birthDate = "1974-01-22"
@@ -42,7 +42,7 @@ Description: "Practitioner Referenciador Evento de Referenciada"
 * name.use = #official
 * name.given = "Luis"
 * name.family = "Perez"
-* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
@@ -67,7 +67,7 @@ Description: "Practitioner Evento Terminar"
 * name.use = #official
 * name.given = "Luis"
 * name.family = "Perez"
-* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
@@ -92,7 +92,7 @@ Description: "Practitioner Evento Revisar"
 * name.use = #official
 * name.given = "Luis"
 * name.family = "Perez"
-* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
@@ -120,7 +120,7 @@ Description: "Practitioner Evento de Atender"
 * name.use = #official
 * name.given = "Luis"
 * name.family = "Perez"
-* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
@@ -152,7 +152,7 @@ Description: "Practitioner Atendedor Evento de Agendar"
 * name.use = #official
 * name.given = "Luis"
 * name.family = "Perez"
-* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
@@ -182,7 +182,7 @@ Description: "Practitioner Agendador Evento de Agendar"
 * name.use = #official
 * name.given = "Luis"
 * name.family = "Perez"
-* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
@@ -207,7 +207,7 @@ Description: "Practitioner Evento de Priorizar"
 * name.use = #official
 * name.given = "Luis"
 * name.family = "Perez"
-* name.family.extension.url = "http://minsal.cl/listaespera/StructureDefinition/SegundoApellido"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1

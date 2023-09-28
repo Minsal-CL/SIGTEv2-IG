@@ -273,11 +273,11 @@ Title:       "ExtBool RequiereExamen"
 Description: "ExtBool RequiereExamen"
 * value[x] only boolean
 
-Extension: SegundoApellido
-Id: SegundoApellido
-Title: "Segundo Apellido"
-Description: "Segundo Apellido"
-* value[x] only string
+// Extension: SegundoApellido
+// Id: SegundoApellido
+// Title: "Segundo Apellido"
+// Description: "Segundo Apellido"
+// * value[x] only string
 
 
 
