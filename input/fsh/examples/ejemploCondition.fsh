@@ -4,7 +4,7 @@ Usage: #example
 Title: "Condition Diagnóstico Sospecha Evento de Inicio"
 Description: "Condition Diagnóstico Sospecha Evento de Inicio"
 
-* code = #1 "Diagnostico1"
+* code = http://diagnosticos.cl/uno#1 "Diagnostico1"
 * code.text = "DiagnosticoTextoLibreSospecha"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
 * category.text = "diagnostico"
@@ -24,7 +24,7 @@ Description: "Patología GES (número)"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * category.text = "sospechaGes"
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
 
 // Instance: EjemploCondicionAtenderHipotesisDiagnosticaCodigoLE
 // InstanceOf: CondicionAtenderHipotesisDiagnosticaCodigoLE

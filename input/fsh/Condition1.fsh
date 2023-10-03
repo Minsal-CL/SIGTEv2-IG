@@ -70,4 +70,4 @@ Condicion Inicio 1 LE recurso que se utiliza para indicar el diagnóstico del mo
     * system 1..1 MS
     * code 1..1 MS
     * display 0..1 MS
-* severity from https://hl7.org/fhir/R4/valueset-condition-severity.html
+* severity from http://hl7.org/fhir/ValueSet/condition-severity
