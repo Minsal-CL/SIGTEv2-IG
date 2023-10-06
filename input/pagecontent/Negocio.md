@@ -1,4 +1,4 @@
-# 1. Workflow
+### Workflow
 
 <br>
 <div align="center" >
@@ -11,9 +11,9 @@
 <br>
 
 
-# 2. Eventos Interoperabilidad CNE de APS a Secundario
+### Eventos Interoperabilidad CNE de APS a Secundario
 
-  **1.- INICIAR**
+#### INICIAR**
   
   Ocurre cuando un usuario acude a su Centro de Atención Primaria (APS) a
   consulta médica, de odontología, matronería, consulta oftalmológica con       
@@ -21,7 +21,7 @@
   solicitud de interconsulta (SIC) para nueva consulta de especialidad en el 
   nivel secundario. 
 
-  **2.- REFERENCIAR**
+#### REFERENCIAR**
   
   Corresponde al acto de asignación del establecimiento de nivel secundario de 
   destino de la SIC (al cual se está derivando). Puede ser accionado por el mismo 
@@ -38,7 +38,7 @@
   de Atención Primaria de Salud, se completará información y antecedentes
   faltantes de la solicitud de Interconsulta.
 
-  **3.-REVISAR**
+#### REVISAR**
   
   Un profesional clínico contralor debe revisar la pertinencia de la solicitud,
   según el protocolo de referencia y contrarreferencia establecido y reconocido
@@ -52,7 +52,7 @@
   Acá se pueden verificar si existe alguna causal de salida de Lista de Espera,
   por ejemplo, en caso de defunción, GES, no beneficiario entre otras. 
 
-  **4.- PRIORIZAR**	
+#### PRIORIZAR**	
   
   Un profesional clínico debe realizar la priorización de la solicitud de
   interconsulta, en función de la categorización definida, considerando
@@ -65,7 +65,7 @@
   por ejemplo, en caso de defunción, GES, no beneficiario entre otras. (Según
   Norma Técnica N°118)
 
-  **5.- AGENDAR**
+#### AGENDAR**
   Un funcionario administrativo contactará al usuario para agendar la cita con el
   especialista según la priorización asignada y la disponibilidad de horas.
   Esto puede suceder tanto en el establecimiento de atención primaria como en el
@@ -73,7 +73,7 @@
   
   Acá se pueden verificar si existe alguna causa de salida de Lista de Espera.
 
-  **6.- ATENDER**
+#### ATENDER**
   El usuario recibe atención con el médico especialista en el establecimiento de
   nivel secundario. 
   
@@ -90,7 +90,7 @@
   El usuario puede quedar en control, hospitalizado o ser dado de alta. En estos
   tres casos el paciente sale de la Lista de Espera.
 
-  **6.- TERMINAR**
+#### TERMINAR**
   En este acto el paciente sale de la Lista de Espera, ya sea porque fue atendido
   o por alguna de las causales de eliminación de la Lista de Espera según la
   norma técnica N°11. 
@@ -98,9 +98,9 @@
   Esto puede ocurrir de forma automática por definiciones del sistema
   informático, o mediante un funcionario administrativo. 
 
-# 3. Rol de Actores Interoperabilidad CNE de APS a Secundario
+### 3. Rol de Actores Interoperabilidad CNE de APS a Secundario
 
-  >**1.- INICIADOR**
+#### INICIADOR**
 
   >Corresponde al profesional de la salud que se encuentra atendiendo al usuario
   (paciente) en la consulta que puede ser médica, de odontología, matronería o
@@ -112,7 +112,7 @@
   completar los antecedentes clínicos que fundamente la decisión de derivar a
   especialidad. 
 
-  **2.- REFERENCIADOR**
+#### REFERENCIADOR**
   
   Corresponde al funcionario/a del establecimiento de salud de nivel primario que
   asigna el establecimiento de nivel secundario de destino de la SIC (al cual se
@@ -129,7 +129,7 @@
   Atención Primaria de Salud, este/a funcionario/o también completará información y
   antecedentes faltantes de la solicitud de Interconsulta 
 
-  **3.- REVISOR**
+#### REVISOR**
   
   Es el/la profesional clínico/a que ejerce las funciones de contraloría, quien
   revisa la pertinencia de la solicitud, según el protocolo de referencia y
@@ -146,7 +146,7 @@
   El REVISOR también pueden verificar si existe alguna causal de salida de Lista de
   Espera, por ejemplo, en caso de defunción, GES, no beneficiario entre otras. 
 
-  **4.- PRIORIZADOR**	
+#### PRIORIZADOR**	
   
   Es el/la profesional clínico/a que ejerce las funciones de contraloría, quien debe
   dar prioridad a la solicitud de interconsulta, en función de la categorización
@@ -161,7 +161,7 @@
   ejemplo, en caso de defunción, GES, no beneficiario entre otras. (Según Norma
   Técnica N°118).
 
-  **5.- AGENDADOR**
+#### AGENDADOR**
   
   Es el funcionario administrativo encargado de agendar la cita para la consulta de
   especialidad en el nivel secundario, luego de que la SIC ha sido aprobada y
@@ -175,7 +175,7 @@
   Este funcionario también puede verificar si existe alguna causa de salida de Lista
   de Espera
 
-  **6.- ATENDEDOR**
+#### ATENDEDOR**
   
   Es el profesional médico especialista de nivel secundario que dará la atención de
   especialidad al usuario/a (paciente) en el establecimiento de nivel secundario.
@@ -187,7 +187,7 @@
   resultado de la atención, dejar al usuario/a (paciente) en control en el nivel
   secundario, en control en el nivel primario, hospitalizarlo, o dar de alta.
 
-  **7.- TERMINADOR**
+#### TERMINADOR**
   
   Corresponde al funcionario administrativo que ejecuta la salida del usuario/a
   paciente de lista de espera, en función de si recibió la atención de especialidad,
@@ -198,14 +198,14 @@
   según definiciones del sistema informático local.
 
 
-# 4. Historias de Usuario 
+### Historias de Usuario 
 
 Las siguientes corresponden a las historias que definen las interacciones entre los usuarios con los sistemas de información en el contexto de la generación de solicitud de interconsulta para primera atención de especialidad para patologías no GES y su resolución.
 Las historias se definen según el siguiente esquema: “Como <rol de usuario>, yo <quiero/puedo/necesito> <acción> para poder <objetivo/meta>.”
 
-  ## 4.1. INICIADOR
+#### INICIADOR
   
-  **4.1.1. Crear una solicitud de interconsulta**
+##### Crear una solicitud de interconsulta**
     
   **HISTORIA**
     
@@ -227,9 +227,9 @@ Las historias se definen según el siguiente esquema: “Como <rol de usuario>, 
 Verificar que el iniciador debe ingresar paciente, especialidad, prioridad,
 razón y solicitante. el box
  
-## 4.2. REFERENCIADOR
+#### REFERENCIADOR
   
-  **4.2.1.	 Referenciar una solicitud de interconsulta**
+##### Referenciar una solicitud de interconsulta**
   
   **HISTORIA**
   
@@ -265,9 +265,9 @@ razón y solicitante. el box
   La solicitud de interconsulta tiene un establecimiento de destino asignado para
   continuar con el proceso de atención.
 
-## 4.3. REVISOR
+#### REVISOR
 
-  **4.3.1. REVISAR UNA SOLICITUD DE INTERCONSULTA**
+##### REVISAR UNA SOLICITUD DE INTERCONSULTA**
   
   **HISTORIA**
   
@@ -313,9 +313,9 @@ razón y solicitante. el box
   será contactado por el equipo de dicho establecimiento para continuar con su
   atención. 
 
-## 4.4. PRIORIZADOR
+#### PRIORIZADOR
 
-  **4.4.1. PRIORIZAR UNA SOLICITUD DE INTERCONSULTA**
+##### PRIORIZAR UNA SOLICITUD DE INTERCONSULTA**
   
   **HISTORIA**
   
@@ -345,9 +345,9 @@ razón y solicitante. el box
   priorización determinado.
 
  
-## 4.5. AGENDADOR
+#### AGENDADOR
 
-  **4.5.1. AGENDAR UNA SOLICITUD DE INTERCONSULTA**
+##### AGENDAR UNA SOLICITUD DE INTERCONSULTA**
   
   **HISTORIA**
   
@@ -377,9 +377,9 @@ razón y solicitante. el box
   “agendado” (booked). También puede registrar cuando no es posible contactar al
   usuario o éste no asiste a su cita. 
 
-## 4.6. ATENDEDOR
+#### ATENDEDOR
   
-  **4.6.1. Como atendedor, quiero responder una solicitud de interconsulta.**
+##### Como atendedor, quiero responder una solicitud de interconsulta.**
   
   **HISTORIA**
   
@@ -400,9 +400,9 @@ razón y solicitante. el box
   El paciente es atendido por el atendedor (médico especialista) y registra la
   información de esta atención. 
 
-## 4.7. TERMINADOR
+#### TERMINADOR
 
-  **4.7.1 Como terminador quiero terminar el proceso de atención de una solicitud de interconsulta.**
+##### Como terminador quiero terminar el proceso de atención de una solicitud de interconsulta.**
 
   **HISTORIA**
   Como terminador, quiero egresar al usuario de la Lista de Espera y terminar el
@@ -428,9 +428,9 @@ razón y solicitante. el box
   Como terminador quiero terminar el proceso de atención de una interconsulta.
 
 
-# 5. Diccionario de datos 
+### Diccionario de datos 
 https://docs.google.com/spreadsheets/d/1KyaOXS0A4ivNrUWCAaJauQdoQ7AnQJeYk7Sk3QgIVUY/edit#gid=0
 
-# 6. Glosario términos 
+### Glosario términos 
 
 

@@ -9,7 +9,7 @@ Description: "Encounter Evento de Inicio"
 * status = #finished
 * period.start = "2023-01-22T09:00:00Z"
 * period.end = "2023-01-22T09:00:00Z"
-* appointment = Reference(http://acme.com/ehr/fhir/Appointment/app1)
+//* appointment = Reference(http://acme.com/ehr/fhir/Appointment/app1)
 * class = http://minsal.cl/listaespera/CodeSystem/CSModalidadAtencionCodigo#1
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 

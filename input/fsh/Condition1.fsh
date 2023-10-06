@@ -4,20 +4,6 @@ Id: ConditionInicioDiagnosticoLE
 Title: "Condition Inicio Diagnostico LE"
 Description: """
 Condicion Inicio 1 LE recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta.
-
-* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:
-  ```
-  "code": {
-    "coding": [
-      {
-        "system": "url fuente",
-        "code": "código que representa el diagnóstico",
-        "display": "texto que representa el código usado"
-      }
-    ],
-    "text": "representación en texto del diagnóstico"
-  }
-  ```
 """
 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0

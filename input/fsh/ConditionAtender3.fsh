@@ -4,20 +4,6 @@ Id: CondicionAtenderDiagnosticoConfirmacionLE
 Title: "Condicion Atender Diagnostico Confirmacion LE"
 Description: """
 Condicion Atender Diagnostico Confirmacion LE
-
-* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:
-  ```
-  "code": {
-    "coding": [
-      {
-        "system": "url fuente",
-        "code": "código que representa el diagnóstico",
-        "display": "texto que representa el código usado"
-      }
-    ],
-    "text": "representación en texto del diagnóstico"
-  }
-  ```
 """
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft

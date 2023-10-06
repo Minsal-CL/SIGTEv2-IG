@@ -13,13 +13,13 @@
 | terminar | Terminar | Este evento permite registrar información asociada a los motivos de cierre o término de la interconsulta. | La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido terminada |
 {:.grid}
 
-## Definicion de Eventos
+## Definicion de Transacciones relacionados a eventos
 
-* [Evento Iniciar](EventoIniciar.html)
-* [Evento Referenciar](EventoReferenciar.html)
-* [Evento Revisar](EventoRevisar.html)
-* [Evento Priorizar](EventoPriorizar.html)
-* [Evento Agendar](EventoAgendar.html)
-* [Evento Atender](EventoAtender.html)
-* [Evento Terminar](EventoTerminar.html)
+* [Transacción Evento Iniciar](Transacciones.html#transacción-evento-iniciar)
+* [Transacción Evento Referenciar](Transacciones.html#transacción-evento-referenciar)
+* [Transacción Evento Revisar](Transacciones.html#transacción-evento-revisar)
+* [Transacción Evento Priorizar](Transacciones.html#transacción-evento-priorizar)
+* [Transacción Evento Agendar](Transacciones.html#transacción-evento-agendar)
+* [Transacción Evento Atender](Transacciones.html#transacción-evento-atender)
+* [Transacción Evento Terminar](Transacciones.html#transacción-evento-terminar)
 

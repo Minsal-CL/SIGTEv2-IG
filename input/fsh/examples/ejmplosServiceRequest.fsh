@@ -30,8 +30,7 @@ Description: "ServiceRequest Evento de Inicio"
 * encounter = Reference(http://acme.com/ehr/fhir/Encounter/enc1)
 * reasonCode.coding.code = #1
 * reasonCode.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSDerivadoParaCodigo"
-* supportingInfo[0] = Reference(http://acme.com/ehr/fhir/Appointment/app1)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/AllergyIntolerance/all1)
+* supportingInfo[0] = Reference(http://acme.com/ehr/fhir/AllergyIntolerance/all1)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con1)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Observvation/obs2)
 * supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con3)
