@@ -7,7 +7,7 @@
 | iniciar | Iniciar | Este evento es el inicial, permite registrar información asociada a la interconsulta. Puede ser iniciado por un médico de APS, Servicio de Urgencia de nivel secundario, médico nivel secundario. Cada Interconsulta posee un número único nacional, entregado desde nivel central. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
-Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
+Los códigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
 
 #### Diagrama de Secuencia
 
@@ -21,26 +21,23 @@ El evento **inicio** debe soportar a siguiente secuencia:
 
 ##### Request
 
+La semántica del mensaje para la transacción del evento de inicio usa el [Bundle Inicio LE](StructureDefinition-BundleInicioLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de inicio, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+
 * [Ejemplo Bundle de Inicio](Bundle-EjemploBundleInicio.html)
 
 ##### Response
 
-* [Ejemplo Bundle de Respuesta](Bundle-EjemploBundleInicio.html)
+La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un recurso cabecera [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) que contiene como foco un recurso llamado [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) con los detalles del resultado de la transacción.
 
 #### Precondiciones
 
-Lorem ipsum dolor sit amet
-
-* asd
-* asd
-  * asd
-  * asd
-  * asd
-* asd 
+Definir si existen precondiciones para el Evento Inicio
 
 #### Acciones Esperadas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Creación de un evento de interconsulta
+* Notificar a encargados de Lista de espera.
+
 
 ### Transacción Evento Referenciar
 
@@ -65,26 +62,22 @@ El evento iniciar debe soportar las siguientes secuencias:
 
 ##### Request
 
+La semántica del mensaje para la transacción del evento de referencia usa el [Bundle Referencia LE](StructureDefinition-BundleReferenciaLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de referencia, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+
 * [Ejemplo Bundle Referenciada](Bundle-EjemploBundleReferencia.html)
 
 ##### Response
 
-* [Ejemplo Bundle de Respuesta](Bundle-EjemploBundleInicio.html)
+La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un recurso cabecera [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) que contiene como foco un recurso llamado [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) con los detalles del resultado de la transacción.
 
 #### Precondiciones
 
-Lorem ipsum dolor sit amet
-
-* asd
-* asd
-  * asd
-  * asd
-  * asd
-* asd 
+Definir si existen precondiciones para el Evento Referenciar
 
 #### Acciones Esperadas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Actualización de un evento de interconsulta
+* Notificar a encargados de Lista de espera.
 
 ### Transacción Evento Revisar
 
@@ -109,26 +102,22 @@ El evento **revisar** debe soportar a siguiente secuencia:
 
 ##### Request
 
+La semántica del mensaje para la transacción del evento de revisar usa el [Bundle Revisar LE](StructureDefinition-BundleRevisarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de revisar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+
 * [Ejemplo Bundle Revisar](Bundle-EjemploBundleRevisar.html)
 
 ##### Response
 
-* [Ejemplo Bundle de Respuesta](Bundle-EjemploBundleInicio.html)
+La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un recurso cabecera [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) que contiene como foco un recurso llamado [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) con los detalles del resultado de la transacción.
 
 #### Precondiciones
 
-Lorem ipsum dolor sit amet
-
-* asd
-* asd
-  * asd
-  * asd
-  * asd
-* asd 
+Definir si existen precondiciones para el Evento Revisar
 
 #### Acciones Esperadas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Actualización de un evento de interconsulta
+* Notificar a encargados de Lista de espera.
 
 ### Transacción Evento Priorizar
 
@@ -154,26 +143,22 @@ El evento **priorizar** debe soportar a siguiente secuencia:
 
 ##### Request
 
+La semántica del mensaje para la transacción del evento de priorizar usa el [Bundle Priorizar LE](StructureDefinition-BundlePriorizarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de priorizar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+
 * [Ejemplo Bundle Priorizar](Bundle-EjemploBundlePriorizar.html)
 
 ##### Response
 
-* [Ejemplo Bundle de Respuesta](Bundle-EjemploBundleInicio.html)
+La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un recurso cabecera [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) que contiene como foco un recurso llamado [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) con los detalles del resultado de la transacción.
 
-### Precondiciones
+#### Precondiciones
 
-Lorem ipsum dolor sit amet
-
-* asd
-* asd
-  * asd
-  * asd
-  * asd
-* asd 
+Definir si existen precondiciones para el Evento Priorizar
 
 #### Acciones Esperadas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Actualización de un evento de interconsulta con datos de Priorización
+* Notificar a encargados de Lista de espera.
 
 ### Transacción Evento Agendar
 
@@ -198,6 +183,8 @@ El evento **agendar** debe soportar a siguiente secuencia:
 
 ##### Request
 
+La semántica del mensaje para la transacción del evento de agendar usa el [Bundle Agendar LE](StructureDefinition-BundleAgendarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de agendar, esta información va representada de manera general en el recurso [Appointment Agendar LE](StructureDefinition-AppointmentAgendarLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+
 * [Ejemplo Bundle Agendar Agendar](Bundle-EjemploBundleAgendar.html)
   * Appointment usado para agendar cita([Appointment Agendar](Appointment-EjemploAppointmentAgendar.html))
   * Appointment usado para cancelar cita([Appointment Cancelar](Appointment-EjemploAppointmentAgendarCancelar.html))
@@ -205,22 +192,16 @@ El evento **agendar** debe soportar a siguiente secuencia:
 
 ##### Response
 
-* [Ejemplo Bundle de Respuesta](Bundle-EjemploBundleInicio.html)
+La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un recurso cabecera [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) que contiene como foco un recurso llamado [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) con los detalles del resultado de la transacción.
 
 #### Precondiciones
 
-Lorem ipsum dolor sit amet
-
-* asd
-* asd
-  * asd
-  * asd
-  * asd
-* asd 
+Definir si existen precondiciones para el Evento Agendar
 
 #### Acciones Esperadas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Actualización de un evento de interconsulta con datos de agendamiento de atención
+* Notificar a encargados de Lista de espera.
 
 ### Transacción Evento Atender
 
@@ -245,26 +226,22 @@ El evento **atender** debe soportar a siguiente secuencia:
 
 ##### Request
 
+La semántica del mensaje para la transacción del evento de atender usa el [Bundle Agendar LE](StructureDefinition-BundleAgendarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de atender, esta información va representada de manera general en el recurso [Encounter Atender LE](StructureDefinition-EncounterAtenderLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+
 * [Ejemplo Bundle Atender](Bundle-EjemploBundleAtender.html)
 
 ##### Response
 
-* [Ejemplo Bundle de Respuesta](Bundle-EjemploBundleInicio.html)
+La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un recurso cabecera [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) que contiene como foco un recurso llamado [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) con los detalles del resultado de la transacción.
 
 #### Precondiciones
 
-Lorem ipsum dolor sit amet
-
-* asd
-* asd
-  * asd
-  * asd
-  * asd
-* asd 
+El evento debe haber sido agendado.
 
 #### Acciones Esperadas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Actualización de un evento de interconsulta con datos de atención de interconsulta
+* Notificar a encargados de Lista de espera.
 
 ### Transacción Evento Terminar
 
@@ -289,23 +266,19 @@ El evento **terminar** debe soportar a siguiente secuencia:
 
 ##### Request
 
+La semántica del mensaje para la transacción del evento de terminar usa el [Bundle Terminar LE](StructureDefinition-BundleTerminarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de terminar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+
 * [Ejemplo Bundle Terminar](Bundle-EjemploBundleTerminar.html)
 
 ##### Response
 
-* [Ejemplo Bundle de Respuesta](Bundle-EjemploBundleInicio.html)
+La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un recurso cabecera [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) que contiene como foco un recurso llamado [OperationOutcome](https://hl7.org/fhir/R4/operationoutcome.html) con los detalles del resultado de la transacción.
 
 #### Precondiciones
 
-Lorem ipsum dolor sit amet
-
-* asd
-* asd
-  * asd
-  * asd
-  * asd
-* asd 
+El evento terminar puede suceder en cualquier etapa.
 
 #### Acciones Esperadas
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+* Actualización de un evento de interconsulta con datos de cierre de interconsulta
+* Notificar a encargados de Lista de espera.
