@@ -1,4 +1,4 @@
-# Evento: Atender
+## Evento: Atender
 
 El evento ATENDER tiene asociado los siguientes códigos de evento: 
 
@@ -12,7 +12,7 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 
 
-## Bundle de Envío
+### Bundle de Envío
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="atender-evento.png"> 
@@ -38,7 +38,7 @@ Los recursos usados en este evento son los siguientes:
 * [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de atención
 * [PractitionerLE](StructureDefinition-PractitionerLE.html): Recurso que permite reflejar la informacion asociada a la identificación del profesional de la salud.
 
-## Relaciones de Recursos
+### Relaciones de Recursos
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="atender-recursos.png"> 
@@ -47,7 +47,7 @@ Los recursos usados en este evento son los siguientes:
 <br>
 
 
-## Secuencia del Evento
+### Secuencia del Evento
 
 El evento **atender** debe soportar a siguiente secuencia:
 
@@ -55,7 +55,7 @@ El evento **atender** debe soportar a siguiente secuencia:
 {% include evento-atender.svg %}
 </div>
 
-## Consideraciones
+### Consideraciones
 
 Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](https://docs.google.com/spreadsheets/d/1FfW2gQvTMJbNpr2mH2DFpsftkMEPr5CW2ed9MkryuH4/edit#gid=2133026629&range=A3)
 
@@ -76,10 +76,10 @@ Las validaciones internas que debe tener el implementador deben considerar cumpl
 
 * Debe incluir el recurso [CondicionAtenderDiagnosticoConfirmacionLE](StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html) con el valor **verificationStatus.coding.code=confirmed**
 
-## Mensaje Bundle de Ejemplo
+### Mensaje Bundle de Ejemplo
 
 * [BundleAtenderLE](Bundle-EjemploBundleAtender.html)
 * 
-## Notas
+### Notas
 
 * Notas Adicionales

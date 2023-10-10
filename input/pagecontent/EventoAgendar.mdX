@@ -1,4 +1,4 @@
-# Evento: Agendar
+## Evento: Agendar
 
 El evento AGENDAR tiene asociado los siguientes códigos de evento: 
 
@@ -12,7 +12,7 @@ Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCodi
 
 
 
-## Bundle de Envío
+### Bundle de Envío
 <br>
 <div align="center" >
   <img  style="border: 1px solid; color: black;" src="agendar-evento.png"> 
@@ -36,7 +36,7 @@ Los recursos usados en este evento son los siguientes:
 * [OrganizationLE](StructureDefinition-OrganizationLE.html): Recurso que permite relacionar la interconsulta con el establecimiento de destino
 * [PatientLE](StructureDefinition-PatientLE.html): Recurso utilizado para registrar información relacionada al paciente (ServiceRequest.subject)
 
-## Relaciones de Recursos
+### Relaciones de Recursos
 
 <br>
 <div align="center" >
@@ -45,7 +45,7 @@ Los recursos usados en este evento son los siguientes:
 </div>
 <br>
 
-## Secuencia del Evento
+### Secuencia del Evento
 
 El evento **agendar** debe soportar a siguiente secuencia:
 
@@ -53,7 +53,7 @@ El evento **agendar** debe soportar a siguiente secuencia:
 {% include evento-agendar.svg %}
 </div>
 
-## Consideraciones
+### Consideraciones
 
 Las validaciones internas que debe tener el implementador deben considerar cumplir con el conjunto de datos detallado en [Conjunto mínimo de datos](https://docs.google.com/spreadsheets/d/1FfW2gQvTMJbNpr2mH2DFpsftkMEPr5CW2ed9MkryuH4/edit#gid=493163919&range=A4)
 
@@ -74,14 +74,14 @@ El Bundle de envío debe cumplir con las siguientes condiciones en este evento:
 * Debe incluir el recurso [OrganizationLE](StructureDefinition-OrganizationLE.html)
 
 
-## Mensajes de Ejemplo
+### Mensajes de Ejemplo
 
 * [BundleAgendarLE Agendar](Bundle-EjemploBundleAgendar.html)
   * Appointment usado para agendar cita([Appointment Agendar](Appointment-EjemploAppointmentAgendar.html))
   * Appointment usado para cancelar cita([Appointment Cancelar](Appointment-EjemploAppointmentAgendarCancelar.html))
   * Appointment usado para marcar una cita sin presentación([Appointment Sin Presentación](Appointment-EjemploAppointmentAgendarSinPresentacion.html))
 
-## Notas
+### Notas
 
 * Notas Adicionales
 

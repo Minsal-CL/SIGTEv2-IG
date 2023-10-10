@@ -1,5 +1,4 @@
-# Cambios realizados a la guia
-## Version 0.1.1
+### Version 0.1.1
 - (Nuevo) Se agregan definiciones de los eventos Revisar / Agendar / Referenciada
 - (Correción) Se corrige campo obligatorio en extensión OrigenInterconsulta para el recurso ServiceRequest
 - (Correción) Se actualiza extensión NacionalidadCodigo en Patient ya que url no era única. 

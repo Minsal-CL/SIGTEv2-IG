@@ -1,4 +1,4 @@
-# 1. Alcance
+### Alcance
 
 Esta guía de implementación aborda el proceso de solicitud de interconsulta (SIC), para
 consulta nueva de especialidad desde el nivel primario de salud (APS) al nivel secundario,
@@ -14,9 +14,9 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
  - Terminar: salida de la Lista de Espera
 
 
-# 2. Introducción
+### Introducción
 
-  a. **Antecedentes**
+#### Antecedentes
     
   El sistema de salud en Chile se estructura en niveles (primario, secundario y 
   terciario), siendo el nivel primario el con mayor despliegue en el territorio, 
@@ -38,7 +38,7 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
   nueva consulta de especialidad desde APS a nivel secundario, para patologías no
   adscritas a las garantías explícitas de salud (GES).
 
-  b. **Descripción**
+#### Descripción
     
   Se propone desarrollar de un sistema de Información que permita hacer
   trazabilidad del proceso desde que se solicita interconsulta para Nueva
@@ -52,16 +52,16 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
   metodología para el re-diseño del proceso, optimizado y centrado en el paciente
   y su implementación bajo estándares internacionales de interoperabilidad.
   
-  c. **Objetivos del Proyecto de Tiempos de Espera Interoperables**
+#### Objetivos del Proyecto de Tiempos de Espera Interoperables
   
-  **General**
+##### General
 
   Generar un sistema seguro e interoperable de datos clínicos para soportar la 
   gestión (registro, transferencia, análisis, etc.) de la información, fidedigna 
   y de calidad, entregada a través de una plataforma de visualización del estado 
   de nueva consulta de especialidad para pacientes.
     
-  **Específicos**
+##### Específicos
 
   - Lograr el intercambio de información de las solicitudes de interconsultas
   emitidas desde los registros clínicos electrónicos implementados en los
@@ -76,16 +76,16 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
   entre sistemas, evitando ambigüedades y errores en la interpretación de la
   información.
 
-# 3. Objetivos de la Guía de Implementación
+#### Objetivos de la Guía de Implementación
  
-  **General**
+##### General
 
   Brindar las directrices para el desarrollo de sistema de información que
   garanticen la interoperabilidad con la plataforma de Tiempos de Espera para el
   proceso de solicitud de nueva consulta de especialidad desde APS a nivel
   secundario, según los estándares definidos por el Ministerio de Salud.
 
-  **Específicos**
+##### Específicos
   - Otorgar las herramientas necesarias para el desarrollo de sistemas informáticos de
   registro clínico que interoperen con la plataforma de tiempos de espera, en base al
   estándar HL7 FHIR.
