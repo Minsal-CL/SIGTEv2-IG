@@ -10,7 +10,7 @@ Description: "Encounter Evento de Inicio"
 * period.start = "2023-01-22T09:00:00Z"
 * period.end = "2023-01-22T09:00:00Z"
 //* appointment = Reference(http://acme.com/ehr/fhir/Appointment/app1)
-* class = http://minsal.cl/listaespera/CodeSystem/CSModalidadAtencionCodigo#1
+* class = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSModalidadAtencionCodigo#1
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 
 Instance: EjemploEncounterAtender
@@ -27,7 +27,7 @@ Description: "Encounter Evento de Atender"
 * basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE)
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 //* appointment = Reference(http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAtender)
-* class = http://minsal.cl/listaespera/CodeSystem/CSModalidadAtencionCodigo#1
+* class = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSModalidadAtencionCodigo#1
 
 * reasonReference[CondicionAtenderDiagnosticoConfirmacionLE] = Reference(http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE)
 * reasonReference[ObservationAtenderLE] = Reference(http://acme.com/ehr/fhir/Observation/EjemploObservationAtender)
@@ -41,4 +41,4 @@ Description: "Encounter Evento de Atender"
 
 * period.start = "2023-01-22T09:00:00Z"
 * period.end = "2023-01-22T10:00:00Z"
-* type = http://minsal.cl/listaespera/CodeSystem/CSTipoConsulta#1
+* type = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTipoConsulta#1

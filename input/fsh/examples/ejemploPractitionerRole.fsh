@@ -7,7 +7,7 @@ Description: "PractitionerRole Evento de Inicio"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/pra1)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
 * code.coding.code = #iniciador
-* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
+* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSPractitionerTipoRolLE"
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
 Instance: EjemploPractitionerRoleReferenciadorMHREFERENCIADA
@@ -19,7 +19,7 @@ Description: "PractitionerRole Referenciador Evento de Referenciada"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/referencia)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAgendador)
 * code.coding.code = #referenciador
-* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
+* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
@@ -31,7 +31,7 @@ Description: "PractitionerRole Agendador Evento de Referenciada"
 
 * organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAtendedor)
 * code.coding.code = #atendedor
-* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
+* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLOS PARA BUNDLE TERMINAR*/
@@ -44,7 +44,7 @@ Description: "PractitionerRole Evento de Terminar"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/terminar)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/terminar)
 * code = #terminador
-* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
+* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE TERMINAR*/
 
 
@@ -59,7 +59,7 @@ Description: "PractitionerRole Evento de Revisar"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/revisar)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/revisar)
 * code = #revisor
-* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
+* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE REVISAR*/
 
 /*EJEMPLOS PARA BUNDLE AGENDARMH*/
@@ -72,7 +72,7 @@ Description: "PractitionerRole Evento de Agendar MessageHeader"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/agendar)
 * code = #agendador
-* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
+* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE AGENDARMH*/
 
 /*EJEMPLOS PARA BUNDLE AGENDARAPPO*/
@@ -85,7 +85,7 @@ Description: "PractitionerRole Evento de Agendar Apponitment"
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/agendarAtendedor)
 //* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
 * code = #atendedor
-* code.coding.system = "http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE"
+* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE AGENDARAPPO*/
 
 
@@ -99,7 +99,7 @@ Description: "PractitionerRole Evento de Priorizar"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/priorizar)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/priorizar)
-* code.coding = http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE#priorizador
+* code.coding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSPractitionerTipoRolLE#priorizador
 /*FIN PARA BUNDLE PRIORIZAR*/
 
 
@@ -113,5 +113,5 @@ Description: "PractitionerRole Evento de Atender"
 
 * practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/atender)
 * organization = Reference(http://acme.com/ehr/fhir/Organization/atender)
-* code.coding = http://minsal.cl/listaespera/CodeSystem/CSPractitionerTipoRolLE#atendedor
+* code.coding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSPractitionerTipoRolLE#atendedor
 /*FIN PARA BUNDLE Atender*/

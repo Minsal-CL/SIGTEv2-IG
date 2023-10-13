@@ -1153,7 +1153,7 @@ Usage: #definition
 * sourceCanonical = Canonical(VSHipotesisDiagnosticaCodigo)
 * targetCanonical = Canonical(http://terminology.hl7.org/ValueSet/condition-ver-status)
 * group[+]
-  * source = "http://minsal.cl/listaespera/CodeSystem/CSHipotesisDiagnosticaCodigo"
+  * source = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSHipotesisDiagnosticaCodigo"
   * target = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
   * element[+]
     * code = #1
@@ -1183,6 +1183,10 @@ Description: "Corresponde al servicio que se requiere"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+* ^copyright = """This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
+The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the Creative Commons Attribution 4.0 International Public License. For more information, see SNOMED IPS Terminology
+The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review usage terms or directly contact SNOMED International: info@snomed.org
+"""
 
 * http://snomed.info/sct#758598006	"derivación a nefrólogo pediátrico"
 * http://snomed.info/sct#715159005	"derivación a servicio de atención de diabetes"
@@ -1383,7 +1387,9 @@ Description: "Codigos de Examenes"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "chair@hl7chile.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-* ^copyright = "All content on ISO Online is copyright protected. The copyright is owned by ISO. Any use of the content, including copying of it in whole or in part, for example to another Internet site, is prohibited and would require written permission from ISO."
+* ^copyright = """
+This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc
+"""
 
 * include codes from system http://loinc.org
 

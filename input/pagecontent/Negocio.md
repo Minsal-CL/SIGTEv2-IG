@@ -98,7 +98,7 @@
   Esto puede ocurrir de forma automática por definiciones del sistema
   informático, o mediante un funcionario administrativo. 
 
-### 3. Rol de Actores Interoperabilidad CNE de APS a Secundario
+### Rol de Actores Interoperabilidad CNE de APS a Secundario
 
 #### INICIADOR
 
