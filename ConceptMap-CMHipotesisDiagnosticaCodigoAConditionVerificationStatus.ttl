@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/tei/ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.5"] ; # 
+  fhir:name [ fhir:v "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"] ; # 
+  fhir:title [ fhir:v "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-28"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://interoperabilidad.minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Mapping de codigos confirmación diagnostica a condition verfication status"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:source [
+     fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSHipotesisDiagnosticaCodigo"^^xsd:anyURI ;
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSHipotesisDiagnosticaCodigo>
+  ] ; # 
+  fhir:target [
+     fhir:v "http://terminology.hl7.org/ValueSet/condition-ver-status"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/condition-ver-status>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSHipotesisDiagnosticaCodigo"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "Confirmada" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "confirmed" ] ;
+         fhir:display [ fhir:v "Confirmed" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "Descartada" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "refuted" ] ;
+         fhir:display [ fhir:v "Refuted" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

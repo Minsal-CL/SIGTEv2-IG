@@ -1,0 +1,2215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Tiempos de Espera Interoperable v0.1.5</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7chile.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async>
+</script>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+    <a id="MINSAL-logo" no-external="true" href="http://minsal.cl">
+        
+        <img height="71" alt="Visitar sitio MINSAL Chile" src="assets/images/minsal-logo.svg" />
+    </a>
+</div>
+<div id="family-nav">
+    <!--
+    <a id="hl7chile-logo" no-external="true" href="http://hl7chile.cl"><img height="71" alt="Visitar HL7 Chile" src="assets/images/hl7chile-logo.svg" /> </a>-->
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
+            <br/>
+            <span style="display:inline-block;">0.1.5 - draft
+
+
+
+  <img alt="Chile flag" src="assets/images/chl.svg" height="16" title="Chile"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="Negocio.html">Especificación de Negocio</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificaciones Técnicas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Eventos.html">Eventos</a>
+      </li>
+      <li>
+        <a href="Transacciones.html">Transacciones</a>
+      </li>
+      <li>
+        <a href="artifacts.html#structures-resource-profiles">Perfiles</a>
+      </li>
+      <li>
+        <a href="Mensajeria.html">Mensajería</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html#terminology-value-sets">Terminologías</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.5. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-AllergyIntoleranceInicioLE.html"
+                     title="StructureDefinition/AllergyIntoleranceInicioLE">AllergyIntolerance Inicio LE</a>
+               </td>
+               <td>
+<p>AllergyIntolerance Inicio LE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-AppointmentAgendarLE.html"
+                     title="StructureDefinition/AppointmentAgendarLE">AppointmentAgendarLE</a>
+               </td>
+               <td>
+<p>AppointmentAgendarLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BundleAgendarLE.html"
+                     title="StructureDefinition/BundleAgendarLE">Bundle Agendar LE</a>
+               </td>
+               <td>
+<p>Bundle Agendar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Agendar.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BundleAtenderLE.html"
+                     title="StructureDefinition/BundleAtenderLE">Bundle Atender LE</a>
+               </td>
+               <td>
+<p>Bundle Atender LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Atender.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BundleInicioLE.html"
+                     title="StructureDefinition/BundleInicioLE">Bundle Inicio LE</a>
+               </td>
+               <td>
+<p>Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento iniciar.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BundlePriorizarLE.html"
+                     title="StructureDefinition/BundlePriorizarLE">Bundle Priorizar LE</a>
+               </td>
+               <td>
+<p>Bundle Priorizar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Priorizar.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BundleReferenciaLE.html"
+                     title="StructureDefinition/BundleReferenciaLE">Bundle Referencia LE</a>
+               </td>
+               <td>
+<p>Bundle Referencia LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento referenciar.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BundleRevisarLE.html"
+                     title="StructureDefinition/BundleRevisarLE">Bundle Revisar LE</a>
+               </td>
+               <td>
+<p>Bundle Revisar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento revisar.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-BundleTerminarLE.html"
+                     title="StructureDefinition/BundleTerminarLE">Bundle Terminar LE</a>
+               </td>
+               <td>
+<p>Bundle Terminar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento terminar.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CarePlanAtenderLE.html"
+                     title="StructureDefinition/CarePlanAtenderLE">CarePlan Atender LE</a>
+               </td>
+               <td>
+<p>CarePlan Atender LE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CondicionAtenderDiagnosticoConfirmacionLE.html"
+                     title="StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE">Condicion Atender Diagnostico Confirmacion LE</a>
+               </td>
+               <td>
+<p>Condicion Atender Diagnostico Confirmacion LE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ConditionInicioDiagnosticoLE.html"
+                     title="StructureDefinition/ConditionInicioDiagnosticoLE">Condition Inicio Diagnostico LE</a>
+               </td>
+               <td>
+<p>Condicion Inicio 1 LE recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-CoverageInicioLE.html"
+                     title="StructureDefinition/CoverageInicioLE">Coverage Inicio LE</a>
+               </td>
+               <td>
+<p>Coverage Inicio LE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DocumentReferenceInicioLE.html"
+                     title="StructureDefinition/DocumentReferenceInicioLE">DocumentReference Inicio LE</a>
+               </td>
+               <td>
+<p>DocumentReference Inicio LE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-EncounterAtenderLE.html"
+                     title="StructureDefinition/EncounterAtenderLE">Encounter Atender LE</a>
+               </td>
+               <td>
+<p>Encounter Atender LE recurso que se utiliza para representar el encuentro médico, cuando se comienza a ejecutar la atención de la interconsulta.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-EncounterInicioLE.html"
+                     title="StructureDefinition/EncounterInicioLE">Encounter Inicio LE</a>
+               </td>
+               <td>
+<p>Encounter Inicio LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MessageHeaderLE.html"
+                     title="StructureDefinition/MessageHeaderLE">MessageHeader LE</a>
+               </td>
+               <td>
+<p>MessageHeaderLE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ObservationAtenderLE.html"
+                     title="StructureDefinition/ObservationAtenderLE">Observation Atender LE</a>
+               </td>
+               <td>
+<p>ObservationAtender LE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ObservationInicioCuidadorLE.html"
+                     title="StructureDefinition/ObservationInicioCuidadorLE">Observation Inicio Cuidador LE</a>
+               </td>
+               <td>
+<p>Observation Inicio para describir si necesita cuidador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ObservationInicioIndiceComorbilidadLE.html"
+                     title="StructureDefinition/ObservationInicioIndiceComorbilidadLE">Observation Inicio Indice Comorbilidad LE</a>
+               </td>
+               <td>
+<p>Observation Inicio 2 LE recurso que se utiliza para indicar el índice de comorbilidad de un paciente.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ObservationInicioLE.html"
+                     title="StructureDefinition/ObservationInicioLE">Observation Inicio LE</a>
+               </td>
+               <td>
+<p>Observation Inicio LE, recurso que permite agregar los examenes en el evento de inicio.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OrganizationLE.html"
+                     title="StructureDefinition/OrganizationLE">Organization LE</a>
+               </td>
+               <td>
+<p>Organization LE según <a href="https://repositoriodeis.minsal.cl/DatosAbiertos/Establecimientos_ChileDEIS_MINSAL%2021-04-2023.xlsx">Códigos DEIS del establecimientos</a></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PacienteMinsalMPI.html"
+                     title="StructureDefinition/PacienteMinsalMPI">PacienteMPI</a>
+               </td>
+               <td>
+<p>Paciente definido para el Registro Maestro de Pacientes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ConditionInicioGesLE.html"
+                     title="StructureDefinition/ConditionInicioGesLE">Patología GES (número)</a>
+               </td>
+               <td>
+<p>Patología GES (número)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PractitionerLE.html"
+                     title="StructureDefinition/PractitionerLE">Practitioner LE</a>
+               </td>
+               <td>
+<p>Practitioner LE recurso que se utiliza para representar la información de identificación del profesional de la salud.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PractitionerRoleLE.html"
+                     title="StructureDefinition/PractitionerRoleLE">PractitionerRole LE</a>
+               </td>
+               <td>
+<p>PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-QuestionnaireResponseAtenderLE.html"
+                     title="StructureDefinition/QuestionnaireResponseAtenderLE">QuestionnaireResponse Atender LE</a>
+               </td>
+               <td>
+<p>QuestionnaireResponse Atender LE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-QuestionnaireResponseInicioLE.html"
+                     title="StructureDefinition/QuestionnaireResponseInicioLE">QuestionnaireResponse Inicio Motivo de la Derivación LE</a>
+               </td>
+               <td>
+<p>QuestionnaireResponse Inicio para Motivo de Derivación LE</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ServiceRequestLE.html"
+                     title="StructureDefinition/ServiceRequestLE">ServiceRequest LE</a>
+               </td>
+               <td>
+<p>ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ServiceRequestExamenLE.html"
+                     title="StructureDefinition/ServiceRequestExamenLE">ServiceRequestExamen LE</a>
+               </td>
+               <td>
+<p>ServiceRequestExamen LE recurso utilizado para la representación de los datos de la examen.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Contactado.html"
+                     title="StructureDefinition/Contactado">Contactado</a>
+               </td>
+               <td>
+<p>Contactado</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DestinoAtencionCodigo.html"
+                     title="StructureDefinition/DestinoAtencionCodigo">Destino Atención Codigo</a>
+               </td>
+               <td>
+<p>Destino Atención Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DigitoVerificador.html"
+                     title="StructureDefinition/DigitoVerificador">DigitoVerificador</a>
+               </td>
+               <td>
+<p>DigitoVerificador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DocAcreditacionCuidadorCodigoLE.html"
+                     title="StructureDefinition/DocAcreditacionCuidadorCodigoLE">Doc Acreditacion Cuidador</a>
+               </td>
+               <td>
+<p>Doc Acreditacion Cuidador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-EspecialidadMedicaDestinoCodigo.html"
+                     title="StructureDefinition/EspecialidadMedicaDestinoCodigo">Especialidad Médica Destino Código</a>
+               </td>
+               <td>
+<p>Especialidad Médica Destino Código</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-EstadoInterconsultaCodigoLE.html"
+                     title="StructureDefinition/EstadoInterconsultaCodigoLE">Estado Interconsulta Codigo</a>
+               </td>
+               <td>
+<p>Estado Interconsulta Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBool.html"
+                     title="StructureDefinition/ExtBool">ExtBool</a>
+               </td>
+               <td>
+<p>ExtBool</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBoolAlergia.html"
+                     title="StructureDefinition/ExtBoolAlergia">ExtBool Alergia</a>
+               </td>
+               <td>
+<p>ExtBool Alergia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBoolAtencionPreferente.html"
+                     title="StructureDefinition/ExtBoolAtencionPreferente">ExtBool Atención Preferente</a>
+               </td>
+               <td>
+<p>ExtBool ¿Hace uso de atención preferente?</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBoolPersonaMayor.html"
+                     title="StructureDefinition/ExtBoolPersonaMayor">ExtBool PersonaMayor</a>
+               </td>
+               <td>
+<p>ExtBool PersonaMayor</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBoolPertinenciaAtencionBox.html"
+                     title="StructureDefinition/ExtBoolPertinenciaAtencionBox">ExtBool Pertinencia Atencion Box</a>
+               </td>
+               <td>
+<p>ExtBool Pertinencia Atencion Box</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBoolPresentaDiscapacidad.html"
+                     title="StructureDefinition/ExtBoolPresentaDiscapacidad">ExtBool PresentaDiscapacidad</a>
+               </td>
+               <td>
+<p>ExtBool PresentaDiscapacidad</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBoolRequiereExamen.html"
+                     title="StructureDefinition/ExtBoolRequiereExamen">ExtBool RequiereExamen</a>
+               </td>
+               <td>
+<p>ExtBool RequiereExamen</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBoolResolutividadAPS.html"
+                     title="StructureDefinition/ExtBoolResolutividadAPS">ExtBool ResolutividadAPS</a>
+               </td>
+               <td>
+<p>ExtBool ResolutividadAPS</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtBoolSolicitudExamenes.html"
+                     title="StructureDefinition/ExtBoolSolicitudExamenes">ExtBool Solicitud Examenes</a>
+               </td>
+               <td>
+<p>ExtBool Solicitud Examenes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtInteger.html"
+                     title="StructureDefinition/ExtInteger">ExtInteger</a>
+               </td>
+               <td>
+<p>ExtInteger</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtStringMotivoNoPertinencia.html"
+                     title="StructureDefinition/ExtStringMotivoNoPertinencia">ExtString MotivoNoPertinencia</a>
+               </td>
+               <td>
+<p>ExtString MotivoNoPertinencia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ExtStringFundamentoPriorizacion.html"
+                     title="StructureDefinition/ExtStringFundamentoPriorizacion">ExtStringFundamentoPriorizacion</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-IdentidadDeGenero.html"
+                     title="StructureDefinition/IdentidadDeGenero">Identidad De Genero</a>
+               </td>
+               <td>
+<p>Identidad De Genero</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MedioNotificacion.html"
+                     title="StructureDefinition/MedioNotificacion">MedioNotificacion</a>
+               </td>
+               <td>
+<p>MedioNotificacion</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MotivoCierreInterconsulta.html"
+                     title="StructureDefinition/MotivoCierreInterconsulta">Motivo Cierre Interconsulta</a>
+               </td>
+               <td>
+<p>Motivo Cierre Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MotivoNoPertinenciaCodigo.html"
+                     title="StructureDefinition/MotivoNoPertinenciaCodigo">Motivo No Pertinencia Codigo</a>
+               </td>
+               <td>
+<p>Motivo No Pertinencia Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-OrigenInterconsulta.html"
+                     title="StructureDefinition/OrigenInterconsulta">Origen Interconsulta</a>
+               </td>
+               <td>
+<p>Origen Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PaisOrigenMPI.html"
+                     title="StructureDefinition/PaisOrigenMPI">País de origen del paciente</a>
+               </td>
+               <td>
+<p>País de origen del paciente</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PertinenciaInterconsulta.html"
+                     title="StructureDefinition/PertinenciaInterconsulta">Pertinencia Interconsulta</a>
+               </td>
+               <td>
+<p>Pertinencia Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PrevisionCodigoLE.html"
+                     title="StructureDefinition/PrevisionCodigoLE">Previsión determinada de aseguramiento de salud del paciente.</a>
+               </td>
+               <td>
+<p>La previsión es la variable que determina sistema de aseguramiento de salud del paciente.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PueblosOriginarios.html"
+                     title="StructureDefinition/PueblosOriginarios">Pueblos Originarios</a>
+               </td>
+               <td>
+<p>Almacenar si el paciente pertenece a algun pueblo originario</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PueblosAfrodescendiente.html"
+                     title="StructureDefinition/PueblosAfrodescendiente">PueblosAfrodescendiente</a>
+               </td>
+               <td>
+<p>PueblosAfrodescendiente</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-PueblosOriginariosPerteneciente.html"
+                     title="StructureDefinition/PueblosOriginariosPerteneciente">PueblosOriginariosPerteneciente</a>
+               </td>
+               <td>
+<p>PueblosOriginariosPerteneciente</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-Religion.html"
+                     title="StructureDefinition/Religion">Religión</a>
+               </td>
+               <td>
+<p>Religión</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SexoBiologico.html"
+                     title="StructureDefinition/SexoBiologico">Sexo Biologico del paciente</a>
+               </td>
+               <td>
+<p>Sexo Biologico del paciente</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SituacionCalle.html"
+                     title="StructureDefinition/SituacionCalle">SituacionCalle</a>
+               </td>
+               <td>
+<p>SituacionCalle</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SospechaPatologiaGes.html"
+                     title="StructureDefinition/SospechaPatologiaGes">SospechaPatologiaGes</a>
+               </td>
+               <td>
+<p>Indica si corresponde a GES</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SubEspecialidadMedicaDestinoCodigo.html"
+                     title="StructureDefinition/SubEspecialidadMedicaDestinoCodigo">SubEspecialidad Médica Destino Código</a>
+               </td>
+               <td>
+<p>SubEspecialidad Médica Destino Código</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSServicioRequerido.html"
+                     title="ValueSet/VSServicioRequerido">Corresponde al servicio que se requiere</a>
+               </td>
+               <td>
+<p>Corresponde al servicio que se requiere</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-CodigoExamen.html" title="ValueSet/CodigoExamen">Códigos de Examenes</a>
+               </td>
+               <td>
+<p>Codigos de Examenes</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSDerivadoParaCodigo.html"
+                     title="ValueSet/VSDerivadoParaCodigo">Derivado Para</a>
+               </td>
+               <td>
+<p>Derivado Para</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSDestinoAtencionCodigo.html"
+                     title="ValueSet/VSDestinoAtencionCodigo">Destino Atención Codigo</a>
+               </td>
+               <td>
+<p>Destino Atención Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSDestinoReferenciaCodigo.html"
+                     title="ValueSet/VSDestinoReferenciaCodigo">Destino Referencia Codigo</a>
+               </td>
+               <td>
+<p>Destino Referencia Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSDocAcreditacionCuidador.html"
+                     title="ValueSet/VSDocAcreditacionCuidador">Documento Acreditacion Cuidador</a>
+               </td>
+               <td>
+<p>Documento Acreditacion Cuidador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEspecialidadMed.html"
+                     title="ValueSet/VSEspecialidadMed">EspecialidadMed</a>
+               </td>
+               <td>
+<p>EspecialidadMed</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEspecialidades.html" title="ValueSet/VSEspecialidades">Especialidades</a>
+               </td>
+               <td>
+<p>Especialidades</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEspecialidadFarma.html"
+                     title="ValueSet/VSEspecialidadFarma">Especialidades Farmaceúticas o Química Farmaceúticas</a>
+               </td>
+               <td>
+<p>Especialidades Farmaceúticas o Química Farmaceúticas</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEspecialidadOdont.html"
+                     title="ValueSet/VSEspecialidadOdont">Especialidades Odontológicas</a>
+               </td>
+               <td>
+<p>Especialidades Odontológicas</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEspecialidadBioqca.html"
+                     title="ValueSet/VSEspecialidadBioqca">Especialidades y Subespecialidades Bioquímicas</a>
+               </td>
+               <td>
+<p>Especialidades y Subespecialidades Bioquímicas</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEstablecimientoDestinoCodigo.html"
+                     title="ValueSet/VSEstablecimientoDestinoCodigo">Establecimiento Destino Codigo</a>
+               </td>
+               <td>
+<p>Establecimiento Destino Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEstadoInterconsulta.html"
+                     title="ValueSet/VSEstadoInterconsulta">Estado Interconsulta</a>
+               </td>
+               <td>
+<p>Estado Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSEstadoCivil.html" title="ValueSet/VSEstadoCivil">EstadoCivil</a>
+               </td>
+               <td>
+<p>EstadoCivil</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSHipotesisDiagnosticaCodigo.html"
+                     title="ValueSet/VSHipotesisDiagnosticaCodigo">HipotesisDiagnosticaCodigo</a>
+               </td>
+               <td>
+<p>HipotesisDiagnosticaCodigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSIdentidaddeGenero.html"
+                     title="ValueSet/VSIdentidaddeGenero">Identidad de Genero</a>
+               </td>
+               <td>
+<p>Identidad de Genero</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSIndicecomorbilidad.html"
+                     title="ValueSet/VSIndicecomorbilidad">Indice Comorbilidad</a>
+               </td>
+               <td>
+<p>Indice Comorbilidad</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSinterconsulta.html" title="ValueSet/VSinterconsulta">Interconsulta</a>
+               </td>
+               <td>
+<p>Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSMedioNotificacion.html"
+                     title="ValueSet/VSMedioNotificacion">Medio Notificación</a>
+               </td>
+               <td>
+<p>Medio Notificación</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSModalidadAtencionCodigo.html"
+                     title="ValueSet/VSModalidadAtencionCodigo">Modalidad Atencion Codigo</a>
+               </td>
+               <td>
+<p>Modalidad Atencion Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSMotivoCierreInterconsulta.html"
+                     title="ValueSet/VSMotivoCierreInterconsulta">Motivo Cierre Interconsulta</a>
+               </td>
+               <td>
+<p>Motivo Cierre Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSMotivoNoContactabilidad.html"
+                     title="ValueSet/VSMotivoNoContactabilidad">Motivo No Contactabilidad</a>
+               </td>
+               <td>
+<p>Motivo No Contactabilidad</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSMotivoNoPertinenciaCodigo.html"
+                     title="ValueSet/VSMotivoNoPertinenciaCodigo">Motivo No Pertinencia Codigo</a>
+               </td>
+               <td>
+<p>Motivo No Pertinencia Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSPertinenciaInterconsulta.html"
+                     title="ValueSet/VSPertinenciaInterconsulta">Pertinencia Interconsulta</a>
+               </td>
+               <td>
+<p>Pertinencia Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSPrevisionCodigo.html"
+                     title="ValueSet/VSPrevisionCodigo">PrevisionCodigo</a>
+               </td>
+               <td>
+<p>PrevisionCodigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-PueblosOriginariosVS.html"
+                     title="ValueSet/PueblosOriginariosVS">Pueblos Originarios de Chile</a>
+               </td>
+               <td>
+<p>Pueblos Originarios de Chile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSReligion.html" title="ValueSet/VSReligion">Religion</a>
+               </td>
+               <td>
+<p>Religion</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSPractitionerTipoRolLE.html"
+                     title="ValueSet/VSPractitionerTipoRolLE">Rol de médicos</a>
+               </td>
+               <td>
+<p>Rol de médicos(Practitioner) en algún evento, durante la intercosulta.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSSospechaPatologia.html"
+                     title="ValueSet/VSSospechaPatologia">Sospecha Patologia</a>
+               </td>
+               <td>
+<p>Sospecha Patologia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSSospechaPatologiaGes.html"
+                     title="ValueSet/VSSospechaPatologiaGes">Sospecha Patologia Ges</a>
+               </td>
+               <td>
+<p>Sospecha Patologia Ges</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSTipoCodDiagnostica.html"
+                     title="ValueSet/VSTipoCodDiagnostica">Tipo Codificación Diagnostica</a>
+               </td>
+               <td>
+<p>Tipo Codificación Diagnostica</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSTipoConsulta.html" title="ValueSet/VSTipoConsulta">Tipo Consulta</a>
+               </td>
+               <td>
+<p>Tipo Consulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSTipoEventoLE.html" title="ValueSet/VSTipoEventoLE">Tipo de Evento</a>
+               </td>
+               <td>
+<p>Tipo de evento en la interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-VSTituloProfesional.html"
+                     title="ValueSet/VSTituloProfesional">TituloProfesional</a>
+               </td>
+               <td>
+<p>TituloProfesional</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+   <p>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSDerivadoParaCodigo.html"
+                     title="CodeSystem/CSDerivadoParaCodigo">Derivado Para</a>
+               </td>
+               <td>
+<p>Derivado Para</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSDestinoAtencionCodigo.html"
+                     title="CodeSystem/CSDestinoAtencionCodigo">Destino Atención Codigo</a>
+               </td>
+               <td>
+<p>Destino Atención Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSDestinoReferenciaCodigo.html"
+                     title="CodeSystem/CSDestinoReferenciaCodigo">Destino Referencia Codigo</a>
+               </td>
+               <td>
+<p>Destino Referencia Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSDocAcreditacionCuidador.html"
+                     title="CodeSystem/CSDocAcreditacionCuidador">Documento Acreditacion Cuidador</a>
+               </td>
+               <td>
+<p>Documento Acreditacion Cuidador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSEspecialidadMed.html"
+                     title="CodeSystem/CSEspecialidadMed">EspecialidadMed</a>
+               </td>
+               <td>
+<p>EspecialidadMed</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSEspecialidadFarma.html"
+                     title="CodeSystem/CSEspecialidadFarma">Especialidades Farmaceúticas o Química Farmaceúticas</a>
+               </td>
+               <td>
+<p>Especialidades Farmaceúticas o Química Farmaceúticas</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSEspecialidadOdont.html"
+                     title="CodeSystem/CSEspecialidadOdont">Especialidades Odontológicas</a>
+               </td>
+               <td>
+<p>Especialidades Odontológicas</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSEspecialidadBioqca.html"
+                     title="CodeSystem/CSEspecialidadBioqca">Especialidades y Subespecialidades Bioquímicas</a>
+               </td>
+               <td>
+<p>Especialidades y Subespecialidades Bioquímicas</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSEstablecimientoDestinoCodigo.html"
+                     title="CodeSystem/CSEstablecimientoDestinoCodigo">Establecimiento Destino Codigo</a>
+               </td>
+               <td>
+<p>Establecimiento Destino Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSEstadoInterconsulta.html"
+                     title="CodeSystem/CSEstadoInterconsulta">Estado Interconsulta</a>
+               </td>
+               <td>
+<p>Estado Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSEstadoCivil.html" title="CodeSystem/CSEstadoCivil">EstadoCivil</a>
+               </td>
+               <td>
+<p>EstadoCivil</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSHipotesisDiagnosticaCodigo.html"
+                     title="CodeSystem/CSHipotesisDiagnosticaCodigo">HipotesisDiagnosticaCodigo</a>
+               </td>
+               <td>
+<p>HipotesisDiagnosticaCodigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSIdentidaddeGenero.html"
+                     title="CodeSystem/CSIdentidaddeGenero">Identidad de Genero</a>
+               </td>
+               <td>
+<p>Identidad de Genero</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSIndicecomorbilidad.html"
+                     title="CodeSystem/CSIndicecomorbilidad">Indice Comorbilidad</a>
+               </td>
+               <td>
+<p>Indice Comorbilidad</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSinterconsulta.html"
+                     title="CodeSystem/CSinterconsulta">Interconsulta</a>
+               </td>
+               <td>
+<p>Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSMedioNotificacion.html"
+                     title="CodeSystem/CSMedioNotificacion">Medio Notificación</a>
+               </td>
+               <td>
+<p>Medio Notificación</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSModalidadAtencionCodigo.html"
+                     title="CodeSystem/CSModalidadAtencionCodigo">Modalidad Atencion Codigo</a>
+               </td>
+               <td>
+<p>Modalidad Atencion Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSMotivoCierreInterconsulta.html"
+                     title="CodeSystem/CSMotivoCierreInterconsulta">Motivo Cierre Interconsulta</a>
+               </td>
+               <td>
+<p>Motivo Cierre Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSMotivoNoContactabilidad.html"
+                     title="CodeSystem/CSMotivoNoContactabilidad">Motivo No Contactabilidad</a>
+               </td>
+               <td>
+<p>Motivo No Contactabilidad</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSMotivoNoPertinenciaCodigo.html"
+                     title="CodeSystem/CSMotivoNoPertinenciaCodigo">Motivo No Pertinencia Codigo</a>
+               </td>
+               <td>
+<p>Motivo No Pertinencia Codigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSPertinenciaInterconsulta.html"
+                     title="CodeSystem/CSPertinenciaInterconsulta">Pertinencia Interconsulta</a>
+               </td>
+               <td>
+<p>Pertinencia Interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSPrevisionCodigo.html"
+                     title="CodeSystem/CSPrevisionCodigo">PrevisionCodigo</a>
+               </td>
+               <td>
+<p>PrevisionCodigo</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-PueblosOriginariosCS.html"
+                     title="CodeSystem/PueblosOriginariosCS">Pueblos Originarios de Chile</a>
+               </td>
+               <td>
+<p>Pueblos Originarios de Chile</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSReligion.html" title="CodeSystem/CSReligion">Religion</a>
+               </td>
+               <td>
+<p>Religion</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSPractitionerTipoRolLE.html"
+                     title="CodeSystem/CSPractitionerTipoRolLE">Rol de médicos</a>
+               </td>
+               <td>
+<p>CodeSystem con códigos definidos para representar cada rol de los médicos dentro de la interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSSospechaPatologia.html"
+                     title="CodeSystem/CSSospechaPatologia">Sospecha Patologia</a>
+               </td>
+               <td>
+<p>Sospecha Patologia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSSospechaPatologiaGes.html"
+                     title="CodeSystem/CSSospechaPatologiaGes">Sospecha Patologia Ges</a>
+               </td>
+               <td>
+<p>Sospecha Patologia Ges</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSTipoCodDiagnostica.html"
+                     title="CodeSystem/CSTipoCodDiagnostica">Tipo Codificación Diagnostica</a>
+               </td>
+               <td>
+<p>Tipo Codificación Diagnostica</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSTipoConsulta.html" title="CodeSystem/CSTipoConsulta">Tipo Consulta</a>
+               </td>
+               <td>
+<p>Tipo Consulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSTipoEventoLE.html" title="CodeSystem/CSTipoEventoLE">Tipo de Evento</a>
+               </td>
+               <td>
+<p>CodeSystem con códigos definidos para representar cada evento en la interconsulta</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-CSTituloProfesional.html"
+                     title="CodeSystem/CSTituloProfesional">TituloProfesional</a>
+               </td>
+               <td>
+<p>TituloProfesional</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Terminology: Concept Maps </h3>
+   <p>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html"
+                     title="ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus">CMHipotesisDiagnosticaCodigoAConditionVerificationStatus</a>
+               </td>
+               <td>
+<p>Mapping de codigos confirmación diagnostica a condition verfication status</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AllergyIntolerance-EjemploAllergyIntolerance.html"
+                     title="AllergyIntolerance/EjemploAllergyIntolerance">AllergyIntolerance Evento de Inicio</a>
+               </td>
+               <td>
+<p>AllergyIntolerance Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Appointment-EjemploAppointmentAgendar.html"
+                     title="Appointment/EjemploAppointmentAgendar">Appointment Evento de Agendar</a>
+               </td>
+               <td>
+<p>Appointment Evento de Agendar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Appointment-EjemploAppointmentAgendarCancelar.html"
+                     title="Appointment/EjemploAppointmentAgendarCancelar">Appointment Evento de Agendar(Cancelación)</a>
+               </td>
+               <td>
+<p>Appointment Evento de Agendar(Cancelación)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Appointment-EjemploAppointmentAgendarSinPresentacion.html"
+                     title="Appointment/EjemploAppointmentAgendarSinPresentacion">Appointment Evento de Agendar(Sin Presentacion)</a>
+               </td>
+               <td>
+<p>Appointment Evento de Agendar(Sin Presentacion)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundleAgendar.html"
+                     title="Bundle/EjemploBundleAgendar">Bundle Evento de Agendar</a>
+               </td>
+               <td>
+<p>Bundle Evento de Agendar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundleAtender.html"
+                     title="Bundle/EjemploBundleAtender">Bundle Evento de Atender</a>
+               </td>
+               <td>
+<p>Bundle Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundleInicio.html"
+                     title="Bundle/EjemploBundleInicio">Bundle Evento de Inicio</a>
+               </td>
+               <td>
+<p>Bundle Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundlePriorizar.html"
+                     title="Bundle/EjemploBundlePriorizar">Bundle Evento de Priorizar</a>
+               </td>
+               <td>
+<p>Bundle Evento de Priorizar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundleReferencia.html"
+                     title="Bundle/EjemploBundleReferencia">Bundle Evento de Referencia</a>
+               </td>
+               <td>
+<p>Bundle Evento de Referencia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundleRevisar.html"
+                     title="Bundle/EjemploBundleRevisar">Bundle Evento de Revisar</a>
+               </td>
+               <td>
+<p>Bundle Evento de Revisar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-EjemploBundleTerminar.html"
+                     title="Bundle/EjemploBundleTerminar">Bundle Evento de Terminar</a>
+               </td>
+               <td>
+<p>Bundle Evento de Terminar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CarePlan-EjemploCarePlanLE.html"
+                     title="CarePlan/EjemploCarePlanLE">CarePlan Evento de Atender</a>
+               </td>
+               <td>
+<p>de CarePlan Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-EjemploCondicionAtenderDiagnosticoConfirmacionLE.html"
+                     title="Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE">Condicion Atender Diagnostico Confirmacion Evento de Atender</a>
+               </td>
+               <td>
+<p>Condicion Atender Diagnostico Confirmacion Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-EjemploCondition.html"
+                     title="Condition/EjemploCondition">Condition Diagnóstico Sospecha Evento de Inicio</a>
+               </td>
+               <td>
+<p>Condition Diagnóstico Sospecha Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Coverage-EjemploCoverage.html" title="Coverage/EjemploCoverage">Coverage Evento de Inicio</a>
+               </td>
+               <td>
+<p>Coverage Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="DocumentReference-EjemploDocumentReference.html"
+                     title="DocumentReference/EjemploDocumentReference">DocumentReference Evento de Inicio</a>
+               </td>
+               <td>
+<p>DocumentReference Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-EjemploEncounterAtender.html"
+                     title="Encounter/EjemploEncounterAtender">Encounter Evento de Atender</a>
+               </td>
+               <td>
+<p>Encounter Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-EjemploEncounter.html"
+                     title="Encounter/EjemploEncounter">Encounter Evento de Inicio</a>
+               </td>
+               <td>
+<p>Encounter Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-EjemploMessageHeaderAgendar.html"
+                     title="MessageHeader/EjemploMessageHeaderAgendar">MesaggeHeader Evento de Agendar</a>
+               </td>
+               <td>
+<p>MesaggeHeader Evento de Agendar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-EjemploMessageHeaderAtender.html"
+                     title="MessageHeader/EjemploMessageHeaderAtender">MesaggeHeader Evento de Atender</a>
+               </td>
+               <td>
+<p>MesaggeHeader Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-EjemploMessageHeader.html"
+                     title="MessageHeader/EjemploMessageHeader">MesaggeHeader Evento de Inicio</a>
+               </td>
+               <td>
+<p>MesaggeHeader Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-EjemploMessageHeaderPriorizar.html"
+                     title="MessageHeader/EjemploMessageHeaderPriorizar">MesaggeHeader Evento de Priorizar</a>
+               </td>
+               <td>
+<p>MesaggeHeader Evento de Priorizar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-EjemploMessageHeaderReferencia.html"
+                     title="MessageHeader/EjemploMessageHeaderReferencia">MesaggeHeader Evento de Referencia</a>
+               </td>
+               <td>
+<p>MesaggeHeader Evento de Referencia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-EjemploMessageHeaderRevisar.html"
+                     title="MessageHeader/EjemploMessageHeaderRevisar">MesaggeHeader Evento de Revisar</a>
+               </td>
+               <td>
+<p>MesaggeHeader Evento de Revisar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-EjemploMessageHeaderTerminar.html"
+                     title="MessageHeader/EjemploMessageHeaderTerminar">MesaggeHeader Evento de Terminar</a>
+               </td>
+               <td>
+<p>MesaggeHeader Evento de Terminar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EjemploObservationCuidador.html"
+                     title="Observation/EjemploObservationCuidador">Observation Cuidador Evento de Inicio</a>
+               </td>
+               <td>
+<p>Observation Cuidador Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EjemploObservationAtender.html"
+                     title="Observation/EjemploObservationAtender">Observation Evento de Atender</a>
+               </td>
+               <td>
+<p>Observation Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EjemploObservation.html"
+                     title="Observation/EjemploObservation">Observation Evento de Inicio</a>
+               </td>
+               <td>
+<p>Observation Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-EjemploObservation2.html"
+                     title="Observation/EjemploObservation2">Observation Índice Comorbilidad Evento de Inicio</a>
+               </td>
+               <td>
+<p>Observation Índice Comorbilidadn Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganizationAgendadorSRREFERENCIADA.html"
+                     title="Organization/EjemploOrganizationAgendadorSRREFERENCIADA">Organization Evento de Agendador</a>
+               </td>
+               <td>
+<p>Organization Evento de Agendador</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganizationAgendar.html"
+                     title="Organization/EjemploOrganizationAgendar">Organization Evento de Agendar</a>
+               </td>
+               <td>
+<p>Organization Evento de Agendar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganizationAtender.html"
+                     title="Organization/EjemploOrganizationAtender">Organization Evento de Atender</a>
+               </td>
+               <td>
+<p>Organization Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganization.html"
+                     title="Organization/EjemploOrganization">Organization Evento de Inicio</a>
+               </td>
+               <td>
+<p>Organization Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganizationPriorizar.html"
+                     title="Organization/EjemploOrganizationPriorizar">Organization Evento de Priorizar</a>
+               </td>
+               <td>
+<p>Organization Evento de Priorizar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganizationReferencia.html"
+                     title="Organization/EjemploOrganizationReferencia">Organization Evento de Referencia</a>
+               </td>
+               <td>
+<p>Organization Evento de Referencia</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganizationRevisar.html"
+                     title="Organization/EjemploOrganizationRevisar">Organization Evento de Revisar</a>
+               </td>
+               <td>
+<p>Organization Evento de Revisar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganizationTerminar.html"
+                     title="Organization/EjemploOrganizationTerminar">Organization Evento de Terminar</a>
+               </td>
+               <td>
+<p>Organization Evento de Terminar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-EjemploOrganizationReferenciadorMHREFERENCIADA.html"
+                     title="Organization/EjemploOrganizationReferenciadorMHREFERENCIADA">Organization Referenciador Evento de Referenciada</a>
+               </td>
+               <td>
+<p>Organization Referenciador Evento de Referenciada</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-EjemploPatient.html" title="Patient/EjemploPatient">Patient Lista de Espera</a>
+               </td>
+               <td>
+<p>Patient Lista de Espera</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Condition-EjemploCondition3.html"
+                     title="Condition/EjemploCondition3">Patología GES (número)</a>
+               </td>
+               <td>
+<p>Patología GES (número)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-EjemploPractitionerAgendarAgendador.html"
+                     title="Practitioner/EjemploPractitionerAgendarAgendador">Practitioner Agendador Evento de Agendar</a>
+               </td>
+               <td>
+<p>Practitioner Agendador Evento de Agendar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-EjemploPractitionerAgendarAtendedor.html"
+                     title="Practitioner/EjemploPractitionerAgendarAtendedor">Practitioner Atendedor Evento de Agendar</a>
+               </td>
+               <td>
+<p>Practitioner Atendedor Evento de Agendar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-EjemploPractitionerRevisar.html"
+                     title="Practitioner/EjemploPractitionerRevisar">Practitioner Evento Revisar</a>
+               </td>
+               <td>
+<p>Practitioner Evento Revisar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-EjemploPractitionerTerminar.html"
+                     title="Practitioner/EjemploPractitionerTerminar">Practitioner Evento Terminar</a>
+               </td>
+               <td>
+<p>Practitioner Evento Terminar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-EjemploPractitionerAtender.html"
+                     title="Practitioner/EjemploPractitionerAtender">Practitioner Evento de Atender</a>
+               </td>
+               <td>
+<p>Practitioner Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-EjemploPractitioner.html"
+                     title="Practitioner/EjemploPractitioner">Practitioner Evento de Inicio</a>
+               </td>
+               <td>
+<p>Practitioner Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-EjemploPractitionerPriorizar.html"
+                     title="Practitioner/EjemploPractitionerPriorizar">Practitioner Evento de Priorizar</a>
+               </td>
+               <td>
+<p>Practitioner Evento de Priorizar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-EjemploPractitionerReferenciadorMHREFERENCIADA.html"
+                     title="Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA">Practitioner Referenciador Evento de Referenciada</a>
+               </td>
+               <td>
+<p>Practitioner Referenciador Evento de Referenciada</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRoleAgendadorSRREFERENCIADA.html"
+                     title="PractitionerRole/EjemploPractitionerRoleAgendadorSRREFERENCIADA">PractitionerRole Agendador Evento de Referenciada</a>
+               </td>
+               <td>
+<p>PractitionerRole Agendador Evento de Referenciada</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRoleAgendarAPPO.html"
+                     title="PractitionerRole/EjemploPractitionerRoleAgendarAPPO">PractitionerRole Evento de Agendar Apponitment</a>
+               </td>
+               <td>
+<p>PractitionerRole Evento de Agendar Apponitment</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRoleAgendarMH.html"
+                     title="PractitionerRole/EjemploPractitionerRoleAgendarMH">PractitionerRole Evento de Agendar MessageHeader</a>
+               </td>
+               <td>
+<p>PractitionerRole Evento de Agendar MessageHeader</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRoleAtender.html"
+                     title="PractitionerRole/EjemploPractitionerRoleAtender">PractitionerRole Evento de Atender</a>
+               </td>
+               <td>
+<p>PractitionerRole Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRole.html"
+                     title="PractitionerRole/EjemploPractitionerRole">PractitionerRole Evento de Inicio</a>
+               </td>
+               <td>
+<p>PractitionerRole Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRolePriorizar.html"
+                     title="PractitionerRole/EjemploPractitionerRolePriorizar">PractitionerRole Evento de Priorizar</a>
+               </td>
+               <td>
+<p>PractitionerRole Evento de Priorizar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRoleRevisar.html"
+                     title="PractitionerRole/EjemploPractitionerRoleRevisar">PractitionerRole Evento de Revisar</a>
+               </td>
+               <td>
+<p>PractitionerRole Evento de Revisar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRoleTerminar.html"
+                     title="PractitionerRole/EjemploPractitionerRoleTerminar">PractitionerRole Evento de Terminar</a>
+               </td>
+               <td>
+<p>PractitionerRole Evento de Terminar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-EjemploPractitionerRoleReferenciadorMHREFERENCIADA.html"
+                     title="PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA">PractitionerRole Referenciador Evento de Referenciada</a>
+               </td>
+               <td>
+<p>PractitionerRole Referenciador Evento de Referenciada</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-EjemploQuestionnaireResponseAtenderLE.html"
+                     title="QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE">QuestionnaireResponse Evento de Atender</a>
+               </td>
+               <td>
+<p>QuestionnaireResponse Evento de Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="QuestionnaireResponse-EjemploQuestionnaireResponseInicioLE.html"
+                     title="QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE">QuestionnaireResponse Evento de Inicio Motivo derivación</a>
+               </td>
+               <td>
+<p>QuestionnaireResponse Evento de Inicio Motivo derivación</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-EjemploServiceRequestAgendar.html"
+                     title="ServiceRequest/EjemploServiceRequestAgendar">ServiceRequest Evento Agendar</a>
+               </td>
+               <td>
+<p>ServiceRequest Evento Agendar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-EjemploServiceRequestAtender.html"
+                     title="ServiceRequest/EjemploServiceRequestAtender">ServiceRequest Evento Atender</a>
+               </td>
+               <td>
+<p>ServiceRequest Evento Atender</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-EjemploServiceRequestPriorizar.html"
+                     title="ServiceRequest/EjemploServiceRequestPriorizar">ServiceRequest Evento Priorizar</a>
+               </td>
+               <td>
+<p>ServiceRequest Evento Priorizar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-EjemploServiceRequestRevisar.html"
+                     title="ServiceRequest/EjemploServiceRequestRevisar">ServiceRequest Evento Revisar</a>
+               </td>
+               <td>
+<p>ServiceRequest Evento Revisar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-EjemploServiceRequest.html"
+                     title="ServiceRequest/EjemploServiceRequest">ServiceRequest Evento de Inicio</a>
+               </td>
+               <td>
+<p>ServiceRequest Evento de Inicio</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-EjemploServiceRequestReferenciada.html"
+                     title="ServiceRequest/EjemploServiceRequestReferenciada">ServiceRequest Evento de Referenciada</a>
+               </td>
+               <td>
+<p>ServiceRequest Evento de Referenciada</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-EjemploServiceRequestTerminar.html"
+                     title="ServiceRequest/EjemploServiceRequestTerminar">ServiceRequest Evento de Terminar</a>
+               </td>
+               <td>
+<p>ServiceRequest Evento de Terminar</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ServiceRequest-EjemploServiceRequestExamen.html"
+                     title="ServiceRequest/EjemploServiceRequestExamen">ServiceRequest Examen</a>
+               </td>
+               <td>
+<p>ServiceRequest Examen</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.5 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Oct 18, 2023 06:42+0000">2023-10-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reporte QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interoperabilidad.minsal.cl/fhir/ig/tei"></a></a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/Minsal-CL/SIGTEv2-IG">Issues</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSd7qSIWFnPvkMfDEyCCOA_FIRo6uwYlrxXOFoIwcOocsDPS2A/viewform?usp=sf_link'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Observaciones';  // The feedback label is a string
+            
+
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(402066225).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+                  case "href":
+                    parameterValue = window.location.href;
+                    break;
+                  }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(872797498).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+                  case "href":
+                    parameterValue = window.location.href;
+                    break;
+                  }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(587453077).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'href';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+                  case "href":
+                    parameterValue = window.location.href;
+                    break;
+                  }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+            
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a/>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        }) 
+/* ]]> */
+      </script>  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="EjemploBundleAgendar"/>
+  <meta>
+    <lastUpdated value="2023-01-20T14:12:10Z"/>
+    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleAgendarLE"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2023-02-09T17:15:22Z"/>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/MessageHeader/agendar"/>
+    <resource>
+      <MessageHeader>
+        <id value="EjemploMessageHeaderAgendar"/>
+        <meta>
+          <lastUpdated value="2023-02-14T14:12:10Z"/>
+          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="EjemploMessageHeaderAgendar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;EjemploMessageHeaderAgendar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a></p></div><p><b>event</b>: Agendar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code agendar = 'Agendar', stated as 'null')</p><p><b>author</b>: <a href="#PractitionerRole_EjemploPractitionerRoleAgendarMH">See above (http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador)</a></p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td>SolucionInformatica</td><td><a href="http://link-to-sending.cl">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href="#Appointment_EjemploAppointmentAgendar">See above (http://acme.com/ehr/fhir/Appointment/agendar)</a></p></div>
+        </text>
+        <eventCoding>
+          <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE"/>
+          <code value="agendar"/>
+        </eventCoding>
+        <author>
+          <reference value="http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador"/>
+        </author>
+        <source>
+          <software value="SolucionInformatica"/>
+          <endpoint value="http://link-to-sending.cl"/>
+        </source>
+        <focus>
+          <reference value="http://acme.com/ehr/fhir/Appointment/agendar"/>
+        </focus>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Appointment/agendar"/>
+    <resource>
+      <Appointment>
+        <id value="EjemploAppointmentAgendar"/>
+        <meta>
+          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Appointment</b><a name="EjemploAppointmentAgendar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AppointmentAgendarLE.html">AppointmentAgendarLE</a></p></div><blockquote><p><b>Contactado</b></p><blockquote><p><b>url</b></p><code>MotivoNoContactabilidad</code></blockquote><p><b>value</b>: Otro <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSMotivoNoContactabilidad.html">Motivo No Contactabilidad</a>#1)</span></p><blockquote><p><b>url</b></p><a href="StructureDefinition-Contactado.html">Contactado</a></blockquote><p><b>value</b>: true</p></blockquote><p><b>identifier</b>: id: 21</p><p><b>status</b>: booked</p><p><b>start</b>: Jan 22, 2023, 9:00:00 AM</p><p><b>end</b>: Jan 22, 2023, 9:30:00 AM</p><p><b>basedOn</b>: <a href="#ServiceRequest_EjemploServiceRequestAgendar">See above (http://acme.com/ehr/fhir/ServiceRequest/agendar)</a></p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href="http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor">http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor</a></p><p><b>status</b>: accepted</p></blockquote></div>
+        </text>
+        <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado">
+          <extension url="MotivoNoContactabilidad">
+            <valueCodeableConcept>
+              <coding>
+                <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoContactabilidad"/>
+                <code value="1"/>
+              </coding>
+              <text value="Otro"/>
+            </valueCodeableConcept>
+          </extension>
+          <extension url="Contactado">
+            <valueBoolean value="true"/>
+          </extension>
+        </extension>
+        <identifier>
+          <value value="21"/>
+        </identifier>
+        <status value="booked"/>
+        <start value="2023-01-22T09:00:00Z"/>
+        <end value="2023-01-22T09:30:00Z"/>
+        <basedOn>
+          <reference value="http://acme.com/ehr/fhir/ServiceRequest/agendar"/>
+        </basedOn>
+        <participant>
+          <actor>
+            <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
+            <type value="Patient"/>
+          </actor>
+          <status value="accepted"/>
+        </participant>
+        <participant>
+          <actor>
+            <reference value="http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor"/>
+            <type value="PractitionerRole"/>
+          </actor>
+          <status value="accepted"/>
+        </participant>
+      </Appointment>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/ServiceRequest/agendar"/>
+    <resource>
+      <ServiceRequest>
+        <id value="EjemploServiceRequestAgendar"/>
+        <meta>
+          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestAgendar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestAgendar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: En espera de la atención <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEstadoInterconsulta.html">Estado Interconsulta</a>#5)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href="Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>
+        </text>
+        <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE">
+          <valueCodeableConcept>
+            <coding>
+              <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"/>
+              <code value="5"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+              <code value="IdInterconsulta"/>
+            </coding>
+          </type>
+          <value value="1"/>
+        </identifier>
+        <status value="draft"/>
+        <intent value="proposal"/>
+        <subject>
+          <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
+        </subject>
+        <authoredOn value="2022-01-20T13:50:20Z"/>
+      </ServiceRequest>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador"/>
+    <resource>
+      <PractitionerRole>
+        <id value="EjemploPractitionerRoleAgendarMH"/>
+        <meta>
+          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRoleAgendarMH"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendarMH&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador">http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador</a></p><p><b>organization</b>: <a href="#Organization_EjemploOrganizationAgendar">See above (http://acme.com/ehr/fhir/Organization/agendar)</a></p><p><b>code</b>: Agendador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPractitionerTipoRolLE.html">Rol de médicos</a>#agendador)</span></p></div>
+        </text>
+        <practitioner>
+          <reference value="http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador"/>
+        </practitioner>
+        <organization>
+          <reference value="http://acme.com/ehr/fhir/Organization/agendar"/>
+        </organization>
+        <code>
+          <coding>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"/>
+            <code value="agendador"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/PractitionerRole/agendarAtendedor"/>
+    <resource>
+      <PractitionerRole>
+        <id value="EjemploPractitionerRoleAgendarAPPO"/>
+        <meta>
+          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRoleAgendarAPPO"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendarAPPO&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="#Practitioner_EjemploPractitionerAgendarAtendedor">See above (http://acme.com/ehr/fhir/Practitioner/agendarAtendedor)</a></p><p><b>code</b>: Atendedor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPractitionerTipoRolLE.html">Rol de médicos</a>#atendedor)</span></p></div>
+        </text>
+        <practitioner>
+          <reference value="http://acme.com/ehr/fhir/Practitioner/agendarAtendedor"/>
+        </practitioner>
+        <code>
+          <coding>
+            <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"/>
+            <code value="atendedor"/>
+          </coding>
+        </code>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Practitioner/agendarAtendedor"/>
+    <resource>
+      <Practitioner>
+        <id value="EjemploPractitionerAgendarAtendedor"/>
+        <meta>
+          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerAgendarAtendedor"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerAgendarAtendedor&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerLE.html">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), id: 2134 (use: SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSTituloProfesional.html">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadMed.html">EspecialidadMed</a>#2)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: subesp</p><p><b>code</b>: Alergia e Inmunología Clínica <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote></div>
+        </text>
+        <identifier>
+          <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador">
+            <valueString value="K"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+              <code value="RUN"/>
+            </coding>
+          </type>
+          <system value="http://registrocivil/RUN"/>
+          <value value="2134"/>
+        </identifier>
+        <identifier>
+          <use value="secondary"/>
+          <system value="http://rnpi.superdesalud.gob.cl"/>
+          <value value="2134"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Perez">
+            <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido">
+              <valueString value="Sierra"/>
+            </extension>
+          </family>
+          <given value="Luis"/>
+        </name>
+        <qualification>
+          <identifier>
+            <value value="tit"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"/>
+              <code value="1"/>
+            </coding>
+          </code>
+        </qualification>
+        <qualification>
+          <identifier>
+            <value value="esp"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed"/>
+              <code value="2"/>
+            </coding>
+          </code>
+        </qualification>
+        <qualification>
+          <identifier>
+            <value value="subesp"/>
+          </identifier>
+          <code>
+            <text value="Alergia e Inmunología Clínica"/>
+          </code>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Practitioner/agendarAgendador"/>
+    <resource>
+      <Practitioner>
+        <id value="EjemploPractitionerAgendarAgendador"/>
+        <meta>
+          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerAgendarAgendador"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerAgendarAgendador&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerLE.html">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), id: 2134 (use: SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td>id: tit</td><td>MÉDICO CIRUJANO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSTituloProfesional.html">TituloProfesional</a>#1)</span></td></tr></table></div>
+        </text>
+        <identifier>
+          <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador">
+            <valueString value="K"/>
+          </extension>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+              <code value="RUN"/>
+            </coding>
+          </type>
+          <system value="http://registrocivil/RUN"/>
+          <value value="2134"/>
+        </identifier>
+        <identifier>
+          <use value="secondary"/>
+          <system value="http://rnpi.superdesalud.gob.cl"/>
+          <value value="2134"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Perez">
+            <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido">
+              <valueString value="Sierra"/>
+            </extension>
+          </family>
+          <given value="Luis"/>
+        </name>
+        <qualification>
+          <identifier>
+            <value value="tit"/>
+          </identifier>
+          <code>
+            <coding>
+              <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"/>
+              <code value="1"/>
+            </coding>
+          </code>
+        </qualification>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://acme.com/ehr/fhir/Organization/agendar"/>
+    <resource>
+      <Organization>
+        <id value="EjemploOrganizationAgendar"/>
+        <meta>
+          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="EjemploOrganizationAgendar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;EjemploOrganizationAgendar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-OrganizationLE.html">Organization LE</a></p></div><p><b>identifier</b>: id: 1</p></div>
+        </text>
+        <identifier>
+          <value value="1"/>
+        </identifier>
+      </Organization>
+    </resource>
+  </entry>
+</Bundle>

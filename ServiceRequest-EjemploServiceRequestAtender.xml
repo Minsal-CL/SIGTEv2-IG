@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ServiceRequest xmlns="http://hl7.org/fhir">
+  <id value="EjemploServiceRequestAtender"/>
+  <meta>
+    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestAtender"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestAtender&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: A la espera de cierre <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEstadoInterconsulta.html">Estado Interconsulta</a>#6)</span></p><p><b>Destino Atención Codigo</b>: Control <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSDestinoAtencionCodigo.html">Destino Atención Codigo</a>#1)</span></p><p><b>identifier</b>: IdInterconsulta: 323121</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href="Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>performer</b>: <a href="http://acme.com/ehr/fhir/PractitionerRole/atender">http://acme.com/ehr/fhir/PractitionerRole/atender</a></p></div>
+  </text>
+  <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"/>
+        <code value="6"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DestinoAtencionCodigo">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoAtencionCodigo"/>
+        <code value="1"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
+        <code value="IdInterconsulta"/>
+      </coding>
+    </type>
+    <value value="323121"/>
+  </identifier>
+  <status value="draft"/>
+  <intent value="proposal"/>
+  <subject>
+    <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
+  </subject>
+  <authoredOn value="2022-01-20T13:50:20Z"/>
+  <performer>
+    <reference value="http://acme.com/ehr/fhir/PractitionerRole/atender"/>
+  </performer>
+</ServiceRequest>

@@ -1,0 +1,25 @@
+{
+  "resourceType" : "Observation",
+  "id" : "EjemploObservationCuidador",
+  "meta" : {
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioCuidadorLE"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"EjemploObservationCuidador\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;EjemploObservationCuidador&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ObservationInicioCuidadorLE.html\">Observation Inicio Cuidador LE</a></p></div><p><b>ExtBool PresentaDiscapacidad</b>: false</p><p><b>status</b>: final</p><p><b>code</b>: 95385-1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#95385-1)</span></p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>"
+  },
+  "extension" : [{
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPresentaDiscapacidad",
+    "valueBoolean" : false
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "95385-1"
+    }]
+  },
+  "subject" : {
+    "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+  }
+}
