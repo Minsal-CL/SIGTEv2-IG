@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://interoperabilidad.minsal.cl/fhir/ig/tei/ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"/>
+  <version value="0.1.5"/>
+  <name value="CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"/>
+  <title value="CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-04-28"/>
+  <publisher value="Unidad de Interoperabilidad - MINSAL"/>
+  <contact>
+    <name value="Unidad de Interoperabilidad - MINSAL"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://interoperabilidad.minsal.cl"/>
+    </telecom>
+  </contact>
+  <description value="Mapping de codigos confirmación diagnostica a condition verfication status"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="CL"/>
+      <display value="Chile"/>
+    </coding>
+  </jurisdiction>
+  <sourceCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSHipotesisDiagnosticaCodigo"/>
+  <targetCanonical value="http://terminology.hl7.org/ValueSet/condition-ver-status"/>
+  <group>
+    <source value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSHipotesisDiagnosticaCodigo"/>
+    <target value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+    <element>
+      <code value="1"/>
+      <display value="Confirmada"/>
+      <target>
+        <code value="confirmed"/>
+        <display value="Confirmed"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="2"/>
+      <display value="Descartada"/>
+      <target>
+        <code value="refuted"/>
+        <display value="Refuted"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

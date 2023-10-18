@@ -1,0 +1,338 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "EjemploBundlePriorizar",
+  "meta" : {
+    "lastUpdated" : "2023-01-20T14:12:10Z",
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundlePriorizarLE"]
+  },
+  "type" : "message",
+  "timestamp" : "2023-02-09T17:15:22Z",
+  "entry" : [{
+    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/priorizar",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "EjemploMessageHeaderPriorizar",
+      "meta" : {
+        "lastUpdated" : "2023-02-14T14:12:10Z",
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderPriorizar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Priorizar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code priorizar = 'Priorizar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRolePriorizar\">See above (http://acme.com/ehr/fhir/PractitionerRole/priorizar)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestPriorizar\">See above (http://acme.com/ehr/fhir/ServiceRequest/priorizar)</a></p></div>"
+      },
+      "eventCoding" : {
+        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+        "code" : "priorizar"
+      },
+      "author" : {
+        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/priorizar"
+      },
+      "source" : {
+        "software" : "SolucionInformatica",
+        "endpoint" : "http://link-to-sending.cl"
+      },
+      "focus" : [{
+        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/priorizar"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/priorizar",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "EjemploServiceRequestPriorizar",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: A la espera de agendamiento <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEstadoInterconsulta.html\">Estado Interconsulta</a>#4)</span></p><p><b>identifier</b>: IdInterconsulta: 323121</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"#Patient_EjemploPatient\">See above (http://acme.com/ehr/fhir/Patient/EjemploPatient)</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>"
+      },
+      "extension" : [{
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+            "code" : "4"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "IdInterconsulta"
+          }]
+        },
+        "value" : "323121"
+      }],
+      "status" : "draft",
+      "intent" : "proposal",
+      "priority" : "urgent",
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+      },
+      "authoredOn" : "2022-01-20T13:50:20Z"
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/priorizar",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "EjemploPractitionerRolePriorizar",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRolePriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRolePriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerPriorizar\">See above (http://acme.com/ehr/fhir/Practitioner/priorizar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationPriorizar\">See above (http://acme.com/ehr/fhir/Organization/priorizar)</a></p><p><b>code</b>: Priorizador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#priorizador)</span></p></div>"
+      },
+      "practitioner" : {
+        "reference" : "http://acme.com/ehr/fhir/Practitioner/priorizar"
+      },
+      "organization" : {
+        "reference" : "http://acme.com/ehr/fhir/Organization/priorizar"
+      },
+      "code" : [{
+        "coding" : [{
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+          "code" : "priorizador"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Organization/priorizar",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "EjemploOrganizationPriorizar",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: id:\u00a01</p></div>"
+      },
+      "identifier" : [{
+        "value" : "1"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/priorizar",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "EjemploPractitionerPriorizar",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#2)</span></p></blockquote></div>"
+      },
+      "identifier" : [{
+        "extension" : [{
+          "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador",
+          "valueString" : "K"
+        }],
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "RUN"
+          }]
+        },
+        "system" : "http://registrocivil/RUN",
+        "value" : "2134"
+      },
+      {
+        "use" : "secondary",
+        "system" : "http://rnpi.superdesalud.gob.cl",
+        "value" : "2134"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Perez",
+        "_family" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+            "valueString" : "Sierra"
+          }]
+        },
+        "given" : ["Luis"]
+      }],
+      "qualification" : [{
+        "identifier" : [{
+          "value" : "tit"
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+            "code" : "1"
+          }]
+        }
+      },
+      {
+        "identifier" : [{
+          "value" : "esp"
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+            "code" : "2"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Patient/EjemploPatient",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "EjemploPatient",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PacienteMinsalMPI"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Patient</b><a name=\"EjemploPatient\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Patient &quot;EjemploPatient&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PacienteMinsalMPI.html\">PacienteMPI</a></p></div><p><b>Codigo de Identificación de países</b>: Taiwan, Province of China <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#158)</span></p><p><b>País de origen del paciente</b>: Taiwan, Province of China <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#158)</span></p><p><b>Sexo Biologico del paciente</b>: Male <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-administrative-gender.html\">AdministrativeGender</a>#male)</span></p><p><b>Birth Place</b>: Curicó</p><p><b>PueblosOriginariosPerteneciente</b>: true</p><p><b>Religión</b>: Católica <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSReligion.html\">Religion</a>#1)</span></p><p><b>Identidad De Genero</b>: Masculino <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSIdentidaddeGenero.html\">Identidad de Genero</a>#1)</span></p><p><b>PueblosAfrodescendiente</b>: true</p><p><b>Pueblos Originarios</b>: Mapuche <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PueblosOriginariosCS.html\">Pueblos Originarios de Chile</a>#01)</span></p><p><b>identifier</b>: Run: 15999999</p><p><b>name</b>: Luis Perez (OFFICIAL), Luisa </p><p><b>telecom</b>: ph: 569854875457(MOBILE)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1995-12-12</p><p><b>deceased</b>: false</p><p><b>address</b>: El boldo 4 #97 (HOME)</p><p><b>maritalStatus</b>: Soltero(a) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEstadoCivil.html\">EstadoCivil</a>#01)</span></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:3166",
+            "code" : "158"
+          }]
+        }
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PaisOrigenMPI",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "urn:iso:std:iso:3166",
+            "code" : "158"
+          }]
+        }
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SexoBiologico",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/administrative-gender",
+            "code" : "male"
+          }]
+        }
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+        "valueAddress" : {
+          "text" : "Curicó"
+        }
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginariosPerteneciente",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Religion",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSReligion",
+            "code" : "1"
+          }]
+        }
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/IdentidadDeGenero",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentidaddeGenero",
+            "code" : "1"
+          }]
+        }
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosAfrodescendiente",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginarios",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS",
+            "code" : "01"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "type" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                "code" : "032"
+              }]
+            }
+          }],
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
+            "code" : "01"
+          }]
+        },
+        "system" : "http://www.acme.com/identifiers/patient",
+        "value" : "15999999"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Perez",
+        "_family" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+            "valueString" : "sierra"
+          }]
+        },
+        "given" : ["Luis"]
+      },
+      {
+        "use" : "usual",
+        "given" : ["Luisa"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "569854875457",
+        "use" : "mobile",
+        "rank" : 1
+      }],
+      "gender" : "male",
+      "birthDate" : "1995-12-12",
+      "deceasedBoolean" : false,
+      "address" : [{
+        "extension" : [{
+          "extension" : [{
+            "url" : "latitude",
+            "valueDecimal" : 31.123
+          },
+          {
+            "url" : "longitude",
+            "valueDecimal" : 31.123
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/geolocation"
+        },
+        {
+          "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SituacionCalle",
+          "valueBoolean" : true
+        }],
+        "use" : "home",
+        "line" : ["El boldo 4 #97"]
+      }],
+      "maritalStatus" : {
+        "coding" : [{
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoCivil",
+          "code" : "01"
+        }]
+      }
+    }
+  }]
+}

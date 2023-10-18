@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="EjemploObservationCuidador"/>
+  <meta>
+    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioCuidadorLE"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="EjemploObservationCuidador"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;EjemploObservationCuidador&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationInicioCuidadorLE.html">Observation Inicio Cuidador LE</a></p></div><p><b>ExtBool PresentaDiscapacidad</b>: false</p><p><b>status</b>: final</p><p><b>code</b>: 95385-1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#95385-1)</span></p><p><b>subject</b>: <a href="Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>
+  </text>
+  <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPresentaDiscapacidad">
+    <valueBoolean value="false"/>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="95385-1"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
+  </subject>
+</Observation>

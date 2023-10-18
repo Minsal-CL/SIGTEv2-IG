@@ -1,0 +1,293 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "EjemploBundleRevisar",
+  "meta" : {
+    "lastUpdated" : "2023-01-20T14:12:10Z",
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleRevisarLE"]
+  },
+  "type" : "message",
+  "timestamp" : "2023-02-09T17:15:22Z",
+  "entry" : [{
+    "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/revisar",
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "EjemploMessageHeaderRevisar",
+      "meta" : {
+        "lastUpdated" : "2023-02-14T14:12:10Z",
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderRevisar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Revisar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code revisar = 'Revisar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleRevisar\">See above (http://acme.com/ehr/fhir/PractitionerRole/revisar)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestRevisar\">See above (http://acme.com/ehr/fhir/ServiceRequest/revisar)</a></p></div>"
+      },
+      "eventCoding" : {
+        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+        "code" : "revisar"
+      },
+      "author" : {
+        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/revisar"
+      },
+      "source" : {
+        "software" : "SolucionInformatica",
+        "endpoint" : "http://link-to-sending.cl"
+      },
+      "focus" : [{
+        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/revisar"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/revisar",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "EjemploServiceRequestRevisar",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>ExtBool RequiereExamen</b>: true</p><p><b>Pertinencia Interconsulta</b>: Pertinente Incompleta <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPertinenciaInterconsulta.html\">Pertinencia Interconsulta</a>#1)</span></p><p><b>Estado Interconsulta Codigo</b>: A la espera de priorización <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEstadoInterconsulta.html\">Estado Interconsulta</a>#3)</span></p><p><b>Especialidad Médica Destino Código</b>: CARDIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#3)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: CIRUGÍA GENERAL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#4)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>category</b>: Presencial <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSModalidadAtencionCodigo.html\">Modalidad Atencion Codigo</a>#1)</span></p><p><b>priority</b>: routine</p><p><b>doNotPerform</b>: true</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>performer</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleRevisar\">See above (http://acme.com/ehr/fhir/PractitionerRole/revisar)</a></p><p><b>supportingInfo</b>: <a href=\"#ServiceRequest_EjemploServiceRequestExamen\">See above (http://acme.com/ehr/fhir/ServiceRequest/examen)</a></p></div>"
+      },
+      "extension" : [{
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolRequiereExamen",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PertinenciaInterconsulta",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPertinenciaInterconsulta",
+            "code" : "1"
+          }]
+        }
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
+            "code" : "3"
+          }]
+        }
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EspecialidadMedicaDestinoCodigo",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+            "code" : "3"
+          }]
+        }
+      },
+      {
+        "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SubEspecialidadMedicaDestinoCodigo",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+            "code" : "4"
+          }]
+        }
+      }],
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "IdInterconsulta"
+          }]
+        },
+        "value" : "1"
+      }],
+      "status" : "draft",
+      "intent" : "proposal",
+      "category" : [{
+        "coding" : [{
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
+          "code" : "1",
+          "display" : "Presencial"
+        }]
+      }],
+      "priority" : "routine",
+      "doNotPerform" : true,
+      "_doNotPerform" : {
+        "extension" : [{
+          "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinenciaCodigo",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoPertinenciaCodigo",
+              "code" : "1"
+            }],
+            "text" : "Texto libre"
+          }
+        }]
+      },
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+      },
+      "authoredOn" : "2022-01-20T13:50:20Z",
+      "performer" : [{
+        "reference" : "http://acme.com/ehr/fhir/PractitionerRole/revisar"
+      }],
+      "supportingInfo" : [{
+        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/examen"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/PractitionerRole/revisar",
+    "resource" : {
+      "resourceType" : "PractitionerRole",
+      "id" : "EjemploPractitionerRoleRevisar",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerRevisar\">See above (http://acme.com/ehr/fhir/Practitioner/revisar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationRevisar\">See above (http://acme.com/ehr/fhir/Organization/revisar)</a></p><p><b>code</b>: Revisor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#revisor)</span></p></div>"
+      },
+      "practitioner" : {
+        "reference" : "http://acme.com/ehr/fhir/Practitioner/revisar"
+      },
+      "organization" : {
+        "reference" : "http://acme.com/ehr/fhir/Organization/revisar"
+      },
+      "code" : [{
+        "coding" : [{
+          "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
+          "code" : "revisor"
+        }]
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Organization/revisar",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "EjemploOrganizationRevisar",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: Placer Identifier: 1</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "PLAC"
+          }]
+        },
+        "value" : "1"
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/Practitioner/revisar",
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "EjemploPractitionerRevisar",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerRevisar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerRevisar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#2)</span></p></blockquote></div>"
+      },
+      "identifier" : [{
+        "extension" : [{
+          "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador",
+          "valueString" : "K"
+        }],
+        "use" : "official",
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+            "code" : "RUN"
+          }]
+        },
+        "system" : "http://registrocivil/RUN",
+        "value" : "2134"
+      },
+      {
+        "use" : "secondary",
+        "system" : "http://rnpi.superdesalud.gob.cl",
+        "value" : "2134"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Perez",
+        "_family" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+            "valueString" : "Sierra"
+          }]
+        },
+        "given" : ["Luis"]
+      }],
+      "qualification" : [{
+        "identifier" : [{
+          "value" : "tit"
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+            "code" : "1"
+          }]
+        }
+      },
+      {
+        "identifier" : [{
+          "value" : "esp"
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+            "code" : "2"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "fullUrl" : "http://acme.com/ehr/fhir/ServiceRequest/examen",
+    "resource" : {
+      "resourceType" : "ServiceRequest",
+      "id" : "EjemploServiceRequestExamen",
+      "meta" : {
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestExamenLE"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestExamen\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestExamen&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestExamenLE.html\">ServiceRequestExamen LE</a></p></div><p><b>identifier</b>: id:\u00a0dec791f8-406c-11ee-be56-0242ac120002</p><p><b>basedOn</b>: <a href=\"#ServiceRequest_EjemploServiceRequestExamen\">See above (http://acme.com/ehr/fhir/ServiceRequest/examen)</a></p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>code</b>: TC de tórax <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#24627-2)</span></p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>occurrence</b>: 2022-01-20 13:50:20+0000</p><p><b>requester</b>: <a href=\"#Practitioner_EjemploPractitionerRevisar\">See above (http://acme.com/ehr/fhir/Practitioner/revisar)</a></p><p><b>reasonCode</b>: Descartar enfermedad metastásica. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>note</b>: Realizar sin uso de medio de contaste por mala función renal.</p></div>"
+      },
+      "identifier" : [{
+        "value" : "dec791f8-406c-11ee-be56-0242ac120002"
+      }],
+      "basedOn" : [{
+        "reference" : "http://acme.com/ehr/fhir/ServiceRequest/examen"
+      }],
+      "status" : "draft",
+      "intent" : "proposal",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "24627-2"
+        }],
+        "text" : "TC de tórax"
+      },
+      "subject" : {
+        "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+      },
+      "occurrenceDateTime" : "2022-01-20T13:50:20Z",
+      "requester" : {
+        "reference" : "http://acme.com/ehr/fhir/Practitioner/revisar"
+      },
+      "reasonCode" : [{
+        "text" : "Descartar enfermedad metastásica."
+      }],
+      "note" : [{
+        "text" : "Realizar sin uso de medio de contaste por mala función renal."
+      }]
+    }
+  }]
+}

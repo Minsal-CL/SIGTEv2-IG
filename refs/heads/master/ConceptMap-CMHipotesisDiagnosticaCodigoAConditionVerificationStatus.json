@@ -1,0 +1,55 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
+  "version" : "0.1.5",
+  "name" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
+  "title" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2023-04-28",
+  "publisher" : "Unidad de Interoperabilidad - MINSAL",
+  "contact" : [{
+    "name" : "Unidad de Interoperabilidad - MINSAL",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://interoperabilidad.minsal.cl"
+    }]
+  }],
+  "description" : "Mapping de codigos confirmación diagnostica a condition verfication status",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "CL",
+      "display" : "Chile"
+    }]
+  }],
+  "sourceCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSHipotesisDiagnosticaCodigo",
+  "targetCanonical" : "http://terminology.hl7.org/ValueSet/condition-ver-status",
+  "group" : [{
+    "source" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSHipotesisDiagnosticaCodigo",
+    "target" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+    "element" : [{
+      "code" : "1",
+      "display" : "Confirmada",
+      "target" : [{
+        "code" : "confirmed",
+        "display" : "Confirmed",
+        "equivalence" : "equivalent"
+      }]
+    },
+    {
+      "code" : "2",
+      "display" : "Descartada",
+      "target" : [{
+        "code" : "refuted",
+        "display" : "Refuted",
+        "equivalence" : "equivalent"
+      }]
+    }]
+  }]
+}

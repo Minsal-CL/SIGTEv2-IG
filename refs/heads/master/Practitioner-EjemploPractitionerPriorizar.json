@@ -1,0 +1,64 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "EjemploPractitionerPriorizar",
+  "meta" : {
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#2)</span></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "extension" : [{
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador",
+      "valueString" : "K"
+    }],
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+        "code" : "RUN"
+      }]
+    },
+    "system" : "http://registrocivil/RUN",
+    "value" : "2134"
+  },
+  {
+    "use" : "secondary",
+    "system" : "http://rnpi.superdesalud.gob.cl",
+    "value" : "2134"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Perez",
+    "_family" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+        "valueString" : "Sierra"
+      }]
+    },
+    "given" : ["Luis"]
+  }],
+  "qualification" : [{
+    "identifier" : [{
+      "value" : "tit"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+        "code" : "1"
+      }]
+    }
+  },
+  {
+    "identifier" : [{
+      "value" : "esp"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+        "code" : "2"
+      }]
+    }
+  }]
+}

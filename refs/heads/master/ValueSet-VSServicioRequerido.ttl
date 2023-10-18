@@ -1,0 +1,200 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSServicioRequerido> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VSServicioRequerido"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSServicioRequerido"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.5"] ; # 
+  fhir:name [ fhir:v "VSServicioRequerido"] ; # 
+  fhir:title [ fhir:v "Corresponde al servicio que se requiere"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-01-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://interoperabilidad.minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Corresponde al servicio que se requiere"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement\nThe SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the Creative Commons Attribution 4.0 International Public License. For more information, see SNOMED IPS Terminology\nThe HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review usage terms or directly contact SNOMED International: info@snomed.org"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "758598006" ] ;
+         fhir:display [ fhir:v "derivación a nefrólogo pediátrico" ]
+       ] [
+         fhir:code [ fhir:v "715159005" ] ;
+         fhir:display [ fhir:v "derivación a servicio de atención de diabetes" ]
+       ] [
+         fhir:code [ fhir:v "710910007" ] ;
+         fhir:display [ fhir:v "derivación a servicio legal" ]
+       ] [
+         fhir:code [ fhir:v "703155005" ] ;
+         fhir:display [ fhir:v "derivación a servicio de maternidad" ]
+       ] [
+         fhir:code [ fhir:v "700125004" ] ;
+         fhir:display [ fhir:v "derivación a servicio de ginecología pediátrica" ]
+       ] [
+         fhir:code [ fhir:v "429365000" ] ;
+         fhir:display [ fhir:v "derivación a gastroenterólogo pediátrico" ]
+       ] [
+         fhir:code [ fhir:v "417311009" ] ;
+         fhir:display [ fhir:v "derivación a servicio de cardiología pediátrica" ]
+       ] [
+         fhir:code [ fhir:v "415277000" ] ;
+         fhir:display [ fhir:v "derivación a endocrinólogo pediátrico" ]
+       ] [
+         fhir:code [ fhir:v "308462001" ] ;
+         fhir:display [ fhir:v "derivación a servicio de anatomía patológica" ]
+       ] [
+         fhir:code [ fhir:v "308461008" ] ;
+         fhir:display [ fhir:v "derivación a servicio de radiología" ]
+       ] [
+         fhir:code [ fhir:v "306934005" ] ;
+         fhir:display [ fhir:v "derivación a servicio de cirugía vascular" ]
+       ] [
+         fhir:code [ fhir:v "306201000" ] ;
+         fhir:display [ fhir:v "derivación al servicio de urología" ]
+       ] [
+         fhir:code [ fhir:v "306198005" ] ;
+         fhir:display [ fhir:v "derivación al servicio de cirugía plástica" ]
+       ] [
+         fhir:code [ fhir:v "306194007" ] ;
+         fhir:display [ fhir:v "derivación al servicio de cirugía colorrectal" ]
+       ] [
+         fhir:code [ fhir:v "306191004" ] ;
+         fhir:display [ fhir:v "derivación al servicio de cirugía gastrointestinal" ]
+       ] [
+         fhir:code [ fhir:v "306185001" ] ;
+         fhir:display [ fhir:v "derivación al servicio de cirugía cardíaca" ]
+       ] [
+         fhir:code [ fhir:v "306184002" ] ;
+         fhir:display [ fhir:v "derivación al servicio de cirugía torácica" ]
+       ] [
+         fhir:code [ fhir:v "306177005" ] ;
+         fhir:display [ fhir:v "derivación a servicio de ortopedia" ]
+       ] [
+         fhir:code [ fhir:v "306169006" ] ;
+         fhir:display [ fhir:v "derivación a servicio de medicina física" ]
+       ] [
+         fhir:code [ fhir:v "306163007" ] ;
+         fhir:display [ fhir:v "derivación al servicio de nutrición" ]
+       ] [
+         fhir:code [ fhir:v "306151002" ] ;
+         fhir:display [ fhir:v "derivación al servicio de salud pública" ]
+       ] [
+         fhir:code [ fhir:v "306148009" ] ;
+         fhir:display [ fhir:v "derivación al servicio de hematología" ]
+       ] [
+         fhir:code [ fhir:v "306141003" ] ;
+         fhir:display [ fhir:v "derivación al servicio de radioterapia" ]
+       ] [
+         fhir:code [ fhir:v "306140002" ] ;
+         fhir:display [ fhir:v "derivación al servicio de oncología clínica" ]
+       ] [
+         fhir:code [ fhir:v "306134009" ] ;
+         fhir:display [ fhir:v "derivación al servicio de psiquiatría de niños y adolescentes" ]
+       ] [
+         fhir:code [ fhir:v "306133003" ] ;
+         fhir:display [ fhir:v "derivación al servicio de obstetricia y ginecología" ]
+       ] [
+         fhir:code [ fhir:v "306132008" ] ;
+         fhir:display [ fhir:v "derivación al servicio de neonatología" ]
+       ] [
+         fhir:code [ fhir:v "306131001" ] ;
+         fhir:display [ fhir:v "derivación al servicio de oncología pediátrica" ]
+       ] [
+         fhir:code [ fhir:v "306130000" ] ;
+         fhir:display [ fhir:v "derivación al servicio de neurología pediátrica" ]
+       ] [
+         fhir:code [ fhir:v "306128002" ] ;
+         fhir:display [ fhir:v "derivación al servicio de pediatría" ]
+       ] [
+         fhir:code [ fhir:v "306127007" ] ;
+         fhir:display [ fhir:v "derivación al servicio de reumatología" ]
+       ] [
+         fhir:code [ fhir:v "306126003" ] ;
+         fhir:display [ fhir:v "derivación al servicio de medicina nuclear" ]
+       ] [
+         fhir:code [ fhir:v "306125004" ] ;
+         fhir:display [ fhir:v "derivación al servicio de nefrología" ]
+       ] [
+         fhir:code [ fhir:v "306124000" ] ;
+         fhir:display [ fhir:v "derivación al servicio de infectología" ]
+       ] [
+         fhir:code [ fhir:v "306119003" ] ;
+         fhir:display [ fhir:v "derivación al servicio de genética" ]
+       ] [
+         fhir:code [ fhir:v "306118006" ] ;
+         fhir:display [ fhir:v "derivación al servicio de endocrinología" ]
+       ] [
+         fhir:code [ fhir:v "306114008" ] ;
+         fhir:display [ fhir:v "derivación al servicio de medicina respiratoria" ]
+       ] [
+         fhir:code [ fhir:v "306105003" ] ;
+         fhir:display [ fhir:v "derivación al servicio de anestesiología" ]
+       ] [
+         fhir:code [ fhir:v "183549000" ] ;
+         fhir:display [ fhir:v "derivación al servicio de ginecología" ]
+       ] [
+         fhir:code [ fhir:v "183548008" ] ;
+         fhir:display [ fhir:v "derivación al servicio de obstetricia" ]
+       ] [
+         fhir:code [ fhir:v "183547003" ] ;
+         fhir:display [ fhir:v "derivación al servicio de cirugía pediátrica" ]
+       ] [
+         fhir:code [ fhir:v "183546007" ] ;
+         fhir:display [ fhir:v "derivación al servicio de neurocirugía" ]
+       ] [
+         fhir:code [ fhir:v "183544005" ] ;
+         fhir:display [ fhir:v "derivación al servicio de otorrinolaringología" ]
+       ] [
+         fhir:code [ fhir:v "183543004" ] ;
+         fhir:display [ fhir:v "derivación al servicio de oftalmología" ]
+       ] [
+         fhir:code [ fhir:v "183542009" ] ;
+         fhir:display [ fhir:v "derivación al servicio de cirugía general" ]
+       ] [
+         fhir:code [ fhir:v "183524004" ] ;
+         fhir:display [ fhir:v "derivación al servicio de psiquiatría" ]
+       ] [
+         fhir:code [ fhir:v "183523005" ] ;
+         fhir:display [ fhir:v "derivación al servicio de gastroenterología" ]
+       ] [
+         fhir:code [ fhir:v "183522000" ] ;
+         fhir:display [ fhir:v "derivación al servicio de geriatría" ]
+       ] [
+         fhir:code [ fhir:v "183521007" ] ;
+         fhir:display [ fhir:v "derivación al servicio de neurología" ]
+       ] [
+         fhir:code [ fhir:v "183519002" ] ;
+         fhir:display [ fhir:v "derivación al servicio de cardiología" ]
+       ] [
+         fhir:code [ fhir:v "183518005" ] ;
+         fhir:display [ fhir:v "derivación a servicio de dermatología" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

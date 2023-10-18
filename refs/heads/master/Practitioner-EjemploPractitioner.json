@@ -1,0 +1,53 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "EjemploPractitioner",
+  "meta" : {
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitioner&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>id:\u00a0tit</td><td>MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "extension" : [{
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador",
+      "valueString" : "K"
+    }],
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
+        "code" : "RUN"
+      }]
+    },
+    "system" : "http://registrocivil/RUN",
+    "value" : "2134"
+  },
+  {
+    "use" : "secondary",
+    "system" : "http://rnpi.superdesalud.gob.cl",
+    "value" : "2134"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Perez",
+    "_family" : {
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
+        "valueString" : "Sierra"
+      }]
+    },
+    "given" : ["Luis"]
+  }],
+  "qualification" : [{
+    "identifier" : [{
+      "value" : "tit"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+        "code" : "1"
+      }]
+    }
+  }]
+}

@@ -1,0 +1,152 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestinoCodigo> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CSEstablecimientoDestinoCodigo"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestinoCodigo"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.5"] ; # 
+  fhir:name [ fhir:v "CSEstablecimientoDestinoCodigo"] ; # 
+  fhir:title [ fhir:v "Establecimiento Destino Codigo"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-01-15"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://interoperabilidad.minsal.cl" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Establecimiento Destino Codigo"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CL" ] ;
+       fhir:display [ fhir:v "Chile" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "36"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "101012" ] ;
+     fhir:display [ fhir:v "Servicio de Salud Arica Clínica Dental Móvil Simple. Pat. PW4076 (Arica)" ]
+  ] [
+     fhir:code [ fhir:v "101090" ] ;
+     fhir:display [ fhir:v "Servicio de Salud Arica Oficina Sanitaria Chacalluta" ]
+  ] [
+     fhir:code [ fhir:v "101100" ] ;
+     fhir:display [ fhir:v "Servicio de Salud Arica Hospital Dr. Juan Noé Crevanni (Arica)" ]
+  ] [
+     fhir:code [ fhir:v "101203" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Clínica Hebe" ]
+  ] [
+     fhir:code [ fhir:v "101212" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Clínica San Agustín" ]
+  ] [
+     fhir:code [ fhir:v "101213" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Clínica San José" ]
+  ] [
+     fhir:code [ fhir:v "101214" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Clínica Arica" ]
+  ] [
+     fhir:code [ fhir:v "101215" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Complejo Penitenciario" ]
+  ] [
+     fhir:code [ fhir:v "101216" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Servicio Médico Estudiantil U de Tarapacá" ]
+  ] [
+     fhir:code [ fhir:v "101217" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Centro Clínico Militar Arica" ]
+  ] [
+     fhir:code [ fhir:v "101219" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Policlínico del Trabajador AChS Arica" ]
+  ] [
+     fhir:code [ fhir:v "101222" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Instituto de Rehabilitación Infantil TELETÓN (Arica)" ]
+  ] [
+     fhir:code [ fhir:v "101223" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Centro Médico Monte Sinaí" ]
+  ] [
+     fhir:code [ fhir:v "101224" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Clínica Santo Domingo" ]
+  ] [
+     fhir:code [ fhir:v "101225" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Centro Integral de Salud" ]
+  ] [
+     fhir:code [ fhir:v "101227" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Policlínico Institucional de Gendarmería de Chile (Arica)" ]
+  ] [
+     fhir:code [ fhir:v "101228" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Policlínico del Agricultor" ]
+  ] [
+     fhir:code [ fhir:v "101229" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Centro Odontológico Arica" ]
+  ] [
+     fhir:code [ fhir:v "101234" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Centro de Salud Mutual CChC Arica" ]
+  ] [
+     fhir:code [ fhir:v "101236" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Centro Dental Megasalud SpA" ]
+  ] [
+     fhir:code [ fhir:v "101237" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Clínica Dr. Héctor Sánchez" ]
+  ] [
+     fhir:code [ fhir:v "101238" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Clínica Mella Arica y Compañía Ltda." ]
+  ] [
+     fhir:code [ fhir:v "101239" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Policlínico Médico-Dental de Carabineros" ]
+  ] [
+     fhir:code [ fhir:v "101240" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Laboratorio Clínico San José Ltda." ]
+  ] [
+     fhir:code [ fhir:v "101241" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Laboratorio Bionet" ]
+  ] [
+     fhir:code [ fhir:v "101242" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Laboratorio Clínico y Hematológico Diagnotest" ]
+  ] [
+     fhir:code [ fhir:v "101243" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Laboratorio Clínico Central" ]
+  ] [
+     fhir:code [ fhir:v "101244" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Laboratorio Clínico San Martín" ]
+  ] [
+     fhir:code [ fhir:v "101245" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Laboratorio Clínico Dialab" ]
+  ] [
+     fhir:code [ fhir:v "101246" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Laboratorio Clínico del Norte - Labonorte" ]
+  ] [
+     fhir:code [ fhir:v "101247" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Laboratorio Clínico Chungará" ]
+  ] [
+     fhir:code [ fhir:v "101248" ] ;
+     fhir:display [ fhir:v "SEREMI De Arica y Parinacota Laboratorio Clínico Biolascer" ]
+  ] [
+     fhir:code [ fhir:v "101300" ] ;
+     fhir:display [ fhir:v "Servicio de Salud Arica Centro de Salud Familiar Víctor Bertín Soto" ]
+  ] [
+     fhir:code [ fhir:v "101302" ] ;
+     fhir:display [ fhir:v "Servicio de Salud Arica Centro de Salud Familiar Dr. Amador Neghme de Arica" ]
+  ] [
+     fhir:code [ fhir:v "101303" ] ;
+     fhir:display [ fhir:v "Servicio de Salud Arica Centro de Salud Familiar E. U. Iris Véliz Hume (Ex Oriente)" ]
+  ] [
+     fhir:code [ fhir:v "101304" ] ;
+     fhir:display [ fhir:v "Servicio de Salud Arica Centro de Salud Familiar Putre" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

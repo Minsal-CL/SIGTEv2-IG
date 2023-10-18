@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="EjemploCarePlanLE"/>
+  <meta>
+    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CarePlanAtenderLE"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: CarePlan</b><a name="EjemploCarePlanLE"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource CarePlan &quot;EjemploCarePlanLE&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CarePlanAtenderLE.html">CarePlan Atender LE</a></p></div><p><b>ExtBool Solicitud Examenes</b>: true</p><p><b>status</b>: active</p><p><b>intent</b>: plan</p><p><b>description</b>: test</p><p><b>subject</b>: <a href="Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><h3>Activities</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><span>: http://link-a-mi-receta.cl/ID</span></td></tr></table></div>
+  </text>
+  <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolSolicitudExamenes">
+    <valueBoolean value="true"/>
+  </extension>
+  <status value="active"/>
+  <intent value="plan"/>
+  <description value="test"/>
+  <subject>
+    <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
+  </subject>
+  <activity>
+    <reference>
+      <display value="http://link-a-mi-receta.cl/ID"/>
+    </reference>
+  </activity>
+</CarePlan>

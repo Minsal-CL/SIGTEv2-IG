@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/tei/Encounter/EjemploEncounterAtender> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploEncounterAtender"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"EjemploEncounterAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;EjemploEncounterAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EncounterAtenderLE.html\">Encounter Atender LE</a></p></div><p><b>ExtBool Pertinencia Atencion Box</b>: true</p><p><b>ExtString MotivoNoPertinencia</b>: lorem ipsum</p><p><b>identifier</b>: IdConsultaAPS: 1</p><p><b>status</b>: finished</p><p><b>class</b>: Presencial (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo code 1 = 'Presencial', stated as 'null')</p><p><b>type</b>: Nueva <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTipoConsulta.html\">Tipo Consulta</a>#1)</span></p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE\">http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE</a></p><p><b>period</b>: 2023-01-22 09:00:00+0000 --&gt; 2023-01-22 10:00:00+0000</p><p><b>reasonReference</b>: </p><ul><li><a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE\">http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE</a></li><li><a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Observation/EjemploObservationAtender\">http://acme.com/ehr/fhir/Observation/EjemploObservationAtender</a></li></ul><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Condition/EjemploCondition\">http://acme.com/ehr/fhir/Condition/EjemploCondition</a></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPertinenciaAtencionBox"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtStringMotivoNoPertinencia"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "lorem ipsum" ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "IdConsultaAPS" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "1" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoConsulta"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/EjemploPatient> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient" ]
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE" ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-01-22T09:00:00Z"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2023-01-22T10:00:00Z"^^xsd:dateTime ]
+  ] ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE" ] ;
+     fhir:type [ fhir:v "Condition"^^xsd:anyURI ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/Observation/EjemploObservationAtender> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Observation/EjemploObservationAtender" ] ;
+     fhir:type [ fhir:v "Observation"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:link <http://acme.com/ehr/fhir/Condition/EjemploCondition> ;
+       fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Condition/EjemploCondition" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/EjemploServiceRequest> a fhir:ServiceRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EjemploServiceRequest"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>ExtStringFundamentoPriorizacion</b>: FundamentoPriorizacion</p><p><b>SospechaPatologiaGes</b>: true</p><p><b>ExtBool ResolutividadAPS</b>: true</p><p><b>ExtBool Alergia</b>: false</p><p><b>Origen Interconsulta</b>: APS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSinterconsulta.html\">Interconsulta</a>#1)</span></p><p><b>Estado Interconsulta Codigo</b>: A la espera de referencia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEstadoInterconsulta.html\">Estado Interconsulta</a>#1)</span></p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>encounter</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Encounter/enc1\">http://acme.com/ehr/fhir/Encounter/enc1</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>reasonCode</b>: Confirmación <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSDerivadoParaCodigo.html\">Derivado Para</a>#1)</span></p><p><b>reasonReference</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Observation/obs1\">http://acme.com/ehr/fhir/Observation/obs1</a></p><p><b>supportingInfo</b>: </p><ul><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/AllergyIntolerance/all1\">http://acme.com/ehr/fhir/AllergyIntolerance/all1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con1\">http://acme.com/ehr/fhir/Condition/con1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Observvation/obs2\">http://acme.com/ehr/fhir/Observvation/obs2</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/con3\">http://acme.com/ehr/fhir/Condition/con3</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Observation/obs3\">http://acme.com/ehr/fhir/Observation/obs3</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/DocumentReference/doc1\">http://acme.com/ehr/fhir/DocumentReference/doc1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Coverage/cov1\">http://acme.com/ehr/fhir/Coverage/cov1</a></li><li><a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/QuestionnaireResponse/que1\">http://acme.com/ehr/fhir/QuestionnaireResponse/que1</a></li></ul></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtStringFundamentoPriorizacion"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "FundamentoPriorizacion" ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SospechaPatologiaGes"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolResolutividadAPS"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolAlergia"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "false"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrigenInterconsulta"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSinterconsulta"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:priority [ fhir:v "urgent"] ; # 
+  fhir:subject [
+     fhir:link <http://acme.com/ehr/fhir/Patient/EjemploPatient> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://acme.com/ehr/fhir/Encounter/enc1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Encounter/enc1" ]
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2022-01-20T13:50:20Z"^^xsd:dateTime] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ]
+     ] )
+  ] ) ; # 
+  fhir:reasonReference ( [
+     fhir:link <http://acme.com/ehr/fhir/Observation/obs1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Observation/obs1" ]
+  ] ) ; # 
+  fhir:supportingInfo ( [
+     fhir:link <http://acme.com/ehr/fhir/AllergyIntolerance/all1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/AllergyIntolerance/all1" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/Condition/con1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Condition/con1" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/Observvation/obs2> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Observvation/obs2" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/Condition/con3> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Condition/con3" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/Observation/obs3> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Observation/obs3" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/DocumentReference/doc1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/DocumentReference/doc1" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/Coverage/cov1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Coverage/cov1" ]
+  ] [
+     fhir:link <http://acme.com/ehr/fhir/QuestionnaireResponse/que1> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/QuestionnaireResponse/que1" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
