@@ -11,7 +11,7 @@
 | terminar | Terminar | Este evento permite registrar información asociada a los motivos de cierre o término de la interconsulta. | La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido terminada |
 {:.grid}
 
-### Definicion de Transacciones relacionados a eventos
+### Definición de Transacciones relacionados a eventos
 
 * [Transacción Evento Iniciar](Transacciones.html#transacción-evento-iniciar)
 * [Transacción Evento Referenciar](Transacciones.html#transacción-evento-referenciar)

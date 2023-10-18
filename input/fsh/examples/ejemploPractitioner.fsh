@@ -7,7 +7,7 @@ Description: "Practitioner Evento de Inicio"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"
 * identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
@@ -21,7 +21,7 @@ Description: "Practitioner Evento de Inicio"
 //* birthDate = "1974-01-22"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
-* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTituloProfesional"
+* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
@@ -34,7 +34,7 @@ Description: "Practitioner Referenciador Evento de Referenciada"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"
 * identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
@@ -46,7 +46,7 @@ Description: "Practitioner Referenciador Evento de Referenciada"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
-* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTituloProfesional"
+* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLOS PARA BUNDLE TERMINAR*/
@@ -59,7 +59,7 @@ Description: "Practitioner Evento Terminar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"
 * identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
@@ -71,7 +71,7 @@ Description: "Practitioner Evento Terminar"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
-* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTituloProfesional"
+* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 /*FIN PARA BUNDLE TERMINAR*/
 
 /*EJEMPLOS PARA BUNDLE REVISAR*/
@@ -84,7 +84,7 @@ Description: "Practitioner Evento Revisar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"
 * identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
@@ -96,10 +96,10 @@ Description: "Practitioner Evento Revisar"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
-* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTituloProfesional"
+* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[Esp].identifier.value = "esp"
 * qualification[Esp].code.coding.code = #2
-* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSEspecialidadMed"
+* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed"
 /*FIN PARA BUNDLE REVISAR*/
 
 /*EJEMPLOS PARA BUNDLE Atender*/
@@ -112,7 +112,7 @@ Description: "Practitioner Evento de Atender"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"
 * identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
@@ -124,10 +124,10 @@ Description: "Practitioner Evento de Atender"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
-* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTituloProfesional"
+* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[Esp].identifier.value = "esp"
 * qualification[Esp].code.coding.code = #2
-* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSEspecialidadMed"
+* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed"
 * qualification[SubEsp].identifier.value = "subesp"
 * qualification[SubEsp].code.text = "Alergia e Inmunología Clínica"
 /*FIN PARA BUNDLE REVISAR*/
@@ -142,9 +142,9 @@ Description: "Practitioner Atendedor Evento de Agendar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"
 * identifier[RUN].extension.valueString = "K"
-* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"
 * identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
@@ -156,10 +156,10 @@ Description: "Practitioner Atendedor Evento de Agendar"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
-* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTituloProfesional"
+* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[Esp].identifier.value = "esp"
 * qualification[Esp].code.coding.code = #2
-* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSEspecialidadMed"
+* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed"
 * qualification[SubEsp].identifier.value = "subesp"
 * qualification[SubEsp].code.text = "Alergia e Inmunología Clínica"
 /*FIN PARA BUNDLE REVISAR*/
@@ -174,7 +174,7 @@ Description: "Practitioner Agendador Evento de Agendar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"
 * identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
@@ -186,7 +186,7 @@ Description: "Practitioner Agendador Evento de Agendar"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
-* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTituloProfesional"
+* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 /*FIN PARA BUNDLE Agendar*/
 
 /*EJEMPLOS PARA BUNDLE PRIORIZAR*/
@@ -199,7 +199,7 @@ Description: "Practitioner Evento de Priorizar"
 * identifier[RUN].type = http://terminology.cens.cl/CodeSystem/listaespera#RUN
 * identifier[RUN].use = #official
 * identifier[RUN].value = "2134"
-* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/DigitoVerificador"
+* identifier[RUN].extension.url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"
 * identifier[RUN].extension.valueString = "K"
 * identifier[RNPI].system = "http://rnpi.superdesalud.gob.cl"
 * identifier[RNPI].use = #secondary
@@ -211,8 +211,8 @@ Description: "Practitioner Evento de Priorizar"
 * name.family.extension.valueString = "Sierra"
 * qualification[Tit].identifier.value = "tit"
 * qualification[Tit].code.coding.code = #1
-* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTituloProfesional"
+* qualification[Tit].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[Esp].identifier.value = "esp"
 * qualification[Esp].code.coding.code = #2
-* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSEspecialidadMed"
+* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed"
 /*FIN PARA BUNDLE PRIORIZAR*/

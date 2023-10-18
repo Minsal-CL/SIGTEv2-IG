@@ -1153,7 +1153,7 @@ Usage: #definition
 * sourceCanonical = Canonical(VSHipotesisDiagnosticaCodigo)
 * targetCanonical = Canonical(http://terminology.hl7.org/ValueSet/condition-ver-status)
 * group[+]
-  * source = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSHipotesisDiagnosticaCodigo"
+  * source = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSHipotesisDiagnosticaCodigo"
   * target = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
   * element[+]
     * code = #1

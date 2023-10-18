@@ -21,7 +21,7 @@ El evento **inicio** debe soportar a siguiente secuencia:
 
 ##### Request
 
-La semántica del mensaje para la transacción del evento de inicio usa el [Bundle Inicio LE](StructureDefinition-BundleInicioLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de inicio, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+La semántica del mensaje para la transacción del evento de inicio usa el [Bundle Inicio LE](StructureDefinition-BundleInicioLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de inicio, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Ejemplo Bundle de Inicio](Bundle-EjemploBundleInicio.html)
 
@@ -31,7 +31,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 #### Precondiciones
 
-Definir si existen precondiciones para el Evento Inicio
+No existe precondición para este evento.
 
 #### Acciones Esperadas
 
@@ -62,7 +62,7 @@ El evento iniciar debe soportar las siguientes secuencias:
 
 ##### Request
 
-La semántica del mensaje para la transacción del evento de referencia usa el [Bundle Referencia LE](StructureDefinition-BundleReferenciaLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de referencia, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+La semántica del mensaje para la transacción del evento de referencia usa el [Bundle Referencia LE](StructureDefinition-BundleReferenciaLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de referencia, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Ejemplo Bundle Referenciada](Bundle-EjemploBundleReferencia.html)
 
@@ -72,7 +72,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 #### Precondiciones
 
-Definir si existen precondiciones para el Evento Referenciar
+* Requiere el evento inicio.
 
 #### Acciones Esperadas
 
@@ -102,7 +102,7 @@ El evento **revisar** debe soportar a siguiente secuencia:
 
 ##### Request
 
-La semántica del mensaje para la transacción del evento de revisar usa el [Bundle Revisar LE](StructureDefinition-BundleRevisarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de revisar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+La semántica del mensaje para la transacción del evento de revisar usa el [Bundle Revisar LE](StructureDefinition-BundleRevisarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de revisar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Ejemplo Bundle Revisar](Bundle-EjemploBundleRevisar.html)
 
@@ -112,7 +112,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 #### Precondiciones
 
-Definir si existen precondiciones para el Evento Revisar
+* Requiere el evento inicio.
 
 #### Acciones Esperadas
 
@@ -143,7 +143,7 @@ El evento **priorizar** debe soportar a siguiente secuencia:
 
 ##### Request
 
-La semántica del mensaje para la transacción del evento de priorizar usa el [Bundle Priorizar LE](StructureDefinition-BundlePriorizarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de priorizar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+La semántica del mensaje para la transacción del evento de priorizar usa el [Bundle Priorizar LE](StructureDefinition-BundlePriorizarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de priorizar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Ejemplo Bundle Priorizar](Bundle-EjemploBundlePriorizar.html)
 
@@ -153,7 +153,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 #### Precondiciones
 
-Definir si existen precondiciones para el Evento Priorizar
+* Requiere el evento inicio.
 
 #### Acciones Esperadas
 
@@ -183,7 +183,7 @@ El evento **agendar** debe soportar a siguiente secuencia:
 
 ##### Request
 
-La semántica del mensaje para la transacción del evento de agendar usa el [Bundle Agendar LE](StructureDefinition-BundleAgendarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de agendar, esta información va representada de manera general en el recurso [Appointment Agendar LE](StructureDefinition-AppointmentAgendarLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+La semántica del mensaje para la transacción del evento de agendar usa el [Bundle Agendar LE](StructureDefinition-BundleAgendarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de agendar, esta información va representada de manera general en el recurso [Appointment Agendar LE](StructureDefinition-AppointmentAgendarLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Ejemplo Bundle Agendar Agendar](Bundle-EjemploBundleAgendar.html)
   * Appointment usado para agendar cita([Appointment Agendar](Appointment-EjemploAppointmentAgendar.html))
@@ -196,7 +196,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 #### Precondiciones
 
-Definir si existen precondiciones para el Evento Agendar
+* Requiere el evento inicio.
 
 #### Acciones Esperadas
 
@@ -226,7 +226,7 @@ El evento **atender** debe soportar a siguiente secuencia:
 
 ##### Request
 
-La semántica del mensaje para la transacción del evento de atender usa el [Bundle Agendar LE](StructureDefinition-BundleAgendarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de atender, esta información va representada de manera general en el recurso [Encounter Atender LE](StructureDefinition-EncounterAtenderLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+La semántica del mensaje para la transacción del evento de atender usa el [Bundle Agendar LE](StructureDefinition-BundleAgendarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de atender, esta información va representada de manera general en el recurso [Encounter Atender LE](StructureDefinition-EncounterAtenderLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Ejemplo Bundle Atender](Bundle-EjemploBundleAtender.html)
 
@@ -236,7 +236,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 #### Precondiciones
 
-El evento debe haber sido agendado.
+* Requiere el evento inicio.
 
 #### Acciones Esperadas
 
@@ -266,7 +266,7 @@ El evento **terminar** debe soportar a siguiente secuencia:
 
 ##### Request
 
-La semántica del mensaje para la transacción del evento de terminar usa el [Bundle Terminar LE](StructureDefinition-BundleTerminarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de terminar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajeria] (Mensajeria.html)
+La semántica del mensaje para la transacción del evento de terminar usa el [Bundle Terminar LE](StructureDefinition-BundleTerminarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de terminar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Ejemplo Bundle Terminar](Bundle-EjemploBundleTerminar.html)
 
@@ -276,7 +276,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 #### Precondiciones
 
-El evento terminar puede suceder en cualquier etapa.
+* Requiere el evento inicio.
 
 #### Acciones Esperadas
 

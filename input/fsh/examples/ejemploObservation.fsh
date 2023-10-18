@@ -24,7 +24,7 @@ Usage: #example
 Title: "Observation Índice Comorbilidad Evento de Inicio"
 Description: "Observation Índice Comorbilidadn Evento de Inicio"
 
-* code = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSIndicecomorbilidad#G1
+* code = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIndicecomorbilidad#G1
 * code.text = "Riesgo Leve, 1 condición crónica"
 * status = #final
 * category = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs
@@ -41,5 +41,5 @@ Description: "Observation Cuidador Evento de Inicio"
 * code = http://loinc.org#95385-1
 * status = #final
 * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-* extension[PresentaDiscapacidad].url = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/StructureDefinition/ExtBoolPresentaDiscapacidad"
+* extension[PresentaDiscapacidad].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPresentaDiscapacidad"
 * extension[PresentaDiscapacidad].valueBoolean = false

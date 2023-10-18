@@ -33,7 +33,7 @@ Description: "Appointment Evento de Agendar"
 * participant[practitionerRoleLE].status = #accepted
 
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.text = "Otro"
-* extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSMotivoNoContactabilidad#1
+* extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoContactabilidad#1
 
 * extension[ContactadoLE].extension[Contactado].valueBoolean = true
 
@@ -59,7 +59,7 @@ Description: "Appointment Evento de Agendar(Cancelación)"
 * participant[practitionerRoleLE].status = #accepted
 
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.text = "Otro"
-* extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSMotivoNoContactabilidad#1
+* extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoContactabilidad#1
 
 * extension[ContactadoLE].extension[Contactado].valueBoolean = true
 
@@ -83,6 +83,6 @@ Description: "Appointment Evento de Agendar(Sin Presentacion)"
 * participant[practitionerRoleLE].status = #accepted
 
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.text = "Otro"
-* extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSMotivoNoContactabilidad#1
+* extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoContactabilidad#1
 
 * extension[ContactadoLE].extension[Contactado].valueBoolean = true

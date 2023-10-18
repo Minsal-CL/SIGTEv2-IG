@@ -6,7 +6,7 @@ Description: "MesaggeHeader Evento de Inicio"
 
 
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
-* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTipoEventoLE#iniciar
+* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#iniciar
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
@@ -21,7 +21,7 @@ Description: "MesaggeHeader Evento de Referencia"
 
 
 * meta.lastUpdated = "2023-02-13T14:12:10Z"
-* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTipoEventoLE#referenciar
+* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#referenciar
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/referencia)
@@ -37,7 +37,7 @@ Description: "MesaggeHeader Evento de Terminar"
 
 
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
-* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTipoEventoLE#terminar
+* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#terminar
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/terminar)
@@ -54,7 +54,7 @@ Description: "MesaggeHeader Evento de Revisar"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 
-* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTipoEventoLE#revisar
+* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#revisar
 
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/revisar)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/revisar)
@@ -70,7 +70,7 @@ Description: "MesaggeHeader Evento de Agendar"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 
-* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTipoEventoLE#agendar
+* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#agendar
 
 * focus = Reference(http://acme.com/ehr/fhir/Appointment/agendar)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador)
@@ -86,7 +86,7 @@ Description: "MesaggeHeader Evento de Atender"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 
-* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTipoEventoLE#atender
+* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#atender
 
 * focus = Reference(http://acme.com/ehr/fhir/Encounter/EjemploEncounterAtender)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/atender)
@@ -103,7 +103,7 @@ Description: "MesaggeHeader Evento de Priorizar"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 
-* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSTipoEventoLE#priorizar
+* eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#priorizar
 
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/priorizar) //----------
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/priorizar) //-----

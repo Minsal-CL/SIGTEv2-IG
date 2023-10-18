@@ -19,7 +19,7 @@ Usage: #example
 Title: "Patología GES (número)"
 Description: "Patología GES (número)"
 
-* code = https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSSospechaPatologiaGes#A000
+* code = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologiaGes#A000
 * code.text = "SospechaPatologiaGesGlosa"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * category.text = "sospechaGes"
@@ -35,7 +35,7 @@ Description: "Patología GES (número)"
 // * verificationStatus.coding = http://terminology.hl7.org/CodeSystem/condition-ver-status#provisional
 // * subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
 // * code.coding.code = #1
-// * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tiemposdeesperainteroperables/CodeSystem/CSHipotesisDiagnosticaCodigo"
+// * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSHipotesisDiagnosticaCodigo"
 
 
 // Instance: EjemploCondicionAtenderDiagnosticoSospechaLE

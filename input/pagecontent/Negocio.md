@@ -13,7 +13,7 @@
 
 ### Eventos Interoperabilidad CNE de APS a Secundario
 
-#### INICIAR
+#### Iniciar
   
   Ocurre cuando un usuario acude a su Centro de Atención Primaria (APS) a
   consulta médica, de odontología, matronería, consulta oftalmológica con       
@@ -21,7 +21,7 @@
   solicitud de interconsulta (SIC) para nueva consulta de especialidad en el 
   nivel secundario. 
 
-#### REFERENCIAR
+#### Referenciar
   
   Corresponde al acto de asignación del establecimiento de nivel secundario de 
   destino de la SIC (al cual se está derivando). Puede ser accionado por el mismo 
@@ -38,7 +38,7 @@
   de Atención Primaria de Salud, se completará información y antecedentes
   faltantes de la solicitud de Interconsulta.
 
-#### REVISAR
+#### Revisar
   
   Un profesional clínico contralor debe revisar la pertinencia de la solicitud,
   según el protocolo de referencia y contrarreferencia establecido y reconocido
@@ -52,7 +52,7 @@
   Acá se pueden verificar si existe alguna causal de salida de Lista de Espera,
   por ejemplo, en caso de defunción, GES, no beneficiario entre otras. 
 
-#### PRIORIZAR
+#### Priorizar
   
   Un profesional clínico debe realizar la priorización de la solicitud de
   interconsulta, en función de la categorización definida, considerando
@@ -65,7 +65,7 @@
   por ejemplo, en caso de defunción, GES, no beneficiario entre otras. (Según
   Norma Técnica N°118)
 
-#### AGENDAR
+#### Agendar
   Un funcionario administrativo contactará al usuario para agendar la cita con el
   especialista según la priorización asignada y la disponibilidad de horas.
   Esto puede suceder tanto en el establecimiento de atención primaria como en el
@@ -73,7 +73,7 @@
   
   Acá se pueden verificar si existe alguna causa de salida de Lista de Espera.
 
-#### ATENDER
+#### Atender
   El usuario recibe atención con el médico especialista en el establecimiento de
   nivel secundario. 
   
@@ -90,7 +90,7 @@
   El usuario puede quedar en control, hospitalizado o ser dado de alta. En estos
   tres casos el paciente sale de la Lista de Espera.
 
-#### TERMINAR
+#### Terminar
   En este acto el paciente sale de la Lista de Espera, ya sea porque fue atendido
   o por alguna de las causales de eliminación de la Lista de Espera según la
   norma técnica N°11. 
@@ -100,9 +100,9 @@
 
 ### Rol de Actores Interoperabilidad CNE de APS a Secundario
 
-#### INICIADOR
+#### Iniciador
 
-  >Corresponde al profesional de la salud que se encuentra atendiendo al usuario
+  Corresponde al profesional de la salud que se encuentra atendiendo al usuario
   (paciente) en la consulta que puede ser médica, de odontología, matronería o
   consulta oftalmológica con tecnólogo/a médico/a, y que en virtud a su evaluación y
   cuando corresponda, origina la Solicitud de Interconsulta (SIC) para nueva
@@ -112,7 +112,7 @@
   completar los antecedentes clínicos que fundamente la decisión de derivar a
   especialidad. 
 
-#### REFERENCIADOR
+#### Referenciador
   
   Corresponde al funcionario/a del establecimiento de salud de nivel primario que
   asigna el establecimiento de nivel secundario de destino de la SIC (al cual se
@@ -129,7 +129,7 @@
   Atención Primaria de Salud, este/a funcionario/o también completará información y
   antecedentes faltantes de la solicitud de Interconsulta 
 
-#### REVISOR
+#### Revisor
   
   Es el/la profesional clínico/a que ejerce las funciones de contraloría, quien
   revisa la pertinencia de la solicitud, según el protocolo de referencia y
@@ -146,7 +146,7 @@
   El REVISOR también pueden verificar si existe alguna causal de salida de Lista de
   Espera, por ejemplo, en caso de defunción, GES, no beneficiario entre otras. 
 
-#### PRIORIZADOR
+#### Priorizador
   
   Es el/la profesional clínico/a que ejerce las funciones de contraloría, quien debe
   dar prioridad a la solicitud de interconsulta, en función de la categorización
@@ -161,7 +161,7 @@
   ejemplo, en caso de defunción, GES, no beneficiario entre otras. (Según Norma
   Técnica N°118).
 
-#### AGENDADOR
+#### Agendador
   
   Es el funcionario administrativo encargado de agendar la cita para la consulta de
   especialidad en el nivel secundario, luego de que la SIC ha sido aprobada y
@@ -175,7 +175,7 @@
   Este funcionario también puede verificar si existe alguna causa de salida de Lista
   de Espera
 
-#### ATENDEDOR
+#### Atendedor
   
   Es el profesional médico especialista de nivel secundario que dará la atención de
   especialidad al usuario/a (paciente) en el establecimiento de nivel secundario.
@@ -187,7 +187,7 @@
   resultado de la atención, dejar al usuario/a (paciente) en control en el nivel
   secundario, en control en el nivel primario, hospitalizarlo, o dar de alta.
 
-#### TERMINADOR
+#### Terminador
   
   Corresponde al funcionario administrativo que ejecuta la salida del usuario/a
   paciente de lista de espera, en función de si recibió la atención de especialidad,
@@ -198,20 +198,20 @@
   según definiciones del sistema informático local.
 
 
-### Historias de Usuario 
+### Historias de Usuario según rol
 
 Las siguientes corresponden a las historias que definen las interacciones entre los usuarios con los sistemas de información en el contexto de la generación de solicitud de interconsulta para primera atención de especialidad para patologías no GES y su resolución.
 Las historias se definen según el siguiente esquema: “Como <rol de usuario>, yo <quiero/puedo/necesito> <acción> para poder <objetivo/meta>.”
 
-#### INICIADOR
+#### Iniciador
   
 ##### Crear una solicitud de interconsulta
     
-  **HISTORIA**
+  **Historia**
     
   Como iniciador, yo quiero crear una solicitud de interconsulta.
 
-  **CRITERIOS DE ACEPTACIÓN**
+  **Criterios de aceptación**
 
   Verificar que el iniciador puede ingresar una nueva solicitud de interconsulta
   al ingresar:
@@ -227,15 +227,15 @@ Las historias se definen según el siguiente esquema: “Como <rol de usuario>, 
 Verificar que el iniciador debe ingresar paciente, especialidad, prioridad,
 razón y solicitante. el box
  
-#### REFERENCIADOR
+#### Referenciador
   
 ##### Referenciar una solicitud de interconsulta**
   
-  **HISTORIA**
+  **Historia**
   
   Como referenciador, yo quiero referenciar una solicitud de interconsulta.
   
-  **CRITERIOS DE ACEPTACIÓN**
+  **Criterios de aceptación**
   Verificar que el referenciador puede listar las solicitudes de interconsultas
   ordenadas por:
   - Nombres y apellidos
@@ -260,20 +260,20 @@ razón y solicitante. el box
   Verificar que el referenciador puede asignar el establecimiento, organización o
   ubicación que será la responsable de continuar con el proceso de atención.
   
-  **RESULTADO DE LA ACCIÓN**
+  **Resultado de la acción**
 
   La solicitud de interconsulta tiene un establecimiento de destino asignado para
   continuar con el proceso de atención.
 
-#### REVISOR
+#### Revisor
 
-##### REVISAR UNA SOLICITUD DE INTERCONSULTA
+##### Revisar una solicitud de interconsulta
   
-  **HISTORIA**
+  **Historia**
   
   Como profesional revisor, yo quiero revisar las solicitudes de interconsulta.
 
-  **CRITERIOS DE ACEPTACIÓN**
+  **Criterios de aceptación**
   
   - Verificar que un revisor puede listar las solicitudes de interconsultas
   ordenadas por:
@@ -300,7 +300,7 @@ razón y solicitante. el box
   
   - Verificar que el revisor puede marcar la solicitud como “Pertinente” o “No Pertinente”
   
-  RESULTADO DE LA ACCIÓN
+  **Resultado de la acción**
   
   **Si es “Pertinente”**:   El equipo profesional de su centro de salud de atención
   primaria tomará contacto con el paciente y le informará que su caso ha sido
@@ -313,15 +313,15 @@ razón y solicitante. el box
   será contactado por el equipo de dicho establecimiento para continuar con su
   atención. 
 
-#### PRIORIZADOR
+#### Priorizador
 
-##### PRIORIZAR UNA SOLICITUD DE INTERCONSULTA
+##### Priorizar una solicitud de interconsulta
   
-  **HISTORIA**
+  **Historia**
   
   Como profesional priorizador, yo quiero revisar las solicitudes de interconsulta.
   
-  **CRITERIOS DE ACEPTACIÓN**
+  **Criterios de aceptación**
   - Verificar que el priorizador puede listar las solicitudes de interconsultas
   ordenadas por:
     - Nombres y apellidos
@@ -334,7 +334,7 @@ razón y solicitante. el box
   - Verificar que el priorizador puede marcar la solicitud como “Prioridad Habitual”
   o “Prioridad Alta”
 
-  **RESULTADO DE LA ACCIÓN**
+  **Resultado de la acción**
   
   PRIORIZAR la interconsulta que llega a nivel secundario y se prioriza.
   
@@ -345,16 +345,16 @@ razón y solicitante. el box
   priorización determinado.
 
  
-#### AGENDADOR
+#### Agendador
 
-##### AGENDAR UNA SOLICITUD DE INTERCONSULTA
+##### Agendar una solicitud de interconsulta
   
-  **HISTORIA**
+  **Historia**
   
   Como agendador, quiero agendar una cita para un encuentro basado en la solicitud
   de interconsulta previamente emitida.
   
-  **CRITERIOS DE ACEPTACIÓN**
+  **Criterios de aceptación**
 
   - Verificar que el agendador puede agendar una cita con un profesional resolutor
   determinando su fecha/hora de inicio de la cita.
@@ -370,24 +370,24 @@ razón y solicitante. el box
   - Verificar que el agendador puede agendar la cita si la solicitud no se encuentra
   en estado “agendado” o “terminado”.
   
-  **RESULTADO DE LA ACCIÓN**
+  **Resultado de la acción**
   
   El agendador puede asignar paciente asociando a un número de interconsulta a un
   bloque horario de atención (Slot), generando una cita (Appointment) en estado de
   “agendado” (booked). También puede registrar cuando no es posible contactar al
   usuario o éste no asiste a su cita. 
 
-#### ATENDEDOR
+#### Atendedor
   
 ##### Como atendedor, quiero responder una solicitud de interconsulta.
   
-  **HISTORIA**
+  **Historia**
   
   Como atendedor, quiero resolver una solicitud de interconsulta, previamente
   revisada por el contralor, priorizada por el priorizador y agendada por el
   agendador.
   
-  **CRITERIOS DE ACEPTACIÓN**
+  **Criterios de aceptación**
   
   - Verificar que un atendedor puede crear un encuentro de salud en relación a la
   cita agendada basada en la solicitud de interconsulta al ingresar
@@ -395,20 +395,20 @@ razón y solicitante. el box
     - Nombres y apellidos del paciente
     - Número de identificación
  
-  **RESULTADO DE LA ACCIÓN**
+  **Resultado de la acción**
   
   El paciente es atendido por el atendedor (médico especialista) y registra la
   información de esta atención. 
 
-#### TERMINADOR
+#### Terminador
 
 ##### Como terminador quiero terminar el proceso de atención de una solicitud de interconsulta.
 
-  **HISTORIA**
+  **Historia**
   Como terminador, quiero egresar al usuario de la Lista de Espera y terminar el
   ciclo de una solicitud de interconsulta.
 
-  **CRITERIOS DE ACEPTACIÓN**
+  **Criterios de aceptación**
   
   - Verificar que un terminador puede ver la información de la solicitud de
   interconsulta con la consiguiente información, sobre las 18 causales de egreso
@@ -423,14 +423,10 @@ razón y solicitante. el box
     - Respuesta generada por Agendador
     - Respuesta generada por Atendedor 
     
-  **RESULTADO DE LA ACCIÓN**
+  **Resultado de la acción**
   
   Como terminador quiero terminar el proceso de atención de una interconsulta.
 
 
 ### Diccionario de datos 
 [Ver Diccionario de Datos aquí](https://docs.google.com/spreadsheets/d/1KyaOXS0A4ivNrUWCAaJauQdoQ7AnQJeYk7Sk3QgIVUY/edit#gid=0)
-
-### Glosario términos 
-
-
