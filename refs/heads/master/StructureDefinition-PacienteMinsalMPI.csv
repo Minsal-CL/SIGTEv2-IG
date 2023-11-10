@@ -21,9 +21,21 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "Patient.contained","Patient.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"Patient.extension","Patient.extension","","","",5,*,"","","","Extension {[]} {[]}
+"Patient.extension","Patient.extension","","","",4,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Patient.extension:IdentidadDeGenero","Patient.extension","IdentidadDeGenero","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero]]} {[]}
+","Identidad De Genero","Identidad De Genero","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Patient.extension:SexoBiologico","Patient.extension","SexoBiologico","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico]]} {[]}
+","Sexo Biologico del paciente","Sexo Biologico del paciente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"Patient.extension:SexoRegistral","Patient.extension","SexoRegistral","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoRegistral]]} {[]}
+","Sexo Registral del paciente","Sexo Registral del paciente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:nacionalidad","Patient.extension","nacionalidad","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises]]} {[]}
 ","Codigo de Identificación de países","Esta extensión incluye códigos de paises de origen","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
@@ -35,7 +47,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:nacionalidad.url","Patient.extension.url","","","",1,1,"Y","","","uri {[]} {[]}
+"Patient.extension:nacionalidad.url","Patient.extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","Extensión de Nacionalidad para pacientes extranjeros","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises""/>","","","","",,,,,"",,,,"Extension.url",1,1,"","","N/A"
 "Patient.extension:nacionalidad.value[x]","Patient.extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Código de País","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -80,9 +92,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:Religion","Patient.extension","Religion","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Religion]]} {[]}
 ","Religión","Religión","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:SexoBiologico","Patient.extension","SexoBiologico","","",1,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SexoBiologico]]} {[]}
-","Sexo Biologico del paciente","Sexo Biologico del paciente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.extension:identidadGenero","Patient.extension","identidadGenero","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/IdentidadDeGenero]]} {[]}
 ","Identidad De Genero","Identidad De Genero","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

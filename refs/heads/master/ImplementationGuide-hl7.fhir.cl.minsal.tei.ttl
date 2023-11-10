@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TiemposDeEsperaInteroperable"] ; # 
   fhir:title [ fhir:v "Tiempos de Espera Interoperable"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-18T13:50:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-10T20:52:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -68,7 +68,7 @@
        fhir:link <https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.cl.clcore" ] ;
-     fhir:version [ fhir:v "1.8.4" ]
+     fhir:version [ fhir:v "1.8.5" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -960,6 +960,30 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSSexoBiologico> ;
+         fhir:reference [ fhir:v "ValueSet/VSSexoBiologico" ]
+       ] ;
+       fhir:name [ fhir:v "Códigos para sexo biológico en Chile" ] ;
+       fhir:description [ fhir:v "Códigos para sexo biológico en Chile según tabla 820." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSexoBiologico> ;
+         fhir:reference [ fhir:v "CodeSystem/CSSexoBiologico" ]
+       ] ;
+       fhir:name [ fhir:v "Códigos para Sexo de Nacimiento de Paciente" ] ;
+       fhir:description [ fhir:v "Codigos definidos para el sexo de nacimiento de un paciente en Chile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSDerivadoParaCodigo> ;
          fhir:reference [ fhir:v "ValueSet/VSDerivadoParaCodigo" ]
        ] ;
@@ -1661,6 +1685,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Mencion> ;
+         fhir:reference [ fhir:v "StructureDefinition/Mencion" ]
+       ] ;
+       fhir:name [ fhir:v "Mención profesional añadida l título profesional" ] ;
+       fhir:description [ fhir:v "Mención profesional obtenida junto con el título, dato que se agrega en texto lible" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "MessageHeader" ]
        ] ) ;
        fhir:reference [
@@ -1774,6 +1810,30 @@
        ] ;
        fhir:name [ fhir:v "MessageHeader LE" ] ;
        fhir:description [ fhir:v "MessageHeaderLE" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo> ;
+         fhir:reference [ fhir:v "StructureDefinition/MINSALPrestadorAdministrativo" ]
+       ] ;
+       fhir:name [ fhir:v "MINSAL Prestador Administrativo" ] ;
+       fhir:description [ fhir:v "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional> ;
+         fhir:reference [ fhir:v "StructureDefinition/MINSALPrestadorProfesional" ]
+       ] ;
+       fhir:name [ fhir:v "MINSAL Prestador Profesional" ] ;
+       fhir:description [ fhir:v "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2276,8 +2336,8 @@
        fhir:name [ fhir:v "Practitioner Agendador Evento de Agendar" ] ;
        fhir:description [ fhir:v "Practitioner Agendador Evento de Agendar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo>
        ]
      ] [
        fhir:extension ( [
@@ -2291,8 +2351,8 @@
        fhir:name [ fhir:v "Practitioner Atendedor Evento de Agendar" ] ;
        fhir:description [ fhir:v "Practitioner Atendedor Evento de Agendar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo>
        ]
      ] [
        fhir:extension ( [
@@ -2306,8 +2366,8 @@
        fhir:name [ fhir:v "Practitioner Evento de Atender" ] ;
        fhir:description [ fhir:v "Practitioner Evento de Atender" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional>
        ]
      ] [
        fhir:extension ( [
@@ -2321,8 +2381,8 @@
        fhir:name [ fhir:v "Practitioner Evento de Inicio" ] ;
        fhir:description [ fhir:v "Practitioner Evento de Inicio" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional>
        ]
      ] [
        fhir:extension ( [
@@ -2336,8 +2396,8 @@
        fhir:name [ fhir:v "Practitioner Evento de Priorizar" ] ;
        fhir:description [ fhir:v "Practitioner Evento de Priorizar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional>
        ]
      ] [
        fhir:extension ( [
@@ -2351,8 +2411,8 @@
        fhir:name [ fhir:v "Practitioner Evento Revisar" ] ;
        fhir:description [ fhir:v "Practitioner Evento Revisar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional>
        ]
      ] [
        fhir:extension ( [
@@ -2366,21 +2426,9 @@
        fhir:name [ fhir:v "Practitioner Evento Terminar" ] ;
        fhir:description [ fhir:v "Practitioner Evento Terminar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo>
        ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/PractitionerLE" ]
-       ] ;
-       fhir:name [ fhir:v "Practitioner LE" ] ;
-       fhir:description [ fhir:v "Practitioner LE recurso que se utiliza para representar la información de identificación del profesional de la salud." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -2393,8 +2441,8 @@
        fhir:name [ fhir:v "Practitioner Referenciador Evento de Referenciada" ] ;
        fhir:description [ fhir:v "Practitioner Referenciador Evento de Referenciada" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional>
        ]
      ] [
        fhir:extension ( [
@@ -2908,6 +2956,18 @@
        ] ;
        fhir:name [ fhir:v "Sexo Biologico del paciente" ] ;
        fhir:description [ fhir:v "Sexo Biologico del paciente" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SexoNacimiento820> ;
+         fhir:reference [ fhir:v "StructureDefinition/SexoNacimiento820" ]
+       ] ;
+       fhir:name [ fhir:v "Sexo de Nacimiento 820" ] ;
+       fhir:description [ fhir:v "Código que identifica el sexo de nacimiento de un paciente según la definición en la Norma Técnica" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

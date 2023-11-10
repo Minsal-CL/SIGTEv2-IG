@@ -10,53 +10,152 @@
   fhir:id [ fhir:v "EjemploPractitioner"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"^^xsd:anyURI ;
-       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE>
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional>
      ] )
   ] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitioner&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), id: 2134 (use: SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>id: tit</td><td>MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></td></tr></table></div>"
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitioner&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MINSALPrestadorProfesional.html\">MINSAL Prestador Profesional</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html\">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1: 32.333.333-3 (use: OFFICIAL), 2: 123884 (use: OFFICIAL), 4: 123884 (use: SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Juan Perez </p><p><b>telecom</b>: <a href=\"tel:+56982460152\">+56982460152</a></p><p><b>address</b>: null null null </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1982-08-24</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Cirujano Plastico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CSTituloProf#1 &quot;Médico(a) Cirujano(a)&quot;)</span></p><p><b>period</b>: 2023-01-01 --&gt; 2100-01-31</p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: subesp</p><p><b>code</b>: Cirujano Plastico en Oreja Derecha <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CSTituloProf#1 &quot;Médico(a) Cirujano(a)&quot;)</span></p><p><b>period</b>: 2024-01-01 --&gt; 2100-01-31</p></blockquote></div>"
   ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "152" ] ;
+         fhir:display [ fhir:v "Chile" ]
+       ] )
+     ]
+  ] ) ; # 
   fhir:identifier ( [
-     fhir:extension ( [
-       fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "K" ]
-     ] ) ;
      fhir:use [ fhir:v "official" ] ;
      fhir:type [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.cens.cl/CodeSystem/listaespera"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "RUN" ]
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ]
        ] )
      ] ;
-     fhir:system [ fhir:v "http://registrocivil/RUN"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "2134" ]
+     fhir:system [ fhir:v "https://api.cl/system/run"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "32.333.333-3" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "123884" ]
   ] [
      fhir:use [ fhir:v "secondary" ] ;
-     fhir:system [ fhir:v "http://rnpi.superdesalud.gob.cl"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "2134" ]
-  ] ) ; # 
-  fhir:name ( [
-     fhir:use [ fhir:v "official" ] ;
-     fhir:family [
-       fhir:v "Perez" ;
-       fhir:extension ( [
-         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Sierra" ]
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "4" ]
        ] )
      ] ;
-     fhir:given ( [ fhir:v "Luis" ] )
+     fhir:value [ fhir:v "123884" ]
   ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Perez" ] ;
+     fhir:given ( [ fhir:v "Juan" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+56982460152" ] ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:city [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "05602" ] ;
+             fhir:display [ fhir:v "Algarrobo" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:district [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "056" ] ;
+             fhir:display [ fhir:v "San Antonio" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:state [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "05" ] ;
+             fhir:display [ fhir:v "Valparaíso" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:country [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "152" ] ;
+             fhir:display [ fhir:v "Chile" ]
+           ] )
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1982-08-24"^^xsd:date] ; # 
   fhir:qualification ( [
      fhir:identifier ( [
-       fhir:value [ fhir:v "tit" ]
+       fhir:value [ fhir:v "esp" ]
      ] ) ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "1" ]
-       ] )
+         fhir:system [ fhir:v "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Médico(a) Cirujano(a)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Cirujano Plastico" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2023-01-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2100-01-31"^^xsd:date ]
+     ]
+  ] [
+     fhir:identifier ( [
+       fhir:value [ fhir:v "subesp" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Médico(a) Cirujano(a)" ]
+       ] ) ;
+       fhir:text [ fhir:v "Cirujano Plastico en Oreja Derecha" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2024-01-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2100-01-31"^^xsd:date ]
      ]
   ] ) . # 
 

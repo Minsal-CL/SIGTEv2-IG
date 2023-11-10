@@ -10,7 +10,7 @@
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2023-10-18T13:50:25+00:00"/>
+  <date value="2023-11-10T20:52:19+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -49,7 +49,7 @@
   <dependsOn id="hl7_fhir_cl_clcore">
     <uri value="https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"/>
     <packageId value="hl7.fhir.cl.clcore"/>
-    <version value="1.8.4"/>
+    <version value="1.8.5"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -812,6 +812,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/VSSexoBiologico"/>
+      </reference>
+      <name value="Códigos para sexo biológico en Chile"/>
+      <description value="Códigos para sexo biológico en Chile según tabla 820."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSSexoBiologico"/>
+      </reference>
+      <name value="Códigos para Sexo de Nacimiento de Paciente"/>
+      <description value="Codigos definidos para el sexo de nacimiento de un paciente en Chile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VSDerivadoParaCodigo"/>
       </reference>
       <name value="Derivado Para"/>
@@ -1446,6 +1468,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Mencion"/>
+      </reference>
+      <name value="Mención profesional añadida l título profesional"/>
+      <description value="Mención profesional obtenida junto con el título, dato que se agrega en texto lible"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MessageHeader"/>
       </extension>
       <reference>
@@ -1530,6 +1563,28 @@
       </reference>
       <name value="MessageHeader LE"/>
       <description value="MessageHeaderLE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MINSALPrestadorAdministrativo"/>
+      </reference>
+      <name value="MINSAL Prestador Administrativo"/>
+      <description value="Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MINSALPrestadorProfesional"/>
+      </reference>
+      <name value="MINSAL Prestador Profesional"/>
+      <description value="Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1948,7 +2003,7 @@
       </reference>
       <name value="Practitioner Agendador Evento de Agendar"/>
       <description value="Practitioner Agendador Evento de Agendar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1959,7 +2014,7 @@
       </reference>
       <name value="Practitioner Atendedor Evento de Agendar"/>
       <description value="Practitioner Atendedor Evento de Agendar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1970,7 +2025,7 @@
       </reference>
       <name value="Practitioner Evento de Atender"/>
       <description value="Practitioner Evento de Atender"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1981,7 +2036,7 @@
       </reference>
       <name value="Practitioner Evento de Inicio"/>
       <description value="Practitioner Evento de Inicio"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1992,7 +2047,7 @@
       </reference>
       <name value="Practitioner Evento de Priorizar"/>
       <description value="Practitioner Evento de Priorizar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2003,7 +2058,7 @@
       </reference>
       <name value="Practitioner Evento Revisar"/>
       <description value="Practitioner Evento Revisar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2014,18 +2069,7 @@
       </reference>
       <name value="Practitioner Evento Terminar"/>
       <description value="Practitioner Evento Terminar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PractitionerLE"/>
-      </reference>
-      <name value="Practitioner LE"/>
-      <description value="Practitioner LE recurso que se utiliza para representar la información de identificación del profesional de la salud."/>
-      <exampleBoolean value="false"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2036,7 +2080,7 @@
       </reference>
       <name value="Practitioner Referenciador Evento de Referenciada"/>
       <description value="Practitioner Referenciador Evento de Referenciada"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2454,6 +2498,17 @@
       </reference>
       <name value="Sexo Biologico del paciente"/>
       <description value="Sexo Biologico del paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SexoNacimiento820"/>
+      </reference>
+      <name value="Sexo de Nacimiento 820"/>
+      <description value="Código que identifica el sexo de nacimiento de un paciente según la definición en la Norma Técnica"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

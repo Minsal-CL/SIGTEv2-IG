@@ -37,12 +37,15 @@
   ] ) ; # 
   fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:content [ fhir:v "complete"] ; # 
-  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
      fhir:code [ fhir:v "1" ] ;
-     fhir:display [ fhir:v "Pertinente Incompleta" ]
+     fhir:display [ fhir:v "Pertinente" ]
   ] [
      fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Incompleta" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
      fhir:display [ fhir:v "No Pertinente" ]
   ] ) . # 
 

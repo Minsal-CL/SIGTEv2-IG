@@ -16,7 +16,7 @@
   <name value="ServiceRequestLE"/>
   <title value="ServiceRequest LE"/>
   <status value="draft"/>
-  <date value="2023-10-18T13:50:25+00:00"/>
+  <date value="2023-11-10T20:52:19+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -622,7 +622,7 @@
       <path value="ServiceRequest.extension"/>
       <sliceName value="FundamentoPriorizacion"/>
       <short value="Fundamente de la Priorización"/>
-      <definition value="An Extension"/>
+      <definition value="Optional Extension Element - found in all resources."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -653,6 +653,14 @@
       </constraint>
       <mustSupport value="true"/>
       <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
     </element>
     <element id="ServiceRequest.extension:EstadoInterconsultaCodigo">
       <path value="ServiceRequest.extension"/>
