@@ -3,67 +3,96 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="EjemploPractitionerAtender"/>
   <meta>
-    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerAtender"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerAtender&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerLE.html">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), id: 2134 (use: SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSTituloProfesional.html">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadMed.html">EspecialidadMed</a>#2)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: subesp</p><p><b>code</b>: Alergia e Inmunología Clínica <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerAtender"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerAtender&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MINSALPrestadorProfesional.html">MINSAL Prestador Profesional</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1: 32.333.333-3 (use: OFFICIAL), 2: 123884 (use: OFFICIAL), 4: 123884 (use: SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Juan Perez </p><p><b>telecom</b>: <a href="tel:+56982460152">+56982460152</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1982-08-24</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Cirujano Plastico <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (CSTituloProf#1 &quot;Médico(a) Cirujano(a)&quot;)</span></p><p><b>period</b>: 2023-01-01 --&gt; 2100-01-31</p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: subesp</p><p><b>code</b>: Cirujano Plastico en Oreja Derecha <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (CSTituloProf#1 &quot;Médico(a) Cirujano(a)&quot;)</span></p><p><b>period</b>: 2024-01-01 --&gt; 2100-01-31</p></blockquote></div>
   </text>
+  <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"/>
+        <code value="152"/>
+        <display value="Chile"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
   <identifier>
-    <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador">
-      <valueString value="K"/>
-    </extension>
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
-        <code value="RUN"/>
+        <system value="https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"/>
+        <code value="1"/>
       </coding>
     </type>
-    <system value="http://registrocivil/RUN"/>
-    <value value="2134"/>
+    <system value="https://api.cl/system/run"/>
+    <value value="32.333.333-3"/>
+  </identifier>
+  <identifier>
+    <use value="official"/>
+    <type>
+      <coding>
+        <system value="https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"/>
+        <code value="2"/>
+      </coding>
+    </type>
+    <value value="123884"/>
   </identifier>
   <identifier>
     <use value="secondary"/>
-    <system value="http://rnpi.superdesalud.gob.cl"/>
-    <value value="2134"/>
-  </identifier>
-  <name>
-    <use value="official"/>
-    <family value="Perez">
-      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido">
-        <valueString value="Sierra"/>
-      </extension>
-    </family>
-    <given value="Luis"/>
-  </name>
-  <qualification>
-    <identifier>
-      <value value="tit"/>
-    </identifier>
-    <code>
+    <type>
       <coding>
-        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"/>
-        <code value="1"/>
+        <system value="https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"/>
+        <code value="4"/>
       </coding>
-    </code>
-  </qualification>
+    </type>
+    <value value="123884"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Perez"/>
+    <given value="Juan"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+56982460152"/>
+    <use value="home"/>
+    <rank value="1"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1982-08-24"/>
   <qualification>
     <identifier>
       <value value="esp"/>
     </identifier>
     <code>
       <coding>
-        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed"/>
-        <code value="2"/>
+        <system value="http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"/>
+        <code value="1"/>
+        <display value="Médico(a) Cirujano(a)"/>
       </coding>
+      <text value="Cirujano Plastico"/>
     </code>
+    <period>
+      <start value="2023-01-01"/>
+      <end value="2100-01-31"/>
+    </period>
   </qualification>
   <qualification>
     <identifier>
       <value value="subesp"/>
     </identifier>
     <code>
-      <text value="Alergia e Inmunología Clínica"/>
+      <coding>
+        <system value="http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"/>
+        <code value="1"/>
+        <display value="Médico(a) Cirujano(a)"/>
+      </coding>
+      <text value="Cirujano Plastico en Oreja Derecha"/>
     </code>
+    <period>
+      <start value="2024-01-01"/>
+      <end value="2100-01-31"/>
+    </period>
   </qualification>
 </Practitioner>

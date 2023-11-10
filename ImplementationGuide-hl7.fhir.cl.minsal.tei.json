@@ -10,7 +10,7 @@
   "name" : "TiemposDeEsperaInteroperable",
   "title" : "Tiempos de Espera Interoperable",
   "status" : "draft",
-  "date" : "2023-10-18T13:50:25+00:00",
+  "date" : "2023-11-10T20:52:19+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -54,7 +54,7 @@
     "id" : "hl7_fhir_cl_clcore",
     "uri" : "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore",
     "packageId" : "hl7.fhir.cl.clcore",
-    "version" : "1.8.4"
+    "version" : "1.8.5"
   }],
   "definition" : {
     "extension" : [{
@@ -1001,6 +1001,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSSexoBiologico"
+      },
+      "name" : "Códigos para sexo biológico en Chile",
+      "description" : "Códigos para sexo biológico en Chile según tabla 820.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSSexoBiologico"
+      },
+      "name" : "Códigos para Sexo de Nacimiento de Paciente",
+      "description" : "Codigos definidos para el sexo de nacimiento de un paciente en Chile",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSDerivadoParaCodigo"
       },
       "name" : "Derivado Para",
@@ -1693,6 +1717,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Mencion"
+      },
+      "name" : "Mención profesional añadida l título profesional",
+      "description" : "Mención profesional obtenida junto con el título, dato que se agrega en texto lible",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "MessageHeader"
       }],
       "reference" : {
@@ -1784,6 +1820,30 @@
       },
       "name" : "MessageHeader LE",
       "description" : "MessageHeaderLE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MINSALPrestadorAdministrativo"
+      },
+      "name" : "MINSAL Prestador Administrativo",
+      "description" : "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MINSALPrestadorProfesional"
+      },
+      "name" : "MINSAL Prestador Profesional",
+      "description" : "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud.",
       "exampleBoolean" : false
     },
     {
@@ -2240,7 +2300,7 @@
       },
       "name" : "Practitioner Agendador Evento de Agendar",
       "description" : "Practitioner Agendador Evento de Agendar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"
     },
     {
       "extension" : [{
@@ -2252,7 +2312,7 @@
       },
       "name" : "Practitioner Atendedor Evento de Agendar",
       "description" : "Practitioner Atendedor Evento de Agendar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"
     },
     {
       "extension" : [{
@@ -2264,7 +2324,7 @@
       },
       "name" : "Practitioner Evento de Atender",
       "description" : "Practitioner Evento de Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"
     },
     {
       "extension" : [{
@@ -2276,7 +2336,7 @@
       },
       "name" : "Practitioner Evento de Inicio",
       "description" : "Practitioner Evento de Inicio",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"
     },
     {
       "extension" : [{
@@ -2288,7 +2348,7 @@
       },
       "name" : "Practitioner Evento de Priorizar",
       "description" : "Practitioner Evento de Priorizar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"
     },
     {
       "extension" : [{
@@ -2300,7 +2360,7 @@
       },
       "name" : "Practitioner Evento Revisar",
       "description" : "Practitioner Evento Revisar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"
     },
     {
       "extension" : [{
@@ -2312,19 +2372,7 @@
       },
       "name" : "Practitioner Evento Terminar",
       "description" : "Practitioner Evento Terminar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PractitionerLE"
-      },
-      "name" : "Practitioner LE",
-      "description" : "Practitioner LE recurso que se utiliza para representar la información de identificación del profesional de la salud.",
-      "exampleBoolean" : false
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"
     },
     {
       "extension" : [{
@@ -2336,7 +2384,7 @@
       },
       "name" : "Practitioner Referenciador Evento de Referenciada",
       "description" : "Practitioner Referenciador Evento de Referenciada",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"
     },
     {
       "extension" : [{
@@ -2792,6 +2840,18 @@
       },
       "name" : "Sexo Biologico del paciente",
       "description" : "Sexo Biologico del paciente",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SexoNacimiento820"
+      },
+      "name" : "Sexo de Nacimiento 820",
+      "description" : "Código que identifica el sexo de nacimiento de un paciente según la definición en la Norma Técnica",
       "exampleBoolean" : false
     },
     {

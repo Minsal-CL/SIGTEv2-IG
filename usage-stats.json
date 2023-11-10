@@ -263,6 +263,13 @@
       ]
     },
     {
+      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Mencion",
+      "title": "Mención profesional añadida l título profesional",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoCierreInterconsulta",
       "title": "Motivo Cierre Interconsulta",
       "types": [
@@ -429,6 +436,13 @@
       ]
     },
     {
+      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SexoNacimiento820",
+      "title": "Sexo de Nacimiento 820",
+      "types": [
+        "code"
+      ]
+    },
+    {
       "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SituacionCalle",
       "title": "SituacionCalle",
       "types": [
@@ -547,6 +561,16 @@
         "title": "Encounter Inicio LE"
       }
     ],
+    "Practitioner": [
+      {
+        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo",
+        "title": "MINSAL Prestador Administrativo"
+      },
+      {
+        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional",
+        "title": "MINSAL Prestador Profesional"
+      }
+    ],
     "MessageHeader": [
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE",
@@ -581,12 +605,6 @@
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PacienteMinsalMPI",
         "title": "PacienteMPI"
-      }
-    ],
-    "Practitioner": [
-      {
-        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE",
-        "title": "Practitioner LE"
       }
     ],
     "PractitionerRole": [
@@ -686,27 +704,48 @@
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises": [
       "Bundle.entry.resource",
+      "Bundle.entry.resource.address.country",
       "Bundle.entry.resource.identifier.type",
       "Patient",
       "Patient.address.country",
-      "Patient.identifier.type"
+      "Patient.identifier.type",
+      "Practitioner",
+      "Practitioner.address.country"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl": [
-      "Patient.address.city"
+      "Bundle.entry.resource.address.city",
+      "Patient.address.city",
+      "Practitioner.address.city"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdContacto": [
       "Patient.contact"
     ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero": [
+      "Patient",
+      "Practitioner"
+    ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl": [
-      "Patient.address.district"
+      "Bundle.entry.resource.address.district",
+      "Patient.address.district",
+      "Practitioner.address.district"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl": [
-      "Patient.address.state"
+      "Bundle.entry.resource.address.state",
+      "Patient.address.state",
+      "Practitioner.address.state"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido": [
       "Bundle.entry.resource.name.family",
       "Patient.name.family",
       "Practitioner.name.family"
+    ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico": [
+      "Bundle.entry.resource",
+      "Patient",
+      "Practitioner"
+    ],
+    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoRegistral": [
+      "Patient"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado": [
       "Appointment",
@@ -715,10 +754,6 @@
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DestinoAtencionCodigo": [
       "Bundle.entry.resource",
       "ServiceRequest"
-    ],
-    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador": [
-      "Bundle.entry.resource.identifier",
-      "Practitioner.identifier"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EspecialidadMedicaDestinoCodigo": [
       "Bundle.entry.resource",
@@ -770,6 +805,9 @@
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MedioNotificacion": [
       "Appointment"
     ],
+    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Mencion": [
+      "Practitioner.qualification"
+    ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoCierreInterconsulta": [
       "Bundle.entry.resource",
       "ServiceRequest"
@@ -803,10 +841,6 @@
       "Patient"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Religion": [
-      "Bundle.entry.resource",
-      "Patient"
-    ],
-    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SexoBiologico": [
       "Bundle.entry.resource",
       "Patient"
     ],

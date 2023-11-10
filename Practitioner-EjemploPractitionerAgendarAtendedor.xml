@@ -3,67 +3,88 @@
 <Practitioner xmlns="http://hl7.org/fhir">
   <id value="EjemploPractitionerAgendarAtendedor"/>
   <meta>
-    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"/>
+    <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerAgendarAtendedor"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerAgendarAtendedor&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerLE.html">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134 (use: OFFICIAL), id: 2134 (use: SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSTituloProfesional.html">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadMed.html">EspecialidadMed</a>#2)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: subesp</p><p><b>code</b>: Alergia e Inmunología Clínica <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerAgendarAtendedor"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerAgendarAtendedor&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MINSALPrestadorAdministrativo.html">MINSAL Prestador Administrativo</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1: 32.333.333-3 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Juan Perez </p><p><b>telecom</b>: <a href="tel:+56982460152">+56982460152</a></p><p><b>address</b>: null null null </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1982-08-24</p></div>
   </text>
+  <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"/>
+        <code value="152"/>
+        <display value="Chile"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
   <identifier>
-    <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador">
-      <valueString value="K"/>
-    </extension>
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://terminology.cens.cl/CodeSystem/listaespera"/>
-        <code value="RUN"/>
-      </coding>
-    </type>
-    <system value="http://registrocivil/RUN"/>
-    <value value="2134"/>
-  </identifier>
-  <identifier>
-    <use value="secondary"/>
-    <system value="http://rnpi.superdesalud.gob.cl"/>
-    <value value="2134"/>
-  </identifier>
-  <name>
-    <use value="official"/>
-    <family value="Perez">
-      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido">
-        <valueString value="Sierra"/>
-      </extension>
-    </family>
-    <given value="Luis"/>
-  </name>
-  <qualification>
-    <identifier>
-      <value value="tit"/>
-    </identifier>
-    <code>
-      <coding>
-        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"/>
+        <system value="https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"/>
         <code value="1"/>
       </coding>
-    </code>
-  </qualification>
-  <qualification>
-    <identifier>
-      <value value="esp"/>
-    </identifier>
-    <code>
-      <coding>
-        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed"/>
-        <code value="2"/>
-      </coding>
-    </code>
-  </qualification>
-  <qualification>
-    <identifier>
-      <value value="subesp"/>
-    </identifier>
-    <code>
-      <text value="Alergia e Inmunología Clínica"/>
-    </code>
-  </qualification>
+    </type>
+    <system value="https://api.cl/system/run"/>
+    <value value="32.333.333-3"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <family value="Perez"/>
+    <given value="Juan"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+56982460152"/>
+    <use value="home"/>
+    <rank value="1"/>
+  </telecom>
+  <address>
+    <city>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"/>
+            <code value="05602"/>
+            <display value="Algarrobo"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"/>
+            <code value="056"/>
+            <display value="San Antonio"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </district>
+    <state>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"/>
+            <code value="05"/>
+            <display value="Valparaíso"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </state>
+    <country>
+      <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
+        <valueCodeableConcept>
+          <coding>
+            <system value="https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"/>
+            <code value="152"/>
+            <display value="Chile"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </country>
+  </address>
+  <gender value="male"/>
+  <birthDate value="1982-08-24"/>
 </Practitioner>

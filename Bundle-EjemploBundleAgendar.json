@@ -183,73 +183,96 @@
       "resourceType" : "Practitioner",
       "id" : "EjemploPractitionerAgendarAtendedor",
       "meta" : {
-        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"]
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"]
       },
       "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAgendarAtendedor\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAgendarAtendedor&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0tit</p><p><b>code</b>: MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0esp</p><p><b>code</b>: ANESTESIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#2)</span></p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0subesp</p><p><b>code</b>: Alergia e Inmunología Clínica <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p></blockquote></div>"
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAgendarAtendedor\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAgendarAtendedor&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MINSALPrestadorAdministrativo.html\">MINSAL Prestador Administrativo</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html\">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1: 32.333.333-3\u00a0(use:\u00a0OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Juan Perez </p><p><b>telecom</b>: <a href=\"tel:+56982460152\">+56982460152</a></p><p><b>address</b>: null null null </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1982-08-24</p></div>"
       },
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+            "code" : "152",
+            "display" : "Chile"
+          }]
+        }
+      }],
       "identifier" : [{
-        "extension" : [{
-          "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador",
-          "valueString" : "K"
-        }],
         "use" : "official",
         "type" : {
           "coding" : [{
-            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
-            "code" : "RUN"
-          }]
-        },
-        "system" : "http://registrocivil/RUN",
-        "value" : "2134"
-      },
-      {
-        "use" : "secondary",
-        "system" : "http://rnpi.superdesalud.gob.cl",
-        "value" : "2134"
-      }],
-      "name" : [{
-        "use" : "official",
-        "family" : "Perez",
-        "_family" : {
-          "extension" : [{
-            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-            "valueString" : "Sierra"
-          }]
-        },
-        "given" : ["Luis"]
-      }],
-      "qualification" : [{
-        "identifier" : [{
-          "value" : "tit"
-        }],
-        "code" : {
-          "coding" : [{
-            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS",
             "code" : "1"
           }]
-        }
-      },
-      {
-        "identifier" : [{
-          "value" : "esp"
-        }],
-        "code" : {
-          "coding" : [{
-            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-            "code" : "2"
+        },
+        "system" : "https://api.cl/system/run",
+        "value" : "32.333.333-3"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Perez",
+        "given" : ["Juan"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+56982460152",
+        "use" : "home",
+        "rank" : 1
+      }],
+      "address" : [{
+        "_city" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+                "code" : "05602",
+                "display" : "Algarrobo"
+              }]
+            }
+          }]
+        },
+        "_district" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
+                "code" : "056",
+                "display" : "San Antonio"
+              }]
+            }
+          }]
+        },
+        "_state" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+                "code" : "05",
+                "display" : "Valparaíso"
+              }]
+            }
+          }]
+        },
+        "_country" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                "code" : "152",
+                "display" : "Chile"
+              }]
+            }
           }]
         }
-      },
-      {
-        "identifier" : [{
-          "value" : "subesp"
-        }],
-        "code" : {
-          "text" : "Alergia e Inmunología Clínica"
-        }
-      }]
+      }],
+      "gender" : "male",
+      "birthDate" : "1982-08-24"
     }
   },
   {
@@ -258,54 +281,96 @@
       "resourceType" : "Practitioner",
       "id" : "EjemploPractitionerAgendarAgendador",
       "meta" : {
-        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"]
+        "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"]
       },
       "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAgendarAgendador\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAgendarAgendador&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>id:\u00a0tit</td><td>MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></td></tr></table></div>"
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerAgendarAgendador\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerAgendarAgendador&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MINSALPrestadorAdministrativo.html\">MINSAL Prestador Administrativo</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html\">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1: 32.333.333-3\u00a0(use:\u00a0OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Juan Perez </p><p><b>telecom</b>: <a href=\"tel:+56982460152\">+56982460152</a></p><p><b>address</b>: null null null </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1982-08-24</p></div>"
       },
+      "extension" : [{
+        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+            "code" : "152",
+            "display" : "Chile"
+          }]
+        }
+      }],
       "identifier" : [{
-        "extension" : [{
-          "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador",
-          "valueString" : "K"
-        }],
         "use" : "official",
         "type" : {
           "coding" : [{
-            "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
-            "code" : "RUN"
-          }]
-        },
-        "system" : "http://registrocivil/RUN",
-        "value" : "2134"
-      },
-      {
-        "use" : "secondary",
-        "system" : "http://rnpi.superdesalud.gob.cl",
-        "value" : "2134"
-      }],
-      "name" : [{
-        "use" : "official",
-        "family" : "Perez",
-        "_family" : {
-          "extension" : [{
-            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-            "valueString" : "Sierra"
-          }]
-        },
-        "given" : ["Luis"]
-      }],
-      "qualification" : [{
-        "identifier" : [{
-          "value" : "tit"
-        }],
-        "code" : {
-          "coding" : [{
-            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
+            "system" : "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS",
             "code" : "1"
           }]
+        },
+        "system" : "https://api.cl/system/run",
+        "value" : "32.333.333-3"
+      }],
+      "active" : true,
+      "name" : [{
+        "family" : "Perez",
+        "given" : ["Juan"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+56982460152",
+        "use" : "home",
+        "rank" : 1
+      }],
+      "address" : [{
+        "_city" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL",
+                "code" : "05602",
+                "display" : "Algarrobo"
+              }]
+            }
+          }]
+        },
+        "_district" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL",
+                "code" : "056",
+                "display" : "San Antonio"
+              }]
+            }
+          }]
+        },
+        "_state" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL",
+                "code" : "05",
+                "display" : "Valparaíso"
+              }]
+            }
+          }]
+        },
+        "_country" : {
+          "extension" : [{
+            "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+                "code" : "152",
+                "display" : "Chile"
+              }]
+            }
+          }]
         }
-      }]
+      }],
+      "gender" : "male",
+      "birthDate" : "1982-08-24"
     }
   },
   {

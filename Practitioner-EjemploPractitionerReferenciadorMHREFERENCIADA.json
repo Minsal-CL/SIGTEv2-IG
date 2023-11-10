@@ -2,52 +2,98 @@
   "resourceType" : "Practitioner",
   "id" : "EjemploPractitionerReferenciadorMHREFERENCIADA",
   "meta" : {
-    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"]
+    "profile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional"]
   },
   "text" : {
-    "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerLE.html\">Practitioner LE</a></p></div><p><b>identifier</b>: RUN: 2134\u00a0(use:\u00a0OFFICIAL), id:\u00a02134\u00a0(use:\u00a0SECONDARY)</p><p><b>name</b>: Luis Perez (OFFICIAL)</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>id:\u00a0tit</td><td>MÉDICO CIRUJANO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1)</span></td></tr></table></div>"
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MINSALPrestadorProfesional.html\">MINSAL Prestador Profesional</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html\">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1: 32.333.333-3\u00a0(use:\u00a0OFFICIAL), 2: 123884\u00a0(use:\u00a0OFFICIAL), 4: 123884\u00a0(use:\u00a0SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Juan Perez </p><p><b>telecom</b>: <a href=\"tel:+56982460152\">+56982460152</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1982-08-24</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0esp</p><p><b>code</b>: Cirujano Plastico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CSTituloProf#1 &quot;Médico(a) Cirujano(a)&quot;)</span></p><p><b>period</b>: 2023-01-01 --&gt; 2100-01-31</p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id:\u00a0subesp</p><p><b>code</b>: Cirujano Plastico en Oreja Derecha <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CSTituloProf#1 &quot;Médico(a) Cirujano(a)&quot;)</span></p><p><b>period</b>: 2024-01-01 --&gt; 2100-01-31</p></blockquote></div>"
   },
+  "extension" : [{
+    "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
+        "code" : "152",
+        "display" : "Chile"
+      }]
+    }
+  }],
   "identifier" : [{
-    "extension" : [{
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador",
-      "valueString" : "K"
-    }],
     "use" : "official",
     "type" : {
       "coding" : [{
-        "system" : "http://terminology.cens.cl/CodeSystem/listaespera",
-        "code" : "RUN"
+        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS",
+        "code" : "1"
       }]
     },
-    "system" : "http://registrocivil/RUN",
-    "value" : "2134"
+    "system" : "https://api.cl/system/run",
+    "value" : "32.333.333-3"
+  },
+  {
+    "use" : "official",
+    "type" : {
+      "coding" : [{
+        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS",
+        "code" : "2"
+      }]
+    },
+    "value" : "123884"
   },
   {
     "use" : "secondary",
-    "system" : "http://rnpi.superdesalud.gob.cl",
-    "value" : "2134"
-  }],
-  "name" : [{
-    "use" : "official",
-    "family" : "Perez",
-    "_family" : {
-      "extension" : [{
-        "url" : "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-        "valueString" : "Sierra"
+    "type" : {
+      "coding" : [{
+        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS",
+        "code" : "4"
       }]
     },
-    "given" : ["Luis"]
+    "value" : "123884"
   }],
+  "active" : true,
+  "name" : [{
+    "family" : "Perez",
+    "given" : ["Juan"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+56982460152",
+    "use" : "home",
+    "rank" : 1
+  }],
+  "gender" : "female",
+  "birthDate" : "1982-08-24",
   "qualification" : [{
     "identifier" : [{
-      "value" : "tit"
+      "value" : "esp"
     }],
     "code" : {
       "coding" : [{
-        "system" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
-        "code" : "1"
-      }]
+        "system" : "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf",
+        "code" : "1",
+        "display" : "Médico(a) Cirujano(a)"
+      }],
+      "text" : "Cirujano Plastico"
+    },
+    "period" : {
+      "start" : "2023-01-01",
+      "end" : "2100-01-31"
+    }
+  },
+  {
+    "identifier" : [{
+      "value" : "subesp"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf",
+        "code" : "1",
+        "display" : "Médico(a) Cirujano(a)"
+      }],
+      "text" : "Cirujano Plastico en Oreja Derecha"
+    },
+    "period" : {
+      "start" : "2024-01-01",
+      "end" : "2100-01-31"
     }
   }]
 }

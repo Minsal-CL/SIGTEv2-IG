@@ -18,7 +18,7 @@
   "name" : "PractitionerRoleLE",
   "title" : "PractitionerRole LE",
   "status" : "draft",
-  "date" : "2023-10-18T13:50:25+00:00",
+  "date" : "2023-11-10T20:52:19+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -548,7 +548,8 @@
       },
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"]
+        "targetProfile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional",
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"]
       }],
       "constraint" : [{
         "key" : "ele-1",
@@ -1782,7 +1783,8 @@
       "path" : "PractitionerRole.practitioner",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerLE"]
+        "targetProfile" : ["https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorProfesional",
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"]
       }],
       "mustSupport" : true
     },
