@@ -12,7 +12,7 @@ Description: "PractitionerRole LE recurso que se utiliza para representar la inf
 
 
 * practitioner 0..1 MS
-* practitioner only Reference(PractitionerLE)
+* practitioner only Reference(MINSALPrestadorProfesional or MINSALPrestadorAdministrativo) 
 
 * code 1..1 MS
 * code.coding.code 1..1 MS

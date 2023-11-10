@@ -63,7 +63,7 @@
   
   Acá se pueden verificar si existe alguna causa de salida de Lista de Espera,
   por ejemplo, en caso de defunción, GES, no beneficiario entre otras. (Según
-  Norma Técnica N°118)
+  [Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view))
 
 #### Agendar
   Un funcionario administrativo contactará al usuario para agendar la cita con el
@@ -429,4 +429,4 @@ razón y solicitante. el box
 
 
 ### Diccionario de datos 
-[Ver Diccionario de Datos aquí](https://docs.google.com/spreadsheets/d/1KyaOXS0A4ivNrUWCAaJauQdoQ7AnQJeYk7Sk3QgIVUY/edit#gid=0)
+[Ver Diccionario de Datos aquí](https://docs.google.com/spreadsheets/d/16DM1VcpJS4nZdU8J0YIZP3kJ7t5CUbXN/edit#gid=98949620)

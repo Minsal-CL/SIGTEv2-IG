@@ -26,6 +26,6 @@ Description: "Bundle Priorizar LE recurso utilizado para transportar todos los d
 * entry[messageheader].resource only MessageHeaderLE
 * entry[servicerequest].resource only ServiceRequestLE
 * entry[organization].resource only OrganizationLE
-* entry[practitioner].resource only PractitionerLE
+* entry[practitioner].resource only MINSALPrestadorProfesional
 * entry[practitionerRole].resource only PractitionerRoleLE
 * entry[patient].resource only PacienteMinsalMPI

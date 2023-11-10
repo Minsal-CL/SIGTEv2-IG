@@ -25,5 +25,5 @@ Description: "Bundle Terminar LE recurso utilizado para transportar todos los da
 * entry[messageheader].resource only MessageHeaderLE
 * entry[servicerequest].resource only ServiceRequestLE
 * entry[organization].resource only OrganizationLE
-* entry[practitioner].resource only PractitionerLE
+* entry[practitioner].resource only MINSALPrestadorAdministrativo
 * entry[practitionerRole].resource only PractitionerRoleLE

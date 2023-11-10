@@ -71,6 +71,41 @@
 // * #5 "Otro documento identificador"
 // * #6 "Identificador FONASA"
 
+CodeSystem:  CSSexoBiologico
+Id: CSSexoBiologico
+Title: "Códigos para Sexo de Nacimiento de Paciente"
+Description: "Codigos definidos para el sexo de nacimiento de un paciente en Chile"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+  
+
+* #1 "Hombre" "Persona que al nacer se observa anatómicamente que tiene a nivel genital pene, escroto y/o testículos."
+* #2 "Mujer" "Persona que al nacerse se observa anatómicamente que tiene a nivel genital vulva u orificio vaginal."
+* #3 "Intersexual" "Persona que al nacer se observa variaciones anatómicas en los órganos genitales del cuerpo que no permite clasificar de forma dicotómica en hombre o mujer. No constituye un tercer sexo."
+* #99 "Desconocido" "No es posible determinarlo al momento de la atención de salud." 
+
+ValueSet: VSSexoBiologico
+Id: VSSexoBiologico
+Title: "Códigos para sexo biológico en Chile"
+Description: "Códigos para sexo biológico en Chile según tabla 820."
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSSexoBiologico
+
+
 ValueSet: VSIdentidaddeGenero
 Id: VSIdentidaddeGenero
 Title: "Identidad de Genero"
@@ -441,8 +476,9 @@ Description: "Pertinencia Interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Pertinente Incompleta"
-* #2 "No Pertinente"
+* #1 "Pertinente" 
+* #2 "Incompleta"
+* #3 "No Pertinente"
 
 ValueSet: VSModalidadAtencionCodigo
 Id: VSModalidadAtencionCodigo
