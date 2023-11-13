@@ -78,20 +78,20 @@ Description: "Bundle Evento de Referencia"
 * entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/referencia"
 * entry[servicerequest].resource = EjemploServiceRequestReferenciada
 
-* entry[practitionerRole][0].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador"
-* entry[practitionerRole][0].resource = EjemploPractitionerRoleAgendadorSRREFERENCIADA
+* entry[practitionerRole][0].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador"
+* entry[practitionerRole][0].resource = EjemploPractitionerRoleReferenciadorMHREFERENCIADA
 
 * entry[practitionerRole][1].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor"
-* entry[practitionerRole][1].resource = EjemploPractitionerRoleReferenciadorMHREFERENCIADA
+* entry[practitionerRole][1].resource = EjemploPractitionerRoleAtendedorSRREFERENCIADA
 
-* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/referencia"
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador"
 * entry[practitioner].resource = EjemploPractitionerReferenciadorMHREFERENCIADA
 
-* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/referenciaAgendador"
-* entry[organization][=].resource = EjemploOrganizationAgendadorSRREFERENCIADA
+* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/referenciaReferenciador"
+* entry[organization][=].resource = EjemploOrganizationReferenciadorMHREFERENCIADA
 
 * entry[organization][1].fullUrl = "http://acme.com/ehr/fhir/Organization/referenciaAtendedor"
-* entry[organization][1].resource = EjemploOrganizationReferenciadorMHREFERENCIADA
+* entry[organization][1].resource = EjemploOrganizationAtender
 /*FIN BUNDLE REFERENCIA*/
 
 /*Budle Terminar*/

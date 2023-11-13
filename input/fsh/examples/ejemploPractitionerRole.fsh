@@ -16,20 +16,18 @@ Usage: #example
 Title: "PractitionerRole Referenciador Evento de Referenciada"
 Description: "PractitionerRole Referenciador Evento de Referenciada"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/referencia)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAgendador)
+* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador)
+* organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaReferenciador)
 * code.coding.code = #referenciador
 * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
-/*FIN PARA BUNDLE REFERENCIA*/
 
-/*EJEMPLOS PARA BUNDLE REFERENCIA*/
-Instance: EjemploPractitionerRoleAgendadorSRREFERENCIADA
+Instance: EjemploPractitionerRoleAtendedorSRREFERENCIADA
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Agendador Evento de Referenciada"
-Description: "PractitionerRole Agendador Evento de Referenciada"
+Title: "PractitionerRole Atendedor Evento de Referenciada"
+Description: "PractitionerRole Atendedor Evento de Referenciada"
 
-* organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAtendedor)
+* organization = Reference(http://acme.csom/ehr/fhir/Organization/referenciaAtendedor)
 * code.coding.code = #atendedor
 * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE REFERENCIA*/
@@ -46,8 +44,6 @@ Description: "PractitionerRole Evento de Terminar"
 * code = #terminador
 * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE TERMINAR*/
-
-
 
 /*EJEMPLOS PARA BUNDLE REVISAR*/
 Instance: EjemploPractitionerRoleRevisar

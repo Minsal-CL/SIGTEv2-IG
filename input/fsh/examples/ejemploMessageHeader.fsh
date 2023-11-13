@@ -25,7 +25,7 @@ Description: "MesaggeHeader Evento de Referencia"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 * focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/referencia)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador)
+* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador)
 /*FIN PARA BUNDLE REFERENCIADA*/
 
 /*EJEMPLOS PARA BUNDLE Terminar*/
