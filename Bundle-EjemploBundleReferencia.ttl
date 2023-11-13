@@ -25,17 +25,17 @@
      fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/ServiceRequest/referencia"^^xsd:anyURI ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/ServiceRequest/referencia> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador> )
   ] [
      fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor"^^xsd:anyURI ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Practitioner/referencia"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/Practitioner/referencia> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Organization/referenciaAgendador"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/Organization/referenciaAgendador> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Organization/referenciaReferenciador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/Organization/referenciaReferenciador> )
   ] [
      fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Organization/referenciaAtendedor"^^xsd:anyURI ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/Organization/referenciaAtendedor> )
@@ -52,7 +52,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderReferencia\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderReferencia&quot; Updated &quot;2023-02-13 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Referenciar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code referenciar = 'Referenciar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleAgendadorSRREFERENCIADA\">See above (http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestReferenciada\">See above (http://acme.com/ehr/fhir/ServiceRequest/referencia)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderReferencia\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderReferencia&quot; Updated &quot;2023-02-13 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Referenciar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code referenciar = 'Referenciar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestReferenciada\">See above (http://acme.com/ehr/fhir/ServiceRequest/referencia)</a></p></div>"
   ] ; # 
   fhir:event [
      a fhir:Coding ;
@@ -60,8 +60,8 @@
      fhir:code [ fhir:v "referenciar" ]
   ] ; # 
   fhir:author [
-     fhir:link <http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador" ]
+     fhir:link <http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador" ]
   ] ; # 
   fhir:source [
      fhir:software [ fhir:v "SolucionInformatica" ] ;
@@ -82,7 +82,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestReferenciada\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestReferenciada&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Especialidad Médica Destino Código</b>: CARDIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#3)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: CIRUGÍA GENERAL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#4)</span></p><p><b>Estado Interconsulta Codigo</b>: A la espera de revisión <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEstadoInterconsulta.html\">Estado Interconsulta</a>#2)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>code</b>: 758598006 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#758598006)</span></p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>performer</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor)</a></p><p><b>locationCode</b>: Motivo derivación <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSDestinoReferenciaCodigo.html\">Destino Referencia Codigo</a>#1)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestReferenciada\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestReferenciada&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Especialidad Médica Destino Código</b>: CARDIOLOGÍA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#3)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: CIRUGÍA GENERAL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEspecialidadMed.html\">EspecialidadMed</a>#4)</span></p><p><b>Estado Interconsulta Codigo</b>: A la espera de revisión <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEstadoInterconsulta.html\">Estado Interconsulta</a>#2)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>code</b>: 758598006 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#758598006)</span></p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>performer</b>: <a href=\"#PractitionerRole_EjemploPractitionerRoleAtendedorSRREFERENCIADA\">See above (http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor)</a></p><p><b>locationCode</b>: Motivo derivación <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSDestinoReferenciaCodigo.html\">Destino Referencia Codigo</a>#1)</span></p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EspecialidadMedicaDestinoCodigo"^^xsd:anyURI ] ;
@@ -146,30 +146,7 @@
      fhir:text [ fhir:v "Motivo derivación" ]
   ] ) . # 
 
-<http://acme.com/ehr/fhir/PractitionerRole/referenciaAgendador> a fhir:PractitionerRole ;
-  fhir:id [ fhir:v "EjemploPractitionerRoleAgendadorSRREFERENCIADA"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
-       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAgendadorSRREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAgendadorSRREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/referenciaAtendedor)</a></p><p><b>code</b>: Atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#atendedor)</span></p></div>"
-  ] ; # 
-  fhir:organization [
-     fhir:link <http://acme.com/ehr/fhir/Organization/referenciaAtendedor> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Organization/referenciaAtendedor" ]
-  ] ; # 
-  fhir:code ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "atendedor" ]
-     ] )
-  ] ) . # 
-
-<http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor> a fhir:PractitionerRole ;
+<http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador> a fhir:PractitionerRole ;
   fhir:id [ fhir:v "EjemploPractitionerRoleReferenciadorMHREFERENCIADA"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -179,15 +156,15 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Practitioner/referencia)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationAgendadorSRREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/referenciaAgendador)</a></p><p><b>code</b>: Referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#referenciador)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationReferenciadorMHREFERENCIADA\">See above (http://acme.com/ehr/fhir/Organization/referenciaReferenciador)</a></p><p><b>code</b>: Referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#referenciador)</span></p></div>"
   ] ; # 
   fhir:practitioner [
-     fhir:link <http://acme.com/ehr/fhir/Practitioner/referencia> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Practitioner/referencia" ]
+     fhir:link <http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador" ]
   ] ; # 
   fhir:organization [
-     fhir:link <http://acme.com/ehr/fhir/Organization/referenciaAgendador> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Organization/referenciaAgendador" ]
+     fhir:link <http://acme.com/ehr/fhir/Organization/referenciaReferenciador> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Organization/referenciaReferenciador" ]
   ] ; # 
   fhir:code ( [
      fhir:coding ( [
@@ -196,7 +173,30 @@
      ] )
   ] ) . # 
 
-<http://acme.com/ehr/fhir/Practitioner/referencia> a fhir:Practitioner ;
+<http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "EjemploPractitionerRoleAtendedorSRREFERENCIADA"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleAtendedorSRREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleAtendedorSRREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>organization</b>: <a href=\"http://acme.csom/ehr/fhir/Organization/referenciaAtendedor\">http://acme.csom/ehr/fhir/Organization/referenciaAtendedor</a></p><p><b>code</b>: Atendedor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#atendedor)</span></p></div>"
+  ] ; # 
+  fhir:organization [
+     fhir:link <http://acme.csom/ehr/fhir/Organization/referenciaAtendedor> ;
+     fhir:reference [ fhir:v "http://acme.csom/ehr/fhir/Organization/referenciaAtendedor" ]
+  ] ; # 
+  fhir:code ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "atendedor" ]
+     ] )
+  ] ) . # 
+
+<http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador> a fhir:Practitioner ;
   fhir:id [ fhir:v "EjemploPractitionerReferenciadorMHREFERENCIADA"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -295,29 +295,7 @@
      ]
   ] ) . # 
 
-<http://acme.com/ehr/fhir/Organization/referenciaAgendador> a fhir:Organization ;
-  fhir:id [ fhir:v "EjemploOrganizationAgendadorSRREFERENCIADA"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
-       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE>
-     ] )
-  ] ; # 
-  fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationAgendadorSRREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationAgendadorSRREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: Placer Identifier: 1</p></div>"
-  ] ; # 
-  fhir:identifier ( [
-     fhir:type [
-       fhir:coding ( [
-         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
-         fhir:code [ fhir:v "PLAC" ]
-       ] )
-     ] ;
-     fhir:value [ fhir:v "1" ]
-  ] ) . # 
-
-<http://acme.com/ehr/fhir/Organization/referenciaAtendedor> a fhir:Organization ;
+<http://acme.com/ehr/fhir/Organization/referenciaReferenciador> a fhir:Organization ;
   fhir:id [ fhir:v "EjemploOrganizationReferenciadorMHREFERENCIADA"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -336,6 +314,22 @@
          fhir:code [ fhir:v "PLAC" ]
        ] )
      ] ;
+     fhir:value [ fhir:v "1" ]
+  ] ) . # 
+
+<http://acme.com/ehr/fhir/Organization/referenciaAtendedor> a fhir:Organization ;
+  fhir:id [ fhir:v "EjemploOrganizationAtender"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"^^xsd:anyURI ;
+       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Organization</b><a name=\"EjemploOrganizationAtender\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Organization &quot;EjemploOrganizationAtender&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OrganizationLE.html\">Organization LE</a></p></div><p><b>identifier</b>: id: 1</p></div>"
+  ] ; # 
+  fhir:identifier ( [
      fhir:value [ fhir:v "1" ]
   ] ) . # 
 
