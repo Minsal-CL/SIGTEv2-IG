@@ -17,13 +17,15 @@ Description: "Bundle Agendar LE recurso utilizado para transportar todos los dat
 * entry 8..8 MS
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
-        and practitioner 2..2
+        and practitionerAdministrativo 1..1
+        and practitionerProfesional 1..1
         and practitionerRole 2..2
         and organization 1..1
         and appointment 1..1
 * entry[messageheader].resource only MessageHeaderLE
 * entry[servicerequest].resource only ServiceRequestLE
 * entry[organization].resource only OrganizationLE
-* entry[practitioner].resource only MINSALPrestadorAdministrativo
+* entry[practitionerProfesional].resource only MINSALPrestadorProfesional
+* entry[practitionerAdministrativo].resource only MINSALPrestadorAdministrativo
 * entry[practitionerRole].resource only PractitionerRoleLE
 * entry[appointment].resource only AppointmentAgendarLE

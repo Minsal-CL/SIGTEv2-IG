@@ -1,6 +1,6 @@
-/*EJEMPLOS PARA BUNDLE Agendar*/
+/*EJEMPLOS PARA BUNDLE AGENDAR*/
 Instance: EjemploPractitionerAgendarAtendedor
-InstanceOf: MINSALPrestadorAdministrativo
+InstanceOf: MINSALPrestadorProfesional
 Usage: #example
 Title: "Practitioner Atendedor Evento de Agendar"
 Description: "Practitioner Atendedor Evento de Agendar"
@@ -18,6 +18,11 @@ Description: "Practitioner Atendedor Evento de Agendar"
 * identifier[run].type.coding.code = #1
 * identifier[run].system = "https://api.cl/system/run"
 * identifier[run].value = "32.333.333-3"
+
+* identifier[rnpi].use = #official
+* identifier[rnpi].type.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"
+* identifier[rnpi].type.coding.code = #2
+* identifier[rnpi].value = "123884"
 
 * active = true
 * birthDate = "1982-08-24"
@@ -48,7 +53,23 @@ Description: "Practitioner Atendedor Evento de Agendar"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
-/*FIN PARA BUNDLE REVISAR*/
+
+* qualification[Esp].identifier.value = "esp"
+* qualification[Esp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[Esp].code.coding.code = #1
+* qualification[Esp].code.coding.display = "Médico(a) Cirujano(a)"
+* qualification[Esp].code.text = "Cirujano Plastico"
+* qualification[Esp].period.start = "2023-01-01"
+* qualification[Esp].period.end = "2100-01-31"
+
+* qualification[SubEsp].identifier.value = "subesp"
+* qualification[SubEsp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[SubEsp].code.coding.code = #1
+* qualification[SubEsp].code.coding.display = "Médico(a) Cirujano(a)"
+* qualification[SubEsp].code.text = "Cirujano Plastico en Oreja Derecha"
+* qualification[SubEsp].period.start = "2024-01-01"
+* qualification[SubEsp].period.end = "2100-01-31"
+/*FIN PARA BUNDLE AGENDAR*/
 
 /*EJEMPLOS PARA BUNDLE Agendar*/
 Instance: EjemploPractitionerAgendarAgendador
