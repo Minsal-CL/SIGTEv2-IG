@@ -24,14 +24,14 @@
      fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/ServiceRequest/priorizar"^^xsd:anyURI ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/ServiceRequest/priorizar> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/priorizar"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/priorizar> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/priorizarPriorizador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/priorizarPriorizador> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Organization/priorizar"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/Organization/priorizar> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Organization/priorizarPriorizador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/Organization/priorizarPriorizador> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Practitioner/priorizar"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/Practitioner/priorizar> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Practitioner/priorizarPriorizador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/Practitioner/priorizarPriorizador> )
   ] [
      fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient"^^xsd:anyURI ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/Patient/EjemploPatient> )
@@ -48,7 +48,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderPriorizar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Priorizar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code priorizar = 'Priorizar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRolePriorizar\">See above (http://acme.com/ehr/fhir/PractitionerRole/priorizar)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestPriorizar\">See above (http://acme.com/ehr/fhir/ServiceRequest/priorizar)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderPriorizar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Priorizar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code priorizar = 'Priorizar', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/priorizar\">http://acme.com/ehr/fhir/PractitionerRole/priorizar</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequestPriorizar\">See above (http://acme.com/ehr/fhir/ServiceRequest/priorizar)</a></p></div>"
   ] ; # 
   fhir:event [
      a fhir:Coding ;
@@ -108,7 +108,7 @@
   ] ; # 
   fhir:authoredOn [ fhir:v "2022-01-20T13:50:20Z"^^xsd:dateTime] . # 
 
-<http://acme.com/ehr/fhir/PractitionerRole/priorizar> a fhir:PractitionerRole ;
+<http://acme.com/ehr/fhir/PractitionerRole/priorizarPriorizador> a fhir:PractitionerRole ;
   fhir:id [ fhir:v "EjemploPractitionerRolePriorizar"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -118,15 +118,15 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRolePriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRolePriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerPriorizar\">See above (http://acme.com/ehr/fhir/Practitioner/priorizar)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationPriorizar\">See above (http://acme.com/ehr/fhir/Organization/priorizar)</a></p><p><b>code</b>: Priorizador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#priorizador)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRolePriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRolePriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitionerPriorizar\">See above (http://acme.com/ehr/fhir/Practitioner/priorizarPriorizador)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationPriorizar\">See above (http://acme.com/ehr/fhir/Organization/priorizarPriorizador)</a></p><p><b>code</b>: Priorizador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#priorizador)</span></p></div>"
   ] ; # 
   fhir:practitioner [
-     fhir:link <http://acme.com/ehr/fhir/Practitioner/priorizar> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Practitioner/priorizar" ]
+     fhir:link <http://acme.com/ehr/fhir/Practitioner/priorizarPriorizador> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Practitioner/priorizarPriorizador" ]
   ] ; # 
   fhir:organization [
-     fhir:link <http://acme.com/ehr/fhir/Organization/priorizar> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Organization/priorizar" ]
+     fhir:link <http://acme.com/ehr/fhir/Organization/priorizarPriorizador> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Organization/priorizarPriorizador" ]
   ] ; # 
   fhir:code ( [
      fhir:coding ( [
@@ -135,7 +135,7 @@
      ] )
   ] ) . # 
 
-<http://acme.com/ehr/fhir/Organization/priorizar> a fhir:Organization ;
+<http://acme.com/ehr/fhir/Organization/priorizarPriorizador> a fhir:Organization ;
   fhir:id [ fhir:v "EjemploOrganizationPriorizar"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -151,7 +151,7 @@
      fhir:value [ fhir:v "1" ]
   ] ) . # 
 
-<http://acme.com/ehr/fhir/Practitioner/priorizar> a fhir:Practitioner ;
+<http://acme.com/ehr/fhir/Practitioner/priorizarPriorizador> a fhir:Practitioner ;
   fhir:id [ fhir:v "EjemploPractitionerPriorizar"] ; # 
   fhir:meta [
      fhir:profile ( [
