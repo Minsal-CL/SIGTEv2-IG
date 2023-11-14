@@ -50,14 +50,14 @@
      fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/AllergyIntolerance/all1"^^xsd:anyURI ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/AllergyIntolerance/all1> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/praR1"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/praR1> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/iniciarIniciador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/iniciarIniciador> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Practitioner/pra1"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/Practitioner/pra1> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Practitioner/iniciarIniciador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/Practitioner/iniciarIniciador> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Organization/org1"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/Organization/org1> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/Organization/iniciarIniciador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/Organization/iniciarIniciador> )
   ] [
      fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/DocumentReference/doc1"^^xsd:anyURI ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/DocumentReference/doc1> )
@@ -80,7 +80,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeader\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeader&quot; Updated &quot;2023-01-20 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Iniciar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code iniciar = 'Iniciar', stated as 'null')</p><p><b>author</b>: <a href=\"#PractitionerRole_EjemploPractitionerRole\">See above (http://acme.com/ehr/fhir/PractitionerRole/praR1)</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequest\">See above (http://acme.com/ehr/fhir/ServiceRequest/serv1)</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeader\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeader&quot; Updated &quot;2023-01-20 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Iniciar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code iniciar = 'Iniciar', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/praR1\">http://acme.com/ehr/fhir/PractitionerRole/praR1</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"#ServiceRequest_EjemploServiceRequest\">See above (http://acme.com/ehr/fhir/ServiceRequest/serv1)</a></p></div>"
   ] ; # 
   fhir:event [
      a fhir:Coding ;
@@ -566,7 +566,7 @@
      fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient" ]
   ] . # 
 
-<http://acme.com/ehr/fhir/PractitionerRole/praR1> a fhir:PractitionerRole ;
+<http://acme.com/ehr/fhir/PractitionerRole/iniciarIniciador> a fhir:PractitionerRole ;
   fhir:id [ fhir:v "EjemploPractitionerRole"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -576,15 +576,15 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRole\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRole&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitioner\">See above (http://acme.com/ehr/fhir/Practitioner/pra1)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganization\">See above (http://acme.com/ehr/fhir/Organization/org1)</a></p><p><b>code</b>: Iniciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#iniciador)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRole\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRole&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"#Practitioner_EjemploPractitioner\">See above (http://acme.com/ehr/fhir/Practitioner/iniciarIniciador)</a></p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganization\">See above (http://acme.com/ehr/fhir/Organization/iniciarIniciador)</a></p><p><b>code</b>: Iniciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de médicos</a>#iniciador)</span></p></div>"
   ] ; # 
   fhir:practitioner [
-     fhir:link <http://acme.com/ehr/fhir/Practitioner/pra1> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Practitioner/pra1" ]
+     fhir:link <http://acme.com/ehr/fhir/Practitioner/iniciarIniciador> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Practitioner/iniciarIniciador" ]
   ] ; # 
   fhir:organization [
-     fhir:link <http://acme.com/ehr/fhir/Organization/org1> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Organization/org1" ]
+     fhir:link <http://acme.com/ehr/fhir/Organization/iniciarIniciador> ;
+     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Organization/iniciarIniciador" ]
   ] ; # 
   fhir:code ( [
      fhir:coding ( [
@@ -593,7 +593,7 @@
      ] )
   ] ) . # 
 
-<http://acme.com/ehr/fhir/Practitioner/pra1> a fhir:Practitioner ;
+<http://acme.com/ehr/fhir/Practitioner/iniciarIniciador> a fhir:Practitioner ;
   fhir:id [ fhir:v "EjemploPractitioner"] ; # 
   fhir:meta [
      fhir:profile ( [
@@ -746,7 +746,7 @@
      ]
   ] ) . # 
 
-<http://acme.com/ehr/fhir/Organization/org1> a fhir:Organization ;
+<http://acme.com/ehr/fhir/Organization/iniciarIniciador> a fhir:Organization ;
   fhir:id [ fhir:v "EjemploOrganization"] ; # 
   fhir:meta [
      fhir:profile ( [
