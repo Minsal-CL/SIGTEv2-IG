@@ -35,7 +35,7 @@ Description: "Appointment Evento de Agendar"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.text = "Otro"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoContactabilidad#1
 
-* extension[ContactadoLE].extension[Contactado].valueBoolean = true
+* extension[ContactadoLE].extension[Contactado].valueBoolean = false
 
 
 Instance: EjemploAppointmentAgendarCancelar
@@ -61,7 +61,7 @@ Description: "Appointment Evento de Agendar(Cancelación)"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.text = "Otro"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoContactabilidad#1
 
-* extension[ContactadoLE].extension[Contactado].valueBoolean = true
+* extension[ContactadoLE].extension[Contactado].valueBoolean = false
 
 Instance: EjemploAppointmentAgendarSinPresentacion
 InstanceOf: AppointmentAgendarLE
@@ -85,4 +85,4 @@ Description: "Appointment Evento de Agendar(Sin Presentacion)"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.text = "Otro"
 * extension[ContactadoLE].extension[MotivoNoContactabilidad].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoContactabilidad#1
 
-* extension[ContactadoLE].extension[Contactado].valueBoolean = true
+* extension[ContactadoLE].extension[Contactado].valueBoolean = false
