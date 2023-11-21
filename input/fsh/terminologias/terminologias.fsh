@@ -925,7 +925,7 @@ Description: "Rol de médicos(Practitioner) en algún evento, durante la interco
 CodeSystem: CSPractitionerTipoRolLE
 Id: CSPractitionerTipoRolLE
 Title: "Rol de médicos"
-Description: "CodeSystem con códigos definidos para representar cada rol de los médicos dentro de la interconsulta"
+Description: "CodeSystem con códigos definidos para representar cada rol de profesional o funcionario administrativo dentro de la interconsulta"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"

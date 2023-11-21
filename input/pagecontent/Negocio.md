@@ -93,7 +93,7 @@
 #### Terminar
   En este acto el paciente sale de la Lista de Espera, ya sea porque fue atendido
   o por alguna de las causales de eliminación de la Lista de Espera según la
-  norma técnica N°11. 
+  [norma técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view). 
   
   Esto puede ocurrir de forma automática por definiciones del sistema
   informático, o mediante un funcionario administrativo. 
@@ -192,7 +192,7 @@
   Corresponde al funcionario administrativo que ejecuta la salida del usuario/a
   paciente de lista de espera, en función de si recibió la atención de especialidad,
   o por alguna de las otras causales de eliminación de la Lista de Espera según la
-  norma técnica N°11. 
+  norma técnica N°118. 
   
   En algunos casos esto podría ser automático, sin la mediación de una persona,
   según definiciones del sistema informático local.
