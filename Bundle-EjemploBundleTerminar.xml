@@ -9,7 +9,7 @@
   <type value="message"/>
   <timestamp value="2023-02-09T17:15:22Z"/>
   <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/MessageHeader/terminar"/>
+    <fullUrl value="http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeaderTerminar"/>
     <resource>
       <MessageHeader>
         <id value="EjemploMessageHeaderTerminar"/>
@@ -18,7 +18,7 @@
           <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="EjemploMessageHeaderTerminar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;EjemploMessageHeaderTerminar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href="http://acme.com/ehr/fhir/PractitionerRole/terminar">http://acme.com/ehr/fhir/PractitionerRole/terminar</a></p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td>SolucionInformatica</td><td><a href="http://link-to-sending.cl">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href="#ServiceRequest_EjemploServiceRequestTerminar">See above (http://acme.com/ehr/fhir/ServiceRequest/terminar)</a></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="EjemploMessageHeaderTerminar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;EjemploMessageHeaderTerminar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href="http://acme.com/ehr/fhir/PractitionerRole/terminar">http://acme.com/ehr/fhir/PractitionerRole/terminar</a></p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td>SolucionInformatica</td><td><a href="http://link-to-sending.cl">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href="#ServiceRequest_EjemploServiceRequestTerminar">See above (http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar)</a></p></div>
         </text>
         <eventCoding>
           <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE"/>
@@ -32,13 +32,13 @@
           <endpoint value="http://link-to-sending.cl"/>
         </source>
         <focus>
-          <reference value="http://acme.com/ehr/fhir/ServiceRequest/terminar"/>
+          <reference value="http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar"/>
         </focus>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/ServiceRequest/terminar"/>
+    <fullUrl value="http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar"/>
     <resource>
       <ServiceRequest>
         <id value="EjemploServiceRequestTerminar"/>
@@ -82,7 +82,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/PractitionerRole/terminarTerminador"/>
+    <fullUrl value="http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleTerminar"/>
     <resource>
       <PractitionerRole>
         <id value="EjemploPractitionerRoleTerminar"/>
@@ -90,7 +90,7 @@
           <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRoleTerminar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="#Practitioner_EjemploPractitionerTerminar">See above (http://acme.com/ehr/fhir/Practitioner/terminarTerminador)</a></p><p><b>organization</b>: <a href="#Organization_EjemploOrganizationTerminar">See above (http://acme.com/ehr/fhir/Organization/terminarTerminador)</a></p><p><b>code</b>: Terminador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPractitionerTipoRolLE.html">Rol de médicos</a>#terminador)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRoleTerminar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRoleTerminar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="http://acme.com/ehr/fhir/Practitioner/terminarTerminador">http://acme.com/ehr/fhir/Practitioner/terminarTerminador</a></p><p><b>organization</b>: <a href="http://acme.com/ehr/fhir/Organization/terminarTerminador">http://acme.com/ehr/fhir/Organization/terminarTerminador</a></p><p><b>code</b>: Terminador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPractitionerTipoRolLE.html">Rol de médicos</a>#terminador)</span></p></div>
         </text>
         <practitioner>
           <reference value="http://acme.com/ehr/fhir/Practitioner/terminarTerminador"/>
@@ -108,15 +108,15 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/Practitioner/terminarTerminador"/>
+    <fullUrl value="http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerTerminar"/>
     <resource>
       <Practitioner>
         <id value="EjemploPractitionerTerminar"/>
         <meta>
-          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MINSALPrestadorAdministrativo"/>
+          <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorAdministrativoLE"/>
         </meta>
         <text>
-          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerTerminar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerTerminar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MINSALPrestadorAdministrativo.html">MINSAL Prestador Administrativo</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1: 32.333.333-3 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Juan Perez </p><p><b>telecom</b>: <a href="tel:+56982460152">+56982460152</a></p><p><b>address</b>: null null null </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1982-08-24</p></div>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerTerminar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerTerminar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PrestadorAdministrativoLE.html">Prestador Administrativo LE</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1: 32.333.333-3 (use: OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Juan Perez </p><p><b>telecom</b>: <a href="tel:+56982460152">+56982460152</a></p><p><b>address</b>: null null null </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1982-08-24</p></div>
         </text>
         <extension url="https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises">
           <valueCodeableConcept>
@@ -201,7 +201,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://acme.com/ehr/fhir/Organization/terminarTerminador"/>
+    <fullUrl value="http://acme.com/ehr/fhir/Organization/EjemploOrganizationTerminar"/>
     <resource>
       <Organization>
         <id value="EjemploOrganizationTerminar"/>
