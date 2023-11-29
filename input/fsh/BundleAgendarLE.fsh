@@ -25,7 +25,7 @@ Description: "Bundle Agendar LE recurso utilizado para transportar todos los dat
 * entry[messageheader].resource only MessageHeaderLE
 * entry[servicerequest].resource only ServiceRequestLE
 * entry[organization].resource only OrganizationLE
-* entry[practitionerProfesional].resource only MINSALPrestadorProfesional
-* entry[practitionerAdministrativo].resource only MINSALPrestadorAdministrativo
+* entry[practitionerProfesional].resource only PrestadorProfesionalLE
+* entry[practitionerAdministrativo].resource only PrestadorAdministrativoLE
 * entry[practitionerRole].resource only PractitionerRoleLE
 * entry[appointment].resource only AppointmentAgendarLE

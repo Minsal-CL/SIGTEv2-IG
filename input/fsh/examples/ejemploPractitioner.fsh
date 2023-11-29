@@ -1,5 +1,5 @@
 Instance: EjemploPractitioner
-InstanceOf: MINSALPrestadorProfesional
+InstanceOf: PrestadorProfesionalLE
 Usage: #example
 Title: "Practitioner Evento de Inicio"
 Description: "Practitioner Evento de Inicio"
@@ -84,7 +84,7 @@ Description: "Practitioner Evento de Inicio"
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
 Instance: EjemploPractitionerReferenciadorMHREFERENCIADA
-InstanceOf: MINSALPrestadorProfesional
+InstanceOf: PrestadorProfesionalLE
 Usage: #example
 Title: "Practitioner Referenciador Evento de Referenciada"
 Description: "Practitioner Referenciador Evento de Referenciada"
@@ -142,7 +142,7 @@ Description: "Practitioner Referenciador Evento de Referenciada"
 
 /*EJEMPLOS PARA BUNDLE REVISAR*/
 Instance: EjemploPractitionerRevisar
-InstanceOf: MINSALPrestadorProfesional
+InstanceOf: PrestadorProfesionalLE
 Usage: #example
 Title: "Practitioner Evento Revisar"
 Description: "Practitioner Evento Revisar"
@@ -199,7 +199,7 @@ Description: "Practitioner Evento Revisar"
 
 /*EJEMPLOS PARA BUNDLE Atender*/
 Instance: EjemploPractitionerAtender
-InstanceOf: MINSALPrestadorProfesional
+InstanceOf: PrestadorProfesionalLE
 Usage: #example
 Title: "Practitioner Evento de Atender"
 Description: "Practitioner Evento de Atender"
@@ -256,7 +256,7 @@ Description: "Practitioner Evento de Atender"
 
 /*EJEMPLOS PARA BUNDLE PRIORIZAR*/
 Instance: EjemploPractitionerPriorizar
-InstanceOf: MINSALPrestadorProfesional
+InstanceOf: PrestadorProfesionalLE
 Usage: #example
 Title: "Practitioner Evento de Priorizar"
 Description: "Practitioner Evento de Priorizar"

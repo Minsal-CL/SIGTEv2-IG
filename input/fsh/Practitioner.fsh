@@ -194,18 +194,18 @@ Description: "Practitioner LE recurso que se utiliza para representar la informa
 // * qualification[SubEsp].issuer ^short = "Organizacion que entrega el certificado o título"
 // * qualification[SubEsp].issuer.display ^short = "Nombre de la organizacion que entrega certificado o título"
 // * qualification[SubEsp].issuer.display ^definition = "Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre"
- */
+*/
 
 Alias: $SegundoApellido = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido
 Alias: $cl-address = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address
 
-Profile: MINSALPrestadorProfesional
+Profile: PrestadorProfesionalLE
 Parent: PrestadorCL
-Id: MINSALPrestadorProfesional
-Title: "MINSAL Prestador Profesional"
+Id: PrestadorProfesionalLE
+Title: "Prestador Profesional LE"
 Description: "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
 
-* extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises named Nacionalidad 1..1 MS
+* extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises named Nacionalidad 0..1 MS
 
 * name 1..1 MS
 
