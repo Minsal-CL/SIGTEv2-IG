@@ -9,7 +9,7 @@ Description: "MesaggeHeader Evento de Inicio"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#iniciar
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/serv1)
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequest)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
 
 /*EJEMPLOS PARA BUNDLE REFERENCIADA*/
@@ -24,7 +24,7 @@ Description: "MesaggeHeader Evento de Referencia"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#referenciar
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/referencia)
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestReferenciada)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador)
 /*FIN PARA BUNDLE REFERENCIADA*/
 
@@ -40,7 +40,7 @@ Description: "MesaggeHeader Evento de Terminar"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#terminar
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/terminar)
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/terminar)
 /*FIN PARA BUNDLE Terminar*/
 
@@ -56,7 +56,7 @@ Description: "MesaggeHeader Evento de Revisar"
 
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#revisar
 
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/revisar)
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestRevisar)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/revisar)
 /*FIN PARA BUNDLE Revisar*/
 
@@ -72,7 +72,7 @@ Description: "MesaggeHeader Evento de Agendar"
 
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#agendar
 
-* focus = Reference(http://acme.com/ehr/fhir/Appointment/agendar)
+* focus = Reference(http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAgendar)
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador)
 /*FIN PARA BUNDLE Agendar*/
 
@@ -105,7 +105,7 @@ Description: "MesaggeHeader Evento de Priorizar"
 
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#priorizar
 
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/priorizar) //----------
+* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestPriorizar) //----------
 * author = Reference(http://acme.com/ehr/fhir/PractitionerRole/priorizar) //-----
 
 

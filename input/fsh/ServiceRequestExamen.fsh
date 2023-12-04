@@ -17,7 +17,7 @@ Description: "ServiceRequestExamen LE recurso utilizado para la representación 
 
 * occurrenceDateTime 1..1 MS
 * requester 1..1 MS 
-* requester only Reference(MINSALPrestadorProfesional) 
+* requester only Reference(PrestadorProfesionalLE) 
 * reasonCode 1..1 MS
   * text 1..1 MS
 * note 0..1 MS

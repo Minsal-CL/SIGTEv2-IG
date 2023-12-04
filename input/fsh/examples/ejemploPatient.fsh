@@ -51,8 +51,8 @@ Title: "Patient Lista de Espera"
 Description: "Patient Lista de Espera"
 
 * extension[PaisOrigen].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PaisOrigenMPI"
-* extension[PaisOrigen].valueCodeableConcept.coding.code = #158
-* extension[PaisOrigen].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
+* extension[PaisOrigen].valueCodeableConcept.coding.code = #152
+* extension[PaisOrigen].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
 * extension[Religion].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Religion"
 * extension[Religion].valueCodeableConcept.coding.code = #1
 * extension[Religion].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSReligion"
@@ -72,12 +72,12 @@ Description: "Patient Lista de Espera"
 * extension[PueblosOriginarios].valueCodeableConcept.coding.code = #01
 * extension[PueblosOriginarios].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS"
 * extension[nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* extension[nacionalidad].valueCodeableConcept.coding.code = #158
-* extension[nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
+* extension[nacionalidad].valueCodeableConcept.coding.code = #152
+* extension[nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
 
 
 * identifier.type.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* identifier.type.extension.valueCodeableConcept.coding.code = #032
+* identifier.type.extension.valueCodeableConcept.coding.code = #152
 * identifier.type.extension.valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
 * identifier.type.coding[0].code = #01
 * identifier.type.coding[0].system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"

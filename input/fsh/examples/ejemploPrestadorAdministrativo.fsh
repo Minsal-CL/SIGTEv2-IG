@@ -1,6 +1,6 @@
 /*EJEMPLOS PARA BUNDLE AGENDAR*/
 Instance: EjemploPractitionerAgendarAtendedor
-InstanceOf: MINSALPrestadorProfesional
+InstanceOf: PrestadorProfesionalLE
 Usage: #example
 Title: "Practitioner Atendedor Evento de Agendar"
 Description: "Practitioner Atendedor Evento de Agendar"
@@ -73,7 +73,7 @@ Description: "Practitioner Atendedor Evento de Agendar"
 
 /*EJEMPLOS PARA BUNDLE Agendar*/
 Instance: EjemploPractitionerAgendarAgendador
-InstanceOf: MINSALPrestadorAdministrativo
+InstanceOf: PrestadorAdministrativoLE
 Usage: #example
 Title: "Practitioner Agendador Evento de Agendar"
 Description: "Practitioner Agendador Evento de Agendar"
@@ -125,7 +125,7 @@ Description: "Practitioner Agendador Evento de Agendar"
 
 /*EJEMPLOS PARA BUNDLE TERMINAR*/
 Instance: EjemploPractitionerTerminar
-InstanceOf: MINSALPrestadorAdministrativo
+InstanceOf: PrestadorAdministrativoLE
 Usage: #example
 Title: "Practitioner Evento Terminar"
 Description: "Practitioner Evento Terminar"

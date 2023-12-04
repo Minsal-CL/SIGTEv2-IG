@@ -8,14 +8,14 @@ Description: "Bundle Evento de Inicio"
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
 * timestamp = "2023-02-09T17:15:22Z"
 
-* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/mh1"
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeader"
 * entry[messageheader].resource = EjemploMessageHeader
 
 
-* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/serv1"
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequest"
 * entry[servicerequest].resource = EjemploServiceRequest
 
-* entry[encounter].fullUrl = "http://acme.com/ehr/fhir/Encounter/enc1"
+* entry[encounter].fullUrl = "http://acme.com/ehr/fhir/Encounter/EjemploEncounter"
 * entry[encounter].resource = EjemploEncounter
 
 // * entry[appointment].fullUrl = "http://acme.com/ehr/fhir/Appointment/app1"
@@ -24,40 +24,40 @@ Description: "Bundle Evento de Inicio"
 * entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
 * entry[patient].resource = EjemploPatient
 
-* entry[conditionDiagnostico].fullUrl = "http://acme.com/ehr/fhir/Condition/con1"
+* entry[conditionDiagnostico].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploCondition"
 * entry[conditionDiagnostico].resource = EjemploCondition
 
-* entry[observationComorbilidad].fullUrl = "http://acme.com/ehr/fhir/Observvation/obs2"
+* entry[observationComorbilidad].fullUrl = "http://acme.com/ehr/fhir/Observvation/EjemploObservation2"
 * entry[observationComorbilidad].resource = EjemploObservation2
 
-* entry[conditionGes].fullUrl = "http://acme.com/ehr/fhir/Condition/con3"
+* entry[conditionGes].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploCondition3"
 * entry[conditionGes].resource = EjemploCondition3
 
-* entry[observation].fullUrl = "http://acme.com/ehr/fhir/Observation/obs1"
+* entry[observation].fullUrl = "http://acme.com/ehr/fhir/Observation/EjemploObservation"
 * entry[observation].resource = EjemploObservation
 
-* entry[observationCuidador].fullUrl = "http://acme.com/ehr/fhir/Observation/obs3"
+* entry[observationCuidador].fullUrl = "http://acme.com/ehr/fhir/Observation/EjemploObservationCuidador"
 * entry[observationCuidador].resource = EjemploObservationCuidador
 
-* entry[allergyintolerance].fullUrl = "http://acme.com/ehr/fhir/AllergyIntolerance/all1"
+* entry[allergyintolerance].fullUrl = "http://acme.com/ehr/fhir/AllergyIntolerance/EjemploAllergyIntolerance"
 * entry[allergyintolerance].resource = EjemploAllergyIntolerance
 
-* entry[practitionerrole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/iniciarIniciador"
+* entry[practitionerrole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRole"
 * entry[practitionerrole].resource = EjemploPractitionerRole
 
-* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/iniciarIniciador"
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/EjemploPractitioner"
 * entry[practitioner].resource = EjemploPractitioner
 
-* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/iniciarIniciador"
+* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/EjemploOrganization"
 * entry[organization].resource = EjemploOrganization
 
-* entry[docCuidador].fullUrl = "http://acme.com/ehr/fhir/DocumentReference/doc1"
+* entry[docCuidador].fullUrl = "http://acme.com/ehr/fhir/DocumentReference/EjemploDocumentReference"
 * entry[docCuidador].resource = EjemploDocumentReference
 
-* entry[prevision].fullUrl = "http://acme.com/ehr/fhir/Coverage/cov1"
+* entry[prevision].fullUrl = "http://acme.com/ehr/fhir/Coverage/EjemploCoverage"
 * entry[prevision].resource = EjemploCoverage
 
-* entry[motivoDerivacion].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/que1"
+* entry[motivoDerivacion].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE"
 * entry[motivoDerivacion].resource = EjemploQuestionnaireResponseInicioLE
 
 
@@ -72,25 +72,25 @@ Description: "Bundle Evento de Referencia"
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
 * timestamp = "2023-02-09T17:15:22Z"
 
-* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/referencia"
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeaderReferencia"
 * entry[messageheader].resource = EjemploMessageHeaderReferencia
 
-* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/referencia"
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestReferenciada"
 * entry[servicerequest].resource = EjemploServiceRequestReferenciada
 
-* entry[practitionerRole][0].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador"
+* entry[practitionerRole][0].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA"
 * entry[practitionerRole][0].resource = EjemploPractitionerRoleReferenciadorMHREFERENCIADA
 
-* entry[practitionerRole][1].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor"
+* entry[practitionerRole][1].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleAtendedorSRREFERENCIADA"
 * entry[practitionerRole][1].resource = EjemploPractitionerRoleAtendedorSRREFERENCIADA
 
-* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador"
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA"
 * entry[practitioner].resource = EjemploPractitionerReferenciadorMHREFERENCIADA
 
-* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/referenciaReferenciador"
+* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/EjemploOrganizationReferenciadorMHREFERENCIADA"
 * entry[organization][=].resource = EjemploOrganizationReferenciadorMHREFERENCIADA
 
-* entry[organization][1].fullUrl = "http://acme.com/ehr/fhir/Organization/referenciaAtendedor"
+* entry[organization][1].fullUrl = "http://acme.com/ehr/fhir/Organization/EjemploOrganizationAtender"
 * entry[organization][1].resource = EjemploOrganizationAtender
 /*FIN BUNDLE REFERENCIA*/
 
@@ -105,19 +105,19 @@ Description: "Bundle Evento de Terminar"
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
 * timestamp = "2023-02-09T17:15:22Z"
 
-* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/terminar"
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeaderTerminar"
 * entry[messageheader].resource = EjemploMessageHeaderTerminar
 
-* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/terminar"
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar"
 * entry[servicerequest].resource = EjemploServiceRequestTerminar
 
-* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/terminarTerminador"
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleTerminar"
 * entry[practitionerRole].resource = EjemploPractitionerRoleTerminar
 
-* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/terminarTerminador"
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerTerminar"
 * entry[practitioner].resource = EjemploPractitionerTerminar
 
-* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/terminarTerminador"
+* entry[organization][0].fullUrl = "http://acme.com/ehr/fhir/Organization/EjemploOrganizationTerminar"
 * entry[organization][=].resource = EjemploOrganizationTerminar
 /*FIN BUNDLE Terminar*/
 
@@ -132,23 +132,23 @@ Description: "Bundle Evento de Revisar"
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
 * timestamp = "2023-02-09T17:15:22Z"
 
-* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/revisar"
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeaderRevisar"
 * entry[messageheader].resource = EjemploMessageHeaderRevisar
 
-* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/revisar"
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestRevisar"
 * entry[servicerequest].resource = EjemploServiceRequestRevisar
 
-* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/revisarRevisor"
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleRevisar"
 * entry[practitionerRole].resource = EjemploPractitionerRoleRevisar
 
 
-* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/revisarRevisor"
+* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/EjemploOrganizationRevisar"
 * entry[organization].resource = EjemploOrganizationRevisar
 
-* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/revisarRevisor"
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerRevisar"
 * entry[practitioner].resource = EjemploPractitionerRevisar
 
-* entry[servicerequestexamen].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/examen"
+* entry[servicerequestexamen].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestExamen"
 * entry[servicerequestexamen].resource = EjemploServiceRequestExamen
 
 /*FIN BUNDLE revisar*/
@@ -164,30 +164,32 @@ Description: "Bundle Evento de Agendar"
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
 * timestamp = "2023-02-09T17:15:22Z"
 
-* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/agendar"
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeaderAgendar"
 * entry[messageheader].resource = EjemploMessageHeaderAgendar
 
-* entry[appointment].fullUrl = "http://acme.com/ehr/fhir/Appointment/agendar"
+* entry[appointment].fullUrl = "http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAgendar"
 * entry[appointment].resource = EjemploAppointmentAgendar
 
-* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/agendar"
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestAgendar"
 * entry[servicerequest].resource = EjemploServiceRequestAgendar
 
-* entry[practitionerRole][1].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/agendarAtendedor"
-* entry[practitionerRole][1].resource = EjemploPractitionerRoleAgendarAPPO
-
-* entry[practitionerProfesional].fullUrl = "http://acme.com/ehr/fhir/Practitioner/agendarAtendedor"
-* entry[practitionerProfesional].resource = EjemploPractitionerAgendarAtendedor
-
-* entry[practitionerAdministrativo].fullUrl = "http://acme.com/ehr/fhir/Practitioner/agendarAgendador"
-* entry[practitionerAdministrativo].resource = EjemploPractitionerAgendarAgendador
-
-* entry[practitionerRole][0].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador"
+* entry[practitionerRole][0].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleAgendarMH"
 * entry[practitionerRole][0].resource = EjemploPractitionerRoleAgendarMH
 
-* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/agendar"
+* entry[practitionerRole][1].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleAgendarAPPO"
+* entry[practitionerRole][1].resource = EjemploPractitionerRoleAgendarAPPO
+
+* entry[practitionerProfesional].fullUrl = "http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerAgendarAtendedor"
+* entry[practitionerProfesional].resource = EjemploPractitionerAgendarAtendedor
+
+* entry[practitionerAdministrativo].fullUrl = "http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerAgendarAgendador"
+* entry[practitionerAdministrativo].resource = EjemploPractitionerAgendarAgendador
+
+* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/EjemploOrganizationAgendar"
 * entry[organization].resource = EjemploOrganizationAgendar
 
+* entry[appointment].fullUrl = "http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAgendar"
+* entry[appointment].resource = EjemploAppointmentAgendar
 
 //* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/praR1"
 //* entry[practitionerRole].resource = EjemploPractitionerRoleAgendar
@@ -207,19 +209,19 @@ Description: "Bundle Evento de Priorizar"
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
 * timestamp = "2023-02-09T17:15:22Z"
 
-* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/priorizar"
+* entry[messageheader].fullUrl = "http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeaderPriorizar"
 * entry[messageheader].resource = EjemploMessageHeaderPriorizar
 
-* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/priorizar"
+* entry[servicerequest].fullUrl = "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestPriorizar"
 * entry[servicerequest].resource = EjemploServiceRequestPriorizar
 
-* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/priorizarPriorizador"
+* entry[practitionerRole].fullUrl = "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRolePriorizar"
 * entry[practitionerRole].resource = EjemploPractitionerRolePriorizar
 
-* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/priorizarPriorizador"
+* entry[organization].fullUrl = "http://acme.com/ehr/fhir/Organization/EjemploOrganizationPriorizar"
 * entry[organization].resource = EjemploOrganizationPriorizar
 
-* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/priorizarPriorizador"
+* entry[practitioner].fullUrl = "http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerPriorizar"
 * entry[practitioner].resource = EjemploPractitionerPriorizar
 
 * entry[patient].fullUrl = "http://acme.com/ehr/fhir/Patient/EjemploPatient"

@@ -25,5 +25,5 @@ Description: "Bundle Referencia LE recurso utilizado para transportar todos los 
 * entry[messageheader].resource only MessageHeaderLE
 * entry[servicerequest].resource only ServiceRequestLE
 * entry[organization].resource only OrganizationLE
-* entry[practitioner].resource only MINSALPrestadorProfesional
+* entry[practitioner].resource only PrestadorProfesionalLE
 * entry[practitionerRole].resource only PractitionerRoleLE

@@ -2,10 +2,10 @@ Alias: $SegundoApellido = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition
 Alias: $cl-address = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address
 
 
-Profile: MINSALPrestadorAdministrativo
+Profile: PrestadorAdministrativoLE
 Parent: PrestadorCL
-Id: MINSALPrestadorAdministrativo
-Title: "MINSAL Prestador Administrativo"
+Id: PrestadorAdministrativoLE
+Title: "Prestador Administrativo LE"
 Description: "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
 
 * name 1..1 MS
@@ -38,7 +38,7 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 
 
 
-* extension contains PaisOrigenNacionalidadCl named Nacionalidad 1..1 MS
+* extension contains PaisOrigenNacionalidadCl named Nacionalidad 0..1 MS
 * active MS
 
 * telecom MS
