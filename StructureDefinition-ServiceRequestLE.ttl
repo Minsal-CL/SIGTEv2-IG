@@ -24,7 +24,7 @@
   fhir:name [ fhir:v "ServiceRequestLE"] ; # 
   fhir:title [ fhir:v "ServiceRequest LE"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-04T15:33:03+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-21T20:18:51+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -714,7 +714,7 @@
        fhir:path [ fhir:v "ServiceRequest.extension" ] ;
        fhir:sliceName [ fhir:v "FundamentoPriorizacion" ] ;
        fhir:short [ fhir:v "Fundamente de la Priorización" ] ;
-       fhir:definition [ fhir:v "Optional Extension Element - found in all resources." ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -752,14 +752,7 @@
          ]
        ] ) ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ] ;
-       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
-       fhir:mapping ( [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "n/a" ]
-       ] [
-         fhir:identity [ fhir:v "rim" ] ;
-         fhir:map [ fhir:v "N/A" ]
-       ] )
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:id [ fhir:v "ServiceRequest.extension:EstadoInterconsultaCodigo" ] ;
        fhir:path [ fhir:v "ServiceRequest.extension" ] ;
