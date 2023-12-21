@@ -18,7 +18,7 @@
   "name" : "ServiceRequestLE",
   "title" : "ServiceRequest LE",
   "status" : "draft",
-  "date" : "2023-12-04T15:33:03+00:00",
+  "date" : "2023-12-21T20:18:51+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -646,7 +646,7 @@
       "path" : "ServiceRequest.extension",
       "sliceName" : "FundamentoPriorizacion",
       "short" : "Fundamente de la Priorización",
-      "definition" : "Optional Extension Element - found in all resources.",
+      "definition" : "An Extension",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -676,15 +676,7 @@
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "mustSupport" : true,
-      "isModifier" : false,
-      "mapping" : [{
-        "identity" : "rim",
-        "map" : "n/a"
-      },
-      {
-        "identity" : "rim",
-        "map" : "N/A"
-      }]
+      "isModifier" : false
     },
     {
       "id" : "ServiceRequest.extension:EstadoInterconsultaCodigo",
