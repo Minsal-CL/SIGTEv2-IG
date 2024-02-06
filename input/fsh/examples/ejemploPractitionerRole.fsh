@@ -1,33 +1,32 @@
 Instance: EjemploPractitionerRole
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Evento de Inicio"
-Description: "PractitionerRole Evento de Inicio"
+Title: "PractitionerRole Evento Iniciar"
+Description: "PractitionerRole Evento Iniciar"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/iniciarIniciador)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/iniciarIniciador)
-* code.coding.code = #iniciador
-* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
+* practitioner = Reference(EjemploPractitionerIniciar) "Ernesto Sepulveda Sierra"
+* organization = Reference(EjemploOrganization) "Centro de Salud Familiar San Juan Dios"
+* code.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE#iniciador
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
 Instance: EjemploPractitionerRoleReferenciadorMHREFERENCIADA
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Referenciador Evento de Referenciada"
-Description: "PractitionerRole Referenciador Evento de Referenciada"
+Title: "PractitionerRole Referenciador Evento Referenciar"
+Description: "PractitionerRole Referenciador Evento Referenciar"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/referenciaReferenciador)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaReferenciador)
+* practitioner = Reference(EjemploPractitionerReferenciadorMHREFERENCIADA)
+* organization = Reference(EjemploOrganizationReferencia)
 * code.coding.code = #referenciador
 * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
 
 Instance: EjemploPractitionerRoleAtendedorSRREFERENCIADA
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Atendedor Evento de Referenciada"
-Description: "PractitionerRole Atendedor Evento de Referenciada"
+Title: "PractitionerRole Atendedor Evento Referenciar"
+Description: "PractitionerRole Atendedor Evento Referenciar"
 
-* organization = Reference(http://acme.com/ehr/fhir/Organization/referenciaAtendedor)
+* organization = Reference(EjemploOrganizationReferencia)
 * code.coding.code = #atendedor
 * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE REFERENCIA*/
@@ -36,11 +35,11 @@ Description: "PractitionerRole Atendedor Evento de Referenciada"
 Instance: EjemploPractitionerRoleTerminar
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Evento de Terminar"
-Description: "PractitionerRole Evento de Terminar"
+Title: "PractitionerRole Evento Terminar"
+Description: "PractitionerRole Evento Terminar"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/terminarTerminador)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/terminarTerminador)
+* practitioner = Reference(EjemploPractitionerTerminar)
+* organization = Reference(EjemploOrganizationTerminar)
 * code = #terminador
 * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE TERMINAR*/
@@ -49,11 +48,11 @@ Description: "PractitionerRole Evento de Terminar"
 Instance: EjemploPractitionerRoleRevisar
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Evento de Revisar"
-Description: "PractitionerRole Evento de Revisar"
+Title: "PractitionerRole Evento Revisar"
+Description: "PractitionerRole Evento Revisar"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/revisarRevisor)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/revisarRevisor)
+* practitioner = Reference(EjemploPractitionerRevisar)
+* organization = Reference(EjemploOrganizationRevisar)
 * code = #revisor
 * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
 /*FIN PARA BUNDLE REVISAR*/
@@ -62,26 +61,24 @@ Description: "PractitionerRole Evento de Revisar"
 Instance: EjemploPractitionerRoleAgendarMH
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Evento de Agendar MessageHeader"
-Description: "PractitionerRole Evento de Agendar MessageHeader"
+Title: "PractitionerRole Evento Agendar MessageHeader"
+Description: "PractitionerRole Evento Agendar MessageHeader"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/PractitionerAgendarAgendador)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/agendarAgendador)
-* code = #agendador
-* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
+* practitioner = Reference(EjemploPractitionerAgendarAgendador)
+* organization = Reference(EjemploOrganizationAgendar)
+* code.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE#agendador
 /*FIN PARA BUNDLE AGENDARMH*/
 
 /*EJEMPLOS PARA BUNDLE AGENDARAPPO*/
 Instance: EjemploPractitionerRoleAgendarAPPO
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Evento de Agendar Apponitment"
-Description: "PractitionerRole Evento de Agendar Apponitment"
+Title: "PractitionerRole Evento Agendar Apponitment"
+Description: "PractitionerRole Evento Agendar Apponitment"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/agendarAtendedor)
-//* organization = Reference(http://acme.com/ehr/fhir/Organization/org1)
-* code = #atendedor
-* code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
+* practitioner = Reference(EjemploPractitionerAgendarAtendedor)
+* organization = Reference(EjemploOrganizationAtender)
+* code.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE#atendedor
 /*FIN PARA BUNDLE AGENDARAPPO*/
 
 
@@ -90,11 +87,11 @@ Description: "PractitionerRole Evento de Agendar Apponitment"
 Instance: EjemploPractitionerRolePriorizar
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Evento de Priorizar"
-Description: "PractitionerRole Evento de Priorizar"
+Title: "PractitionerRole Evento Priorizar"
+Description: "PractitionerRole Evento Priorizar"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/priorizarPriorizador)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/priorizarPriorizador)
+* practitioner = Reference(EjemploPractitionerPriorizar)
+* organization = Reference(EjemploOrganizationPriorizar)
 * code.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE#priorizador
 /*FIN PARA BUNDLE PRIORIZAR*/
 
@@ -104,10 +101,10 @@ Description: "PractitionerRole Evento de Priorizar"
 Instance: EjemploPractitionerRoleAtender
 InstanceOf: PractitionerRoleLE
 Usage: #example
-Title: "PractitionerRole Evento de Atender"
-Description: "PractitionerRole Evento de Atender"
+Title: "PractitionerRole Evento Atender"
+Description: "PractitionerRole Evento Atender"
 
-* practitioner = Reference(http://acme.com/ehr/fhir/Practitioner/atenderAtendedor)
-* organization = Reference(http://acme.com/ehr/fhir/Organization/atenderAtendedor)
+* practitioner = Reference(EjemploPractitionerAtender)
+* organization = Reference(EjemploOrganizationAtender)
 * code.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE#atendedor
 /*FIN PARA BUNDLE Atender*/

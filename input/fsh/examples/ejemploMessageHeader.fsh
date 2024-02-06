@@ -1,95 +1,92 @@
 Instance: EjemploMessageHeader
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "MesaggeHeader Evento de Inicio"
-Description: "MesaggeHeader Evento de Inicio"
+Title: "MesaggeHeader Evento Iniciar"
+Description: "MesaggeHeader Evento Iniciar"
 
 
 * meta.lastUpdated = "2023-01-20T14:12:10Z"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#iniciar
-* source.software = "SolucionInformatica"
+* author = Reference(EjemploPractitionerRole) "Ernesto Sepulveda Manriquez en su rol de Iniciador"
+* source.software = "Software San Juan Dios (SSJD)"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequest)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/praR1)
+* focus = Reference(EjemploServiceRequest) 
 
 /*EJEMPLOS PARA BUNDLE REFERENCIADA*/
 Instance: EjemploMessageHeaderReferencia
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "MesaggeHeader Evento de Referencia"
-Description: "MesaggeHeader Evento de Referencia"
-
+Title: "MesaggeHeader Evento Referenciar"
+Description: "MesaggeHeader Evento Referenciar"
 
 * meta.lastUpdated = "2023-02-13T14:12:10Z"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#referenciar
-* source.software = "SolucionInformatica"
+* source.software = "Software San Juan Dios (SSJD)"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestReferenciada)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/referenciaReferenciador)
+* focus = Reference(EjemploServiceRequestReferenciada)
+* author = Reference(EjemploPractitionerRoleReferenciadorMHREFERENCIADA)
 /*FIN PARA BUNDLE REFERENCIADA*/
 
 /*EJEMPLOS PARA BUNDLE Terminar*/
 Instance: EjemploMessageHeaderTerminar
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "MesaggeHeader Evento de Terminar"
-Description: "MesaggeHeader Evento de Terminar"
-
-
+Title: "MesaggeHeader Evento Terminar"
+Description: "MesaggeHeader Evento Terminar"
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#terminar
-* source.software = "SolucionInformatica"
+* source.software = "Software Hospital Linares (SHL)"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/terminar)
+* focus = Reference(EjemploServiceRequestTerminar)
+* author = Reference(EjemploPractitionerRoleTerminar)
 /*FIN PARA BUNDLE Terminar*/
 
 /*EJEMPLOS PARA BUNDLE Revisar*/
+
 Instance: EjemploMessageHeaderRevisar
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "MesaggeHeader Evento de Revisar"
-Description: "MesaggeHeader Evento de Revisar"
+Title: "MesaggeHeader Evento Revisar"
+Description: "MesaggeHeader Evento Revisar"
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
-* source.software = "SolucionInformatica"
+* source.software = "Software Hospital Linares (SHL)"
 * source.endpoint = "http://link-to-sending.cl"
-
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#revisar
+* focus = Reference(EjemploServiceRequestRevisar)
+* author = Reference(EjemploPractitionerRoleRevisar)
 
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestRevisar)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/revisar)
 /*FIN PARA BUNDLE Revisar*/
 
 /*EJEMPLOS PARA BUNDLE Agendar*/
 Instance: EjemploMessageHeaderAgendar
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "MesaggeHeader Evento de Agendar"
-Description: "MesaggeHeader Evento de Agendar"
+Title: "MesaggeHeader Evento Agendar"
+Description: "MesaggeHeader Evento Agendar"
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#agendar
 
-* focus = Reference(http://acme.com/ehr/fhir/Appointment/EjemploAppointmentAgendar)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/agendarAgendador)
+* focus = Reference(EjemploAppointmentAgendar)
+* author = Reference(EjemploPractitionerRoleAgendarMH)
 /*FIN PARA BUNDLE Agendar*/
 
 /*EJEMPLOS PARA BUNDLE Atender*/
 Instance: EjemploMessageHeaderAtender
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "MesaggeHeader Evento de Atender"
-Description: "MesaggeHeader Evento de Atender"
+Title: "MesaggeHeader Evento Atender"
+Description: "MesaggeHeader Evento Atender"
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
 * source.software = "SolucionInformatica"
 * source.endpoint = "http://link-to-sending.cl"
 
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#atender
 
-* focus = Reference(http://acme.com/ehr/fhir/Encounter/EjemploEncounterAtender)
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/atender)
+* focus = Reference(EjemploEncounterAtender)
+* author = Reference(EjemploPractitionerRoleAtender)
 /*FIN PARA BUNDLE Atender*/
 
 
@@ -97,16 +94,14 @@ Description: "MesaggeHeader Evento de Atender"
 Instance: EjemploMessageHeaderPriorizar
 InstanceOf: MessageHeaderLE
 Usage: #example
-Title: "MesaggeHeader Evento de Priorizar"
-Description: "MesaggeHeader Evento de Priorizar"
+Title: "MesaggeHeader Evento Priorizar"
+Description: "MesaggeHeader Evento Priorizar"
 * meta.lastUpdated = "2023-02-14T14:12:10Z"
-* source.software = "SolucionInformatica"
+* source.software = "Software Hospital Linares (SHL)"
 * source.endpoint = "http://link-to-sending.cl"
-
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#priorizar
-
-* focus = Reference(http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestPriorizar) //----------
-* author = Reference(http://acme.com/ehr/fhir/PractitionerRole/priorizar) //-----
+* focus = Reference(EjemploServiceRequestPriorizar) //----------
+* author = Reference(EjemploPractitionerRolePriorizar) //-----
 
 
 /*FIN PARA BUNDLE PRIORIZAR*/

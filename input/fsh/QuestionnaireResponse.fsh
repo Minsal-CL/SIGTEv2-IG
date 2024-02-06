@@ -16,8 +16,8 @@ Description: "QuestionnaireResponse Atender LE"
 Profile: QuestionnaireResponseInicioLE
 Parent: QuestionnaireResponse
 Id: QuestionnaireResponseInicioLE
-Title: "QuestionnaireResponse Inicio Motivo de la Derivación LE"
-Description: "QuestionnaireResponse Inicio para Motivo de Derivación LE"
+Title: "QuestionnaireResponse Iniciar Motivo de la Derivación LE"
+Description: "QuestionnaireResponse Iniciar para Motivo de Derivación LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

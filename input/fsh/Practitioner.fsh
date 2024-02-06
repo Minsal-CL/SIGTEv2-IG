@@ -208,8 +208,11 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
 * extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises named Nacionalidad 0..1 MS
 
 * name 1..1 MS
+* name ^short = "Nombre del prestador"
 
 * identifier 2..3
+* identifier ^short = "Identificador de identidad del Profesional.
+Corresponde a tres slices:"
 
 * identifier[run] 1..1 MS
 * identifier[run] ^short = "Identificador destinado a determinar el número de RUN"
@@ -221,8 +224,9 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
   * type ^short = "Descripción del identificador"
   * type ^definition = "Descripción para el tipo de identificador"
     * coding MS
+    * coding ^short = "Código definido por un sistema terminológico"
       * system 0..1 MS
-      * system ^short = "Sistema de codificación para el código de tipo de identificador"
+      * system ^short = "Sistema de codificación para el tipo de identificador"
       * code 1..1 MS
       * code = #1
       * code ^short = "Código que identifica al tipo de documento de identificador"
@@ -243,9 +247,11 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
   * type ^short = "Descripción del identificador"
   * type ^definition = "Descripción para el tipo de identificador"
     * coding MS
+    * coding ^short = "Código definido por un sistema terminológico"
       * system 1..1 MS
       * code = #2
       * system ^short = "Sistema de codificación para el código de tipo de identificador"
+      * code ^short = "Código que identifica al tipo de documento de identificador"
       * code ^definition = "Código que identifica al tipo de documento de identificador. Será #98 para RNPI"
   * value 1..1 MS
   * value ^short = "Número RNPI"
@@ -262,8 +268,10 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
   * type ^short = "Descripción del identificador"
   * type ^definition = "Descripción para el tipo de identificador"
     * coding MS
+    * coding ^short = "Código definido por un sistema terminológico"
       * system 1..1 MS
       * code = #4
+      * code ^short = "Código que identifica al tipo de documento de identificador"
       * system ^short = "Sistema de codificación para el código de tipo de identificador"
   * value 1..1 MS
 * identifier[otro] ^short = "Otro tipo de identificador"
@@ -281,6 +289,7 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
 
 * address only $cl-address
 * address 0..1 MS
+* address ^short = "Dirección según Guía Core-CL"
 
 * qualification MS
 * qualification contains 
@@ -299,6 +308,8 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
 * qualification[Cert] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
 * qualification[Cert] ^definition = "Listado de Títulos o Cetificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
 * qualification[Cert].code MS
+* qualification[Cert].code ^short = "Representación del título profesional"
+* qualification[Cert].code.text ^short = "Representación textual del título profesional"
 * qualification[Cert].code from VSTituloProfesional
 * qualification[Cert].period 0..1 MS
   * ^short = "Período en el cual se entregó el título considerando fecha de emisión y de caducidad"
@@ -316,7 +327,10 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
 * qualification[EspOdo] ^short = "Especialidad Odontológica que tiene el Prestador"
   * ^definition = "Especialidades definidas en Norma Técnica 820"
   * identifier.value = "EspOdo"
+  * identifier.value ^short = "Valor único para el identificador"
   * code MS
+  * code ^short = "Representación de la especialidad odontológica del prestador"
+    * text ^short = "Representación textual de la especialidad odontológica del prestador"
   * code from VSEspecialidadOdont
   * period 0..1 MS
     * ^short = "Período en el cual se entregó la especialidad considerando fecha de emisión y de caducidad"
@@ -340,7 +354,10 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
 * qualification[EspBioQ] ^short = "Especialidad Bioquímica que tiene el Prestador"
   * ^definition = "Especialidades definidas en Norma Técnica 820"
   * identifier.value = "EspBioQ"
+  * identifier.value ^short = "Valor único para el identificador"
   * code MS
+  * code ^short = "Representación de la especialidad bioquímica del prestador"
+    * text ^short = "Representación textual de la especialidad odontológica del prestador"
   * code from VSEspecialidadBioqca
 * qualification[Esp].period 0..1 MS
   * ^short = "Período en el cual se entregó la especialidad considerando fecha de emisión y de caducidad"
@@ -355,7 +372,10 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
 * qualification[EspFarma] ^short = "Especialidad Farmacéutica o Química Farmacéutica que tiene el Prestador"
   * ^definition = "Especialidades definidas en Norma Técnica 820"
   * identifier.value = "EspFarma"
+  * identifier.value ^short = "Valor único para el identificador"
   * code MS
+  * code ^short = "Representación de la especialidad famaceútica o químico farmaceútica del prestador"
+    * text ^short = "Representación textual de la especialidad famaceútica o químico farmaceútica del prestador"
   * code from VSEspecialidadFarma
   * period 0..1 MS
     * ^short = "Período en el cual se entregó la especialidad considerando fecha de emisión y de caducidad"

@@ -1,8 +1,8 @@
 // Profile: AppointmentInicioLE
 // Parent: Appointment
 // Id: AppointmentInicioLE
-// Title: "Appointment Inicio LE"
-// Description: "Appointment Inicio LE"
+// Title: "Appointment Iniciar LE"
+// Description: "Appointment Iniciar LE"
 // * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 // * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

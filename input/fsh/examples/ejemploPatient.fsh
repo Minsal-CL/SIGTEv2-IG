@@ -45,7 +45,7 @@
 // * birthDate = "1995-12-12"
 
 Instance: EjemploPatient
-InstanceOf: PacienteMinsalMPI
+InstanceOf: PatientLE
 Usage: #example
 Title: "Patient Lista de Espera"
 Description: "Patient Lista de Espera"
@@ -77,40 +77,24 @@ Description: "Patient Lista de Espera"
 
 
 * identifier.type.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* identifier.type.extension.valueCodeableConcept.coding.code = #152
-* identifier.type.extension.valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
-* identifier.type.coding[0].code = #01
-* identifier.type.coding[0].system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
-
-
-* identifier.value = "15999999"
+* identifier.type.extension.valueCodeableConcept = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais#152 "Chile"
+* identifier.type = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador#01 "Run"
 * identifier.system = "http://www.acme.com/identifiers/patient"
+* identifier.value = "15999999"
 
-* gender = #male
+* telecom.system = #phone
+* telecom.value = "999888777"
+* telecom.use = #mobile
 
-* address.extension[geolocalizacion].url = "http://hl7.org/fhir/StructureDefinition/geolocation"
-* address.extension[geolocalizacion].extension[latitude].url = "latitude"
-* address.extension[geolocalizacion].extension[latitude].valueDecimal = 31.123
-* address.extension[geolocalizacion].extension[longitude].url = "longitude"
-* address.extension[geolocalizacion].extension[longitude].valueDecimal = 31.123
-* address.use = #home
-* address.line = "El boldo 4 #97"
-* address.extension[SituacionCalle].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SituacionCalle"
-* address.extension[SituacionCalle].valueBoolean = true
-
-* maritalStatus.coding.code = #01
-* maritalStatus.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoCivil"
-* deceasedBoolean = false
+* active = true
+* maritalStatus = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoCivil#99 "Desconocido"
 
 * name[NombreOficial].use = #official
-* name[NombreOficial].given = "Luis"
-* name[NombreOficial].family = "Perez"
+* name[NombreOficial].text = "Anibal Diaz Cortés"
+* name[NombreOficial].family = "Diaz"
 * name[NombreOficial].family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
-* name[NombreOficial].family.extension.valueString = "sierra"
-* name[NombreSocial].use = #usual
-* name[NombreSocial].given = "Luisa"
-* telecom.use = #mobile
-* telecom.value = "569854875457"
-* telecom.rank = 1
-* telecom.system = #phone
-* birthDate = "1995-12-12"
+* name[NombreOficial].family.extension.valueString = "Cortés"
+* name[NombreOficial].given = "Anibal"
+* birthDate = "1955-10-20"
+* deceasedBoolean = false
+* gender = #male

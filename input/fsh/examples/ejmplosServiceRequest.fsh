@@ -1,14 +1,14 @@
 Instance: EjemploServiceRequest
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "ServiceRequest Evento de Inicio"
-Description: "ServiceRequest Evento de Inicio"
+Title: "ServiceRequest Evento Iniciar"
+Description: "ServiceRequest Evento Iniciar"
 
 
 * authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
 * priority = #urgent
-* intent = #proposal
+* intent = #order
 * extension[FundamentoPriorizacion].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtStringFundamentoPriorizacion"
 * extension[FundamentoPriorizacion].valueString = "FundamentoPriorizacion"
 * extension[CorrespondeGES].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SospechaPatologiaGes"
@@ -23,21 +23,21 @@ Description: "ServiceRequest Evento de Inicio"
 * extension[EstadoInterconsultaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #1
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
-//* extension[PersonaMayor].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPersonaMayor"
-//* extension[PersonaMayor].valueBoolean = false
-* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
-* reasonReference = Reference(http://acme.com/ehr/fhir/Observation/obs1)
-* encounter = Reference(http://acme.com/ehr/fhir/Encounter/enc1)
-* reasonCode.coding.code = #1
-* reasonCode.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo"
-* supportingInfo[0] = Reference(http://acme.com/ehr/fhir/AllergyIntolerance/all1)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con1)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Observvation/obs2)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Condition/con3)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Observation/obs3)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/DocumentReference/doc1)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/Coverage/cov1)
-* supportingInfo[+] = Reference(http://acme.com/ehr/fhir/QuestionnaireResponse/que1)
+* subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* encounter = Reference(EjemploEncounter) "Referencia a Encounter"
+* authoredOn = "2022-10-25T09:10:20Z"
+* reasonCode = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo#1
+* performer = Reference(EjemploPractitionerRole)
+* reasonReference = Reference(EjemploObservation) "Referencia a Observacion del evento Iniciar"
+* supportingInfo[DiagnosticoSospecha] = Reference(EjemploCondition)  "Referencia a Diagnostico Sospecha"
+* supportingInfo[SospechaPatologiaGes] = Reference(EjemploConditionGES) "Referencia a la condición que especifica si es sospecha de GES"
+* supportingInfo[TipoAlergia] = Reference(EjemploAllergyIntolerance)  "Referencia a los tipos de alergia"
+* supportingInfo[IndiceComorbilidad] = Reference(EjemploObservation2) "Referencia al Indice de comorbilidad"
+* supportingInfo[Cuidador] = Reference(EjemploObservationCuidador)  "Referencia a la observación que indica si el paciente es cuidador o no"
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
+* supportingInfo[DocCuidador] = Reference(EjemploDocumentReference) "Referencia al documento que acredita que es cuidador"
+* supportingInfo[Prevision] = Reference(EjemploCoverage)  "Referencia a Prevision del Paciente"
+* supportingInfo[motivoDerivacion] = Reference(EjemploQuestionnaireResponseInicioLE)  "Referencia al Motivo de Derivacion"
 
 
 /*
@@ -95,14 +95,14 @@ Description: "ServiceRequest 2"
 Instance: EjemploServiceRequestReferenciada
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "ServiceRequest Evento de Referenciada"
-Description: "ServiceRequest Evento de Referenciada"
+Title: "ServiceRequest Evento Referenciar"
+Description: "ServiceRequest Evento Referenciar"
 
 * status = #draft
-* intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+* intent = #order
+* subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.value = "1"
+* identifier.value = "323121"
 * extension[EspecialidadMedicaDestinoCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EspecialidadMedicaDestinoCodigo"
 * extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.code = #3
 * extension[EspecialidadMedicaDestinoCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed"
@@ -114,29 +114,31 @@ Description: "ServiceRequest Evento de Referenciada"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
 * locationCode.text = "Motivo derivación"
 * locationCode.coding.code = #1
-* code = http://snomed.info/sct#758598006
+* code = http://snomed.info/sct#183519002
 * locationCode.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo"
-* performer = Reference(http://acme.com/ehr/fhir/PractitionerRole/referenciaAtendedor)
+* performer = Reference(EjemploPractitionerRoleReferenciadorMHREFERENCIADA)
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLO PARA BUNDLE TERMINAR*/
 Instance: EjemploServiceRequestTerminar
 InstanceOf: ServiceRequestLE
 Usage: #example
-Title: "ServiceRequest Evento de Terminar"
-Description: "ServiceRequest Evento de Terminar"
+Title: "ServiceRequest Evento Terminar"
+Description: "ServiceRequest Evento Terminar"
 
 * status = #draft
-* intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+* intent = #order
+* subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.value = "1"
+* identifier.value = "323121"
+* performer = Reference(EjemploPractitionerRoleTerminar)
 * extension[MotivoCierreInterconsulta].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoCierreInterconsulta"
 * extension[MotivoCierreInterconsulta].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta#2
 * extension[EstadoInterconsultaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #7
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
-
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
 /*FIN PARA BUNDLE TERMINAR*/
 
 
@@ -148,19 +150,15 @@ Title: "ServiceRequest Evento Revisar"
 Description: "ServiceRequest Evento Revisar"
 
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.value = "1"
-* authoredOn = "2022-01-20T13:50:20Z"
+* identifier.value = "323121"
 * status = #draft
-//* priority = #urgent
-* intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
-* doNotPerform = true
-* doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinenciaCodigo"
-* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoPertinenciaCodigo#1
-* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text = "Texto libre"
+// * priority = #urgent
+* intent = #order
+* subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* performer = Reference(EjemploPractitionerRoleRevisar)
 * priority = #routine
 * extension[RequiereExamen].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolRequiereExamen"
-* extension[RequiereExamen].valueBoolean = true
+* extension[RequiereExamen].valueBoolean = false
 * extension[PertinenciaInterconsulta].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PertinenciaInterconsulta"
 * extension[PertinenciaInterconsulta].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPertinenciaInterconsulta#1
 * extension[EstadoInterconsultaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE"
@@ -175,9 +173,8 @@ Description: "ServiceRequest Evento Revisar"
 * category.coding.code = #1
 * category.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo"
 * category.coding.display = "Presencial"
-* performer = Reference(http://acme.com/ehr/fhir/PractitionerRole/revisar)
-* supportingInfo[Examen] = Reference(http://acme.com/ehr/fhir/ServiceRequest/examen)
-
+* performer = Reference(EjemploPractitionerRoleRevisar)
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
 /*EJEMPLO PARA BUNDLE REVISAR*/
 
 /*EJEMPLO PARA BUNDLE Agendar*/
@@ -188,15 +185,16 @@ Title: "ServiceRequest Evento Agendar"
 Description: "ServiceRequest Evento Agendar"
 
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
-* identifier.value = "1"
-* authoredOn = "2022-01-20T13:50:20Z"
+* identifier.value = "323121"
 * status = #draft
-//* priority = #urgent
-* intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+* priority = #urgent
+* intent = #order
+* subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* performer = Reference(EjemploPractitionerRoleAgendarMH)
 * extension[EstadoInterconsultaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #5
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
 /*
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinenciaCodigo"
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
@@ -219,15 +217,16 @@ Description: "ServiceRequest Evento Atender"
 
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "323121"
-* authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
-* intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+* intent = #order
+* subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* performer = Reference(EjemploPractitionerRoleAtender)
 * performer.reference = "http://acme.com/ehr/fhir/PractitionerRole/atender"
 * extension[EstadoInterconsultaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #6
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
-* extension[DestinoAtencionCodigo].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoAtencionCodigo#1
+* extension[ConsecuenciaAtencionCodigo].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo#1
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
 /*EJEMPLO PARA BUNDLE REVISAR*/
 
 
@@ -240,14 +239,16 @@ Description: "ServiceRequest Evento Priorizar"
 
 * identifier.type = http://terminology.cens.cl/CodeSystem/listaespera#IdInterconsulta
 * identifier.value = "323121"
-* authoredOn = "2022-01-20T13:50:20Z"
 * status = #draft
 * priority = #urgent
-* intent = #proposal
-* subject.reference = "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+* intent = #order
+* subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* performer = Reference(EjemploPractitionerRolePriorizar)
 * extension[EstadoInterconsultaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #4
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
+* extension[AtencionPreferente].valueBoolean = true
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
 /*EJEMPLO PARA BUNDLE PRIORIZAR*/
 
 
@@ -261,11 +262,11 @@ Description: "ServiceRequest Examen"
 
 * identifier.value = "dec791f8-406c-11ee-be56-0242ac120002"
 * status = #draft
-* intent = #proposal
-* requester = Reference(http://acme.com/ehr/fhir/Practitioner/revisar)
-* subject = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
+* intent = #order
+* requester = Reference(EjemploPractitionerRevisar)
+* subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
 * occurrenceDateTime = "2022-01-20T13:50:20Z"
-* reasonCode.text = "Descartar enfermedad metastásica."
+* reasonCode.text = "Descartar Insuf. Cardiaca grave"
 * note.text = "Realizar sin uso de medio de contaste por mala función renal."
 * basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/examen)
 * code.coding.code = #24627-2

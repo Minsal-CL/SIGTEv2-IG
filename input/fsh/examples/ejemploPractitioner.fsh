@@ -1,16 +1,19 @@
-Instance: EjemploPractitioner
+Instance: EjemploPractitionerIniciar
 InstanceOf: PrestadorProfesionalLE
 Usage: #example
-Title: "Practitioner Evento de Inicio"
-Description: "Practitioner Evento de Inicio"
+Title: "Practitioner Evento Iniciar"
+Description: "Practitioner Evento Iniciar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
 * extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
-* name.family = "Perez"
-* name.given = "Juan"
+* name.use = #official
+* name.family = "Sepulveda"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
+* name.given = "Ernesto"
 
 * identifier[run].use = #official
 * identifier[run].type.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"
@@ -37,47 +40,19 @@ Description: "Practitioner Evento de Inicio"
 * telecom.use = #home
 * telecom.rank = 1
 
-* address.city.extension[ComunasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ComunasCl"
-* address.city.extension[ComunasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"
-* address.city.extension[ComunasCl].valueCodeableConcept.coding.code = #05602
-* address.city.extension[ComunasCl].valueCodeableConcept.coding.display =  "Algarrobo"
-
-* address.district.extension[ProvinciasCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/ProvinciasCl"
-* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL" 
-* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.code = #056 
-* address.district.extension[ProvinciasCl].valueCodeableConcept.coding.display = "San Antonio"
-
-* address.state.extension[RegionesCl].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/RegionesCl"
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL" 
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.code  = #05 
-* address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Valparaíso"
-
-* address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
-* address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152
-* address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
-
-//* qualification[Cert].identifier.value = "cert"
-//* qualification[Cert].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
-//* qualification[Cert].code.coding.code = #1
-//* qualification[Cert].code.coding.display = "Médico(a) Cirujano(a)"
-//* qualification[Cert].code.text = "Cirujano Plastico"
-//* qualification[Cert].extension[Mencion].url = "https://interoperabilidad.minsal.cl/fhir/ig/hpd/StructureDefinition/Mencion"
-//* qualification[Cert].extension[Mencion].valueString = "Inmunohematología"
-
 * qualification[Esp].identifier.value = "esp"
-* qualification[Esp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[Esp].code.coding.code = #1
-* qualification[Esp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[Esp].code.text = "Cirujano Plastico"
+* qualification[Esp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[Esp].code.text = "Cirujano Cardiovascular"
 * qualification[Esp].period.start = "2023-01-01"
 * qualification[Esp].period.end = "2100-01-31"
 
 * qualification[SubEsp].identifier.value = "subesp"
-* qualification[SubEsp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[SubEsp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[SubEsp].code.coding.code = #1
-* qualification[SubEsp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[SubEsp].code.text = "Cirujano Plastico en Oreja Derecha"
+* qualification[SubEsp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[SubEsp].code.text = "CardiologíaCardiotorácico"
 * qualification[SubEsp].period.start = "2024-01-01"
 * qualification[SubEsp].period.end = "2100-01-31"
 
@@ -86,17 +61,19 @@ Description: "Practitioner Evento de Inicio"
 Instance: EjemploPractitionerReferenciadorMHREFERENCIADA
 InstanceOf: PrestadorProfesionalLE
 Usage: #example
-Title: "Practitioner Referenciador Evento de Referenciada"
-Description: "Practitioner Referenciador Evento de Referenciada"
+Title: "Practitioner Referenciador Evento Referenciar"
+Description: "Practitioner Referenciador Evento Referenciar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
 * extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
-* name.family = "Perez"
-* name.given = "Juan"
-
+* name.use = #official
+* name.family = "Sepulveda"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
+* name.given = "Ernesto"
 * identifier[run].use = #official
 * identifier[run].type.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"
 * identifier[run].type.coding.code = #1
@@ -123,18 +100,18 @@ Description: "Practitioner Referenciador Evento de Referenciada"
 * telecom.rank = 1
 
 * qualification[Esp].identifier.value = "esp"
-* qualification[Esp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[Esp].code.coding.code = #1
-* qualification[Esp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[Esp].code.text = "Cirujano Plastico"
+* qualification[Esp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[Esp].code.text = "Cirujano Cardiovascular"
 * qualification[Esp].period.start = "2023-01-01"
 * qualification[Esp].period.end = "2100-01-31"
 
 * qualification[SubEsp].identifier.value = "subesp"
-* qualification[SubEsp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[SubEsp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[SubEsp].code.coding.code = #1
-* qualification[SubEsp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[SubEsp].code.text = "Cirujano Plastico en Oreja Derecha"
+* qualification[SubEsp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[SubEsp].code.text = "CardiologíaCardiotorácico"
 * qualification[SubEsp].period.start = "2024-01-01"
 * qualification[SubEsp].period.end = "2100-01-31"
 
@@ -152,8 +129,11 @@ Description: "Practitioner Evento Revisar"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
-* name.family = "Perez"
-* name.given = "Juan"
+* name.use = #official
+* name.family = "Sepulveda"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
+* name.given = "Ernesto"
 
 * identifier[run].use = #official
 * identifier[run].type.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"
@@ -181,18 +161,18 @@ Description: "Practitioner Evento Revisar"
 * telecom.rank = 1
 
 * qualification[Esp].identifier.value = "esp"
-* qualification[Esp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[Esp].code.coding.code = #1
-* qualification[Esp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[Esp].code.text = "Cirujano Plastico"
+* qualification[Esp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[Esp].code.text = "Cirujano Cardiovascular"
 * qualification[Esp].period.start = "2023-01-01"
 * qualification[Esp].period.end = "2100-01-31"
 
 * qualification[SubEsp].identifier.value = "subesp"
-* qualification[SubEsp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[SubEsp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[SubEsp].code.coding.code = #1
-* qualification[SubEsp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[SubEsp].code.text = "Cirujano Plastico en Oreja Derecha"
+* qualification[SubEsp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[SubEsp].code.text = "CardiologíaCardiotorácico"
 * qualification[SubEsp].period.start = "2024-01-01"
 * qualification[SubEsp].period.end = "2100-01-31"
 /*FIN PARA BUNDLE REVISAR*/
@@ -201,16 +181,19 @@ Description: "Practitioner Evento Revisar"
 Instance: EjemploPractitionerAtender
 InstanceOf: PrestadorProfesionalLE
 Usage: #example
-Title: "Practitioner Evento de Atender"
-Description: "Practitioner Evento de Atender"
+Title: "Practitioner Evento Atender"
+Description: "Practitioner Evento Atender"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
 * extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
-* name.family = "Perez"
-* name.given = "Juan"
+* name.use = #official
+* name.family = "Sepulveda"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
+* name.given = "Ernesto"
 
 * identifier[run].use = #official
 * identifier[run].type.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"
@@ -238,18 +221,18 @@ Description: "Practitioner Evento de Atender"
 * telecom.rank = 1
 
 * qualification[Esp].identifier.value = "esp"
-* qualification[Esp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[Esp].code.coding.code = #1
-* qualification[Esp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[Esp].code.text = "Cirujano Plastico"
+* qualification[Esp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[Esp].code.text = "Cirujano Cardiovascular"
 * qualification[Esp].period.start = "2023-01-01"
 * qualification[Esp].period.end = "2100-01-31"
 
 * qualification[SubEsp].identifier.value = "subesp"
-* qualification[SubEsp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[SubEsp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[SubEsp].code.coding.code = #1
-* qualification[SubEsp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[SubEsp].code.text = "Cirujano Plastico en Oreja Derecha"
+* qualification[SubEsp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[SubEsp].code.text = "CardiologíaCardiotorácico"
 * qualification[SubEsp].period.start = "2024-01-01"
 * qualification[SubEsp].period.end = "2100-01-31"
 /*FIN PARA BUNDLE REVISAR*/
@@ -258,16 +241,19 @@ Description: "Practitioner Evento de Atender"
 Instance: EjemploPractitionerPriorizar
 InstanceOf: PrestadorProfesionalLE
 Usage: #example
-Title: "Practitioner Evento de Priorizar"
-Description: "Practitioner Evento de Priorizar"
+Title: "Practitioner Evento Priorizar"
+Description: "Practitioner Evento Priorizar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
 * extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
-* name.family = "Perez"
-* name.given = "Juan"
+* name.use = #official
+* name.family = "Sepulveda"
+* name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
+* name.family.extension.valueString = "Sierra"
+* name.given = "Ernesto"
 
 * identifier[run].use = #official
 * identifier[run].type.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"
@@ -295,18 +281,18 @@ Description: "Practitioner Evento de Priorizar"
 * telecom.rank = 1
 
 * qualification[Esp].identifier.value = "esp"
-* qualification[Esp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[Esp].code.coding.code = #1
-* qualification[Esp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[Esp].code.text = "Cirujano Plastico"
+* qualification[Esp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[Esp].code.text = "Cirujano Cardiovascular"
 * qualification[Esp].period.start = "2023-01-01"
 * qualification[Esp].period.end = "2100-01-31"
 
 * qualification[SubEsp].identifier.value = "subesp"
-* qualification[SubEsp].code.coding.system = "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"
+* qualification[SubEsp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
 * qualification[SubEsp].code.coding.code = #1
-* qualification[SubEsp].code.coding.display = "Médico(a) Cirujano(a)"
-* qualification[SubEsp].code.text = "Cirujano Plastico en Oreja Derecha"
+* qualification[SubEsp].code.coding.display = "MÉDICO CIRUJANO"
+* qualification[SubEsp].code.text = "CardiologíaCardiotorácico"
 * qualification[SubEsp].period.start = "2024-01-01"
 * qualification[SubEsp].period.end = "2100-01-31"
 /*FIN PARA BUNDLE PRIORIZAR*/

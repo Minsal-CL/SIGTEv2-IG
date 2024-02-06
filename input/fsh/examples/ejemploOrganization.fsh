@@ -1,60 +1,44 @@
 Instance: EjemploOrganization
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Organization Evento de Inicio"
-Description: "Organization Evento de Inicio"
+Title: "Organization Evento Iniciar"
+Description: "Organization Evento Iniciar"
 
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
-* identifier.value = "1"
+* identifier.type = http://minsal.cl/deis/establecimientos#116309 
+* identifier.value = "Centro de Salud Familiar San Juan Dios"
 
 /*EJEMPLOS PARA BUNDLE REFERENCIADA*/
 Instance: EjemploOrganizationReferencia
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Organization Evento de Referencia"
-Description: "Organization Evento de Referencia"
+Title: "Organization Evento Referenciar"
+Description: "Organization Evento Referenciar"
 
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
-* identifier.value = "1"
-
-Instance: EjemploOrganizationTerminar
-InstanceOf: OrganizationLE
-Usage: #example
-Title: "Organization Evento de Terminar"
-Description: "Organization Evento de Terminar"
-
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
-* identifier.value = "2"
+* identifier.type = http://minsal.cl/deis/establecimientos#124232 
+* identifier.value = "Hospital Linares"
 
 Instance: EjemploOrganizationReferenciadorMHREFERENCIADA
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Organization Referenciador Evento de Referenciada"
-Description: "Organization Referenciador Evento de Referenciada"
+Title: "Organization Referenciador Evento Referenciar"
+Description: "Organization Referenciador Evento Referenciar"
 
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
-* identifier.value = "1"
+* identifier.type = http://minsal.cl/deis/establecimientos#116309 
+* identifier.value = "Centro de Salud Familiar San Juan Dios"
 
-Instance: EjemploOrganizationAgendadorSRREFERENCIADA
-InstanceOf: OrganizationLE
-Usage: #example
-Title: "Organization Evento de Agendador"
-Description: "Organization Evento de Agendador"
-
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
-* identifier.value = "1"
 /*FIN PARA BUNDLE REFERENCIA*/
 
 
 /*EJEMPLOS PARA BUNDLE REVISAR*/
+
 Instance: EjemploOrganizationRevisar
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Organization Evento de Revisar"
-Description: "Organization Evento de Revisar"
+Title: "Organization Evento Revisar"
+Description: "Organization Evento Revisar"
 
-* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
-* identifier.value = "1"
+* identifier.type = http://minsal.cl/deis/establecimientos#124232 
+* identifier.value = "Hospital Linares"
 
 /*FIN PARA BUNDLE REVISAR*/
 
@@ -62,23 +46,32 @@ Description: "Organization Evento de Revisar"
 Instance: EjemploOrganizationAgendar
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Organization Evento de Agendar"
-Description: "Organization Evento de Agendar"
+Title: "Organization Evento Agendar"
+Description: "Organization Evento Agendar"
 
-//* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#PLAC
-* identifier.value = "1"
+* identifier.type = http://minsal.cl/deis/establecimientos#124232 
+* identifier.value = "Hospital Linares"
 
-/*FIN PARA BUNDLE REVISAR*/
+Instance: EjemploOrganizationAgendadorSRREFERENCIADA
+InstanceOf: OrganizationLE
+Usage: #example
+Title: "Organization Evento de Agendador"
+Description: "Organization Evento de Agendador"
+
+* identifier.type = http://minsal.cl/deis/establecimientos#124232 
+* identifier.value = "Hospital Linares"
+/*FIN PARA BUNDLE Agendar*/
 
 
 /*EJEMPLOS PARA BUNDLE Atender*/
 Instance: EjemploOrganizationAtender
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Organization Evento de Atender"
-Description: "Organization Evento de Atender"
+Title: "Organization Evento Atender"
+Description: "Organization Evento Atender"
 
-* identifier.value = "1"
+* identifier.type = http://minsal.cl/deis/establecimientos#124232 
+* identifier.value = "Hospital Linares"
 
 /*FIN PARA BUNDLE REVISAR*/
 
@@ -87,9 +80,22 @@ Description: "Organization Evento de Atender"
 Instance: EjemploOrganizationPriorizar
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "Organization Evento de Priorizar"
-Description: "Organization Evento de Priorizar"
+Title: "Organization Evento Priorizar"
+Description: "Organization Evento Priorizar"
 
-* identifier.value = "1"
-
+* identifier.type = http://minsal.cl/deis/establecimientos#124232 
+* identifier.value = "Hospital Linares"
 /*FIN PARA BUNDLE PRIORIZAR*/
+
+/* EJEMPLOS PARA BUNDLE TERMINAR */
+
+Instance: EjemploOrganizationTerminar
+InstanceOf: OrganizationLE
+Usage: #example
+Title: "Organization Evento Terminar"
+Description: "Organization Evento Terminar"
+
+* identifier.type = http://minsal.cl/deis/establecimientos#124232 
+* identifier.value = "Hospital Linares"
+
+/* FIN PARA BUNDLE TERMINAR */

@@ -9,6 +9,7 @@ Title: "Prestador Administrativo LE"
 Description: "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
 
 * name 1..1 MS
+* name ^short = "Nombre del prestador administrativo"
 
 * identifier ^short = "Id de los prestadores"
 * identifier ^definition = "Identificador para cada prestador. El identificador principal en Chile es el Registro Único Nacional (RUN), identificador que es obligatorio. Además, se puede ingresar un ID extra para cada prestador, disponibilizado por Registro Nacional de Prestadores Institucionales (NRPI), este identificador es opcional"
@@ -25,6 +26,7 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
   * type ^short = "Descripción del identificador"
   * type ^definition = "Descripción para el tipo de identificador"
     * coding MS
+    * coding ^short = "Código definido por un sistema terminológico"
       * system 0..1 MS
       * system ^short = "Sistema de codificación para el código de tipo de identificador"
       * code 1..1 MS

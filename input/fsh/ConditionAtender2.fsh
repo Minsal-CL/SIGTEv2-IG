@@ -23,7 +23,7 @@
 // * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 // //OBLIGATORIO POR ESTANDAR
-// * subject only Reference(PacienteMinsalMPI)
+// * subject only Reference(PatientLE)
 
 
 // * code 1..1 MS

@@ -58,14 +58,14 @@ Description: "Motivo Cierre Interconsulta"
   * display 0..1 MS
 * valueCodeableConcept.text 0..1 MS
 
-Extension:   DestinoAtencionCodigo
-Id:          DestinoAtencionCodigo
+Extension:   ConsecuenciaAtencionCodigo
+Id:          ConsecuenciaAtencionCodigo
 Title:       "Destino Atención Codigo"
 Description: "Destino Atención Codigo"
 * value[x] only CodeableConcept
 * value[x] ^short = "Código Destino Atención"
 * url 1..1 MS
-* valueCodeableConcept from VSDestinoAtencionCodigo
+* valueCodeableConcept from VSConsecuenciaAtencionCodigo
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
   * system 0..1 MS
@@ -112,6 +112,7 @@ Description: "Motivo No Pertinencia Codigo"
   * code 1..1 MS
   * system 0..1 MS
   * display 0..1 MS
+* valueCodeableConcept.text 0..1 MS 
 * valueCodeableConcept from VSMotivoNoPertinenciaCodigo
 
 Extension:   EstadoInterconsultaCodigoLE

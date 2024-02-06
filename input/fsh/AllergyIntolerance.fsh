@@ -1,15 +1,15 @@
 Profile: AllergyIntoleranceInicioLE
 Parent: AllergyIntolerance
 Id: AllergyIntoleranceInicioLE
-Title: "AllergyIntolerance Inicio LE"
-Description: "AllergyIntolerance Inicio LE"
+Title: "AllergyIntolerance Iniciar LE"
+Description: "AllergyIntolerance Iniciar LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 * patient 1..1 MS
   * reference 1..1 MS
   * display 0..1 MS
-* patient only Reference(PacienteMinsalMPI)
+* patient only Reference(PatientLE)
 * patient ^short = "Referencia al paciente"
 * patient ^definition = "Referencia al paciente"
 * patient.reference ^short = "URL del paciente"
@@ -18,6 +18,6 @@ Description: "AllergyIntolerance Inicio LE"
 * patient.display ^definition = "Informacion extra o nombre del paciente"
 
 * code 1..1 MS
+* code ^short = "Seccion para identificar la alergia o intolerancia del paciente"
   * text 1..1 MS
-
-* code.text ^short = "Seccion para identificar la alergia o intolerancia"
+  * text ^short = "Alergia del paciente"

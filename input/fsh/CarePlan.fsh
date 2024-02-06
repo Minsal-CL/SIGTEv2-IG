@@ -9,13 +9,25 @@ Description: "CarePlan Atender LE"
 // OBLIGATORIOS POR ESTANDAR
 
 * status MS
+* status ^short = "Estado del CarePlan, en este caso 'active'"
+* status = #active
+
 * intent MS
-* subject MS
-* subject only Reference(PacienteMinsalMPI)
+* intent ^short = "Intención del CarePlan, en este caso 'plan'"
+* intent = #plan
+
+* subject 1..1 MS
+* subject ^short = "Referencia al paciente"
+* subject only Reference(PatientLE)
 
 * description 1..1 MS
+* description ^short = "Descripción como texto libre"
+
 * activity.reference MS
+* activity.reference ^short = "Detalles definidos en un recurso específico"
+
 * extension contains ExtBoolSolicitudExamenes named SolicitudExamenes 1..1 MS
+* extension[SolicitudExamenes] ^short = "Solicitud de exámenes"
 
 
 

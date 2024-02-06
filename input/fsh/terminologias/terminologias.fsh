@@ -616,8 +616,8 @@ Description: "Tipo Consulta"
 * #2 "Control"
 
 
-ValueSet: VSDestinoAtencionCodigo
-Id: VSDestinoAtencionCodigo
+ValueSet: VSConsecuenciaAtencionCodigo
+Id: VSConsecuenciaAtencionCodigo
 Title: "Destino Atención Codigo"
 Description: "Destino Atención Codigo"
 * ^experimental = false
@@ -629,10 +629,10 @@ Description: "Destino Atención Codigo"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSDestinoAtencionCodigo
+* codes from system CSConsecuenciaAtencionCodigo
 
-CodeSystem: CSDestinoAtencionCodigo
-Id: CSDestinoAtencionCodigo
+CodeSystem: CSConsecuenciaAtencionCodigo
+Id: CSConsecuenciaAtencionCodigo
 Title: "Destino Atención Codigo"
 Description: "Destino Atención Codigo"
 * ^experimental = false

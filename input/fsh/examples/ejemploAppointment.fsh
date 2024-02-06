@@ -1,8 +1,8 @@
 // Instance: EjemploAppointment
 // InstanceOf: AppointmentInicioLE
 // Usage: #example
-// Title: "Appointment Evento de Inicio"
-// Description: "Appointment Evento de Inicio"
+// Title: "Appointment Evento Iniciar"
+// Description: "Appointment Evento Iniciar"
 
 // * status = #fulfilled
 // * identifier.value = "21"
@@ -16,19 +16,17 @@
 Instance: EjemploAppointmentAgendar
 InstanceOf: AppointmentAgendarLE
 Usage: #example
-Title: "Appointment Evento de Agendar"
-Description: "Appointment Evento de Agendar"
+Title: "Appointment Evento Agendar"
+Description: "Appointment Evento Agendar"
 
 * status = #booked
 * identifier.value = "21"
 * start = "2023-01-22T09:00:00Z"
 * end = "2023-01-22T09:30:00Z"
-* basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/agendar)
+* basedOn = Reference(EjemploServiceRequestAgendar)
 
-* participant[patientLE].actor = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-// * participant[patientLE].actor.type = #Patient
-* participant[practitionerRoleLE].actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor)
-// * participant[practitionerRoleLE].actor.type = #PractitionerRole
+* participant[patientLE].actor = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* participant[practitionerRoleLE].actor = Reference(EjemploPractitionerRoleAgendarAPPO)
 * participant[patientLE].status = #accepted
 * participant[practitionerRoleLE].status = #accepted
 
@@ -41,20 +39,20 @@ Description: "Appointment Evento de Agendar"
 Instance: EjemploAppointmentAgendarCancelar
 InstanceOf: AppointmentAgendarLE
 Usage: #example
-Title: "Appointment Evento de Agendar(Cancelación)"
-Description: "Appointment Evento de Agendar(Cancelación)"
+Title: "Appointment Evento Agendar(Cancelación)"
+Description: "Appointment Evento Agendar(Cancelación)"
 
 * status = #cancelled
 * cancelationReason.coding = http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason#pat
 * identifier.value = "21"
 * start = "2023-01-22T09:00:00Z"
 * end = "2023-01-22T09:30:00Z"
-* basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/agendar)
+* basedOn = Reference(EjemploServiceRequestAgendar)
 
-* participant[patientLE].actor = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-// * participant[patientLE].actor.type = #Patient
-* participant[practitionerRoleLE].actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor)
-// * participant[practitionerRoleLE].actor.type = #PractitionerRole
+* participant[patientLE].actor = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* participant[practitionerRoleLE].actor = Reference(EjemploPractitionerRoleAgendarAPPO)
+* participant[patientLE].status = #accepted
+* participant[practitionerRoleLE].status = #accepted
 * participant[patientLE].status = #accepted
 * participant[practitionerRoleLE].status = #accepted
 
@@ -66,19 +64,17 @@ Description: "Appointment Evento de Agendar(Cancelación)"
 Instance: EjemploAppointmentAgendarSinPresentacion
 InstanceOf: AppointmentAgendarLE
 Usage: #example
-Title: "Appointment Evento de Agendar(Sin Presentacion)"
-Description: "Appointment Evento de Agendar(Sin Presentacion)"
+Title: "Appointment Evento Agendar(Sin Presentacion)"
+Description: "Appointment Evento Agendar(Sin Presentacion)"
 
 * status = #noshow
 * identifier.value = "21"
 * start = "2023-01-22T09:00:00Z"
 * end = "2023-01-22T09:10:00Z"
-* basedOn = Reference(http://acme.com/ehr/fhir/ServiceRequest/agendar)
+* basedOn = Reference(EjemploServiceRequestAgendar)
 
-* participant[patientLE].actor = Reference(http://acme.com/ehr/fhir/Patient/EjemploPatient)
-// * participant[patientLE].actor.type = #Patient
-* participant[practitionerRoleLE].actor = Reference(http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor)
-// * participant[practitionerRoleLE].actor.type = #PractitionerRole
+* participant[patientLE].actor = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* participant[practitionerRoleLE].actor = Reference(EjemploPractitionerRoleAgendarAPPO)
 * participant[patientLE].status = #accepted
 * participant[practitionerRoleLE].status = #accepted
 
