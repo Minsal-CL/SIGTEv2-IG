@@ -27,7 +27,7 @@ Description: "Bundle Evento Iniciar"
 * entry[conditionDiagnostico].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploCondition"
 * entry[conditionDiagnostico].resource = EjemploCondition
 
-* entry[observationComorbilidad].fullUrl = "http://acme.com/ehr/fhir/Observvation/EjemploObservation2"
+* entry[observationComorbilidad].fullUrl = "http://acme.com/ehr/fhir/Observation/EjemploObservation2"
 * entry[observationComorbilidad].resource = EjemploObservation2
 
 * entry[conditionGes].fullUrl = "http://acme.com/ehr/fhir/Condition/EjemploConditionGES"

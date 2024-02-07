@@ -1,0 +1,30 @@
+### Tabla de Datos
+
+|          **Variable**          | **Cardinalidad** |                                   **Descripción**                                   |                           **Recurso.elemento**                           |
+|:------------------------------:|:----------------:|:-----------------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
+|         IdInterconsulta        |       1..1       |                          Identificador de la Interconsulta                          |                        ServiceRequestLE.identifier                       |
+|       FechaEventoAgendar       |       1..1       |                                   Fecha del Evento                                  |                        MessageHeaderLE.lastUpdated                       |
+| EstablecimientoCodigoAgendador |       1..1       |                              Código de Establecimiento                              |                         OrganizationLE.identifier                        |
+|  SolucionInformaticaAgendador  |       1..1       |                                 Solución Informática                                |                      MessageHeaderLE.source.software                     |
+|   TipoIdentificadorCodigoProf  |       1..1       | Identificador de identidad del prestador administrativo que realiza el agendamiento |            Practitioner.identifier[RUN|RNPI].type            |
+|      DigitoVerificadorProf     |       1..1       |                  Dígito verificador asociado al RUN del Profesional                 |            Practitioner.identifier[RUN].extension.valueString            |
+|     OtraIdentificacionProf     |       1..1       |                                 Otra Identificación                                 |              Practitioner.identifier[otro].value              |
+|             RunProf            |       1..1       |                     El Rol Único Nacional (RUN) del Profesional                     |                    Practitioner.identifier[RUN].value                    |
+|   TipoIdentificadorCodigoProf  |       1..1       |    Identificador de identidad del Profesional con el cual se atendera el paciente   |                                                                          |
+|          NombreOficial         |       1..1       |                                  Nombre profesional                                 | Practitioner.name.use=officialPractitioner.name.given=[nombre1, nombre2] |
+|         PrimerApellido         |       1..1       |                                                                                     |                         Practitioner.name._family                        |
+|         SegundoApellido        |       0..1       |                                                                                     |            Practitioner.name.family.extension.SegundoApellido=           |
+|     TituloProfesionalCodigo    |       1..1       |                                Titulo del profesional                               |                      Practitioner.qualification[TIT]                     |
+|    EspecialidadMedicaCodigo    |       0..*       |                         Especialidad Médica del profesional                         |                      Practitioner.qualification[ESP]                     |
+|         Subespecialidad        |       0..*       |                           Subespecialidad del profesional                           |                    Practitioner.qualification[SUBESP]                    |
+|        MedioNotificación       |       0..1       |     Medio por el cual se realiza la notificación de la cita agendada al paciente    |            AppointmentAgendarLE.extension.valueCodeableConcept           |
+|           Contactado           |       1..1       |            Verdadero en caso de haber contactado al paciente exitosamente           |           AppointmentAgendarLE.extension.extension.valueBoolean          |
+|       FechaAgendaAtencion      |       0..1       |                             Fecha de creación de la cita                            |                       AppointmentAgendarLE.created                       |
+|     MotivoNoContactabilidad    |       0..1       |           Razón o motivo por el cual no fue posible contactar al paciente           |       AppointmentAgendarLE.extension.extension.valueCodeableConcept      |
+|       EstadoAgendamiento       |       1..1       |                                  Estado de la cita                                  |                        AppointmentAgendarLE.status                       |
+|  MotivoCancelacionAgendamiento |       0..1       |                           Motivo de cancelación de la cita                          |            AppointmentAgendarLE.cancelationReason.coding.code            |
+|             IdCita             |       1..1       |             Identificador de la cita en el registro clínico electrónico             |                      AppointmentAgendarLE.identifier                     |
+|         FechaInicioCita        |       1..1       |                fecha de inicio de la cita formato: YYYY-MM-DDTHH:MMZ                |                        AppointmentAgendarLE.start                        |
+|        FechaTerminoCita        |       0..1       |                fecha de término de la cita formato: YYYY-MM-DDTHH:MMZ               |                         AppointmentAgendarLE.end                         |
+|           OtroMotivo           |       0..1       |                          Otro motivo de no contactabilidad                          |    AppointmentAgendarLE.extension.extension.valueCodeableConcept.text    |
+|    EstadoInterconsultaCodigo   |       1..1       |             Estado de la Interconsulta en relación al proceso de negocio            |              ServiceRequestLE.extensión.valueCodeableConcept             |
