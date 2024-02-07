@@ -63,22 +63,7 @@ El intercambio de mensajes entre los actores se debe realizar siguiendo las defi
       }
 
 
-<br>
-<div align="center" >
-  <img  style="border: 1px solid; color: black;" src="mensaje-envio.png"> 
-  <p></p>
-</div>
-<br>
-
-
 ### Mensaje de Respuesta
-
-<br>
-<div align="center" >
-  <img  style="border: 1px solid; color: black;" src="mensaje-respuesta.png"> 
-  <p></p>
-</div>
-<br>
 
 #### Respuesta exitosa
 
