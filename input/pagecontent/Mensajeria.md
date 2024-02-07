@@ -11,7 +11,7 @@ El intercambio de mensajes entre los actores se debe realizar siguiendo las defi
 * Otros recursos: Necesariamente los recursos referenciados deben ser incluidos dentro del mismo Bundle como entradas adicionales, por ejemplo en el caso del **Mensaje de Envío** los recursos referenciados en el MessageHeader(autor, focus, etc) y en el caso del **Mensaje de Respuesta** un recurso [**OperationOutcome**](https://www.hl7.org/fhir/R4/operationoutcome.html) con información de la operación, advertencias o lista de errores(OperationOutcome.issue)
 
 
-### Mensajería de Envío
+### Mensaje de Envío
 
 * El recurso del tipo Bundle debe ser del tipo mensaje(type=message)
 * Siempre el primer entry en Bundle.type=message debe ser un MessageHeader.
@@ -71,7 +71,7 @@ El intercambio de mensajes entre los actores se debe realizar siguiendo las defi
 <br>
 
 
-#### Mensaje de Respuesta
+### Mensaje de Respuesta
 
 <br>
 <div align="center" >
@@ -195,7 +195,7 @@ El intercambio de mensajes entre los actores se debe realizar siguiendo las defi
           } ]
         }
 
-#### Response Code
+### Response Code
 
 * Siempre es 200  en caso de que el mensaje sea procesado completamente
 * 4XX si el mensaje no pudo ser procesado correctamente y se debe indicar error o errores usando el recurso OperationOutcome
