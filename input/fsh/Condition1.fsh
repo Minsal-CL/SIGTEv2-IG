@@ -36,7 +36,7 @@ Description: "Condicion Iniciar LE, recurso que se utiliza para indicar el diagn
     * code ^short = "Código definido en un sistema terminológico"
     * display 0..1 MS
     * display ^short = "Representación visual definida por el sistema terminológico"
-  * text ^short = "Dianostico como texto libre"
+  * text ^short = "Diagnóstico como texto libre"
 * category ^short = "Categoría del diagnóstico de origen. Se refiere a un diagnostico  identificado durante el encuentro médico o un problema de salud previamente hablado"
 
 * clinicalStatus 1..1 MS

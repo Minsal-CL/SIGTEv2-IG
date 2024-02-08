@@ -48,10 +48,10 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[encounter] ^short = "Entrada en el Bundle: contendrá un recurso Encounter"
 * entry[encounter].resource only EncounterAtenderLE
 * entry[encounter].resource ^short = "Encuentro que ocurre durante la atención del paciente."
-* entry[carePlan] ^short = "Entrada en el Bundle: contendrá un recurso o información"
+* entry[carePlan] ^short = "Entrada en el Bundle: contendrá un recurso CarePlan"
 * entry[carePlan].resource only CarePlanAtenderLE  
 * entry[carePlan].resource ^short = "Indicaciones clinicas que deja el profesional para el paciente"
-* entry[questionnaireResponse] ^short = "Entrada en el Bundle: contendrá un recurso o información"
+* entry[questionnaireResponse] ^short = "Entrada en el Bundle: contendrá un recurso QuestionnaireResponse"
 * entry[questionnaireResponse].resource only QuestionnaireResponseAtenderLE  
 * entry[questionnaireResponse].resource ^short = "Recurso utilizado para guardar la anamnesis del paciente"
 * entry[observation] ^short = "Entrada en el Bundle: contendrá un recurso Observation"

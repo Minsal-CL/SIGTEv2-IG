@@ -81,9 +81,9 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry[docCuidador] ^short = "Entrada en el Bundle: contendrá un recurso DocumentReference"
 * entry[docCuidador].resource only DocumentReferenceInicioLE
 * entry[docCuidador].resource ^short = "Documento que acredita que el paciente es cuidador."
-* entry[prevision] ^short = "Entrada en el Bundle: contendrá un recurso o información"
+* entry[prevision] ^short = "Entrada en el Bundle: contendrá un recurso Coverage"
 * entry[prevision].resource only CoverageInicioLE
 * entry[prevision].resource ^short = "Información de la previsión del paciente"
-* entry[motivoDerivacion] ^short = "Entrada en el Bundle: contendrá un recurso Coverage"
+* entry[motivoDerivacion] ^short = "Entrada en el Bundle: contendrá un recurso QuestionnaireResponse"
 * entry[motivoDerivacion].resource only QuestionnaireResponseInicioLE
 * entry[motivoDerivacion].resource ^short = "Recurso donde se registra el motivo de la derivación del paciente"
