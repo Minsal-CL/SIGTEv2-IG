@@ -70,6 +70,7 @@ Description: "MesaggeHeader Evento Agendar"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#agendar
 
 * focus = Reference(EjemploAppointmentAgendar)
+* focus = Reference(EjemploServiceRequestAgendar)
 * author = Reference(EjemploPractitionerRoleAgendarMH)
 /*FIN PARA BUNDLE Agendar*/
 
@@ -86,6 +87,7 @@ Description: "MesaggeHeader Evento Atender"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#atender
 
 * focus = Reference(EjemploEncounterAtender)
+* focus = Reference(EjemploServiceRequestAtender)
 * author = Reference(EjemploPractitionerRoleAtender)
 /*FIN PARA BUNDLE Atender*/
 
