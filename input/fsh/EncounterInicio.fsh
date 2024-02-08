@@ -19,6 +19,7 @@ Description: "Encounter Iniciar LE recurso que se utiliza para representar el en
   * type.coding.code = #FILL
 * identifier ^short = "Id del registro de atención o encuentro del sistema clínico de origen"
 
+* diagnosis 1..1
 * diagnosis.condition only Reference(ConditionInicioDiagnosticoLE)
 * diagnosis.condition ^short = "Referencia al diagnóstico, relevante para este encuentro médico"
 
