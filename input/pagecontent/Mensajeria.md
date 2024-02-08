@@ -1,5 +1,5 @@
 
-El mecanismo de intercambio definido para las transacciones es [FHIR messaging](https://www.hl7.org/fhir/R4/messaging.html)(Mensajería de FHIR), esto consiste en el intercambio de mensajes entre un emisor y un receptor, emulando en cierta medida la mensajería HL7 v2.
+El mecanismo de intercambio definido para las transacciones es [FHIR messaging](https://www.hl7.org/fhir/R4/messaging.html)(Mensajería de FHIR), esto consiste en el intercambio de mensajes entre un emisor y un receptor, emulando en cierta medida la mensajería HL7 v2 ([Ver diferencias entre Mensajería y REST](https://www.hl7.org/fhir/R4/messaging.html#endpoints)).
 
 El intercambio de mensajes entre los actores se debe realizar siguiendo las definiciónes de la especificación oficial de FHIR por lo que se supone que soportan la [operación FHIR **$process-message**](https://www.hl7.org/fhir/R4/messageheader-operation-process-message.html)
 
