@@ -9,6 +9,7 @@ Description: "Encounter Evento Iniciar"
 * status = #finished
 * class = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo#1
 * subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* diagnosis.condition = Reference(EjemploCondition)
 * period.start = "2023-10-25T09:00:00Z"
 * period.end = "2023-10-25T09:20:00Z"
 
@@ -32,7 +33,7 @@ Description: "Encounter Evento Atender"
 // * reasonReference[CondicionAtenderDiagnosticoConfirmacionLE].type = "Condition"
 * reasonReference[ObservationAtenderLE] = Reference(EjemploObservationAtender)
 * reasonReference[ObservationAtenderLE].type = "Observation"
-* diagnosis.condition = Reference(EjemploCondition)
+* diagnosis.condition = Reference(EjemploCondicionAtenderDiagnosticoConfirmacionLE)
 * period.start = "2023-01-22T09:00:00Z"
 * period.end = "2023-01-22T10:00:00Z"
 * type = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoConsulta#1
