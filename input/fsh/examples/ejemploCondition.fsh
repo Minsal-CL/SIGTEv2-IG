@@ -13,6 +13,21 @@ Description: "Condition Diagnóstico Sospecha Evento Iniciar"
 * verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
 * severity = http://snomed.info/sct#6736007
 
+Instance: EjemploConditionAtender
+InstanceOf: ConditionInicioDiagnosticoLE
+Usage: #example
+Title: "Condition Diagnóstico Sospecha Evento Iniciar"
+Description: "Condition Diagnóstico Sospecha Evento Iniciar"
+
+* code = http://diagnosticos.cl/uno#1231984 "Insuficiencia Cardiaca (diagnóstico)"
+* code.text = "Insuficiencia Cardiaca"
+* category = http://terminology.hl7.org/CodeSystem/condition-category#encounter-diagnosis
+* category.text = "diagnostico"
+* subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
+* clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active
+* verificationStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status#confirmed
+* severity = http://snomed.info/sct#6736007
+
 Instance: EjemploConditionGES
 InstanceOf: ConditionInicioGesLE
 Usage: #example

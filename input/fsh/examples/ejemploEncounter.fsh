@@ -33,7 +33,7 @@ Description: "Encounter Evento Atender"
 // * reasonReference[CondicionAtenderDiagnosticoConfirmacionLE].type = "Condition"
 * reasonReference[ObservationAtenderLE] = Reference(EjemploObservationAtender)
 * reasonReference[ObservationAtenderLE].type = "Observation"
-* diagnosis.condition = Reference(EjemploCondicionAtenderDiagnosticoConfirmacionLE)
+* diagnosis.condition = Reference(EjemploConditionAtender)
 * period.start = "2023-01-22T09:00:00Z"
 * period.end = "2023-01-22T10:00:00Z"
 * type = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoConsulta#1
