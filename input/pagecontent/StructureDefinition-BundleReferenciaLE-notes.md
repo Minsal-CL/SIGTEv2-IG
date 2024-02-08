@@ -23,3 +23,4 @@
 |   EstadoInterconsultaCodigo  |       1..1       |                                                  Estado de la Interconsulta en relación al proceso de negocio                                                  |        ServiceRequestLE.extensión.valueCodeableConcept.coding.code        |
 |                              |                  |                                                                                                                                                                |       ServiceRequestLE.extensión.valueCodeableConcept.coding.system       |
 |  ServicioDerivacionRequerido |        1.1       |                                               Corresponde al servicio requerido en la organización de referencia                                               |                           ServiceRequestLE.code                           |
+{:.grid}

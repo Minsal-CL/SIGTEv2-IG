@@ -32,3 +32,4 @@
 | SubEspecialidadMedicaDestinoCodigo |       0..1       |        Subespecialidad médica a la que es derivado el paciente        |                              ServiceRequestLE.extension.valueCodeableConcept.coding.code=1                              |
 |                                    |                  |                                                                       |                         ServiceRequestLE.extension.valueCodeableConcept.coding.display=Anatomía                         |
 |                                    |                  |                                                                       | ServiceRequestLE.extension.valueCodeableConcept.coding.system=http://minsal.cl/listaespera/CodeSystem/CSEspecialidadMed |
+{:.grid}

@@ -19,3 +19,4 @@
 |    MotivoCierreInterconsulta    |       1..1       |     Se establece el motivo de cierre de la interconsulta, utilizado para el evento terminar.     |                                             ServiceRequestLE.extension.Coding                                             |
 |         roleProfesional         |       1..1       |                                                                                                  |                                                   PractitionerRole.code                                                   |
 |    EstadoInterconsultaCodigo    |       1..1       |                   Estado de la Interconsulta en relación al proceso de negocio                   | ServiceRequestLE.extension.valueCodeableConcept.coding.code ServiceRequestLE.extension.valueCodeableConcept.coding.system |
+{:.grid}

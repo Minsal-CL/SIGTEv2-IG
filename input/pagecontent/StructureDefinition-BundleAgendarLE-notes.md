@@ -28,3 +28,4 @@
 |        FechaTerminoCita        |       0..1       |                fecha de término de la cita formato: YYYY-MM-DDTHH:MMZ               |                         AppointmentAgendarLE.end                         |
 |           OtroMotivo           |       0..1       |                          Otro motivo de no contactabilidad                          |    AppointmentAgendarLE.extension.extension.valueCodeableConcept.text    |
 |    EstadoInterconsultaCodigo   |       1..1       |             Estado de la Interconsulta en relación al proceso de negocio            |              ServiceRequestLE.extensión.valueCodeableConcept             |
+{:.grid}

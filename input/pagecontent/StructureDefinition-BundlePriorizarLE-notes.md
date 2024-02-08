@@ -18,3 +18,4 @@
 |        PriorizacionCodigo        |       1..1       |                                                              |                         ServiceRequestLE.priority                        |
 |        AtencionPreferente        |       1..1       |               ¿Hace uso de atención preferente?              |                  ServiceRequestLE.extension.valueBoolean                 |
 |     EstadoInterconsultaCodigo    |       1..1       | Estado de la Interconsulta en relación al proceso de negocio |              ServiceRequestLE.extension.valueCodeableConcept             |
+{:.grid}
