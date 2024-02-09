@@ -1209,8 +1209,8 @@ Usage: #definition
 
 ValueSet: VSServicioRequerido
 Id: VSServicioRequerido
-Title: "Corresponde al servicio que se requiere"
-Description: "Corresponde al servicio que se requiere"
+Title: "Servicio Requerido"
+Description: "Servicio Requerido"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
