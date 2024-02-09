@@ -3954,522 +3954,522 @@ Summary
 <table class="grid">
   <thead>
     <tr>
-      <th style="text-align: center"><strong>Variable</strong></th>
-      <th style="text-align: center"><strong>Cardinalidad</strong></th>
-      <th style="text-align: center"><strong>Descripción</strong></th>
-      <th style="text-align: center"><strong>Recurso.elemento</strong></th>
+      <th><strong>Variable</strong></th>
+      <th><strong>Cardinalidad</strong></th>
+      <th><strong>Descripción</strong></th>
+      <th><strong>Recurso.elemento</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">IdInterconsulta</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Corresponde al identificador de la Interconsulta. cod_establecimiento+”-“+idConsultaAPS+”-“+uuid Se asigna desde nivel central. En esta transacción no se requiere este dato.</td>
-      <td style="text-align: center">ServiceRequestLE.identifier</td>
+      <td>IdInterconsulta</td>
+      <td>0..1</td>
+      <td>Corresponde al identificador de la Interconsulta. cod_establecimiento+”-“+idConsultaAPS+”-“+uuid Se asigna desde nivel central. En esta transacción no se requiere este dato.</td>
+      <td>ServiceRequestLE.identifier</td>
     </tr>
     <tr>
-      <td style="text-align: center">FechaEventoIniciar</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Fecha del Evento. El formato corresponde a: año, mes, día, hora y se representa de la siguiente forma: YYYY-MM-DDTHH:MMZ</td>
-      <td style="text-align: center">MessageHeaderLE.meta.lastUpdated</td>
+      <td>FechaEventoIniciar</td>
+      <td>1..1</td>
+      <td>Fecha del Evento. El formato corresponde a: año, mes, día, hora y se representa de la siguiente forma: YYYY-MM-DDTHH:MMZ</td>
+      <td>MessageHeaderLE.meta.lastUpdated</td>
     </tr>
     <tr>
-      <td style="text-align: center">EstablecimientoCodigoOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Código DEIS de Establecimiento solicitante</td>
-      <td style="text-align: center">OrganizationLE.identifier</td>
+      <td>EstablecimientoCodigoOrigen</td>
+      <td>1..1</td>
+      <td>Código DEIS de Establecimiento solicitante</td>
+      <td>OrganizationLE.identifier</td>
     </tr>
     <tr>
-      <td style="text-align: center">SolucionInformaticaOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Solución Informática. Corresponde al nombre (un string human-friendly) del aplicativo de Registro Clínico Electrónico que realiza el envío de la información.</td>
-      <td style="text-align: center">MessageHeaderLE.source.software</td>
+      <td>SolucionInformaticaOrigen</td>
+      <td>1..1</td>
+      <td>Solución Informática. Corresponde al nombre (un string human-friendly) del aplicativo de Registro Clínico Electrónico que realiza el envío de la información.</td>
+      <td>MessageHeaderLE.source.software</td>
     </tr>
     <tr>
-      <td style="text-align: center">IdConsultaAPS</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Id del registro de atención o encuentro del sistema clínico de origen</td>
-      <td style="text-align: center">EncounterInicioLE.identifier</td>
+      <td>IdConsultaAPS</td>
+      <td>1..1</td>
+      <td>Id del registro de atención o encuentro del sistema clínico de origen</td>
+      <td>EncounterInicioLE.identifier</td>
     </tr>
     <tr>
-      <td style="text-align: center">TipoIdentificadorCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Tipo de documento de identificación de paciente</td>
-      <td style="text-align: center">Patient.identifier[RUN].type=1</td>
+      <td>TipoIdentificadorCodigo</td>
+      <td>1..1</td>
+      <td>Tipo de documento de identificación de paciente</td>
+      <td>Patient.identifier[RUN].type=1</td>
     </tr>
     <tr>
-      <td style="text-align: center">Número documento</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Número del documento de identificación del paciente.</td>
-      <td style="text-align: center">Patient.identifier[RUN].value</td>
+      <td>Número documento</td>
+      <td>1..1</td>
+      <td>Número del documento de identificación del paciente.</td>
+      <td>Patient.identifier[RUN].value</td>
     </tr>
     <tr>
-      <td style="text-align: center">NombreOficial</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Nombre consignado en el registro civil</td>
-      <td style="text-align: center">Patient.name[0].given Patient.name[0].use=official</td>
+      <td>NombreOficialPaciente</td>
+      <td>1..1</td>
+      <td>Nombre consignado en el registro civil</td>
+      <td>Patient.name[0].given Patient.name[0].use=official</td>
     </tr>
     <tr>
-      <td style="text-align: center">PrimerApellido</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Primer Apellido</td>
-      <td style="text-align: center">Patientname[0].family.extension</td>
+      <td>PrimerApellidoPaciente</td>
+      <td>1..1</td>
+      <td>Primer Apellido</td>
+      <td>Patientname[0].family.extension</td>
     </tr>
     <tr>
-      <td style="text-align: center">SegundoApellido</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Segundo Apellido</td>
-      <td style="text-align: center">Patientname[0].family.extension</td>
+      <td>SegundoApellidoPaciente</td>
+      <td>0..1</td>
+      <td>Segundo Apellido</td>
+      <td>Patientname[0].family.extension</td>
     </tr>
     <tr>
-      <td style="text-align: center">NombreSocial</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Nombre Social</td>
-      <td style="text-align: center">Patientname[1].text Patient.name[1].use=nickname</td>
+      <td>NombreSocial</td>
+      <td>0..1</td>
+      <td>Nombre Social</td>
+      <td>Patientname[1].text Patient.name[1].use=nickname</td>
     </tr>
     <tr>
-      <td style="text-align: center">SexoRegistralCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Sexo consignado en registro civil</td>
-      <td style="text-align: center">Patient.gender</td>
+      <td>SexoRegistralCodigo</td>
+      <td>1..1</td>
+      <td>Sexo consignado en registro civil</td>
+      <td>Patient.gender</td>
     </tr>
     <tr>
-      <td style="text-align: center">SexobiologicoCodigo</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Sexo al nacer</td>
-      <td style="text-align: center">Patient.extension</td>
+      <td>SexobiologicoCodigo</td>
+      <td>0..1</td>
+      <td>Sexo al nacer</td>
+      <td>Patient.extension</td>
     </tr>
     <tr>
-      <td style="text-align: center">GeneroCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Identidad de Género</td>
-      <td style="text-align: center">Patient.extension</td>
+      <td>GeneroCodigo</td>
+      <td>1..1</td>
+      <td>Identidad de Género</td>
+      <td>Patient.extension</td>
     </tr>
     <tr>
-      <td style="text-align: center">FechaNacimiento</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Fecha de nacimiento del Paciente Formato YYYY-MM-DD</td>
-      <td style="text-align: center">Patient.birthdate</td>
+      <td>FechaNacimiento</td>
+      <td>1..1</td>
+      <td>Fecha de nacimiento del Paciente Formato YYYY-MM-DD</td>
+      <td>Patient.birthdate</td>
     </tr>
     <tr>
-      <td style="text-align: center">PaisOrigenCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">País de Origen (Código ISO3166-3)</td>
-      <td style="text-align: center">Patient.extension</td>
+      <td>PaisOrigenCodigo</td>
+      <td>1..1</td>
+      <td>País de Origen (Código ISO3166-3)</td>
+      <td>Patient.extension</td>
     </tr>
     <tr>
-      <td style="text-align: center">NacionalidadCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Nacionalidad (Código ISO3166-3)</td>
-      <td style="text-align: center">Patient.extension</td>
+      <td>NacionalidadCodigo</td>
+      <td>1..1</td>
+      <td>Nacionalidad (Código ISO3166-3)</td>
+      <td>Patient.extension</td>
     </tr>
     <tr>
-      <td style="text-align: center">PuebloIndigenaPertenencia</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Indicar si el paciente pertenece un pueblo indigena</td>
-      <td style="text-align: center">Patient.extension</td>
+      <td>PuebloIndigenaPertenencia</td>
+      <td>1..1</td>
+      <td>Indicar si el paciente pertenece un pueblo indigena</td>
+      <td>Patient.extension</td>
     </tr>
     <tr>
-      <td style="text-align: center">PuebloIndigenaCodigo</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Idenficiar a cuál pueblo pertenece</td>
-      <td style="text-align: center">Patient.extension</td>
+      <td>PuebloIndigenaCodigo</td>
+      <td>0..1</td>
+      <td>Idenficiar a cuál pueblo pertenece</td>
+      <td>Patient.extension</td>
     </tr>
     <tr>
-      <td style="text-align: center">OtroPuebloIndigena</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">En caso de pertenecer a otro pueblo indigena.</td>
-      <td style="text-align: center">Patient.extension[Pueblo-Indigena].text</td>
+      <td>OtroPuebloIndigena</td>
+      <td>0..1</td>
+      <td>En caso de pertenecer a otro pueblo indigena.</td>
+      <td>Patient.extension[Pueblo-Indigena].text</td>
     </tr>
     <tr>
-      <td style="text-align: center">PuebloAfroPertenencia</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Indicar si el paciente pertenece a un Pueblo Afrodescendiente chileno</td>
-      <td style="text-align: center">Patient.extension</td>
+      <td>PuebloAfroPertenencia</td>
+      <td>1..1</td>
+      <td>Indicar si el paciente pertenece a un Pueblo Afrodescendiente chileno</td>
+      <td>Patient.extension</td>
     </tr>
     <tr>
-      <td style="text-align: center">Medio de contacto</td>
-      <td style="text-align: center">1..*</td>
-      <td style="text-align: center">Medio de contactabilidad. Puede ser móvil, teléfono fijo, correo, etc Opcionalmente agregar un rank de prioridad</td>
-      <td style="text-align: center">Patient.telecom</td>
+      <td>Medio de contacto</td>
+      <td>1..*</td>
+      <td>Medio de contactabilidad. Puede ser móvil, teléfono fijo, correo, etc Opcionalmente agregar un rank de prioridad</td>
+      <td>Patient.telecom</td>
     </tr>
     <tr>
-      <td style="text-align: center">FechaInterConsulta</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Fecha-Hora de cuando ocurre la solicitud de Interconsulta El formato corresponde consignar año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ</td>
-      <td style="text-align: center">ServiceRequestLE.authoredOn</td>
+      <td>FechaInterConsulta</td>
+      <td>1..1</td>
+      <td>Fecha-Hora de cuando ocurre la solicitud de Interconsulta El formato corresponde consignar año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ</td>
+      <td>ServiceRequestLE.authoredOn</td>
     </tr>
     <tr>
-      <td style="text-align: center">Estado</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Estado de la Interconsulta</td>
-      <td style="text-align: center">ServiceRequestLE.status</td>
+      <td>Estado</td>
+      <td>1..1</td>
+      <td>Estado de la Interconsulta</td>
+      <td>ServiceRequestLE.status</td>
     </tr>
     <tr>
-      <td style="text-align: center">FechaAtenciónAPSComienzo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Fecha de comienzo del encuentro atenciónAPS El formato corresponde consignar año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ</td>
-      <td style="text-align: center">EncounterInicioLE.period.start</td>
+      <td>FechaAtenciónAPSComienzo</td>
+      <td>1..1</td>
+      <td>Fecha de comienzo del encuentro atenciónAPS El formato corresponde consignar año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ</td>
+      <td>EncounterInicioLE.period.start</td>
     </tr>
     <tr>
-      <td style="text-align: center">FechaAtenciónAPSFin</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Fecha de término del encuentro atenciónAPS El formato corresponde consignar año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ</td>
-      <td style="text-align: center">EncounterInicioLE.period.end</td>
+      <td>FechaAtenciónAPSFin</td>
+      <td>1..1</td>
+      <td>Fecha de término del encuentro atenciónAPS El formato corresponde consignar año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ</td>
+      <td>EncounterInicioLE.period.end</td>
     </tr>
     <tr>
-      <td style="text-align: center">ModalidadAtenciónAPS</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Modalidad de Atención</td>
-      <td style="text-align: center">EncounterInicioLE.class</td>
+      <td>ModalidadAtenciónAPS</td>
+      <td>1..1</td>
+      <td>Modalidad de Atención</td>
+      <td>EncounterInicioLE.class</td>
     </tr>
     <tr>
-      <td style="text-align: center">DiagnosticoOrigen</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Sospecha diagnóstica en texto libre ingresado por el médico</td>
-      <td style="text-align: center">ConditionInicioDiagnosticoLE.code.text</td>
+      <td>DiagnosticoOrigen</td>
+      <td>0..1</td>
+      <td>Sospecha diagnóstica en texto libre ingresado por el médico</td>
+      <td>ConditionInicioDiagnosticoLE.code.text</td>
     </tr>
     <tr>
-      <td style="text-align: center">CodigoDiagnosticoOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Código</td>
-      <td style="text-align: center">ConditionInicioDiagnosticoLE.code</td>
+      <td>CodigoDiagnosticoOrigen</td>
+      <td>1..1</td>
+      <td>Código</td>
+      <td>ConditionInicioDiagnosticoLE.code</td>
     </tr>
     <tr>
-      <td style="text-align: center">CategoríaDiagnósticoOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Categoría del diagnóstico de origen. Refiere a diagnosis identificada durante el encuentro médico o un problema de salud ya pesquizado En este caso usar los valores defnidos en la columna sub-siguiente</td>
-      <td style="text-align: center">ConditionInicioDiagnosticoLE.category</td>
+      <td>CategoríaDiagnósticoOrigen</td>
+      <td>1..1</td>
+      <td>Categoría del diagnóstico de origen. Refiere a diagnosis identificada durante el encuentro médico o un problema de salud ya pesquizado En este caso usar los valores defnidos en la columna sub-siguiente</td>
+      <td>ConditionInicioDiagnosticoLE.category</td>
     </tr>
     <tr>
-      <td style="text-align: center">EstadoClínicoDiagnósticoOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Refiere al estado clinico del diagnostico, permite un nivel de detalle general (active | inactive) o bien consignar un estatus más detallado (recurrence | relapse | remission | resolved)</td>
-      <td style="text-align: center">ConditionInicioDiagnosticoLE.clinicalstatus</td>
+      <td>EstadoClínicoDiagnósticoOrigen</td>
+      <td>1..1</td>
+      <td>Refiere al estado clinico del diagnostico, permite un nivel de detalle general (active | inactive) o bien consignar un estatus más detallado (recurrence | relapse | remission | resolved)</td>
+      <td>ConditionInicioDiagnosticoLE.clinicalstatus</td>
     </tr>
     <tr>
-      <td style="text-align: center">VerificaciónEstadoDiagnósticoOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Refiere al estado de verificación del diagnóstico por parte del médico solicitante. Dominio de datos jerarquizado.</td>
-      <td style="text-align: center">ConditionInicioDiagnosticoLE.verificationStatus</td>
+      <td>VerificaciónEstadoDiagnósticoOrigen</td>
+      <td>1..1</td>
+      <td>Refiere al estado de verificación del diagnóstico por parte del médico solicitante. Dominio de datos jerarquizado.</td>
+      <td>ConditionInicioDiagnosticoLE.verificationStatus</td>
     </tr>
     <tr>
-      <td style="text-align: center">SeveridadDiagnósticoOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Refiere a la severidad del diagnóstico indicada por el médico solicitante</td>
-      <td style="text-align: center">ConditionInicioDiagnosticoLE.severity</td>
+      <td>SeveridadDiagnósticoOrigen</td>
+      <td>1..1</td>
+      <td>Refiere a la severidad del diagnóstico indicada por el médico solicitante</td>
+      <td>ConditionInicioDiagnosticoLE.severity</td>
     </tr>
     <tr>
-      <td style="text-align: center">PrioridadInterconsultaOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Prioridad Recomendada Interconsulta de Origen</td>
-      <td style="text-align: center">ServiceRequestLE.priority</td>
+      <td>PrioridadInterconsultaOrigen</td>
+      <td>1..1</td>
+      <td>Prioridad Recomendada Interconsulta de Origen</td>
+      <td>ServiceRequestLE.priority</td>
     </tr>
     <tr>
-      <td style="text-align: center">FundamentoPriorizacion</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Razones del porque se prioriza está IC</td>
-      <td style="text-align: center">ServiceRequestLE.extensión</td>
+      <td>FundamentoPriorizacion</td>
+      <td>1..1</td>
+      <td>Razones del porque se prioriza está IC</td>
+      <td>ServiceRequestLE.extensión</td>
     </tr>
     <tr>
-      <td style="text-align: center">Indice comorbilidad</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Indice de comorbilidad</td>
-      <td style="text-align: center">ObservationInicioIndiceComorbilidadLE.code.coding.system</td>
+      <td>Indice comorbilidad</td>
+      <td>0..1</td>
+      <td>Indice de comorbilidad</td>
+      <td>ObservationInicioIndiceComorbilidadLE.code.coding.system</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ObservationInicioIndiceComorbilidadLE.code.coding.code=</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ObservationInicioIndiceComorbilidadLE.code.coding.code=</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ObservationInicioIndiceComorbilidadLE.category.coding.code=vital-sign</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ObservationInicioIndiceComorbilidadLE.category.coding.code=vital-sign</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ObservationInicioIndiceComorbilidadLE.category.coding.system=http://terminology.hl7.org/CodeSystem/observation-category</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ObservationInicioIndiceComorbilidadLE.category.coding.system=http://terminology.hl7.org/CodeSystem/observation-category</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ObservationInicioIndiceComorbilidadLE.text=Índice Comorbilidad</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ObservationInicioIndiceComorbilidadLE.text=Índice Comorbilidad</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ObservationInicioIndiceComorbilidadLE.status=final</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ObservationInicioIndiceComorbilidadLE.status=final</td>
     </tr>
     <tr>
-      <td style="text-align: center">ExamenesRealizados</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Exámenes realizados</td>
-      <td style="text-align: center">ObservationInicioLE.valueString=resultado de exámenes.</td>
+      <td>ExamenesRealizados</td>
+      <td>1..1</td>
+      <td>Exámenes realizados</td>
+      <td>ObservationInicioLE.valueString=resultado de exámenes.</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">code.text=exámenes realizados</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>code.text=exámenes realizados</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">status=registered</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>status=registered</td>
     </tr>
     <tr>
-      <td style="text-align: center">DerivadoParaCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Se envía a consulta para</td>
-      <td style="text-align: center">ServiceRequestLE.reasonCode</td>
+      <td>DerivadoParaCodigo</td>
+      <td>1..1</td>
+      <td>Se envía a consulta para</td>
+      <td>ServiceRequestLE.reasonCode</td>
     </tr>
     <tr>
-      <td style="text-align: center">CorrespondeGES</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Indica si corresponde a GES</td>
-      <td style="text-align: center">ServiceRequestLE,extension.extension.valueBoolean</td>
+      <td>CorrespondeGES</td>
+      <td>1..1</td>
+      <td>Indica si corresponde a GES</td>
+      <td>ServiceRequestLE,extension.extension.valueBoolean</td>
     </tr>
     <tr>
-      <td style="text-align: center">PatologiaGesCodigo</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Patología GES</td>
-      <td style="text-align: center">ConditionInicioGesLE.code.CodeableConcept.coding.code</td>
+      <td>PatologiaGesCodigo</td>
+      <td>0..1</td>
+      <td>Patología GES</td>
+      <td>ConditionInicioGesLE.code.CodeableConcept.coding.code</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ConditionInicioGesLE.code.CodeableConcept.coding.system</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ConditionInicioGesLE.code.CodeableConcept.coding.system</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ConditionInicioGesLE.category.coding.code=problem-list-item</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ConditionInicioGesLE.category.coding.code=problem-list-item</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ConditionInicioGesLE.category.coding.system=http://terminology.hl7.org/CodeSystem/condition-category</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ConditionInicioGesLE.category.coding.system=http://terminology.hl7.org/CodeSystem/condition-category</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ConditionInicioGesLE.category.text=sospechaGes</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ConditionInicioGesLE.category.text=sospechaGes</td>
     </tr>
     <tr>
-      <td style="text-align: center">PatologiaGesGlosa</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ConditionInicioGesLE.code.CodeableConcept.coding.code</td>
+      <td>PatologiaGesGlosa</td>
+      <td>0..1</td>
+      <td> </td>
+      <td>ConditionInicioGesLE.code.CodeableConcept.coding.code</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ConditionInicioGesLE.code.CodeableConcept.coding.system</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ConditionInicioGesLE.code.CodeableConcept.coding.system</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ConditionInicioGesLE.code.CodeableConcept.coding.display</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ConditionInicioGesLE.code.CodeableConcept.coding.display</td>
     </tr>
     <tr>
-      <td style="text-align: center">ResolutividadAPS</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Programa de Resolutividad local</td>
-      <td style="text-align: center">ServiceRequestLE.extensión</td>
+      <td>ResolutividadAPS</td>
+      <td>0..1</td>
+      <td>Programa de Resolutividad local</td>
+      <td>ServiceRequestLE.extensión</td>
     </tr>
     <tr>
-      <td style="text-align: center">Alergia</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Presencia de alergia/s del paciente</td>
-      <td style="text-align: center">ServiceRequestLE.extensión.valueBoolean</td>
+      <td>Alergia</td>
+      <td>1..1</td>
+      <td>Presencia de alergia/s del paciente</td>
+      <td>ServiceRequestLE.extensión.valueBoolean</td>
     </tr>
     <tr>
-      <td style="text-align: center">Sustancia</td>
-      <td style="text-align: center">0..*</td>
-      <td style="text-align: center">Tipo de Alergia Texto libre para consignar la sustancia a la que es alérgico</td>
-      <td style="text-align: center">AllergyIntolerance.code.CodeableConcept.text</td>
+      <td>Sustancia</td>
+      <td>0..*</td>
+      <td>Tipo de Alergia Texto libre para consignar la sustancia a la que es alérgico</td>
+      <td>AllergyIntolerance.code.CodeableConcept.text</td>
     </tr>
     <tr>
-      <td style="text-align: center">OrigenInterconsulta</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Origen de la interconsulta</td>
-      <td style="text-align: center">ServiceRequestLE.extensión.CodeableConcept</td>
+      <td>OrigenInterconsulta</td>
+      <td>1..1</td>
+      <td>Origen de la interconsulta</td>
+      <td>ServiceRequestLE.extensión.CodeableConcept</td>
     </tr>
     <tr>
-      <td style="text-align: center">EstadoInterconsultaCodigo</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Estado de la Interconsulta en relación al proceso de negocio</td>
-      <td style="text-align: center">ServiceRequestLE.extensión.valueCodeableConcept.coding.code</td>
+      <td>EstadoInterconsultaCodigo</td>
+      <td>0..1</td>
+      <td>Estado de la Interconsulta en relación al proceso de negocio</td>
+      <td>ServiceRequestLE.extensión.valueCodeableConcept.coding.code</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ServiceRequestLE.extensión.valueCodeableConcept.coding.system</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ServiceRequestLE.extensión.valueCodeableConcept.coding.system</td>
     </tr>
     <tr>
-      <td style="text-align: center">Cuidador</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Cuidador o Cuidadora</td>
-      <td style="text-align: center">ObservationInicioCuidadorLE.code=https://loinc.org/95385-1</td>
+      <td>Cuidador</td>
+      <td>0..1</td>
+      <td>Cuidador o Cuidadora</td>
+      <td>ObservationInicioCuidadorLE.code=https://loinc.org/95385-1</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ObservationInicioCuidadorLE.status=final</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ObservationInicioCuidadorLE.status=final</td>
     </tr>
     <tr>
-      <td style="text-align: center">DocAcreditacionCuidadorCodigo</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Documento que acredita calidad de cuidadora</td>
-      <td style="text-align: center">DocumentReferenceInicioLE.type</td>
+      <td>DocAcreditacionCuidadorCodigo</td>
+      <td>0..1</td>
+      <td>Documento que acredita calidad de cuidadora</td>
+      <td>DocumentReferenceInicioLE.type</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">DocumentReferenceInicioLE.status=current</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>DocumentReferenceInicioLE.status=current</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">DocumentReferenceInicioLE.content.attachment.title=Documento</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>DocumentReferenceInicioLE.content.attachment.title=Documento</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">DocumentReferenceInicioLE.content.attachment.url=http://example.org/referencia</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>DocumentReferenceInicioLE.content.attachment.url=http://example.org/referencia</td>
     </tr>
     <tr>
-      <td style="text-align: center">PresentaDiscapacidad</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Persona con discapacidad</td>
-      <td style="text-align: center">ObservationInicioCuidadorLE.extension.valueBoolean</td>
+      <td>PresentaDiscapacidad</td>
+      <td>1..1</td>
+      <td>Persona con discapacidad</td>
+      <td>ObservationInicioCuidadorLE.extension.valueBoolean</td>
     </tr>
     <tr>
-      <td style="text-align: center">TipoIdentificadorCodigoProf</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Identificador de identidad del Profesional. Corresponde a dos slices:</td>
-      <td style="text-align: center">Practitioner.identifier[RUN].value=valor</td>
+      <td>TipoIdentificadorCodigoProf</td>
+      <td>1..1</td>
+      <td>Identificador de identidad del Profesional. Corresponde a dos slices:</td>
+      <td>Practitioner.identifier[RUN].value=valor</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">Practitioner.identifier[RNPI].value=valor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Practitioner.identifier[RNPI].value=valor</td>
     </tr>
     <tr>
-      <td style="text-align: center">DigitoVerificadorProf</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Dígito verificador asociado al RUN del Profesional</td>
-      <td style="text-align: center">Practitioner.identifier[RUN].extension.valueString=k</td>
+      <td>DigitoVerificadorProf</td>
+      <td>1..1</td>
+      <td>Dígito verificador asociado al RUN del Profesional</td>
+      <td>Practitioner.identifier[RUN].extension.valueString=k</td>
     </tr>
     <tr>
-      <td style="text-align: center">OtraIdentificacionProf</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Otra Identificación</td>
-      <td style="text-align: center">Practitioner,identifier[otro].value=valor otro</td>
+      <td>OtraIdentificacionProf</td>
+      <td>1..1</td>
+      <td>Otra Identificación</td>
+      <td>Practitioner,identifier[otro].value=valor otro</td>
     </tr>
     <tr>
-      <td style="text-align: center">RunProf</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">El Rol Único Nacional (RUN) del Profesional</td>
-      <td style="text-align: center">Practitioner.identifier[RUN].value=VALORRUN</td>
+      <td>RunProf</td>
+      <td>1..1</td>
+      <td>El Rol Único Nacional (RUN) del Profesional</td>
+      <td>Practitioner.identifier[RUN].value=VALORRUN</td>
     </tr>
     <tr>
-      <td style="text-align: center">NombreOficial</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Nombre profesional</td>
-      <td style="text-align: center">Practitioner.name.use=official Practitioner.name.given=[nombre1, nombre2]</td>
+      <td>NombreOficialProfesional</td>
+      <td>1..1</td>
+      <td>Nombre profesional</td>
+      <td>Practitioner.name.use=official Practitioner.name.given=[nombre1, nombre2]</td>
     </tr>
     <tr>
-      <td style="text-align: center">PrimerApellido</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">Practitionername._family=</td>
+      <td>PrimerApellidoProfesional</td>
+      <td>1..1</td>
+      <td> </td>
+      <td>Practitionername._family=</td>
     </tr>
     <tr>
-      <td style="text-align: center">SegundoApellido</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">Practitioner.name.family.extension[SegundoApellido]=</td>
+      <td>SegundoApellidoProfesional</td>
+      <td>0..1</td>
+      <td> </td>
+      <td>Practitioner.name.family.extension[SegundoApellido]=</td>
     </tr>
     <tr>
-      <td style="text-align: center">TituloProfesionalCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Titulo del profesional</td>
-      <td style="text-align: center">Practitioner.qualification[Cert]</td>
+      <td>TituloProfesionalCodigo</td>
+      <td>1..1</td>
+      <td>Titulo del profesional</td>
+      <td>Practitioner.qualification[Cert]</td>
     </tr>
     <tr>
-      <td style="text-align: center">EspecialidadMedicaCodigo</td>
-      <td style="text-align: center">0..*</td>
-      <td style="text-align: center">Especialidad Médica del profesional</td>
-      <td style="text-align: center">Practitioner.qualification[esp]</td>
+      <td>EspecialidadMedicaCodigo</td>
+      <td>0..*</td>
+      <td>Especialidad Médica del profesional</td>
+      <td>Practitioner.qualification[esp]</td>
     </tr>
     <tr>
-      <td style="text-align: center">Subespecialidad</td>
-      <td style="text-align: center">0..*</td>
-      <td style="text-align: center">Subespecialidad del profesional</td>
-      <td style="text-align: center">Practitioner.qualification[subesp]</td>
+      <td>Subespecialidad</td>
+      <td>0..*</td>
+      <td>Subespecialidad del profesional</td>
+      <td>Practitioner.qualification[subesp]</td>
     </tr>
     <tr>
-      <td style="text-align: center">PrevisionCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">La previsión es la variable determinada en el sistema de aseguramiento de salud del paciente.</td>
-      <td style="text-align: center">CoverageInicioLE.type = http://terminology.hl7.org/CodeSystem/v3-ActCode#HIP</td>
+      <td>PrevisionCodigo</td>
+      <td>1..1</td>
+      <td>La previsión es la variable determinada en el sistema de aseguramiento de salud del paciente.</td>
+      <td>CoverageInicioLE.type = http://terminology.hl7.org/CodeSystem/v3-ActCode#HIP</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">CoverageInicioLE.status = #current</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>CoverageInicioLE.status = #current</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">CoverageInicioLE.class.type = http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE#1</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>CoverageInicioLE.class.type = http://minsal.cl/listaespera/StructureDefinition/PrevisionCodigoLE#1</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">CoverageInicioLE.class.value = “prevision”</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>CoverageInicioLE.class.value = “prevision”</td>
     </tr>
     <tr>
-      <td style="text-align: center">MotivoDerivacion</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center">Motivo de la Derivación</td>
-      <td style="text-align: center">QuestionnaireResponseInicioLE.item.linkId=resumen</td>
+      <td>MotivoDerivacion</td>
+      <td>0..1</td>
+      <td>Motivo de la Derivación</td>
+      <td>QuestionnaireResponseInicioLE.item.linkId=resumen</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">QuestionnaireResponseInicioLE.item.text=Resumen</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>QuestionnaireResponseInicioLE.item.text=Resumen</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">QuestionnaireResponseInicioLE,item.answer[0].valueString=</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>QuestionnaireResponseInicioLE,item.answer[0].valueString=</td>
     </tr>
   </tbody>
 </table>
@@ -4525,7 +4525,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 9, 2024 15:10+0000">2024-02-09</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 9, 2024 20:00+0000">2024-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

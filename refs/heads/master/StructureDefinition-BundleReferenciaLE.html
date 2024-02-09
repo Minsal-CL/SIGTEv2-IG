@@ -1848,138 +1848,138 @@ Summary
 <table class="grid">
   <thead>
     <tr>
-      <th style="text-align: center"><strong>Variable</strong></th>
-      <th style="text-align: center"><strong>Cardinalidad</strong></th>
-      <th style="text-align: center"><strong>Descripción</strong></th>
-      <th style="text-align: center"><strong>Recurso.elemento</strong></th>
+      <th><strong>Variable</strong></th>
+      <th><strong>Cardinalidad</strong></th>
+      <th><strong>Descripción</strong></th>
+      <th><strong>Recurso.elemento</strong></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">IdInterconsulta</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Identificador de la Interconsulta Corresponde a Identificador de la Interconsulta Se asigna desde nivel central. En esta transacción el dato es OBLIGATORIO</td>
-      <td style="text-align: center">ServiceRequestLE.identifier</td>
+      <td>IdInterconsulta</td>
+      <td>1..1</td>
+      <td>Identificador de la Interconsulta Corresponde a Identificador de la Interconsulta Se asigna desde nivel central. En esta transacción el dato es OBLIGATORIO</td>
+      <td>ServiceRequestLE.identifier</td>
     </tr>
     <tr>
-      <td style="text-align: center">FechaEventoReferenciar</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Fecha del Evento</td>
-      <td style="text-align: center">MessageHeaderLE.meta.lastUpdated</td>
+      <td>FechaEventoReferenciar</td>
+      <td>1..1</td>
+      <td>Fecha del Evento</td>
+      <td>MessageHeaderLE.meta.lastUpdated</td>
     </tr>
     <tr>
-      <td style="text-align: center">EstablecimientoCodigoOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Código DEIS de Establecimiento solicitante</td>
-      <td style="text-align: center">OrganizationLE.identifier</td>
+      <td>EstablecimientoCodigoOrigen</td>
+      <td>1..1</td>
+      <td>Código DEIS de Establecimiento solicitante</td>
+      <td>OrganizationLE.identifier</td>
     </tr>
     <tr>
-      <td style="text-align: center">SolucionInformaticaOrigen</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Solución Informática. Corresponde al nombre (un string human-friendly) del aplicativo de Registro Clínico Electronico. que realiza el envío de la información.</td>
-      <td style="text-align: center">MessageHeaderLE.source.software</td>
+      <td>SolucionInformaticaOrigen</td>
+      <td>1..1</td>
+      <td>Solución Informática. Corresponde al nombre (un string human-friendly) del aplicativo de Registro Clínico Electronico. que realiza el envío de la información.</td>
+      <td>MessageHeaderLE.source.software</td>
     </tr>
     <tr>
-      <td style="text-align: center">TipoIdentificadorCodigoProf</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Identificador de identidad del Profesional. Corresponde a dos slices:</td>
-      <td style="text-align: center">Practitioner.identifier[RUN].value=valor</td>
+      <td>TipoIdentificadorCodigoProf</td>
+      <td>1..1</td>
+      <td>Identificador de identidad del Profesional. Corresponde a dos slices:</td>
+      <td>Practitioner.identifier[RUN].value=valor</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">Practitioner.identifier[RNPI].value=valor</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Practitioner.identifier[RNPI].value=valor</td>
     </tr>
     <tr>
-      <td style="text-align: center">DigitoVerificadorProf</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Dígito verificador asociado al RUN del Profesional</td>
-      <td style="text-align: center">Practitioner.identifier[RUN].extension.valueString=k</td>
+      <td>DigitoVerificadorProf</td>
+      <td>1..1</td>
+      <td>Dígito verificador asociado al RUN del Profesional</td>
+      <td>Practitioner.identifier[RUN].extension.valueString=k</td>
     </tr>
     <tr>
-      <td style="text-align: center">OtraIdentificacionProf</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Otra Identificación</td>
-      <td style="text-align: center">Practitioner,identifier[otro].value=valor otro</td>
+      <td>OtraIdentificacionProf</td>
+      <td>1..1</td>
+      <td>Otra Identificación</td>
+      <td>Practitioner,identifier[otro].value=valor otro</td>
     </tr>
     <tr>
-      <td style="text-align: center">RunProf</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">El Rol Único Nacional (RUN) del Profesional</td>
-      <td style="text-align: center">Practitioner.identifier[RUN].value=VALORRUN</td>
+      <td>RunProf</td>
+      <td>1..1</td>
+      <td>El Rol Único Nacional (RUN) del Profesional</td>
+      <td>Practitioner.identifier[RUN].value=VALORRUN</td>
     </tr>
     <tr>
-      <td style="text-align: center">NombreOficial</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Nombre profesional</td>
-      <td style="text-align: center">Practitioner.name.use=official Practitioner.name.given=[nombre1, nombre2]</td>
+      <td>NombreOficial</td>
+      <td>1..1</td>
+      <td>Nombre profesional</td>
+      <td>Practitioner.name.use=official Practitioner.name.given=[nombre1, nombre2]</td>
     </tr>
     <tr>
-      <td style="text-align: center">PrimerApellido</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">Practitionername._family=</td>
+      <td>PrimerApellidoProfesional</td>
+      <td>1..1</td>
+      <td> </td>
+      <td>Practitionername._family=</td>
     </tr>
     <tr>
-      <td style="text-align: center">SegundoApellido</td>
-      <td style="text-align: center">0..1</td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">Practitioner.name.family.extension[SegundoApellido]=</td>
+      <td>SegundoApellidoProfesional</td>
+      <td>0..1</td>
+      <td> </td>
+      <td>Practitioner.name.family.extension[SegundoApellido]=</td>
     </tr>
     <tr>
-      <td style="text-align: center">TituloProfesionalCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Titulo del profesional</td>
-      <td style="text-align: center">Practitioner.qualification[TIT]</td>
+      <td>TituloProfesionalCodigo</td>
+      <td>1..1</td>
+      <td>Titulo del profesional</td>
+      <td>Practitioner.qualification[TIT]</td>
     </tr>
     <tr>
-      <td style="text-align: center">EspecialidadMedicaCodigo</td>
-      <td style="text-align: center">0..*</td>
-      <td style="text-align: center">Especialidad Médica del profesional</td>
-      <td style="text-align: center">Practitioner.qualification[esp]</td>
+      <td>EspecialidadMedicaCodigo</td>
+      <td>0..*</td>
+      <td>Especialidad Médica del profesional</td>
+      <td>Practitioner.qualification[esp]</td>
     </tr>
     <tr>
-      <td style="text-align: center">Subespecialidad</td>
-      <td style="text-align: center">0..*</td>
-      <td style="text-align: center">Subespecialidad del profesional</td>
-      <td style="text-align: center">Practitioner.qualification[subesp]</td>
+      <td>Subespecialidad</td>
+      <td>0..*</td>
+      <td>Subespecialidad del profesional</td>
+      <td>Practitioner.qualification[subesp]</td>
     </tr>
     <tr>
-      <td style="text-align: center">DestinoReferenciaCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Identificación del nivel hacia donde se referencia el paciente</td>
-      <td style="text-align: center">ServiceRequestLE.locationCode.CodeableConcept.coding.code</td>
+      <td>DestinoReferenciaCodigo</td>
+      <td>1..1</td>
+      <td>Identificación del nivel hacia donde se referencia el paciente</td>
+      <td>ServiceRequestLE.locationCode.CodeableConcept.coding.code</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ServiceRequestLE.locationCode.CodeableConcept.coding.system</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ServiceRequestLE.locationCode.CodeableConcept.coding.system</td>
     </tr>
     <tr>
-      <td style="text-align: center">EstablecimientoDestinoCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Código DEIS del establecimiento destino</td>
-      <td style="text-align: center">OrganizationLE.identifier</td>
+      <td>EstablecimientoDestinoCodigo</td>
+      <td>1..1</td>
+      <td>Código DEIS del establecimiento destino</td>
+      <td>OrganizationLE.identifier</td>
     </tr>
     <tr>
-      <td style="text-align: center">EstadoInterconsultaCodigo</td>
-      <td style="text-align: center">1..1</td>
-      <td style="text-align: center">Estado de la Interconsulta en relación al proceso de negocio</td>
-      <td style="text-align: center">ServiceRequestLE.extensión.valueCodeableConcept.coding.code</td>
+      <td>EstadoInterconsultaCodigo</td>
+      <td>1..1</td>
+      <td>Estado de la Interconsulta en relación al proceso de negocio</td>
+      <td>ServiceRequestLE.extensión.valueCodeableConcept.coding.code</td>
     </tr>
     <tr>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center"> </td>
-      <td style="text-align: center">ServiceRequestLE.extensión.valueCodeableConcept.coding.system</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ServiceRequestLE.extensión.valueCodeableConcept.coding.system</td>
     </tr>
     <tr>
-      <td style="text-align: center">ServicioDerivacionRequerido</td>
-      <td style="text-align: center">1.1</td>
-      <td style="text-align: center">Corresponde al servicio requerido en la organización de referencia</td>
-      <td style="text-align: center">ServiceRequestLE.code</td>
+      <td>ServicioDerivacionRequerido</td>
+      <td>1.1</td>
+      <td>Corresponde al servicio requerido en la organización de referencia</td>
+      <td>ServiceRequestLE.code</td>
     </tr>
   </tbody>
 </table>
@@ -2035,7 +2035,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 9, 2024 15:10+0000">2024-02-09</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 9, 2024 20:00+0000">2024-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
