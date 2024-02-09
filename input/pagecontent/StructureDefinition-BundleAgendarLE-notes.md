@@ -1,7 +1,7 @@
 ### Tabla de Datos
 
 |          **Variable**          | **Cardinalidad** |                                   **Descripción**                                   |                           **Recurso.elemento**                           |
-|:------------------------------:|:----------------:|:-----------------------------------------------------------------------------------:|:------------------------------------------------------------------------:|
+|--------------------------------|------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 |         IdInterconsulta        |       1..1       |                          Identificador de la Interconsulta                          |                        ServiceRequestLE.identifier                       |
 |       FechaEventoAgendar       |       1..1       |                                   Fecha del Evento                                  |                        MessageHeaderLE.lastUpdated                       |
 | EstablecimientoCodigoAgendador |       1..1       |                              Código de Establecimiento                              |                         OrganizationLE.identifier                        |
@@ -12,8 +12,8 @@
 |             RunProf            |       1..1       |                     El Rol Único Nacional (RUN) del Profesional                     |                    Practitioner.identifier[RUN].value                    |
 |   TipoIdentificadorCodigoProf  |       1..1       |    Identificador de identidad del Profesional con el cual se atendera el paciente   |                                                                          |
 |          NombreOficial         |       1..1       |                                  Nombre profesional                                 | Practitioner.name.use=officialPractitioner.name.given=[nombre1, nombre2] |
-|         PrimerApellido         |       1..1       |                                                                                     |                         Practitioner.name._family                        |
-|         SegundoApellido        |       0..1       |                                                                                     |            Practitioner.name.family.extension.SegundoApellido=           |
+|    PrimerApellidoProfesional   |       1..1       |                                                                                     |                         Practitioner.name._family                        |
+|   SegundoApellidoProfesional   |       0..1       |                                                                                     |            Practitioner.name.family.extension.SegundoApellido=           |
 |     TituloProfesionalCodigo    |       1..1       |                                Titulo del profesional                               |                      Practitioner.qualification[TIT]                     |
 |    EspecialidadMedicaCodigo    |       0..*       |                         Especialidad Médica del profesional                         |                      Practitioner.qualification[ESP]                     |
 |         Subespecialidad        |       0..*       |                           Subespecialidad del profesional                           |                    Practitioner.qualification[SUBESP]                    |
