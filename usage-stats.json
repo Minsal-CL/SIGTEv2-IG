@@ -1,9 +1,27 @@
 {
   "package": "hl7.fhir.cl.minsal.tei",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "fhirVersion": "4.0.1",
   "jurisdiction": "CL",
   "extensions": [
+    {
+      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConsecuenciaAtencionCodigo",
+      "title": "Destino Atención Codigo",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
     {
       "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado",
       "title": "Contactado",
@@ -71,24 +89,6 @@
         "UsageContext",
         "Dosage",
         "Meta"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DestinoAtencionCodigo",
-      "title": "Destino Atención Codigo",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
       ]
     },
     {
@@ -480,13 +480,13 @@
     "AllergyIntolerance": [
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceInicioLE",
-        "title": "AllergyIntolerance Inicio LE"
+        "title": "AllergyIntolerance Iniciar LE"
       }
     ],
     "Appointment": [
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE",
-        "title": "AppointmentAgendarLE"
+        "title": "Appointment Agendar LE"
       }
     ],
     "Bundle": [
@@ -500,7 +500,7 @@
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleInicioLE",
-        "title": "Bundle Inicio LE"
+        "title": "Bundle Iniciar LE"
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundlePriorizarLE",
@@ -508,7 +508,7 @@
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciaLE",
-        "title": "Bundle Referencia LE"
+        "title": "Bundle Referenciar LE"
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleRevisarLE",
@@ -527,12 +527,8 @@
     ],
     "Condition": [
       {
-        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE",
-        "title": "Condicion Atender Diagnostico Confirmacion LE"
-      },
-      {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE",
-        "title": "Condition Inicio Diagnostico LE"
+        "title": "Condition Iniciar Diagnostico LE"
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioGesLE",
@@ -542,13 +538,13 @@
     "Coverage": [
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageInicioLE",
-        "title": "Coverage Inicio LE"
+        "title": "Coverage Iniciar LE"
       }
     ],
     "DocumentReference": [
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceInicioLE",
-        "title": "DocumentReference Inicio LE"
+        "title": "DocumentReference Iniciar LE"
       }
     ],
     "Encounter": [
@@ -558,7 +554,7 @@
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterInicioLE",
-        "title": "Encounter Inicio LE"
+        "title": "Encounter Iniciar LE"
       }
     ],
     "MessageHeader": [
@@ -574,15 +570,19 @@
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioCuidadorLE",
-        "title": "Observation Inicio Cuidador LE"
+        "title": "Observation Iniciar Cuidador LE"
+      },
+      {
+        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioDiscapacidadLE",
+        "title": "Observation Inicio Discapacidad LE"
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioIndiceComorbilidadLE",
-        "title": "Observation Inicio Indice Comorbilidad LE"
+        "title": "Observation Iniciar Indice Comorbilidad LE"
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioLE",
-        "title": "Observation Inicio LE"
+        "title": "Observation Iniciar LE"
       }
     ],
     "Organization": [
@@ -593,8 +593,8 @@
     ],
     "Patient": [
       {
-        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PacienteMinsalMPI",
-        "title": "PacienteMPI"
+        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE",
+        "title": "Patient LE"
       }
     ],
     "PractitionerRole": [
@@ -620,7 +620,7 @@
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseInicioLE",
-        "title": "QuestionnaireResponse Inicio Motivo de la Derivación LE"
+        "title": "QuestionnaireResponse Iniciar Motivo de la Derivación LE"
       }
     ],
     "ServiceRequest": [
@@ -635,6 +635,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence": [
+      "ConceptMap.group.element.target"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -654,7 +657,6 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/geolocation": [
-      "Bundle.entry.resource.address",
       "Patient.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
@@ -670,9 +672,6 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
@@ -683,8 +682,7 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition",
-      "StructureDefinition.snapshot.element"
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -747,13 +745,13 @@
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoRegistral": [
       "Patient"
     ],
+    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConsecuenciaAtencionCodigo": [
+      "Bundle.entry.resource",
+      "ServiceRequest"
+    ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado": [
       "Appointment",
       "Bundle.entry.resource"
-    ],
-    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DestinoAtencionCodigo": [
-      "Bundle.entry.resource",
-      "ServiceRequest"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EspecialidadMedicaDestinoCodigo": [
       "Bundle.entry.resource",
@@ -768,6 +766,7 @@
       "ServiceRequest"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolAtencionPreferente": [
+      "Bundle.entry.resource",
       "ServiceRequest"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPertinenciaAtencionBox": [
@@ -795,7 +794,6 @@
       "ServiceRequest"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtStringMotivoNoPertinencia": [
-      "Bundle.entry.resource",
       "Encounter"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/IdentidadDeGenero": [
@@ -813,7 +811,6 @@
       "ServiceRequest"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinenciaCodigo": [
-      "Bundle.entry.resource.doNotPerform",
       "ServiceRequest.doNotPerform"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrigenInterconsulta": [
@@ -845,7 +842,6 @@
       "Patient"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SituacionCalle": [
-      "Bundle.entry.resource.address",
       "Patient.address"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SospechaPatologiaGes": [

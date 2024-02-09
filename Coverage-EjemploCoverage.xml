@@ -6,7 +6,7 @@
     <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageInicioLE"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Coverage</b><a name="EjemploCoverage"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Coverage &quot;EjemploCoverage&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CoverageInicioLE.html">Coverage Inicio LE</a></p></div><p><b>status</b>: active</p><p><b>type</b>: health insurance plan policy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html">ActCode</a>#HIP)</span></p><p><b>beneficiary</b>: <a href="Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>payor</b>: <a href="Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><h3>Classes</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>FONASA Fondo Nacional de Salud. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPrevisionCodigo.html">PrevisionCodigo</a>#1)</span></td><td>prevision</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Coverage</b><a name="EjemploCoverage"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Coverage &quot;EjemploCoverage&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CoverageInicioLE.html">Coverage Iniciar LE</a></p></div><p><b>status</b>: active</p><p><b>type</b>: health insurance plan policy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html">ActCode</a>#HIP)</span></p><p><b>beneficiary</b>: <a href="Patient-EjemploPatient.html">Patient/EjemploPatient: Anibal Diaz Cortés</a> &quot; DIAZ&quot;</p><p><b>payor</b>: <a href="Patient-EjemploPatient.html">Patient/EjemploPatient: Anibal Diaz Cortés</a> &quot; DIAZ&quot;</p><h3>Classes</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>FONASA Fondo Nacional de Salud. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPrevisionCodigo.html">PrevisionCodigo</a>#1)</span></td><td>FONASA</td></tr></table></div>
   </text>
   <status value="active"/>
   <type>
@@ -16,18 +16,21 @@
     </coding>
   </type>
   <beneficiary>
-    <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
+    <reference value="Patient/EjemploPatient"/>
+    <display value="Anibal Diaz Cortés"/>
   </beneficiary>
   <payor>
-    <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
+    <reference value="Patient/EjemploPatient"/>
+    <display value="Anibal Diaz Cortés"/>
   </payor>
   <class>
     <type>
       <coding>
         <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPrevisionCodigo"/>
         <code value="1"/>
+        <display value="FONASA Fondo Nacional de Salud."/>
       </coding>
     </type>
-    <value value="prevision"/>
+    <value value="FONASA"/>
   </class>
 </Coverage>

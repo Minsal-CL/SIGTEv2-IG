@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Encounter Evento de Atender - JSON Representation - Tiempos de Espera Interoperable v0.1.6</title>
+    <title>Encounter Evento Atender - JSON Representation - Tiempos de Espera Interoperable v0.1.7</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -68,7 +68,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
             <br/>
-            <span style="display:inline-block;">0.1.6 - draft
+            <span style="display:inline-block;">0.1.7 - draft
 
 
 
@@ -161,7 +161,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Encounter Evento de Atender</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Encounter Evento Atender</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -174,7 +174,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.6. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.7. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
 
 
 
@@ -220,7 +220,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Encounter Evento de Atender - JSON Representation</h2>
+<h2 id="root">: Encounter Evento Atender - JSON Representation</h2>
 
 
 <p><a href="Encounter-EjemploEncounterAtender.json" no-download="true">Raw json</a> | <a href="Encounter-EjemploEncounterAtender.json" download>Download</a></p>
@@ -230,27 +230,23 @@
 
 
 
-  <pre class="json" style="white-space: pre; overflow: hidden"><code class="language-json">
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
 {
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter">resourceType</a>" : "Encounter",
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">id</a>" : "EjemploEncounterAtender",
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE"
+      <a href="StructureDefinition-EncounterAtenderLE.html" style="color: Maroon">&#x1F517;</a> "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE"
     ]
   },
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Encounter&lt;/b&gt;&lt;a name=\&quot;EjemploEncounterAtender\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Encounter &amp;quot;EjemploEncounterAtender&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-EncounterAtenderLE.html\&quot;&gt;Encounter Atender LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;ExtBool Pertinencia Atencion Box&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;ExtString MotivoNoPertinencia&lt;/b&gt;: lorem ipsum&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: IdConsultaAPS: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: Presencial (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo code 1 = 'Presencial', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Nueva &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSTipoConsulta.html\&quot;&gt;Tipo Consulta&lt;/a&gt;#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\&quot;&gt;http://acme.com/ehr/fhir/Patient/EjemploPatient&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE\&quot;&gt;http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-01-22 09:00:00+0000 --&amp;gt; 2023-01-22 10:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE\&quot;&gt;http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;Bundle-EjemploBundleAtender.html#http-//acme.com/ehr/fhir/Observation/EjemploObservationAtender\&quot;&gt;http://acme.com/ehr/fhir/Observation/EjemploObservationAtender&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Condition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Condition/EjemploCondition\&quot;&gt;http://acme.com/ehr/fhir/Condition/EjemploCondition&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Encounter&lt;/b&gt;&lt;a name=\&quot;EjemploEncounterAtender\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Encounter &amp;quot;EjemploEncounterAtender&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-EncounterAtenderLE.html\&quot;&gt;Encounter Atender LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;ExtBool Pertinencia Atencion Box&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: IdConsultaAPS/1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: Presencial (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo code 1 = 'Presencial', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Nueva &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSTipoConsulta.html\&quot;&gt;Tipo Consulta&lt;/a&gt;#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-EjemploPatient.html\&quot;&gt;Patient/EjemploPatient: Anibal Diaz Cortés&lt;/a&gt; &amp;quot; DIAZ&amp;quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;basedOn&lt;/b&gt;: &lt;a href=\&quot;ServiceRequest-EjemploServiceRequest.html\&quot;&gt;ServiceRequest/EjemploServiceRequest&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-01-22 09:00:00+0000 --&amp;gt; 2023-01-22 10:00:00+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;a href=\&quot;Observation-EjemploObservationAtender.html\&quot;&gt;Observation/EjemploObservationAtender&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Condition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;Condition-EjemploConditionAtender.html\&quot;&gt;Condition/EjemploConditionAtender&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.extension">extension</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPertinenciaAtencionBox",
       "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : true
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtStringMotivoNoPertinencia",
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "lorem ipsum"
     }
   ],
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">identifier</a>" : [
@@ -282,11 +278,12 @@
     }
   ],
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">subject</a>" : {
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+    <a href="Patient-EjemploPatient.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/EjemploPatient",
+    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Anibal Diaz Cortés"
   },
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.basedOn">basedOn</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "http://acme.com/ehr/fhir/ServiceRequest/ServiceRequestLE"
+      <a href="ServiceRequest-EjemploServiceRequest.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "ServiceRequest/EjemploServiceRequest"
     }
   ],
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">period</a>" : {
@@ -295,18 +292,14 @@
   },
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.reasonReference">reasonReference</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "http://acme.com/ehr/fhir/Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE",
-      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a>" : "Condition"
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "http://acme.com/ehr/fhir/Observation/EjemploObservationAtender",
+      <a href="Observation-EjemploObservationAtender.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/EjemploObservationAtender",
       "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a>" : "Observation"
     }
   ],
   "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis">diagnosis</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">condition</a>" : {
-        "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "http://acme.com/ehr/fhir/Condition/EjemploCondition"
+        <a href="Condition-EjemploConditionAtender.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Condition/EjemploConditionAtender"
       }
     }
   ]
@@ -340,7 +333,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 21, 2023 20:18+0000">2023-12-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 9, 2024 15:10+0000">2024-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

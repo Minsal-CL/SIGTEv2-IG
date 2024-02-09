@@ -16,7 +16,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PrestadorProfesionalLE.html\">Prestador Profesional LE</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html\">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1: 32.333.333-3 (use: OFFICIAL), 2: 123884 (use: OFFICIAL), 4: 123884 (use: SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Juan Perez </p><p><b>telecom</b>: <a href=\"tel:+56982460152\">+56982460152</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1982-08-24</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: esp</p><p><b>code</b>: Cirujano Plastico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CSTituloProf#1 &quot;Médico(a) Cirujano(a)&quot;)</span></p><p><b>period</b>: 2023-01-01 --&gt; 2100-01-31</p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: id: subesp</p><p><b>code</b>: Cirujano Plastico en Oreja Derecha <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (CSTituloProf#1 &quot;Médico(a) Cirujano(a)&quot;)</span></p><p><b>period</b>: 2024-01-01 --&gt; 2100-01-31</p></blockquote></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"EjemploPractitionerReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;EjemploPractitionerReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PrestadorProfesionalLE.html\">Prestador Profesional LE</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html\">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1/32.333.333-3 (use: OFFICIAL), 2/123884 (use: OFFICIAL), 4/123884 (use: SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Ernesto Sepulveda (OFFICIAL)</p><p><b>telecom</b>: <a href=\"tel:+56982460152\">+56982460152</a></p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1982-08-24</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: esp</p><p><b>code</b>: Cirujano Cardiovascular <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1 &quot;MÉDICO CIRUJANO&quot;)</span></p><p><b>period</b>: 2023-01-01 --&gt; 2100-01-31</p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: subesp</p><p><b>code</b>: CardiologíaCardiotorácico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSTituloProfesional.html\">TituloProfesional</a>#1 &quot;MÉDICO CIRUJANO&quot;)</span></p><p><b>period</b>: 2024-01-01 --&gt; 2100-01-31</p></blockquote></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"^^xsd:anyURI ] ;
@@ -60,8 +60,15 @@
   ] ) ; # 
   fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:name ( [
-     fhir:family [ fhir:v "Perez" ] ;
-     fhir:given ( [ fhir:v "Juan" ] )
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [
+       fhir:v "Sepulveda" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Sierra" ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "Ernesto" ] )
   ] ) ; # 
   fhir:telecom ( [
      fhir:system [ fhir:v "phone" ] ;
@@ -77,11 +84,11 @@
      ] ) ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"^^xsd:anyURI ] ;
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "1" ] ;
-         fhir:display [ fhir:v "Médico(a) Cirujano(a)" ]
+         fhir:display [ fhir:v "MÉDICO CIRUJANO" ]
        ] ) ;
-       fhir:text [ fhir:v "Cirujano Plastico" ]
+       fhir:text [ fhir:v "Cirujano Cardiovascular" ]
      ] ;
      fhir:period [
        fhir:start [ fhir:v "2023-01-01"^^xsd:date ] ;
@@ -93,11 +100,11 @@
      ] ) ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "http://minsal.cl/fhir/core/CodeSystem/CSTituloProf"^^xsd:anyURI ] ;
+         fhir:system [ fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "1" ] ;
-         fhir:display [ fhir:v "Médico(a) Cirujano(a)" ]
+         fhir:display [ fhir:v "MÉDICO CIRUJANO" ]
        ] ) ;
-       fhir:text [ fhir:v "Cirujano Plastico en Oreja Derecha" ]
+       fhir:text [ fhir:v "CardiologíaCardiotorácico" ]
      ] ;
      fhir:period [
        fhir:start [ fhir:v "2024-01-01"^^xsd:date ] ;

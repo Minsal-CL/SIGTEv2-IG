@@ -3,14 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.cl.minsal.tei"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>TiemposDeEsperaInteroperable</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/tei/ImplementationGuide/hl7.fhir.cl.minsal.tei</pre><div><p>Tiempos de Espera Interoperable</p>
+</div></div>
   </text>
   <url value="https://interoperabilidad.minsal.cl/fhir/ig/tei/ImplementationGuide/hl7.fhir.cl.minsal.tei"/>
-  <version value="0.1.6"/>
+  <version value="0.1.7"/>
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2023-12-21T20:18:51+00:00"/>
+  <date value="2024-02-09T15:10:48+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -253,7 +254,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#current"/>
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -462,8 +463,8 @@
       <reference>
         <reference value="AllergyIntolerance/EjemploAllergyIntolerance"/>
       </reference>
-      <name value="AllergyIntolerance Evento de Inicio"/>
-      <description value="AllergyIntolerance Evento de Inicio"/>
+      <name value="AllergyIntolerance Evento Iniciar"/>
+      <description value="AllergyIntolerance Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceInicioLE"/>
     </resource>
     <resource>
@@ -473,8 +474,19 @@
       <reference>
         <reference value="StructureDefinition/AllergyIntoleranceInicioLE"/>
       </reference>
-      <name value="AllergyIntolerance Inicio LE"/>
-      <description value="AllergyIntolerance Inicio LE"/>
+      <name value="AllergyIntolerance Iniciar LE"/>
+      <description value="AllergyIntolerance Iniciar LE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/AppointmentAgendarLE"/>
+      </reference>
+      <name value="Appointment Agendar LE"/>
+      <description value="Appointment Agendar LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -484,8 +496,8 @@
       <reference>
         <reference value="Appointment/EjemploAppointmentAgendar"/>
       </reference>
-      <name value="Appointment Evento de Agendar"/>
-      <description value="Appointment Evento de Agendar"/>
+      <name value="Appointment Evento Agendar"/>
+      <description value="Appointment Evento Agendar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"/>
     </resource>
     <resource>
@@ -495,8 +507,8 @@
       <reference>
         <reference value="Appointment/EjemploAppointmentAgendarCancelar"/>
       </reference>
-      <name value="Appointment Evento de Agendar(Cancelación)"/>
-      <description value="Appointment Evento de Agendar(Cancelación)"/>
+      <name value="Appointment Evento Agendar(Cancelación)"/>
+      <description value="Appointment Evento Agendar(Cancelación)"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"/>
     </resource>
     <resource>
@@ -506,20 +518,9 @@
       <reference>
         <reference value="Appointment/EjemploAppointmentAgendarSinPresentacion"/>
       </reference>
-      <name value="Appointment Evento de Agendar(Sin Presentacion)"/>
-      <description value="Appointment Evento de Agendar(Sin Presentacion)"/>
+      <name value="Appointment Evento Agendar(Sin Presentacion)"/>
+      <description value="Appointment Evento Agendar(Sin Presentacion)"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/AppointmentAgendarLE"/>
-      </reference>
-      <name value="AppointmentAgendarLE"/>
-      <description value="AppointmentAgendarLE"/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -529,7 +530,7 @@
         <reference value="StructureDefinition/BundleAgendarLE"/>
       </reference>
       <name value="Bundle Agendar LE"/>
-      <description value="Bundle Agendar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Agendar."/>
+      <description value="Bundle Agendar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento Agendar."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -550,8 +551,8 @@
       <reference>
         <reference value="Bundle/EjemploBundleAgendar"/>
       </reference>
-      <name value="Bundle Evento de Agendar"/>
-      <description value="Bundle Evento de Agendar"/>
+      <name value="Bundle Evento Agendar"/>
+      <description value="Bundle Evento Agendar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleAgendarLE"/>
     </resource>
     <resource>
@@ -561,8 +562,8 @@
       <reference>
         <reference value="Bundle/EjemploBundleAtender"/>
       </reference>
-      <name value="Bundle Evento de Atender"/>
-      <description value="Bundle Evento de Atender"/>
+      <name value="Bundle Evento Atender"/>
+      <description value="Bundle Evento Atender"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleAtenderLE"/>
     </resource>
     <resource>
@@ -572,8 +573,8 @@
       <reference>
         <reference value="Bundle/EjemploBundleInicio"/>
       </reference>
-      <name value="Bundle Evento de Inicio"/>
-      <description value="Bundle Evento de Inicio"/>
+      <name value="Bundle Evento Iniciar"/>
+      <description value="Bundle Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleInicioLE"/>
     </resource>
     <resource>
@@ -583,8 +584,8 @@
       <reference>
         <reference value="Bundle/EjemploBundlePriorizar"/>
       </reference>
-      <name value="Bundle Evento de Priorizar"/>
-      <description value="Bundle Evento de Priorizar"/>
+      <name value="Bundle Evento Priorizar"/>
+      <description value="Bundle Evento Priorizar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundlePriorizarLE"/>
     </resource>
     <resource>
@@ -594,8 +595,8 @@
       <reference>
         <reference value="Bundle/EjemploBundleReferencia"/>
       </reference>
-      <name value="Bundle Evento de Referencia"/>
-      <description value="Bundle Evento de Referencia"/>
+      <name value="Bundle Evento Referenciar"/>
+      <description value="Bundle Evento Referenciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciaLE"/>
     </resource>
     <resource>
@@ -605,8 +606,8 @@
       <reference>
         <reference value="Bundle/EjemploBundleRevisar"/>
       </reference>
-      <name value="Bundle Evento de Revisar"/>
-      <description value="Bundle Evento de Revisar"/>
+      <name value="Bundle Evento Revisar"/>
+      <description value="Bundle Evento Revisar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleRevisarLE"/>
     </resource>
     <resource>
@@ -616,8 +617,8 @@
       <reference>
         <reference value="Bundle/EjemploBundleTerminar"/>
       </reference>
-      <name value="Bundle Evento de Terminar"/>
-      <description value="Bundle Evento de Terminar"/>
+      <name value="Bundle Evento Terminar"/>
+      <description value="Bundle Evento Terminar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleTerminarLE"/>
     </resource>
     <resource>
@@ -627,8 +628,8 @@
       <reference>
         <reference value="StructureDefinition/BundleInicioLE"/>
       </reference>
-      <name value="Bundle Inicio LE"/>
-      <description value="Bundle LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento iniciar."/>
+      <name value="Bundle Iniciar LE"/>
+      <description value="Bundle Iniciar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento iniciar."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -639,7 +640,7 @@
         <reference value="StructureDefinition/BundlePriorizarLE"/>
       </reference>
       <name value="Bundle Priorizar LE"/>
-      <description value="Bundle Priorizar LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Priorizar."/>
+      <description value="Bundle Priorizar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento Priorizar."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -649,8 +650,8 @@
       <reference>
         <reference value="StructureDefinition/BundleReferenciaLE"/>
       </reference>
-      <name value="Bundle Referencia LE"/>
-      <description value="Bundle Referencia LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento referenciar."/>
+      <name value="Bundle Referenciar LE"/>
+      <description value="Bundle Referenciar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento referenciar."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -693,8 +694,8 @@
       <reference>
         <reference value="CarePlan/EjemploCarePlanLE"/>
       </reference>
-      <name value="CarePlan Evento de Atender"/>
-      <description value="de CarePlan Evento de Atender"/>
+      <name value="CarePlan Evento Atender"/>
+      <description value="CarePlan Evento Atender"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CarePlanAtenderLE"/>
     </resource>
     <resource>
@@ -713,32 +714,21 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/EjemploCondicionAtenderDiagnosticoConfirmacionLE"/>
+        <reference value="Condition/EjemploCondition"/>
       </reference>
-      <name value="Condicion Atender Diagnostico Confirmacion Evento de Atender"/>
-      <description value="Condicion Atender Diagnostico Confirmacion Evento de Atender"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/CondicionAtenderDiagnosticoConfirmacionLE"/>
-      </reference>
-      <name value="Condicion Atender Diagnostico Confirmacion LE"/>
-      <description value="Condicion Atender Diagnostico Confirmacion LE"/>
-      <exampleBoolean value="false"/>
+      <name value="Condition Diagnóstico Sospecha Evento Iniciar"/>
+      <description value="Condition Diagnóstico Sospecha Evento Iniciar"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/EjemploCondition"/>
+        <reference value="Condition/EjemploConditionAtender"/>
       </reference>
-      <name value="Condition Diagnóstico Sospecha Evento de Inicio"/>
-      <description value="Condition Diagnóstico Sospecha Evento de Inicio"/>
+      <name value="Condition Diagnóstico Sospecha Evento Iniciar"/>
+      <description value="Condition Diagnóstico Sospecha Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE"/>
     </resource>
     <resource>
@@ -748,8 +738,8 @@
       <reference>
         <reference value="StructureDefinition/ConditionInicioDiagnosticoLE"/>
       </reference>
-      <name value="Condition Inicio Diagnostico LE"/>
-      <description value="Condicion Inicio 1 LE recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta."/>
+      <name value="Condition Iniciar Diagnostico LE"/>
+      <description value="Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -765,24 +755,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSServicioRequerido"/>
-      </reference>
-      <name value="Corresponde al servicio que se requiere"/>
-      <description value="Corresponde al servicio que se requiere"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Coverage"/>
       </extension>
       <reference>
         <reference value="Coverage/EjemploCoverage"/>
       </reference>
-      <name value="Coverage Evento de Inicio"/>
-      <description value="Coverage Evento de Inicio"/>
+      <name value="Coverage Evento Iniciar"/>
+      <description value="Coverage Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageInicioLE"/>
     </resource>
     <resource>
@@ -792,8 +771,8 @@
       <reference>
         <reference value="StructureDefinition/CoverageInicioLE"/>
       </reference>
-      <name value="Coverage Inicio LE"/>
-      <description value="Coverage Inicio LE"/>
+      <name value="Coverage Iniciar LE"/>
+      <description value="Coverage Iniciar LE, recurso que permite saber la previsión de un paciente"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -856,7 +835,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DestinoAtencionCodigo"/>
+        <reference value="StructureDefinition/ConsecuenciaAtencionCodigo"/>
       </reference>
       <name value="Destino Atención Codigo"/>
       <description value="Destino Atención Codigo"/>
@@ -867,7 +846,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VSDestinoAtencionCodigo"/>
+        <reference value="ValueSet/VSConsecuenciaAtencionCodigo"/>
       </reference>
       <name value="Destino Atención Codigo"/>
       <description value="Destino Atención Codigo"/>
@@ -878,7 +857,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/CSDestinoAtencionCodigo"/>
+        <reference value="CodeSystem/CSConsecuenciaAtencionCodigo"/>
       </reference>
       <name value="Destino Atención Codigo"/>
       <description value="Destino Atención Codigo"/>
@@ -957,8 +936,8 @@
       <reference>
         <reference value="DocumentReference/EjemploDocumentReference"/>
       </reference>
-      <name value="DocumentReference Evento de Inicio"/>
-      <description value="DocumentReference Evento de Inicio"/>
+      <name value="DocumentReference Evento Iniciar"/>
+      <description value="DocumentReference Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceInicioLE"/>
     </resource>
     <resource>
@@ -968,8 +947,8 @@
       <reference>
         <reference value="StructureDefinition/DocumentReferenceInicioLE"/>
       </reference>
-      <name value="DocumentReference Inicio LE"/>
-      <description value="DocumentReference Inicio LE"/>
+      <name value="DocumentReference Iniciar LE"/>
+      <description value="DocumentReference Iniciar LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -990,8 +969,8 @@
       <reference>
         <reference value="Encounter/EjemploEncounterAtender"/>
       </reference>
-      <name value="Encounter Evento de Atender"/>
-      <description value="Encounter Evento de Atender"/>
+      <name value="Encounter Evento Atender"/>
+      <description value="Encounter Evento Atender"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE"/>
     </resource>
     <resource>
@@ -1001,8 +980,8 @@
       <reference>
         <reference value="Encounter/EjemploEncounter"/>
       </reference>
-      <name value="Encounter Evento de Inicio"/>
-      <description value="Encounter Evento de Inicio"/>
+      <name value="Encounter Evento Iniciar"/>
+      <description value="Encounter Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterInicioLE"/>
     </resource>
     <resource>
@@ -1012,8 +991,8 @@
       <reference>
         <reference value="StructureDefinition/EncounterInicioLE"/>
       </reference>
-      <name value="Encounter Inicio LE"/>
-      <description value="Encounter Inicio LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta."/>
+      <name value="Encounter Iniciar LE"/>
+      <description value="Encounter Iniciar LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1484,8 +1463,8 @@
       <reference>
         <reference value="MessageHeader/EjemploMessageHeaderAgendar"/>
       </reference>
-      <name value="MesaggeHeader Evento de Agendar"/>
-      <description value="MesaggeHeader Evento de Agendar"/>
+      <name value="MesaggeHeader Evento Agendar"/>
+      <description value="MesaggeHeader Evento Agendar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1495,8 +1474,8 @@
       <reference>
         <reference value="MessageHeader/EjemploMessageHeaderAtender"/>
       </reference>
-      <name value="MesaggeHeader Evento de Atender"/>
-      <description value="MesaggeHeader Evento de Atender"/>
+      <name value="MesaggeHeader Evento Atender"/>
+      <description value="MesaggeHeader Evento Atender"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1506,8 +1485,8 @@
       <reference>
         <reference value="MessageHeader/EjemploMessageHeader"/>
       </reference>
-      <name value="MesaggeHeader Evento de Inicio"/>
-      <description value="MesaggeHeader Evento de Inicio"/>
+      <name value="MesaggeHeader Evento Iniciar"/>
+      <description value="MesaggeHeader Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1517,8 +1496,8 @@
       <reference>
         <reference value="MessageHeader/EjemploMessageHeaderPriorizar"/>
       </reference>
-      <name value="MesaggeHeader Evento de Priorizar"/>
-      <description value="MesaggeHeader Evento de Priorizar"/>
+      <name value="MesaggeHeader Evento Priorizar"/>
+      <description value="MesaggeHeader Evento Priorizar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1528,8 +1507,8 @@
       <reference>
         <reference value="MessageHeader/EjemploMessageHeaderReferencia"/>
       </reference>
-      <name value="MesaggeHeader Evento de Referencia"/>
-      <description value="MesaggeHeader Evento de Referencia"/>
+      <name value="MesaggeHeader Evento Referenciar"/>
+      <description value="MesaggeHeader Evento Referenciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1539,8 +1518,8 @@
       <reference>
         <reference value="MessageHeader/EjemploMessageHeaderRevisar"/>
       </reference>
-      <name value="MesaggeHeader Evento de Revisar"/>
-      <description value="MesaggeHeader Evento de Revisar"/>
+      <name value="MesaggeHeader Evento Revisar"/>
+      <description value="MesaggeHeader Evento Revisar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1550,8 +1529,8 @@
       <reference>
         <reference value="MessageHeader/EjemploMessageHeaderTerminar"/>
       </reference>
-      <name value="MesaggeHeader Evento de Terminar"/>
-      <description value="MesaggeHeader Evento de Terminar"/>
+      <name value="MesaggeHeader Evento Terminar"/>
+      <description value="MesaggeHeader Evento Terminar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"/>
     </resource>
     <resource>
@@ -1693,9 +1672,20 @@
       <reference>
         <reference value="Observation/EjemploObservationCuidador"/>
       </reference>
-      <name value="Observation Cuidador Evento de Inicio"/>
-      <description value="Observation Cuidador Evento de Inicio"/>
+      <name value="Observation Cuidador Evento Iniciar"/>
+      <description value="Observation Cuidador Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioCuidadorLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/EjemploObservationDiscapacidad"/>
+      </reference>
+      <name value="Observation Discapacidad Evento Iniciar"/>
+      <description value="Observation Discapacidad Evento Iniciar"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioDiscapacidadLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1704,8 +1694,8 @@
       <reference>
         <reference value="Observation/EjemploObservationAtender"/>
       </reference>
-      <name value="Observation Evento de Atender"/>
-      <description value="Observation Evento de Atender"/>
+      <name value="Observation Evento Atender"/>
+      <description value="Observation Evento Atender"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationAtenderLE"/>
     </resource>
     <resource>
@@ -1715,8 +1705,8 @@
       <reference>
         <reference value="Observation/EjemploObservation"/>
       </reference>
-      <name value="Observation Evento de Inicio"/>
-      <description value="Observation Evento de Inicio"/>
+      <name value="Observation Evento Iniciar"/>
+      <description value="Observation Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioLE"/>
     </resource>
     <resource>
@@ -1726,8 +1716,8 @@
       <reference>
         <reference value="StructureDefinition/ObservationInicioCuidadorLE"/>
       </reference>
-      <name value="Observation Inicio Cuidador LE"/>
-      <description value="Observation Inicio para describir si necesita cuidador"/>
+      <name value="Observation Iniciar Cuidador LE"/>
+      <description value="Observation Iniciar, para describir si un paciente necesita cuidador"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1737,8 +1727,8 @@
       <reference>
         <reference value="StructureDefinition/ObservationInicioIndiceComorbilidadLE"/>
       </reference>
-      <name value="Observation Inicio Indice Comorbilidad LE"/>
-      <description value="Observation Inicio 2 LE recurso que se utiliza para indicar el índice de comorbilidad de un paciente."/>
+      <name value="Observation Iniciar Indice Comorbilidad LE"/>
+      <description value="Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1748,8 +1738,19 @@
       <reference>
         <reference value="StructureDefinition/ObservationInicioLE"/>
       </reference>
-      <name value="Observation Inicio LE"/>
-      <description value="Observation Inicio LE, recurso que permite agregar los examenes en el evento de inicio."/>
+      <name value="Observation Iniciar LE"/>
+      <description value="Observation Iniciar LE, recurso que permite agregar los examenes en el evento iniciar."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ObservationInicioDiscapacidadLE"/>
+      </reference>
+      <name value="Observation Inicio Discapacidad LE"/>
+      <description value="Observation Inicio Discapacidad LE, para describir si un paciente presenta discapacidad"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1759,9 +1760,31 @@
       <reference>
         <reference value="Observation/EjemploObservation2"/>
       </reference>
-      <name value="Observation Índice Comorbilidad Evento de Inicio"/>
-      <description value="Observation Índice Comorbilidadn Evento de Inicio"/>
+      <name value="Observation Índice Comorbilidad Evento Iniciar"/>
+      <description value="Observation Índice Comorbilidadn Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioIndiceComorbilidadLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/EjemploOrganizationAgendar"/>
+      </reference>
+      <name value="Organization Evento Agendar"/>
+      <description value="Organization Evento Agendar"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/EjemploOrganizationAtender"/>
+      </reference>
+      <name value="Organization Evento Atender"/>
+      <description value="Organization Evento Atender"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1779,32 +1802,10 @@
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/EjemploOrganizationAgendar"/>
-      </reference>
-      <name value="Organization Evento de Agendar"/>
-      <description value="Organization Evento de Agendar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/EjemploOrganizationAtender"/>
-      </reference>
-      <name value="Organization Evento de Atender"/>
-      <description value="Organization Evento de Atender"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
         <reference value="Organization/EjemploOrganization"/>
       </reference>
-      <name value="Organization Evento de Inicio"/>
-      <description value="Organization Evento de Inicio"/>
+      <name value="Organization Evento Iniciar"/>
+      <description value="Organization Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1814,8 +1815,8 @@
       <reference>
         <reference value="Organization/EjemploOrganizationPriorizar"/>
       </reference>
-      <name value="Organization Evento de Priorizar"/>
-      <description value="Organization Evento de Priorizar"/>
+      <name value="Organization Evento Priorizar"/>
+      <description value="Organization Evento Priorizar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1825,8 +1826,8 @@
       <reference>
         <reference value="Organization/EjemploOrganizationReferencia"/>
       </reference>
-      <name value="Organization Evento de Referencia"/>
-      <description value="Organization Evento de Referencia"/>
+      <name value="Organization Evento Referenciar"/>
+      <description value="Organization Evento Referenciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1836,8 +1837,8 @@
       <reference>
         <reference value="Organization/EjemploOrganizationRevisar"/>
       </reference>
-      <name value="Organization Evento de Revisar"/>
-      <description value="Organization Evento de Revisar"/>
+      <name value="Organization Evento Revisar"/>
+      <description value="Organization Evento Revisar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1847,8 +1848,8 @@
       <reference>
         <reference value="Organization/EjemploOrganizationTerminar"/>
       </reference>
-      <name value="Organization Evento de Terminar"/>
-      <description value="Organization Evento de Terminar"/>
+      <name value="Organization Evento Terminar"/>
+      <description value="Organization Evento Terminar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1869,8 +1870,8 @@
       <reference>
         <reference value="Organization/EjemploOrganizationReferenciadorMHREFERENCIADA"/>
       </reference>
-      <name value="Organization Referenciador Evento de Referenciada"/>
-      <description value="Organization Referenciador Evento de Referenciada"/>
+      <name value="Organization Referenciador Evento Referenciar"/>
+      <description value="Organization Referenciador Evento Referenciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"/>
     </resource>
     <resource>
@@ -1889,9 +1890,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PacienteMinsalMPI"/>
+        <reference value="StructureDefinition/PatientLE"/>
       </reference>
-      <name value="PacienteMPI"/>
+      <name value="Patient LE"/>
       <description value="Paciente definido para el Registro Maestro de Pacientes"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1904,7 +1905,7 @@
       </reference>
       <name value="Patient Lista de Espera"/>
       <description value="Patient Lista de Espera"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PacienteMinsalMPI"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1922,7 +1923,7 @@
         <valueString value="Condition"/>
       </extension>
       <reference>
-        <reference value="Condition/EjemploCondition3"/>
+        <reference value="Condition/EjemploConditionGES"/>
       </reference>
       <name value="Patología GES (número)"/>
       <description value="Patología GES (número)"/>
@@ -1979,8 +1980,8 @@
       <reference>
         <reference value="Practitioner/EjemploPractitionerAgendarAgendador"/>
       </reference>
-      <name value="Practitioner Agendador Evento de Agendar"/>
-      <description value="Practitioner Agendador Evento de Agendar"/>
+      <name value="Practitioner Agendador Evento Agendar"/>
+      <description value="Practitioner Agendador Evento Agendar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorAdministrativoLE"/>
     </resource>
     <resource>
@@ -1990,8 +1991,8 @@
       <reference>
         <reference value="Practitioner/EjemploPractitionerAgendarAtendedor"/>
       </reference>
-      <name value="Practitioner Atendedor Evento de Agendar"/>
-      <description value="Practitioner Atendedor Evento de Agendar"/>
+      <name value="Practitioner Atendedor Evento Agendar"/>
+      <description value="Practitioner Atendedor Evento Agendar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"/>
     </resource>
     <resource>
@@ -2001,8 +2002,8 @@
       <reference>
         <reference value="Practitioner/EjemploPractitionerAtender"/>
       </reference>
-      <name value="Practitioner Evento de Atender"/>
-      <description value="Practitioner Evento de Atender"/>
+      <name value="Practitioner Evento Atender"/>
+      <description value="Practitioner Evento Atender"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"/>
     </resource>
     <resource>
@@ -2010,10 +2011,10 @@
         <valueString value="Practitioner"/>
       </extension>
       <reference>
-        <reference value="Practitioner/EjemploPractitioner"/>
+        <reference value="Practitioner/EjemploPractitionerIniciar"/>
       </reference>
-      <name value="Practitioner Evento de Inicio"/>
-      <description value="Practitioner Evento de Inicio"/>
+      <name value="Practitioner Evento Iniciar"/>
+      <description value="Practitioner Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"/>
     </resource>
     <resource>
@@ -2023,8 +2024,8 @@
       <reference>
         <reference value="Practitioner/EjemploPractitionerPriorizar"/>
       </reference>
-      <name value="Practitioner Evento de Priorizar"/>
-      <description value="Practitioner Evento de Priorizar"/>
+      <name value="Practitioner Evento Priorizar"/>
+      <description value="Practitioner Evento Priorizar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"/>
     </resource>
     <resource>
@@ -2047,7 +2048,7 @@
       </reference>
       <name value="Practitioner Evento Terminar"/>
       <description value="Practitioner Evento Terminar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorAdministrativoLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2056,8 +2057,8 @@
       <reference>
         <reference value="Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA"/>
       </reference>
-      <name value="Practitioner Referenciador Evento de Referenciada"/>
-      <description value="Practitioner Referenciador Evento de Referenciada"/>
+      <name value="Practitioner Referenciador Evento Referenciar"/>
+      <description value="Practitioner Referenciador Evento Referenciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"/>
     </resource>
     <resource>
@@ -2067,8 +2068,8 @@
       <reference>
         <reference value="PractitionerRole/EjemploPractitionerRoleAtendedorSRREFERENCIADA"/>
       </reference>
-      <name value="PractitionerRole Atendedor Evento de Referenciada"/>
-      <description value="PractitionerRole Atendedor Evento de Referenciada"/>
+      <name value="PractitionerRole Atendedor Evento Referenciar"/>
+      <description value="PractitionerRole Atendedor Evento Referenciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -2078,8 +2079,8 @@
       <reference>
         <reference value="PractitionerRole/EjemploPractitionerRoleAgendarAPPO"/>
       </reference>
-      <name value="PractitionerRole Evento de Agendar Apponitment"/>
-      <description value="PractitionerRole Evento de Agendar Apponitment"/>
+      <name value="PractitionerRole Evento Agendar Apponitment"/>
+      <description value="PractitionerRole Evento Agendar Apponitment"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -2089,8 +2090,8 @@
       <reference>
         <reference value="PractitionerRole/EjemploPractitionerRoleAgendarMH"/>
       </reference>
-      <name value="PractitionerRole Evento de Agendar MessageHeader"/>
-      <description value="PractitionerRole Evento de Agendar MessageHeader"/>
+      <name value="PractitionerRole Evento Agendar MessageHeader"/>
+      <description value="PractitionerRole Evento Agendar MessageHeader"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -2100,8 +2101,8 @@
       <reference>
         <reference value="PractitionerRole/EjemploPractitionerRoleAtender"/>
       </reference>
-      <name value="PractitionerRole Evento de Atender"/>
-      <description value="PractitionerRole Evento de Atender"/>
+      <name value="PractitionerRole Evento Atender"/>
+      <description value="PractitionerRole Evento Atender"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -2111,8 +2112,8 @@
       <reference>
         <reference value="PractitionerRole/EjemploPractitionerRole"/>
       </reference>
-      <name value="PractitionerRole Evento de Inicio"/>
-      <description value="PractitionerRole Evento de Inicio"/>
+      <name value="PractitionerRole Evento Iniciar"/>
+      <description value="PractitionerRole Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -2122,8 +2123,8 @@
       <reference>
         <reference value="PractitionerRole/EjemploPractitionerRolePriorizar"/>
       </reference>
-      <name value="PractitionerRole Evento de Priorizar"/>
-      <description value="PractitionerRole Evento de Priorizar"/>
+      <name value="PractitionerRole Evento Priorizar"/>
+      <description value="PractitionerRole Evento Priorizar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -2133,8 +2134,8 @@
       <reference>
         <reference value="PractitionerRole/EjemploPractitionerRoleRevisar"/>
       </reference>
-      <name value="PractitionerRole Evento de Revisar"/>
-      <description value="PractitionerRole Evento de Revisar"/>
+      <name value="PractitionerRole Evento Revisar"/>
+      <description value="PractitionerRole Evento Revisar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -2144,8 +2145,8 @@
       <reference>
         <reference value="PractitionerRole/EjemploPractitionerRoleTerminar"/>
       </reference>
-      <name value="PractitionerRole Evento de Terminar"/>
-      <description value="PractitionerRole Evento de Terminar"/>
+      <name value="PractitionerRole Evento Terminar"/>
+      <description value="PractitionerRole Evento Terminar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -2156,7 +2157,7 @@
         <reference value="StructureDefinition/PractitionerRoleLE"/>
       </reference>
       <name value="PractitionerRole LE"/>
-      <description value="PractitionerRole LE recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud."/>
+      <description value="PractitionerRole LE, recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2166,8 +2167,8 @@
       <reference>
         <reference value="PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA"/>
       </reference>
-      <name value="PractitionerRole Referenciador Evento de Referenciada"/>
-      <description value="PractitionerRole Referenciador Evento de Referenciada"/>
+      <name value="PractitionerRole Referenciador Evento Referenciar"/>
+      <description value="PractitionerRole Referenciador Evento Referenciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"/>
     </resource>
     <resource>
@@ -2298,8 +2299,8 @@
       <reference>
         <reference value="QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE"/>
       </reference>
-      <name value="QuestionnaireResponse Evento de Atender"/>
-      <description value="QuestionnaireResponse Evento de Atender"/>
+      <name value="QuestionnaireResponse Evento Atender"/>
+      <description value="QuestionnaireResponse Evento Atender"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseAtenderLE"/>
     </resource>
     <resource>
@@ -2309,8 +2310,8 @@
       <reference>
         <reference value="QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE"/>
       </reference>
-      <name value="QuestionnaireResponse Evento de Inicio Motivo derivación"/>
-      <description value="QuestionnaireResponse Evento de Inicio Motivo derivación"/>
+      <name value="QuestionnaireResponse Evento Iniciar Motivo derivación"/>
+      <description value="QuestionnaireResponse Evento Iniciar Motivo derivación"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseInicioLE"/>
     </resource>
     <resource>
@@ -2320,8 +2321,8 @@
       <reference>
         <reference value="StructureDefinition/QuestionnaireResponseInicioLE"/>
       </reference>
-      <name value="QuestionnaireResponse Inicio Motivo de la Derivación LE"/>
-      <description value="QuestionnaireResponse Inicio para Motivo de Derivación LE"/>
+      <name value="QuestionnaireResponse Iniciar Motivo de la Derivación LE"/>
+      <description value="QuestionnaireResponse Iniciar para Motivo de Derivación LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2408,30 +2409,8 @@
       <reference>
         <reference value="ServiceRequest/EjemploServiceRequest"/>
       </reference>
-      <name value="ServiceRequest Evento de Inicio"/>
-      <description value="ServiceRequest Evento de Inicio"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/EjemploServiceRequestReferenciada"/>
-      </reference>
-      <name value="ServiceRequest Evento de Referenciada"/>
-      <description value="ServiceRequest Evento de Referenciada"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ServiceRequest"/>
-      </extension>
-      <reference>
-        <reference value="ServiceRequest/EjemploServiceRequestTerminar"/>
-      </reference>
-      <name value="ServiceRequest Evento de Terminar"/>
-      <description value="ServiceRequest Evento de Terminar"/>
+      <name value="ServiceRequest Evento Iniciar"/>
+      <description value="ServiceRequest Evento Iniciar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
     </resource>
     <resource>
@@ -2450,10 +2429,32 @@
         <valueString value="ServiceRequest"/>
       </extension>
       <reference>
+        <reference value="ServiceRequest/EjemploServiceRequestReferenciada"/>
+      </reference>
+      <name value="ServiceRequest Evento Referenciar"/>
+      <description value="ServiceRequest Evento Referenciar"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
         <reference value="ServiceRequest/EjemploServiceRequestRevisar"/>
       </reference>
       <name value="ServiceRequest Evento Revisar"/>
       <description value="ServiceRequest Evento Revisar"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/EjemploServiceRequestTerminar"/>
+      </reference>
+      <name value="ServiceRequest Evento Terminar"/>
+      <description value="ServiceRequest Evento Terminar"/>
       <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
     </resource>
     <resource>
@@ -2487,6 +2488,17 @@
       </reference>
       <name value="ServiceRequestExamen LE"/>
       <description value="ServiceRequestExamen LE recurso utilizado para la representación de los datos de la examen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSServicioRequerido"/>
+      </reference>
+      <name value="Servicio Requerido"/>
+      <description value="Servicio Requerido"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

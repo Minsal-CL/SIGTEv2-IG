@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Mensajeria - Tiempos de Espera Interoperable v0.1.6</title>
+    <title>Mensajeria - Tiempos de Espera Interoperable v0.1.7</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -66,7 +66,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
             <br/>
-            <span style="display:inline-block;">0.1.6 - draft
+            <span style="display:inline-block;">0.1.7 - draft
 
 
 
@@ -179,7 +179,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.6. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.7. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   <h2>Mensajeria</h2>
   
 
@@ -195,39 +195,219 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#estructura-de-los-mensajes" id="markdown-toc-estructura-de-los-mensajes">Estructura de los Mensajes</a></li>
+  <li><a href="#mensaje-de-envío" id="markdown-toc-mensaje-de-envío">Mensaje de Envío</a></li>
+  <li><a href="#mensaje-de-respuesta" id="markdown-toc-mensaje-de-respuesta">Mensaje de Respuesta</a></li>
+  <li><a href="#response-code" id="markdown-toc-response-code">Response Code</a></li>
+</ul>
+
 </div>
 
-<p>El mecanismo de intercambio definido para las transacciones es <a href="https://www.hl7.org/fhir/R4/messaging.html">FHIR messaging</a>(Mensajería de FHIR), esto consiste en el intercambio de mensajes entre un emisor y un receptor, emulando en cierta medida la mensajería HL7 v2.</p>
+<p>El mecanismo de intercambio definido para las transacciones es <a href="https://www.hl7.org/fhir/R4/messaging.html">FHIR messaging</a>(Mensajería de FHIR), esto consiste en el intercambio de mensajes entre un emisor y un receptor, emulando en cierta medida la mensajería HL7 v2 (<a href="https://www.hl7.org/fhir/R4/messaging.html#endpoints">Ver diferencias entre Mensajería y REST</a>).</p>
 
 <p>El intercambio de mensajes entre los actores se debe realizar siguiendo las definiciónes de la especificación oficial de FHIR por lo que se supone que soportan la <a href="https://www.hl7.org/fhir/R4/messageheader-operation-process-message.html">operación FHIR <strong>$process-message</strong></a></p>
 
 <h3 id="estructura-de-los-mensajes">Estructura de los Mensajes</h3>
 
 <ul>
+  <li>Es importante considerar que la URL para el envío de un mensaje será: <strong>[base]/$process-message</strong></li>
   <li>Agrupador de Recursos: Un recurso del tipo <strong>Bundle</strong> del tipo <strong>message</strong>(type=message)</li>
   <li>Cabecera del mensaje: Un recurso del tipo <strong>MessageHeader</strong> con la identificación del <a href="ValueSet-VSTipoEventoLE.html">tipo evento</a>(ejemplo: eventCoding.code=terminar), una referencia a un autor(author), detalles del sistema emisor(source) y una referencia a un recurso el cual es el foco del mensaje(focus)</li>
   <li>Otros recursos: Necesariamente los recursos referenciados deben ser incluidos dentro del mismo Bundle como entradas adicionales, por ejemplo en el caso del <strong>Mensaje de Envío</strong> los recursos referenciados en el MessageHeader(autor, focus, etc) y en el caso del <strong>Mensaje de Respuesta</strong> un recurso <a href="https://www.hl7.org/fhir/R4/operationoutcome.html"><strong>OperationOutcome</strong></a> con información de la operación, advertencias o lista de errores(OperationOutcome.issue)</li>
 </ul>
 
-<h4 id="mensajería-de-envío">Mensajería de Envío</h4>
+<h3 id="mensaje-de-envío">Mensaje de Envío</h3>
 
-<p><br /></p>
-<div align="center">
-  <img style="border: 1px solid; color: black;" src="mensaje-envio.png" /> 
-  <p></p>
-</div>
-<p><br /></p>
+<ul>
+  <li>El recurso del tipo Bundle debe ser del tipo mensaje(type=message)</li>
+  <li>Siempre el primer entry en Bundle.type=message debe ser un MessageHeader.</li>
+  <li>El MessageHeader.focus debe incluir el siempre el ServiceRequest y opcionalmente Appointment(en el caso del evento agendar) o Encounter(en el caso del evento atender)</li>
+  <li>
+    <p>Ejemplo para evento Agendar:</p>
 
-<h4 id="mensaje-de-respuesta">Mensaje de Respuesta</h4>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+"resourceType": "Bundle",
+"type": "message",
+"entry": [
+  {
+      "fullUrl" : "http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeader",
+      "resource" : {
+          "resourceType": "MessageHeader",
+          "eventCoding”: {
+              "system”: "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE”,
+              "code": "agendar"
+          },
+          "focus": [
+              {
+                  "reference": "urn:uuid:8ff6c98d-57b5-438c-9d9f-46adc9cb0382"
+              },
+              {
+                  "reference": "urn:uuid:f4dbd333-a73b-4b25-b589-fccf9daafd33"
+              }
 
-<p><br /></p>
-<div align="center">
-  <img style="border: 1px solid; color: black;" src="mensaje-respuesta.png" /> 
-  <p></p>
-</div>
-<p><br /></p>
+          ],
+          … // Otra información del MessageHeader
+      }
+  },
+  {
+      "fullUrl" : "urn:uuid:8ff6c98d-57b5-438c-9d9f-46adc9cb0382",
+      "resource" : {
+          "resourceType": "ServiceRequest"
+          … // Otra información del ServiceRequest
+      }
+
+  },
+  {
+      "fullUrl" : "urn:uuid:8ff6c98d-57b5-438c-9d9f-46adc9cb0382",
+      "resource" : {
+          "resourceType": "Appointment"
+          … // Otra información del Appointment
+      }
+
+  },
+  … // Otros recursos
+]
+}
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="mensaje-de-respuesta">Mensaje de Respuesta</h3>
+
+<h4 id="respuesta-exitosa">Respuesta exitosa</h4>
+
+<ul>
+  <li>El recurso Bundle debe ser del tipo mensaje(type=message)</li>
+  <li>El MessageHeader.focus debe incluir el siempre el ServiceRequest y opcionalmente Appointment(en el caso del evento agendar) o Encounter(en el caso del evento atender)</li>
+  <li>Como mínimo solo los recursos MessageHeader y referenciados en MessageHeader.focus vendrán completos en la respuesta, para los otros recursos solo vendrá el response con el resultado de la operación.</li>
+  <li>Adicionalmente es posible incluir el recurso OperationOutcome con información de la operación referenciado en MessageHeader.response</li>
+  <li>
+    <p>Ejemplo de Respuesta para evento Agendar:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    "resourceType": "Bundle",
+    "id": "e192ea7d-3b6f-4120-8c0c-1ccc5e2960d1",
+    "identifier": {
+        "system": "http://demo.com/identifiers",
+        "value": "252dc32d-62c5-4c40-a97a-c48c8ce2f1a7"
+    },
+    "type": "message",
+    "entry": [
+        {
+            "resource": {
+                "resourceType": "MessageHeader",
+                "id": "2982",
+                "eventCoding": {
+                    "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
+                    "code": "agendar"
+                },
+                "author": {
+                    "reference": "PractitionerRole/2983"
+                },
+                "response": {
+                    "identifier": "0c3b644c-f64f-4626-9869-dcc080cfe538",
+                    "code": "ok",
+                    "details": {
+                        "reference": "OperationOutcome/5a2e30e1-38e1-40a3-b26b-f604df954f8a"
+                    }
+                },
+                "focus": [
+                    {
+                        "reference": "Appointment/2988"
+                    },
+                    {
+                        "reference": "ServiceRequest/2989"
+                    }
+                ],
+                ... // Otra información del MessageHeader
+            },
+            "response": {
+                "status": "201 Created",
+                "location": "MessageHeader/2982/_history/1",
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:5a2e30e1-38e1-40a3-b26b-f604df954f8a",
+            "resource": {
+                "resourceType": "OperationOutcome",
+                "id": "5a2e30e1-38e1-40a3-b26b-f604df954f8a",
+                "issue": [
+                    {
+                        "severity": "information",
+                        "code": "informational",
+                        "details": {
+                            "text": "Interconsulta agendada exitosamente"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "ServiceRequest",
+                "id": "2989",
+                ... // Otra información del ServiceRequest
+            },
+            "response": {
+                "status": "200 OK",
+                "location": "ServiceRequest/2989/_history/7"
+            }
+        },
+        {
+            "resource": {
+                "resourceType": "Appointment",
+                "id": "2988",
+                ... // Otra información del Appointment
+            },
+            "response": {
+                "status": "201 Created",
+                "location": "Appointment/2988/_history/1",
+            }
+        },
+        {
+            "response": {
+                "status": "201 Created",
+                "location": "PractitionerRole/2983/_history/1"
+            }
+        }
+        ... // Otros Recursos
+    ]
+}
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="respuesta-con-error">Respuesta con error</h4>
+
+<ul>
+  <li>
+    <p>Mensaje de Error, en caso de existir:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  {
+    "resourceType": "OperationOutcome",
+    "text": {
+      "status": "generated",
+      "div": "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;h1&gt;Operation Outcome&lt;/h1&gt;&lt;table border=\"0\"&gt;&lt;tr&gt;&lt;td style=\"font-weight: bold;\"&gt;ERROR&lt;/td&gt;&lt;td&gt;[]&lt;/td&gt;&lt;td&gt;&lt;pre&gt;el valor es incorrecto&lt;/pre&gt;&lt;/td&gt;\n\t\t\t&lt;/tr&gt;\n\t\t&lt;/table&gt;\n\t&lt;/div&gt;"
+    },
+    "issue": [ {
+      "severity": "error",
+      "code": "value",
+      "diagnostics": "el valor es incorrecto"
+    } ]
+  }
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="response-code">Response Code</h3>
+
+<ul>
+  <li>Siempre es 200  en caso de que el mensaje sea procesado completamente</li>
+  <li>4XX si el mensaje no pudo ser procesado correctamente y se debe indicar error o errores usando el recurso OperationOutcome</li>
+  <li>5xx errores de servidor no relacionados al mensaje</li>
+</ul>
 
 
 
@@ -254,7 +434,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 21, 2023 20:18+0000">2023-12-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 9, 2024 15:10+0000">2024-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

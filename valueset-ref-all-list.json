@@ -1,0 +1,2251 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-OrganizationLE.html" : "Organization LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-OrganizationLE.html" : "Organization LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCategory",
+      "title" : "AllergyIntoleranceCategory",
+      "description" : "Category of an identified substance associated with allergies or intolerances.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.133"],
+      "sources" : ["2.16.840.1.113883.4.642.3.133"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceCriticality",
+      "title" : "AllergyIntoleranceCriticality",
+      "description" : "Estimate of the potential clinical harm, or seriousness, of a reaction to an identified substance.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-criticality"],
+      "oids" : ["2.16.840.1.113883.4.642.3.129"],
+      "sources" : ["2.16.840.1.113883.4.642.3.129"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceType",
+      "title" : "AllergyIntoleranceType",
+      "description" : "Identification of the underlying physiological mechanism for a Reaction Risk.",
+      "systems" : ["http://hl7.org/fhir/allergy-intolerance-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.131"],
+      "sources" : ["2.16.840.1.113883.4.642.3.131"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSubstance/Product,ConditionAndNegationCodes",
+      "title" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "description" : "This value set includes concept codes for specific substances/pharmaceutical products, allergy or intolerance conditions, and negation/exclusion codes to specify the absence of specific types of allergies or intolerances.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.137"],
+      "sources" : ["2.16.840.1.113883.4.642.3.137"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceVerificationStatusCodes",
+      "title" : "AllergyIntolerance Verification Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Verification Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AppointmentCancellationReason",
+      "title" : "Appointment cancellation reason",
+      "description" : "This example value set defines a set of reasons for the cancellation of an appointment.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1381"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1381"],
+      "uses" : {
+      },
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/appointmentstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AppointmentStatus",
+      "title" : "AppointmentStatus",
+      "description" : "The free/busy status of an appointment.",
+      "systems" : ["http://hl7.org/fhir/appointmentstatus"],
+      "oids" : ["2.16.840.1.113883.4.642.3.484"],
+      "sources" : ["2.16.840.1.113883.4.642.3.484"],
+      "uses" : {
+      },
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-BundleInicioLE.html" : "Bundle Iniciar LE",
+      "StructureDefinition-BundleAgendarLE.html" : "Bundle Agendar LE",
+      "StructureDefinition-BundleReferenciaLE.html" : "Bundle Referenciar LE",
+      "StructureDefinition-BundlePriorizarLE.html" : "Bundle Priorizar LE",
+      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
+      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
+      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "FacilityTypeCodeValueSet",
+      "title" : "Facility Type Code Value Set",
+      "description" : "This is the code representing the type of organizational setting where the clinical encounter, service, interaction, or treatment occurred. The value set used for Healthcare Facility Type has been defined by HITSP to be the value set reproduced from HITSP C80 Table 2-147.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE",
+      "StructureDefinition-PractitionerRoleLE.html" : "PractitionerRole LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityKind",
+      "title" : "Care Plan Activity Kind",
+      "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.145"],
+      "sources" : ["2.16.840.1.113883.4.642.3.145"],
+      "uses" : {
+      },
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityOutcome",
+      "title" : "Care Plan Activity Outcome",
+      "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.149"],
+      "sources" : ["2.16.840.1.113883.4.642.3.149"],
+      "uses" : {
+      },
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanActivityStatus",
+      "title" : "CarePlanActivityStatus",
+      "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+      "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.146"],
+      "sources" : ["2.16.840.1.113883.4.642.3.146"],
+      "uses" : {
+      },
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanCategory",
+      "title" : "Care Plan Category",
+      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.148"],
+      "sources" : ["2.16.840.1.113883.4.642.3.148"],
+      "uses" : {
+      },
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CarePlanIntent",
+      "title" : "Care Plan Intent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.150"],
+      "sources" : ["2.16.840.1.113883.4.642.3.150"],
+      "uses" : {
+      },
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE",
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/common-tags",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/common-tags"],
+      "oids" : ["2.16.840.1.113883.4.642.3.79"],
+      "sources" : ["2.16.840.1.113883.4.642.3.79"],
+      "uses" : {
+      },
+      "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-OrganizationLE.html" : "Organization LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-OrganizationLE.html" : "Organization LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/contactentity-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.416"],
+      "sources" : ["2.16.840.1.113883.4.642.3.416"],
+      "uses" : {
+      },
+      "StructureDefinition-OrganizationLE.html" : "Organization LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/coverage-copay-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CoverageCopayTypeCodes",
+      "title" : "Coverage Copay Type Codes",
+      "description" : "This value set includes sample Coverage Copayment Type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/coverage-copay-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.527"],
+      "sources" : ["2.16.840.1.113883.4.642.3.527"],
+      "uses" : {
+      },
+      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/coverage-financial-exception",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleCoverageFinancialExceptionCodes",
+      "title" : "Example Coverage Financial Exception Codes",
+      "description" : "This value set includes Example Coverage Financial Exception Codes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/ex-coverage-financial-exception"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1328"],
+      "uses" : {
+      },
+      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/coverage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CoverageTypeAndSelf-PayCodes",
+      "title" : "Coverage Type and Self-Pay Codes",
+      "description" : "This value set includes Coverage Type codes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/coverage-selfpay",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.520"],
+      "sources" : ["2.16.840.1.113883.4.642.3.520"],
+      "uses" : {
+      },
+      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "systems" : ["http://hl7.org/fhir/days-of-week"],
+      "oids" : ["2.16.840.1.113883.4.642.3.512"],
+      "sources" : ["2.16.840.1.113883.4.642.3.512"],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerRoleLE.html" : "PractitionerRole LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentClassValueSet",
+      "title" : "Document Class Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "systems" : ["http://hl7.org/fhir/document-reference-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.7"],
+      "sources" : ["2.16.840.1.113883.4.642.3.7"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.248"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/fm-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FinancialResourceStatusCodes",
+      "title" : "Financial Resource Status Codes",
+      "description" : "This value set includes Status codes.",
+      "systems" : ["http://hl7.org/fhir/fm-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.592"],
+      "sources" : ["2.16.840.1.113883.4.642.3.592"],
+      "uses" : {
+      },
+      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/formatcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentReferenceFormatCodeSet",
+      "title" : "DocumentReference Format Code Set",
+      "description" : "The value set is defined to be the set of format codes defined by the IHE Technical Framework, and also including additional format codes defined by the    HL7. The value set is listed in HITSP C80 Table 2-153 Format Code Value Set Definition,    with additions published later by IHE as published    at http://wiki.ihe.net/index.php?title=IHE_Format_Codes   and with additions published later by HL7 as published at https://confluence.hl7.org/display/SD/Format+Codes+for+IHE+XDS.   This is the code specifying the technical format of the document. Along with the typeCode,    it should provide sufficient information to allow any potential document consumer to know    if it will be able to process the document. The code shall be sufficiently specific to    ensure processing/display by identifying a document encoding, structure and template. The actual list of codes here is incomplete",
+      "systems" : ["http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"],
+      "oids" : ["1.3.6.1.4.1.19376.1.2.7.1"],
+      "sources" : ["1.3.6.1.4.1.19376.1.2.7.1"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-BundleInicioLE.html" : "Bundle Iniciar LE",
+      "StructureDefinition-BundleAgendarLE.html" : "Bundle Agendar LE",
+      "StructureDefinition-BundleReferenciaLE.html" : "Bundle Referenciar LE",
+      "StructureDefinition-BundlePriorizarLE.html" : "Bundle Priorizar LE",
+      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
+      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
+      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-OrganizationLE.html" : "Organization LE",
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-OrganizationLE.html" : "Organization LE",
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE",
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE",
+      "StructureDefinition-BundleAgendarLE.html" : "Bundle Agendar LE",
+      "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-QuestionnaireResponseAtenderLE.html" : "QuestionnaireResponse Atender LE",
+      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-PractitionerRoleLE.html" : "PractitionerRole LE",
+      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE",
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-OrganizationLE.html" : "Organization LE",
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-BundleInicioLE.html" : "Bundle Iniciar LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE",
+      "StructureDefinition-BundlePriorizarLE.html" : "Bundle Priorizar LE",
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
+      "StructureDefinition-QuestionnaireResponseInicioLE.html" : "QuestionnaireResponse Iniciar Motivo de la Derivación LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE",
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-BundleReferenciaLE.html" : "Bundle Referenciar LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
+      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationCodes",
+      "title" : "SNOMED CT Medication Codes",
+      "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.375"],
+      "sources" : ["2.16.840.1.113883.4.642.3.375"],
+      "uses" : {
+      },
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/message-events",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "MessageEvent",
+      "title" : "MessageEvent",
+      "description" : "One of the message events defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/message-events"],
+      "oids" : ["2.16.840.1.113883.4.642.3.26"],
+      "sources" : ["2.16.840.1.113883.4.642.3.26"],
+      "uses" : {
+      },
+      "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/message-reason-encounter",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleMessageReasonCodes",
+      "title" : "Example Message Reason Codes",
+      "description" : "Example Message Reasons. These are the set of codes that might be used an updating an encounter using admin-update.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/message-reasons-encounter"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.378"],
+      "sources" : ["2.16.840.1.113883.4.642.3.378"],
+      "uses" : {
+      },
+      "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Mime Types",
+      "title" : "MimeType",
+      "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
+      "systems" : ["urn:ietf:bcp:13"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1024"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1024"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.403"],
+      "sources" : ["2.16.840.1.113883.4.642.3.403"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LOINCCodes",
+      "title" : "LOINC Codes",
+      "description" : "This value set includes all LOINC codes",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.396"],
+      "sources" : ["2.16.840.1.113883.4.642.3.396"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.399"],
+      "sources" : ["2.16.840.1.113883.4.642.3.399"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/organization-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/organization-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.414"],
+      "sources" : ["2.16.840.1.113883.4.642.3.414"],
+      "uses" : {
+      },
+      "StructureDefinition-OrganizationLE.html" : "Organization LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participantrequired",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRequired",
+      "title" : "ParticipantRequired",
+      "description" : "Is the Participant required to attend the appointment.",
+      "systems" : ["http://hl7.org/fhir/participantrequired"],
+      "oids" : ["2.16.840.1.113883.4.642.3.488"],
+      "sources" : ["2.16.840.1.113883.4.642.3.488"],
+      "uses" : {
+      },
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participationstatus",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipationStatus",
+      "title" : "ParticipationStatus",
+      "description" : "The Participation status of an appointment.",
+      "systems" : ["http://hl7.org/fhir/participationstatus"],
+      "oids" : ["2.16.840.1.113883.4.642.3.486"],
+      "sources" : ["2.16.840.1.113883.4.642.3.486"],
+      "uses" : {
+      },
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireAnswerCodes",
+      "title" : "Questionnaire Answer Codes",
+      "description" : "Example list of codes for answers to questions. (Not complete or necessarily appropriate.)",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.446"],
+      "sources" : ["2.16.840.1.113883.4.642.3.446"],
+      "uses" : {
+      },
+      "StructureDefinition-QuestionnaireResponseAtenderLE.html" : "QuestionnaireResponse Atender LE",
+      "StructureDefinition-QuestionnaireResponseInicioLE.html" : "QuestionnaireResponse Iniciar Motivo de la Derivación LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/questionnaire-answers-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "QuestionnaireResponseStatus",
+      "title" : "QuestionnaireResponseStatus",
+      "description" : "Lifecycle status of the questionnaire response.",
+      "systems" : ["http://hl7.org/fhir/questionnaire-answers-status"],
+      "oids" : ["required"],
+      "sources" : ["required"],
+      "uses" : {
+      },
+      "StructureDefinition-QuestionnaireResponseAtenderLE.html" : "QuestionnaireResponse Atender LE",
+      "StructureDefinition-QuestionnaireResponseInicioLE.html" : "QuestionnaireResponse Iniciar Motivo de la Derivación LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceSeverity",
+      "title" : "AllergyIntoleranceSeverity",
+      "description" : "Clinical assessment of the severity of a reaction event as a whole, potentially considering multiple different manifestations.",
+      "systems" : ["http://hl7.org/fhir/reaction-event-severity"],
+      "oids" : ["2.16.840.1.113883.4.642.3.135"],
+      "sources" : ["2.16.840.1.113883.4.642.3.135"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "Resource Types",
+      "description" : "Concrete FHIR Resource Types",
+      "systems" : ["http://hl7.org/fhir/fhir-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE",
+      "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/response-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResponseType",
+      "title" : "ResponseType",
+      "description" : "The kind of response to a message.",
+      "systems" : ["http://hl7.org/fhir/response-code"],
+      "oids" : ["2.16.840.1.113883.4.642.3.380"],
+      "sources" : ["2.16.840.1.113883.4.642.3.380"],
+      "uses" : {
+      },
+      "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-BundleInicioLE.html" : "Bundle Iniciar LE",
+      "StructureDefinition-BundleAgendarLE.html" : "Bundle Agendar LE",
+      "StructureDefinition-BundleReferenciaLE.html" : "Bundle Referenciar LE",
+      "StructureDefinition-BundlePriorizarLE.html" : "Bundle Priorizar LE",
+      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
+      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
+      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE",
+      "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceCategory",
+      "title" : "Service category",
+      "description" : "This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.516"],
+      "sources" : ["2.16.840.1.113883.4.642.3.516"],
+      "uses" : {
+      },
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/subscriber-relationship",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SubscriberRelationshipCodes",
+      "title" : "SubscriberPolicyholder Relationship Codes",
+      "description" : "This value set includes codes for the relationship between the Subscriber and the Beneficiary (insured/covered party/patient).",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/subscriber-relationship"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1385"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1385"],
+      "uses" : {
+      },
+      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/substance-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SubstanceCode",
+      "title" : "Substance Code",
+      "description" : "This value set contains concept codes for specific substances. It includes codes from [SNOMED](http://snomed.info/sct) where concept is-a 105590001 (Substance (substance)) and where concept is-a 373873005 (Pharmaceutical / biologic product (product))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.473"],
+      "sources" : ["2.16.840.1.113883.4.642.3.473"],
+      "uses" : {
+      },
+      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/condition-ver-status",
+      "version" : "0.5.0",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
+      "uses" : {
+      },
+      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0276",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAppointmentReasonCodes",
+      "title" : "hl7VS-appointmentReasonCodes",
+      "description" : "Value Set of codes that describe the kind of appointment or the reason why an appointment has been scheduled.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"],
+      "oids" : ["2.16.840.1.113883.21.181"],
+      "sources" : ["2.16.840.1.113883.21.181"],
+      "uses" : {
+      },
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/CodPais",
+      "version" : "1.8.5",
+      "status" : "active",
+      "name" : "CodPaises",
+      "title" : "Códigos de Países",
+      "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N",
+      "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-OrganizationLE.html" : "Organization LE",
+      "StructureDefinition-PaisOrigenMPI.html" : "País de origen del paciente"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL",
+      "version" : "1.8.5",
+      "status" : "active",
+      "name" : "VSCodigosComunaCL",
+      "title" : "Códigos de Comunas en Chile",
+      "description" : "Códigos de Comunas para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior",
+      "systems" : [
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodComunasCL"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OrganizationLE.html" : "Organization LE"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosProvinciasCL",
+      "version" : "1.8.5",
+      "status" : "active",
+      "name" : "VSCodigosProvinciasCL",
+      "title" : "Códigos de Provincias en Chile",
+      "description" : "Códigos de Provincias para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior",
+      "systems" : [
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodProvinciasCL"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OrganizationLE.html" : "Organization LE"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosRegionesCL",
+      "version" : "1.8.5",
+      "status" : "active",
+      "name" : "VSCodigosRegionesCL",
+      "title" : "Códigos de Regiones en Chile",
+      "description" : "Códigos de Regiones para Chile según Códigos Únicos Territoriales Actualizados, por Decreto exento No 817 del Ministerio del Interior",
+      "systems" : [
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodRegionCL"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OrganizationLE.html" : "Organization LE"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigoslenguaje",
+      "version" : "1.8.5",
+      "status" : "active",
+      "name" : "VSCodigoslenguaje",
+      "title" : "Codigos Lenguaje",
+      "description" : "Códigos de leguaje",
+      "systems" : [
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSCodigoslenguaje"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE"
+    },
+    {
+      "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSTipoIdentificador",
+      "version" : "1.8.5",
+      "status" : "active",
+      "name" : "VSTipoIdentificador",
+      "title" : "Tipo Identificador",
+      "description" : "Tipo Identificador",
+      "systems" : [
+        "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/CodigoExamen",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "CodigoExamen",
+      "title" : "Códigos de Examenes",
+      "description" : "Codigos de Examenes",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/PueblosOriginariosVS",
+      "version" : "0.1.7",
+      "status" : "draft",
+      "name" : "PueblosOriginariosVS",
+      "title" : "Pueblos Originarios de Chile",
+      "description" : "Pueblos Originarios de Chile",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PueblosOriginarios.html" : "Pueblos Originarios"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSConsecuenciaAtencionCodigo",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSConsecuenciaAtencionCodigo",
+      "title" : "Destino Atención Codigo",
+      "description" : "Destino Atención Codigo",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ConsecuenciaAtencionCodigo.html" : "Destino Atención Codigo"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSDerivadoParaCodigo",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSDerivadoParaCodigo",
+      "title" : "Derivado Para",
+      "description" : "Derivado Para",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSDestinoReferenciaCodigo",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSDestinoReferenciaCodigo",
+      "title" : "Destino Referencia Codigo",
+      "description" : "Destino Referencia Codigo",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSDocAcreditacionCuidador",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSDocAcreditacionCuidador",
+      "title" : "Documento Acreditacion Cuidador",
+      "description" : "Documento Acreditacion Cuidador",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDocAcreditacionCuidador"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-DocAcreditacionCuidadorCodigoLE.html" : "Doc Acreditacion Cuidador",
+      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEspecialidadBioqca",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSEspecialidadBioqca",
+      "title" : "Especialidades y Subespecialidades Bioquímicas",
+      "description" : "Especialidades y Subespecialidades Bioquímicas",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadBioqca"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEspecialidadFarma",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSEspecialidadFarma",
+      "title" : "Especialidades Farmaceúticas o Química Farmaceúticas",
+      "description" : "Especialidades Farmaceúticas o Química Farmaceúticas",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadFarma"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEspecialidadMed",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSEspecialidadMed",
+      "title" : "EspecialidadMed",
+      "description" : "EspecialidadMed",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EspecialidadMedicaDestinoCodigo.html" : "Especialidad Médica Destino Código",
+      "StructureDefinition-SubEspecialidadMedicaDestinoCodigo.html" : "SubEspecialidad Médica Destino Código"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEspecialidadOdont",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSEspecialidadOdont",
+      "title" : "Especialidades Odontológicas",
+      "description" : "Especialidades Odontológicas",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadOdont"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEspecialidades",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSEspecialidades",
+      "title" : "Especialidades",
+      "description" : "Especialidades",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadFarma",
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadOdont",
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadBioqca"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEstablecimientoDestinoCodigo",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSEstablecimientoDestinoCodigo",
+      "title" : "Establecimiento Destino Codigo",
+      "description" : "Establecimiento Destino Codigo",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestinoCodigo"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEstadoCivil",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSEstadoCivil",
+      "title" : "EstadoCivil",
+      "description" : "EstadoCivil",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoCivil"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PatientLE.html" : "Patient LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEstadoInterconsulta",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSEstadoInterconsulta",
+      "title" : "Estado Interconsulta",
+      "description" : "Estado Interconsulta",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EstadoInterconsultaCodigoLE.html" : "Estado Interconsulta Codigo"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSHipotesisDiagnosticaCodigo",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSHipotesisDiagnosticaCodigo",
+      "title" : "HipotesisDiagnosticaCodigo",
+      "description" : "HipotesisDiagnosticaCodigo",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSHipotesisDiagnosticaCodigo"
+      ],
+      "uses" : {
+      },
+      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSIdentidaddeGenero",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSIdentidaddeGenero",
+      "title" : "Identidad de Genero",
+      "description" : "Identidad de Genero",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentidaddeGenero"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-IdentidadDeGenero.html" : "Identidad De Genero"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSIndicecomorbilidad",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSIndicecomorbilidad",
+      "title" : "Indice Comorbilidad",
+      "description" : "Indice Comorbilidad",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIndicecomorbilidad"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSMedioNotificacion",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSMedioNotificacion",
+      "title" : "Medio Notificación",
+      "description" : "Medio Notificación",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMedioNotificacion"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MedioNotificacion.html" : "MedioNotificacion"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSModalidadAtencionCodigo",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSModalidadAtencionCodigo",
+      "title" : "Modalidad Atencion Codigo",
+      "description" : "Modalidad Atencion Codigo",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSMotivoCierreInterconsulta",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSMotivoCierreInterconsulta",
+      "title" : "Motivo Cierre Interconsulta",
+      "description" : "Motivo Cierre Interconsulta",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MotivoCierreInterconsulta.html" : "Motivo Cierre Interconsulta"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSMotivoNoContactabilidad",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSMotivoNoContactabilidad",
+      "title" : "Motivo No Contactabilidad",
+      "description" : "Motivo No Contactabilidad",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoContactabilidad"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Contactado.html" : "Contactado"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSMotivoNoPertinenciaCodigo",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSMotivoNoPertinenciaCodigo",
+      "title" : "Motivo No Pertinencia Codigo",
+      "description" : "Motivo No Pertinencia Codigo",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoPertinenciaCodigo"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-MotivoNoPertinenciaCodigo.html" : "Motivo No Pertinencia Codigo"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSPertinenciaInterconsulta",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSPertinenciaInterconsulta",
+      "title" : "Pertinencia Interconsulta",
+      "description" : "Pertinencia Interconsulta",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPertinenciaInterconsulta"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PertinenciaInterconsulta.html" : "Pertinencia Interconsulta"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSPractitionerTipoRolLE",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSPractitionerTipoRolLE",
+      "title" : "Rol de médicos",
+      "description" : "Rol de médicos(Practitioner) en algún evento, durante la intercosulta.",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerRoleLE.html" : "PractitionerRole LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSPrevisionCodigo",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSPrevisionCodigo",
+      "title" : "PrevisionCodigo",
+      "description" : "PrevisionCodigo",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPrevisionCodigo"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PrevisionCodigoLE.html" : "Previsión determinada de aseguramiento de salud del paciente.",
+      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSReligion",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSReligion",
+      "title" : "Religion",
+      "description" : "Religion",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSReligion"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Religion.html" : "Religión"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSServicioRequerido",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSServicioRequerido",
+      "title" : "Servicio Requerido",
+      "description" : "Servicio Requerido",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSSexoBiologico",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSSexoBiologico",
+      "title" : "Códigos para sexo biológico en Chile",
+      "description" : "Códigos para sexo biológico en Chile según tabla 820.",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSexoBiologico"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-SexoNacimiento820.html" : "Sexo de Nacimiento 820"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSSospechaPatologia",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSSospechaPatologia",
+      "title" : "Sospecha Patologia",
+      "description" : "Sospecha Patologia",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologia"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSSospechaPatologiaGes",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSSospechaPatologiaGes",
+      "title" : "Sospecha Patologia Ges",
+      "description" : "Sospecha Patologia Ges",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologiaGes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTipoCodDiagnostica",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSTipoCodDiagnostica",
+      "title" : "Tipo Codificación Diagnostica",
+      "description" : "Tipo Codificación Diagnostica",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoCodDiagnostica"
+      ]
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTipoConsulta",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSTipoConsulta",
+      "title" : "Tipo Consulta",
+      "description" : "Tipo Consulta",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoConsulta"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTipoEventoLE",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSTipoEventoLE",
+      "title" : "Tipo de Evento",
+      "description" : "Tipo de evento en la interconsulta",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTituloProfesional",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSTituloProfesional",
+      "title" : "TituloProfesional",
+      "description" : "TituloProfesional",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSinterconsulta",
+      "version" : "0.1.7",
+      "status" : "active",
+      "name" : "VSinterconsulta",
+      "title" : "Interconsulta",
+      "description" : "Interconsulta",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSinterconsulta"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OrigenInterconsulta.html" : "Origen Interconsulta"
+    }
+  ]
+}

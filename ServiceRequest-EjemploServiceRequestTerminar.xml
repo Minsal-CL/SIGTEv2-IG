@@ -6,21 +6,21 @@
     <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestTerminar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestTerminar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>Motivo Cierre Interconsulta</b>: Atención Realizada (1) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSMotivoCierreInterconsulta.html">Motivo Cierre Interconsulta</a>#2)</span></p><p><b>Estado Interconsulta Codigo</b>: Cerrada <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEstadoInterconsulta.html">Estado Interconsulta</a>#7)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>subject</b>: <a href="Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestTerminar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestTerminar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: Cerrada <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEstadoInterconsulta.html">Estado Interconsulta</a>#7)</span></p><p><b>Motivo Cierre Interconsulta</b>: Atención Realizada (1) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSMotivoCierreInterconsulta.html">Motivo Cierre Interconsulta</a>#2)</span></p><p><b>identifier</b>: IdInterconsulta/323121</p><p><b>status</b>: draft</p><p><b>intent</b>: order</p><p><b>subject</b>: <a href="Patient-EjemploPatient.html">Patient/EjemploPatient: Anibal Diaz Cortés</a> &quot; DIAZ&quot;</p><p><b>performer</b>: <a href="PractitionerRole-EjemploPractitionerRoleTerminar.html">PractitionerRole/EjemploPractitionerRoleTerminar</a></p><p><b>supportingInfo</b>: <a href="Observation-EjemploObservationDiscapacidad.html">Observation/EjemploObservationDiscapacidad: Referencia a la observación de si el paciente presenta discapacidad</a></p></div>
   </text>
-  <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoCierreInterconsulta">
-    <valueCodeableConcept>
-      <coding>
-        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta"/>
-        <code value="2"/>
-      </coding>
-    </valueCodeableConcept>
-  </extension>
   <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE">
     <valueCodeableConcept>
       <coding>
         <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"/>
         <code value="7"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoCierreInterconsulta">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta"/>
+        <code value="2"/>
       </coding>
     </valueCodeableConcept>
   </extension>
@@ -31,11 +31,19 @@
         <code value="IdInterconsulta"/>
       </coding>
     </type>
-    <value value="1"/>
+    <value value="323121"/>
   </identifier>
   <status value="draft"/>
-  <intent value="proposal"/>
+  <intent value="order"/>
   <subject>
-    <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
+    <reference value="Patient/EjemploPatient"/>
+    <display value="Anibal Diaz Cortés"/>
   </subject>
+  <performer>
+    <reference value="PractitionerRole/EjemploPractitionerRoleTerminar"/>
+  </performer>
+  <supportingInfo>
+    <reference value="Observation/EjemploObservationDiscapacidad"/>
+    <display value="Referencia a la observación de si el paciente presenta discapacidad"/>
+  </supportingInfo>
 </ServiceRequest>

@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConditionInicioDiagnosticoLE.html\">Condition Inicio Diagnostico LE</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: diagnostico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>severity</b>: Midgrade <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#6736007)</span></p><p><b>code</b>: DiagnosticoTextoLibreSospecha <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (uno#1 &quot;Diagnostico1&quot;)</span></p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"EjemploCondition\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;EjemploCondition&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConditionInicioDiagnosticoLE.html\">Condition Iniciar Diagnostico LE</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: diagnostico <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>severity</b>: Midgrade <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#6736007)</span></p><p><b>code</b>: Posible insuficiencia cardíaca, requiere evaluación cardiologo <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (uno#394887005 &quot;sospecha de insuficiencia cardíaca (situación)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-EjemploPatient.html\">Patient/EjemploPatient: Anibal Diaz Cortés</a> &quot; DIAZ&quot;</p></div>"
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
@@ -48,14 +48,15 @@
   fhir:code [
      fhir:coding ( [
        fhir:system [ fhir:v "http://diagnosticos.cl/uno"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "1" ] ;
-       fhir:display [ fhir:v "Diagnostico1" ]
+       fhir:code [ fhir:v "394887005" ] ;
+       fhir:display [ fhir:v "sospecha de insuficiencia cardíaca (situación)" ]
      ] ) ;
-     fhir:text [ fhir:v "DiagnosticoTextoLibreSospecha" ]
+     fhir:text [ fhir:v "Posible insuficiencia cardíaca, requiere evaluación cardiologo" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://acme.com/ehr/fhir/Patient/EjemploPatient> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient" ]
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Patient/EjemploPatient> ;
+     fhir:reference [ fhir:v "Patient/EjemploPatient" ] ;
+     fhir:display [ fhir:v "Anibal Diaz Cortés" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------
