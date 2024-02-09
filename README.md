@@ -8,7 +8,7 @@ Esta Guía de Implementación está publicada en las siguientes ubicaciones:
 
 
 Continuous Build:  __https://build.fhir.org/ig/Minsal-CL/SIGTEv2-IG/__  
-Canonical / permanent URL: __https://minsal-cl.github.io/SIGTEv2-IG/__  
+Canonical / permanent URL: __https://interoperabilidad.minsal.cl/fhir/ig/tei/__  
 
 <br> </br>
 
