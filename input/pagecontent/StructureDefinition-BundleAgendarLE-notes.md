@@ -6,9 +6,9 @@
 |       FechaEventoAgendar       |       1..1       |                                   Fecha del Evento                                  |                        MessageHeaderLE.lastUpdated                       |
 | EstablecimientoCodigoAgendador |       1..1       |                              Código de Establecimiento                              |                         OrganizationLE.identifier                        |
 |  SolucionInformaticaAgendador  |       1..1       |                                 Solución Informática                                |                      MessageHeaderLE.source.software                     |
-|   TipoIdentificadorCodigoProf  |       1..1       | Identificador de identidad del prestador administrativo que realiza el agendamiento |            Practitioner.identifier[RUN|RNPI].type            |
+|   TipoIdentificadorCodigoProf  |       1..1       | Identificador de identidad del prestador administrativo que realiza el agendamiento |            Practitioner.identifier[RUN/RNPI].type                        |
 |      DigitoVerificadorProf     |       1..1       |                  Dígito verificador asociado al RUN del Profesional                 |            Practitioner.identifier[RUN].extension.valueString            |
-|     OtraIdentificacionProf     |       1..1       |                                 Otra Identificación                                 |              Practitioner.identifier[otro].value              |
+|     OtraIdentificacionProf     |       1..1       |                                 Otra Identificación                                 |              Practitioner.identifier[otro].value                         |
 |             RunProf            |       1..1       |                     El Rol Único Nacional (RUN) del Profesional                     |                    Practitioner.identifier[RUN].value                    |
 |   TipoIdentificadorCodigoProf  |       1..1       |    Identificador de identidad del Profesional con el cual se atendera el paciente   |                                                                          |
 |          NombreOficial         |       1..1       |                                  Nombre profesional                                 | Practitioner.name.use=officialPractitioner.name.given=[nombre1, nombre2] |

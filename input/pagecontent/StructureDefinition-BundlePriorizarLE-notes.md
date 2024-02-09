@@ -1,11 +1,12 @@
 ### Tabla de Datos 
+
 |           **Variable**           | **Cardinalidad** |                        **Descripción**                       |                           **Recurso.elemento**                           |
 |:--------------------------------:|:----------------:|:------------------------------------------------------------:|:------------------------------------------------------------------------:|
 |          IdInterconsulta         |       1..1       |               Identificador de la Interconsulta              |                        ServiceRequestLE.identifier                       |
 |       FechaEventoPriorizar       |       1..1       |                       Fecha del Evento                       |                        MessageHeaderLE.lastUpdated                       |
 | EstablecimientoCodigoPriorizador |       1..1       |                   Código de Establecimiento                  |                         OrganizationLE.identifier                        |
 |  SolucionInformaticaPriorizador  |       1..1       |                     Solución Informática                     |                      MessageHeaderLE.source.software                     |
-|    TipoIdentificadorCodigoProf   |       1..1       |          Identificador de identidad del Profesional          |            Practitioner.identifier[RUN|RNPI].type                        |
+|    TipoIdentificadorCodigoProf   |       1..1       |          Identificador de identidad del Profesional          |            Practitioner.identifier[RUN/RNPI].type                        |
 |       DigitoVerificadorProf      |       1..1       |      Digito verificador asociado al RUN del Profesional      |            Practitioner.identifier[RUN].extension.valueString            |
 |      OtraIdentificacionProf      |       1..1       |                      Otra Identificación                     |              Practitioner.identifier[RNPI].value                         |
 |              RunProf             |       1..1       |          El Rol Único Nacional (RUN) del Profesional         |                    Practitioner.identifier[RUN].value                    |
