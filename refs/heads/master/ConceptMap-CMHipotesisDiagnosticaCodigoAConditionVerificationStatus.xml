@@ -3,10 +3,11 @@
 <ConceptMap xmlns="http://hl7.org/fhir">
   <id value="CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="ValueSet-VSHipotesisDiagnosticaCodigo.html">HipotesisDiagnosticaCodigo</a> to <a href="http://terminology.hl7.org/5.3.0/ValueSet-condition-ver-status.html">ConditionVerificationStatus</a></p><p>DRAFT (not intended for production usage). Published on 2023-04-28 by Unidad de Interoperabilidad - MINSAL (Unidad de Interoperabilidad - MINSAL: <a href="https://interoperabilidad.minsal.cl">https://interoperabilidad.mins...</a>). </p><div><p>Mapping de codigos confirmación diagnostica a condition verfication status</p>
+</div><br/><p><b>Group 1</b>Mapping from <a href="CodeSystem-CSHipotesisDiagnosticaCodigo.html">HipotesisDiagnosticaCodigo</a> to <a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>1 (Confirmada)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>confirmed</td></tr><tr><td>2 (Descartada)</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#null"/></td><td>refuted</td></tr></table></div>
   </text>
   <url value="https://interoperabilidad.minsal.cl/fhir/ig/tei/ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"/>
-  <version value="0.1.6"/>
+  <version value="0.1.7"/>
   <name value="CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"/>
   <title value="CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"/>
   <status value="draft"/>
@@ -37,6 +38,9 @@
       <code value="1"/>
       <display value="Confirmada"/>
       <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
         <code value="confirmed"/>
         <display value="Confirmed"/>
         <equivalence value="equivalent"/>
@@ -46,6 +50,9 @@
       <code value="2"/>
       <display value="Descartada"/>
       <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
         <code value="refuted"/>
         <display value="Refuted"/>
         <equivalence value="equivalent"/>

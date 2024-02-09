@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestExamen\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestExamen&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestExamenLE.html\">ServiceRequestExamen LE</a></p></div><p><b>identifier</b>: id: dec791f8-406c-11ee-be56-0242ac120002</p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/examen\">http://acme.com/ehr/fhir/ServiceRequest/examen</a></p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>code</b>: TC de tórax <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#24627-2)</span></p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>occurrence</b>: 2022-01-20 13:50:20+0000</p><p><b>requester</b>: <a href=\"http://acme.com/ehr/fhir/Practitioner/revisar\">http://acme.com/ehr/fhir/Practitioner/revisar</a></p><p><b>reasonCode</b>: Descartar enfermedad metastásica. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>note</b>: Realizar sin uso de medio de contaste por mala función renal.</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestExamen\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestExamen&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestExamenLE.html\">ServiceRequestExamen LE</a></p></div><p><b>identifier</b>: dec791f8-406c-11ee-be56-0242ac120002</p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/examen\">http://acme.com/ehr/fhir/ServiceRequest/examen</a></p><p><b>status</b>: draft</p><p><b>intent</b>: order</p><p><b>code</b>: TC de tórax <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#24627-2)</span></p><p><b>subject</b>: <a href=\"Patient-EjemploPatient.html\">Patient/EjemploPatient: Anibal Diaz Cortés</a> &quot; DIAZ&quot;</p><p><b>occurrence</b>: 2022-01-20 13:50:20+0000</p><p><b>requester</b>: <a href=\"Practitioner-EjemploPractitionerRevisar.html\">Practitioner/EjemploPractitionerRevisar</a> &quot; SEPULVEDA&quot;</p><p><b>reasonCode</b>: Descartar Insuf. Cardiaca grave <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>note</b>: Realizar sin uso de medio de contaste por mala función renal.</p></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:value [ fhir:v "dec791f8-406c-11ee-be56-0242ac120002" ]
@@ -27,7 +27,7 @@
      fhir:reference [ fhir:v "http://acme.com/ehr/fhir/ServiceRequest/examen" ]
   ] ) ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:intent [ fhir:v "proposal"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:24627-2 ;
@@ -37,16 +37,17 @@
      fhir:text [ fhir:v "TC de tórax" ]
   ] ; # 
   fhir:subject [
-     fhir:link <http://acme.com/ehr/fhir/Patient/EjemploPatient> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient" ]
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Patient/EjemploPatient> ;
+     fhir:reference [ fhir:v "Patient/EjemploPatient" ] ;
+     fhir:display [ fhir:v "Anibal Diaz Cortés" ]
   ] ; # 
   fhir:occurrence [ fhir:v "2022-01-20T13:50:20Z"^^xsd:dateTime] ; # 
   fhir:requester [
-     fhir:link <http://acme.com/ehr/fhir/Practitioner/revisar> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Practitioner/revisar" ]
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/EjemploPractitionerRevisar> ;
+     fhir:reference [ fhir:v "Practitioner/EjemploPractitionerRevisar" ]
   ] ; # 
   fhir:reasonCode ( [
-     fhir:text [ fhir:v "Descartar enfermedad metastásica." ]
+     fhir:text [ fhir:v "Descartar Insuf. Cardiaca grave" ]
   ] ) ; # 
   fhir:note ( [
      fhir:text [ fhir:v "Realizar sin uso de medio de contaste por mala función renal." ]

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Transacciones - Tiempos de Espera Interoperable v0.1.6</title>
+    <title>Transacciones - Tiempos de Espera Interoperable v0.1.7</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -66,7 +66,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
             <br/>
-            <span style="display:inline-block;">0.1.6 - draft
+            <span style="display:inline-block;">0.1.7 - draft
 
 
 
@@ -179,7 +179,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.6. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.7. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   <h2>Transacciones</h2>
   
 
@@ -234,7 +234,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="diagrama-de-secuencia">Diagrama de Secuencia</h4>
 
-<p>El evento <strong>inicio</strong> debe soportar a siguiente secuencia:</p>
+<p>El evento <strong>iniciar</strong> debe soportar a siguiente secuencia:</p>
 
 <div align="center">
 <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="142px" preserveAspectRatio="none" style="width:258px;height:142px;background:#FFFFFF;" version="1.1" viewBox="0 0 258 142" width="258px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="Roboto Condensed" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="213" x="22.25" y="27.9951">Transacci&#243;n: Evento Iniciar</text><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="40" x2="40" y1="73.5938" y2="135.7266" /><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="71" x="5" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="57" x="12" y="62.292">CESFAM</text><line style="stroke:#107050;stroke-width:1.0;" x1="40.5" x2="82.5" y1="104.7266" y2="104.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="82.5" x2="82.5" y1="104.7266" y2="117.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="41.5" x2="82.5" y1="117.7266" y2="117.7266" /><polygon fill="#107050" points="51.5,113.7266,41.5,117.7266,51.5,121.7266,47.5,117.7266" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="47.5" y="99.6606">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="163" x="88.5" y="99.6606">Creaci&#243;n de Interconsulta</text></g></svg>
@@ -244,10 +244,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="request">Request</h5>
 
-<p>La semántica del mensaje para la transacción del evento de inicio usa el <a href="StructureDefinition-BundleInicioLE.html">Bundle Inicio LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento de inicio, esta información va representada de manera general en el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
+<p>La semántica del mensaje para la transacción del Evento Iniciar usa el <a href="StructureDefinition-BundleInicioLE.html">Bundle Inicio LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al Evento Iniciar, esta información va representada de manera general en el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
 
 <ul>
-  <li><a href="Bundle-EjemploBundleInicio.html">Ejemplo Bundle de Inicio</a></li>
+  <li><a href="StructureDefinition-BundleInicioLE.html">Bundle Evento Iniciar</a></li>
+  <li><a href="Bundle-EjemploBundleInicio.html">Ejemplo Bundle Evento Iniciar</a></li>
 </ul>
 
 <h5 id="response">Response</h5>
@@ -292,7 +293,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="diagrama-de-secuencia-1">Diagrama de Secuencia</h4>
 
-<p>El evento iniciar debe soportar las siguientes secuencias:</p>
+<p>El evento <strong>referenciar</strong> debe soportar las siguientes secuencias:</p>
 
 <div align="center">
 <?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="248px" preserveAspectRatio="none" style="width:628px;height:248px;background:#FFFFFF;" version="1.1" viewBox="0 0 628 248" width="628px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="Roboto Condensed" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="258" x="186" y="27.9951">Transacci&#243;n: Evento Referenciar</text><rect fill="#FFFFFF" height="134.1406" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:1.5;" width="611" x="10" y="90.5938" /><path d="M10,136.8594 L621,136.8594 L621,176.2969 A4.5,4.5 0 0 1 616.5,180.7969 L14.5,180.7969 A4.5,4.5 0 0 1 10,176.2969 L10,136.8594 " fill="#FFFFFF" style="stroke:none;stroke-width:1.0;" /><path d="M10,180.7969 L621,180.7969 L621,220.2344 A4.5,4.5 0 0 1 616.5,224.7344 L14.5,224.7344 A4.5,4.5 0 0 1 10,220.2344 L10,180.7969 " fill="#FFFFFF" style="stroke:none;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="55" x2="55" y1="73.5938" y2="241.7344" /><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="269" x2="269" y1="73.5938" y2="241.7344" /><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="553" x2="553" y1="73.5938" y2="241.7344" /><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="71" x="20" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="57" x="27" y="62.292">CESFAM</text><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="69" x="235" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="55" x="242" y="62.292">Hospital</text><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="115" x="496" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="101" x="503" y="62.292">Hospital Digital</text><path d="M14.5,90.5938 L74,90.5938 L74,97.7266 L64,107.7266 L10,107.7266 L10,95.0938 A4.5,4.5 0 0 1 14.5,90.5938 " fill="#FFFFFF" style="stroke:#107050;stroke-width:1.5;" /><rect fill="none" height="134.1406" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:1.5;" width="611" x="10" y="90.5938" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="25" y="103.6606">alt</text><text fill="#000000" font-family="Roboto Condensed" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="62" x="89" y="102.8042">[CESFAM]</text><polygon fill="#107050" points="257.5,124.8594,267.5,128.8594,257.5,132.8594,261.5,128.8594" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="55.5" x2="263.5" y1="128.8594" y2="128.8594" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="62.5" y="123.7935">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="149" x="103.5" y="123.7935">APS a Nivel Secundario</text><line style="stroke:#107050;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="621" y1="137.8594" y2="137.8594" /><text fill="#000000" font-family="Roboto Condensed" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="94" x="15" y="148.0698">[HOSPITALDIG]</text><polygon fill="#107050" points="541.5,168.7969,551.5,172.7969,541.5,176.7969,545.5,172.7969" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="269.5" x2="547.5" y1="172.7969" y2="172.7969" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="276.5" y="167.731">1.1.2</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="219" x="317.5" y="167.731">Nivel Secundario a Hospital Digital</text><line style="stroke:#107050;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="621" y1="181.7969" y2="181.7969" /><text fill="#000000" font-family="Roboto Condensed" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="72" x="15" y="192.0073">[HOSPITAL]</text><polygon fill="#107050" points="66.5,212.7344,56.5,216.7344,66.5,220.7344,62.5,216.7344" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="60.5" x2="268.5" y1="216.7344" y2="216.7344" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="72.5" y="211.6685">1.1.3</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="149" x="113.5" y="211.6685">Nivel Secundario a APS</text></g></svg>
@@ -302,10 +303,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="request-1">Request</h5>
 
-<p>La semántica del mensaje para la transacción del evento de referencia usa el <a href="StructureDefinition-BundleReferenciaLE.html">Bundle Referencia LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento de referencia, esta información va representada de manera general en el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
+<p>La semántica del mensaje para la transacción del Evento Referenciar usa el <a href="StructureDefinition-BundleReferenciaLE.html">Bundle Referenciar LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al Evento Referenciar, esta información va representada de manera general en el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
 
 <ul>
-  <li><a href="Bundle-EjemploBundleReferencia.html">Ejemplo Bundle Referenciada</a></li>
+  <li><a href="StructureDefinition-BundleReferenciaLE.html">Bundle Evento Referenciar</a></li>
+  <li><a href="Bundle-EjemploBundleReferencia.html">Ejemplo Bundle Referenciar</a></li>
 </ul>
 
 <h5 id="response-1">Response</h5>
@@ -315,7 +317,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="precondiciones-1">Precondiciones</h4>
 
 <ul>
-  <li>Requiere el evento inicio.</li>
+  <li>Requiere el evento iniciar.</li>
 </ul>
 
 <h4 id="acciones-esperadas-1">Acciones Esperadas</h4>
@@ -365,6 +367,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>La semántica del mensaje para la transacción del evento de revisar usa el <a href="StructureDefinition-BundleRevisarLE.html">Bundle Revisar LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento de revisar, esta información va representada de manera general en el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
 
 <ul>
+  <li><a href="StructureDefinition-BundleRevisarLE.html">Bundle Evento Revisar</a></li>
   <li><a href="Bundle-EjemploBundleRevisar.html">Ejemplo Bundle Revisar</a></li>
 </ul>
 
@@ -375,7 +378,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="precondiciones-2">Precondiciones</h4>
 
 <ul>
-  <li>Requiere el evento inicio.</li>
+  <li>Requiere el evento iniciar.</li>
 </ul>
 
 <h4 id="acciones-esperadas-2">Acciones Esperadas</h4>
@@ -422,9 +425,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="request-3">Request</h5>
 
-<p>La semántica del mensaje para la transacción del evento de priorizar usa el <a href="StructureDefinition-BundlePriorizarLE.html">Bundle Priorizar LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento de priorizar, esta información va representada de manera general en el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
-
+<p>La semántica del mensaje para la transacción del evento priorizar usa el <a href="StructureDefinition-BundlePriorizarLE.html">Bundle Priorizar LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento priorizar, esta información va representada de manera general en el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a>
+.</p>
 <ul>
+  <li><a href="StructureDefinition-BundlePriorizarLE.html">Bundle Evento Priorizar</a></li>
   <li><a href="Bundle-EjemploBundlePriorizar.html">Ejemplo Bundle Priorizar</a></li>
 </ul>
 
@@ -435,7 +439,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="precondiciones-3">Precondiciones</h4>
 
 <ul>
-  <li>Requiere el evento inicio.</li>
+  <li>Requiere el evento iniciar.</li>
 </ul>
 
 <h4 id="acciones-esperadas-3">Acciones Esperadas</h4>
@@ -482,10 +486,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="request-4">Request</h5>
 
-<p>La semántica del mensaje para la transacción del evento de agendar usa el <a href="StructureDefinition-BundleAgendarLE.html">Bundle Agendar LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento de agendar, esta información va representada de manera general en el recurso <a href="StructureDefinition-AppointmentAgendarLE.html">Appointment Agendar LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
+<p>La semántica del mensaje para la transacción del evento agendar usa el <a href="StructureDefinition-BundleAgendarLE.html">Bundle Agendar LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento agendar, esta información va representada de manera general en el recurso <a href="StructureDefinition-AppointmentAgendarLE.html">Appointment Agendar LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
 
 <ul>
-  <li><a href="Bundle-EjemploBundleAgendar.html">Ejemplo Bundle Agendar Agendar</a>
+  <li><a href="StructureDefinition-BundleAgendarLE.html">Bundle Evento Agendar</a></li>
+  <li><a href="Bundle-EjemploBundleAgendar.html">Ejemplo Bundle Agendar</a>
     <ul>
       <li>Appointment usado para agendar cita(<a href="Appointment-EjemploAppointmentAgendar.html">Appointment Agendar</a>)</li>
       <li>Appointment usado para cancelar cita(<a href="Appointment-EjemploAppointmentAgendarCancelar.html">Appointment Cancelar</a>)</li>
@@ -501,7 +506,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="precondiciones-4">Precondiciones</h4>
 
 <ul>
-  <li>Requiere el evento inicio.</li>
+  <li>Requiere el evento iniciar.</li>
 </ul>
 
 <h4 id="acciones-esperadas-4">Acciones Esperadas</h4>
@@ -548,9 +553,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="request-5">Request</h5>
 
-<p>La semántica del mensaje para la transacción del evento de atender usa el <a href="StructureDefinition-BundleAgendarLE.html">Bundle Agendar LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento de atender, esta información va representada de manera general en el recurso <a href="StructureDefinition-EncounterAtenderLE.html">Encounter Atender LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
+<p>La semántica del mensaje para la transacción del evento Atender usa el <a href="StructureDefinition-BundleAtenderLE.html">Bundle Atender LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento Atender, esta información va representada de manera general en el recurso <a href="StructureDefinition-EncounterAtenderLE.html">Encounter Atender LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
 
 <ul>
+  <li><a href="StructureDefinition-BundleAtenderLE.html">Bundle Evento Atender</a></li>
   <li><a href="Bundle-EjemploBundleAtender.html">Ejemplo Bundle Atender</a></li>
 </ul>
 
@@ -561,7 +567,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="precondiciones-5">Precondiciones</h4>
 
 <ul>
-  <li>Requiere el evento inicio.</li>
+  <li>Requiere el evento iniciar.</li>
 </ul>
 
 <h4 id="acciones-esperadas-5">Acciones Esperadas</h4>
@@ -608,9 +614,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h5 id="request-6">Request</h5>
 
-<p>La semántica del mensaje para la transacción del evento de terminar usa el <a href="StructureDefinition-BundleTerminarLE.html">Bundle Terminar LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al evento de terminar, esta información va representada de manera general en el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
+<p>La semántica del mensaje para la transacción del Evento Terminar usa el <a href="StructureDefinition-BundleTerminarLE.html">Bundle Terminar LE</a> que es un Bundle del tipo <strong>message</strong> que incluye toda la información asociada al Evento Terminar, esta información va representada de manera general en el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a> y debe incluir un recurso cabecera llamado <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a> para representar el evento de acuerdo al <a href="Mensajeria.html">Mecanismo de Intercambio de Mensajería</a></p>
 
 <ul>
+  <li><a href="StructureDefinition-BundleTerminarLE.html">Bundle Evento Terminar</a></li>
   <li><a href="Bundle-EjemploBundleTerminar.html">Ejemplo Bundle Terminar</a></li>
 </ul>
 
@@ -621,7 +628,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h4 id="precondiciones-6">Precondiciones</h4>
 
 <ul>
-  <li>Requiere el evento inicio.</li>
+  <li>Requiere el evento iniciar.</li>
 </ul>
 
 <h4 id="acciones-esperadas-6">Acciones Esperadas</h4>
@@ -655,7 +662,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 21, 2023 20:18+0000">2023-12-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 9, 2024 15:10+0000">2024-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

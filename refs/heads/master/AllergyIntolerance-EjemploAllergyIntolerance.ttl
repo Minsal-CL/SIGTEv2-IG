@@ -16,21 +16,21 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AllergyIntolerance</b><a name=\"EjemploAllergyIntolerance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AllergyIntolerance &quot;EjemploAllergyIntolerance&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AllergyIntoleranceInicioLE.html\">AllergyIntolerance Inicio LE</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>code</b>: tipo alergia <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>patient</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: AllergyIntolerance</b><a name=\"EjemploAllergyIntolerance\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource AllergyIntolerance &quot;EjemploAllergyIntolerance&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AllergyIntoleranceInicioLE.html\">AllergyIntolerance Iniciar LE</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-allergyintolerance-clinical.html\">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Alergía a penicilina <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>patient</b>: <a href=\"Patient-EjemploPatient.html\">Patient/EjemploPatient: Anibal Diaz Cortés</a> &quot; DIAZ&quot;</p></div>"
   ] ; # 
   fhir:clinicalStatus [
      fhir:coding ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "active" ] ;
-       fhir:display [ fhir:v "Active" ]
+       fhir:code [ fhir:v "active" ]
      ] )
   ] ; # 
   fhir:code [
-     fhir:text [ fhir:v "tipo alergia" ]
+     fhir:text [ fhir:v "Alergía a penicilina" ]
   ] ; # 
   fhir:patient [
-     fhir:link <http://acme.com/ehr/fhir/Patient/EjemploPatient> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/Patient/EjemploPatient" ]
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Patient/EjemploPatient> ;
+     fhir:reference [ fhir:v "Patient/EjemploPatient" ] ;
+     fhir:display [ fhir:v "Anibal Diaz Cortés" ]
   ] . # 
 
 # -------------------------------------------------------------------------------------

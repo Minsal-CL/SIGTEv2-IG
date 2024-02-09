@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: A la espera de agendamiento <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEstadoInterconsulta.html\">Estado Interconsulta</a>#4)</span></p><p><b>identifier</b>: IdInterconsulta: 323121</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ServiceRequest</b><a name=\"EjemploServiceRequestPriorizar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ServiceRequest &quot;EjemploServiceRequestPriorizar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestLE.html\">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: A la espera de agendamiento <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSEstadoInterconsulta.html\">Estado Interconsulta</a>#4)</span></p><p><b>ExtBool Atención Preferente</b>: true</p><p><b>identifier</b>: IdInterconsulta/323121</p><p><b>status</b>: draft</p><p><b>intent</b>: order</p><p><b>priority</b>: urgent</p><p><b>subject</b>: <a href=\"Patient-EjemploPatient.html\">Patient/EjemploPatient: Anibal Diaz Cortés</a> &quot; DIAZ&quot;</p><p><b>performer</b>: <a href=\"PractitionerRole-EjemploPractitionerRolePriorizar.html\">PractitionerRole/EjemploPractitionerRolePriorizar</a></p><p><b>supportingInfo</b>: <a href=\"Observation-EjemploObservationDiscapacidad.html\">Observation/EjemploObservationDiscapacidad: Referencia a la observación de si el paciente presenta discapacidad</a></p></div>"
   },
   "extension" : [{
     "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE",
@@ -16,6 +16,10 @@
         "code" : "4"
       }]
     }
+  },
+  {
+    "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolAtencionPreferente",
+    "valueBoolean" : true
   }],
   "identifier" : [{
     "type" : {
@@ -27,10 +31,17 @@
     "value" : "323121"
   }],
   "status" : "draft",
-  "intent" : "proposal",
+  "intent" : "order",
   "priority" : "urgent",
   "subject" : {
-    "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient"
+    "reference" : "Patient/EjemploPatient",
+    "display" : "Anibal Diaz Cortés"
   },
-  "authoredOn" : "2022-01-20T13:50:20Z"
+  "performer" : [{
+    "reference" : "PractitionerRole/EjemploPractitionerRolePriorizar"
+  }],
+  "supportingInfo" : [{
+    "reference" : "Observation/EjemploObservationDiscapacidad",
+    "display" : "Referencia a la observación de si el paciente presenta discapacidad"
+  }]
 }

@@ -17,7 +17,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderTerminar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRole/terminar\">http://acme.com/ehr/fhir/PractitionerRole/terminar</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>SolucionInformatica</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"Bundle-EjemploBundleTerminar.html#http-//acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar\">http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar</a></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"EjemploMessageHeaderTerminar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;EjemploMessageHeaderTerminar&quot; Updated &quot;2023-02-14 14:12:10+0000&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderLE.html\">MessageHeader LE</a></p></div><p><b>event</b>: Terminar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code terminar = 'Terminar', stated as 'null')</p><p><b>author</b>: <a href=\"PractitionerRole-EjemploPractitionerRoleTerminar.html\">PractitionerRole/EjemploPractitionerRoleTerminar</a></p><h3>Sources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style=\"display: none\">*</td><td>Software Hospital Linares (SHL)</td><td><a href=\"http://link-to-sending.cl\">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href=\"ServiceRequest-EjemploServiceRequestTerminar.html\">ServiceRequest/EjemploServiceRequestTerminar</a></p></div>"
   ] ; # 
   fhir:event [
      a fhir:Coding ;
@@ -25,16 +25,16 @@
      fhir:code [ fhir:v "terminar" ]
   ] ; # 
   fhir:author [
-     fhir:link <http://acme.com/ehr/fhir/PractitionerRole/terminar> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/terminar" ]
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/EjemploPractitionerRoleTerminar> ;
+     fhir:reference [ fhir:v "PractitionerRole/EjemploPractitionerRoleTerminar" ]
   ] ; # 
   fhir:source [
-     fhir:software [ fhir:v "SolucionInformatica" ] ;
+     fhir:software [ fhir:v "Software Hospital Linares (SHL)" ] ;
      fhir:endpoint [ fhir:v "http://link-to-sending.cl"^^xsd:anyURI ]
   ] ; # 
   fhir:focus ( [
-     fhir:link <http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar> ;
-     fhir:reference [ fhir:v "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestTerminar" ]
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/EjemploServiceRequestTerminar> ;
+     fhir:reference [ fhir:v "ServiceRequest/EjemploServiceRequestTerminar" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

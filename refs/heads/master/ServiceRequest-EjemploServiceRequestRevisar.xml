@@ -6,24 +6,24 @@
     <profile value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestRevisar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestRevisar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>ExtBool RequiereExamen</b>: true</p><p><b>Pertinencia Interconsulta</b>: Pertinente <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPertinenciaInterconsulta.html">Pertinencia Interconsulta</a>#1)</span></p><p><b>Estado Interconsulta Codigo</b>: A la espera de priorización <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEstadoInterconsulta.html">Estado Interconsulta</a>#3)</span></p><p><b>Especialidad Médica Destino Código</b>: CARDIOLOGÍA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadMed.html">EspecialidadMed</a>#3)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: CIRUGÍA GENERAL <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadMed.html">EspecialidadMed</a>#4)</span></p><p><b>identifier</b>: IdInterconsulta: 1</p><p><b>status</b>: draft</p><p><b>intent</b>: proposal</p><p><b>category</b>: Presencial <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSModalidadAtencionCodigo.html">Modalidad Atencion Codigo</a>#1)</span></p><p><b>priority</b>: routine</p><p><b>doNotPerform</b>: true</p><p><b>subject</b>: <a href="Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>authoredOn</b>: 2022-01-20 13:50:20+0000</p><p><b>performer</b>: <a href="http://acme.com/ehr/fhir/PractitionerRole/revisar">http://acme.com/ehr/fhir/PractitionerRole/revisar</a></p><p><b>supportingInfo</b>: <a href="http://acme.com/ehr/fhir/ServiceRequest/examen">http://acme.com/ehr/fhir/ServiceRequest/examen</a></p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequestRevisar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequestRevisar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: A la espera de priorización <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEstadoInterconsulta.html">Estado Interconsulta</a>#3)</span></p><p><b>ExtBool RequiereExamen</b>: false</p><p><b>Pertinencia Interconsulta</b>: Pertinente <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPertinenciaInterconsulta.html">Pertinencia Interconsulta</a>#1)</span></p><p><b>Especialidad Médica Destino Código</b>: CARDIOLOGÍA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadMed.html">EspecialidadMed</a>#3)</span></p><p><b>SubEspecialidad Médica Destino Código</b>: CIRUGÍA GENERAL <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEspecialidadMed.html">EspecialidadMed</a>#4)</span></p><p><b>identifier</b>: IdInterconsulta/323121</p><p><b>status</b>: draft</p><p><b>intent</b>: order</p><p><b>category</b>: Presencial <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSModalidadAtencionCodigo.html">Modalidad Atencion Codigo</a>#1)</span></p><p><b>priority</b>: routine</p><p><b>subject</b>: <a href="Patient-EjemploPatient.html">Patient/EjemploPatient: Anibal Diaz Cortés</a> &quot; DIAZ&quot;</p><p><b>performer</b>: <a href="PractitionerRole-EjemploPractitionerRoleRevisar.html">PractitionerRole/EjemploPractitionerRoleRevisar</a></p><p><b>supportingInfo</b>: <a href="Observation-EjemploObservationDiscapacidad.html">Observation/EjemploObservationDiscapacidad: Referencia a la observación de si el paciente presenta discapacidad</a></p></div>
   </text>
+  <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE">
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"/>
+        <code value="3"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
   <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolRequiereExamen">
-    <valueBoolean value="true"/>
+    <valueBoolean value="false"/>
   </extension>
   <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PertinenciaInterconsulta">
     <valueCodeableConcept>
       <coding>
         <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPertinenciaInterconsulta"/>
         <code value="1"/>
-      </coding>
-    </valueCodeableConcept>
-  </extension>
-  <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE">
-    <valueCodeableConcept>
-      <coding>
-        <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"/>
-        <code value="3"/>
       </coding>
     </valueCodeableConcept>
   </extension>
@@ -50,10 +50,10 @@
         <code value="IdInterconsulta"/>
       </coding>
     </type>
-    <value value="1"/>
+    <value value="323121"/>
   </identifier>
   <status value="draft"/>
-  <intent value="proposal"/>
+  <intent value="order"/>
   <category>
     <coding>
       <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo"/>
@@ -62,25 +62,15 @@
     </coding>
   </category>
   <priority value="routine"/>
-  <doNotPerform value="true">
-    <extension url="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinenciaCodigo">
-      <valueCodeableConcept>
-        <coding>
-          <system value="https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoPertinenciaCodigo"/>
-          <code value="1"/>
-        </coding>
-        <text value="Texto libre"/>
-      </valueCodeableConcept>
-    </extension>
-  </doNotPerform>
   <subject>
-    <reference value="http://acme.com/ehr/fhir/Patient/EjemploPatient"/>
+    <reference value="Patient/EjemploPatient"/>
+    <display value="Anibal Diaz Cortés"/>
   </subject>
-  <authoredOn value="2022-01-20T13:50:20Z"/>
   <performer>
-    <reference value="http://acme.com/ehr/fhir/PractitionerRole/revisar"/>
+    <reference value="PractitionerRole/EjemploPractitionerRoleRevisar"/>
   </performer>
   <supportingInfo>
-    <reference value="http://acme.com/ehr/fhir/ServiceRequest/examen"/>
+    <reference value="Observation/EjemploObservationDiscapacidad"/>
+    <display value="Referencia a la observación de si el paciente presenta discapacidad"/>
   </supportingInfo>
 </ServiceRequest>

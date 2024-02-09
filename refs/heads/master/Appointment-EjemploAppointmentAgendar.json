@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentAgendarLE.html\">AppointmentAgendarLE</a></p></div><blockquote><p><b>Contactado</b></p><blockquote><p><b>url</b></p><code>MotivoNoContactabilidad</code></blockquote><p><b>value</b>: Otro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSMotivoNoContactabilidad.html\">Motivo No Contactabilidad</a>#1)</span></p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-Contactado.html\">Contactado</a></blockquote><p><b>value</b>: false</p></blockquote><p><b>identifier</b>: id:\u00a021</p><p><b>status</b>: booked</p><p><b>start</b>: Jan 22, 2023, 9:00:00\u202fAM</p><p><b>end</b>: Jan 22, 2023, 9:30:00\u202fAM</p><p><b>basedOn</b>: <a href=\"http://acme.com/ehr/fhir/ServiceRequest/agendar\">http://acme.com/ehr/fhir/ServiceRequest/agendar</a></p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Bundle-EjemploBundleInicio.html#http-//acme.com/ehr/fhir/Patient/EjemploPatient\">http://acme.com/ehr/fhir/Patient/EjemploPatient</a></p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor\">http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor</a></p><p><b>status</b>: accepted</p></blockquote></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Appointment</b><a name=\"EjemploAppointmentAgendar\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Appointment &quot;EjemploAppointmentAgendar&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-AppointmentAgendarLE.html\">Appointment Agendar LE</a></p></div><blockquote><p><b>Contactado</b></p><blockquote><p><b>url</b></p><code>MotivoNoContactabilidad</code></blockquote><p><b>value</b>: Otro <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSMotivoNoContactabilidad.html\">Motivo No Contactabilidad</a>#1)</span></p><blockquote><p><b>url</b></p><a href=\"StructureDefinition-Contactado.html\">Contactado</a></blockquote><p><b>value</b>: false</p></blockquote><p><b>identifier</b>: 21</p><p><b>status</b>: booked</p><p><b>start</b>: Jan 22, 2023, 9:00:00\u202fAM</p><p><b>end</b>: Jan 22, 2023, 9:30:00\u202fAM</p><p><b>basedOn</b>: <a href=\"ServiceRequest-EjemploServiceRequestAgendar.html\">ServiceRequest/EjemploServiceRequestAgendar</a></p><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"Patient-EjemploPatient.html\">Patient/EjemploPatient: Anibal Diaz Cortés</a> &quot; DIAZ&quot;</p><p><b>status</b>: accepted</p></blockquote><blockquote><p><b>participant</b></p><p><b>actor</b>: <a href=\"PractitionerRole-EjemploPractitionerRoleAgendarAPPO.html\">PractitionerRole/EjemploPractitionerRoleAgendarAPPO</a></p><p><b>status</b>: accepted</p></blockquote></div>"
   },
   "extension" : [{
     "extension" : [{
@@ -32,18 +32,19 @@
   "start" : "2023-01-22T09:00:00Z",
   "end" : "2023-01-22T09:30:00Z",
   "basedOn" : [{
-    "reference" : "http://acme.com/ehr/fhir/ServiceRequest/agendar"
+    "reference" : "ServiceRequest/EjemploServiceRequestAgendar"
   }],
   "participant" : [{
     "actor" : {
-      "reference" : "http://acme.com/ehr/fhir/Patient/EjemploPatient",
-      "type" : "Patient"
+      "reference" : "Patient/EjemploPatient",
+      "type" : "Patient",
+      "display" : "Anibal Diaz Cortés"
     },
     "status" : "accepted"
   },
   {
     "actor" : {
-      "reference" : "http://acme.com/ehr/fhir/PractitionerRoleLE/agendarAtendedor",
+      "reference" : "PractitionerRole/EjemploPractitionerRoleAgendarAPPO",
       "type" : "PractitionerRole"
     },
     "status" : "accepted"
