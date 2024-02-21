@@ -12,7 +12,7 @@ Description: "Bundle Agendar LE, recurso utilizado para transportar todos los da
 * type ^short = "Indica de qué tipo es el Bundle, en este caso de tipo message"
 * type = #message
 * timestamp MS
-* timestamp ^short = "Cuando el Bundle fue hecho"
+* timestamp ^short = "Cuando el Bundle fue armado"
 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"

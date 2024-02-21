@@ -1,5 +1,5 @@
 Instance: EjemploBundleInicio
-InstanceOf: BundleInicioLE
+InstanceOf: BundleIniciarLE
 Usage: #example
 Title: "Bundle Evento Iniciar"
 Description: "Bundle Evento Iniciar"
@@ -66,7 +66,7 @@ Description: "Bundle Evento Iniciar"
 
 /*Budle Referencia*/
 Instance: EjemploBundleReferencia
-InstanceOf: BundleReferenciaLE
+InstanceOf: BundleReferenciarLE
 Usage: #example
 Title: "Bundle Evento Referenciar"
 Description: "Bundle Evento Referenciar"

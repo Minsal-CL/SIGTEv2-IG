@@ -1,6 +1,6 @@
-Profile: BundleInicioLE
+Profile: BundleIniciarLE
 Parent: Bundle
-Id: BundleInicioLE
+Id: BundleIniciarLE
 Title: "Bundle Iniciar LE"
 Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento iniciar."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
@@ -12,7 +12,7 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * type ^short = "Indica de qué tipo es el Bundle, en este caso de tipo message"
 * type = #message
 * timestamp MS
-* timestamp ^short = "Cuando el Bundle fue hecho"
+* timestamp ^short = "Cuando el Bundle fue armado"
 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
