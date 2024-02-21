@@ -618,8 +618,8 @@ Description: "Tipo Consulta"
 
 ValueSet: VSConsecuenciaAtencionCodigo
 Id: VSConsecuenciaAtencionCodigo
-Title: "Destino Atención Codigo"
-Description: "Destino Atención Codigo"
+Title: "Consecuencia Atención Codigo"
+Description: "Consecuencia Atención Codigo"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -633,8 +633,8 @@ Description: "Destino Atención Codigo"
 
 CodeSystem: CSConsecuenciaAtencionCodigo
 Id: CSConsecuenciaAtencionCodigo
-Title: "Destino Atención Codigo"
-Description: "Destino Atención Codigo"
+Title: "Consecuencia Atención Codigo"
+Description: "Consecuencia Atención Codigo"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
