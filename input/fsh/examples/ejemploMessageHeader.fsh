@@ -10,7 +10,7 @@ Description: "MesaggeHeader Evento Iniciar"
 * author = Reference(EjemploPractitionerRole) "Ernesto Sepulveda Manriquez en su rol de Iniciador"
 * source.software = "Software San Juan Dios (SSJD)"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(EjemploServiceRequest) 
+* focus[ServiceRequestLE] = Reference(EjemploServiceRequest) 
 
 /*EJEMPLOS PARA BUNDLE REFERENCIADA*/
 Instance: EjemploMessageHeaderReferencia
@@ -23,7 +23,7 @@ Description: "MesaggeHeader Evento Referenciar"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#referenciar
 * source.software = "Software San Juan Dios (SSJD)"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(EjemploServiceRequestReferenciada)
+* focus[ServiceRequestLE] = Reference(EjemploServiceRequestReferenciada)
 * author = Reference(EjemploPractitionerRoleReferenciadorMHREFERENCIADA)
 /*FIN PARA BUNDLE REFERENCIADA*/
 
@@ -37,7 +37,7 @@ Description: "MesaggeHeader Evento Terminar"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#terminar
 * source.software = "Software Hospital Linares (SHL)"
 * source.endpoint = "http://link-to-sending.cl"
-* focus = Reference(EjemploServiceRequestTerminar)
+* focus[ServiceRequestLE] = Reference(EjemploServiceRequestTerminar)
 * author = Reference(EjemploPractitionerRoleTerminar)
 /*FIN PARA BUNDLE Terminar*/
 
@@ -52,7 +52,7 @@ Description: "MesaggeHeader Evento Revisar"
 * source.software = "Software Hospital Linares (SHL)"
 * source.endpoint = "http://link-to-sending.cl"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#revisar
-* focus = Reference(EjemploServiceRequestRevisar)
+* focus[ServiceRequestLE] = Reference(EjemploServiceRequestRevisar)
 * author = Reference(EjemploPractitionerRoleRevisar)
 
 /*FIN PARA BUNDLE Revisar*/
@@ -69,8 +69,8 @@ Description: "MesaggeHeader Evento Agendar"
 
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#agendar
 
-* focus = Reference(EjemploAppointmentAgendar)
-* focus = Reference(EjemploServiceRequestAgendar)
+* focus[AppointmentAgendarLE] = Reference(EjemploAppointmentAgendar)
+* focus[ServiceRequestLE] = Reference(EjemploServiceRequestAgendar)
 * author = Reference(EjemploPractitionerRoleAgendarMH)
 /*FIN PARA BUNDLE Agendar*/
 
@@ -86,8 +86,8 @@ Description: "MesaggeHeader Evento Atender"
 
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#atender
 
-* focus = Reference(EjemploEncounterAtender)
-* focus = Reference(EjemploServiceRequestAtender)
+* focus[EncounterAtenderLE] = Reference(EjemploEncounterAtender)
+* focus[ServiceRequestLE] = Reference(EjemploServiceRequestAtender)
 * author = Reference(EjemploPractitionerRoleAtender)
 /*FIN PARA BUNDLE Atender*/
 
@@ -102,7 +102,7 @@ Description: "MesaggeHeader Evento Priorizar"
 * source.software = "Software Hospital Linares (SHL)"
 * source.endpoint = "http://link-to-sending.cl"
 * eventCoding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE#priorizar
-* focus = Reference(EjemploServiceRequestPriorizar) //----------
+* focus[ServiceRequestLE] = Reference(EjemploServiceRequestPriorizar) //----------
 * author = Reference(EjemploPractitionerRolePriorizar) //-----
 
 
