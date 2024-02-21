@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TiemposDeEsperaInteroperable"] ; # 
   fhir:title [ fhir:v "Tiempos de Espera Interoperable"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-09T20:00:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-21T16:19:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -675,8 +675,8 @@
        fhir:name [ fhir:v "Bundle Evento Iniciar" ] ;
        fhir:description [ fhir:v "Bundle Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleInicioLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleInicioLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleIniciarLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleIniciarLE>
        ]
      ] [
        fhir:extension ( [
@@ -705,8 +705,8 @@
        fhir:name [ fhir:v "Bundle Evento Referenciar" ] ;
        fhir:description [ fhir:v "Bundle Evento Referenciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciaLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciaLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE>
        ]
      ] [
        fhir:extension ( [
@@ -744,8 +744,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleInicioLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/BundleInicioLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleIniciarLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/BundleIniciarLE" ]
        ] ;
        fhir:name [ fhir:v "Bundle Iniciar LE" ] ;
        fhir:description [ fhir:v "Bundle Iniciar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento iniciar." ] ;
@@ -768,8 +768,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciaLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/BundleReferenciaLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/BundleReferenciarLE" ]
        ] ;
        fhir:name [ fhir:v "Bundle Referenciar LE" ] ;
        fhir:description [ fhir:v "Bundle Referenciar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento referenciar." ] ;
@@ -882,6 +882,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSConsecuenciaAtencionCodigo> ;
+         fhir:reference [ fhir:v "ValueSet/VSConsecuenciaAtencionCodigo" ]
+       ] ;
+       fhir:name [ fhir:v "Consecuencia Atención Codigo" ] ;
+       fhir:description [ fhir:v "Consecuencia Atención Codigo" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo> ;
+         fhir:reference [ fhir:v "CodeSystem/CSConsecuenciaAtencionCodigo" ]
+       ] ;
+       fhir:name [ fhir:v "Consecuencia Atención Codigo" ] ;
+       fhir:description [ fhir:v "Consecuencia Atención Codigo" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -986,30 +1010,6 @@
        fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConsecuenciaAtencionCodigo> ;
          fhir:reference [ fhir:v "StructureDefinition/ConsecuenciaAtencionCodigo" ]
-       ] ;
-       fhir:name [ fhir:v "Destino Atención Codigo" ] ;
-       fhir:description [ fhir:v "Destino Atención Codigo" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSConsecuenciaAtencionCodigo> ;
-         fhir:reference [ fhir:v "ValueSet/VSConsecuenciaAtencionCodigo" ]
-       ] ;
-       fhir:name [ fhir:v "Destino Atención Codigo" ] ;
-       fhir:description [ fhir:v "Destino Atención Codigo" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo> ;
-         fhir:reference [ fhir:v "CodeSystem/CSConsecuenciaAtencionCodigo" ]
        ] ;
        fhir:name [ fhir:v "Destino Atención Codigo" ] ;
        fhir:description [ fhir:v "Destino Atención Codigo" ] ;

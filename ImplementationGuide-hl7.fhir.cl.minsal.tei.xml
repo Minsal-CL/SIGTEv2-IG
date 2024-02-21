@@ -11,7 +11,7 @@
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2024-02-09T20:00:26+00:00"/>
+  <date value="2024-02-21T16:19:48+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -575,7 +575,7 @@
       </reference>
       <name value="Bundle Evento Iniciar"/>
       <description value="Bundle Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleInicioLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleIniciarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -597,7 +597,7 @@
       </reference>
       <name value="Bundle Evento Referenciar"/>
       <description value="Bundle Evento Referenciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciaLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -626,7 +626,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/BundleInicioLE"/>
+        <reference value="StructureDefinition/BundleIniciarLE"/>
       </reference>
       <name value="Bundle Iniciar LE"/>
       <description value="Bundle Iniciar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento iniciar."/>
@@ -648,7 +648,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/BundleReferenciaLE"/>
+        <reference value="StructureDefinition/BundleReferenciarLE"/>
       </reference>
       <name value="Bundle Referenciar LE"/>
       <description value="Bundle Referenciar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento referenciar."/>
@@ -740,6 +740,28 @@
       </reference>
       <name value="Condition Iniciar Diagnostico LE"/>
       <description value="Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSConsecuenciaAtencionCodigo"/>
+      </reference>
+      <name value="Consecuencia Atención Codigo"/>
+      <description value="Consecuencia Atención Codigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSConsecuenciaAtencionCodigo"/>
+      </reference>
+      <name value="Consecuencia Atención Codigo"/>
+      <description value="Consecuencia Atención Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -836,28 +858,6 @@
       </extension>
       <reference>
         <reference value="StructureDefinition/ConsecuenciaAtencionCodigo"/>
-      </reference>
-      <name value="Destino Atención Codigo"/>
-      <description value="Destino Atención Codigo"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSConsecuenciaAtencionCodigo"/>
-      </reference>
-      <name value="Destino Atención Codigo"/>
-      <description value="Destino Atención Codigo"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSConsecuenciaAtencionCodigo"/>
       </reference>
       <name value="Destino Atención Codigo"/>
       <description value="Destino Atención Codigo"/>

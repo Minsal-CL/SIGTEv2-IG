@@ -10,7 +10,7 @@
   "name" : "TiemposDeEsperaInteroperable",
   "title" : "Tiempos de Espera Interoperable",
   "status" : "draft",
-  "date" : "2024-02-09T20:00:26+00:00",
+  "date" : "2024-02-21T16:19:48+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -741,7 +741,7 @@
       },
       "name" : "Bundle Evento Iniciar",
       "description" : "Bundle Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleInicioLE"
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleIniciarLE"
     },
     {
       "extension" : [{
@@ -765,7 +765,7 @@
       },
       "name" : "Bundle Evento Referenciar",
       "description" : "Bundle Evento Referenciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciaLE"
+      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE"
     },
     {
       "extension" : [{
@@ -797,7 +797,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BundleInicioLE"
+        "reference" : "StructureDefinition/BundleIniciarLE"
       },
       "name" : "Bundle Iniciar LE",
       "description" : "Bundle Iniciar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento iniciar.",
@@ -821,7 +821,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/BundleReferenciaLE"
+        "reference" : "StructureDefinition/BundleReferenciarLE"
       },
       "name" : "Bundle Referenciar LE",
       "description" : "Bundle Referenciar LE, recurso utilizado para transportar todos los datos del mensaje relacionado al evento referenciar.",
@@ -921,6 +921,30 @@
       },
       "name" : "Condition Iniciar Diagnostico LE",
       "description" : "Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSConsecuenciaAtencionCodigo"
+      },
+      "name" : "Consecuencia Atención Codigo",
+      "description" : "Consecuencia Atención Codigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSConsecuenciaAtencionCodigo"
+      },
+      "name" : "Consecuencia Atención Codigo",
+      "description" : "Consecuencia Atención Codigo",
       "exampleBoolean" : false
     },
     {
@@ -1026,30 +1050,6 @@
       }],
       "reference" : {
         "reference" : "StructureDefinition/ConsecuenciaAtencionCodigo"
-      },
-      "name" : "Destino Atención Codigo",
-      "description" : "Destino Atención Codigo",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSConsecuenciaAtencionCodigo"
-      },
-      "name" : "Destino Atención Codigo",
-      "description" : "Destino Atención Codigo",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSConsecuenciaAtencionCodigo"
       },
       "name" : "Destino Atención Codigo",
       "description" : "Destino Atención Codigo",
