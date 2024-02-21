@@ -21,9 +21,9 @@ El evento **iniciar** debe soportar a siguiente secuencia:
 
 ##### Request
 
-La semántica del mensaje para la transacción del Evento Iniciar usa el [Bundle Inicio LE](StructureDefinition-BundleInicioLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al Evento Iniciar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
+La semántica del mensaje para la transacción del Evento Iniciar usa el [Bundle Inicio LE](StructureDefinition-BundleIniciarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al Evento Iniciar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
-* [Bundle Evento Iniciar](StructureDefinition-BundleInicioLE.html)
+* [Bundle Evento Iniciar](StructureDefinition-BundleIniciarLE.html)
 * [Ejemplo Bundle Evento Iniciar](Bundle-EjemploBundleInicio.html)
 
 ##### Response
@@ -63,9 +63,9 @@ El evento **referenciar** debe soportar las siguientes secuencias:
 
 ##### Request
 
-La semántica del mensaje para la transacción del Evento Referenciar usa el [Bundle Referenciar LE](StructureDefinition-BundleReferenciaLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al Evento Referenciar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
+La semántica del mensaje para la transacción del Evento Referenciar usa el [Bundle Referenciar LE](StructureDefinition-BundleReferenciarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al Evento Referenciar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
-* [Bundle Evento Referenciar](StructureDefinition-BundleReferenciaLE.html)
+* [Bundle Evento Referenciar](StructureDefinition-BundleReferenciarLE.html)
 * [Ejemplo Bundle Referenciar](Bundle-EjemploBundleReferencia.html)
 
 ##### Response
