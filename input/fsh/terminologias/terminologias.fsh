@@ -909,8 +909,8 @@ Description: "CodeSystem con códigos definidos para representar cada evento en 
 
 ValueSet: VSPractitionerTipoRolLE
 Id: VSPractitionerTipoRolLE
-Title: "Rol de médicos"
-Description: "Rol de médicos(Practitioner) en algún evento, durante la intercosulta."
+Title: "Rol de profesionales"
+Description: "Rol de profesionales(Practitioner) en algún evento, durante la intercosulta."
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -924,7 +924,7 @@ Description: "Rol de médicos(Practitioner) en algún evento, durante la interco
 
 CodeSystem: CSPractitionerTipoRolLE
 Id: CSPractitionerTipoRolLE
-Title: "Rol de médicos"
+Title: "Rol de profesionales"
 Description: "CodeSystem con códigos definidos para representar cada rol de profesional o funcionario administrativo dentro de la interconsulta"
 * ^experimental = false
 * ^caseSensitive = true
