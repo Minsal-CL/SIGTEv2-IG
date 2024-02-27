@@ -1445,8 +1445,8 @@ Description:  "Pueblos Originarios de Chile"
 * #07	"Diaguita"
 * #08	"Kaweskar"
 * #09	"Yagan"
-* #10	"Chango"
-* #96	"Otro (Especificar)"
+* #11	"Chango"
+* #10	"Otro (Especificar)"
 
 
 ValueSet: VSEstadoCivil
