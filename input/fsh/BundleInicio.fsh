@@ -43,28 +43,28 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry[servicerequest].resource only ServiceRequestLE
 * entry[servicerequest].resource ^short = "Prestación que se requiere para el paciente, que no pudo ser resuelta en el APS"
 * entry[encounter] ^short = "Entrada en el Bundle: contendrá un recurso Encounter"
-* entry[encounter].resource only EncounterInicioLE
+* entry[encounter].resource only EncounterIniciarLE
 * entry[encounter].resource ^short = "Encuentro que ocurre en el APS y donde se solicita la interconsulta"
 * entry[observation] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
-* entry[observation].resource only ObservationInicioLE
+* entry[observation].resource only ObservationIniciarLE
 * entry[observation].resource ^short = "Observación para indicar los examenes realizados al paciente."
 * entry[conditionDiagnostico] ^short = "Entrada en el Bundle: contendrá un recurso Condition"
-* entry[conditionDiagnostico].resource only ConditionInicioDiagnosticoLE
+* entry[conditionDiagnostico].resource only ConditionIniciarDiagnosticoLE
 * entry[conditionDiagnostico].resource ^short = "Condición que especifica el diagnóstico inicial por el cual se emite la IC"
 * entry[observationComorbilidad] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
-* entry[observationComorbilidad].resource only ObservationInicioIndiceComorbilidadLE
+* entry[observationComorbilidad].resource only ObservationIniciarIndiceComorbilidadLE
 * entry[observationComorbilidad].resource ^short = "Indice de Comorbilidad del paciente"
 * entry[observationDiscapacidad] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
-* entry[observationDiscapacidad].resource only ObservationInicioDiscapacidadLE
+* entry[observationDiscapacidad].resource only ObservationIniciarDiscapacidadLE
 * entry[observationDiscapacidad].resource ^short = "Observación para indicar si el paciente tiene una discapacidad o no"
 * entry[observationCuidador] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
-* entry[observationCuidador].resource only ObservationInicioCuidadorLE
+* entry[observationCuidador].resource only ObservationIniciarCuidadorLE
 * entry[observationCuidador].resource ^short = "Observación para indicar si el paciente es cuidador o no"
 * entry[conditionGes] ^short = "Entrada en el Bundle: contendrá un recurso Condition"
-* entry[conditionGes].resource only ConditionInicioGesLE
+* entry[conditionGes].resource only ConditionIniciarGesLE
 * entry[conditionGes].resource ^short = "Se indica si la Condición que especifica si es diagnostico factible de considerarse bajo GES"
 * entry[allergyintolerance] ^short = "Entrada en el Bundle: contendrá un recurso AllergyIntolerance"
-* entry[allergyintolerance].resource only AllergyIntoleranceInicioLE
+* entry[allergyintolerance].resource only AllergyIntoleranceIniciarLE
 * entry[allergyintolerance].resource ^short = "Alergias que padece el paciente."
 * entry[practitionerrole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
 * entry[practitionerrole].resource only PractitionerRoleLE
@@ -79,11 +79,11 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry[practitioner].resource only PrestadorProfesionalLE
 * entry[practitioner].resource ^short = "Profesional que inicia la interconsulta"
 * entry[docCuidador] ^short = "Entrada en el Bundle: contendrá un recurso DocumentReference"
-* entry[docCuidador].resource only DocumentReferenceInicioLE
+* entry[docCuidador].resource only DocumentReferenceIniciarLE
 * entry[docCuidador].resource ^short = "Documento que acredita que el paciente es cuidador."
 * entry[prevision] ^short = "Entrada en el Bundle: contendrá un recurso Coverage"
-* entry[prevision].resource only CoverageInicioLE
+* entry[prevision].resource only CoverageIniciarLE
 * entry[prevision].resource ^short = "Información de la previsión del paciente"
 * entry[motivoDerivacion] ^short = "Entrada en el Bundle: contendrá un recurso QuestionnaireResponse"
-* entry[motivoDerivacion].resource only QuestionnaireResponseInicioLE
+* entry[motivoDerivacion].resource only QuestionnaireResponseIniciarLE
 * entry[motivoDerivacion].resource ^short = "Recurso donde se registra el motivo de la derivación del paciente"

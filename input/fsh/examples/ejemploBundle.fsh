@@ -1,4 +1,4 @@
-Instance: EjemploBundleInicio
+Instance: EjemploBundleIniciar
 InstanceOf: BundleIniciarLE
 Usage: #example
 Title: "Bundle Evento Iniciar"
@@ -60,8 +60,8 @@ Description: "Bundle Evento Iniciar"
 * entry[prevision].fullUrl = "http://acme.com/ehr/fhir/Coverage/EjemploCoverage"
 * entry[prevision].resource = EjemploCoverage
 
-* entry[motivoDerivacion].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE"
-* entry[motivoDerivacion].resource = EjemploQuestionnaireResponseInicioLE
+* entry[motivoDerivacion].fullUrl = "http://acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE"
+* entry[motivoDerivacion].resource = EjemploQuestionnaireResponseIniciarLE
 
 
 /*Budle Referencia*/

@@ -57,7 +57,7 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
   * period ^short = "Período en el cual el contacto está o estuvo en uso"
   * period ^definition = "Período en el cual el contacto está o estuvo en uso"
     * start 0..1 MS
-    * start ^short = "Inicio del uso del medio de contacto"
+    * start ^short = "Iniciar del uso del medio de contacto"
     * end 0..1 MS
     * end ^short = "Fecha en la cual ya se dejó de utilizar el medio de contacto"
 

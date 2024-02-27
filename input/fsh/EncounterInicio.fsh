@@ -1,6 +1,6 @@
-Profile: EncounterInicioLE
+Profile: EncounterIniciarLE
 Parent: Encounter
-Id: EncounterInicioLE
+Id: EncounterIniciarLE
 Title: "Encounter Iniciar LE"
 Description: "Encounter Iniciar LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
@@ -15,13 +15,15 @@ Description: "Encounter Iniciar LE recurso que se utiliza para representar el en
   * value 1..1 MS
   * value ^short = "Valor de registro real"
   * type 1..1 MS
-  * type ^short = "Descripción del identificador, por defecto es FILL"
+  * type ^short = "Tipo de identificador" 
+  * type.coding.code ^short = "El valor DEBE ser FILL"
   * type.coding.code = #FILL
 * identifier ^short = "Id del registro de atención o encuentro del sistema clínico de origen"
 
 * diagnosis 1..1
-* diagnosis.condition only Reference(ConditionInicioDiagnosticoLE)
-* diagnosis.condition ^short = "Referencia al diagnóstico, relevante para este encuentro médico"
+* diagnosis ^short = "Diagnóstico de origen por cual se crea la interconsulta"
+* diagnosis.condition only Reference(ConditionIniciarDiagnosticoLE)
+* diagnosis.condition ^short = "Referencia al diagnóstico de origen"
 
 * class ^short = "Modalidad de Atención"
 * class from VSModalidadAtencionCodigo

@@ -40,7 +40,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains ExtBoolRequiereExamen named RequiereExamen 0..1 MS
 * extension contains ExtBoolAtencionPreferente named AtencionPreferente 0..1 MS
 
-// ServiceRequest Inicio
+// ServiceRequest Iniciar
 
 * extension contains SospechaPatologiaGes named CorrespondeGES 0..1 MS
 * extension[CorrespondeGES] ^short = "Indica si corresponde a GES."
@@ -129,10 +129,10 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * code from VSServicioRequerido
 
 * subject only Reference(PatientLE)
-* reasonReference only Reference(ObservationInicioLE)
+* reasonReference only Reference(ObservationIniciarLE)
 * reasonReference ^short = "Referencia a la observación"
-* encounter only Reference(EncounterInicioLE)
-* encounter ^short = "Referencia al encuentro que da inicio a la interconsulta" 
+* encounter only Reference(EncounterIniciarLE)
+* encounter ^short = "Referencia al encuentro que da Iniciar a la interconsulta" 
 //* requester MS
 //* requester only Reference(PractitionerRoleLE)
 
@@ -152,23 +152,23 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 and SospechaPatologiaGes 0..1 MS and TipoAlergia 0..1 MS and IndiceComorbilidad 0..1 MS
 and Cuidador 0..1 MS and DocCuidador 0..1 MS and Discapacidad 1..1 MS and Prevision 0..1 MS and motivoDerivacion 0..1 MS and Examen 0..1 MS
 
-* supportingInfo[DiagnosticoSospecha] only Reference(ConditionInicioDiagnosticoLE)
+* supportingInfo[DiagnosticoSospecha] only Reference(ConditionIniciarDiagnosticoLE)
 * supportingInfo[DiagnosticoSospecha] ^short = "Referencia a la condición que especifica el diagnóstico inicial por el cual se emite la IC"
-* supportingInfo[IndiceComorbilidad] only Reference(ObservationInicioIndiceComorbilidadLE)
+* supportingInfo[IndiceComorbilidad] only Reference(ObservationIniciarIndiceComorbilidadLE)
 * supportingInfo[IndiceComorbilidad] ^short = "Referencia al indice de comorbilidad"
-* supportingInfo[SospechaPatologiaGes] only Reference(ConditionInicioGesLE)
+* supportingInfo[SospechaPatologiaGes] only Reference(ConditionIniciarGesLE)
 * supportingInfo[SospechaPatologiaGes] ^short = "Referencia a la condición que especifica si es sospecha de GES"
-* supportingInfo[TipoAlergia] only Reference(AllergyIntoleranceInicioLE)
+* supportingInfo[TipoAlergia] only Reference(AllergyIntoleranceIniciarLE)
 * supportingInfo[TipoAlergia] ^short = "Referencia  a los tipos de alergia"
-* supportingInfo[Cuidador] only Reference(ObservationInicioCuidadorLE)
+* supportingInfo[Cuidador] only Reference(ObservationIniciarCuidadorLE)
 * supportingInfo[Cuidador] ^short = "Referencia a la observación de si el paciente es cuidador"
-* supportingInfo[DocCuidador] only Reference(DocumentReferenceInicioLE)
+* supportingInfo[DocCuidador] only Reference(DocumentReferenceIniciarLE)
 * supportingInfo[DocCuidador] ^short = "Referencia al documento que acredita que el paciente es cuidador"
-* supportingInfo[Discapacidad] only Reference(ObservationInicioDiscapacidadLE)
+* supportingInfo[Discapacidad] only Reference(ObservationIniciarDiscapacidadLE)
 * supportingInfo[Discapacidad] ^short = "Referencia a la observación que indica si el paciente tiene discapacidad"
-* supportingInfo[Prevision] only Reference(CoverageInicioLE)
+* supportingInfo[Prevision] only Reference(CoverageIniciarLE)
 * supportingInfo[Prevision] ^short = "Referencia a la previsión del paciente"
-* supportingInfo[motivoDerivacion] only Reference(QuestionnaireResponseInicioLE)
+* supportingInfo[motivoDerivacion] only Reference(QuestionnaireResponseIniciarLE)
 * supportingInfo[motivoDerivacion] ^short = "Referencia al motivo de derivación"
 * supportingInfo[Examen] only Reference(ServiceRequestExamenLE)
 * supportingInfo[Examen] ^short = "Referencia a los examenes"

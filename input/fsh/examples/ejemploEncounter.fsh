@@ -1,5 +1,5 @@
 Instance: EjemploEncounter
-InstanceOf: EncounterInicioLE
+InstanceOf: EncounterIniciarLE
 Usage: #example
 Title: "Encounter Evento Iniciar"
 Description: "Encounter Evento Iniciar"

@@ -1,6 +1,6 @@
-Profile: ObservationInicioLE
+Profile: ObservationIniciarLE
 Parent: Observation
-Id: ObservationInicioLE
+Id: ObservationIniciarLE
 Title: "Observation Iniciar LE"
 Description: "Observation Iniciar LE, recurso que permite agregar los examenes en el evento iniciar."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0

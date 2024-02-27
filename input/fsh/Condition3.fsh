@@ -1,8 +1,8 @@
-Profile: ConditionInicioGesLE
+Profile: ConditionIniciarGesLE
 Parent: Condition
-Id: ConditionInicioGesLE
-Title: "Patología GES (número)"
-Description: "Patología GES (número)"
+Id: ConditionIniciarGesLE
+Title: "Condition GES"
+Description: "Condition GES"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

@@ -1,8 +1,8 @@
-Profile: ObservationInicioDiscapacidadLE
+Profile: ObservationIniciarDiscapacidadLE
 Parent: Observation
-Id: ObservationInicioDiscapacidadLE
-Title: "Observation Inicio Discapacidad LE"
-Description: "Observation Inicio Discapacidad LE, para describir si un paciente presenta discapacidad"
+Id: ObservationIniciarDiscapacidadLE
+Title: "Observation Iniciar Discapacidad LE"
+Description: "Observation Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

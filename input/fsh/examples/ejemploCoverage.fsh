@@ -1,5 +1,5 @@
 Instance: EjemploCoverage
-InstanceOf: CoverageInicioLE
+InstanceOf: CoverageIniciarLE
 Usage: #example
 Title: "Coverage Evento Iniciar"
 Description: "Coverage Evento Iniciar"

@@ -13,9 +13,9 @@ Description: "QuestionnaireResponse Atender LE"
 * encounter only Reference(EncounterAtenderLE)
 
 
-Profile: QuestionnaireResponseInicioLE
+Profile: QuestionnaireResponseIniciarLE
 Parent: QuestionnaireResponse
-Id: QuestionnaireResponseInicioLE
+Id: QuestionnaireResponseIniciarLE
 Title: "QuestionnaireResponse Iniciar Motivo de la Derivación LE"
 Description: "QuestionnaireResponse Iniciar para Motivo de Derivación LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0

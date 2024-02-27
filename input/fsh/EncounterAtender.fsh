@@ -47,7 +47,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * diagnosis ^short = "Lista de diagnósticos relevantes a este encuentro médico"
 * diagnosis.condition 1..1 MS
 * diagnosis.condition ^short = "Referencia al diagnóstico, relevante para este encuentro médico"
-* diagnosis.condition only Reference(ConditionInicioDiagnosticoLE)
+* diagnosis.condition only Reference(ConditionIniciarDiagnosticoLE)
 
 // * diagnosis contains CondicionAtenderDiagnosticoSospechaLE 0..1 MS
 // * diagnosis[CondicionAtenderDiagnosticoSospechaLE] 1..1 MS

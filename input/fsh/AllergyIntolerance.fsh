@@ -1,6 +1,6 @@
-Profile: AllergyIntoleranceInicioLE
+Profile: AllergyIntoleranceIniciarLE
 Parent: AllergyIntolerance
-Id: AllergyIntoleranceInicioLE
+Id: AllergyIntoleranceIniciarLE
 Title: "AllergyIntolerance Iniciar LE"
 Description: "AllergyIntolerance Iniciar LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0

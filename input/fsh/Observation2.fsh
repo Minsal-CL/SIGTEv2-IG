@@ -1,6 +1,6 @@
-Profile: ObservationInicioIndiceComorbilidadLE
+Profile: ObservationIniciarIndiceComorbilidadLE
 Parent: Observation
-Id: ObservationInicioIndiceComorbilidadLE
+Id: ObservationIniciarIndiceComorbilidadLE
 Title: "Observation Iniciar Indice Comorbilidad LE"
 Description: "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0

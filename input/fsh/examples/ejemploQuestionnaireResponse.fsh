@@ -11,8 +11,8 @@ Description: "QuestionnaireResponse Evento Atender"
 * encounter = Reference(EjemploEncounterAtender)
 
 
-Instance: EjemploQuestionnaireResponseInicioLE
-InstanceOf: QuestionnaireResponseInicioLE
+Instance: EjemploQuestionnaireResponseIniciarLE
+InstanceOf: QuestionnaireResponseIniciarLE
 Usage: #example
 Title: "QuestionnaireResponse Evento Iniciar Motivo derivación"
 Description: "QuestionnaireResponse Evento Iniciar Motivo derivación"

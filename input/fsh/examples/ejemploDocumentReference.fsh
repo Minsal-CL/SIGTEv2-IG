@@ -1,5 +1,5 @@
 Instance: EjemploDocumentReference
-InstanceOf: DocumentReferenceInicioLE
+InstanceOf: DocumentReferenceIniciarLE
 Usage: #example
 Title: "DocumentReference Evento Iniciar"
 Description: "DocumentReference Evento Iniciar"

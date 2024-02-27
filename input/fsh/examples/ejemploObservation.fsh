@@ -1,5 +1,5 @@
 Instance: EjemploObservation
-InstanceOf: ObservationInicioLE
+InstanceOf: ObservationIniciarLE
 Usage: #example
 Title: "Observation Evento Iniciar"
 Description: "Observation Evento Iniciar"
@@ -19,7 +19,7 @@ Description: "Observation Evento Atender"
 * valueString = "No se presentan exámenes anteriores"
 
 Instance: EjemploObservation2
-InstanceOf: ObservationInicioIndiceComorbilidadLE
+InstanceOf: ObservationIniciarIndiceComorbilidadLE
 Usage: #example
 Title: "Observation Índice Comorbilidad Evento Iniciar"
 Description: "Observation Índice Comorbilidadn Evento Iniciar"
@@ -33,7 +33,7 @@ Description: "Observation Índice Comorbilidadn Evento Iniciar"
 
 
 Instance: EjemploObservationCuidador
-InstanceOf: ObservationInicioCuidadorLE
+InstanceOf: ObservationIniciarCuidadorLE
 Usage: #example
 Title: "Observation Cuidador Evento Iniciar"
 Description: "Observation Cuidador Evento Iniciar"
@@ -43,7 +43,7 @@ Description: "Observation Cuidador Evento Iniciar"
 * subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
 
 Instance: EjemploObservationDiscapacidad
-InstanceOf: ObservationInicioDiscapacidadLE
+InstanceOf: ObservationIniciarDiscapacidadLE
 Usage: #example
 Title: "Observation Discapacidad Evento Iniciar"
 Description: "Observation Discapacidad Evento Iniciar"

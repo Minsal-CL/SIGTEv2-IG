@@ -37,7 +37,7 @@ Description: "ServiceRequest Evento Iniciar"
 * supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
 * supportingInfo[DocCuidador] = Reference(EjemploDocumentReference) "Referencia al documento que acredita que es cuidador"
 * supportingInfo[Prevision] = Reference(EjemploCoverage)  "Referencia a Prevision del Paciente"
-* supportingInfo[motivoDerivacion] = Reference(EjemploQuestionnaireResponseInicioLE)  "Referencia al Motivo de Derivacion"
+* supportingInfo[motivoDerivacion] = Reference(EjemploQuestionnaireResponseIniciarLE)  "Referencia al Motivo de Derivacion"
 
 
 /*

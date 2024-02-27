@@ -1,6 +1,6 @@
-Profile: ConditionInicioDiagnosticoLE
+Profile: ConditionIniciarDiagnosticoLE
 Parent: Condition
-Id: ConditionInicioDiagnosticoLE
+Id: ConditionIniciarDiagnosticoLE
 Title: "Condition Iniciar Diagnostico LE"
 Description: "Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta."
 

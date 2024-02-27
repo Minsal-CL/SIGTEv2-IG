@@ -1,6 +1,6 @@
-Profile: DocumentReferenceInicioLE
+Profile: DocumentReferenceIniciarLE
 Parent: DocumentReference
-Id: DocumentReferenceInicioLE
+Id: DocumentReferenceIniciarLE
 Title: "DocumentReference Iniciar LE"
 Description: "DocumentReference Iniciar LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0

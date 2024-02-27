@@ -1,6 +1,6 @@
-Profile: CoverageInicioLE
+Profile: CoverageIniciarLE
 Parent: Coverage
-Id: CoverageInicioLE
+Id: CoverageIniciarLE
 Title: "Coverage Iniciar LE"
 Description: "Coverage Iniciar LE, recurso que permite saber la previsión de un paciente"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
@@ -9,9 +9,10 @@ Description: "Coverage Iniciar LE, recurso que permite saber la previsión de un
 * type 1..1 MS
 * type ^short = "Categoría de algún plan de salud, como médico o de accidente"
   * coding ^short = "Codigo definido por un sistema terminológico"
+    * system = #http://terminology.hl7.org/CodeSystem/v3-ActCode
     * system ^short = "Identidad del sistema terminológico"
+    * code = #HIP
     * code ^short = "Código definido en un sistema terminológico"
-* type = 	http://terminology.hl7.org/CodeSystem/v3-ActCode#HIP
 
 * status MS 
 * status = #active

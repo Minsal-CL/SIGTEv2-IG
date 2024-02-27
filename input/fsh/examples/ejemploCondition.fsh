@@ -1,5 +1,5 @@
 Instance: EjemploCondition
-InstanceOf: ConditionInicioDiagnosticoLE
+InstanceOf: ConditionIniciarDiagnosticoLE
 Usage: #example
 Title: "Condition Diagnóstico Sospecha Evento Iniciar"
 Description: "Condition Diagnóstico Sospecha Evento Iniciar"
@@ -14,7 +14,7 @@ Description: "Condition Diagnóstico Sospecha Evento Iniciar"
 * severity = http://snomed.info/sct#6736007
 
 Instance: EjemploConditionAtender
-InstanceOf: ConditionInicioDiagnosticoLE
+InstanceOf: ConditionIniciarDiagnosticoLE
 Usage: #example
 Title: "Condition Diagnóstico Sospecha Evento Iniciar"
 Description: "Condition Diagnóstico Sospecha Evento Iniciar"
@@ -29,7 +29,7 @@ Description: "Condition Diagnóstico Sospecha Evento Iniciar"
 * severity = http://snomed.info/sct#6736007
 
 Instance: EjemploConditionGES
-InstanceOf: ConditionInicioGesLE
+InstanceOf: ConditionIniciarGesLE
 Usage: #example
 Title: "Patología GES (número)"
 Description: "Patología GES (número)"

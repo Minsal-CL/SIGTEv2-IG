@@ -1,5 +1,5 @@
 Instance: EjemploAllergyIntolerance
-InstanceOf: AllergyIntoleranceInicioLE
+InstanceOf: AllergyIntoleranceIniciarLE
 Usage: #example
 Title: "AllergyIntolerance Evento Iniciar"
 Description: "AllergyIntolerance Evento Iniciar"
