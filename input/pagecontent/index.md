@@ -1,17 +1,17 @@
 ### Alcance
 
 Esta guía de implementación aborda el proceso de solicitud de interconsulta (SIC), para
-consulta nueva de especialidad desde el nivel primario de salud (APS) al nivel secundario,
+consulta nueva de especialidad No GES desde el nivel primario de salud (APS) al nivel secundario,
 mediante la plataforma interoperable de Tiempos de Espera.
 Para representar este proceso se definen 7 eventos, los cuáles son:
 
- - Iniciar: Generar SIC en box de APS
- - Referenciar: Asignar destino desde la APS
- - Revisar: Revisar la pertinencia
- - Priorizar: Asignar la prioridad
- - Agendar: Agendar la cita
- - Atender: consulta con el especialista
- - Terminar: salida de la Lista de Espera
+ - Iniciar: Generación de SIC en box de APS
+ - Referenciar: Asignacion de destino desde la APS
+ - Revisar: Revisión de la pertinencia
+ - Priorizar: Asignación o revisión de la prioridad
+ - Agendar: Agendamiento de la cita
+ - Atender: Atención en consulta con el especialista
+ - Terminar: Egreso de la Lista de Espera
 
 
 ### Introducción
@@ -20,12 +20,10 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
     
   El sistema de salud en Chile se estructura en niveles (primario, secundario y 
   terciario), siendo el nivel primario el con mayor despliegue en el territorio, 
-  con atenciones de menor
-  complejidad y la puerta de entrada a todas las atenciones de salud en la red
-  pública de establecimientos. Para optar a una atención de especialidad, las 
-  personas deben ser
-  derivadas desde la atención primaria a un centro de mayor complejidad, teniendo
-  que esperar para recibir esta atención en el nivel primario o secundario. 
+  con atenciones de menor complejidad y la puerta de entrada a todas las atenciones de salud 
+  en la red pública de establecimientos. Para optar a una atención de especialidad, 
+  las personas deben ser derivadas desde la atención primaria a un centro de mayor complejidad, 
+  teniendo que esperar para recibir esta atención en el nivel secundario o terciario.
   
   Las personas y tiempos que deben esperar para una atención de salud han sido y 
   son una preocupación para todo el sistema sanitario.
@@ -47,19 +45,18 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
   establecimientos de salud involucrados y el nivel central para la toma de 
   decisiones y mejor gestión de los recursos.
   
-  Este proyecto se ejecutó por un equipo multidisciplinario con profesionales de 
-  DEIS, DIGERA, DIVAP y la Unidad de Interoperabilidad de DTIC, utilizando una 
-  metodología para el re-diseño del proceso, optimizado y centrado en el paciente
-  y su implementación bajo estándares internacionales de interoperabilidad.
+  Este proyecto fue ejecutado por un equipo multidisciplinario del Ministerio de Salud, con la participación de profesionales del Departamento de Estadísticas e Información en Salud (DEIS), la División de Gestión de la Red Asistencial (DIGERA), la División de Atención Primaria (DIVAP) y la Unidad de Interoperabilidad del Departamento de Tecnologías de la Información y Comunicaciones (DTIC), con el apoyo del Centro Nacional de Sistemas de Información en Salud (CENS).
+  Se ha utilizado una metodología para el re-diseño del proceso, optimizándolo y centrándolo en el paciente y se ha implementado bajo el uso estándares internacionales de interoperabilidad.
   
 #### Objetivos del Proyecto de Tiempos de Espera Interoperables
   
 ##### General
 
-  Generar un sistema seguro e interoperable de datos clínicos para soportar la 
-  gestión (registro, transferencia, análisis, etc.) de la información, fidedigna 
-  y de calidad, entregada a través de una plataforma de visualización del estado 
-  de nueva consulta de especialidad para pacientes.
+  Desarrollar un sistema seguro e interoperable de datos clínicos que respalde la gestión de información, 
+  incluyendo su registro, transferencia y análisis. Dicha información es entregada a través 
+  de una plataforma que facilite su acceso de manera precisa y de calidad, 
+  en el contexto de las solicitudes de nueva consulta de especialidad 
+  No GES para pacientes de la red asistencial.
     
 ##### Específicos
 

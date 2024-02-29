@@ -35,7 +35,7 @@
   de la SIC para dar respuesta al usuario.
   
   Acá se pueden verificar si existe alguna causal de salida de Lista de Espera,
-  por ejemplo, en caso de defunción, GES, no beneficiario entre otras. 
+  por ejemplo, en caso de defunción, GES, no beneficiario, entre otras. 
 
 ### Priorizar
   
@@ -44,19 +44,19 @@
   patología, gravedad y determinantes sociales del paciente. 
   
   Esto puede suceder en el establecimiento de Atención Primaria de Salud o nivel
-  secundario según acuerdo entre ambos niveles y el Servicio de Salud. 
+  secundario, según acuerdo entre ambos niveles y el Servicio de Salud. 
   
-  Acá se pueden verificar si existe alguna causa de salida de Lista de Espera,
-  por ejemplo, en caso de defunción, GES, no beneficiario entre otras. (Según
-  [Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view))
+  Acá se puede verificarla existencia de alguna de las causales de salida de Lista de Espera, 
+  por ejemplo, en caso de defunción, GES, no beneficiario, entre otras. 
+  (Según[Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view))
 
 ### Agendar
   Un funcionario administrativo contactará al usuario para agendar la cita con el
-  especialista según la priorización asignada y la disponibilidad de horas.
+  especialista, según la priorización asignada y la disponibilidad de horas.
   Esto puede suceder tanto en el establecimiento de atención primaria como en el
-  nivel secundario según acuerdo entre ambos niveles y el Servicio de Salud. 
+  nivel secundario, según acuerdo entre ambos niveles y el Servicio de Salud. 
   
-  Acá se pueden verificar si existe alguna causa de salida de Lista de Espera.
+  Acá se puede verificarla existencia de alguna de las causales de salida de Lista de Espera, por ejemplo, en caso de defunción, GES, no beneficiario, entre otras. (Según[Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view))
 
 ### Atender
   El usuario recibe atención con el médico especialista en el establecimiento de
@@ -65,7 +65,7 @@
   El médico especialista tendrá a la vista los datos de la
   Solicitud de Interconsulta generada en el establecimiento de nivel primario en
   la Ficha Clínica Electrónica local, y en esa misma plataforma registrará los
-  datos del encuentro (solicitud de exámenes, indicaciones, tratamiento, reposo,
+  datos del encuentro (Solicitud de exámenes, indicaciones, tratamiento, reposo,
   etc.).
   
   Esta información quedará disponible para intercambiarse con otros sistemas de
@@ -77,8 +77,8 @@
 
 ### Terminar
   En este acto el paciente sale de la Lista de Espera, ya sea porque fue atendido
-  o por alguna de las causales de eliminación de la Lista de Espera según la
-  [norma técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view). 
+  o por alguna de las causales de eliminación de la Lista de Espera, según la
+  [Norma técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view). 
   
   Esto puede ocurrir de forma automática por definiciones del sistema
   informático, o mediante un funcionario administrativo. 
