@@ -11,7 +11,7 @@
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2024-02-21T16:19:48+00:00"/>
+  <date value="2024-02-29T18:01:33+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -465,14 +465,14 @@
       </reference>
       <name value="AllergyIntolerance Evento Iniciar"/>
       <description value="AllergyIntolerance Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceInicioLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceIniciarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/AllergyIntoleranceInicioLE"/>
+        <reference value="StructureDefinition/AllergyIntoleranceIniciarLE"/>
       </reference>
       <name value="AllergyIntolerance Iniciar LE"/>
       <description value="AllergyIntolerance Iniciar LE"/>
@@ -571,7 +571,7 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/EjemploBundleInicio"/>
+        <reference value="Bundle/EjemploBundleIniciar"/>
       </reference>
       <name value="Bundle Evento Iniciar"/>
       <description value="Bundle Evento Iniciar"/>
@@ -593,7 +593,7 @@
         <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="Bundle/EjemploBundleReferencia"/>
+        <reference value="Bundle/EjemploBundleReferenciar"/>
       </reference>
       <name value="Bundle Evento Referenciar"/>
       <description value="Bundle Evento Referenciar"/>
@@ -684,7 +684,7 @@
         <reference value="StructureDefinition/CarePlanAtenderLE"/>
       </reference>
       <name value="CarePlan Atender LE"/>
-      <description value="CarePlan Atender LE"/>
+      <description value="CarePlan Atender LE es el recurso utilizado para representar las indicaciones entregadas por el profesional como resultado de la atención."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -718,7 +718,7 @@
       </reference>
       <name value="Condition Diagnóstico Sospecha Evento Iniciar"/>
       <description value="Condition Diagnóstico Sospecha Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -729,14 +729,25 @@
       </reference>
       <name value="Condition Diagnóstico Sospecha Evento Iniciar"/>
       <description value="Condition Diagnóstico Sospecha Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ConditionInicioDiagnosticoLE"/>
+        <reference value="StructureDefinition/ConditionIniciarGesLE"/>
+      </reference>
+      <name value="Condition GES"/>
+      <description value="Condition GES"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ConditionIniciarDiagnosticoLE"/>
       </reference>
       <name value="Condition Iniciar Diagnostico LE"/>
       <description value="Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta."/>
@@ -784,14 +795,14 @@
       </reference>
       <name value="Coverage Evento Iniciar"/>
       <description value="Coverage Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageInicioLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageIniciarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/CoverageInicioLE"/>
+        <reference value="StructureDefinition/CoverageIniciarLE"/>
       </reference>
       <name value="Coverage Iniciar LE"/>
       <description value="Coverage Iniciar LE, recurso que permite saber la previsión de un paciente"/>
@@ -938,14 +949,14 @@
       </reference>
       <name value="DocumentReference Evento Iniciar"/>
       <description value="DocumentReference Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceInicioLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceIniciarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DocumentReferenceInicioLE"/>
+        <reference value="StructureDefinition/DocumentReferenceIniciarLE"/>
       </reference>
       <name value="DocumentReference Iniciar LE"/>
       <description value="DocumentReference Iniciar LE"/>
@@ -982,14 +993,14 @@
       </reference>
       <name value="Encounter Evento Iniciar"/>
       <description value="Encounter Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterInicioLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/EncounterInicioLE"/>
+        <reference value="StructureDefinition/EncounterIniciarLE"/>
       </reference>
       <name value="Encounter Iniciar LE"/>
       <description value="Encounter Iniciar LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta."/>
@@ -1674,7 +1685,7 @@
       </reference>
       <name value="Observation Cuidador Evento Iniciar"/>
       <description value="Observation Cuidador Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioCuidadorLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarCuidadorLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1685,7 +1696,7 @@
       </reference>
       <name value="Observation Discapacidad Evento Iniciar"/>
       <description value="Observation Discapacidad Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioDiscapacidadLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarDiscapacidadLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1707,14 +1718,14 @@
       </reference>
       <name value="Observation Evento Iniciar"/>
       <description value="Observation Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ObservationInicioCuidadorLE"/>
+        <reference value="StructureDefinition/ObservationIniciarCuidadorLE"/>
       </reference>
       <name value="Observation Iniciar Cuidador LE"/>
       <description value="Observation Iniciar, para describir si un paciente necesita cuidador"/>
@@ -1725,7 +1736,18 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ObservationInicioIndiceComorbilidadLE"/>
+        <reference value="StructureDefinition/ObservationIniciarDiscapacidadLE"/>
+      </reference>
+      <name value="Observation Iniciar Discapacidad LE"/>
+      <description value="Observation Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ObservationIniciarIndiceComorbilidadLE"/>
       </reference>
       <name value="Observation Iniciar Indice Comorbilidad LE"/>
       <description value="Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente"/>
@@ -1736,21 +1758,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ObservationInicioLE"/>
+        <reference value="StructureDefinition/ObservationIniciarLE"/>
       </reference>
       <name value="Observation Iniciar LE"/>
       <description value="Observation Iniciar LE, recurso que permite agregar los examenes en el evento iniciar."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationInicioDiscapacidadLE"/>
-      </reference>
-      <name value="Observation Inicio Discapacidad LE"/>
-      <description value="Observation Inicio Discapacidad LE, para describir si un paciente presenta discapacidad"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1762,7 +1773,7 @@
       </reference>
       <name value="Observation Índice Comorbilidad Evento Iniciar"/>
       <description value="Observation Índice Comorbilidadn Evento Iniciar"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioIndiceComorbilidadLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarIndiceComorbilidadLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1860,7 +1871,7 @@
         <reference value="StructureDefinition/OrganizationLE"/>
       </reference>
       <name value="Organization LE"/>
-      <description value="Organization LE según [Códigos DEIS del establecimientos](https://repositoriodeis.minsal.cl/DatosAbiertos/Establecimientos_ChileDEIS_MINSAL%2021-04-2023.xlsx)"/>
+      <description value="Organization LE según [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1909,17 +1920,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ConditionInicioGesLE"/>
-      </reference>
-      <name value="Patología GES (número)"/>
-      <description value="Patología GES (número)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -1927,7 +1927,7 @@
       </reference>
       <name value="Patología GES (número)"/>
       <description value="Patología GES (número)"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioGesLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarGesLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2308,18 +2308,18 @@
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE"/>
+        <reference value="QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE"/>
       </reference>
       <name value="QuestionnaireResponse Evento Iniciar Motivo derivación"/>
       <description value="QuestionnaireResponse Evento Iniciar Motivo derivación"/>
-      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseInicioLE"/>
+      <exampleCanonical value="https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/QuestionnaireResponseInicioLE"/>
+        <reference value="StructureDefinition/QuestionnaireResponseIniciarLE"/>
       </reference>
       <name value="QuestionnaireResponse Iniciar Motivo de la Derivación LE"/>
       <description value="QuestionnaireResponse Iniciar para Motivo de Derivación LE"/>
@@ -2365,8 +2365,8 @@
       <reference>
         <reference value="ValueSet/VSPractitionerTipoRolLE"/>
       </reference>
-      <name value="Rol de médicos"/>
-      <description value="Rol de médicos(Practitioner) en algún evento, durante la intercosulta."/>
+      <name value="Rol de profesionales"/>
+      <description value="Rol de profesionales(Practitioner) en algún evento, durante la intercosulta."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -2376,7 +2376,7 @@
       <reference>
         <reference value="CodeSystem/CSPractitionerTipoRolLE"/>
       </reference>
-      <name value="Rol de médicos"/>
+      <name value="Rol de profesionales"/>
       <description value="CodeSystem con códigos definidos para representar cada rol de profesional o funcionario administrativo dentro de la interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -2721,10 +2721,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="rol_de_actores_interoperabilidad_CNE.html"/>
+          <valueUrl value="rol_de_actores.html"/>
         </extension>
-        <nameUrl value="rol_de_actores_interoperabilidad_CNE.html"/>
-        <title value="Rol De Actores Interoperabilidad CNE"/>
+        <nameUrl value="rol_de_actores.html"/>
+        <title value="Rol De Actores"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -2773,6 +2773,14 @@
         </extension>
         <nameUrl value="Mensajeria.html"/>
         <title value="Mensajeria"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="historial_de_cambios.html"/>
+        </extension>
+        <nameUrl value="historial_de_cambios.html"/>
+        <title value="Historial De Cambios"/>
         <generation value="markdown"/>
       </page>
     </page>

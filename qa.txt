@@ -1,9 +1,9 @@
 TiemposDeEsperaInteroperable : Validation Results
 =========================================
 
-err = 0, warn = 226, info = 44
-IG Publisher Version: 1.5.16
-Generated Wed Feb 21 16:25:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.1.7 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei)
+err = 10, warn = 226, info = 44
+IG Publisher Version: 1.5.16 Out of date - current version is 1.6.0
+Generated Thu Feb 29 18:07:12 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.1.7 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAgendar : 0 / 0 / 1
@@ -11,9 +11,9 @@ Generated Wed Feb 21 16:25:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsa
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAgendarSinPresentacion : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAgendar : 0 / 11 / 29
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAtender : 0 / 22 / 38
- /github/workspace/fsh-generated/resources/Bundle-EjemploBundleInicio : 0 / 26 / 59
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleIniciar : 0 / 26 / 59
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundlePriorizar : 0 / 11 / 18
- /github/workspace/fsh-generated/resources/Bundle-EjemploBundleReferencia : 0 / 16 / 26
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleReferenciar : 7 / 16 / 24
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleRevisar : 0 / 14 / 31
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleTerminar : 0 / 9 / 18
  /github/workspace/fsh-generated/resources/CarePlan-EjemploCarePlanLE : 0 / 1 / 1
@@ -62,7 +62,7 @@ Generated Wed Feb 21 16:25:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsa
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderAgendar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderAtender : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderPriorizar : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderReferencia : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderReferencia : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderRevisar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-EjemploMessageHeaderTerminar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-EjemploObservation : 0 / 3 / 1
@@ -98,16 +98,16 @@ Generated Wed Feb 21 16:25:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsa
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleRevisar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleTerminar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseAtenderLE : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseInicioLE : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseIniciarLE : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAgendar : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAtender : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestExamen : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestPriorizar : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestReferenciada : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestReferenciada : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestRevisar : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestTerminar : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-AllergyIntoleranceInicioLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-AllergyIntoleranceIniciarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-AppointmentAgendarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleAgendarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleAtenderLE : 0 / 0 / 1
@@ -117,16 +117,16 @@ Generated Wed Feb 21 16:25:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsa
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleRevisarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleTerminarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-CarePlanAtenderLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ConditionInicioDiagnosticoLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ConditionInicioGesLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConditionIniciarDiagnosticoLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConditionIniciarGesLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ConsecuenciaAtencionCodigo : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Contactado : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-CoverageInicioLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CoverageIniciarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DigitoVerificador : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DocAcreditacionCuidadorCodigoLE : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DocumentReferenceInicioLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DocumentReferenceIniciarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-EncounterAtenderLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-EncounterInicioLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EncounterIniciarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-EspecialidadMedicaDestinoCodigo : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-EstadoInterconsultaCodigoLE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ExtBool : 0 / 2 / 1
@@ -148,10 +148,10 @@ Generated Wed Feb 21 16:25:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsa
  /github/workspace/fsh-generated/resources/StructureDefinition-MotivoCierreInterconsulta : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MotivoNoPertinenciaCodigo : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ObservationAtenderLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ObservationInicioCuidadorLE : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ObservationInicioDiscapacidadLE : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ObservationInicioIndiceComorbilidadLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-ObservationInicioLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ObservationIniciarCuidadorLE : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ObservationIniciarDiscapacidadLE : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ObservationIniciarIndiceComorbilidadLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ObservationIniciarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OrganizationLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OrigenInterconsulta : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PaisOrigenMPI : 0 / 1 / 1
@@ -165,7 +165,7 @@ Generated Wed Feb 21 16:25:44 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsa
  /github/workspace/fsh-generated/resources/StructureDefinition-PueblosOriginarios : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-PueblosOriginariosPerteneciente : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-QuestionnaireResponseAtenderLE : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-QuestionnaireResponseInicioLE : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-QuestionnaireResponseIniciarLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-Religion : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ServiceRequestExamenLE : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ServiceRequestLE : 0 / 2 / 1
@@ -271,40 +271,40 @@ INFORMATION: Bundle/EjemploBundleAtender: Bundle.entry[7].resource: No questionn
 WARNING: Bundle/EjemploBundleAtender: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a subject
 WARNING: Bundle/EjemploBundleAtender: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/EjemploBundleAtender: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-== fsh-generated/resources/Bundle-EjemploBundleInicio.json ==
-INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[2].resource.entry[3].resource/*Patient/EjemploPatient*/.extension[8].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS|0.1.7
-INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[5].resource.entry[3].resource/*Patient/EjemploPatient*/.extension[8].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS|0.1.7
-INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[4].resource.code.coding[0].system: A definition for CodeSystem 'http://diagnosticos.cl/uno' could not be found, so the code cannot be validated
-INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[4].resource/*Condition/EjemploCondition*/.code.coding[0].system: A definition for CodeSystem 'http://diagnosticos.cl/uno' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[5].resource/*Observation/EjemploObservation2*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[5].resource/*Observation/EjemploObservation2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[7].resource/*Observation/EjemploObservation*/: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[7].resource/*Observation/EjemploObservation*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[7].resource/*Observation/EjemploObservation*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[8].resource/*Observation/EjemploObservationCuidador*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[8].resource/*Observation/EjemploObservationCuidador*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[9].resource/*Observation/EjemploObservationDiscapacidad*/: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[9].resource/*Observation/EjemploObservationDiscapacidad*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[11].resource.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[0].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[11].resource.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[1].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[11].resource.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[2].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[0].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[1].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[2].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[11].resource.entry[13].resource/*Organization/EjemploOrganization*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[13].resource/*Organization/EjemploOrganization*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
-INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[16].resource/*QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE*/: No questionnaire is identified, so no validation can be performed against the base questionnaire
-INFORMATION: Bundle/EjemploBundleInicio: Bundle: Can't find 'http://example.org/referencia' in the bundle (Bundle.entry[14].resource.content[0].attachment.url)
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a subject
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
-WARNING: Bundle/EjemploBundleInicio: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
-INFORMATION: Bundle/EjemploBundleInicio: Bundle.entry[16].resource: No questionnaire is identified, so no validation can be performed against the base questionnaire
+== fsh-generated/resources/Bundle-EjemploBundleIniciar.json ==
+INFORMATION: Bundle/EjemploBundleIniciar: Bundle.entry[2].resource.entry[3].resource/*Patient/EjemploPatient*/.extension[8].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS|0.1.7
+INFORMATION: Bundle/EjemploBundleIniciar: Bundle.entry[5].resource.entry[3].resource/*Patient/EjemploPatient*/.extension[8].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS|0.1.7
+INFORMATION: Bundle/EjemploBundleIniciar: Bundle.entry[4].resource.code.coding[0].system: A definition for CodeSystem 'http://diagnosticos.cl/uno' could not be found, so the code cannot be validated
+INFORMATION: Bundle/EjemploBundleIniciar: Bundle.entry[4].resource/*Condition/EjemploCondition*/.code.coding[0].system: A definition for CodeSystem 'http://diagnosticos.cl/uno' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[5].resource/*Observation/EjemploObservation2*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[5].resource/*Observation/EjemploObservation2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[7].resource/*Observation/EjemploObservation*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[7].resource/*Observation/EjemploObservation*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[7].resource/*Observation/EjemploObservation*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[8].resource/*Observation/EjemploObservationCuidador*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[8].resource/*Observation/EjemploObservationCuidador*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[9].resource/*Observation/EjemploObservationDiscapacidad*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[9].resource/*Observation/EjemploObservationDiscapacidad*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[11].resource.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[0].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[11].resource.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[1].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[11].resource.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[2].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[0].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[1].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[12].resource/*Practitioner/EjemploPractitionerIniciar*/.identifier[2].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[11].resource.entry[13].resource/*Organization/EjemploOrganization*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[13].resource/*Organization/EjemploOrganization*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
+INFORMATION: Bundle/EjemploBundleIniciar: Bundle.entry[16].resource/*QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE*/: No questionnaire is identified, so no validation can be performed against the base questionnaire
+INFORMATION: Bundle/EjemploBundleIniciar: Bundle: Can't find 'http://example.org/referencia' in the bundle (Bundle.entry[14].resource.content[0].attachment.url)
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/EjemploBundleIniciar: Bundle.entry[16].resource: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/Bundle-EjemploBundlePriorizar.json ==
 WARNING: Bundle/EjemploBundlePriorizar: Bundle.entry[1].resource.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
 WARNING: Bundle/EjemploBundlePriorizar: Bundle.entry[1].resource.identifier[0].type.coding[0]: ValueSet 'http://terminology.cens.cl/CodeSystem/listaespera' not found
@@ -319,27 +319,34 @@ WARNING: Bundle/EjemploBundlePriorizar: Bundle.entry[4].resource/*Practitioner/E
 WARNING: Bundle/EjemploBundlePriorizar: Bundle.entry[4].resource/*Practitioner/EjemploPractitionerPriorizar*/.identifier[2].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
 INFORMATION: Bundle/EjemploBundlePriorizar: Bundle: Can't find 'Patient/EjemploPatient' in the bundle (Bundle.entry[1].resource.subject)
 INFORMATION: Bundle/EjemploBundlePriorizar: Bundle: Can't find 'Observation/EjemploObservationDiscapacidad' in the bundle (Bundle.entry[1].resource.supportingInfo[0])
-== fsh-generated/resources/Bundle-EjemploBundleReferencia.json ==
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[1].resource.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[1].resource.identifier[0].type.coding[0]: ValueSet 'http://terminology.cens.cl/CodeSystem/listaespera' not found
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[1].resource/*ServiceRequest/EjemploServiceRequestReferenciada*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[2].resource.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[0].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[2].resource.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[1].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[2].resource.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[2].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[0].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[1].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[2].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[5].resource.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[5].resource/*Organization/EjemploOrganizationReferenciadorMHREFERENCIADA*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[6].resource.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[6].resource/*Organization/EjemploOrganizationAtender*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
-INFORMATION: Bundle/EjemploBundleReferencia: Bundle: Can't find 'Patient/EjemploPatient' in the bundle (Bundle.entry[1].resource.subject)
-INFORMATION: Bundle/EjemploBundleReferencia: Bundle: Can't find 'Observation/EjemploObservationDiscapacidad' in the bundle (Bundle.entry[1].resource.supportingInfo[0])
-INFORMATION: Bundle/EjemploBundleReferencia: Bundle: Can't find 'Organization/EjemploOrganizationReferencia' in the bundle (Bundle.entry[2].resource.organization)
-INFORMATION: Bundle/EjemploBundleReferencia: Bundle: Can't find 'Organization/EjemploOrganizationReferencia' in the bundle (Bundle.entry[3].resource.organization)
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[4]: Entry 'http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleAtendedorSRREFERENCIADA' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[6]: Entry 'http://acme.com/ehr/fhir/Organization/EjemploOrganizationReferenciadorMHREFERENCIADA' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
-WARNING: Bundle/EjemploBundleReferencia: Bundle.entry[7]: Entry 'http://acme.com/ehr/fhir/Organization/EjemploOrganizationAtender' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
+== fsh-generated/resources/Bundle-EjemploBundleReferenciar.json ==
+ERROR: Bundle/EjemploBundleReferenciar: Bundle.entry[0]: This element does not match any known slice  defined in the profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE|0.1.7 and slicing is CLOSED: Bundle.entry[0]: Does not match slice 'messageheader' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE')), Bundle.entry[0]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE|0.1.7, Bundle.entry[0]: Does not match slice 'servicerequest' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE')), Bundle.entry[0]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE|0.1.7, Bundle.entry[0]: Does not match slice 'practitioner' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE')), Bundle.entry[0]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE|0.1.7, Bundle.entry[0]: Does not match slice 'practitionerRole' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE')), Bundle.entry[0]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE|0.1.7, Bundle.entry[0]: Does not match slice 'organization' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE')), Bundle.entry[0]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE|0.1.7
+ERROR: Bundle/EjemploBundleReferenciar: Bundle.entry[1]: This element does not match any known slice  defined in the profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE|0.1.7 and slicing is CLOSED: Bundle.entry[1]: Does not match slice 'messageheader' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE')), Bundle.entry[1]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE|0.1.7, Bundle.entry[1]: Does not match slice 'servicerequest' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE')), Bundle.entry[1]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE|0.1.7, Bundle.entry[1]: Does not match slice 'practitioner' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE')), Bundle.entry[1]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE|0.1.7, Bundle.entry[1]: Does not match slice 'practitionerRole' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE')), Bundle.entry[1]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE|0.1.7, Bundle.entry[1]: Does not match slice 'organization' (discriminator: resource.conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE')), Bundle.entry[1]: Details for Bundle matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE|0.1.7
+ERROR: Bundle/EjemploBundleReferenciar: Bundle: Slice 'Bundle.entry:messageheader': a matching slice is required, but not found (from https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE|0.1.7). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/EjemploBundleReferenciar: Bundle: Slice 'Bundle.entry:servicerequest': a matching slice is required, but not found (from https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE|0.1.7). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/EjemploBundleReferenciar: Bundle.entry[0].resource.focus[0]: This element does not match any known slice  defined in the profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE|0.1.7 and slicing is CLOSED: Bundle.entry[0].resource.focus[0]: Does not match slice 'ServiceRequestLE' (discriminator: resolve().conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE')), Bundle.entry[0].resource.focus[0]: Details for Bundle.entry[0].resource matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE|0.1.7, Bundle.entry[0].resource.focus[0]: Does not match slice 'AppointmentAgendarLE' (discriminator: resolve().conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE')), Bundle.entry[0].resource.focus[0]: Details for Bundle.entry[0].resource matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE|0.1.7, Bundle.entry[0].resource.focus[0]: Does not match slice 'EncounterAtenderLE' (discriminator: resolve().conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE')), Bundle.entry[0].resource.focus[0]: Details for Bundle.entry[0].resource matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE|0.1.7
+ERROR: Bundle/EjemploBundleReferenciar: Bundle.entry[0].resource: Slice 'MessageHeader.focus:ServiceRequestLE': a matching slice is required, but not found (from https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE|0.1.7). Note that other slices are allowed in addition to this required slice
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[1].resource/*ServiceRequest/EjemploServiceRequestReferenciada*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[1].resource.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[1].resource.identifier[0].type.coding[0]: ValueSet 'http://terminology.cens.cl/CodeSystem/listaespera' not found
+ERROR: Bundle/EjemploBundleReferenciar: Bundle.entry[1].resource.code: None of the codings provided are in the value set 'Servicio Requerido' (https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSServicioRequerido|0.1.7), and a coding from this value set is required) (codes = http://snomed.info/sct#183519002)
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[2].resource.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[0].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[2].resource.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[1].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[2].resource.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[2].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[0].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[1].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[4].resource/*Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA*/.identifier[2].type.coding[0]: A definition for CodeSystem 'https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[5].resource.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[5].resource/*Organization/EjemploOrganizationReferenciadorMHREFERENCIADA*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[6].resource.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[6].resource/*Organization/EjemploOrganizationAtender*/.identifier[0].type.coding[0]: A definition for CodeSystem 'http://minsal.cl/deis/establecimientos' could not be found, so the code cannot be validated
+INFORMATION: Bundle/EjemploBundleReferenciar: Bundle: Can't find 'Patient/EjemploPatient' in the bundle (Bundle.entry[1].resource.subject)
+INFORMATION: Bundle/EjemploBundleReferenciar: Bundle: Can't find 'Observation/EjemploObservationDiscapacidad' in the bundle (Bundle.entry[1].resource.supportingInfo[0])
+INFORMATION: Bundle/EjemploBundleReferenciar: Bundle: Can't find 'Organization/EjemploOrganizationReferencia' in the bundle (Bundle.entry[2].resource.organization)
+INFORMATION: Bundle/EjemploBundleReferenciar: Bundle: Can't find 'Organization/EjemploOrganizationReferencia' in the bundle (Bundle.entry[3].resource.organization)
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[4]: Entry 'http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleAtendedorSRREFERENCIADA' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[6]: Entry 'http://acme.com/ehr/fhir/Organization/EjemploOrganizationReferenciadorMHREFERENCIADA' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
+WARNING: Bundle/EjemploBundleReferenciar: Bundle.entry[7]: Entry 'http://acme.com/ehr/fhir/Organization/EjemploOrganizationAtender' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 == fsh-generated/resources/Bundle-EjemploBundleRevisar.json ==
 WARNING: Bundle/EjemploBundleRevisar: Bundle.entry[1].resource.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
 WARNING: Bundle/EjemploBundleRevisar: Bundle.entry[1].resource.identifier[0].type.coding[0]: ValueSet 'http://terminology.cens.cl/CodeSystem/listaespera' not found
@@ -428,6 +435,8 @@ WARNING: Encounter/EjemploEncounterAtender: Encounter.identifier[0].type.coding[
 == fsh-generated/resources/MessageHeader-EjemploMessageHeaderAtender.json ==
 == fsh-generated/resources/MessageHeader-EjemploMessageHeaderPriorizar.json ==
 == fsh-generated/resources/MessageHeader-EjemploMessageHeaderReferencia.json ==
+ERROR: MessageHeader/EjemploMessageHeaderReferencia: MessageHeader.focus[0]: This element does not match any known slice  defined in the profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE|0.1.7 and slicing is CLOSED: MessageHeader.focus[0]: Does not match slice 'ServiceRequestLE' (discriminator: resolve().conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE')), MessageHeader.focus[0]: Details for MessageHeader matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE|0.1.7, MessageHeader.focus[0]: Does not match slice 'AppointmentAgendarLE' (discriminator: resolve().conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE')), MessageHeader.focus[0]: Details for MessageHeader matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE|0.1.7, MessageHeader.focus[0]: Does not match slice 'EncounterAtenderLE' (discriminator: resolve().conformsTo('https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE')), MessageHeader.focus[0]: Details for MessageHeader matching against profile https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE|0.1.7
+ERROR: MessageHeader/EjemploMessageHeaderReferencia: MessageHeader: Slice 'MessageHeader.focus:ServiceRequestLE': a matching slice is required, but not found (from https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE|0.1.7). Note that other slices are allowed in addition to this required slice
 == fsh-generated/resources/MessageHeader-EjemploMessageHeaderRevisar.json ==
 == fsh-generated/resources/MessageHeader-EjemploMessageHeaderTerminar.json ==
 == fsh-generated/resources/Observation-EjemploObservation.json ==
@@ -506,8 +515,8 @@ WARNING: Practitioner/EjemploPractitionerTerminar: Practitioner.identifier[1].ty
 == fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleTerminar.json ==
 == fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseAtenderLE.json ==
 INFORMATION: QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
-== fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseInicioLE.json ==
-INFORMATION: QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
+== fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseIniciarLE.json ==
+INFORMATION: QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequest.json ==
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequestAgendar.json ==
 WARNING: ServiceRequest/EjemploServiceRequestAgendar: ServiceRequest.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
@@ -522,13 +531,14 @@ WARNING: ServiceRequest/EjemploServiceRequestPriorizar: ServiceRequest.identifie
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequestReferenciada.json ==
 WARNING: ServiceRequest/EjemploServiceRequestReferenciada: ServiceRequest.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
 WARNING: ServiceRequest/EjemploServiceRequestReferenciada: ServiceRequest.identifier[0].type.coding[0]: ValueSet 'http://terminology.cens.cl/CodeSystem/listaespera' not found
+ERROR: ServiceRequest/EjemploServiceRequestReferenciada: ServiceRequest.code: None of the codings provided are in the value set 'Servicio Requerido' (https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSServicioRequerido|0.1.7), and a coding from this value set is required) (codes = http://snomed.info/sct#183519002)
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequestRevisar.json ==
 WARNING: ServiceRequest/EjemploServiceRequestRevisar: ServiceRequest.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
 WARNING: ServiceRequest/EjemploServiceRequestRevisar: ServiceRequest.identifier[0].type.coding[0]: ValueSet 'http://terminology.cens.cl/CodeSystem/listaespera' not found
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequestTerminar.json ==
 WARNING: ServiceRequest/EjemploServiceRequestTerminar: ServiceRequest.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
 WARNING: ServiceRequest/EjemploServiceRequestTerminar: ServiceRequest.identifier[0].type.coding[0]: ValueSet 'http://terminology.cens.cl/CodeSystem/listaespera' not found
-== fsh-generated/resources/StructureDefinition-AllergyIntoleranceInicioLE.json ==
+== fsh-generated/resources/StructureDefinition-AllergyIntoleranceIniciarLE.json ==
 == fsh-generated/resources/StructureDefinition-AppointmentAgendarLE.json ==
 == fsh-generated/resources/StructureDefinition-BundleAgendarLE.json ==
 == fsh-generated/resources/StructureDefinition-BundleAtenderLE.json ==
@@ -538,22 +548,22 @@ WARNING: ServiceRequest/EjemploServiceRequestTerminar: ServiceRequest.identifier
 == fsh-generated/resources/StructureDefinition-BundleRevisarLE.json ==
 == fsh-generated/resources/StructureDefinition-BundleTerminarLE.json ==
 == fsh-generated/resources/StructureDefinition-CarePlanAtenderLE.json ==
-== fsh-generated/resources/StructureDefinition-ConditionInicioDiagnosticoLE.json ==
-== fsh-generated/resources/StructureDefinition-ConditionInicioGesLE.json ==
+== fsh-generated/resources/StructureDefinition-ConditionIniciarDiagnosticoLE.json ==
+== fsh-generated/resources/StructureDefinition-ConditionIniciarGesLE.json ==
 == fsh-generated/resources/StructureDefinition-ConsecuenciaAtencionCodigo.json ==
 WARNING: StructureDefinition/ConsecuenciaAtencionCodigo: StructureDefinition.context[0]: Review the extension type for ConsecuenciaAtencionCodigo: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-Contactado.json ==
 WARNING: StructureDefinition/Contactado: StructureDefinition.context[0]: Review the extension type for Contactado: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-== fsh-generated/resources/StructureDefinition-CoverageInicioLE.json ==
+== fsh-generated/resources/StructureDefinition-CoverageIniciarLE.json ==
 == fsh-generated/resources/StructureDefinition-DigitoVerificador.json ==
 WARNING: StructureDefinition/DigitoVerificador: StructureDefinition.context[0]: Review the extension type for DigitoVerificador: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-DocAcreditacionCuidadorCodigoLE.json ==
 WARNING: StructureDefinition/DocAcreditacionCuidadorCodigoLE: StructureDefinition.context[0]: Review the extension type for DocAcreditacionCuidadorCodigoLE: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocAcreditacionCuidadorCodigoLE'): The Implementation Guide contains no examples for this extension
-== fsh-generated/resources/StructureDefinition-DocumentReferenceInicioLE.json ==
+== fsh-generated/resources/StructureDefinition-DocumentReferenceIniciarLE.json ==
 == fsh-generated/resources/StructureDefinition-EncounterAtenderLE.json ==
-== fsh-generated/resources/StructureDefinition-EncounterInicioLE.json ==
+== fsh-generated/resources/StructureDefinition-EncounterIniciarLE.json ==
 == fsh-generated/resources/StructureDefinition-EspecialidadMedicaDestinoCodigo.json ==
 WARNING: StructureDefinition/EspecialidadMedicaDestinoCodigo: StructureDefinition.context[0]: Review the extension type for EspecialidadMedicaDestinoCodigo: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-EstadoInterconsultaCodigoLE.json ==
@@ -600,14 +610,14 @@ WARNING: StructureDefinition/MotivoCierreInterconsulta: StructureDefinition.cont
 WARNING: StructureDefinition/MotivoNoPertinenciaCodigo: StructureDefinition.context[0]: Review the extension type for MotivoNoPertinenciaCodigo: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinenciaCodigo'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ObservationAtenderLE.json ==
-== fsh-generated/resources/StructureDefinition-ObservationInicioCuidadorLE.json ==
-WARNING: StructureDefinition/ObservationInicioCuidadorLE: StructureDefinition.snapshot.element[12].short: value should not start or finish with whitespace 'Estado de la obseravación, por defecto 'final' '
-WARNING: StructureDefinition/ObservationInicioCuidadorLE: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace 'Estado de la obseravación, por defecto 'final' '
-== fsh-generated/resources/StructureDefinition-ObservationInicioDiscapacidadLE.json ==
-WARNING: StructureDefinition/ObservationInicioDiscapacidadLE: StructureDefinition.snapshot.element[13].short: value should not start or finish with whitespace 'Estado de la obseravación, por defecto 'final' '
-WARNING: StructureDefinition/ObservationInicioDiscapacidadLE: StructureDefinition.differential.element[2].short: value should not start or finish with whitespace 'Estado de la obseravación, por defecto 'final' '
-== fsh-generated/resources/StructureDefinition-ObservationInicioIndiceComorbilidadLE.json ==
-== fsh-generated/resources/StructureDefinition-ObservationInicioLE.json ==
+== fsh-generated/resources/StructureDefinition-ObservationIniciarCuidadorLE.json ==
+WARNING: StructureDefinition/ObservationIniciarCuidadorLE: StructureDefinition.snapshot.element[12].short: value should not start or finish with whitespace 'Estado de la obseravación, por defecto 'final' '
+WARNING: StructureDefinition/ObservationIniciarCuidadorLE: StructureDefinition.differential.element[0].short: value should not start or finish with whitespace 'Estado de la obseravación, por defecto 'final' '
+== fsh-generated/resources/StructureDefinition-ObservationIniciarDiscapacidadLE.json ==
+WARNING: StructureDefinition/ObservationIniciarDiscapacidadLE: StructureDefinition.snapshot.element[13].short: value should not start or finish with whitespace 'Estado de la obseravación, por defecto 'final' '
+WARNING: StructureDefinition/ObservationIniciarDiscapacidadLE: StructureDefinition.differential.element[2].short: value should not start or finish with whitespace 'Estado de la obseravación, por defecto 'final' '
+== fsh-generated/resources/StructureDefinition-ObservationIniciarIndiceComorbilidadLE.json ==
+== fsh-generated/resources/StructureDefinition-ObservationIniciarLE.json ==
 == fsh-generated/resources/StructureDefinition-OrganizationLE.json ==
 == fsh-generated/resources/StructureDefinition-OrigenInterconsulta.json ==
 WARNING: StructureDefinition/OrigenInterconsulta: StructureDefinition.context[0]: Review the extension type for OrigenInterconsulta: extensions should not have a context of Element unless it's really intended that they can be used anywhere
@@ -629,7 +639,7 @@ WARNING: StructureDefinition/PueblosOriginarios: StructureDefinition.context[0]:
 == fsh-generated/resources/StructureDefinition-PueblosOriginariosPerteneciente.json ==
 WARNING: StructureDefinition/PueblosOriginariosPerteneciente: StructureDefinition.context[0]: Review the extension type for PueblosOriginariosPerteneciente: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-QuestionnaireResponseAtenderLE.json ==
-== fsh-generated/resources/StructureDefinition-QuestionnaireResponseInicioLE.json ==
+== fsh-generated/resources/StructureDefinition-QuestionnaireResponseIniciarLE.json ==
 == fsh-generated/resources/StructureDefinition-Religion.json ==
 WARNING: StructureDefinition/Religion: StructureDefinition.context[0]: Review the extension type for Religion: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-ServiceRequestExamenLE.json ==

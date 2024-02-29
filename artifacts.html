@@ -112,7 +112,7 @@
         <a href="eventos_interoperabilidad_CNE.html">Eventos Interoperabilidad CNE</a>
       </li>
       <li>
-        <a href="rol_de_actores_interoperabilidad_CNE.html">Rol de Actores Interoperabilidad CNE</a>
+        <a href="rol_de_actores.html">Rol de Actores</a>
       </li>
       <li>
         <a href="historias_de_usuario_segun_rol.html">Historias de Usuario según rol</a>
@@ -146,6 +146,9 @@
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="historial_de_cambios.html">Historial de Cambios</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -222,8 +225,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AllergyIntoleranceInicioLE.html"
-                  title="StructureDefinition/AllergyIntoleranceInicioLE">AllergyIntolerance Iniciar LE</a>
+               <a href="StructureDefinition-AllergyIntoleranceIniciarLE.html"
+                  title="StructureDefinition/AllergyIntoleranceIniciarLE">AllergyIntolerance Iniciar LE</a>
             </td>
             <td>
 <p>AllergyIntolerance Iniciar LE</p>
@@ -307,13 +310,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/CarePlanAtenderLE">CarePlan Atender LE</a>
             </td>
             <td>
-<p>CarePlan Atender LE</p>
+<p>CarePlan Atender LE es el recurso utilizado para representar las indicaciones entregadas por el profesional como resultado de la atención.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ConditionInicioDiagnosticoLE.html"
-                  title="StructureDefinition/ConditionInicioDiagnosticoLE">Condition Iniciar Diagnostico LE</a>
+               <a href="StructureDefinition-ConditionIniciarGesLE.html"
+                  title="StructureDefinition/ConditionIniciarGesLE">Condition GES</a>
+            </td>
+            <td>
+<p>Condition GES</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ConditionIniciarDiagnosticoLE.html"
+                  title="StructureDefinition/ConditionIniciarDiagnosticoLE">Condition Iniciar Diagnostico LE</a>
             </td>
             <td>
 <p>Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta.</p>
@@ -321,8 +333,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-CoverageInicioLE.html"
-                  title="StructureDefinition/CoverageInicioLE">Coverage Iniciar LE</a>
+               <a href="StructureDefinition-CoverageIniciarLE.html"
+                  title="StructureDefinition/CoverageIniciarLE">Coverage Iniciar LE</a>
             </td>
             <td>
 <p>Coverage Iniciar LE, recurso que permite saber la previsión de un paciente</p>
@@ -330,8 +342,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-DocumentReferenceInicioLE.html"
-                  title="StructureDefinition/DocumentReferenceInicioLE">DocumentReference Iniciar LE</a>
+               <a href="StructureDefinition-DocumentReferenceIniciarLE.html"
+                  title="StructureDefinition/DocumentReferenceIniciarLE">DocumentReference Iniciar LE</a>
             </td>
             <td>
 <p>DocumentReference Iniciar LE</p>
@@ -348,8 +360,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-EncounterInicioLE.html"
-                  title="StructureDefinition/EncounterInicioLE">Encounter Iniciar LE</a>
+               <a href="StructureDefinition-EncounterIniciarLE.html"
+                  title="StructureDefinition/EncounterIniciarLE">Encounter Iniciar LE</a>
             </td>
             <td>
 <p>Encounter Iniciar LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta.</p>
@@ -375,8 +387,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ObservationInicioCuidadorLE.html"
-                  title="StructureDefinition/ObservationInicioCuidadorLE">Observation Iniciar Cuidador LE</a>
+               <a href="StructureDefinition-ObservationIniciarCuidadorLE.html"
+                  title="StructureDefinition/ObservationIniciarCuidadorLE">Observation Iniciar Cuidador LE</a>
             </td>
             <td>
 <p>Observation Iniciar, para describir si un paciente necesita cuidador</p>
@@ -384,8 +396,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ObservationInicioIndiceComorbilidadLE.html"
-                  title="StructureDefinition/ObservationInicioIndiceComorbilidadLE">Observation Iniciar Indice Comorbilidad LE</a>
+               <a href="StructureDefinition-ObservationIniciarDiscapacidadLE.html"
+                  title="StructureDefinition/ObservationIniciarDiscapacidadLE">Observation Iniciar Discapacidad LE</a>
+            </td>
+            <td>
+<p>Observation Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html"
+                  title="StructureDefinition/ObservationIniciarIndiceComorbilidadLE">Observation Iniciar Indice Comorbilidad LE</a>
             </td>
             <td>
 <p>Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente</p>
@@ -393,20 +414,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ObservationInicioLE.html"
-                  title="StructureDefinition/ObservationInicioLE">Observation Iniciar LE</a>
+               <a href="StructureDefinition-ObservationIniciarLE.html"
+                  title="StructureDefinition/ObservationIniciarLE">Observation Iniciar LE</a>
             </td>
             <td>
 <p>Observation Iniciar LE, recurso que permite agregar los examenes en el evento iniciar.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ObservationInicioDiscapacidadLE.html"
-                  title="StructureDefinition/ObservationInicioDiscapacidadLE">Observation Inicio Discapacidad LE</a>
-            </td>
-            <td>
-<p>Observation Inicio Discapacidad LE, para describir si un paciente presenta discapacidad</p>
 </td>
          </tr>
          <tr>
@@ -415,7 +427,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/OrganizationLE">Organization LE</a>
             </td>
             <td>
-<p>Organization LE según <a href="https://repositoriodeis.minsal.cl/DatosAbiertos/Establecimientos_ChileDEIS_MINSAL%2021-04-2023.xlsx">Códigos DEIS del establecimientos</a></p>
+<p>Organization LE según <a href="https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes">Códigos DEIS del establecimientos</a></p>
 </td>
          </tr>
          <tr>
@@ -425,15 +437,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Paciente definido para el Registro Maestro de Pacientes</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ConditionInicioGesLE.html"
-                  title="StructureDefinition/ConditionInicioGesLE">Patología GES (número)</a>
-            </td>
-            <td>
-<p>Patología GES (número)</p>
 </td>
          </tr>
          <tr>
@@ -474,8 +477,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-QuestionnaireResponseInicioLE.html"
-                  title="StructureDefinition/QuestionnaireResponseInicioLE">QuestionnaireResponse Iniciar Motivo de la Derivación LE</a>
+               <a href="StructureDefinition-QuestionnaireResponseIniciarLE.html"
+                  title="StructureDefinition/QuestionnaireResponseIniciarLE">QuestionnaireResponse Iniciar Motivo de la Derivación LE</a>
             </td>
             <td>
 <p>QuestionnaireResponse Iniciar para Motivo de Derivación LE</p>
@@ -1079,10 +1082,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-VSPractitionerTipoRolLE.html"
-                  title="ValueSet/VSPractitionerTipoRolLE">Rol de médicos</a>
+                  title="ValueSet/VSPractitionerTipoRolLE">Rol de profesionales</a>
             </td>
             <td>
-<p>Rol de médicos(Practitioner) en algún evento, durante la intercosulta.</p>
+<p>Rol de profesionales(Practitioner) en algún evento, durante la intercosulta.</p>
 </td>
          </tr>
          <tr>
@@ -1380,7 +1383,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-CSPractitionerTipoRolLE.html"
-                  title="CodeSystem/CSPractitionerTipoRolLE">Rol de médicos</a>
+                  title="CodeSystem/CSPractitionerTipoRolLE">Rol de profesionales</a>
             </td>
             <td>
 <p>CodeSystem con códigos definidos para representar cada rol de profesional o funcionario administrativo dentro de la interconsulta</p>
@@ -1519,8 +1522,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Bundle-EjemploBundleInicio.html"
-                  title="Bundle/EjemploBundleInicio">Bundle Evento Iniciar</a>
+               <a href="Bundle-EjemploBundleIniciar.html"
+                  title="Bundle/EjemploBundleIniciar">Bundle Evento Iniciar</a>
             </td>
             <td>
 <p>Bundle Evento Iniciar</p>
@@ -1537,8 +1540,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Bundle-EjemploBundleReferencia.html"
-                  title="Bundle/EjemploBundleReferencia">Bundle Evento Referenciar</a>
+               <a href="Bundle-EjemploBundleReferenciar.html"
+                  title="Bundle/EjemploBundleReferenciar">Bundle Evento Referenciar</a>
             </td>
             <td>
 <p>Bundle Evento Referenciar</p>
@@ -1994,8 +1997,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="QuestionnaireResponse-EjemploQuestionnaireResponseInicioLE.html"
-                  title="QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE">QuestionnaireResponse Evento Iniciar Motivo derivación</a>
+               <a href="QuestionnaireResponse-EjemploQuestionnaireResponseIniciarLE.html"
+                  title="QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE">QuestionnaireResponse Evento Iniciar Motivo derivación</a>
             </td>
             <td>
 <p>QuestionnaireResponse Evento Iniciar Motivo derivación</p>
@@ -2099,7 +2102,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 21, 2024 16:19+0000">2024-02-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 29, 2024 18:01+0000">2024-02-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
