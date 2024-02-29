@@ -112,7 +112,7 @@
         <a href="eventos_interoperabilidad_CNE.html">Eventos Interoperabilidad CNE</a>
       </li>
       <li>
-        <a href="rol_de_actores_interoperabilidad_CNE.html">Rol de Actores Interoperabilidad CNE</a>
+        <a href="rol_de_actores.html">Rol de Actores</a>
       </li>
       <li>
         <a href="historias_de_usuario_segun_rol.html">Historias de Usuario según rol</a>
@@ -146,6 +146,9 @@
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="historial_de_cambios.html">Historial de Cambios</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -210,7 +213,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2024-02-21
+            as of 2024-02-29
           
         
       </td>
@@ -244,18 +247,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="alcance">Alcance</h3>
 
 <p>Esta guía de implementación aborda el proceso de solicitud de interconsulta (SIC), para
-consulta nueva de especialidad desde el nivel primario de salud (APS) al nivel secundario,
+consulta nueva de especialidad No GES desde el nivel primario de salud (APS) al nivel secundario,
 mediante la plataforma interoperable de Tiempos de Espera.
 Para representar este proceso se definen 7 eventos, los cuáles son:</p>
 
 <ul>
-  <li>Iniciar: Generar SIC en box de APS</li>
-  <li>Referenciar: Asignar destino desde la APS</li>
-  <li>Revisar: Revisar la pertinencia</li>
-  <li>Priorizar: Asignar la prioridad</li>
-  <li>Agendar: Agendar la cita</li>
-  <li>Atender: consulta con el especialista</li>
-  <li>Terminar: salida de la Lista de Espera</li>
+  <li>Iniciar: Generación de SIC en box de APS</li>
+  <li>Referenciar: Asignacion de destino desde la APS</li>
+  <li>Revisar: Revisión de la pertinencia</li>
+  <li>Priorizar: Asignación o revisión de la prioridad</li>
+  <li>Agendar: Agendamiento de la cita</li>
+  <li>Atender: Atención en consulta con el especialista</li>
+  <li>Terminar: Egreso de la Lista de Espera</li>
 </ul>
 
 <h3 id="introducción">Introducción</h3>
@@ -264,12 +267,10 @@ Para representar este proceso se definen 7 eventos, los cuáles son:</p>
 
 <p>El sistema de salud en Chile se estructura en niveles (primario, secundario y 
   terciario), siendo el nivel primario el con mayor despliegue en el territorio, 
-  con atenciones de menor
-  complejidad y la puerta de entrada a todas las atenciones de salud en la red
-  pública de establecimientos. Para optar a una atención de especialidad, las 
-  personas deben ser
-  derivadas desde la atención primaria a un centro de mayor complejidad, teniendo
-  que esperar para recibir esta atención en el nivel primario o secundario.</p>
+  con atenciones de menor complejidad y la puerta de entrada a todas las atenciones de salud 
+  en la red pública de establecimientos. Para optar a una atención de especialidad, 
+  las personas deben ser derivadas desde la atención primaria a un centro de mayor complejidad, 
+  teniendo que esperar para recibir esta atención en el nivel secundario o terciario.</p>
 
 <p>Las personas y tiempos que deben esperar para una atención de salud han sido y 
   son una preocupación para todo el sistema sanitario.</p>
@@ -291,19 +292,18 @@ Para representar este proceso se definen 7 eventos, los cuáles son:</p>
   establecimientos de salud involucrados y el nivel central para la toma de 
   decisiones y mejor gestión de los recursos.</p>
 
-<p>Este proyecto se ejecutó por un equipo multidisciplinario con profesionales de 
-  DEIS, DIGERA, DIVAP y la Unidad de Interoperabilidad de DTIC, utilizando una 
-  metodología para el re-diseño del proceso, optimizado y centrado en el paciente
-  y su implementación bajo estándares internacionales de interoperabilidad.</p>
+<p>Este proyecto fue ejecutado por un equipo multidisciplinario del Ministerio de Salud, con la participación de profesionales del Departamento de Estadísticas e Información en Salud (DEIS), la División de Gestión de la Red Asistencial (DIGERA), la División de Atención Primaria (DIVAP) y la Unidad de Interoperabilidad del Departamento de Tecnologías de la Información y Comunicaciones (DTIC), con el apoyo del Centro Nacional de Sistemas de Información en Salud (CENS).
+  Se ha utilizado una metodología para el re-diseño del proceso, optimizándolo y centrándolo en el paciente y se ha implementado bajo el uso estándares internacionales de interoperabilidad.</p>
 
 <h4 id="objetivos-del-proyecto-de-tiempos-de-espera-interoperables">Objetivos del Proyecto de Tiempos de Espera Interoperables</h4>
 
 <h5 id="general">General</h5>
 
-<p>Generar un sistema seguro e interoperable de datos clínicos para soportar la 
-  gestión (registro, transferencia, análisis, etc.) de la información, fidedigna 
-  y de calidad, entregada a través de una plataforma de visualización del estado 
-  de nueva consulta de especialidad para pacientes.</p>
+<p>Desarrollar un sistema seguro e interoperable de datos clínicos que respalde la gestión de información, 
+  incluyendo su registro, transferencia y análisis. Dicha información es entregada a través 
+  de una plataforma que facilite su acceso de manera precisa y de calidad, 
+  en el contexto de las solicitudes de nueva consulta de especialidad 
+  No GES para pacientes de la red asistencial.</p>
 
 <h5 id="específicos">Específicos</h5>
 
@@ -368,7 +368,7 @@ Para representar este proceso se definen 7 eventos, los cuáles son:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 21, 2024 16:19+0000">2024-02-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 29, 2024 18:01+0000">2024-02-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

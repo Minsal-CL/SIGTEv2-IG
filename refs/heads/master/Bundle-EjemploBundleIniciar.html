@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Bundle Evento Iniciar - Tiempos de Espera Interoperable v0.1.7</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7chile.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async>
+</script>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9.142"}
+    h3,h4,h5,h6{--heading-prefix:"9.142"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+    <a id="MINSAL-logo" no-external="true" href="http://minsal.cl">
+        
+        <img height="71" alt="Visitar sitio MINSAL Chile" src="assets/images/minsal-logo.svg" />
+    </a>
+</div>
+<div id="family-nav">
+    <a id="hl7chile-logo" no-external="true" href="http://hl7chile.cl"><img height="71" alt="Visitar HL7 Chile" src="assets/images/hl7chile-logo.svg" /> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
+            <br/>
+            <span style="display:inline-block;">0.1.7 - draft
+
+
+
+  <img alt="Chile flag" src="assets/images/chl.svg" height="16" title="Chile"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificación de Negocio
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="eventos_interoperabilidad_CNE.html">Eventos Interoperabilidad CNE</a>
+      </li>
+      <li>
+        <a href="rol_de_actores.html">Rol de Actores</a>
+      </li>
+      <li>
+        <a href="historias_de_usuario_segun_rol.html">Historias de Usuario según rol</a>
+      </li>
+      <li>
+        <a href="diccionario_de_datos.html">Diccionario de datos</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificaciones Técnicas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Eventos.html">Eventos</a>
+      </li>
+      <li>
+        <a href="Transacciones.html">Transacciones</a>
+      </li>
+      <li>
+        <a href="artifacts.html#structures-resource-profiles">Perfiles</a>
+      </li>
+      <li>
+        <a href="Mensajeria.html">Mensajería</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html#terminology-value-sets">Terminologías</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="historial_de_cambios.html">Historial de Cambios</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Bundle Evento Iniciar</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.7. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-EjemploBundleIniciar.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-EjemploBundleIniciar.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-EjemploBundleIniciar.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: Bundle Evento Iniciar</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><p>Bundle EjemploBundleIniciar of type message</p><a name="http-//acme.com/ehr/fhir/MessageHeader/EjemploMessageHeader"> </a><a name="MessageHeader_EjemploMessageHeader"> </a><hr/><p>Entry 1 - fullUrl = http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeader</p><p>Resource MessageHeader:</p><blockquote><p><p><b>Generated Narrative: MessageHeader</b><a name="EjemploMessageHeader"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;EjemploMessageHeader&quot; Updated &quot;2023-01-20 14:12:10+0000&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader LE</a></p></div><p><b>event</b>: Iniciar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code iniciar = 'Iniciar', stated as 'null')</p><p><b>author</b>: <a href="#PractitionerRole_EjemploPractitionerRole">See above (PractitionerRole/EjemploPractitionerRole: Ernesto Sepulveda Manriquez en su rol de Iniciador)</a></p><h3>Sources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Software</b></td><td><b>Endpoint</b></td></tr><tr><td style="display: none">*</td><td>Software San Juan Dios (SSJD)</td><td><a href="http://link-to-sending.cl">http://link-to-sending.cl</a></td></tr></table><p><b>focus</b>: <a href="#ServiceRequest_EjemploServiceRequest">See above (ServiceRequest/EjemploServiceRequest)</a></p></p></blockquote><a name="http-//acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequest"> </a><a name="ServiceRequest_EjemploServiceRequest"> </a><hr/><p>Entry 2 - fullUrl = http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequest</p><p>Resource ServiceRequest:</p><blockquote><p><p><b>Generated Narrative: ServiceRequest</b><a name="EjemploServiceRequest"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource ServiceRequest &quot;EjemploServiceRequest&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequest LE</a></p></div><p><b>Estado Interconsulta Codigo</b>: A la espera de referencia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSEstadoInterconsulta.html">Estado Interconsulta</a>#1)</span></p><p><b>ExtStringFundamentoPriorizacion</b>: FundamentoPriorizacion</p><p><b>SospechaPatologiaGes</b>: true</p><p><b>ExtBool ResolutividadAPS</b>: true</p><p><b>ExtBool Alergia</b>: false</p><p><b>Origen Interconsulta</b>: APS <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSinterconsulta.html">Interconsulta</a>#1)</span></p><p><b>status</b>: DRAFT</p><p><b>intent</b>: ORDER</p><p><b>priority</b>: URGENT</p><p><b>subject</b>: <a href="#Patient_EjemploPatient">See above (Patient/EjemploPatient: Anibal Diaz Cortés)</a></p><p><b>encounter</b>: <a href="#Encounter_EjemploEncounter">See above (Encounter/EjemploEncounter: Referencia a Encounter)</a></p><p><b>authoredOn</b>: 2022-10-25 09:10:20+0000</p><p><b>performer</b>: <a href="#PractitionerRole_EjemploPractitionerRole">See above (PractitionerRole/EjemploPractitionerRole)</a></p><p><b>supportingInfo</b>: </p><ul><li>Referencia a Diagnostico Sospecha</li><li>Referencia a la condición que especifica si es sospecha de GES</li><li>Referencia a los tipos de alergia</li><li>Referencia al Indice de comorbilidad</li><li>Referencia a la observación que indica si el paciente es cuidador o no</li><li>Referencia a la observación de si el paciente presenta discapacidad</li><li>Referencia al documento que acredita que es cuidador</li><li>Referencia a Prevision del Paciente</li><li>Referencia al Motivo de Derivacion</li></ul></p></blockquote><a name="http-//acme.com/ehr/fhir/Encounter/EjemploEncounter"> </a><a name="Encounter_EjemploEncounter"> </a><hr/><p>Entry 3 - fullUrl = http://acme.com/ehr/fhir/Encounter/EjemploEncounter</p><p>Resource Encounter:</p><blockquote><p>Not done yet</p></blockquote><a name="http-//acme.com/ehr/fhir/Patient/EjemploPatient"> </a><a name="Patient_EjemploPatient"> </a><hr/><p>Entry 4 - fullUrl = http://acme.com/ehr/fhir/Patient/EjemploPatient</p><p>Resource Patient:</p><blockquote><p>Anibal Diaz Cortés(OFFICIAL) Male, DoB: 1955-10-20 ( Run: 15999999)</p></blockquote><a name="http-//acme.com/ehr/fhir/Condition/EjemploCondition"> </a><a name="Condition_EjemploCondition"> </a><hr/><p>Entry 5 - fullUrl = http://acme.com/ehr/fhir/Condition/EjemploCondition</p><p>Resource Condition:</p><blockquote><p><p><b>Generated Narrative: Condition</b><a name="EjemploCondition"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;EjemploCondition&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ConditionIniciarDiagnosticoLE.html">Condition Iniciar Diagnostico LE</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: diagnostico <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>severity</b>: Midgrade <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#6736007)</span></p><p><b>code</b>: Posible insuficiencia cardíaca, requiere evaluación cardiologo <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (uno#394887005 &quot;sospecha de insuficiencia cardíaca (situación)&quot;)</span></p><p><b>subject</b>: <a href="#Patient_EjemploPatient">See above (Patient/EjemploPatient: Anibal Diaz Cortés)</a></p></p></blockquote><a name="http-//acme.com/ehr/fhir/Observation/EjemploObservation2"> </a><a name="Observation_EjemploObservation2"> </a><hr/><p>Entry 6 - fullUrl = http://acme.com/ehr/fhir/Observation/EjemploObservation2</p><p>Resource Observation:</p><blockquote><p><p><b>Generated Narrative: Observation</b><a name="EjemploObservation2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;EjemploObservation2&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html">Observation Iniciar Indice Comorbilidad LE</a></p></div><p><b>status</b>: FINAL</p><p><b>category</b>: Indice Comorbilidad <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html">Observation Category Codes</a>#vital-signs)</span></p><p><b>code</b>: Riesgo Leve, 1 condición crónica <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSIndicecomorbilidad.html">Indice Comorbilidad</a>#G1)</span></p><p><b>subject</b>: <a href="#Patient_EjemploPatient">See above (Patient/EjemploPatient: Anibal Diaz Cortés)</a></p></p></blockquote><a name="http-//acme.com/ehr/fhir/Condition/EjemploConditionGES"> </a><a name="Condition_EjemploConditionGES"> </a><hr/><p>Entry 7 - fullUrl = http://acme.com/ehr/fhir/Condition/EjemploConditionGES</p><p>Resource Condition:</p><blockquote><p><p><b>Generated Narrative: Condition</b><a name="EjemploConditionGES"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;EjemploConditionGES&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ConditionIniciarGesLE.html">Condition GES</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>category</b>: sospechaGes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html">Condition Category Codes</a>#problem-list-item)</span></p><p><b>code</b>: SospechaPatologiaGesGlosa <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSSospechaPatologiaGes.html">Sospecha Patologia Ges</a>#A000)</span></p><p><b>subject</b>: <a href="#Patient_EjemploPatient">See above (Patient/EjemploPatient: Anibal Diaz Cortés)</a></p></p></blockquote><a name="http-//acme.com/ehr/fhir/Observation/EjemploObservation"> </a><a name="Observation_EjemploObservation"> </a><hr/><p>Entry 8 - fullUrl = http://acme.com/ehr/fhir/Observation/EjemploObservation</p><p>Resource Observation:</p><blockquote><p><p><b>Generated Narrative: Observation</b><a name="EjemploObservation"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;EjemploObservation&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationIniciarLE.html">Observation Iniciar LE</a></p></div><p><b>status</b>: REGISTERED</p><p><b>code</b>: examenes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>value</b>: Exámen que se realizó</p></p></blockquote><a name="http-//acme.com/ehr/fhir/Observation/EjemploObservationCuidador"> </a><a name="Observation_EjemploObservationCuidador"> </a><hr/><p>Entry 9 - fullUrl = http://acme.com/ehr/fhir/Observation/EjemploObservationCuidador</p><p>Resource Observation:</p><blockquote><p><p><b>Generated Narrative: Observation</b><a name="EjemploObservationCuidador"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;EjemploObservationCuidador&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationIniciarCuidadorLE.html">Observation Iniciar Cuidador LE</a></p></div><p><b>status</b>: FINAL</p><p><b>code</b>: Caregiver for person at-risk <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#95385-1)</span></p><p><b>subject</b>: <a href="#Patient_EjemploPatient">See above (Patient/EjemploPatient: Anibal Diaz Cortés)</a></p></p></blockquote><a name="http-//acme.com/ehr/fhir/Observation/EjemploObservationDiscapacidad"> </a><a name="Observation_EjemploObservationDiscapacidad"> </a><hr/><p>Entry 10 - fullUrl = http://acme.com/ehr/fhir/Observation/EjemploObservationDiscapacidad</p><p>Resource Observation:</p><blockquote><p><p><b>Generated Narrative: Observation</b><a name="EjemploObservationDiscapacidad"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;EjemploObservationDiscapacidad&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ObservationIniciarDiscapacidadLE.html">Observation Iniciar Discapacidad LE</a></p></div><p><b>ExtBool PresentaDiscapacidad</b>: false</p><p><b>status</b>: FINAL</p><p><b>code</b>: Problem <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#75326-9)</span></p><p><b>subject</b>: <a href="#Patient_EjemploPatient">See above (Patient/EjemploPatient: Anibal Diaz Cortés)</a></p></p></blockquote><a name="http-//acme.com/ehr/fhir/AllergyIntolerance/EjemploAllergyIntolerance"> </a><a name="AllergyIntolerance_EjemploAllergyIntolerance"> </a><hr/><p>Entry 11 - fullUrl = http://acme.com/ehr/fhir/AllergyIntolerance/EjemploAllergyIntolerance</p><p>Resource AllergyIntolerance:</p><blockquote><p><p><b>Generated Narrative: AllergyIntolerance</b><a name="EjemploAllergyIntolerance"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource AllergyIntolerance &quot;EjemploAllergyIntolerance&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-AllergyIntoleranceIniciarLE.html">AllergyIntolerance Iniciar LE</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a>#active)</span></p><p><b>code</b>: Alergía a penicilina <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>patient</b>: <a href="#Patient_EjemploPatient">See above (Patient/EjemploPatient: Anibal Diaz Cortés)</a></p></p></blockquote><a name="http-//acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRole"> </a><a name="PractitionerRole_EjemploPractitionerRole"> </a><hr/><p>Entry 12 - fullUrl = http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRole</p><p>Resource PractitionerRole:</p><blockquote><p><p><b>Generated Narrative: PractitionerRole</b><a name="EjemploPractitionerRole"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource PractitionerRole &quot;EjemploPractitionerRole&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerRoleLE.html">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href="#Practitioner_EjemploPractitionerIniciar">See above (Practitioner/EjemploPractitionerIniciar: Ernesto Sepulveda Sierra)</a></p><p><b>organization</b>: <a href="#Organization_EjemploOrganization">See above (Organization/EjemploOrganization: Centro de Salud Familiar San Juan Dios)</a></p><p><b>code</b>: Iniciador <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPractitionerTipoRolLE.html">Rol de profesionales</a>#iniciador)</span></p></p></blockquote><a name="http-//acme.com/ehr/fhir/Practitioner/EjemploPractitionerIniciar"> </a><a name="Practitioner_EjemploPractitionerIniciar"> </a><hr/><p>Entry 13 - fullUrl = http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerIniciar</p><p>Resource Practitioner:</p><blockquote><p><p><b>Generated Narrative: Practitioner</b><a name="EjemploPractitionerIniciar"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Practitioner &quot;EjemploPractitionerIniciar&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PrestadorProfesionalLE.html">Prestador Profesional LE</a></p></div><p><b>Codigo de Identificación de países</b>: Chile <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html">Códigos de Países</a>#152)</span></p><p><b>identifier</b>: 1/32.333.333-3 (use: OFFICIAL), 2/123884 (use: OFFICIAL), 4/123884 (use: SECONDARY)</p><p><b>active</b>: true</p><p><b>name</b>: Ernesto Sepulveda (OFFICIAL)</p><p><b>telecom</b>: <a href="tel:+56982460152">+56982460152</a></p><p><b>gender</b>: FEMALE</p><p><b>birthDate</b>: 1982-08-24</p><blockquote><p><b>qualification</b></p><p><b>identifier</b>: esp</p><p><b>code</b>: Cirujano Cardiovascular <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSTituloProfesional.html">TituloProfesional</a>#1 &quot;MÉDICO CIRUJANO&quot;)</span></p><p><b>period</b>: 2023-01-01 --&gt; 2100-01-31</p></blockquote><blockquote><p><b>qualification</b></p><p><b>identifier</b>: subesp</p><p><b>code</b>: CardiologíaCardiotorácico <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSTituloProfesional.html">TituloProfesional</a>#1 &quot;MÉDICO CIRUJANO&quot;)</span></p><p><b>period</b>: 2024-01-01 --&gt; 2100-01-31</p></blockquote></p></blockquote><a name="http-//acme.com/ehr/fhir/Organization/EjemploOrganization"> </a><a name="Organization_EjemploOrganization"> </a><hr/><p>Entry 14 - fullUrl = http://acme.com/ehr/fhir/Organization/EjemploOrganization</p><p>Resource Organization:</p><blockquote><p><p><b>Generated Narrative: Organization</b><a name="EjemploOrganization"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;EjemploOrganization&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-OrganizationLE.html">Organization LE</a></p></div><p><b>identifier</b>: 116309/Centro de Salud Familiar San Juan Dios</p></p></blockquote><a name="http-//acme.com/ehr/fhir/DocumentReference/EjemploDocumentReference"> </a><a name="DocumentReference_EjemploDocumentReference"> </a><hr/><p>Entry 15 - fullUrl = http://acme.com/ehr/fhir/DocumentReference/EjemploDocumentReference</p><p>Resource DocumentReference:</p><blockquote><p><p><b>Generated Narrative: DocumentReference</b><a name="EjemploDocumentReference"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource DocumentReference &quot;EjemploDocumentReference&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-DocumentReferenceIniciarLE.html">DocumentReference Iniciar LE</a></p></div><p><b>status</b>: CURRENT</p><p><b>type</b>: Documento que acredita calidad de cuidador/a del Programa Red Local de Apoyos y Cuidados (MIDESOF) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSDocAcreditacionCuidador.html">Documento Acreditacion Cuidador</a>#1)</span></p><p><b>subject</b>: <a href="#Patient_EjemploPatient">See above (Patient/EjemploPatient: Anibal Diaz Cortés)</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style="display: none">*</td><td><a href="http://example.org/referencia">http://example.org/referencia</a></td><td>Documento de acreditación</td></tr></table></blockquote></p></blockquote><a name="http-//acme.com/ehr/fhir/Coverage/EjemploCoverage"> </a><a name="Coverage_EjemploCoverage"> </a><hr/><p>Entry 16 - fullUrl = http://acme.com/ehr/fhir/Coverage/EjemploCoverage</p><p>Resource Coverage:</p><blockquote><p><p><b>Generated Narrative: Coverage</b><a name="EjemploCoverage"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Coverage &quot;EjemploCoverage&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-CoverageIniciarLE.html">Coverage Iniciar LE</a></p></div><p><b>status</b>: ACTIVE</p><p><b>type</b>: health insurance plan policy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html">ActCode</a>#HIP)</span></p><p><b>beneficiary</b>: <a href="#Patient_EjemploPatient">See above (Patient/EjemploPatient: Anibal Diaz Cortés)</a></p><h3>Classes</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td style="display: none">*</td><td>FONASA Fondo Nacional de Salud. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-CSPrevisionCodigo.html">PrevisionCodigo</a>#1)</span></td><td>FONASA</td></tr></table></p></blockquote><a name="http-//acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE"> </a><a name="QuestionnaireResponse_EjemploQuestionnaireResponseIniciarLE"> </a><hr/><p>Entry 17 - fullUrl = http://acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE</p><p>Resource QuestionnaireResponse:</p><blockquote><p><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="qtree=EjemploQuestionnaireResponseIniciarLE"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The linkId for the item">LinkId</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the itemcan appear in the instance">Definition</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Answer</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" onLoad="fhirTableInit(this)" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireResponseRoot" class="hierarchy"/> EjemploQuestionnaireResponseIniciarLE</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">QuestionnaireResponse</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Item" class="hierarchy"/> MotivoDerivacion</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Motivo Derivación</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr><td colspan="4" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></p></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 29, 2024 18:01+0000">2024-02-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reporte QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interoperabilidad.minsal.cl/fhir/ig/tei"></a></a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/Minsal-CL/SIGTEv2-IG">Issues</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSd7qSIWFnPvkMfDEyCCOA_FIRo6uwYlrxXOFoIwcOocsDPS2A/viewform?usp=sf_link'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Observaciones';  // The feedback label is a string
+            
+
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(402066225).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+                  case "href":
+                    parameterValue = window.location.href;
+                    break;
+                  }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(872797498).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+                  case "href":
+                    parameterValue = window.location.href;
+                    break;
+                  }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(587453077).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'href';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+                  case "href":
+                    parameterValue = window.location.href;
+                    break;
+                  }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+            
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a/>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        }) 
+/* ]]> */
+      </script>  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

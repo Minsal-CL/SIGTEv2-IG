@@ -1,0 +1,1174 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Bundle Evento Iniciar - TTL Representation - Tiempos de Espera Interoperable v0.1.7</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7chile.css" rel="stylesheet" />
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async>
+</script>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"9.142"}
+    h3,h4,h5,h6{--heading-prefix:"9.142"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+    <a id="MINSAL-logo" no-external="true" href="http://minsal.cl">
+        
+        <img height="71" alt="Visitar sitio MINSAL Chile" src="assets/images/minsal-logo.svg" />
+    </a>
+</div>
+<div id="family-nav">
+    <a id="hl7chile-logo" no-external="true" href="http://hl7chile.cl"><img height="71" alt="Visitar HL7 Chile" src="assets/images/hl7chile-logo.svg" /> </a>
+</div>
+<!--
+<div id="hl7-search">
+  <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+</div>
+-->
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
+            <br/>
+            <span style="display:inline-block;">0.1.7 - draft
+
+
+
+  <img alt="Chile flag" src="assets/images/chl.svg" height="16" title="Chile"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificación de Negocio
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="eventos_interoperabilidad_CNE.html">Eventos Interoperabilidad CNE</a>
+      </li>
+      <li>
+        <a href="rol_de_actores.html">Rol de Actores</a>
+      </li>
+      <li>
+        <a href="historias_de_usuario_segun_rol.html">Historias de Usuario según rol</a>
+      </li>
+      <li>
+        <a href="diccionario_de_datos.html">Diccionario de datos</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Especificaciones Técnicas
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="Eventos.html">Eventos</a>
+      </li>
+      <li>
+        <a href="Transacciones.html">Transacciones</a>
+      </li>
+      <li>
+        <a href="artifacts.html#structures-resource-profiles">Perfiles</a>
+      </li>
+      <li>
+        <a href="Mensajeria.html">Mensajería</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html#terminology-value-sets">Terminologías</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="historial_de_cambios.html">Historial de Cambios</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Bundle Evento Iniciar</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.7. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Bundle-EjemploBundleIniciar.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-EjemploBundleIniciar.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-EjemploBundleIniciar.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Bundle Evento Iniciar - TTL Representation</h2>
+
+
+<p><a href="Bundle-EjemploBundleIniciar.ttl" no-download="true">Raw ttl</a> | <a href="Bundle-EjemploBundleIniciar.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix loinc: &lt;https://loinc.org/rdf/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix sct: &lt;http://snomed.info/id/&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Bundle ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploBundleIniciar&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">fhir:meta</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-01-20T14:12:10Z&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleIniciarLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleIniciarLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;message&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.timestamp">fhir:timestamp</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-02-09T17:15:22Z&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:entry</a> ( [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeader&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader">fhir:resource</a> &lt;http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeader&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequest&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest">fhir:resource</a> &lt;http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequest&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Encounter/EjemploEncounter&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/encounter.html#Encounter">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Encounter/EjemploEncounter&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Patient/EjemploPatient&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/patient.html#Patient">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Patient/EjemploPatient&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Condition/EjemploCondition&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Condition/EjemploCondition&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Observation/EjemploObservation2&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Observation/EjemploObservation2&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Condition/EjemploConditionGES&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/condition.html#Condition">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Condition/EjemploConditionGES&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Observation/EjemploObservation&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Observation/EjemploObservation&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Observation/EjemploObservationCuidador&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Observation/EjemploObservationCuidador&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Observation/EjemploObservationDiscapacidad&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Observation/EjemploObservationDiscapacidad&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/AllergyIntolerance/EjemploAllergyIntolerance&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance">fhir:resource</a> &lt;http://acme.com/ehr/fhir/AllergyIntolerance/EjemploAllergyIntolerance&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRole&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole">fhir:resource</a> &lt;http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRole&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerIniciar&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerIniciar&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Organization/EjemploOrganization&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/organization.html#Organization">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Organization/EjemploOrganization&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/DocumentReference/EjemploDocumentReference&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference">fhir:resource</a> &lt;http://acme.com/ehr/fhir/DocumentReference/EjemploDocumentReference&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/Coverage/EjemploCoverage&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/coverage.html#Coverage">fhir:resource</a> &lt;http://acme.com/ehr/fhir/Coverage/EjemploCoverage&gt; )
+  ] [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse">fhir:resource</a> &lt;http://acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE&gt; )
+  ] ) . # 
+
+&lt;http://acme.com/ehr/fhir/MessageHeader/EjemploMessageHeader&gt; <a href="http://hl7.org/fhir/R4/messageheader.html">a</a> fhir:MessageHeader ;
+  <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploMessageHeader&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.meta">fhir:meta</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.lastUpdated">fhir:lastUpdated</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#instant">fhir:v</a> &quot;2023-01-20T14:12:10Z&quot;^^xsd:dateTime ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: MessageHeader&lt;/b&gt;&lt;a name=\&quot;EjemploMessageHeader\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource MessageHeader &amp;quot;EjemploMessageHeader&amp;quot; Updated &amp;quot;2023-01-20 14:12:10+0000&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-MessageHeaderLE.html\&quot;&gt;MessageHeader LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: Iniciar (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE code iniciar = 'Iniciar', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;author&lt;/b&gt;: &lt;a href=\&quot;#PractitionerRole_EjemploPractitionerRole\&quot;&gt;See above (PractitionerRole/EjemploPractitionerRole: Ernesto Sepulveda Manriquez en su rol de Iniciador)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Software&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Software San Juan Dios (SSJD)&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://link-to-sending.cl\&quot;&gt;http://link-to-sending.cl&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;focus&lt;/b&gt;: &lt;a href=\&quot;#ServiceRequest_EjemploServiceRequest\&quot;&gt;See above (ServiceRequest/EjemploServiceRequest)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.event[x]">fhir:event</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding">a</a> fhir:Coding ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;iniciar&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.author">fhir:author</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PractitionerRole/EjemploPractitionerRole&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ernesto Sepulveda Manriquez en su rol de Iniciador&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.source">fhir:source</a> [
+<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.source.software">fhir:software</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Software San Juan Dios (SSJD)&quot; ] ;
+<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.source.endpoint">fhir:endpoint</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;http://link-to-sending.cl&quot;^^xsd:anyURI ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.focus">fhir:focus</a> ( [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ServiceRequest/EjemploServiceRequest&quot; ]
+  ] ) . # 
+
+&lt;http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequest&gt; <a href="http://hl7.org/fhir/R4/servicerequest.html">a</a> fhir:ServiceRequest ;
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploServiceRequest&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: ServiceRequest&lt;/b&gt;&lt;a name=\&quot;EjemploServiceRequest\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource ServiceRequest &amp;quot;EjemploServiceRequest&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ServiceRequestLE.html\&quot;&gt;ServiceRequest LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Estado Interconsulta Codigo&lt;/b&gt;: A la espera de referencia &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSEstadoInterconsulta.html\&quot;&gt;Estado Interconsulta&lt;/a&gt;#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;ExtStringFundamentoPriorizacion&lt;/b&gt;: FundamentoPriorizacion&lt;/p&gt;&lt;p&gt;&lt;b&gt;SospechaPatologiaGes&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;ExtBool ResolutividadAPS&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;ExtBool Alergia&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;Origen Interconsulta&lt;/b&gt;: APS &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSinterconsulta.html\&quot;&gt;Interconsulta&lt;/a&gt;#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: draft&lt;/p&gt;&lt;p&gt;&lt;b&gt;intent&lt;/b&gt;: order&lt;/p&gt;&lt;p&gt;&lt;b&gt;priority&lt;/b&gt;: urgent&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;encounter&lt;/b&gt;: &lt;a href=\&quot;#Encounter_EjemploEncounter\&quot;&gt;See above (Encounter/EjemploEncounter: Referencia a Encounter)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;authoredOn&lt;/b&gt;: 2022-10-25 09:10:20+0000&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;#PractitionerRole_EjemploPractitionerRole\&quot;&gt;See above (PractitionerRole/EjemploPractitionerRole)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonCode&lt;/b&gt;: Confirmación &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSDerivadoParaCodigo.html\&quot;&gt;Derivado Para&lt;/a&gt;#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;reasonReference&lt;/b&gt;: &lt;a href=\&quot;#Observation_EjemploObservation\&quot;&gt;See above (Observation/EjemploObservation: Referencia a Observacion del evento Iniciar)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;supportingInfo&lt;/b&gt;: &lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=\&quot;#Condition_EjemploCondition\&quot;&gt;See above (Condition/EjemploCondition: Referencia a Diagnostico Sospecha)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Condition_EjemploConditionGES\&quot;&gt;See above (Condition/EjemploConditionGES: Referencia a la condición que especifica si es sospecha de GES)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#AllergyIntolerance_EjemploAllergyIntolerance\&quot;&gt;See above (AllergyIntolerance/EjemploAllergyIntolerance: Referencia a los tipos de alergia)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation_EjemploObservation2\&quot;&gt;See above (Observation/EjemploObservation2: Referencia al Indice de comorbilidad)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation_EjemploObservationCuidador\&quot;&gt;See above (Observation/EjemploObservationCuidador: Referencia a la observación que indica si el paciente es cuidador o no)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Observation_EjemploObservationDiscapacidad\&quot;&gt;See above (Observation/EjemploObservationDiscapacidad: Referencia a la observación de si el paciente presenta discapacidad)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#DocumentReference_EjemploDocumentReference\&quot;&gt;See above (DocumentReference/EjemploDocumentReference: Referencia al documento que acredita que es cuidador)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#Coverage_EjemploCoverage\&quot;&gt;See above (Coverage/EjemploCoverage: Referencia a Prevision del Paciente)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=\&quot;#QuestionnaireResponse_EjemploQuestionnaireResponseIniciarLE\&quot;&gt;See above (QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE: Referencia al Motivo de Derivacion)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtStringFundamentoPriorizacion&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FundamentoPriorizacion&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SospechaPatologiaGes&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolResolutividadAPS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolAlergia&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrigenInterconsulta&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSinterconsulta&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.intent">fhir:intent</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;order&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.priority">fhir:priority</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;urgent&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.encounter">fhir:encounter</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Encounter/EjemploEncounter&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia a Encounter&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.authoredOn">fhir:authoredOn</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2022-10-25T09:10:20Z&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.performer">fhir:performer</a> ( [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;PractitionerRole/EjemploPractitionerRole&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.reasonCode">fhir:reasonCode</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.reasonReference">fhir:reasonReference</a> ( [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/EjemploObservation&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia a Observacion del evento Iniciar&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/servicerequest.html#ServiceRequest.supportingInfo">fhir:supportingInfo</a> ( [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition/EjemploCondition&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia a Diagnostico Sospecha&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition/EjemploConditionGES&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia a la condición que especifica si es sospecha de GES&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;AllergyIntolerance/EjemploAllergyIntolerance&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia a los tipos de alergia&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/EjemploObservation2&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia al Indice de comorbilidad&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/EjemploObservationCuidador&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia a la observación que indica si el paciente es cuidador o no&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Observation/EjemploObservationDiscapacidad&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia a la observación de si el paciente presenta discapacidad&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;DocumentReference/EjemploDocumentReference&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia al documento que acredita que es cuidador&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Coverage/EjemploCoverage&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia a Prevision del Paciente&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Referencia al Motivo de Derivacion&quot; ]
+  ] ) . # 
+
+&lt;http://acme.com/ehr/fhir/Encounter/EjemploEncounter&gt; <a href="http://hl7.org/fhir/R4/encounter.html">a</a> fhir:Encounter ;
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploEncounter&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Encounter&lt;/b&gt;&lt;a name=\&quot;EjemploEncounter\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Encounter &amp;quot;EjemploEncounter&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-EncounterIniciarLE.html\&quot;&gt;Encounter Iniciar LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Filler Identifier/1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: finished&lt;/p&gt;&lt;p&gt;&lt;b&gt;class&lt;/b&gt;: Presencial (Details: https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo code 1 = 'Presencial', stated as 'null')&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-10-25 09:00:00+0000 --&amp;gt; 2023-10-25 09:20:00+0000&lt;/p&gt;&lt;h3&gt;Diagnoses&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Condition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;#Condition_EjemploCondition\&quot;&gt;See above (Condition/EjemploCondition)&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v2-0203&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;FILL&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;finished&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.class">fhir:class</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.period">fhir:period</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-25T09:00:00Z&quot;^^xsd:dateTime ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-10-25T09:20:00Z&quot;^^xsd:dateTime ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis">fhir:diagnosis</a> ( [
+<a href="http://hl7.org/fhir/R4/encounter.html#Encounter.diagnosis.condition">fhir:condition</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Condition/EjemploCondition&quot; ]     ]
+  ] ) . # 
+
+&lt;http://acme.com/ehr/fhir/Patient/EjemploPatient&gt; <a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient ;
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;EjemploPatient&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Patient&lt;/b&gt;&lt;a name=\&quot;EjemploPatient\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Patient &amp;quot;EjemploPatient&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PatientLE.html\&quot;&gt;Patient LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Codigo de Identificación de países&lt;/b&gt;: Chile &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html\&quot;&gt;Códigos de Países&lt;/a&gt;#152)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;País de origen del paciente&lt;/b&gt;: Chile &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html\&quot;&gt;Códigos de Países&lt;/a&gt;#152)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Birth Place&lt;/b&gt;: Curicó&lt;/p&gt;&lt;p&gt;&lt;b&gt;PueblosOriginariosPerteneciente&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;Religión&lt;/b&gt;: Católica &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSReligion.html\&quot;&gt;Religion&lt;/a&gt;#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Sexo Biologico del paciente&lt;/b&gt;: Masculino &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CSSexoListadoDeis.html\&quot;&gt;Sexo Listado Deis&lt;/a&gt;#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Identidad De Genero&lt;/b&gt;: Masculino &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSIdentidaddeGenero.html\&quot;&gt;Identidad de Genero&lt;/a&gt;#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;PueblosAfrodescendiente&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;Pueblos Originarios&lt;/b&gt;: Mapuche &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-PueblosOriginariosCS.html\&quot;&gt;Pueblos Originarios de Chile&lt;/a&gt;#01)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: Run/15999999&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Anibal Diaz Cortés(OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: ph: 999888777(MOBILE)&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: male&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1955-10-20&lt;/p&gt;&lt;p&gt;&lt;b&gt;deceased&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;maritalStatus&lt;/b&gt;: Desconocido &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSEstadoCivil.html\&quot;&gt;EstadoCivil&lt;/a&gt;#99)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;152&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PaisOrigenMPI&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;152&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/patient-birthPlace&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Address">a</a> fhir:Address ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Curicó&quot; ]     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginariosPerteneciente&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Religion&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSReligion&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/IdentidadDeGenero&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentidaddeGenero&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]       ] )     ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosAfrodescendiente&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean ]
+  ] [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginarios&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;01&quot; ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+          ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chile&quot; ]           ] )         ]       ] ) ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;01&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Run&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://www.acme.com/identifiers/patient&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;15999999&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.active">fhir:active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.name">fhir:name</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:family</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Diaz&quot; ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Cortés&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:given</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal&quot; ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.telecom">fhir:telecom</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;phone&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;999888777&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;mobile&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">fhir:gender</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;male&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.birthDate">fhir:birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;1955-10-20&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">fhir:deceased</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/patient.html#Patient.maritalStatus">fhir:maritalStatus</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoCivil&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;99&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Desconocido&quot; ]     ] )
+  ] . # 
+
+&lt;http://acme.com/ehr/fhir/Condition/EjemploCondition&gt; <a href="http://hl7.org/fhir/R4/condition.html">a</a> fhir:Condition ;
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploCondition&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Condition&lt;/b&gt;&lt;a name=\&quot;EjemploCondition\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Condition &amp;quot;EjemploCondition&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ConditionIniciarDiagnosticoLE.html\&quot;&gt;Condition Iniciar Diagnostico LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;verificationStatus&lt;/b&gt;: Confirmed &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html\&quot;&gt;ConditionVerificationStatus&lt;/a&gt;#confirmed)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: diagnostico &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html\&quot;&gt;Condition Category Codes&lt;/a&gt;#encounter-diagnosis)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;severity&lt;/b&gt;: Midgrade &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://browser.ihtsdotools.org/\&quot;&gt;SNOMED CT&lt;/a&gt;#6736007)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Posible insuficiencia cardíaca, requiere evaluación cardiologo &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (uno#394887005 &amp;quot;sospecha de insuficiencia cardíaca (situación)&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">fhir:clinicalStatus</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.verificationStatus">fhir:verificationStatus</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/condition-ver-status&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;confirmed&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.category">fhir:category</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;encounter-diagnosis&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;diagnostico&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.severity">fhir:severity</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a sct:6736007 ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://snomed.info/sct&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;6736007&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.code">fhir:code</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://diagnosticos.cl/uno&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;394887005&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sospecha de insuficiencia cardíaca (situación)&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Posible insuficiencia cardíaca, requiere evaluación cardiologo&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] . # 
+
+&lt;http://acme.com/ehr/fhir/Observation/EjemploObservation2&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploObservation2&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarIndiceComorbilidadLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarIndiceComorbilidadLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;EjemploObservation2\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;EjemploObservation2&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html\&quot;&gt;Observation Iniciar Indice Comorbilidad LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: Indice Comorbilidad &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html\&quot;&gt;Observation Category Codes&lt;/a&gt;#vital-signs)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Riesgo Leve, 1 condición crónica &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSIndicecomorbilidad.html\&quot;&gt;Indice Comorbilidad&lt;/a&gt;#G1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.category">fhir:category</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/observation-category&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;vital-signs&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Indice Comorbilidad&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIndicecomorbilidad&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;G1&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Riesgo Leve, 1 condición crónica&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] . # 
+
+&lt;http://acme.com/ehr/fhir/Condition/EjemploConditionGES&gt; <a href="http://hl7.org/fhir/R4/condition.html">a</a> fhir:Condition ;
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploConditionGES&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarGesLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarGesLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Condition&lt;/b&gt;&lt;a name=\&quot;EjemploConditionGES\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Condition &amp;quot;EjemploConditionGES&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ConditionIniciarGesLE.html\&quot;&gt;Condition GES&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html\&quot;&gt;Condition Clinical Status Codes&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: sospechaGes &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html\&quot;&gt;Condition Category Codes&lt;/a&gt;#problem-list-item)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: SospechaPatologiaGesGlosa &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSSospechaPatologiaGes.html\&quot;&gt;Sospecha Patologia Ges&lt;/a&gt;#A000)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.clinicalStatus">fhir:clinicalStatus</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/condition-clinical&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.category">fhir:category</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/condition-category&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;problem-list-item&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;sospechaGes&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.code">fhir:code</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologiaGes&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;A000&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SospechaPatologiaGesGlosa&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/condition.html#Condition.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] . # 
+
+&lt;http://acme.com/ehr/fhir/Observation/EjemploObservation&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploObservation&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;EjemploObservation\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;EjemploObservation&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ObservationIniciarLE.html\&quot;&gt;Observation Iniciar LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: registered&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: examenes &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Exámen que se realizó&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;registered&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;examenes&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Exámen que se realizó&quot;] . # 
+
+&lt;http://acme.com/ehr/fhir/Observation/EjemploObservationCuidador&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploObservationCuidador&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarCuidadorLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarCuidadorLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;EjemploObservationCuidador\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;EjemploObservationCuidador&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ObservationIniciarCuidadorLE.html\&quot;&gt;Observation Iniciar Cuidador LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Caregiver for person at-risk &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#95385-1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:95385-1 ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;95385-1&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] . # 
+
+&lt;http://acme.com/ehr/fhir/Observation/EjemploObservationDiscapacidad&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploObservationDiscapacidad&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarDiscapacidadLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarDiscapacidadLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name=\&quot;EjemploObservationDiscapacidad\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Observation &amp;quot;EjemploObservationDiscapacidad&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-ObservationIniciarDiscapacidadLE.html\&quot;&gt;Observation Iniciar Discapacidad LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;ExtBool PresentaDiscapacidad&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Problem &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://loinc.org/\&quot;&gt;LOINC&lt;/a&gt;#75326-9)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPresentaDiscapacidad&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;false&quot;^^xsd:boolean ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+a loinc:75326-9 ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://loinc.org&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;75326-9&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] . # 
+
+&lt;http://acme.com/ehr/fhir/AllergyIntolerance/EjemploAllergyIntolerance&gt; <a href="http://hl7.org/fhir/R4/allergyintolerance.html">a</a> fhir:AllergyIntolerance ;
+  <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploAllergyIntolerance&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceIniciarLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceIniciarLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: AllergyIntolerance&lt;/b&gt;&lt;a name=\&quot;EjemploAllergyIntolerance\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource AllergyIntolerance &amp;quot;EjemploAllergyIntolerance&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-AllergyIntoleranceIniciarLE.html\&quot;&gt;AllergyIntolerance Iniciar LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;clinicalStatus&lt;/b&gt;: Active &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-allergyintolerance-clinical.html\&quot;&gt;AllergyIntolerance Clinical Status Codes&lt;/a&gt;#active)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Alergía a penicilina &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; ()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;patient&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.clinicalStatus">fhir:clinicalStatus</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.code">fhir:code</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Alergía a penicilina&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/allergyintolerance.html#AllergyIntolerance.patient">fhir:patient</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] . # 
+
+&lt;http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRole&gt; <a href="http://hl7.org/fhir/R4/practitionerrole.html">a</a> fhir:PractitionerRole ;
+  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploPractitionerRole&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: PractitionerRole&lt;/b&gt;&lt;a name=\&quot;EjemploPractitionerRole\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource PractitionerRole &amp;quot;EjemploPractitionerRole&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PractitionerRoleLE.html\&quot;&gt;PractitionerRole LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;practitioner&lt;/b&gt;: &lt;a href=\&quot;#Practitioner_EjemploPractitionerIniciar\&quot;&gt;See above (Practitioner/EjemploPractitionerIniciar: Ernesto Sepulveda Sierra)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;organization&lt;/b&gt;: &lt;a href=\&quot;#Organization_EjemploOrganization\&quot;&gt;See above (Organization/EjemploOrganization: Centro de Salud Familiar San Juan Dios)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Iniciador &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSPractitionerTipoRolLE.html\&quot;&gt;Rol de profesionales&lt;/a&gt;#iniciador)&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.practitioner">fhir:practitioner</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Practitioner/EjemploPractitionerIniciar&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ernesto Sepulveda Sierra&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.organization">fhir:organization</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Organization/EjemploOrganization&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Centro de Salud Familiar San Juan Dios&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitionerrole.html#PractitionerRole.code">fhir:code</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;iniciador&quot; ]     ] )
+  ] ) . # 
+
+&lt;http://acme.com/ehr/fhir/Practitioner/EjemploPractitionerIniciar&gt; <a href="http://hl7.org/fhir/R4/practitioner.html">a</a> fhir:Practitioner ;
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;EjemploPractitionerIniciar&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;extensions&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Practitioner&lt;/b&gt;&lt;a name=\&quot;EjemploPractitionerIniciar\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Practitioner &amp;quot;EjemploPractitionerIniciar&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-PrestadorProfesionalLE.html\&quot;&gt;Prestador Profesional LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;Codigo de Identificación de países&lt;/b&gt;: Chile &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CodPais.html\&quot;&gt;Códigos de Países&lt;/a&gt;#152)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 1/32.333.333-3 (use: OFFICIAL), 2/123884 (use: OFFICIAL), 4/123884 (use: SECONDARY)&lt;/p&gt;&lt;p&gt;&lt;b&gt;active&lt;/b&gt;: true&lt;/p&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Ernesto Sepulveda (OFFICIAL)&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\&quot;tel:+56982460152\&quot;&gt;+56982460152&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;birthDate&lt;/b&gt;: 1982-08-24&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;qualification&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: esp&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: Cirujano Cardiovascular &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSTituloProfesional.html\&quot;&gt;TituloProfesional&lt;/a&gt;#1 &amp;quot;MÉDICO CIRUJANO&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2023-01-01 --&amp;gt; 2100-01-31&lt;/p&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;qualification&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: subesp&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: CardiologíaCardiotorácico &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSTituloProfesional.html\&quot;&gt;TituloProfesional&lt;/a&gt;#1 &amp;quot;MÉDICO CIRUJANO&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;period&lt;/b&gt;: 2024-01-01 --&amp;gt; 2100-01-31&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">a</a> fhir:CodeableConcept ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Chile&quot; ]       ] )     ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://api.cl/system/run&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;32.333.333-3&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;2&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;123884&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;secondary&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;4&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;123884&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.active">fhir:active</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">fhir:name</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;official&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.family">fhir:family</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sepulveda&quot; ;
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">fhir:extension</a> [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Sierra&quot; ]       ] )     ] ;
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.given">fhir:given</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Ernesto&quot; ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.telecom">fhir:telecom</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;phone&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;+56982460152&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;home&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.rank">fhir:rank</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#positiveInt">fhir:v</a> &quot;1&quot;^^xsd:positiveInteger ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.gender">fhir:gender</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;female&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.birthDate">fhir:birthDate</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> &quot;1982-08-24&quot;^^xsd:date] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification">fhir:qualification</a> ( [
+    ( <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;esp&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MÉDICO CIRUJANO&quot; ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Cirujano Cardiovascular&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.period">fhir:period</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2023-01-01&quot;^^xsd:date ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2100-01-31&quot;^^xsd:date ]     ]
+  ] [
+    ( <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.identifier">fhir:identifier</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;subesp&quot; ]     ] ) ;
+<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.code">fhir:code</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MÉDICO CIRUJANO&quot; ]       ] ) ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;CardiologíaCardiotorácico&quot; ]     ] ;
+<a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.qualification.period">fhir:period</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.start">fhir:start</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-01-01&quot;^^xsd:date ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Period#Period.end">fhir:end</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2100-01-31&quot;^^xsd:date ]     ]
+  ] ) . # 
+
+&lt;http://acme.com/ehr/fhir/Organization/EjemploOrganization&gt; <a href="http://hl7.org/fhir/R4/organization.html">a</a> fhir:Organization ;
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;EjemploOrganization&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Organization&lt;/b&gt;&lt;a name=\&quot;EjemploOrganization\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Organization &amp;quot;EjemploOrganization&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-OrganizationLE.html\&quot;&gt;Organization LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: 116309/Centro de Salud Familiar San Juan Dios&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/organization.html#Organization.identifier">fhir:identifier</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://minsal.cl/deis/establecimientos&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;116309&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Centro de Salud Familiar San Juan Dios&quot; ]
+  ] ) . # 
+
+&lt;http://acme.com/ehr/fhir/DocumentReference/EjemploDocumentReference&gt; <a href="http://hl7.org/fhir/R4/documentreference.html">a</a> fhir:DocumentReference ;
+  <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploDocumentReference&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceIniciarLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceIniciarLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: DocumentReference&lt;/b&gt;&lt;a name=\&quot;EjemploDocumentReference\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource DocumentReference &amp;quot;EjemploDocumentReference&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-DocumentReferenceIniciarLE.html\&quot;&gt;DocumentReference Iniciar LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: current&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Documento que acredita calidad de cuidador/a del Programa Red Local de Apoyos y Cuidados (MIDESOF) &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSDocAcreditacionCuidador.html\&quot;&gt;Documento Acreditacion Cuidador&lt;/a&gt;#1)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;content&lt;/b&gt;&lt;/p&gt;&lt;h3&gt;Attachments&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Url&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://example.org/referencia\&quot;&gt;http://example.org/referencia&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Documento de acreditación&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;current&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.type">fhir:type</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDocAcreditacionCuidador&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.subject">fhir:subject</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content">fhir:content</a> ( [
+<a href="http://hl7.org/fhir/R4/documentreference.html#DocumentReference.content.attachment">fhir:attachment</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#url">fhir:v</a> &quot;http://example.org/referencia&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Documento de acreditación&quot; ]     ]
+  ] ) . # 
+
+&lt;http://acme.com/ehr/fhir/Coverage/EjemploCoverage&gt; <a href="http://hl7.org/fhir/R4/coverage.html">a</a> fhir:Coverage ;
+  <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploCoverage&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageIniciarLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageIniciarLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Coverage&lt;/b&gt;&lt;a name=\&quot;EjemploCoverage\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource Coverage &amp;quot;EjemploCoverage&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-CoverageIniciarLE.html\&quot;&gt;Coverage Iniciar LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: health insurance plan policy &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html\&quot;&gt;ActCode&lt;/a&gt;#HIP)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;beneficiary&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;payor&lt;/b&gt;: &lt;a href=\&quot;#Patient_EjemploPatient\&quot;&gt;See above (Patient/EjemploPatient: Anibal Diaz Cortés)&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Classes&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;FONASA Fondo Nacional de Salud. &lt;span style=\&quot;background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\&quot;&gt; (&lt;a href=\&quot;CodeSystem-CSPrevisionCodigo.html\&quot;&gt;PrevisionCodigo&lt;/a&gt;#1)&lt;/span&gt;&lt;/td&gt;&lt;td&gt;FONASA&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.type">fhir:type</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/v3-ActCode&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;HIP&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.beneficiary">fhir:beneficiary</a> [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.payor">fhir:payor</a> ( [
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">fhir:reference</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Patient/EjemploPatient&quot; ] ;
+<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Anibal Diaz Cortés&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/coverage.html#Coverage.class">fhir:class</a> ( [
+<a href="http://hl7.org/fhir/R4/coverage.html#Coverage.class.type">fhir:type</a> [
+      ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPrevisionCodigo&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FONASA Fondo Nacional de Salud.&quot; ]       ] )     ] ;
+<a href="http://hl7.org/fhir/R4/coverage.html#Coverage.class.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;FONASA&quot; ]
+  ] ) . # 
+
+&lt;http://acme.com/ehr/fhir/QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE&gt; <a href="http://hl7.org/fhir/R4/questionnaireresponse.html">a</a> fhir:QuestionnaireResponse ;
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;EjemploQuestionnaireResponseIniciarLE&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: QuestionnaireResponse&lt;/b&gt;&lt;a name=\&quot;EjemploQuestionnaireResponseIniciarLE\&quot;&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Resource QuestionnaireResponse &amp;quot;EjemploQuestionnaireResponseIniciarLE&amp;quot; &lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profile: &lt;a href=\&quot;StructureDefinition-QuestionnaireResponseIniciarLE.html\&quot;&gt;QuestionnaireResponse Iniciar Motivo de la Derivación LE&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: completed&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;&lt;b&gt;item&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;linkId&lt;/b&gt;: MotivoDerivacion&lt;/p&gt;&lt;p&gt;&lt;b&gt;text&lt;/b&gt;: Motivo Derivación&lt;/p&gt;&lt;h3&gt;Answers&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value[x]&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;display: none\&quot;&gt;*&lt;/td&gt;&lt;td&gt;Motivo derivación&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/blockquote&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;completed&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">fhir:item</a> ( [
+<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">fhir:linkId</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;MotivoDerivacion&quot; ] ;
+<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Motivo Derivación&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">fhir:answer</a> [
+<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Motivo derivación&quot; ]     ] )
+  ] ) . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 29, 2024 18:01+0000">2024-02-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+             Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
+<a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reporte QA</a> |
+<a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interoperabilidad.minsal.cl/fhir/ig/tei"></a></a>
+ | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/Minsal-CL/SIGTEv2-IG">Issues</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+  
+    
+    <script type="text/javascript">
+     /* <![CDATA[ */
+        $(':header[id]').each(function() { // apply this to each heading
+          var id = $(this).attr('id');
+          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLSd7qSIWFnPvkMfDEyCCOA_FIRo6uwYlrxXOFoIwcOocsDPS2A/viewform?usp=sf_link'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
+          var feedbacklabel = 'Feedback';
+          
+            
+              feedbacklabel = 'Observaciones';  // The feedback label is a string
+            
+
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(402066225).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'pageTitle';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+                  case "href":
+                    parameterValue = window.location.href;
+                    break;
+                  }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(872797498).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'sectionName';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+                  case "href":
+                    parameterValue = window.location.href;
+                    break;
+                  }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+              var parameterFieldId = '';
+              var parameterVariableName = '';
+              var parameterValue = '';
+              parameterFieldId = 'entry.'+parseInt(587453077).toString(); // the parameter fields is parsed as an integer, i presume this means no code can be injected there.
+              parameterVariableName = 'href';
+
+              switch (parameterVariableName) { // the variableName only has 3 possible values. Everything else will default to "not supported"
+                default:
+                    console.log("Parameter value not supported");
+                    break;
+                  case "pageTitle":
+                    parameterValue = encodeURIComponent($(document).attr('title'));
+                    break;
+                  case "sectionId":
+                    parameterValue = id;
+                    break;
+                  case "sectionName":
+                    parameterValue = document.getElementById(id).textContent;
+                    break;
+                  case "href":
+                    parameterValue = window.location.href;
+                    break;
+                  }
+/* <![CDATA[ */
+              feedbackurl = feedbackurl + '&';
+              feedbackurl = feedbackurl + parameterFieldId + '=' + parameterValue;
+/* ]]> */
+            
+            
+          if (id) { //To make sure the element has an id
+            $(this).append(function () {
+              return $('<a/>', {
+                id,
+                href: feedbackurl,
+                text: feedbacklabel+' ' ,
+                class: 'feedback',
+                target: '_blank',
+                onclick: 'window.open('+feedbackurl+',\'newwindow\',\'width=300,height=250\');return false;'
+        
+              });
+            });
+          }
+        }) 
+/* ]]> */
+      </script>  
+    
+  
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

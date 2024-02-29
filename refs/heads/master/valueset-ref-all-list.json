@@ -42,10 +42,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente",
       "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
       "StructureDefinition-PatientLE.html" : "Patient LE",
-      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+      "StructureDefinition-SexoBiologico.html" : "Sexo Biologico del paciente"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
@@ -59,7 +59,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.133"],
       "uses" : {
       },
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-criticality",
@@ -73,7 +73,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.129"],
       "uses" : {
       },
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-type",
@@ -87,7 +87,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.131"],
       "uses" : {
       },
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
@@ -103,7 +103,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1372"],
       "uses" : {
       },
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-code",
@@ -117,7 +117,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.137"],
       "uses" : {
       },
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
@@ -133,7 +133,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1370"],
       "uses" : {
       },
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
@@ -177,15 +177,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
       "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
@@ -199,12 +199,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.620"],
       "uses" : {
       },
+      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
+      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE",
+      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
+      "StructureDefinition-BundleIniciarLE.html" : "Bundle Iniciar LE",
       "StructureDefinition-BundleAgendarLE.html" : "Bundle Agendar LE",
       "StructureDefinition-BundlePriorizarLE.html" : "Bundle Priorizar LE",
-      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE",
-      "StructureDefinition-BundleIniciarLE.html" : "Bundle Iniciar LE",
-      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
-      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
       "StructureDefinition-BundleReferenciarLE.html" : "Bundle Referenciar LE"
     },
     {
@@ -219,7 +219,7 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -233,9 +233,9 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-PractitionerRoleLE.html" : "PractitionerRole LE",
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE",
-      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE",
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE",
+      "StructureDefinition-PractitionerRoleLE.html" : "PractitionerRole LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
@@ -319,8 +319,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.232"],
       "uses" : {
       },
-      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE",
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE",
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/common-tags",
@@ -348,7 +348,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.241"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -362,8 +362,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.162"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)"
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
@@ -377,8 +377,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.164"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)"
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-code",
@@ -392,7 +392,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -406,8 +406,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.168"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)"
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
@@ -421,8 +421,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.170"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)"
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
@@ -436,8 +436,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.171"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)"
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
@@ -451,8 +451,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.166"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)"
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -468,8 +468,8 @@
       },
       "StructureDefinition-OrganizationLE.html" : "Organization LE",
       "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
-      "StructureDefinition-PatientLE.html" : "Patient LE",
-      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
+      "StructureDefinition-PatientLE.html" : "Patient LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -485,8 +485,8 @@
       },
       "StructureDefinition-OrganizationLE.html" : "Organization LE",
       "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
-      "StructureDefinition-PatientLE.html" : "Patient LE",
-      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
+      "StructureDefinition-PatientLE.html" : "Patient LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -514,7 +514,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.527"],
       "uses" : {
       },
-      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+      "StructureDefinition-CoverageIniciarLE.html" : "Coverage Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/coverage-financial-exception",
@@ -530,7 +530,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1328"],
       "uses" : {
       },
-      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+      "StructureDefinition-CoverageIniciarLE.html" : "Coverage Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/coverage-type",
@@ -547,7 +547,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.520"],
       "uses" : {
       },
-      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+      "StructureDefinition-CoverageIniciarLE.html" : "Coverage Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -561,11 +561,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -593,7 +593,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.49"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -608,7 +608,7 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
@@ -622,7 +622,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.7"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
@@ -636,7 +636,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.244"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
@@ -650,7 +650,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.257"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -665,7 +665,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -682,7 +682,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.259"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -697,7 +697,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.262"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -715,9 +715,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
-      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
-      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -731,9 +731,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
-      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
-      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -749,7 +749,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.253"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -767,7 +767,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.252"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -782,7 +782,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.246"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -797,7 +797,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.248"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE"
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/fm-status",
@@ -811,7 +811,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.592"],
       "uses" : {
       },
-      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+      "StructureDefinition-CoverageIniciarLE.html" : "Coverage Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/formatcodes",
@@ -825,7 +825,7 @@
       "sources" : ["1.3.6.1.4.1.19376.1.2.7.1"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/http-verb",
@@ -839,12 +839,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.624"],
       "uses" : {
       },
+      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
+      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE",
+      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
+      "StructureDefinition-BundleIniciarLE.html" : "Bundle Iniciar LE",
       "StructureDefinition-BundleAgendarLE.html" : "Bundle Agendar LE",
       "StructureDefinition-BundlePriorizarLE.html" : "Bundle Priorizar LE",
-      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE",
-      "StructureDefinition-BundleIniciarLE.html" : "Bundle Iniciar LE",
-      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
-      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
       "StructureDefinition-BundleReferenciarLE.html" : "Bundle Referenciar LE"
     },
     {
@@ -859,14 +859,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-OrganizationLE.html" : "Organization LE",
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
-      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
       "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
-      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
       "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
-      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -880,15 +880,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-OrganizationLE.html" : "Organization LE",
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
-      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
       "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
-      "StructureDefinition-PatientLE.html" : "Patient LE",
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
-      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
       "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
-      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -902,37 +902,37 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
-      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE",
-      "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE",
-      "StructureDefinition-PatientLE.html" : "Patient LE",
-      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
-      "StructureDefinition-QuestionnaireResponseInicioLE.html" : "QuestionnaireResponse Iniciar Motivo de la Derivación LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-BundlePriorizarLE.html" : "Bundle Priorizar LE",
-      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
-      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
-      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE",
-      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-QuestionnaireResponseAtenderLE.html" : "QuestionnaireResponse Atender LE",
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE",
-      "StructureDefinition-BundleReferenciarLE.html" : "Bundle Referenciar LE",
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)",
-      "StructureDefinition-PractitionerRoleLE.html" : "PractitionerRole LE",
-      "StructureDefinition-BundleAgendarLE.html" : "Bundle Agendar LE",
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
       "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE",
-      "StructureDefinition-OrganizationLE.html" : "Organization LE",
-      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
       "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
+      "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE",
+      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
+      "StructureDefinition-PatientLE.html" : "Patient LE",
+      "StructureDefinition-QuestionnaireResponseAtenderLE.html" : "QuestionnaireResponse Atender LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-PractitionerRoleLE.html" : "PractitionerRole LE",
+      "StructureDefinition-BundlePriorizarLE.html" : "Bundle Priorizar LE",
+      "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE",
       "StructureDefinition-BundleIniciarLE.html" : "Bundle Iniciar LE",
+      "StructureDefinition-BundleAgendarLE.html" : "Bundle Agendar LE",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE",
+      "StructureDefinition-OrganizationLE.html" : "Organization LE",
+      "StructureDefinition-QuestionnaireResponseIniciarLE.html" : "QuestionnaireResponse Iniciar Motivo de la Derivación LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE",
       "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
-      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE"
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
+      "StructureDefinition-CoverageIniciarLE.html" : "Coverage Iniciar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-BundleReferenciarLE.html" : "Bundle Referenciar LE",
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -962,7 +962,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -977,8 +977,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.169"],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)"
+      "StructureDefinition-ConditionIniciarDiagnosticoLE.html" : "Condition Iniciar Diagnostico LE",
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -992,8 +992,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.96"],
       "uses" : {
       },
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
-      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
@@ -1051,7 +1051,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1024"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/name-use",
@@ -1066,8 +1066,8 @@
       "uses" : {
       },
       "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
-      "StructureDefinition-PatientLE.html" : "Patient LE",
-      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE"
+      "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
+      "StructureDefinition-PatientLE.html" : "Patient LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -1081,11 +1081,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -1099,11 +1099,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.396"],
       "uses" : {
       },
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
@@ -1119,11 +1119,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -1137,11 +1137,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -1155,11 +1155,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -1187,8 +1187,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.152"],
       "uses" : {
       },
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
-      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participantrequired",
@@ -1272,7 +1272,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.446"],
       "uses" : {
       },
-      "StructureDefinition-QuestionnaireResponseInicioLE.html" : "QuestionnaireResponse Iniciar Motivo de la Derivación LE",
+      "StructureDefinition-QuestionnaireResponseIniciarLE.html" : "QuestionnaireResponse Iniciar Motivo de la Derivación LE",
       "StructureDefinition-QuestionnaireResponseAtenderLE.html" : "QuestionnaireResponse Atender LE"
     },
     {
@@ -1287,7 +1287,7 @@
       "sources" : ["required"],
       "uses" : {
       },
-      "StructureDefinition-QuestionnaireResponseInicioLE.html" : "QuestionnaireResponse Iniciar Motivo de la Derivación LE",
+      "StructureDefinition-QuestionnaireResponseIniciarLE.html" : "QuestionnaireResponse Iniciar Motivo de la Derivación LE",
       "StructureDefinition-QuestionnaireResponseAtenderLE.html" : "QuestionnaireResponse Atender LE"
     },
     {
@@ -1302,7 +1302,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.135"],
       "uses" : {
       },
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -1319,11 +1319,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -1339,11 +1339,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-ObservationInicioDiscapacidadLE.html" : "Observation Inicio Discapacidad LE",
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
-      "StructureDefinition-ObservationInicioLE.html" : "Observation Iniciar LE",
-      "StructureDefinition-ObservationInicioCuidadorLE.html" : "Observation Iniciar Cuidador LE",
-      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE"
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE",
+      "StructureDefinition-ObservationIniciarCuidadorLE.html" : "Observation Iniciar Cuidador LE",
+      "StructureDefinition-ObservationIniciarDiscapacidadLE.html" : "Observation Iniciar Discapacidad LE",
+      "StructureDefinition-ObservationAtenderLE.html" : "Observation Atender LE",
+      "StructureDefinition-ObservationIniciarLE.html" : "Observation Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-intent",
@@ -1357,8 +1357,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.113"],
       "uses" : {
       },
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
-      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -1372,8 +1372,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.115"],
       "uses" : {
       },
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
-      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -1388,8 +1388,8 @@
       "uses" : {
       },
       "StructureDefinition-CarePlanAtenderLE.html" : "CarePlan Atender LE",
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
-      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
@@ -1403,12 +1403,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE",
       "StructureDefinition-PrestadorAdministrativoLE.html" : "Prestador Administrativo LE",
-      "StructureDefinition-PatientLE.html" : "Patient LE",
       "StructureDefinition-PrestadorProfesionalLE.html" : "Prestador Profesional LE",
       "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE",
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
+      "StructureDefinition-PatientLE.html" : "Patient LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/response-code",
@@ -1436,7 +1436,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.98"],
       "uses" : {
       },
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
@@ -1450,12 +1450,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.622"],
       "uses" : {
       },
+      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
+      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE",
+      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
+      "StructureDefinition-BundleIniciarLE.html" : "Bundle Iniciar LE",
       "StructureDefinition-BundleAgendarLE.html" : "Bundle Agendar LE",
       "StructureDefinition-BundlePriorizarLE.html" : "Bundle Priorizar LE",
-      "StructureDefinition-BundleTerminarLE.html" : "Bundle Terminar LE",
-      "StructureDefinition-BundleIniciarLE.html" : "Bundle Iniciar LE",
-      "StructureDefinition-BundleAtenderLE.html" : "Bundle Atender LE",
-      "StructureDefinition-BundleRevisarLE.html" : "Bundle Revisar LE",
       "StructureDefinition-BundleReferenciarLE.html" : "Bundle Referenciar LE"
     },
     {
@@ -1476,7 +1476,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE",
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE",
       "StructureDefinition-MessageHeaderLE.html" : "MessageHeader LE"
     },
     {
@@ -1505,9 +1505,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
-      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
-      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE"
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-AppointmentAgendarLE.html" : "Appointment Agendar LE",
+      "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
@@ -1535,8 +1535,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.435"],
       "uses" : {
       },
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
-      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE"
+      "StructureDefinition-ServiceRequestExamenLE.html" : "ServiceRequestExamen LE",
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/subscriber-relationship",
@@ -1552,7 +1552,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1385"],
       "uses" : {
       },
-      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE"
+      "StructureDefinition-CoverageIniciarLE.html" : "Coverage Iniciar LE"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/substance-code",
@@ -1566,7 +1566,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.473"],
       "uses" : {
       },
-      "StructureDefinition-AllergyIntoleranceInicioLE.html" : "AllergyIntolerance Iniciar LE"
+      "StructureDefinition-AllergyIntoleranceIniciarLE.html" : "AllergyIntolerance Iniciar LE"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/condition-ver-status",
@@ -1594,7 +1594,7 @@
       "sources" : ["2.16.840.1.113883.21.40"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -1634,7 +1634,7 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE"
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
@@ -1648,7 +1648,7 @@
       "sources" : ["2.16.840.1.113883.1.11.13955"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -1663,7 +1663,7 @@
       "sources" : ["2.16.840.1.113883.1.11.16866"],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE"
     },
     {
@@ -1690,9 +1690,9 @@
       "systems" : ["https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"],
       "uses" : {
       },
+      "StructureDefinition-PaisOrigenMPI.html" : "País de origen del paciente",
       "StructureDefinition-OrganizationLE.html" : "Organization LE",
-      "StructureDefinition-PatientLE.html" : "Patient LE",
-      "StructureDefinition-PaisOrigenMPI.html" : "País de origen del paciente"
+      "StructureDefinition-PatientLE.html" : "Patient LE"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/ValueSet/VSCodigosComunaCL",
@@ -1844,7 +1844,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceInicioLE.html" : "DocumentReference Iniciar LE",
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE",
       "StructureDefinition-DocAcreditacionCuidadorCodigoLE.html" : "Doc Acreditacion Cuidador"
     },
     {
@@ -1997,7 +1997,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ObservationInicioIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE"
+      "StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html" : "Observation Iniciar Indice Comorbilidad LE"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSMedioNotificacion",
@@ -2025,7 +2025,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-EncounterInicioLE.html" : "Encounter Iniciar LE",
+      "StructureDefinition-EncounterIniciarLE.html" : "Encounter Iniciar LE",
       "StructureDefinition-EncounterAtenderLE.html" : "Encounter Atender LE",
       "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
@@ -2069,8 +2069,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-MotivoNoPertinenciaCodigo.html" : "Motivo No Pertinencia Codigo",
-      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE",
+      "StructureDefinition-MotivoNoPertinenciaCodigo.html" : "Motivo No Pertinencia Codigo"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSPertinenciaInterconsulta",
@@ -2091,8 +2091,8 @@
       "version" : "0.1.7",
       "status" : "active",
       "name" : "VSPractitionerTipoRolLE",
-      "title" : "Rol de médicos",
-      "description" : "Rol de médicos(Practitioner) en algún evento, durante la intercosulta.",
+      "title" : "Rol de profesionales",
+      "description" : "Rol de profesionales(Practitioner) en algún evento, durante la intercosulta.",
       "systems" : [
         "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
       ],
@@ -2112,8 +2112,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-CoverageInicioLE.html" : "Coverage Iniciar LE",
-      "StructureDefinition-PrevisionCodigoLE.html" : "Previsión determinada de aseguramiento de salud del paciente."
+      "StructureDefinition-PrevisionCodigoLE.html" : "Previsión determinada de aseguramiento de salud del paciente.",
+      "StructureDefinition-CoverageIniciarLE.html" : "Coverage Iniciar LE"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSReligion",
@@ -2178,7 +2178,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ConditionInicioGesLE.html" : "Patología GES (número)"
+      "StructureDefinition-ConditionIniciarGesLE.html" : "Condition GES"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTipoCodDiagnostica",

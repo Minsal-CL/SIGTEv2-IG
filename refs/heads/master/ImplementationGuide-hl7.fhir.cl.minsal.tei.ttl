@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TiemposDeEsperaInteroperable"] ; # 
   fhir:title [ fhir:v "Tiempos de Espera Interoperable"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-21T16:19:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-29T18:01:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -537,8 +537,8 @@
        fhir:name [ fhir:v "AllergyIntolerance Evento Iniciar" ] ;
        fhir:description [ fhir:v "AllergyIntolerance Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceInicioLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceInicioLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceIniciarLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceIniciarLE>
        ]
      ] [
        fhir:extension ( [
@@ -546,8 +546,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceInicioLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/AllergyIntoleranceInicioLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceIniciarLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/AllergyIntoleranceIniciarLE" ]
        ] ;
        fhir:name [ fhir:v "AllergyIntolerance Iniciar LE" ] ;
        fhir:description [ fhir:v "AllergyIntolerance Iniciar LE" ] ;
@@ -669,8 +669,8 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Bundle/EjemploBundleInicio> ;
-         fhir:reference [ fhir:v "Bundle/EjemploBundleInicio" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Bundle/EjemploBundleIniciar> ;
+         fhir:reference [ fhir:v "Bundle/EjemploBundleIniciar" ]
        ] ;
        fhir:name [ fhir:v "Bundle Evento Iniciar" ] ;
        fhir:description [ fhir:v "Bundle Evento Iniciar" ] ;
@@ -699,8 +699,8 @@
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Bundle/EjemploBundleReferencia> ;
-         fhir:reference [ fhir:v "Bundle/EjemploBundleReferencia" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Bundle/EjemploBundleReferenciar> ;
+         fhir:reference [ fhir:v "Bundle/EjemploBundleReferenciar" ]
        ] ;
        fhir:name [ fhir:v "Bundle Evento Referenciar" ] ;
        fhir:description [ fhir:v "Bundle Evento Referenciar" ] ;
@@ -808,7 +808,7 @@
          fhir:reference [ fhir:v "StructureDefinition/CarePlanAtenderLE" ]
        ] ;
        fhir:name [ fhir:v "CarePlan Atender LE" ] ;
-       fhir:description [ fhir:v "CarePlan Atender LE" ] ;
+       fhir:description [ fhir:v "CarePlan Atender LE es el recurso utilizado para representar las indicaciones entregadas por el profesional como resultado de la atención." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -849,8 +849,8 @@
        fhir:name [ fhir:v "Condition Diagnóstico Sospecha Evento Iniciar" ] ;
        fhir:description [ fhir:v "Condition Diagnóstico Sospecha Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE>
        ]
      ] [
        fhir:extension ( [
@@ -864,8 +864,8 @@
        fhir:name [ fhir:v "Condition Diagnóstico Sospecha Evento Iniciar" ] ;
        fhir:description [ fhir:v "Condition Diagnóstico Sospecha Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE>
        ]
      ] [
        fhir:extension ( [
@@ -873,8 +873,20 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioDiagnosticoLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/ConditionInicioDiagnosticoLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarGesLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/ConditionIniciarGesLE" ]
+       ] ;
+       fhir:name [ fhir:v "Condition GES" ] ;
+       fhir:description [ fhir:v "Condition GES" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/ConditionIniciarDiagnosticoLE" ]
        ] ;
        fhir:name [ fhir:v "Condition Iniciar Diagnostico LE" ] ;
        fhir:description [ fhir:v "Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta." ] ;
@@ -927,8 +939,8 @@
        fhir:name [ fhir:v "Coverage Evento Iniciar" ] ;
        fhir:description [ fhir:v "Coverage Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageInicioLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageInicioLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageIniciarLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageIniciarLE>
        ]
      ] [
        fhir:extension ( [
@@ -936,8 +948,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageInicioLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/CoverageInicioLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageIniciarLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/CoverageIniciarLE" ]
        ] ;
        fhir:name [ fhir:v "Coverage Iniciar LE" ] ;
        fhir:description [ fhir:v "Coverage Iniciar LE, recurso que permite saber la previsión de un paciente" ] ;
@@ -1098,8 +1110,8 @@
        fhir:name [ fhir:v "DocumentReference Evento Iniciar" ] ;
        fhir:description [ fhir:v "DocumentReference Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceInicioLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceInicioLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceIniciarLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceIniciarLE>
        ]
      ] [
        fhir:extension ( [
@@ -1107,8 +1119,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceInicioLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/DocumentReferenceInicioLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceIniciarLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/DocumentReferenceIniciarLE" ]
        ] ;
        fhir:name [ fhir:v "DocumentReference Iniciar LE" ] ;
        fhir:description [ fhir:v "DocumentReference Iniciar LE" ] ;
@@ -1152,8 +1164,8 @@
        fhir:name [ fhir:v "Encounter Evento Iniciar" ] ;
        fhir:description [ fhir:v "Encounter Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterInicioLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterInicioLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE>
        ]
      ] [
        fhir:extension ( [
@@ -1161,8 +1173,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterInicioLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/EncounterInicioLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/EncounterIniciarLE" ]
        ] ;
        fhir:name [ fhir:v "Encounter Iniciar LE" ] ;
        fhir:description [ fhir:v "Encounter Iniciar LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta." ] ;
@@ -1931,8 +1943,8 @@
        fhir:name [ fhir:v "Observation Cuidador Evento Iniciar" ] ;
        fhir:description [ fhir:v "Observation Cuidador Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioCuidadorLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioCuidadorLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarCuidadorLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarCuidadorLE>
        ]
      ] [
        fhir:extension ( [
@@ -1946,8 +1958,8 @@
        fhir:name [ fhir:v "Observation Discapacidad Evento Iniciar" ] ;
        fhir:description [ fhir:v "Observation Discapacidad Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioDiscapacidadLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioDiscapacidadLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarDiscapacidadLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarDiscapacidadLE>
        ]
      ] [
        fhir:extension ( [
@@ -1976,8 +1988,8 @@
        fhir:name [ fhir:v "Observation Evento Iniciar" ] ;
        fhir:description [ fhir:v "Observation Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarLE>
        ]
      ] [
        fhir:extension ( [
@@ -1985,8 +1997,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioCuidadorLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/ObservationInicioCuidadorLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarCuidadorLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationIniciarCuidadorLE" ]
        ] ;
        fhir:name [ fhir:v "Observation Iniciar Cuidador LE" ] ;
        fhir:description [ fhir:v "Observation Iniciar, para describir si un paciente necesita cuidador" ] ;
@@ -1997,8 +2009,20 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioIndiceComorbilidadLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/ObservationInicioIndiceComorbilidadLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarDiscapacidadLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationIniciarDiscapacidadLE" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Iniciar Discapacidad LE" ] ;
+       fhir:description [ fhir:v "Observation Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarIndiceComorbilidadLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationIniciarIndiceComorbilidadLE" ]
        ] ;
        fhir:name [ fhir:v "Observation Iniciar Indice Comorbilidad LE" ] ;
        fhir:description [ fhir:v "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente" ] ;
@@ -2009,23 +2033,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/ObservationInicioLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationIniciarLE" ]
        ] ;
        fhir:name [ fhir:v "Observation Iniciar LE" ] ;
        fhir:description [ fhir:v "Observation Iniciar LE, recurso que permite agregar los examenes en el evento iniciar." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioDiscapacidadLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/ObservationInicioDiscapacidadLE" ]
-       ] ;
-       fhir:name [ fhir:v "Observation Inicio Discapacidad LE" ] ;
-       fhir:description [ fhir:v "Observation Inicio Discapacidad LE, para describir si un paciente presenta discapacidad" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2039,8 +2051,8 @@
        fhir:name [ fhir:v "Observation Índice Comorbilidad Evento Iniciar" ] ;
        fhir:description [ fhir:v "Observation Índice Comorbilidadn Evento Iniciar" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioIndiceComorbilidadLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationInicioIndiceComorbilidadLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarIndiceComorbilidadLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarIndiceComorbilidadLE>
        ]
      ] [
        fhir:extension ( [
@@ -2172,7 +2184,7 @@
          fhir:reference [ fhir:v "StructureDefinition/OrganizationLE" ]
        ] ;
        fhir:name [ fhir:v "Organization LE" ] ;
-       fhir:description [ fhir:v "Organization LE según [Códigos DEIS del establecimientos](https://repositoriodeis.minsal.cl/DatosAbiertos/Establecimientos_ChileDEIS_MINSAL%2021-04-2023.xlsx)" ] ;
+       fhir:description [ fhir:v "Organization LE según [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2231,18 +2243,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioGesLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/ConditionInicioGesLE" ]
-       ] ;
-       fhir:name [ fhir:v "Patología GES (número)" ] ;
-       fhir:description [ fhir:v "Patología GES (número)" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Condition" ]
        ] ) ;
        fhir:reference [
@@ -2252,8 +2252,8 @@
        fhir:name [ fhir:v "Patología GES (número)" ] ;
        fhir:description [ fhir:v "Patología GES (número)" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioGesLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionInicioGesLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarGesLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarGesLE>
        ]
      ] [
        fhir:extension ( [
@@ -2723,14 +2723,14 @@
          fhir:value [ fhir:v "QuestionnaireResponse" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE> ;
-         fhir:reference [ fhir:v "QuestionnaireResponse/EjemploQuestionnaireResponseInicioLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE> ;
+         fhir:reference [ fhir:v "QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE" ]
        ] ;
        fhir:name [ fhir:v "QuestionnaireResponse Evento Iniciar Motivo derivación" ] ;
        fhir:description [ fhir:v "QuestionnaireResponse Evento Iniciar Motivo derivación" ] ;
        fhir:example [
-         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseInicioLE"^^xsd:anyURI ;
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseInicioLE>
+         fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE"^^xsd:anyURI ;
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE>
        ]
      ] [
        fhir:extension ( [
@@ -2738,8 +2738,8 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseInicioLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/QuestionnaireResponseInicioLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/QuestionnaireResponseIniciarLE" ]
        ] ;
        fhir:name [ fhir:v "QuestionnaireResponse Iniciar Motivo de la Derivación LE" ] ;
        fhir:description [ fhir:v "QuestionnaireResponse Iniciar para Motivo de Derivación LE" ] ;
@@ -2789,8 +2789,8 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSPractitionerTipoRolLE> ;
          fhir:reference [ fhir:v "ValueSet/VSPractitionerTipoRolLE" ]
        ] ;
-       fhir:name [ fhir:v "Rol de médicos" ] ;
-       fhir:description [ fhir:v "Rol de médicos(Practitioner) en algún evento, durante la intercosulta." ] ;
+       fhir:name [ fhir:v "Rol de profesionales" ] ;
+       fhir:description [ fhir:v "Rol de profesionales(Practitioner) en algún evento, durante la intercosulta." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2801,7 +2801,7 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE> ;
          fhir:reference [ fhir:v "CodeSystem/CSPractitionerTipoRolLE" ]
        ] ;
-       fhir:name [ fhir:v "Rol de médicos" ] ;
+       fhir:name [ fhir:v "Rol de profesionales" ] ;
        fhir:description [ fhir:v "CodeSystem con códigos definidos para representar cada rol de profesional o funcionario administrativo dentro de la interconsulta" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -3200,10 +3200,10 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "rol_de_actores_interoperabilidad_CNE.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "rol_de_actores.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "rol_de_actores_interoperabilidad_CNE.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Rol De Actores Interoperabilidad CNE" ] ;
+         fhir:name [ fhir:v "rol_de_actores.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Rol De Actores" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -3252,6 +3252,14 @@
          ] ) ;
          fhir:name [ fhir:v "Mensajeria.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Mensajeria" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "historial_de_cambios.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "historial_de_cambios.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Historial De Cambios" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

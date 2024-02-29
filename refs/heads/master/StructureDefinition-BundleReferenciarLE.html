@@ -116,7 +116,7 @@
         <a href="eventos_interoperabilidad_CNE.html">Eventos Interoperabilidad CNE</a>
       </li>
       <li>
-        <a href="rol_de_actores_interoperabilidad_CNE.html">Rol de Actores Interoperabilidad CNE</a>
+        <a href="rol_de_actores.html">Rol de Actores</a>
       </li>
       <li>
         <a href="historias_de_usuario_segun_rol.html">Historias de Usuario según rol</a>
@@ -150,6 +150,9 @@
   </li>
   <li>
     <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="historial_de_cambios.html">Historial de Cambios</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -315,9 +318,30 @@
 
 
 
+<div style="display:inline-block" markdown="1">
+
+<h3 id="consideraciones-generales">Consideraciones Generales</h3>
+
+<ul>
+  <li>En el recurso <a href="StructureDefinition-MessageHeaderLE.html">MessageHeader</a> el elemento eventCoding.code  su valor debe ser “referenciar”.</li>
+  <li>El rol que cumple el profesional en este evento es de “referenciador”.</li>
+</ul>
+
+<h3 id="consideraciones-de-datos">Consideraciones de Datos</h3>
+
+<p>Para la consideración de que datos debe utilizar en este evento considere la <a href="StructureDefinition-BundleReferenciarLE.html#tabla-de-datos">siguiente tabla</a>, note que, específicamente para el recurso <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a> los valores de las cardinalidades no son necesariamente los mismos que los del perfil.</p>
+
+<p><a href="StructureDefinition-BundleReferenciarLE.html#tabla-de-datos">Ver Tabla de Datos</a></p>
+
+
+</div>
+
+
+
+
 <p><b>Usage:</b></p>
 <ul>
- <li>Examples for this Resource Profile: <a href="Bundle-EjemploBundleReferencia.html">Bundle/EjemploBundleReferencia</a></li>
+ <li>Examples for this Resource Profile: <a href="Bundle-EjemploBundleReferenciar.html">Bundle/EjemploBundleReferenciar</a></li>
 </ul>
 
 
@@ -1817,6 +1841,155 @@ Summary
 <!-- insert notes if present -->
 
 
+<h3>Notes:</h3>
+
+
+<div style="display:inline-block" markdown="1">
+
+<h3 id="tabla-de-datos">Tabla de Datos</h3>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th><strong>Variable</strong></th>
+      <th><strong>Cardinalidad</strong></th>
+      <th><strong>Descripción</strong></th>
+      <th><strong>Recurso.elemento</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>IdInterconsulta</td>
+      <td>1..1</td>
+      <td>Identificador de la Interconsulta Corresponde a Identificador de la Interconsulta Se asigna desde nivel central. En esta transacción el dato es OBLIGATORIO</td>
+      <td>ServiceRequestLE.identifier</td>
+    </tr>
+    <tr>
+      <td>FechaEventoReferenciar</td>
+      <td>1..1</td>
+      <td>Fecha del Evento</td>
+      <td>MessageHeaderLE.meta.lastUpdated</td>
+    </tr>
+    <tr>
+      <td>EstablecimientoCodigoOrigen</td>
+      <td>1..1</td>
+      <td>Código DEIS de Establecimiento solicitante</td>
+      <td>OrganizationLE.identifier</td>
+    </tr>
+    <tr>
+      <td>SolucionInformaticaOrigen</td>
+      <td>1..1</td>
+      <td>Solución Informática. Corresponde al nombre (un string human-friendly) del aplicativo de Registro Clínico Electronico. que realiza el envío de la información.</td>
+      <td>MessageHeaderLE.source.software</td>
+    </tr>
+    <tr>
+      <td>TipoIdentificadorCodigoProf</td>
+      <td>1..1</td>
+      <td>Identificador de identidad del Profesional. Corresponde a dos slices:</td>
+      <td>Practitioner.identifier[RUN].value=valor</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>Practitioner.identifier[RNPI].value=valor</td>
+    </tr>
+    <tr>
+      <td>DigitoVerificadorProf</td>
+      <td>1..1</td>
+      <td>Dígito verificador asociado al RUN del Profesional</td>
+      <td>Practitioner.identifier[RUN].extension.valueString=k</td>
+    </tr>
+    <tr>
+      <td>OtraIdentificacionProf</td>
+      <td>1..1</td>
+      <td>Otra Identificación</td>
+      <td>Practitioner,identifier[otro].value=valor otro</td>
+    </tr>
+    <tr>
+      <td>RunProf</td>
+      <td>1..1</td>
+      <td>El Rol Único Nacional (RUN) del Profesional</td>
+      <td>Practitioner.identifier[RUN].value=VALORRUN</td>
+    </tr>
+    <tr>
+      <td>NombreOficial</td>
+      <td>1..1</td>
+      <td>Nombre profesional</td>
+      <td>Practitioner.name.use=official Practitioner.name.given=[nombre1, nombre2]</td>
+    </tr>
+    <tr>
+      <td>PrimerApellidoProfesional</td>
+      <td>1..1</td>
+      <td> </td>
+      <td>Practitionername._family=</td>
+    </tr>
+    <tr>
+      <td>SegundoApellidoProfesional</td>
+      <td>0..1</td>
+      <td> </td>
+      <td>Practitioner.name.family.extension[SegundoApellido]=</td>
+    </tr>
+    <tr>
+      <td>TituloProfesionalCodigo</td>
+      <td>1..1</td>
+      <td>Titulo del profesional</td>
+      <td>Practitioner.qualification[TIT]</td>
+    </tr>
+    <tr>
+      <td>EspecialidadMedicaCodigo</td>
+      <td>0..*</td>
+      <td>Especialidad Médica del profesional</td>
+      <td>Practitioner.qualification[esp]</td>
+    </tr>
+    <tr>
+      <td>Subespecialidad</td>
+      <td>0..*</td>
+      <td>Subespecialidad del profesional</td>
+      <td>Practitioner.qualification[subesp]</td>
+    </tr>
+    <tr>
+      <td>DestinoReferenciaCodigo</td>
+      <td>1..1</td>
+      <td>Identificación del nivel hacia donde se referencia el paciente</td>
+      <td>ServiceRequestLE.locationCode.CodeableConcept.coding.code</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ServiceRequestLE.locationCode.CodeableConcept.coding.system</td>
+    </tr>
+    <tr>
+      <td>EstablecimientoDestinoCodigo</td>
+      <td>1..1</td>
+      <td>Código DEIS del establecimiento destino</td>
+      <td>OrganizationLE.identifier</td>
+    </tr>
+    <tr>
+      <td>EstadoInterconsultaCodigo</td>
+      <td>1..1</td>
+      <td>Estado de la Interconsulta en relación al proceso de negocio</td>
+      <td>ServiceRequestLE.extensión.valueCodeableConcept.coding.code</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td>ServiceRequestLE.extensión.valueCodeableConcept.coding.system</td>
+    </tr>
+    <tr>
+      <td>ServicioDerivacionRequerido</td>
+      <td>1.1</td>
+      <td>Corresponde al servicio requerido en la organización de referencia</td>
+      <td>ServiceRequestLE.code</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
 
 
 </div>
@@ -1865,7 +2038,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Feb 21, 2024 16:19+0000">2024-02-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 29, 2024 18:01+0000">2024-02-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
