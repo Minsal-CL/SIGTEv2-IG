@@ -65,7 +65,7 @@ Description: "Bundle Evento Iniciar"
 
 
 /*Budle Referencia*/
-Instance: EjemploBundleReferencia
+Instance: EjemploBundleReferenciar
 InstanceOf: BundleReferenciarLE
 Usage: #example
 Title: "Bundle Evento Referenciar"
