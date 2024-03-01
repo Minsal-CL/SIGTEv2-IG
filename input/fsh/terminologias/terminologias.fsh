@@ -441,8 +441,9 @@ Description: "Pertinencia Interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Pertinente Incompleta"
+* #1 "Pertinente"
 * #2 "No Pertinente"
+* #3 "Pertinente Incompleta"
 
 ValueSet: VSModalidadAtencionCodigo
 Id: VSModalidadAtencionCodigo
