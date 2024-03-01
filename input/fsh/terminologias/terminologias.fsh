@@ -477,8 +477,8 @@ Description: "Pertinencia Interconsulta"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * #1 "Pertinente" 
-* #2 "Pertinente Incompleta"
-* #3 "No Pertinente"
+* #3 "Pertinente Incompleta"
+* #2 "No Pertinente"
 
 ValueSet: VSModalidadAtencionCodigo
 Id: VSModalidadAtencionCodigo
