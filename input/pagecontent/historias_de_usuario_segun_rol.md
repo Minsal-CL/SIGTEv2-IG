@@ -22,8 +22,9 @@ Las historias se definen según el siguiente esquema: “Como <rol de usuario>, 
   - Razón de la solicitud de interconsulta como concepto
   - Solicitante 
 
-Verificar que el iniciador debe ingresar paciente, especialidad, prioridad,
-razón y solicitante. el box
+**Resultado de la acción**
+
+La solicitud de interconsulta es creada para continuar con el proceso de referencia.
  
 ### Referenciador
   
@@ -34,28 +35,28 @@ razón y solicitante. el box
   Como referenciador, yo quiero referenciar una solicitud de interconsulta.
   
   **Criterios de aceptación**
-  Verificar que el referenciador puede listar las solicitudes de interconsultas
+  - Verificar que el referenciador puede listar las solicitudes de interconsultas
   ordenadas por:
-  - Nombres y apellidos
-  - Número de identificación
-  - Fecha de creación
-  - Prioridad
-  - Especialidad de destino
-  - Motivo codificado de la solicitud
+    - Nombres y apellidos
+    - Número de identificación
+    - Fecha de creación
+    - Prioridad
+    - Especialidad de destino
+    - Motivo codificado de la solicitud
   - Verificar que el referenciador puede revisar el detalle de cada solicitud de
-  interconsulta evaluando la información de
-  - Nombres y apellidos
-  - Número de identificación
-  - Sexo registral e identidad de género
-  - Fecha de nacimiento y edad al momento de la creación
-  - Cantidad de días de espera
-  - Prioridad asignada por el solicitante
-  - Especialidad de destino
-  - Motivo codificado de la solicitud
-  - Motivo en texto libre de la solicitud
-  - Notas o detalle adicional de la solicitud
+  interconsulta evaluando la información de:
+    - Nombres y apellidos
+    - Número de identificación
+    - Sexo registral e identidad de género
+    - Fecha de nacimiento y edad al momento de la creación
+    - Cantidad de días de espera
+    - Prioridad asignada por el solicitante
+    - Especialidad de destino
+    - Motivo codificado de la solicitud
+    - Motivo en texto libre de la solicitud
+    - Notas o detalle adicional de la solicitud
   
-  Verificar que el referenciador puede asignar el establecimiento, organización o
+  - Verificar que el referenciador puede asignar el establecimiento, organización o
   ubicación que será la responsable de continuar con el proceso de atención.
   
   **Resultado de la acción**
@@ -69,7 +70,8 @@ razón y solicitante. el box
   
   **Historia**
   
-  Como profesional revisor, yo quiero revisar las solicitudes de interconsulta.
+  Como profesional revisor, yo quiero revisar las solicitudes 
+  de interconsulta para evaluar su pertinencia.
 
   **Criterios de aceptación**
   
@@ -84,7 +86,6 @@ razón y solicitante. el box
 
   - Verificar que el revisor puede revisar el detalle de cada solicitud de
   interconsulta evaluando la información de
-
     - Nombres y apellidos
     - Número de identificación
     - Sexo registral e identidad de género
@@ -101,15 +102,15 @@ razón y solicitante. el box
   **Resultado de la acción**
   
   **Si es “Pertinente”**:   El equipo profesional de su centro de salud de atención
-  primaria tomará contacto con el paciente y le informará que su caso ha sido
+  primaria tomará contacto con el/la usuario/a y le informará que su caso ha sido
   revisado y será atendido por especialidad, en el centro de atención de
   especialidad. 
   
-  **Si es “No Pertinente”**:  El equipo profesional de su centro de salud de
-  atención primaria tomará contacto con el paciente y le informará que la
+  **Si es “No Pertinente”**:  El equipo profesional del establecimiento de salud de
+  atención primaria tomará contacto con el/la usuario/a y le informará que la
   continuación de su atención se realizará en un centro de atención primaria y que
-  será contactado por el equipo de dicho establecimiento para continuar con su
-  atención. 
+  gestionará su atención por parte del equipo de dicho establecimiento para continuar con su
+  atención en el nivel secundario. 
 
 ### Priorizador
 
@@ -117,7 +118,8 @@ razón y solicitante. el box
   
   **Historia**
   
-  Como profesional priorizador, yo quiero revisar las solicitudes de interconsulta.
+  Como profesional priorizador, yo quiero revisar las solicitudes de interconsulta 
+  y confirmar o cambiar la prioridad.
   
   **Criterios de aceptación**
   - Verificar que el priorizador puede listar las solicitudes de interconsultas
@@ -134,13 +136,13 @@ razón y solicitante. el box
 
   **Resultado de la acción**
   
-  PRIORIZAR la interconsulta que llega a nivel secundario y se prioriza.
+  La solicitud de interconsulta que llega a nivel secundario 
+  es priorizada para continuar con el proceso de agendamiento.
   
-  El equipo profesional de su centro de salud de atención primaria tomará contacto
-  con el paciente y le informará que su caso ha sido revisado en el establecimiento
+  El equipo profesional del establecimiento de atención primaria tomará contacto
+  con el/la usuario/a y le informará que su caso ha sido revisado en el establecimiento
   de destino y se le asignará una cita en el más breve plazo posible de acuerdo a
-  sus antecedentes médicos, de acuerdo con el resultado del procedimiento de
-  priorización determinado.
+  sus antecedentes médicos y la prioridad definida.
 
  
 ### Agendador
@@ -172,8 +174,8 @@ razón y solicitante. el box
   
   El agendador puede asignar paciente asociando a un número de interconsulta a un
   bloque horario de atención (Slot), generando una cita (Appointment) en estado de
-  “agendado” (booked). También puede registrar cuando no es posible contactar al
-  usuario o éste no asiste a su cita. 
+  “agendado” (booked). También puede registrar cuando no es posible contactar al/la usuario/a
+  o no asiste a su cita. 
 
 ### Atendedor
   
@@ -181,9 +183,8 @@ razón y solicitante. el box
   
   **Historia**
   
-  Como atendedor, quiero resolver una solicitud de interconsulta, previamente
-  revisada por el contralor, priorizada por el priorizador y agendada por el
-  agendador.
+  Como atendedor, quiero atender a un/a usuario/a para resolver una solicitud de interconsulta, 
+  previamente revisada por el contralor, priorizada por el priorizador y agendada por el agendador.
   
   **Criterios de aceptación**
   
@@ -203,14 +204,13 @@ razón y solicitante. el box
 #### Como terminador quiero terminar el proceso de atención de una solicitud de interconsulta.
 
   **Historia**
-  Como terminador, quiero egresar al usuario de la Lista de Espera y terminar el
-  ciclo de una solicitud de interconsulta.
+  Como terminador, quiero egresar al usuario de la Lista de Espera 
+  y terminar el ciclo de una solicitud de interconsulta.
 
   **Criterios de aceptación**
   
   - Verificar que un terminador puede ver la información de la solicitud de
-  interconsulta con la consiguiente información, sobre las 18 causales de egreso
-  según la Norma Técnica N°118.
+  interconsulta con la consiguiente información:
     - Nombres y apellidos del paciente
     - Número de identificación
     - Estado del paciente 
@@ -223,4 +223,5 @@ razón y solicitante. el box
     
   **Resultado de la acción**
   
-  Como terminador quiero terminar el proceso de atención de una interconsulta.
+  El usuario es egresado de la Lista de Espera por alguna de las 20 
+  causales definidas en la [Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view).
