@@ -1453,15 +1453,16 @@ Description:  "Pueblos Originarios de Chile"
 * ^caseSensitive = true
 * #01	"Mapuche"
 * #02	"Aymara"
-* #03	"Rapa Nui o pascuense"
-* #04	"Lickanatay"
+* #03	"Rapa Nui O Pascuense"
+* #04	"Lickanantay"
 * #05	"Quechua"
 * #06	"Colla"
 * #07	"Diaguita"
-* #08	"Kaweskar"
-* #09	"Yagan"
-* #10	"Chango"
-* #96	"Otro (Especificar)"
+* #08	"Kawéskar"
+* #09	"Yagán"
+* #10	"Otro (Especificar)"
+* #11	"Chango"
+
 
 
 ValueSet: VSEstadoCivil
