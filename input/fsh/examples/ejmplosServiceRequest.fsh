@@ -114,7 +114,7 @@ Description: "ServiceRequest Evento Referenciar"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
 * locationCode.text = "Motivo derivación"
 * locationCode.coding.code = #1
-* code = http://snomed.info/sct#3457005
+* code = http://snomed.info/sct#103696004
 * locationCode.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo"
 * performer = Reference(EjemploPractitionerRoleReferenciadorMHREFERENCIADA)
 * supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
