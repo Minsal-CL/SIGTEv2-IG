@@ -236,8 +236,9 @@ Las historias se definen según el siguiente esquema: “Como <rol de="" usuario
   <li>Solicitante</li>
 </ul>
 
-<p>Verificar que el iniciador debe ingresar paciente, especialidad, prioridad,
-razón y solicitante. el box</p>
+<p><strong>Resultado de la acción</strong></p>
+
+<p>La solicitud de interconsulta es creada para continuar con el proceso de referencia.</p>
 
 <h3 id="referenciador">Referenciador</h3>
 
@@ -247,32 +248,37 @@ razón y solicitante. el box</p>
 
 <p>Como referenciador, yo quiero referenciar una solicitud de interconsulta.</p>
 
-<p><strong>Criterios de aceptación</strong>
-  Verificar que el referenciador puede listar las solicitudes de interconsultas
-  ordenadas por:</p>
+<p><strong>Criterios de aceptación</strong></p>
 <ul>
-  <li>Nombres y apellidos</li>
-  <li>Número de identificación</li>
-  <li>Fecha de creación</li>
-  <li>Prioridad</li>
-  <li>Especialidad de destino</li>
-  <li>Motivo codificado de la solicitud</li>
+  <li>Verificar que el referenciador puede listar las solicitudes de interconsultas
+  ordenadas por:
+    <ul>
+      <li>Nombres y apellidos</li>
+      <li>Número de identificación</li>
+      <li>Fecha de creación</li>
+      <li>Prioridad</li>
+      <li>Especialidad de destino</li>
+      <li>Motivo codificado de la solicitud</li>
+    </ul>
+  </li>
   <li>Verificar que el referenciador puede revisar el detalle de cada solicitud de
-  interconsulta evaluando la información de</li>
-  <li>Nombres y apellidos</li>
-  <li>Número de identificación</li>
-  <li>Sexo registral e identidad de género</li>
-  <li>Fecha de nacimiento y edad al momento de la creación</li>
-  <li>Cantidad de días de espera</li>
-  <li>Prioridad asignada por el solicitante</li>
-  <li>Especialidad de destino</li>
-  <li>Motivo codificado de la solicitud</li>
-  <li>Motivo en texto libre de la solicitud</li>
-  <li>Notas o detalle adicional de la solicitud</li>
+  interconsulta evaluando la información de:
+    <ul>
+      <li>Nombres y apellidos</li>
+      <li>Número de identificación</li>
+      <li>Sexo registral e identidad de género</li>
+      <li>Fecha de nacimiento y edad al momento de la creación</li>
+      <li>Cantidad de días de espera</li>
+      <li>Prioridad asignada por el solicitante</li>
+      <li>Especialidad de destino</li>
+      <li>Motivo codificado de la solicitud</li>
+      <li>Motivo en texto libre de la solicitud</li>
+      <li>Notas o detalle adicional de la solicitud</li>
+    </ul>
+  </li>
+  <li>Verificar que el referenciador puede asignar el establecimiento, organización o
+  ubicación que será la responsable de continuar con el proceso de atención.</li>
 </ul>
-
-<p>Verificar que el referenciador puede asignar el establecimiento, organización o
-  ubicación que será la responsable de continuar con el proceso de atención.</p>
 
 <p><strong>Resultado de la acción</strong></p>
 
@@ -285,7 +291,8 @@ razón y solicitante. el box</p>
 
 <p><strong>Historia</strong></p>
 
-<p>Como profesional revisor, yo quiero revisar las solicitudes de interconsulta.</p>
+<p>Como profesional revisor, yo quiero revisar las solicitudes 
+  de interconsulta para evaluar su pertinencia.</p>
 
 <p><strong>Criterios de aceptación</strong></p>
 
@@ -301,10 +308,8 @@ razón y solicitante. el box</p>
       <li>Motivo codificado de la solicitud</li>
     </ul>
   </li>
-  <li>
-    <p>Verificar que el revisor puede revisar el detalle de cada solicitud de
-  interconsulta evaluando la información de</p>
-
+  <li>Verificar que el revisor puede revisar el detalle de cada solicitud de
+  interconsulta evaluando la información de
     <ul>
       <li>Nombres y apellidos</li>
       <li>Número de identificación</li>
@@ -324,15 +329,15 @@ razón y solicitante. el box</p>
 <p><strong>Resultado de la acción</strong></p>
 
 <p><strong>Si es “Pertinente”</strong>:   El equipo profesional de su centro de salud de atención
-  primaria tomará contacto con el paciente y le informará que su caso ha sido
+  primaria tomará contacto con el/la usuario/a y le informará que su caso ha sido
   revisado y será atendido por especialidad, en el centro de atención de
   especialidad.</p>
 
-<p><strong>Si es “No Pertinente”</strong>:  El equipo profesional de su centro de salud de
-  atención primaria tomará contacto con el paciente y le informará que la
+<p><strong>Si es “No Pertinente”</strong>:  El equipo profesional del establecimiento de salud de
+  atención primaria tomará contacto con el/la usuario/a y le informará que la
   continuación de su atención se realizará en un centro de atención primaria y que
-  será contactado por el equipo de dicho establecimiento para continuar con su
-  atención.</p>
+  gestionará su atención por parte del equipo de dicho establecimiento para continuar con su
+  atención en el nivel secundario.</p>
 
 <h3 id="priorizador">Priorizador</h3>
 
@@ -340,7 +345,8 @@ razón y solicitante. el box</p>
 
 <p><strong>Historia</strong></p>
 
-<p>Como profesional priorizador, yo quiero revisar las solicitudes de interconsulta.</p>
+<p>Como profesional priorizador, yo quiero revisar las solicitudes de interconsulta 
+  y confirmar o cambiar la prioridad.</p>
 
 <p><strong>Criterios de aceptación</strong></p>
 <ul>
@@ -361,13 +367,13 @@ razón y solicitante. el box</p>
 
 <p><strong>Resultado de la acción</strong></p>
 
-<p>PRIORIZAR la interconsulta que llega a nivel secundario y se prioriza.</p>
+<p>La solicitud de interconsulta que llega a nivel secundario 
+  es priorizada para continuar con el proceso de agendamiento.</p>
 
-<p>El equipo profesional de su centro de salud de atención primaria tomará contacto
-  con el paciente y le informará que su caso ha sido revisado en el establecimiento
+<p>El equipo profesional del establecimiento de atención primaria tomará contacto
+  con el/la usuario/a y le informará que su caso ha sido revisado en el establecimiento
   de destino y se le asignará una cita en el más breve plazo posible de acuerdo a
-  sus antecedentes médicos, de acuerdo con el resultado del procedimiento de
-  priorización determinado.</p>
+  sus antecedentes médicos y la prioridad definida.</p>
 
 <h3 id="agendador">Agendador</h3>
 
@@ -404,8 +410,8 @@ razón y solicitante. el box</p>
 
 <p>El agendador puede asignar paciente asociando a un número de interconsulta a un
   bloque horario de atención (Slot), generando una cita (Appointment) en estado de
-  “agendado” (booked). También puede registrar cuando no es posible contactar al
-  usuario o éste no asiste a su cita.</p>
+  “agendado” (booked). También puede registrar cuando no es posible contactar al/la usuario/a
+  o no asiste a su cita.</p>
 
 <h3 id="atendedor">Atendedor</h3>
 
@@ -413,9 +419,8 @@ razón y solicitante. el box</p>
 
 <p><strong>Historia</strong></p>
 
-<p>Como atendedor, quiero resolver una solicitud de interconsulta, previamente
-  revisada por el contralor, priorizada por el priorizador y agendada por el
-  agendador.</p>
+<p>Como atendedor, quiero atender a un/a usuario/a para resolver una solicitud de interconsulta, 
+  previamente revisada por el contralor, priorizada por el priorizador y agendada por el agendador.</p>
 
 <p><strong>Criterios de aceptación</strong></p>
 
@@ -440,15 +445,14 @@ razón y solicitante. el box</p>
 <h4 id="como-terminador-quiero-terminar-el-proceso-de-atención-de-una-solicitud-de-interconsulta">Como terminador quiero terminar el proceso de atención de una solicitud de interconsulta.</h4>
 
 <p><strong>Historia</strong>
-  Como terminador, quiero egresar al usuario de la Lista de Espera y terminar el
-  ciclo de una solicitud de interconsulta.</p>
+  Como terminador, quiero egresar al usuario de la Lista de Espera 
+  y terminar el ciclo de una solicitud de interconsulta.</p>
 
 <p><strong>Criterios de aceptación</strong></p>
 
 <ul>
   <li>Verificar que un terminador puede ver la información de la solicitud de
-  interconsulta con la consiguiente información, sobre las 18 causales de egreso
-  según la Norma Técnica N°118.
+  interconsulta con la consiguiente información:
     <ul>
       <li>Nombres y apellidos del paciente</li>
       <li>Número de identificación</li>
@@ -465,7 +469,8 @@ razón y solicitante. el box</p>
 
 <p><strong>Resultado de la acción</strong></p>
 
-<p>Como terminador quiero terminar el proceso de atención de una interconsulta.</p>
+<p>El usuario es egresado de la Lista de Espera por alguna de las 20 
+  causales definidas en la <a href="https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view">Norma Técnica N°118</a>.</p>
 
 
 
@@ -491,7 +496,7 @@ razón y solicitante. el box</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 1, 2024 15:50+0000">2024-03-01</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 4, 2024 15:00+0000">2024-03-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
