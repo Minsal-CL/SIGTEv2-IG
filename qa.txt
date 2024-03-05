@@ -1,9 +1,9 @@
 TiemposDeEsperaInteroperable : Validation Results
 =========================================
 
-err = 0, warn = 226, info = 44
+err = 0, warn = 229, info = 44
 IG Publisher Version: 1.5.16 Out of date - current version is 1.6.0
-Generated Mon Mar 04 15:06:13 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.1.7 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei)
+Generated Tue Mar 05 20:51:43 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.1.7 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei)
  Build Errors : 0 / 5 / 0
  /github/workspace/fsh-generated/resources/AllergyIntolerance-EjemploAllergyIntolerance : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAgendar : 0 / 0 / 1
@@ -11,7 +11,7 @@ Generated Mon Mar 04 15:06:13 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsa
  /github/workspace/fsh-generated/resources/Appointment-EjemploAppointmentAgendarSinPresentacion : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAgendar : 0 / 11 / 29
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleAtender : 0 / 22 / 38
- /github/workspace/fsh-generated/resources/Bundle-EjemploBundleIniciar : 0 / 26 / 59
+ /github/workspace/fsh-generated/resources/Bundle-EjemploBundleIniciar : 0 / 28 / 59
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundlePriorizar : 0 / 11 / 18
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleReferenciar : 0 / 16 / 26
  /github/workspace/fsh-generated/resources/Bundle-EjemploBundleRevisar : 0 / 14 / 31
@@ -99,7 +99,7 @@ Generated Mon Mar 04 15:06:13 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsa
  /github/workspace/fsh-generated/resources/PractitionerRole-EjemploPractitionerRoleTerminar : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseAtenderLE : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseIniciarLE : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequest : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAgendar : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestAtender : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ServiceRequest-EjemploServiceRequestExamen : 0 / 0 / 1
@@ -272,6 +272,8 @@ WARNING: Bundle/EjemploBundleAtender: Bundle.entry[8].resource: Best Practice Re
 WARNING: Bundle/EjemploBundleAtender: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/EjemploBundleAtender: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Bundle-EjemploBundleIniciar.json ==
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[1].resource.supportingInfo[3].display: value should not start or finish with whitespace ' Riesgo Leve, 1 condición crónica'
+WARNING: Bundle/EjemploBundleIniciar: Bundle.entry[1].resource/*ServiceRequest/EjemploServiceRequest*/.supportingInfo[3].display: value should not start or finish with whitespace ' Riesgo Leve, 1 condición crónica'
 INFORMATION: Bundle/EjemploBundleIniciar: Bundle.entry[2].resource.entry[3].resource/*Patient/EjemploPatient*/.extension[8].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS|0.1.7
 INFORMATION: Bundle/EjemploBundleIniciar: Bundle.entry[5].resource.entry[3].resource/*Patient/EjemploPatient*/.extension[8].value.ofType(CodeableConcept): Reference to experimental CodeSystem https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS|0.1.7
 INFORMATION: Bundle/EjemploBundleIniciar: Bundle.entry[4].resource.code.coding[0].system: A definition for CodeSystem 'http://diagnosticos.cl/uno' could not be found, so the code cannot be validated
@@ -509,6 +511,7 @@ INFORMATION: QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE: Questi
 == fsh-generated/resources/QuestionnaireResponse-EjemploQuestionnaireResponseIniciarLE.json ==
 INFORMATION: QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE: QuestionnaireResponse: No questionnaire is identified, so no validation can be performed against the base questionnaire
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequest.json ==
+WARNING: ServiceRequest/EjemploServiceRequest: ServiceRequest.supportingInfo[3].display: value should not start or finish with whitespace ' Riesgo Leve, 1 condición crónica'
 == fsh-generated/resources/ServiceRequest-EjemploServiceRequestAgendar.json ==
 WARNING: ServiceRequest/EjemploServiceRequestAgendar: ServiceRequest.identifier[0].type.coding[0]: A definition for CodeSystem 'http://terminology.cens.cl/CodeSystem/listaespera' could not be found, so the code cannot be validated
 WARNING: ServiceRequest/EjemploServiceRequestAgendar: ServiceRequest.identifier[0].type.coding[0]: ValueSet 'http://terminology.cens.cl/CodeSystem/listaespera' not found
