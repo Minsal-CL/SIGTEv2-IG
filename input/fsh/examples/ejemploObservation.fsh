@@ -6,7 +6,7 @@ Description: "Observation Evento Iniciar"
 
 * status = #registered
 * code.text = "examenes"
-* valueString = "Exámen que se realizó"
+* valueString = "No se presentan exámenes anteriores"
 
 Instance: EjemploObservationAtender
 InstanceOf: ObservationAtenderLE

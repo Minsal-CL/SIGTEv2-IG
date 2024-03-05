@@ -24,20 +24,20 @@ Description: "ServiceRequest Evento Iniciar"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #1
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
 * subject = Reference(EjemploPatient) "Anibal Diaz Cortés"
-* encounter = Reference(EjemploEncounter) "Referencia a Encounter"
+* encounter = Reference(EjemploEncounter) "Presencial 2023-10-25 09:00:00 --> 2023-10-25 09:20:00"
 * authoredOn = "2022-10-25T09:10:20Z"
 * reasonCode = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo#1
 * performer = Reference(EjemploPractitionerRole)
-* reasonReference = Reference(EjemploObservation) "Referencia a Observacion del evento Iniciar"
-* supportingInfo[DiagnosticoSospecha] = Reference(EjemploCondition)  "Referencia a Diagnostico Sospecha"
-* supportingInfo[SospechaPatologiaGes] = Reference(EjemploConditionGES) "Referencia a la condición que especifica si es sospecha de GES"
-* supportingInfo[TipoAlergia] = Reference(EjemploAllergyIntolerance)  "Referencia a los tipos de alergia"
-* supportingInfo[IndiceComorbilidad] = Reference(EjemploObservation2) "Referencia al Indice de comorbilidad"
-* supportingInfo[Cuidador] = Reference(EjemploObservationCuidador)  "Referencia a la observación que indica si el paciente es cuidador o no"
-* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
-* supportingInfo[DocCuidador] = Reference(EjemploDocumentReference) "Referencia al documento que acredita que es cuidador"
-* supportingInfo[Prevision] = Reference(EjemploCoverage)  "Referencia a Prevision del Paciente"
-* supportingInfo[motivoDerivacion] = Reference(EjemploQuestionnaireResponseIniciarLE)  "Referencia al Motivo de Derivacion"
+* reasonReference = Reference(EjemploObservation) "No presenta exámen"
+* supportingInfo[DiagnosticoSospecha] = Reference(EjemploCondition)  "Posible insuficiencia cardiaca, requiere evaluación cardiologo"
+* supportingInfo[SospechaPatologiaGes] = Reference(EjemploConditionGES) "Sospecha GES, Insuficiencia Cardiaca"
+* supportingInfo[TipoAlergia] = Reference(EjemploAllergyIntolerance)  "Alergia a la penicilina"
+* supportingInfo[IndiceComorbilidad] = Reference(EjemploObservation2) " Riesgo Leve, 1 condición crónica"
+* supportingInfo[Cuidador] = Reference(EjemploObservationCuidador)  "Cuidador para persona en riesgo"
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "No presenta"
+* supportingInfo[DocCuidador] = Reference(EjemploDocumentReference) "Documento que acredita calidad de cuidador/a del Programa Red Local de Apoyos y Cuidados (MIDESOF)"
+* supportingInfo[Prevision] = Reference(EjemploCoverage)  "FONASA"
+* supportingInfo[motivoDerivacion] = Reference(EjemploQuestionnaireResponseIniciarLE)  "Posible insuficiencia cardiaca"
 
 
 /*
@@ -117,7 +117,7 @@ Description: "ServiceRequest Evento Referenciar"
 * code = http://snomed.info/sct#103696004
 * locationCode.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo"
 * performer = Reference(EjemploPractitionerRoleReferenciadorMHREFERENCIADA)
-* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "No presenta discapacidad"
 /*FIN PARA BUNDLE REFERENCIA*/
 
 /*EJEMPLO PARA BUNDLE TERMINAR*/
@@ -138,7 +138,7 @@ Description: "ServiceRequest Evento Terminar"
 * extension[EstadoInterconsultaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #7
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
-* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "No presenta discapacidad"
 /*FIN PARA BUNDLE TERMINAR*/
 
 
@@ -174,7 +174,7 @@ Description: "ServiceRequest Evento Revisar"
 * category.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo"
 * category.coding.display = "Presencial"
 * performer = Reference(EjemploPractitionerRoleRevisar)
-* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "No presenta discapacidad"
 /*EJEMPLO PARA BUNDLE REVISAR*/
 
 /*EJEMPLO PARA BUNDLE Agendar*/
@@ -194,7 +194,7 @@ Description: "ServiceRequest Evento Agendar"
 * extension[EstadoInterconsultaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EstadoInterconsultaCodigoLE"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #5
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
-* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "No presenta discapacidad"
 /*
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinenciaCodigo"
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.coding.code = #1
@@ -226,7 +226,7 @@ Description: "ServiceRequest Evento Atender"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #6
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
 * extension[ConsecuenciaAtencionCodigo].valueCodeableConcept.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo#1
-* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "No presenta discapacidad"
 /*EJEMPLO PARA BUNDLE REVISAR*/
 
 
@@ -248,7 +248,7 @@ Description: "ServiceRequest Evento Priorizar"
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.code = #4
 * extension[EstadoInterconsultaCodigo].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta"
 * extension[AtencionPreferente].valueBoolean = true
-* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "Referencia a la observación de si el paciente presenta discapacidad"
+* supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "No presenta discapacidad"
 /*EJEMPLO PARA BUNDLE PRIORIZAR*/
 
 

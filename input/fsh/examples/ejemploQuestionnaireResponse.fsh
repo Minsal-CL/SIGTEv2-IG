@@ -19,6 +19,6 @@ Description: "QuestionnaireResponse Evento Iniciar Motivo derivación"
 
 * item.linkId = "MotivoDerivacion"
 * item.text = "Motivo Derivación"
-* item.answer.valueString = "Motivo derivación"
+* item.answer.valueString = "Posible insuficiencia cardiaca"
 * status = #completed
 

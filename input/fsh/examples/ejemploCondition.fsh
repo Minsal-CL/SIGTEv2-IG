@@ -34,7 +34,7 @@ Usage: #example
 Title: "Patología GES (número)"
 Description: "Patología GES (número)"
 
-* code = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologiaGes#A000
+* code = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologiaGes#I509
 * code.text = "SospechaPatologiaGesGlosa"
 * category = http://terminology.hl7.org/CodeSystem/condition-category#problem-list-item
 * category.text = "sospechaGes"
