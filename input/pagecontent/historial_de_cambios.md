@@ -1,15 +1,15 @@
 
-### Cambios de versión 0.1.5 a versión 0.1.7
+### Cambios de versión 0.1.5 a versión 0.1.6
 
-- Cambios generales: 
+- **Cambios generales:** 
    - Todos los Bundles ahora cuentan con secciones de consideraciones generales y específicas, además de su conjunto mínimo de datos. 
    - Los atributos de todos los recursos cuentan con descripciones en español, esto solo para los que aparezcan en las "Diferential Tables" 
    - Todos lo referente a eventos (Iniciar, Agendar, Atender...) ahora cuentan con su verbo escrito en inifitivo. 
    - Ahora todas las referencias que tengan que ver con el paciente son **OBLIGATORIAS**, por lo que sus cardinalidades son 1..1 en todos los recursos que se encuentre una de estas 
-   - Cada uno de los títulos dentro de la sección de “Especificación de Negocio” pasa a ser parte de un menú desplegable, además, en los eventos que corresponda se menciona (con el link correspondiente) a la Norma Técnica N° 118 
+   - Cada uno de los títulos dentro de la sección de “Especificación de Negocio” pasa a ser parte de un menú desplegable, además, en los eventos que corresponda se menciona (con el link) a la Norma Técnica N° 118 y se corrigen algunas secciones del texto.
 
 - Para la sección "Especificaciones Técnicas": 
-   - La pestaña de “Eventos” ahora cuenta con las mismas descripciones que la sección “Eventos Interoperabilidad CNE de APS a Secundario” de la sección de Negocio. 
+   - La pestaña de “Eventos” ahora cuenta con las mismas descripciones que la sección “Eventos Interoperabilidad CNE de APS a Secundario” de la sección de Negocio. Además, se corrigen algunas secciones del texto.
    - La pestaña de “Transacciones” tiene un leve arreglo a unos links que no redireccionaban correctamente. 
    - La pestaña de “Mensajería” tiene un cambio mayor, y es que se borraron los antiguos diagramas para colocar descripciones sobre los mensajes de envío, respuesta y los response code. 
 
@@ -19,7 +19,7 @@
    - Se agrega un recurso nuevo: ObservationInicioDiscapacidadLE. 
    - El título del recurso Patología GES (número) ahora es Condition GES LE. 
 
-- Cambios en los recursos: 
+- **Cambios en los recursos:**
 
    - Para el BundleIniciarLE:   
       - La cadinalidad ahora pasa de 8..17 a 9..17, ya que ahora existe un recurso extra que representa la discapacidad (ObservationIniciarDiscapacidadLE).  
@@ -43,15 +43,12 @@
       - La extensión "SexoBiologico" se elimina 
 
 
-
    - Para el recurso ObservationIniciarCuidadorLE:  
       - Se elimina la extensión PresentaDiscapacidad. 
 
 
-
    - Para el recurso OrganizationLE: 
       - Se corrigen las descripciones del identifier.system 
-
 
 
    - Para el recurso PractitionerRoleLE:  
@@ -80,10 +77,10 @@
 - Para el recurso CarePlanAtenderLE:  
    - Los Elementos "status" e "intent" ahora son requeridos con valores fijos. 
    
-- Cambios en CodeSystem/ValueSets y extensiones:  
+- **Cambios en CodeSystem/ValueSets y extensiones:**
    - El CS de Pertinencia Interconsulta, se pasa de 2 valores (Pertinente Incompleta\|No Pertinente) a 3 valores (Pertinente\|Pertinente Incompleta\|No Pertinente). 
-   - El CS de Pueblo Originarios ahora cuenta con los valores numerados según la norma 231.   
-   - El VS de Servicio Requerido ahora cuenta solo con un valor, que hace referencia a la derivación del paciente (http://snomed.info/sct#3457005 "derivación del paciente (procedimiento)").   
+   - El CS de Pueblo Originarios ahora cuenta con los valores numerados según la norma 231 y se le arreglan valores con faltas ortográficas.   
+   - El VS de Servicio Requerido ahora cuenta solo con un valor, que hace referencia a la derivación del paciente (http://snomed.info/sct#103696004 "derivación del paciente a un especialista (procedimiento)").  
    - El CS/VS "Rol de médicos" ahora se llama "Rol de profesionales".   
    - Se presentan cambios en las descripciones de CSPractitionerTipoRolLE, VSServicioRequerido y el nombre de CS/VSDestinoAtencionCodigo pasa a CS/VSConsecuenciaAtencionCodigo  
    - Sobre las extensiones, se agrega una llamada “Mencion” que hace referencia a la mención profesional, ésta se agregó junto al nuevo Prestador Profesional y Administrativo, provenientes del HPD.  
