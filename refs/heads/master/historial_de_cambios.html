@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Historial De Cambios - Tiempos de Espera Interoperable v0.1.7</title>
+    <title>Historial De Cambios - Tiempos de Espera Interoperable v0.1.6</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -66,7 +66,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
             <br/>
-            <span style="display:inline-block;">0.1.7 - draft
+            <span style="display:inline-block;">0.1.6 - draft
 
 
 
@@ -182,7 +182,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.7. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.6. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   <h2>Historial De Cambios</h2>
   
 
@@ -202,21 +202,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<h3 id="cambios-de-versión-015-a-versión-017">Cambios de versión 0.1.5 a versión 0.1.7</h3>
+<h3 id="cambios-de-versión-015-a-versión-016">Cambios de versión 0.1.5 a versión 0.1.6</h3>
 
 <ul>
-  <li>Cambios generales:
+  <li><strong>Cambios generales:</strong>
     <ul>
       <li>Todos los Bundles ahora cuentan con secciones de consideraciones generales y específicas, además de su conjunto mínimo de datos.</li>
       <li>Los atributos de todos los recursos cuentan con descripciones en español, esto solo para los que aparezcan en las “Diferential Tables”</li>
       <li>Todos lo referente a eventos (Iniciar, Agendar, Atender…) ahora cuentan con su verbo escrito en inifitivo.</li>
       <li>Ahora todas las referencias que tengan que ver con el paciente son <strong>OBLIGATORIAS</strong>, por lo que sus cardinalidades son 1..1 en todos los recursos que se encuentre una de estas</li>
-      <li>Cada uno de los títulos dentro de la sección de “Especificación de Negocio” pasa a ser parte de un menú desplegable, además, en los eventos que corresponda se menciona (con el link correspondiente) a la Norma Técnica N° 118</li>
+      <li>Cada uno de los títulos dentro de la sección de “Especificación de Negocio” pasa a ser parte de un menú desplegable, además, en los eventos que corresponda se menciona (con el link) a la Norma Técnica N° 118 y se corrigen algunas secciones del texto.</li>
     </ul>
   </li>
   <li>Para la sección “Especificaciones Técnicas”:
     <ul>
-      <li>La pestaña de “Eventos” ahora cuenta con las mismas descripciones que la sección “Eventos Interoperabilidad CNE de APS a Secundario” de la sección de Negocio.</li>
+      <li>La pestaña de “Eventos” ahora cuenta con las mismas descripciones que la sección “Eventos Interoperabilidad CNE de APS a Secundario” de la sección de Negocio. Además, se corrigen algunas secciones del texto.</li>
       <li>La pestaña de “Transacciones” tiene un leve arreglo a unos links que no redireccionaban correctamente.</li>
       <li>La pestaña de “Mensajería” tiene un cambio mayor, y es que se borraron los antiguos diagramas para colocar descripciones sobre los mensajes de envío, respuesta y los response code.</li>
     </ul>
@@ -230,7 +230,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li>
-    <p>Cambios en los recursos:</p>
+    <p><strong>Cambios en los recursos:</strong></p>
 
     <ul>
       <li>Para el BundleIniciarLE:
@@ -318,11 +318,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Los Elementos “status” e “intent” ahora son requeridos con valores fijos.</li>
     </ul>
   </li>
-  <li>Cambios en CodeSystem/ValueSets y extensiones:
+  <li><strong>Cambios en CodeSystem/ValueSets y extensiones:</strong>
     <ul>
       <li>El CS de Pertinencia Interconsulta, se pasa de 2 valores (Pertinente Incompleta|No Pertinente) a 3 valores (Pertinente|Pertinente Incompleta|No Pertinente).</li>
-      <li>El CS de Pueblo Originarios ahora cuenta con los valores numerados según la norma 231.</li>
-      <li>El VS de Servicio Requerido ahora cuenta solo con un valor, que hace referencia a la derivación del paciente (http://snomed.info/sct#3457005 “derivación del paciente (procedimiento)”).</li>
+      <li>El CS de Pueblo Originarios ahora cuenta con los valores numerados según la norma 231 y se le arreglan valores con faltas ortográficas.</li>
+      <li>El VS de Servicio Requerido ahora cuenta solo con un valor, que hace referencia a la derivación del paciente (http://snomed.info/sct#103696004 “derivación del paciente a un especialista (procedimiento)”).</li>
       <li>El CS/VS “Rol de médicos” ahora se llama “Rol de profesionales”.</li>
       <li>Se presentan cambios en las descripciones de CSPractitionerTipoRolLE, VSServicioRequerido y el nombre de CS/VSDestinoAtencionCodigo pasa a CS/VSConsecuenciaAtencionCodigo</li>
       <li>Sobre las extensiones, se agrega una llamada “Mencion” que hace referencia a la mención profesional, ésta se agregó junto al nuevo Prestador Profesional y Administrativo, provenientes del HPD.</li>
@@ -355,7 +355,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.7 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 5, 2024 20:46+0000">2024-03-05</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 6, 2024 13:55+0000">2024-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
