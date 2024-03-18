@@ -10,7 +10,7 @@
   "name" : "TiemposDeEsperaInteroperable",
   "title" : "Tiempos de Espera Interoperable",
   "status" : "draft",
-  "date" : "2024-03-06T14:38:01+00:00",
+  "date" : "2024-03-18T16:21:14+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -938,6 +938,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ConsecuenciaAtencionCodigo"
+      },
+      "name" : "Consecuencia Atención Codigo",
+      "description" : "Consecuencia Atención Codigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1053,18 +1065,6 @@
       },
       "name" : "Derivado Para",
       "description" : "Derivado Para",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ConsecuenciaAtencionCodigo"
-      },
-      "name" : "Destino Atención Codigo",
-      "description" : "Destino Atención Codigo",
       "exampleBoolean" : false
     },
     {
@@ -1339,8 +1339,8 @@
       "reference" : {
         "reference" : "ValueSet/VSEstablecimientoDestinoCodigo"
       },
-      "name" : "Establecimiento Destino Codigo",
-      "description" : "Establecimiento Destino Codigo",
+      "name" : "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
+      "description" : "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
       "exampleBoolean" : false
     },
     {
@@ -1351,8 +1351,8 @@
       "reference" : {
         "reference" : "CodeSystem/CSEstablecimientoDestinoCodigo"
       },
-      "name" : "Establecimiento Destino Codigo",
-      "description" : "Establecimiento Destino Codigo",
+      "name" : "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
+      "description" : "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
       "exampleBoolean" : false
     },
     {
@@ -1580,6 +1580,30 @@
       },
       "name" : "HipotesisDiagnosticaCodigo",
       "description" : "HipotesisDiagnosticaCodigo",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSIdInterconsulta"
+      },
+      "name" : "Id interconsulta",
+      "description" : "Id interconsulta",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSIdInterconsulta"
+      },
+      "name" : "Id interconsulta",
+      "description" : "Id interconsulta",
       "exampleBoolean" : false
     },
     {

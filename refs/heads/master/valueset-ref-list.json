@@ -134,7 +134,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ConsecuenciaAtencionCodigo.html" : "Destino Atención Codigo"
+      "StructureDefinition-ConsecuenciaAtencionCodigo.html" : "Consecuencia Atención Codigo"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSDerivadoParaCodigo",
@@ -176,8 +176,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE",
-      "StructureDefinition-DocAcreditacionCuidadorCodigoLE.html" : "Doc Acreditacion Cuidador"
+      "StructureDefinition-DocAcreditacionCuidadorCodigoLE.html" : "Doc Acreditacion Cuidador",
+      "StructureDefinition-DocumentReferenceIniciarLE.html" : "DocumentReference Iniciar LE"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEspecialidadBioqca",
@@ -255,11 +255,14 @@
       "version" : "0.1.6",
       "status" : "active",
       "name" : "VSEstablecimientoDestinoCodigo",
-      "title" : "Establecimiento Destino Codigo",
-      "description" : "Establecimiento Destino Codigo",
+      "title" : "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
+      "description" : "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
       "systems" : [
         "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestinoCodigo"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-OrganizationLE.html" : "Organization LE"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEstadoCivil",
@@ -302,6 +305,20 @@
       "uses" : {
       },
       "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSIdInterconsulta",
+      "version" : "0.1.6",
+      "status" : "active",
+      "name" : "VSIdInterconsulta",
+      "title" : "Id interconsulta",
+      "description" : "Id interconsulta",
+      "systems" : [
+        "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdInterconsulta"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestLE.html" : "ServiceRequest LE"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSIdentidaddeGenero",
@@ -443,8 +460,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-CoverageIniciarLE.html" : "Coverage Iniciar LE",
-      "StructureDefinition-PrevisionCodigoLE.html" : "Previsión determinada de aseguramiento de salud del paciente."
+      "StructureDefinition-PrevisionCodigoLE.html" : "Previsión determinada de aseguramiento de salud del paciente.",
+      "StructureDefinition-CoverageIniciarLE.html" : "Coverage Iniciar LE"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSReligion",
