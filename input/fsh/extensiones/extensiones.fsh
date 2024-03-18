@@ -60,10 +60,10 @@ Description: "Motivo Cierre Interconsulta"
 
 Extension:   ConsecuenciaAtencionCodigo
 Id:          ConsecuenciaAtencionCodigo
-Title:       "Destino Atención Codigo"
-Description: "Destino Atención Codigo"
+Title:       "Consecuencia Atención Codigo"
+Description: "Consecuencia Atención Codigo"
 * value[x] only CodeableConcept
-* value[x] ^short = "Código Destino Atención"
+* value[x] ^short = "Código Consecuencia Atención"
 * url 1..1 MS
 * valueCodeableConcept from VSConsecuenciaAtencionCodigo
 * valueCodeableConcept.coding 1..1 MS
