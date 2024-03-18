@@ -1456,7 +1456,7 @@ Description: "Id interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #00 "IdInterconsulta"
+* #01 "IdInterconsulta"
 
 ValueSet: VSIdInterconsulta
 Id: VSIdInterconsulta
