@@ -14,7 +14,7 @@ Description: "Observation Iniciar, para describir si un paciente necesita cuidad
 * status ^short = "Estado de la obseravación, por defecto 'final' "
 
 * code 1..1 MS
-* code ^short = "Tipo de observación, por defecto se usará como valor fijo el código de loinc que explicita si un paciente necesita cuidador"
+* code ^short = "Tipo de observación, por defecto se usará como valor fijo el código de loinc que explicita si un paciente está a cargo de los cuidados de otra persona"
   * coding ^short = "Códigos definidos por un sistema terminológico"
     * system ^short = "Sistema terminológico, url/uri/uuid"
     * system = "http://loinc.org"
