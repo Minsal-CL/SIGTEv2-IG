@@ -34,6 +34,7 @@
       - El elemento "EstadoInterconsultaCódigo" cambia su cardinalidad a 1..1  
       - Slice en supportingInfo cambia cardinalidad a 1..N, dónde al menos se debe agregar el recurso ObservationInicioDiscapacidadLE.  
       - La extensión "DestinoAtencionCodigo" ahora se llama "ConsecuenciaAtencionCodigo"  
+      - Ahora el identifier.type.coding cuenta con un binding que redirecciona correctamente. 
 
    - **Para el recurso EncounterIniciarLE:**  
       - Se cambia realidad de "diagnosis" de 0..N a 1..1.  
@@ -50,6 +51,7 @@
 
    - **Para el recurso OrganizationLE:** 
       - Se corrigen las descripciones del identifier.system 
+      - Se agrega un binding de ejemplo para el identifier.system
 
 
    - **Para el recurso PractitionerRoleLE:** 
@@ -86,5 +88,7 @@
    - El CS/VS "Rol de médicos" ahora se llama "Rol de profesionales".   
    - Se presentan cambios en las descripciones de CSPractitionerTipoRolLE, VSServicioRequerido y el nombre de CS/VSDestinoAtencionCodigo pasa a CS/VSConsecuenciaAtencionCodigo  
    - Sobre las extensiones, se agrega una llamada “Mencion” que hace referencia a la mención profesional, ésta se agregó junto al nuevo Prestador Profesional y Administrativo, provenientes del HPD.  
+   - El CS Establecimiento Destino Atencion ahora cuenta con los displays correctos (establecimientos al principio). 
+   - Se crea un CS/VS de ejemplo llamado IdInterconsulta, esto con el fin de hacer posible la redirección de un binding en el recurso ServiceRequest (identifier.type.coding)
 
 
