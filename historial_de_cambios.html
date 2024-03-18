@@ -254,6 +254,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <li>El elemento “EstadoInterconsultaCódigo” cambia su cardinalidad a 1..1</li>
           <li>Slice en supportingInfo cambia cardinalidad a 1..N, dónde al menos se debe agregar el recurso ObservationInicioDiscapacidadLE.</li>
           <li>La extensión “DestinoAtencionCodigo” ahora se llama “ConsecuenciaAtencionCodigo”</li>
+          <li>Ahora el identifier.type.coding cuenta con un binding que redirecciona correctamente.</li>
         </ul>
       </li>
       <li><strong>Para el recurso EncounterIniciarLE:</strong>
@@ -276,6 +277,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><strong>Para el recurso OrganizationLE:</strong>
         <ul>
           <li>Se corrigen las descripciones del identifier.system</li>
+          <li>Se agrega un binding de ejemplo para el identifier.system</li>
         </ul>
       </li>
       <li><strong>Para el recurso PractitionerRoleLE:</strong>
@@ -332,6 +334,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>El CS/VS “Rol de médicos” ahora se llama “Rol de profesionales”.</li>
       <li>Se presentan cambios en las descripciones de CSPractitionerTipoRolLE, VSServicioRequerido y el nombre de CS/VSDestinoAtencionCodigo pasa a CS/VSConsecuenciaAtencionCodigo</li>
       <li>Sobre las extensiones, se agrega una llamada “Mencion” que hace referencia a la mención profesional, ésta se agregó junto al nuevo Prestador Profesional y Administrativo, provenientes del HPD.</li>
+      <li>El CS Establecimiento Destino Atencion ahora cuenta con los displays correctos (establecimientos al principio).</li>
+      <li>Se crea un CS/VS de ejemplo llamado IdInterconsulta, esto con el fin de hacer posible la redirección de un binding en el recurso ServiceRequest (identifier.type.coding)</li>
     </ul>
   </li>
 </ul>
@@ -361,7 +365,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 6, 2024 14:38+0000">2024-03-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 18, 2024 16:21+0000">2024-03-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

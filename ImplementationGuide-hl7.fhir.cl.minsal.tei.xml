@@ -11,7 +11,7 @@
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2024-03-06T14:38:01+00:00"/>
+  <date value="2024-03-18T16:21:14+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -755,6 +755,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ConsecuenciaAtencionCodigo"/>
+      </reference>
+      <name value="Consecuencia Atención Codigo"/>
+      <description value="Consecuencia Atención Codigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -861,17 +872,6 @@
       </reference>
       <name value="Derivado Para"/>
       <description value="Derivado Para"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ConsecuenciaAtencionCodigo"/>
-      </reference>
-      <name value="Destino Atención Codigo"/>
-      <description value="Destino Atención Codigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1123,8 +1123,8 @@
       <reference>
         <reference value="ValueSet/VSEstablecimientoDestinoCodigo"/>
       </reference>
-      <name value="Establecimiento Destino Codigo"/>
-      <description value="Establecimiento Destino Codigo"/>
+      <name value="Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"/>
+      <description value="Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1134,8 +1134,8 @@
       <reference>
         <reference value="CodeSystem/CSEstablecimientoDestinoCodigo"/>
       </reference>
-      <name value="Establecimiento Destino Codigo"/>
-      <description value="Establecimiento Destino Codigo"/>
+      <name value="Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"/>
+      <description value="Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1344,6 +1344,28 @@
       </reference>
       <name value="HipotesisDiagnosticaCodigo"/>
       <description value="HipotesisDiagnosticaCodigo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSIdInterconsulta"/>
+      </reference>
+      <name value="Id interconsulta"/>
+      <description value="Id interconsulta"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSIdInterconsulta"/>
+      </reference>
+      <name value="Id interconsulta"/>
+      <description value="Id interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
