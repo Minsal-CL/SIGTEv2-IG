@@ -4,7 +4,7 @@
 
 | Código | Evento| Descripción | Respuesta |
 |--------|----|-----|---|
-| iniciar | Iniciar | Este evento es el inicial, permite registrar información asociada a la interconsulta. Puede ser iniciado por un médico de APS, Servicio de Urgencia de nivel secundario, médico nivel secundario. Cada Interconsulta posee un número único nacional, entregado desde nivel central. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido creada |
+| iniciar | Iniciar |  En este evento, se genera la solicitud de interconsulta para la Consulta Nueva Especialidad, en dónde se registra información asociada a la identificación del paciente y el motivo por el cual se deriva. Cada Interconsulta posee un número único nacional, entregado desde nivel central. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
 Los códigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
