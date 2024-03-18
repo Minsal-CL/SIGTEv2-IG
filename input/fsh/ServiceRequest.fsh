@@ -18,7 +18,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
     * system ^short = "Sistema terminológico, url/uri/uuid"
     * display 0..1 MS
     * display ^short = "Representación visual, definida por el sistema terminológico"
-* identifier.type.coding from http://terminology.cens.cl/CodeSystem/listaespera
+* identifier.type.coding from CSIdInterconsulta (example)
 * identifier.value 1..1 MS
 * identifier.value ^short = "Valor del identificador"
 
