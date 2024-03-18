@@ -290,8 +290,8 @@ Description: "Destino Referencia Codigo"
 
 ValueSet: VSEstablecimientoDestinoCodigo
 Id: VSEstablecimientoDestinoCodigo
-Title: "Establecimiento Destino Codigo"
-Description: "Establecimiento Destino Codigo"
+Title: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
+Description: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -305,8 +305,8 @@ Description: "Establecimiento Destino Codigo"
 
 CodeSystem: CSEstablecimientoDestinoCodigo
 Id: CSEstablecimientoDestinoCodigo
-Title: "Establecimiento Destino Codigo"
-Description: "Establecimiento Destino Codigo"
+Title: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
+Description: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"
@@ -317,61 +317,17 @@ Description: "Establecimiento Destino Codigo"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #101012 "Servicio de Salud Arica Clínica Dental Móvil Simple. Pat. PW4076 (Arica)"
-* #101090 "Servicio de Salud Arica Oficina Sanitaria Chacalluta"
-* #101100 "Servicio de Salud Arica Hospital Dr. Juan Noé Crevanni (Arica)"
-* #101203 "SEREMI De Arica y Parinacota Clínica Hebe"
-* #101212 "SEREMI De Arica y Parinacota Clínica San Agustín"
-* #101213 "SEREMI De Arica y Parinacota Clínica San José"
-* #101214 "SEREMI De Arica y Parinacota Clínica Arica"
-* #101215 "SEREMI De Arica y Parinacota Complejo Penitenciario"
-* #101216 "SEREMI De Arica y Parinacota Servicio Médico Estudiantil U de Tarapacá"
-* #101217 "SEREMI De Arica y Parinacota Centro Clínico Militar Arica"
-* #101219 "SEREMI De Arica y Parinacota Policlínico del Trabajador AChS Arica"
-* #101222 "SEREMI De Arica y Parinacota Instituto de Rehabilitación Infantil TELETÓN (Arica)"
-* #101223 "SEREMI De Arica y Parinacota Centro Médico Monte Sinaí"
-* #101224 "SEREMI De Arica y Parinacota Clínica Santo Domingo"
-* #101225 "SEREMI De Arica y Parinacota Centro Integral de Salud"
-* #101227 "SEREMI De Arica y Parinacota Policlínico Institucional de Gendarmería de Chile (Arica)"
-* #101228 "SEREMI De Arica y Parinacota Policlínico del Agricultor"
-* #101229 "SEREMI De Arica y Parinacota Centro Odontológico Arica"
-* #101234 "SEREMI De Arica y Parinacota Centro de Salud Mutual CChC Arica"
-* #101236 "SEREMI De Arica y Parinacota Centro Dental Megasalud SpA"
-* #101237 "SEREMI De Arica y Parinacota Clínica Dr. Héctor Sánchez"
-* #101238 "SEREMI De Arica y Parinacota Clínica Mella Arica y Compañía Ltda."
-* #101239 "SEREMI De Arica y Parinacota Policlínico Médico-Dental de Carabineros"
-* #101240 "SEREMI De Arica y Parinacota Laboratorio Clínico San José Ltda."
-* #101241 "SEREMI De Arica y Parinacota Laboratorio Bionet"
-* #101242 "SEREMI De Arica y Parinacota Laboratorio Clínico y Hematológico Diagnotest"
-* #101243 "SEREMI De Arica y Parinacota Laboratorio Clínico Central"
-* #101244 "SEREMI De Arica y Parinacota Laboratorio Clínico San Martín"
-* #101245 "SEREMI De Arica y Parinacota Laboratorio Clínico Dialab"
-* #101246 "SEREMI De Arica y Parinacota Laboratorio Clínico del Norte - Labonorte"
-* #101247 "SEREMI De Arica y Parinacota Laboratorio Clínico Chungará"
-* #101248 "SEREMI De Arica y Parinacota Laboratorio Clínico Biolascer"
-* #101300 "Servicio de Salud Arica Centro de Salud Familiar Víctor Bertín Soto"
-* #101302 "Servicio de Salud Arica Centro de Salud Familiar Dr. Amador Neghme de Arica"
-* #101303 "Servicio de Salud Arica Centro de Salud Familiar E. U. Iris Véliz Hume (Ex Oriente)"
-* #101304 "Servicio de Salud Arica Centro de Salud Familiar Putre"
-
-
-// ValueSet: CodPaises
-// Id: CodPais
-// Title: "Códigos de Países"
-// Description: "Codigos definidos para la identificación de países segun norma ISO3166-N"
-// * ^experimental = false
-// * ^version = "1.0.0"
-// * ^status = #active
-// * ^date = "2022-01-18T00:00:00-03:00"
-// * ^contact.name = "HL7 Chile"
-// * ^contact.telecom.system = #email
-// * ^contact.telecom.value = "chair@hl7chile.cl"
-// * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-// * ^copyright = "All content on ISO Online is copyright protected. The copyright is owned by ISO. Any use of the content, including copying of it in whole or in part, for example to another Internet site, is prohibited and would require written permission from ISO."
-
-// * include codes from system urn:iso:std:iso:3166 where code regex "[0-9]{3}"
-
-
+* #101012 "Clínica Dental Móvil Simple. Pat. PW4076 (Arica) Servicio de Salud Arica"
+* #101090 "Oficina Sanitaria Chacalluta Servicio de Salud Arica"
+* #101100 "Hospital Dr. Juan Noé Crevanni (Arica) Servicio de Salud Arica"
+* #101203 "Clínica Hebe SEREMI De Arica y Parinacota"
+* #101212 "Clínica San Agustín SEREMI De Arica y Parinacota"
+* #101213 "Clínica San José SEREMI De Arica y Parinacota"
+* #101214 "Clínica Arica SEREMI De Arica y Parinacota"
+* #101300 "Centro de Salud Familiar Víctor Bertín Soto Servicio de Salud Arica"
+* #101302 "Centro de Salud Familiar Dr. Amador Neghme de Arica Servicio de Salud Arica"
+* #101303 "Centro de Salud Familiar E. U. Iris Véliz Hume (Ex Oriente) Servicio de Salud Arica"
+* #101304 "Centro de Salud Familiar Putre Servicio de Salud Arica"
 
 ValueSet: VSEstadoInterconsulta
 Id: VSEstadoInterconsulta
