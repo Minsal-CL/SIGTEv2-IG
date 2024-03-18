@@ -10,7 +10,7 @@ Description: "Organization LE según [Códigos DEIS del establecimientos](https:
   * value 1..1 MS
 * identifier ^short = "Código DEIS del establecimiento de destino"
 * identifier ^definition = "Código DEIS del establecimiento de destino"
-* identifier.system from CSEstablecimientoDestinoCodigo (example)
+* identifier.system from VSEstablecimientoDestinoCodigo (example)
 * identifier.system ^short = "CS de los codigos DEIS"
 * identifier.system ^definition = "CS de los codigos DEIS"
 * identifier.value ^short = "Código DEIS del establecimiento"

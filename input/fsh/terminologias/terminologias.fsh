@@ -1463,8 +1463,7 @@ Id: VSIdInterconsulta
 Title: "Id interconsulta"
 Description: "Id interconsulta"
 * ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
+* ^version = "0.1"
 * ^status = #active
 * ^date = "2023-01-15"
 * ^contact.name = "MINSAL CHILE"
