@@ -10,10 +10,10 @@ Description: "Practitioner Evento Iniciar"
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
 * name.use = #official
-* name.family = "Sepulveda"
+* name.family = "Sierra"
 * name.family.extension.url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido"
-* name.family.extension.valueString = "Sierra"
-* name.given = "Ernesto"
+* name.family.extension.valueString = "Quintana"
+* name.given = "Miguel"
 
 * identifier[run].use = #official
 * identifier[run].type.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/hpd/CodeSystem/VSTipoIdentificadorDEIS"
@@ -42,9 +42,9 @@ Description: "Practitioner Evento Iniciar"
 
 * qualification[Esp].identifier.value = "esp"
 * qualification[Esp].code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional"
-* qualification[Esp].code.coding.code = #1
-* qualification[Esp].code.coding.display = "MÉDICO CIRUJANO"
-* qualification[Esp].code.text = "Cirujano Cardiovascular"
+* qualification[Esp].code.coding.code = #30
+* qualification[Esp].code.coding.display = "MÉDICO GENERAL"
+* qualification[Esp].code.text = "Médico general"
 * qualification[Esp].period.start = "2023-01-01"
 * qualification[Esp].period.end = "2100-01-31"
 
@@ -58,7 +58,7 @@ Description: "Practitioner Evento Iniciar"
 
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
-Instance: EjemploPractitionerReferenciadorMHREFERENCIADA
+Instance: EjemploPractitionerReferenciarReferenciador
 InstanceOf: PrestadorProfesionalLE
 Usage: #example
 Title: "Practitioner Referenciador Evento Referenciar"
