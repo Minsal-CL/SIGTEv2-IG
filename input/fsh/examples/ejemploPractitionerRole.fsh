@@ -9,18 +9,18 @@ Description: "PractitionerRole Evento Iniciar"
 * code.coding = https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE#iniciador
 
 /*EJEMPLOS PARA BUNDLE REFERENCIA*/
-Instance: EjemploPractitionerRoleReferenciadorMHREFERENCIADA
+Instance: EjemploPractitionerRoleReferenciarReferenciador
 InstanceOf: PractitionerRoleLE
 Usage: #example
 Title: "PractitionerRole Referenciador Evento Referenciar"
 Description: "PractitionerRole Referenciador Evento Referenciar"
 
-* practitioner = Reference(EjemploPractitionerReferenciadorMHREFERENCIADA)
+* practitioner = Reference(EjemploPractitionerReferenciarReferenciador)
 * organization = Reference(EjemploOrganizationReferencia)
 * code.coding.code = #referenciador
 * code.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE"
 
-Instance: EjemploPractitionerRoleAtendedorSRREFERENCIADA
+Instance: EjemploPractitionerRoleReferenciarAtendedor
 InstanceOf: PractitionerRoleLE
 Usage: #example
 Title: "PractitionerRole Atendedor Evento Referenciar"

@@ -17,7 +17,7 @@ Description: "Organization Evento Referenciar"
 * identifier.type = http://minsal.cl/deis/establecimientos#124232 
 * identifier.value = "Hospital Linares"
 
-Instance: EjemploOrganizationReferenciadorMHREFERENCIADA
+Instance: EjemploOrganizationReferenciarReferenciador
 InstanceOf: OrganizationLE
 Usage: #example
 Title: "Organization Referenciador Evento Referenciar"
@@ -52,7 +52,7 @@ Description: "Organization Evento Agendar"
 * identifier.type = http://minsal.cl/deis/establecimientos#124232 
 * identifier.value = "Hospital Linares"
 
-Instance: EjemploOrganizationAgendadorSRREFERENCIADA
+Instance: EjemploOrganizationAgendarAgendador
 InstanceOf: OrganizationLE
 Usage: #example
 Title: "Organization Evento de Agendador"

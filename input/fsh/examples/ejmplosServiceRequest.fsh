@@ -116,7 +116,7 @@ Description: "ServiceRequest Evento Referenciar"
 * locationCode.coding.code = #1
 * code = http://snomed.info/sct#103696004
 * locationCode.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo"
-* performer = Reference(EjemploPractitionerRoleReferenciadorMHREFERENCIADA)
+* performer = Reference(EjemploPractitionerRoleReferenciarReferenciador)
 * supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidad) "No presenta discapacidad"
 /*FIN PARA BUNDLE REFERENCIA*/
 

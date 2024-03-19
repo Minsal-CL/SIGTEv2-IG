@@ -24,7 +24,7 @@ Description: "MesaggeHeader Evento Referenciar"
 * source.software = "Software San Juan Dios (SSJD)"
 * source.endpoint = "http://link-to-sending.cl"
 * focus[ServiceRequestLE] = Reference(EjemploServiceRequestReferenciada)
-* author = Reference(EjemploPractitionerRoleReferenciadorMHREFERENCIADA)
+* author = Reference(EjemploPractitionerRoleReferenciarReferenciador)
 /*FIN PARA BUNDLE REFERENCIADA*/
 
 /*EJEMPLOS PARA BUNDLE Terminar*/
