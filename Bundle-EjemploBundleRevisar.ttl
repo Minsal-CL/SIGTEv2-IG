@@ -25,8 +25,8 @@
      fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestRevisar"^^xsd:anyURI ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/ServiceRequest/EjemploServiceRequestRevisar> )
   ] [
-     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA"^^xsd:anyURI ] ;
-     fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA> )
+     fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleReferenciarReferenciador"^^xsd:anyURI ] ;
+     fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleReferenciarReferenciador> )
   ] [
      fhir:fullUrl [ fhir:v "http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleRevisar"^^xsd:anyURI ] ;
      fhir:resource ( <http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleRevisar> )
@@ -161,8 +161,8 @@
      fhir:display [ fhir:v "No presenta discapacidad" ]
   ] ) . # 
 
-<http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleReferenciadorMHREFERENCIADA> a fhir:PractitionerRole ;
-  fhir:id [ fhir:v "EjemploPractitionerRoleReferenciadorMHREFERENCIADA"] ; # 
+<http://acme.com/ehr/fhir/PractitionerRole/EjemploPractitionerRoleReferenciarReferenciador> a fhir:PractitionerRole ;
+  fhir:id [ fhir:v "EjemploPractitionerRoleReferenciarReferenciador"] ; # 
   fhir:meta [
      fhir:profile ( [
        fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"^^xsd:anyURI ;
@@ -171,11 +171,11 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciadorMHREFERENCIADA\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciadorMHREFERENCIADA&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"Practitioner-EjemploPractitionerReferenciadorMHREFERENCIADA.html\">Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA</a> &quot; SEPULVEDA&quot;</p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationReferencia\">See above (Organization/EjemploOrganizationReferencia)</a></p><p><b>code</b>: Referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de profesionales</a>#referenciador)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: PractitionerRole</b><a name=\"EjemploPractitionerRoleReferenciarReferenciador\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource PractitionerRole &quot;EjemploPractitionerRoleReferenciarReferenciador&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerRoleLE.html\">PractitionerRole LE</a></p></div><p><b>practitioner</b>: <a href=\"Practitioner-EjemploPractitionerReferenciarReferenciador.html\">Practitioner/EjemploPractitionerReferenciarReferenciador</a> &quot; SEPULVEDA&quot;</p><p><b>organization</b>: <a href=\"#Organization_EjemploOrganizationReferencia\">See above (Organization/EjemploOrganizationReferencia)</a></p><p><b>code</b>: Referenciador <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-CSPractitionerTipoRolLE.html\">Rol de profesionales</a>#referenciador)</span></p></div>"
   ] ; # 
   fhir:practitioner [
-     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA> ;
-     fhir:reference [ fhir:v "Practitioner/EjemploPractitionerReferenciadorMHREFERENCIADA" ]
+     fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/EjemploPractitionerReferenciarReferenciador> ;
+     fhir:reference [ fhir:v "Practitioner/EjemploPractitionerReferenciarReferenciador" ]
   ] ; # 
   fhir:organization [
      fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/EjemploOrganizationReferencia> ;
