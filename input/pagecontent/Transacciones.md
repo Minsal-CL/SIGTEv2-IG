@@ -4,7 +4,7 @@
 
 | Código | Evento| Descripción | Respuesta |
 |--------|----|-----|---|
-| iniciar | Iniciar |  En este evento, se genera la solicitud de interconsulta para la Consulta Nueva Especialidad, en dónde se registra información asociada a la identificación del paciente y el motivo por el cual se deriva. Cada Interconsulta posee un número único nacional, entregado desde nivel central. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido creada |
+| iniciar | Iniciar |  En este evento, se genera la solicitud de interconsulta para la Consulta Nueva de Especialidad, en dónde se registra información asociada a la identificación del paciente y el motivo por el cual se deriva. Cada Interconsulta posee un número único nacional, entregado desde nivel central. | La respuesta debe indicar si se produjeron errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
 Los códigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
@@ -46,7 +46,7 @@ No existe precondición para este evento.
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| referenciar | Referenciar | Este evento permite registrar información asociada a una derivación, la cual puede ser: APS a Nivel Secundario, Nivel Secundario a APS, Nivel Secundario a Hospital Digital, etc. El detalle de la derivación es registrado en el campo MotivoDerivación. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido referenciada |
+| referenciar | Referenciar | Este evento permite registrar información asociada a una derivación, la cual puede ser: APS a Nivel Secundario, Nivel Secundario a APS, Nivel Secundario a Hospital Digital, etc. El detalle de la derivación es registrado en el campo MotivoDerivación. | La respuesta debe indicar si se produjeron errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
@@ -87,7 +87,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| revisar | Revisar | Este evento registra la información asociada a la revisión de pertinencia del Gestor de casos del nivel secundario. | La respuesta debe indicar si hay errores o indicar que la interconsulta ha sido revisada |
+| revisar | Revisar | Este evento registra la información asociada a la revisión de pertinencia del Gestor de casos del nivel secundario. | La respuesta debe indicar si se produjeron errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
@@ -128,7 +128,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| priorizar | Priorizar | Este evento registra la información asociada a la asignación de priorización del Gestor de casos. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido priorizada |
+| priorizar | Priorizar | Este evento registra la información asociada a la asignación de priorización del Gestor de casos. | La respuesta debe indicar si se produjeron errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
@@ -170,7 +170,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| agendar | Agendar | Este evento permite registrar información asociada a la programación de la cita con el especialista.| La respuesta debe indicar si errores o indicar que la interconsulta ha sido agendada con el paciente |
+| agendar | Agendar | Este evento permite registrar información asociada a la programación de la cita con el especialista.| La respuesta debe indicar si se produjeron errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
@@ -214,7 +214,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| atender | Atender | Este evento permite registrar información asociada a la atención de consulta de especialidad. | La respuesta debe indicar si hay errores o indicar que la interconsulta se ha llevado a cabo con el paciente |
+| atender | Atender | Este evento permite registrar información asociada a la atención de consulta de especialidad. | La respuesta debe indicar si se produjeron errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
@@ -255,7 +255,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 | Código | Evento| Descripción | Respuesta |
 |--------|-------|-------------|-----------|
-| terminar | Terminar | Este evento permite registrar información asociada a los motivos de cierre o término de la interconsulta. | La respuesta debe indicar si errores o indicar que la interconsulta ha sido terminada |
+| terminar | Terminar | Este evento permite registrar información asociada a los motivos de cierre o término de la interconsulta. | La respuesta debe indicar si se produjeron errores o indicar que la interconsulta ha sido creada |
 {:.grid}
 
 Los codigos de evento deben ser incluidos en el recurso **MessageHeader.evenCoding.code**
