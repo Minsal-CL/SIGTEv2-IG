@@ -290,8 +290,8 @@ Description: "Destino Referencia Codigo"
 
 ValueSet: VSEstablecimientoDestinoCodigo
 Id: VSEstablecimientoDestinoCodigo
-Title: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
-Description: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los códigos DEIS (https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
+Title: "Establecimiento Destino Codigo"
+Description: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -305,7 +305,7 @@ Description: "Establecimiento Destino Codigo ejemplos hechos en base a este docu
 
 CodeSystem: CSEstablecimientoDestinoCodigo
 Id: CSEstablecimientoDestinoCodigo
-Title: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
+Title: "Establecimiento Destino Codigo"
 Description: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
 * ^experimental = false
 * ^caseSensitive = true
