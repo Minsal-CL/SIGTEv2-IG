@@ -1028,6 +1028,7 @@ Description: "TituloProfesional"
 * #27  "ACUPUNTURISTAS"
 * #28  "NATURÓPATAS"
 * #29  "COSMETÓLOGOS/AS"
+* #30 "MÉDICO GENERAL"
 * #99  "DESCONOCIDA"
 
 ValueSet: VSEspecialidadMed
