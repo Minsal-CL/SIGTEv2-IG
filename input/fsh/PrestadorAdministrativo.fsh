@@ -73,5 +73,5 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 //* gender ^short = "Sexo de nacimiento Registrado, male | female | other | unknown (requerido)"
 //* gender ^definition = "Sexo de nacimiento Registrado"
 * birthDate 1..1 MS
-* birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
-* birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
+* birthDate ^short = "Fecha de nacimiento del prestador administrativo. El formato debe ser YYYY-MM-DD"
+* birthDate ^definition = "Fecha de nacimiento del prestador administrativo. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"

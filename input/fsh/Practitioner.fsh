@@ -279,8 +279,8 @@ Corresponde a tres slices:"
 * active MS
 
 * birthDate 1..1 MS
-* birthDate ^short = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD"
-* birthDate ^definition = "Fecha de nacimiento del Paciente. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
+* birthDate ^short = "Fecha de nacimiento del prestador profesional. El formato debe ser YYYY-MM-DD"
+* birthDate ^definition = "Fecha de nacimiento del prestador profesional. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
 * telecom MS
   * rank 0..1 MS
