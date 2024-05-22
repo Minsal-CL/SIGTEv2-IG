@@ -59,9 +59,14 @@ Description: "Patient Lista de Espera"
 * extension[SexoBiologico].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico"
 * extension[SexoBiologico].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSSexoListadoDeis"
 * extension[SexoBiologico].valueCodeableConcept.coding.code = #1
-* extension[identidadGenero].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/IdentidadDeGenero"
-* extension[identidadGenero].valueCodeableConcept.coding.system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentidaddeGenero"
+
+
+//modificar a la ig misma ****************************
+* extension[identidadGenero].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero"
+* extension[identidadGenero].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero"
 * extension[identidadGenero].valueCodeableConcept.coding.code = #1
+// *************************************************
+
 * extension[LugarDeNacimiento].url = "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"
 * extension[LugarDeNacimiento].valueAddress.text = "Curicó"
 * extension[PueblosOriginariosPerteneciente].url = "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginariosPerteneciente"

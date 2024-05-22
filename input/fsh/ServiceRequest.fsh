@@ -133,10 +133,10 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * reasonReference ^short = "Referencia a la observación"
 * encounter only Reference(EncounterIniciarLE)
 * encounter ^short = "Referencia al encuentro que da Iniciar a la interconsulta" 
-//* requester MS
-//* requester only Reference(PractitionerRoleLE)
+* requester 0..1 MS
+* requester only Reference(PractitionerRoleLE)
 
-* performer 0..1 MS
+* performer 1..1 MS
 * performer ^short = "Rol del profesional en cada evento"
 * performer only Reference(PractitionerRoleLE)
 
