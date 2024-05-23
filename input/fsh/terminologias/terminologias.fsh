@@ -219,10 +219,10 @@ Description: "Derivado Para"
 * #4 "Seguimiento"
 * #5 "Otro"
 
-ValueSet: VSinterconsulta
-Id: VSinterconsulta
-Title: "Interconsulta"
-Description: "Interconsulta"
+ValueSet: VSorigenInterconsulta
+Id: VSorigenInterconsulta
+Title: "Origen Interconsulta"
+Description: "Origen Interconsulta"
 * ^experimental = false
 * ^version = "0.1"
 * ^status = #active
@@ -232,12 +232,12 @@ Description: "Interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSinterconsulta
+* codes from system CSorigenInterconsulta
 
-CodeSystem: CSinterconsulta
-Id: CSinterconsulta
-Title: "Interconsulta"
-Description: "Interconsulta"
+CodeSystem: CSorigenInterconsulta
+Id: CSorigenInterconsulta
+Title: "Origen Interconsulta"
+Description: "Origen Interconsulta"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.9"

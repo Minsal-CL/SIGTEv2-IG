@@ -309,7 +309,7 @@ Description: "Origen Interconsulta"
   * code 1..1 MS
   * system 0..1 MS
   * display 0..1 MS
-* valueCodeableConcept from VSinterconsulta
+* valueCodeableConcept from VSorigenInterconsulta
 * valueCodeableConcept.text MS
 
 Extension: DigitoVerificador 

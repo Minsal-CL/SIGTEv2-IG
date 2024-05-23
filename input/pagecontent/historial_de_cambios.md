@@ -12,16 +12,41 @@
 - Perfil [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html)
   - Se elimina la extension "CorrespondeGES"
   - Se elimina la extension "RequiereExamen"
-  - Requester se modifica cardinalidad 0..1 -> 1..1
-  - Requester se agrega MustSupport
-  - Requester debe referenciar solo a "PractitionerRoleLE"
+  - requester se modifica cardinalidad 0..1 -> 1..1
+  - requester se agrega MustSupport
+  - requester debe referenciar solo a "PractitionerRoleLE"
+  - authoredOn se modifica cardinalidad 0..1 -> 1..1
+  - identifier.type binding [IdInterconsulta](ValueSet-VSIdInterconsulta.html)
+  - intent se cambia la descripcion "Tipo de Servicio solicitado" -> "Tipo de solicitud"
+  - code se modifica cardinalidad 0..1 -> 1..1
 
+
+- valueSet cambia nombre VSinterconsulta -> VSorigenInterconsulta 
+- codeSystem cambia nombre CSinterconsulta -> CSorigenInterconsulta 
+- Extension cambia nombre Interconsulta -> OrigenInterconsulta
+- Extension OrigenInterconsulta.valueCodeableConcept cambia binding a VSorigenInterconsulta
+
+
+- [PrestadorProfesionalLE](StructureDefinition-PrestadorProfesionalLE.html)
+  - Se cambia el nombre de los siguientes slices de qualification:
+    - EspOdo -> EspecialidadOdontologica
+    - EspBioQ -> EspecialidadBioQuimica
+    - EspFarma -> EspecialidadFarmacologica
+  - Se cambia cardinalidad identifier[rnpi] 1..1 -> 0..1
+  - Se elimina identifier[pasaporte]
+  - Se elimina identifier[otro]
+  - Se modifica la cardinalidad de identifier[run].use 0..1 -> 1..1 y MS
+  - Se fija el valor de identifier[run].use = #official
+  - Se eleminia la extension SexoBiologico
   
-
 - Modificaciones de la "CLcore"
   - Se cambió el nombre de la extension identifier.type.extension[paises] -> identifier.type.extension[paisEmisionDocumento]
   - Extension "Codigo de Identificación de países", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept.
-
+  - [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
+    - Se cambia el nombre de los siguientes slices de qualification:
+      - Cert -> TituloProfesional
+      - Esp -> EspecialidadMedica
+      - SubEsp -> Subespecialidad
 
 
 

@@ -3,11 +3,13 @@ Parent: ServiceRequest
 Id: ServiceRequestLE
 Title: "ServiceRequest LE"
 Description: "ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta."
+
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 * identifier 0..1 MS
 * identifier ^short = "Corresponde al Identificador de la Interconsulta. Se asigna desde nivel central."
+* identifier.type from VSIdInterconsulta
 * identifier.type 1..1 MS
   * coding 1..1 MS
   * coding ^short = "Códigos definidos por un sistema terminológico"
@@ -18,7 +20,6 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
     * system ^short = "Sistema terminológico, url/uri/uuid"
     * display 0..1 MS
     * display ^short = "Representación visual, definida por el sistema terminológico"
-* identifier.type.coding from VSIdInterconsulta (example)
 * identifier.value 1..1 MS
 * identifier.value ^short = "Valor del identificador"
 
@@ -28,7 +29,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * status = #draft
 
 * intent MS
-* intent ^short = "Tipo de servicio solicitado" 
+* intent ^short = "Tipo de solicitud" 
 * intent = #order
 
 * subject 1..1  MS
@@ -81,7 +82,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * doNotPerform ^short = "Si el servicio debiese o no realizarse."
 * doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text ^short = "Motivo de no pertinencia, como texto libre"
 
-* authoredOn 0..1 MS
+* authoredOn 1..1 MS
 * authoredOn ^short = "Fecha en que se solicita la Interconsulta. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ"
 
 * reasonCode 0..1 MS 
@@ -116,7 +117,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * category from VSModalidadAtencionCodigo
 
 
-* code 0..1 MS
+* code 1..1 MS
   * coding 1..1 MS
   * coding ^short = "Códigos definidos por un sistema terminológico"
     * code 1..1 MS
@@ -133,7 +134,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * reasonReference ^short = "Referencia a la observación"
 * encounter only Reference(EncounterIniciarLE)
 * encounter ^short = "Referencia al encuentro que da Iniciar a la interconsulta" 
-* requester 0..1 MS
+* requester 1..1 MS
 * requester only Reference(PractitionerRoleLE)
 
 * performer 1..1 MS
