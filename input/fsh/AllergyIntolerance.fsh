@@ -18,6 +18,8 @@ Description: "AllergyIntolerance Iniciar LE"
 * patient.display ^definition = "Informacion extra o nombre del paciente"
 
 * code 1..1 MS
+* code.coding 1..1 MS
+  * code 1..1 MS
 * code ^short = "Seccion para identificar la alergia o intolerancia del paciente"
   * text 1..1 MS
-  * text ^short = "Alergia del paciente"
+  * text ^short = "Alergia del paciente"  

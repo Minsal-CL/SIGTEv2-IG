@@ -6,7 +6,8 @@ Description: "CarePlan Atender LE es el recurso utilizado para representar las i
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
-// OBLIGATORIOS POR ESTANDAR
+* extension contains ExtBoolSolicitudExamenes named Requiere-Examen 1..1 MS
+* extension[Requiere-Examen] ^short = "Declaración si el paciente requiere exámenes"
 
 * status MS
 * status ^short = "Estado del CarePlan, en este caso 'active'"
@@ -23,11 +24,20 @@ Description: "CarePlan Atender LE es el recurso utilizado para representar las i
 * description 1..1 MS
 * description ^short = "Descripción como texto libre"
 
-* activity.reference MS
-* activity.reference ^short = "Detalles definidos en un recurso específico"
+* activity ^slicing.discriminator.type = #value
+* activity ^slicing.discriminator.path = "reference"
+* activity ^slicing.rules = #open
+* activity contains referenciaReceta 0..1 MS and referenciaServiceRequestExamenLE 0..1 MS
 
-* extension contains ExtBoolSolicitudExamenes named SolicitudExamenes 1..1 MS
-* extension[SolicitudExamenes] ^short = "Solicitud de exámenes"
+* activity[referenciaServiceRequestExamenLE].reference MS
+* activity[referenciaServiceRequestExamenLE].reference only Reference(ServiceRequestExamenLE)
+* activity[referenciaServiceRequestExamenLE].reference ^short = "Detalles definidos en un recurso específico"
+
+* activity[referenciaReceta].reference MS
+* activity[referenciaReceta].reference only Reference(MedicationRequest)
+* activity[referenciaReceta].reference ^short = "Detalles definidos en un recurso específico"
+
+
 
 
 

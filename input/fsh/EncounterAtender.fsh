@@ -8,6 +8,9 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 
 // Obligatorios por estandar
 
+* extension contains ConsecuenciaAtencionCodigo named ConsecuenciaAtencionCodigo 0..1 MS
+* extension[ConsecuenciaAtencionCodigo] ^short = "Código de la consecuencia de la atención"
+
 * status MS
 * status ^short = "Estado actual del encuentro"
 * status = #finished

@@ -9,6 +9,16 @@
 	- El elemento "deceased[x]" se deja abierto para que se pueda registrar una fecha de fallecimiento o un booleano sobre si el paciente esta fallecido o no
 	- El elemento identifier.type.extension[paisEmisionDocumento] se le cambia la cardinalidad de 0..1 -> 1..1 
 
+- Perfil [BundleAtenderLE](StructureDefinition-BundleAtenderLE.html)
+  - Se agrega entry AllergyIntolerance aceptando solo AllergyIntoleranceIniciarLE en el campo resource
+
+- Perfil [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
+  - Se agrega extensión ConsecuenciaAtencionCodigo
+
+- Perfil [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html)
+  - Se agrega extensión ConsecuenciaAtencionCodigo
+  - Se fija valor ConsecuenciaAtencionCodigo.valueCodeableConcept.coding.code <- 3
+
 - Perfil [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html)
   - Se elimina la extension "CorrespondeGES"
   - Se elimina la extension "RequiereExamen"
@@ -19,7 +29,17 @@
   - identifier.type binding [IdInterconsulta](ValueSet-VSIdInterconsulta.html)
   - intent se cambia la descripcion "Tipo de Servicio solicitado" -> "Tipo de solicitud"
   - code se modifica cardinalidad 0..1 -> 1..1
+  - Se elemina extension "Alergia"
+  - Se cambia cardinalidad supportingInfo[TipoAlergia] 0..1 -> 0..*
+  - Se elimina extensión ConsecuenciaAtencionCodigo
 
+- Perfil [AllergyIntoleranceIniciarLE](StructureDefinition-AllergyIntoleranceIniciarLE.html)
+   - code.coding modifica cardinalidad 0..1 -> 1..1
+   - code.coding.code modifica cardinalidad 0..1 -> 1..1
+
+- Perfil [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html)
+   - Se modifica el nombre de la extension solicitudExamen -> Requiere-Examen
+   - agregar modificaciones echarsss
 
 - valueSet cambia nombre VSinterconsulta -> VSorigenInterconsulta 
 - codeSystem cambia nombre CSinterconsulta -> CSorigenInterconsulta 
@@ -38,7 +58,12 @@
   - Se modifica la cardinalidad de identifier[run].use 0..1 -> 1..1 y MS
   - Se fija el valor de identifier[run].use = #official
   - Se eleminia la extension SexoBiologico
-  
+  - Se cambia binding para identifier.[run] <- VSIdentificadorPrestador
+  - Se cambia binding para identifier.[rnpi] <- VSIdentificadorPrestador
+  - Se cambia cardinalidad qualification[TituloProfesional] 1..1 -> 1..*
+  - Se fija el valor de address.use = #work
+  - Se cambia cardinalidad address.use 0..1 -> 1..1
+
 - Modificaciones de la "CLcore"
   - Se cambió el nombre de la extension identifier.type.extension[paises] -> identifier.type.extension[paisEmisionDocumento]
   - Extension "Codigo de Identificación de países", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept.

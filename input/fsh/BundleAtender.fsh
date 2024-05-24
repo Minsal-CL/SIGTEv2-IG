@@ -27,6 +27,7 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
         and encounter 1..1
         and carePlan 1..1
         and questionnaireResponse 1..1
+        and AllergyIntolerance 0..*
         and observation 0..*
 
 
@@ -57,3 +58,6 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[observation] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
 * entry[observation].resource only ObservationAtenderLE  
 * entry[observation].resource ^short = "Recurso para indicar el resultado de los examenes realizados con anterioridad"
+* entry[AllergyIntolerance] ^short = "Entrada en el Bundle: contendrá un recurso AllergyIntolerance"
+* entry[AllergyIntolerance].resource only AllergyIntoleranceIniciarLE
+* entry[AllergyIntolerance].resource ^short = "Recurso para indicar si el paciente posee alguna alergia"

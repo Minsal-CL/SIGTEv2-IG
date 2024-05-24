@@ -49,9 +49,6 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains ExtBoolResolutividadAPS named ResolutividadAPS 0..1 MS
 * extension[ResolutividadAPS] ^short = "Programa de Resolutividad local."
 
-* extension contains ExtBoolAlergia named Alergia 0..1 MS
-* extension[Alergia] ^short = "Indica si el paciente tiene alergia(s)."
-
 * extension contains OrigenInterconsulta named OrigenInterconsulta 0..1 MS
 * extension[OrigenInterconsulta] ^short = "Origen de la interconsulta"
 
@@ -66,9 +63,6 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 
 * extension contains SubEspecialidadMedicaDestinoCodigo named SubEspecialidadMedicaDestinoCodigo 0..1 MS
 * extension[SubEspecialidadMedicaDestinoCodigo] ^short = "Código de la subespecialidad médica de destino."
-
-* extension contains ConsecuenciaAtencionCodigo named ConsecuenciaAtencionCodigo 0..1 MS
-* extension[ConsecuenciaAtencionCodigo] ^short = "Código del destino de la atención: Control|Alta|Derivación"
 
 * extension contains PertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
 * extension[PertinenciaInterconsulta] ^short = "Tipo de pertinencia de la IC: Pertinente|Incompleta|No pertinente."
@@ -150,7 +144,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * supportingInfo ^slicing.rules = #open
 * supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
 * supportingInfo contains DiagnosticoSospecha 0..1 MS 
-and SospechaPatologiaGes 0..1 MS and TipoAlergia 0..1 MS and IndiceComorbilidad 0..1 MS
+and SospechaPatologiaGes 0..1 MS and TipoAlergia 0..* MS and IndiceComorbilidad 0..1 MS
 and Cuidador 0..1 MS and DocCuidador 0..1 MS and Discapacidad 1..1 MS and Prevision 0..1 MS and motivoDerivacion 0..1 MS and Examen 0..1 MS
 
 * supportingInfo[DiagnosticoSospecha] only Reference(ConditionIniciarDiagnosticoLE)

@@ -12,7 +12,7 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
 * name 1..1 MS
 * name ^short = "Nombre del prestador"
 
-* identifier 2..3
+* identifier 1..2
 * identifier ^short = "Identificador de identidad del Profesional.
 Corresponde a tres slices:"
 
@@ -23,12 +23,13 @@ Corresponde a tres slices:"
 * identifier[run].use 1..1 MS
 * identifier[run] ^definition = "Corresponde al identificador (RUN) otorgado el Registro Civil de Chile"
   * type 1..1 MS
-  * type from VSTipoIdentificador
+  * type from VSIdentificadorPrestador
   * type ^short = "Descripción del identificador"
   * type ^definition = "Descripción para el tipo de identificador"
     * coding MS
     * coding ^short = "Código definido por un sistema terminológico"
       * system 0..1 MS
+      * system = #"https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
       * system ^short = "Sistema de codificación para el tipo de identificador"
       * code 1..1 MS
       * code = #1
@@ -45,13 +46,14 @@ Corresponde a tres slices:"
   * use ^short = "Se define el uso de este identificador"
   * use ^definition = "Se definirá este uso siempre como \"secondary\""
   * type 1..1 MS
-  //* type from VSTipoIdentificadorDEIS
+  * type from VSIdentificadorPrestador
   * type ^short = "Descripción del identificador"
   * type ^definition = "Descripción para el tipo de identificador"
     * coding MS
     * coding ^short = "Código definido por un sistema terminológico"
       * system 1..1 MS
-      * code = #2
+      * code = #13
+      * system  = #"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentificadorPrestador"
       * system ^short = "Sistema de codificación para el código de tipo de identificador"
       * code ^short = "Código que identifica al tipo de documento de identificador"
       * code ^definition = "Código que identifica al tipo de documento de identificador. Será #98 para RNPI"
@@ -75,10 +77,18 @@ Corresponde a tres slices:"
 
 * address only $cl-address
 * address 0..1 MS
+* address.use 1..1 MS
+* address.use = #work
 * address ^short = "Dirección según Guía Core-CL"
+* address.line 1..1 MS
+* address.line ^short = "Calle o avenida, numero y casa o dpto"
+* address.line ^definition = "Calle o avenida, numero y casa o dpto"
+* address.period 0..1 MS
+* address.period ^short = "Periodo de tiempo durante el  cual es válida la dirección entregada"
 
 * qualification 1..* MS
-* qualification[TituloProfesional] 1..1 MS
+* qualification.code from VSTituloProfesional (example)
+* qualification[TituloProfesional] 1..* MS
 * qualification contains 
     EspecialidadOdontologica 0..* MS and
     EspecialidadBioQuimica 0..* MS and
@@ -86,8 +96,8 @@ Corresponde a tres slices:"
 
 * qualification[TituloProfesional].code.text 1..1
 * qualification[EspecialidadMedica].code.text 1..1
-* qualification[EspecialidadMedica].code.text 1..1
-* qualification[EspecialidadMedica].code from VSEspecialidades
+* qualification[Subespecialidad].code.text 1..1
+* qualification[EspecialidadMedica].code from VSIdentificadorPrestador
 * qualification[EspecialidadOdontologica].code.text 1..1
 * qualification[EspecialidadBioQuimica].code.text 1..1
 * qualification[EspecialidadFarmacologica].code.text 1..1
