@@ -2,7 +2,7 @@
 
 |          **Variable**          | **Cardinalidad** |                                   **Descripción**                                   |                           **Recurso.elemento**                           |
 |--------------------------------|------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-|         IdInterconsulta        |       1..1       |                          Identificador de la Interconsulta                          |                        ServiceRequestLE.identifier                       |
+|         TipoIdentificadorSR        |       1..1       |                          Identificador de la Interconsulta                          |                        ServiceRequestLE.identifier                       |
 |       FechaEventoAgendar       |       1..1       |                                   Fecha del Evento                                  |                        MessageHeaderLE.lastUpdated                       |
 | EstablecimientoCodigoAgendador |       1..1       |                              Código de Establecimiento                              |                         OrganizationLE.identifier                        |
 |  SolucionInformaticaAgendador  |       1..1       |                                 Solución Informática                                |                      MessageHeaderLE.source.software                     |

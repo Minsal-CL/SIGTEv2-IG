@@ -11,36 +11,11 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 * name 1..1 MS
 * name ^short = "Nombre del prestador administrativo"
 
-* identifier ^short = "Id de los prestadores"
-* identifier ^definition = "Identificador para cada prestador. El identificador principal en Chile es el Registro Único Nacional (RUN), identificador que es obligatorio. Además, se puede ingresar un ID extra para cada prestador, disponibilizado por Registro Nacional de Prestadores Institucionales (NRPI), este identificador es opcional"
-* identifier ^comment = "Este elemento permite ingresar dos identificadores, uno de tipo RUN y uno de otro tipo de identificador"
+* identifier[run] 1..1
+* identifier[rnpi] 0..0
+* identifier[pasaporte] 0..0
+* identifier[otro] 0..0
 
-
-* identifier 1..2
-* identifier[run] ^short = "Identificador destinado a determinar el número de RUN"
-* identifier[run] ^definition = "Corresponde al identificador (RUN) otorgado el Registro Civil de Chile"
-  //* use 1..1 MS 
-  //* use = #official
-  * type 1..1 MS
-  //* type from VSTipoIdentificadorDEIS
-  * type ^short = "Descripción del identificador"
-  * type ^definition = "Descripción para el tipo de identificador"
-    * coding MS
-    * coding ^short = "Código definido por un sistema terminológico"
-      * system 0..1 MS
-      * system ^short = "Sistema de codificación para el código de tipo de identificador"
-      * code 1..1 MS
-      * code = #1
-      * code ^short = "Código que identifica al tipo de documento de identificador"
-      * code ^definition = "Código que identifica al tipo de documento de identificador"
-  
-* identifier[pasaporte] 0..0 
-* identifier[rnpi] 0..0 
-* identifier[otro] 0..0 
-
-
-
-* extension contains PaisOrigenNacionalidadCl named Nacionalidad 0..1 MS
 * active MS
 
 * telecom MS
@@ -67,11 +42,10 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 * address ^definition = "Dirección según Guía Core-CL"
 * address MS
 
+* qualification 0..1
+* qualification[EspecialidadMedica] 0..0
+* qualification[Subespecialidad] 0..0
 
-
-//* gender 1.. MS
-//* gender ^short = "Sexo de nacimiento Registrado, male | female | other | unknown (requerido)"
-//* gender ^definition = "Sexo de nacimiento Registrado"
-* birthDate 1..1 MS
+* birthDate 0..1 MS
 * birthDate ^short = "Fecha de nacimiento del prestador administrativo. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del prestador administrativo. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"

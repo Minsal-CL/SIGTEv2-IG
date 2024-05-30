@@ -143,6 +143,8 @@ Corresponde a tres slices:"
 * qualification[EspecialidadMedica].period ^short = "Período en el cual se entregó la especialidad considerando fecha de emisión y de caducidad"
   * start ^short = "Fecha de emisión"
   * end ^short = "Fecha de expiración" 
+* qualification[EspecialidadMedica].code from VSEspecialidadMed
+
 * qualification[EspecialidadMedica].issuer 0..1 MS
   * ^short = "Entidad que otorga la especialidad"
   * ^definition = "El nombre de la entidad se solicitará en displayo libre"

@@ -72,14 +72,14 @@ Description: "Consecuencia Atención Codigo"
   * display 0..1 MS
 
 
-Extension:   MedioNotificacion
-Id:          MedioNotificacion
-Title:       "MedioNotificacion"
-Description: "MedioNotificacion"
+Extension:   MediodeContacto
+Id:          MediodeContacto
+Title:       "MediodeContacto"
+Description: "MediodeContacto"
 * value[x] only CodeableConcept
-* value[x] ^short = "MedioNotificacion"
+* value[x] ^short = "MediodeContacto"
 * url 1..1 MS
-* valueCodeableConcept from VSMedioNotificacion
+* valueCodeableConcept from VSMediodeContacto
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
@@ -128,19 +128,6 @@ Description: "Estado Interconsulta Codigo"
   * display 0..1 MS
 * valueCodeableConcept from VSEstadoInterconsulta
 
-Extension:   DocAcreditacionCuidadorCodigoLE
-Id:          DocAcreditacionCuidadorCodigoLE
-Title:       "Doc Acreditacion Cuidador"
-Description: "Doc Acreditacion Cuidador"
-* value[x] only CodeableConcept
-* value[x] ^short = "Doc Acreditacion Cuidador"
-* url 1..1 MS
-* valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  * system 0..1 MS
-  * display 0..1 MS
-  //* text 1..1 MS
-* valueCodeableConcept from VSDocAcreditacionCuidador
 
 
 
@@ -196,8 +183,8 @@ Description: "Doc Acreditacion Cuidador"
 
 Extension: ContactadoLE
 Id: Contactado
-Title: "Contactado"
-Description: "Contactado"
+Title: "ContactadoLE"
+Description: "ContactadoLE"
 * extension contains
 	Contactado 1..1 MS and
 	MotivoNoContactabilidad 0..1 MS
@@ -215,7 +202,9 @@ Description: "Contactado"
 * extension[MotivoNoContactabilidad].valueCodeableConcept.text MS
 * extension[MotivoNoContactabilidad].valueCodeableConcept.text ^short = "Otro motivo de no contactabilidad"
 
+
 * extension[Contactado].value[x] only boolean
+* extension[Contactado].value[x] 1..1 MS  
 
 
 
@@ -260,6 +249,12 @@ Extension: ExtBoolPresentaDiscapacidad
 Id: ExtBoolPresentaDiscapacidad
 Title:       "ExtBool PresentaDiscapacidad"
 Description: "ExtBool PresentaDiscapacidad"
+* value[x] only boolean
+
+Extension: ExtBoolEsCuidador 
+Id: ExtBoolEsCuidador
+Title:       "ExtBool EsCuidador"
+Description: "ExtBool EsCuidador"
 * value[x] only boolean
 
 Extension: ExtBoolPersonaMayor 
@@ -318,9 +313,9 @@ Title:       "DigitoVerificador"
 Description: "DigitoVerificador"
 * value[x] only string
 
-Extension: SospechaPatologiaGes
-Id: SospechaPatologiaGes
-Title: "SospechaPatologiaGes"
+Extension: ProblemaGES
+Id: ProblemaGES
+Title: "ProblemaGES"
 Description: "Indica si corresponde a GES"
 * value[x] only boolean
 

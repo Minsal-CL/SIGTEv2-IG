@@ -46,10 +46,10 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry[encounter].resource only EncounterIniciarLE
 * entry[encounter].resource ^short = "Encuentro que ocurre en el APS y donde se solicita la interconsulta"
 * entry[observation] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
-* entry[observation].resource only ObservationIniciarLE
+* entry[observation].resource only ExamenesAnteriores
 * entry[observation].resource ^short = "Observación para indicar los examenes realizados al paciente."
 * entry[conditionDiagnostico] ^short = "Entrada en el Bundle: contendrá un recurso Condition"
-* entry[conditionDiagnostico].resource only ConditionIniciarDiagnosticoLE
+* entry[conditionDiagnostico].resource only ConditionDiagnosticoLE
 * entry[conditionDiagnostico].resource ^short = "Condición que especifica el diagnóstico inicial por el cual se emite la IC"
 * entry[observationComorbilidad] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
 * entry[observationComorbilidad].resource only ObservationIniciarIndiceComorbilidadLE
@@ -82,7 +82,7 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry[docCuidador].resource only DocumentReferenceIniciarLE
 * entry[docCuidador].resource ^short = "Documento que acredita que el paciente es cuidador."
 * entry[prevision] ^short = "Entrada en el Bundle: contendrá un recurso Coverage"
-* entry[prevision].resource only CoverageIniciarLE
+* entry[prevision].resource only CoverageLE
 * entry[prevision].resource ^short = "Información de la previsión del paciente"
 * entry[motivoDerivacion] ^short = "Entrada en el Bundle: contendrá un recurso QuestionnaireResponse"
 * entry[motivoDerivacion].resource only QuestionnaireResponseIniciarLE

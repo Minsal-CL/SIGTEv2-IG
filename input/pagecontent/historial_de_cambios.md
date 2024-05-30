@@ -26,26 +26,93 @@
   - requester se agrega MustSupport
   - requester debe referenciar solo a "PractitionerRoleLE"
   - authoredOn se modifica cardinalidad 0..1 -> 1..1
-  - identifier.type binding [IdInterconsulta](ValueSet-VSIdInterconsulta.html)
+  - identifier.type binding [TipoIdentificadorSR](ValueSet-VSTipoIdentificadorSR.html)
   - intent se cambia la descripcion "Tipo de Servicio solicitado" -> "Tipo de solicitud"
   - code se modifica cardinalidad 0..1 -> 1..1
   - Se elemina extension "Alergia"
   - Se cambia cardinalidad supportingInfo[TipoAlergia] 0..1 -> 0..*
+  - Se cambia cardinalidad supportingInfo[motivoDerivacion] 0..1 -> 1..1
   - Se elimina extensión ConsecuenciaAtencionCodigo
+  - Se modifica el nombre del slice supportingInfo:DiagnosticoSospecha -> supportingInfo:DiagnosticoInicio
 
 - Perfil [AllergyIntoleranceIniciarLE](StructureDefinition-AllergyIntoleranceIniciarLE.html)
    - code.coding modifica cardinalidad 0..1 -> 1..1
    - code.coding.code modifica cardinalidad 0..1 -> 1..1
 
+- Perfil [BundleRevisarLE](StructureDefinition-BundleRevisarLE.html)
+   - Se modifica la cardinalidad de entry[practitionerRole] 2..2 -> 1..1
+   - Se modifica la cardinalidad de entry[organization] 2..2 -> 1..1
+   
+
+- Perfil [ExamenesAnteriores](StructureDefinition-ExamenesAnteriores.html)
+   - Se cambia cardinalidad subject 0..1 -> 1..1
+   - Se cambia cardinalidad code.text 1..1 -> 0..1
+   - Se fija la referencia de subject solo a PatientLE
+   - Se fija el valor "laboratory" de category.coding.code
+
+- Perfil [PrestadorAdministrativoLE](StructureDefinition-PrestadorAdministrativoLE.html)
+   - Se elimina la extension Nacionalidad
+   - Se cambia cardinalidad birthDate 1..1 -> 0..1
+   - Se elimina el slice identifier:run
+   - Se fija cardinalidad de identifier 1..1
+   - Se deja solo el slice qualification[TituloProfesional] 
+   - Se remueve el valor obligatorio para type.coding.system
+   - Se fija la referencia de beneficiary -> "PatientLE"
+   - Se cambia el nombre del perfil de CoverageIniciarLE -> CoverageLE
+
+
+- Perfil [ObservationIniciarIndiceComorbilidadLE](StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html)
+   - Se fija el valor "final" para el elemento status
+   - Se cambia cardinalidad category.text 1..1 -> 0..1
+
+- Perfil [AppointmentAgendarLE](StructureDefinition-AppointmentAgendarLE.html)
+   - Se elimina el valor fijado en participant[patientLE].status = #accepted, quedando libre para el set de valores accepted | declined | tentative | needs-action
+   - Se cambia cardinalidad extension ContactadoLE 0..1 -> 1..1
+   - Se cambia cardinalidad create 0..1 -> 1..1
+
+- Perfil [CoverageLE](StructureDefinition-CoverageLE.html)
+   - Se cambia cardinalidad type 1..1 -> 0..1
+   - Se remueve el valor obligatorio para type.coding.system
+   - Se fija la referencia de beneficiary -> "PatientLE"
+   - Se cambia el nombre del perfil de CoverageIniciarLE -> CoverageLE
+
+- Perfil [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
+   - Se cambia cardinalidad type 1..1 -> 0..1
+   - Se fija la referencia de participant.individual -> PractitionerRoleLE
+   - Se elimina el slice reasonReference[ObservationAtenderLE]
+   - Se fija la referencia de reasonReference a "QuestionnaireResponseAtenderLE"
+
+- Perfil [ObservationIniciarCuidadorLE](StructureDefinition-ObservationIniciarCuidadorLE.html)
+   - Se agrega la extension EsCuidador
+
+- Perfil [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html)
+   - Se cambia cardinalidad diagnosis 1..1 -> 1..*
+   - Se fija la referencia de participant.individual solo a PractitionerRoleLE
+
+- Perfil [ConditionDiagnosticoLE](StructureDefinition-ConditionDiagnosticoLE.html)
+   - Se fija la referencia de encounter a EncounterIniciarLE
+   - Se cambia la descripcion del elemento category.text
+   - Se cambia la descripcion del elemento code.text
+   - Se cambia la cardinalidad de severity.coding.system 1..1 -> 0..1
+   - Se cambia la cardinalidad de code.coding.display 1..1 -> 0..1
+
+
 - Perfil [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html)
    - Se modifica el nombre de la extension solicitudExamen -> Requiere-Examen
-   - agregar modificaciones echarsss
+   - Se cambia la cardinalidad de activity 0..* -> 0..2
+   - Se cambia la cardinalidad de activity[referenciaReceta].reference 0..1 -> 1..1
+   - Se cambia la cardinalidad de activity[referenciaServiceRequestExamenLE].reference 0..1 -> 1..1
+   
 
-- valueSet cambia nombre VSinterconsulta -> VSorigenInterconsulta 
+
+- Se cambia el nombre del perfil ConditionDiagnosticoLE -> ConditionDiagnosticoLE
+   - Se modifica el nombre de la extension solicitudExamen -> Requiere-Examen
+
+- valueSet cambia nombre  -> VSorigenInterconsulta 
 - codeSystem cambia nombre CSinterconsulta -> CSorigenInterconsulta 
 - Extension cambia nombre Interconsulta -> OrigenInterconsulta
 - Extension OrigenInterconsulta.valueCodeableConcept cambia binding a VSorigenInterconsulta
-
+- Se crea la extensión ExtBoolEsCuidador
 
 - [PrestadorProfesionalLE](StructureDefinition-PrestadorProfesionalLE.html)
   - Se cambia el nombre de los siguientes slices de qualification:
@@ -63,6 +130,21 @@
   - Se cambia cardinalidad qualification[TituloProfesional] 1..1 -> 1..*
   - Se fija el valor de address.use = #work
   - Se cambia cardinalidad address.use 0..1 -> 1..1
+  - Se cambia el binding de qualification[EspecialidadMedica].code -> VSEspecialidadMed
+
+- Se cambia el nombre el perfil ConditionInicioDiagnosticoLE -> ConditionDiagnosticoLE
+- Se elimina el recurso CondicionAtenderDiagnosticoConfirmacionLE
+- Se cambia nombre de VSSospechaPatologiaGes -> VSProblemaGES
+- Se cambia nombre de CSSospechaPatologiaGes -> CSProblemaGES
+- Se cambia nombre de CSIdInterconsulta -> CSTipoIdentificadorSR
+- Se cambia nombre de VSIdInterconsulta -> VSTipoIdentificadorSR
+- Se modifican valores de CSTipoIdentificadorSR
+- Se cambia nombre de CSMedioNotificacion -> CSMediodeContacto
+- Se cambia nombre de VSMedioNotificacion -> VSMediodeContacto
+- Se modifican valores de CSMediodeContacto
+- Se modifican valores de CSMotivoNoContactabilidad
+- Se cambia cardinalidad en elemento de extension * extension[contactadoLE].extension[Contactado].value[x] 0..1 -> 1..1
+- Se eleminia la extension DocAcreditacionCuidadorCodigoLE
 
 - Modificaciones de la "CLcore"
   - Se cambió el nombre de la extension identifier.type.extension[paises] -> identifier.type.extension[paisEmisionDocumento]
@@ -180,7 +262,7 @@
    - Se presentan cambios en las descripciones de CSPractitionerTipoRolLE, VSServicioRequerido y el nombre de CS/VSDestinoAtencionCodigo pasa a CS/VSConsecuenciaAtencionCodigo  
    - Sobre las extensiones, se agrega una llamada “Mencion” que hace referencia a la mención profesional, ésta se agregó junto al nuevo Prestador Profesional y Administrativo, provenientes del HPD.  
    - El CS Establecimiento Destino Atencion ahora cuenta con los displays correctos (establecimientos al principio). 
-   - Se crea un CS/VS de ejemplo llamado IdInterconsulta, esto con el fin de hacer posible la redirección de un binding en el recurso ServiceRequest (identifier.type.coding)
+   - Se crea un CS/VS de ejemplo llamado TipoIdentificadorSR, esto con el fin de hacer posible la redirección de un binding en el recurso ServiceRequest (identifier.type.coding)
 
 
 -------------------------------------------------------------

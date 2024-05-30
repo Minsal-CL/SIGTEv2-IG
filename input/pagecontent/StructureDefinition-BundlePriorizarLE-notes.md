@@ -2,7 +2,7 @@
 
 |           **Variable**           | **Cardinalidad** |                        **Descripción**                       |                           **Recurso.elemento**                           |
 |----------------------------------|------------------|--------------------------------------------------------------|--------------------------------------------------------------------------|
-|          IdInterconsulta         |       1..1       |               Identificador de la Interconsulta              |                        ServiceRequestLE.identifier                       |
+|          TipoIdentificadorSR         |       1..1       |               Identificador de la Interconsulta              |                        ServiceRequestLE.identifier                       |
 |       FechaEventoPriorizar       |       1..1       |                       Fecha del Evento                       |                        MessageHeaderLE.lastUpdated                       |
 | EstablecimientoCodigoPriorizador |       1..1       |                   Código de Establecimiento                  |                         OrganizationLE.identifier                        |
 |  SolucionInformaticaPriorizador  |       1..1       |                     Solución Informática                     |                      MessageHeaderLE.source.software                     |

@@ -7,15 +7,15 @@ Description: "Appointment Agendar LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 // EXTESIONES
-* extension contains MedioNotificacion named MedioNotificacion 0..1 MS
-* extension[MedioNotificacion] ^short = "Medio por donde se notificó al paciente"
+* extension contains MediodeContacto named MediodeContacto 0..1 MS
+* extension[MediodeContacto] ^short = "Medio por donde se notificó al paciente"
 
-* extension contains ContactadoLE named ContactadoLE 0..1 MS
+* extension contains ContactadoLE named ContactadoLE 1..1 MS
 * extension[ContactadoLE] ^short = "Extensión compleja, donde se indica si el paciente fue Contactado[true|false] o MotivoNoContactabilidad si la anterior fue false"
 
 // Obligatorio por estandar
 * status 1..1 MS
-* status ^short = "Se considera el uso de SOLO estos estados: booked=cita agendada | cancelled=cita cancelada | noshow=no presentación"
+* status ^short = "Se considera el uso de SOLO estos estados: pending=pendiente | booked=cita agendada | cancelled=cita cancelada | noshow=no presentación"
 
 
 * cancelationReason 0..1 MS
@@ -30,6 +30,8 @@ Description: "Appointment Agendar LE"
     * system = #http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason
 * cancelationReason ^short = "Uso en caso de cancelación de cita para registrar la razón"
 
+* created 1..1 MS
+
 * start 1..1 MS
 * start ^short = "Inicio de esta cita"
 * end 0..1 MS
@@ -38,7 +40,9 @@ Description: "Appointment Agendar LE"
 * identifier 1..1 MS
   * value 1..1 MS
   * value ^short = "Valor del Id"
-* identifier ^short = "Ids externos"
+  * use MS
+  * system MS
+* identifier ^short = "ID de los identificadores de la cita"
 
 * appointmentType 0..1 MS
   * coding 1..1 MS
@@ -60,21 +64,22 @@ Description: "Appointment Agendar LE"
 * participant ^slicing.rules = #open
 * participant ^slicing.description = "Slice creado para almacenar diferentes tipos de participante"
 * participant contains patientLE 1..1 MS and practitionerRoleLE 1..1 MS
+* participant.actor only Reference(PatientLE or PractitionerRoleLE)
 
 * participant[patientLE].actor 1..1 MS
+* participant[patientLE].actor.reference 1..1 MS
 * participant[patientLE].actor only Reference(PatientLE)
 * participant[patientLE].actor ^short = "Paciente participante de esta cita"
 * participant[patientLE].actor.type = #Patient
 * participant[patientLE].actor.type ^short = "Tipo de participante de la cita al que se hace referencia"
-* participant[patientLE].status = #accepted
-* participant[patientLE].status ^short = "Estado, por defecto #accepted"
+* participant[patientLE].status ^short = "Estado de la cita, este puede ser \"accepted | declined | tentative | needs-action\" "
 
 
 * participant[practitionerRoleLE].actor 1..1 MS
+* participant[practitionerRoleLE].actor.reference 1..1 MS
 * participant[practitionerRoleLE].actor only Reference(PractitionerRoleLE)
 * participant[practitionerRoleLE].actor ^short = "Persona y ubicación/servicio de atención médica participante de esta cita"
 * participant[practitionerRoleLE].actor.type = #PractitionerRole
 * participant[practitionerRoleLE].actor.type ^short = "Tipo de participante de la cita al que se hace referencia"
 * participant[practitionerRoleLE].status = #accepted
 * participant[practitionerRoleLE].status ^short = "Estado, por defecto #accepted"
-

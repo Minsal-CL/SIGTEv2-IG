@@ -7,7 +7,7 @@
 // * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 // // EXTESIONES
-// * extension contains MedioNotificacion named MedioNotificacion 0..1 MS
+// * extension contains MediodeContacto named MediodeContacto 0..1 MS
 // * extension contains Contactado named Contactado 0..1 MS
 
 // // Obligatorio por estandar

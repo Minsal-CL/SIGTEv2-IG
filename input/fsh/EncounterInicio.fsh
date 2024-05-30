@@ -24,9 +24,9 @@ Description: "Encounter Iniciar LE recurso que se utiliza para representar el en
   * type.coding.code = #FILL
 * identifier ^short = "Id del registro de atención o encuentro del sistema clínico de origen"
 
-* diagnosis 1..1
+* diagnosis 1..*
 * diagnosis ^short = "Diagnóstico de origen por cual se crea la interconsulta"
-* diagnosis.condition only Reference(ConditionIniciarDiagnosticoLE)
+* diagnosis.condition only Reference(ConditionDiagnosticoLE)
 * diagnosis.condition ^short = "Referencia al diagnóstico de origen"
 
 * class ^short = "Modalidad de Atención"
@@ -43,3 +43,5 @@ Description: "Encounter Iniciar LE recurso que se utiliza para representar el en
 * subject 1..1 MS
 * subject ^short = "Referencia al Paciente que se presentará a la Atención APS"
 * subject only Reference(PatientLE)
+
+* participant.individual only Reference(PractitionerRoleLE)

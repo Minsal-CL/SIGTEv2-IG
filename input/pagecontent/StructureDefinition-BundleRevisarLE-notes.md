@@ -2,7 +2,7 @@
 
 |            **Variable**            | **Cardinalidad** |                            **Descripción**                            |                                                   **Recurso.elemento**                                                  |
 |------------------------------------|------------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-|           IdInterconsulta          |       1..1       |                   Identificador de la Interconsulta                   |                                               ServiceRequestLE.identifier                                               |
+|           TipoIdentificadorSR          |       1..1       |                   Identificador de la Interconsulta                   |                                               ServiceRequestLE.identifier                                               |
 |         FechaEventoRevisar         |       1..1       |                   Fecha del Evento YYYY-MM-DDTHH:MMZ                  |                                             MessageHeaderLE.meta.lastUpdated                                            |
 |    EstablecimientoCodigoRevisor    |       1..1       |                       Código de Establecimiento                       |                                                 Organization.identifier                                                 |
 |     SolucionInformaticaRevisor     |       1..1       |                          Solución Informática                         |                                             MessageHeaderLE.source.software                                             |

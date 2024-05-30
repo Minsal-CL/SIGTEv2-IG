@@ -1,14 +1,15 @@
-Profile: ConditionIniciarDiagnosticoLE
+Profile: ConditionDiagnosticoLE
 Parent: Condition
-Id: ConditionIniciarDiagnosticoLE
-Title: "Condition Iniciar Diagnostico LE"
-Description: "Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta."
+Id: ConditionDiagnosticoLE
+Title: "Condition Diagnostico LE"
+Description: "Condicion Diagnostico LE, recurso que se utiliza para indicar el diagnóstico"
 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 //OBLIGATORIO POR ESTANDAR
 * subject only Reference(PatientLE)
+* encounter only Reference(EncounterIniciarLE)
 * subject 1..1 MS 
 * subject ^short = "Paciente que tiene este diagnóstico"
 
@@ -19,11 +20,11 @@ Description: "Condicion Iniciar LE, recurso que se utiliza para indicar el diagn
     * system ^short = "Sistema terminológico, url/uri/uuid"
     * code 1..1 MS
     * code ^short = "Código definido en un sistema terminológico"
-    * display 1..1 MS
+    * display 0..1 MS
     * display ^short = "Representación definida por el sistema terminológico"
   * text 0..1 MS
-  * text ^short = "Sospecha diagnóstica en texto libre ingresado por el médico"
-* code ^short = "Código correspondiente a la sospecha diagnóstica realizada por el médico solicitante"
+  * text ^short = "Descripcion en texto libre correspondiente al diagnóstico realizado por el médico solicitante"
+* code ^short = "Código correspondiente al diagnóstico realizado por el médico solicitante"
 
 * category 1..1 MS
   * coding 1..1 MS
@@ -36,7 +37,7 @@ Description: "Condicion Iniciar LE, recurso que se utiliza para indicar el diagn
     * code ^short = "Código definido en un sistema terminológico"
     * display 0..1 MS
     * display ^short = "Representación visual definida por el sistema terminológico"
-  * text ^short = "Diagnóstico como texto libre"
+  * text ^short = "Representación en texto plano del concepto"
 * category ^short = "Categoría del diagnóstico de origen. Se refiere a un diagnostico  identificado durante el encuentro médico o un problema de salud previamente hablado"
 
 * clinicalStatus 1..1 MS
@@ -68,7 +69,7 @@ Description: "Condicion Iniciar LE, recurso que se utiliza para indicar el diagn
 * severity 0..1 MS
   * coding 1..1 MS
   * coding ^short = "Código definido por un sistema terminológico"
-    * system 1..1 MS
+    * system 0..1 MS
     * system ^short = "Identidad del sistema terminológico, url/uri/uuid"
     * code 1..1 MS
     * code ^short = "Código definido en un sistema terminológico"
@@ -76,3 +77,4 @@ Description: "Condicion Iniciar LE, recurso que se utiliza para indicar el diagn
     * display ^short = "Representación visual definida por el sistema terminológico"
 * severity ^short = "Severidad del diagnóstico, indicada por el médico solicitante"
 * severity from http://hl7.org/fhir/ValueSet/condition-severity
+

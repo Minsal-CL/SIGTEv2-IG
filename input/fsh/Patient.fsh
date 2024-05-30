@@ -5,24 +5,12 @@ Title: "Patient LE"
 Description: "Paciente definido para el Registro Maestro de Pacientes"
 
 * extension contains PaisOrigenMPI named PaisOrigen 1..1 MS
-
 * extension contains Religion named Religion 0..1 MS
-
-* extension contains http://hl7.org/fhir/StructureDefinition/patient-birthPlace named LugarDeNacimiento 1..1 MS
-* extension[LugarDeNacimiento] ^short = "Lugar de nacimiento"
-
 * extension contains PueblosOriginariosPerteneciente named PueblosOriginariosPerteneciente 1..1 MS
-
 * extension contains PueblosAfrodescendiente named PueblosAfrodescendiente 0..1 MS
-
 * extension contains PueblosOriginarios named PueblosOriginarios 0..1 MS
 
-//* extension[nacionalidad].url ^short = "Extensión de Nacionalidad para pacientes extranjeros"
-//* extension ^definition = "Para hacer uso de esta extensión se debe agregar el path: extension.url = \"nacionalidad\""
-* extension[nacionalidad] 1..1 MS
-
-//* extension[nacionalidad].valueCodeableConcept.coding.code 1..1 MS
-//* extension[nacionalidad].valueCodeableConcept.coding.system 1..1 MS
+* extension[IdentidadDeGenero] 1..1 MS
 
 * identifier.type 1..1 MS
 * identifier.type ^short = "Tipo de documento"

@@ -23,7 +23,7 @@ Description: "Condition GES"
   * text 0..1 MS 
   * text ^short = "Representación textual del concepto"
 * code ^short = "Código para la Patología ges"
-* code from VSSospechaPatologiaGes
+* code from VSProblemaGES
 
 
 

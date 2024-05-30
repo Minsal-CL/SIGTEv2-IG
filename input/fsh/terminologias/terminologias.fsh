@@ -1,76 +1,3 @@
-// ValueSet: VSTipoOtroTelefono
-// Id: VSTipoOtroTelefono
-// Title: "Tipo Otro Telefono"
-// Description: "Tipo Otro Telefono"
-// * ^experimental = false
-// * ^version = "0.1"
-// * ^status = #active
-// * ^date = "2023-01-15"
-// * ^contact.name = "MINSAL CHILE"
-// * ^contact.telecom.system = #email
-// * ^contact.telecom.value = "minsal@minsal.cl"
-// * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-// * codes from system CSTipoOtroTelefono
-
-// CodeSystem: CSTipoOtroTelefono
-// Id: CSTipoOtroTelefono
-// Title: "Tipo Otro Telefono"
-// Description: "Tipo Otro Telefono"
-// * ^experimental = false
-// * ^caseSensitive = true
-// * ^version = "0.9"
-// * ^status = #active
-// * ^date = "2023-01-15"
-// * ^contact.name = "MINSAL CHILE"
-// * ^contact.telecom.system = #email
-// * ^contact.telecom.value = "minsal@minsal.cl"
-// * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-// * #1 "Del Trabajo de la persona"
-// * #2 "Pareja o cónyuge"
-// * #3 "Familiar"
-// * #4 "Tutor(a) o Cuidador(a)"
-// * #5 "Vecino(a)"
-// * #98 "No responde"
-
-// ValueSet: VSTipoIdentificador
-// Id: VSTipoIdentificador
-// Title: "Tipo Identificador"
-// Description: "Tipo Identificador"
-// * ^experimental = false
-// * ^version = "0.1"
-// * ^status = #active
-// * ^date = "2023-01-15"
-// * ^contact.name = "MINSAL CHILE"
-// * ^contact.telecom.system = #email
-// * ^contact.telecom.value = "minsal@minsal.cl"
-// * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-// * codes from system CSTipoIdentificador
-// * codes from system https://hl7chile.cl/fhir/ig/CoreCL/ValueSet/VSTiposDocumentos
-
-// CodeSystem: CSTipoIdentificador
-// Id: CSTipoIdentificador
-// Title: "Tipo Identificador"
-// Description: "Tipo Identificador"
-// * ^experimental = false
-// * ^caseSensitive = true
-// * ^version = "0.9"
-// * ^status = #active
-// * ^date = "2023-01-15"
-// * ^contact.name = "MINSAL CHILE"
-// * ^contact.telecom.system = #email
-// * ^contact.telecom.value = "minsal@minsal.cl"
-// * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-// * #1 "RUN"
-// * #2 "RUN Materno/progenitor(a)"
-// * #3 "Folio del Comprobante de Parto"
-// * #4 "Número de Pasaporte"
-// * #5 "Otro documento identificador"
-// * #6 "Identificador FONASA"
-
 CodeSystem:  CSSexoBiologico
 Id: CSSexoBiologico
 Title: "Códigos para Sexo de Nacimiento de Paciente"
@@ -142,47 +69,6 @@ Description: "Identidad de Genero"
 * #6 "No binarie"
 * #7 "Otra"
 * #8 "No Revelado"
-
-// ValueSet: VSPuebloIndigena
-// Id: VSPuebloIndigena
-// Title: "Pueblo Indigena"
-// Description: "Pueblo Indigena"
-// * ^experimental = false
-// * ^version = "0.1"
-// * ^status = #active
-// * ^date = "2023-01-15"
-// * ^contact.name = "MINSAL CHILE"
-// * ^contact.telecom.system = #email
-// * ^contact.telecom.value = "minsal@minsal.cl"
-// * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-// * codes from system CSPuebloIndigena
-
-// CodeSystem: CSPuebloIndigena
-// Id: CSPuebloIndigena
-// Title: "Pueblo Indigena"
-// Description: "Pueblo Indigena"
-// * ^experimental = false
-// * ^caseSensitive = true
-// * ^version = "0.9"
-// * ^status = #active
-// * ^date = "2023-01-15"
-// * ^contact.name = "MINSAL CHILE"
-// * ^contact.telecom.system = #email
-// * ^contact.telecom.value = "minsal@minsal.cl"
-// * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-// * #1 "Mapuche"
-// * #2 "Aymara"
-// * #3 "Rapa Nui O Pascuense"
-// * #4 "Lickanantay"
-// * #5 "Quechua"
-// * #6 "Colla"
-// * #7 "Diaguita"
-// * #8 "Kawésqar"
-// * #9 "Yagán"
-// * #11 "Chango"
-// * #10 "Otro (Especificar)"
 
 ValueSet: VSDerivadoParaCodigo
 Id: VSDerivadoParaCodigo
@@ -469,8 +355,8 @@ Description: "Modalidad Atencion Codigo"
 * #2 "Remota"
 * #3 "Telemedicina"
 
-ValueSet: VSMedioNotificacion
-Id: VSMedioNotificacion
+ValueSet: VSMediodeContacto
+Id: VSMediodeContacto
 Title: "Medio Notificación"
 Description: "Medio Notificación"
 * ^experimental = false
@@ -482,10 +368,10 @@ Description: "Medio Notificación"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSMedioNotificacion
+* codes from system CSMediodeContacto
 
-CodeSystem: CSMedioNotificacion
-Id: CSMedioNotificacion
+CodeSystem: CSMediodeContacto
+Id: CSMediodeContacto
 Title: "Medio Notificación"
 Description: "Medio Notificación"
 * ^experimental = false
@@ -498,11 +384,12 @@ Description: "Medio Notificación"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "Correo"
+* #1 "Correo electronico y/o carta certificada"
 * #2 "SMS"
 * #3 "Llamada"
 * #4 "Whatsapp"
 * #5 "Presencial"
+* #6 "Otro" 
 
 
 ValueSet: VSMotivoNoContactabilidad
@@ -534,7 +421,7 @@ Description: "Motivo No Contactabilidad"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #1 "No contesta telefono."
+* #1 "No contesta teléfono."
 * #2 "No contesta correo"
 * #3 "Datos de contactos incorrectos"
 * #4 "Otro"
@@ -1443,8 +1330,8 @@ Description: "EstadoCivil"
 * #06 "Conviviente civil"
 * #99 "Desconocido"
 
-CodeSystem: CSIdInterconsulta
-Id: CSIdInterconsulta
+CodeSystem: CSTipoIdentificadorSR
+Id: CSTipoIdentificadorSR
 Title: "Id interconsulta"
 Description: "Id interconsulta"
 * ^experimental = false
@@ -1457,10 +1344,12 @@ Description: "Id interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "IdInterconsulta"
+* #01 "SolicitudInterconsulta"
+* #02 "ID Solicitud exámen"
 
-ValueSet: VSIdInterconsulta
-Id: VSIdInterconsulta
+
+ValueSet: VSTipoIdentificadorSR
+Id: VSTipoIdentificadorSR
 Title: "Id interconsulta"
 Description: "Id interconsulta"
 * ^experimental = false
@@ -1472,7 +1361,7 @@ Description: "Id interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSIdInterconsulta
+* codes from system CSTipoIdentificadorSR
 
 CodeSystem: CSIdentificadorPrestador
 Id: CSIdentificadorPrestador

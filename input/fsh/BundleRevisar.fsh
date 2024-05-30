@@ -22,8 +22,8 @@ Description: "Bundle Revisar LE recurso utilizado para transportar todos los dat
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
         and practitioner 1..1
-        and practitionerRole 2..2
-        and organization 2..2
+        and practitionerRole 1..1
+        and organization 1..1
         and servicerequestexamen 0..1
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"

@@ -2,7 +2,7 @@ Profile: PractitionerRoleLE
 Parent: PractitionerRole
 Id: PractitionerRoleLE
 Title: "PractitionerRole LE"
-Description: "PractitionerRole LE, recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud."
+Description: "PractitionerRole LE, recurso que se utiliza para representar la información de roles, un profesional de la salud."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 

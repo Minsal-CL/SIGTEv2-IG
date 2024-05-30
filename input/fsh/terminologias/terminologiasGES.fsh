@@ -1,5 +1,5 @@
-ValueSet: VSSospechaPatologiaGes
-Id: VSSospechaPatologiaGes
+ValueSet: VSProblemaGES
+Id: VSProblemaGES
 Title: "Sospecha Patologia Ges"
 Description: "Sospecha Patologia Ges"
 * ^experimental = false
@@ -11,10 +11,10 @@ Description: "Sospecha Patologia Ges"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSSospechaPatologiaGes
+* codes from system CSProblemaGES
 
-CodeSystem: CSSospechaPatologiaGes
-Id: CSSospechaPatologiaGes
+CodeSystem: CSProblemaGES
+Id: CSProblemaGES
 Title: "Sospecha Patologia Ges"
 Description: "Sospecha Patologia Ges"
 * ^experimental = false
@@ -33,6 +33,7 @@ Description: "Sospecha Patologia Ges"
 * #A010 "FIEBRE TIFOIDEA"
 * #A011 "FIEBRE PARATIFOIDEA A"
 * #A012 "FIEBRE PARATIFOIDEA B"
+/*
 * #A013 "FIEBRE PARATIFOIDEA C"
 * #A014 "FIEBRE PARATIFOIDEA, NO ESPECIFICADA"
 * #A020 "ENTERITIS DEBIDA A SALMONELLA"
@@ -8958,3 +8959,4 @@ Description: "Sospecha Patologia Ges"
 * #Z994 "DEPENDENCIA DE CORAZÓN ARTIFICIAL"
 * #Z998 "DEPENDENCIA DE OTRAS MÁQUINAS Y DISPOSITIVOS CAPACITANTES"
 * #Z999 "DEPENDENCIA DE MÁQUINA Y DISPOSITIVO CAPACITANTE, NO ESPECIFICADA"
+*/

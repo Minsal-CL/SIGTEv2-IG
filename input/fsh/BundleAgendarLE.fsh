@@ -43,7 +43,7 @@ Description: "Bundle Agendar LE, recurso utilizado para transportar todos los da
 * entry[practitionerAdministrativo].resource ^short = "Profesional que revisa la interconsulta"
 * entry[practitionerRole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
 * entry[practitionerRole].resource only PractitionerRoleLE
-* entry[practitionerRole].resource ^short = "Se indica que médico y que organización agenda la inteconsulta. code.coding.code=agendador, también se debe indicar el profesional que atendera la IC en otro PractitionerRoleL"
+* entry[practitionerRole].resource ^short = "Se indica el administrativo y organización que agenda la interconsulta"
 * entry[appointment] ^short = "Entrada en el Bundle: contendrá un recurso Appointment"
 * entry[appointment].resource only AppointmentAgendarLE
 * entry[appointment].resource ^short = "Recurso donde se indica el agendamiento para la atención del paciente."
