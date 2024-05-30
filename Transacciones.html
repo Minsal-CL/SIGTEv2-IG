@@ -1,40 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Transacciones - Tiempos de Espera Interoperable v0.1.6</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Transacciones - Tiempos de Espera Interoperable v0.9.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
 
-    <link href="fhir.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="fhir.css"/>
 
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
 
-    <!-- Project extras -->
-    <link href="assets/css/project.css" rel="stylesheet"/>
-    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="assets/css/prism.css" rel="stylesheet" />
-    <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/hl7chile.css" rel="stylesheet" />
-<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" async>
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+<link rel="stylesheet" href="assets/css/hl7chile.css"/>
+<script async="null" src="https://www.googletagmanager.com/gtag/js?id=G-HLBNC861DJ" type="text/javascript">
 </script>
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+    <![endif] -->
 
-    <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
     <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
@@ -44,59 +44,57 @@
 
     <style type="text/css">h2{--heading-prefix:"8"}
     h3,h4,h5,h6{--heading-prefix:"8"}</style>
-    <div id="segment-header" class="segment">  <!-- segment-header -->
-      <div class="container">  <!-- container -->
-        <!-- Placeholder for child template header declarations -->
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
 
 <div id="project-nav">
-    <a id="MINSAL-logo" no-external="true" href="http://minsal.cl">
+    <a no-external="true" id="MINSAL-logo" href="http://minsal.cl">
         
-        <img height="71" alt="Visitar sitio MINSAL Chile" src="assets/images/minsal-logo.svg" />
+        <img src="assets/images/minsal-logo.svg" alt="Visitar sitio MINSAL Chile" height="71"/>
     </a>
 </div>
 <div id="family-nav">
-    <a id="hl7chile-logo" no-external="true" href="http://hl7chile.cl"><img height="71" alt="Visitar HL7 Chile" src="assets/images/hl7chile-logo.svg" /> </a>
+    <a no-external="true" id="hl7chile-logo" href="http://hl7chile.cl"><img src="assets/images/hl7chile-logo.svg" alt="Visitar HL7 Chile" height="71"/> </a>
 </div>
-<!--
-<div id="hl7-search">
+  <!-- <div id="hl7-search">
   <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
-</div>
--->
+</div> -->
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
             <br/>
-            <span style="display:inline-block;">0.1.6 - draft
+            <span style="display:inline-block;">0.9.1 - draft
 
 
 
-  <img alt="Chile flag" src="assets/images/chl.svg" height="16" title="Chile"/>
+  <img src="assets/images/chl.svg" alt="Chile flag" title="Chile" height="16"/>
 
 
             </span>
           </p>
         </div>
-      </div> <!-- /container -->
-    </div>  <!-- /segment-header -->
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
       <div id="stripe"> </div>
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
 
         <nav class="navbar navbar-inverse">
-          <!--status-bar-->
+            <!-- status-bar -->
           <div class="container">
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
+                <!-- menu.xml -->
 
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+<ul class="nav navbar-nav">
   <li>
     <a href="index.html">Home</a>
   </li>
@@ -151,26 +149,26 @@
     <a href="historial_de_cambios.html">Historial de Cambios</a>
   </li>
 </ul>
-            </div>  <!-- /.nav-collapse -->
-          </div>  <!-- /.container -->
-        </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
-    <!--status-bar-->
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
 
-    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Transacciones</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Transacciones</b></li>
 
         </ul>
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-breadcrumb -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
 
     <a name="top"> </a>
-    <div id="segment-content" class="segment">  <!-- segment-content -->
-      <div class="container">  <!-- container -->
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
 
@@ -182,7 +180,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.6. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+    <!-- ReleaseHeader --><p id="publish-box">This is the continuous build for version 0.9.1. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p>  <!-- EndReleaseHeader -->
   <h2>Transacciones</h2>
   
 
@@ -197,7 +195,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 
-    <p><!-- white space is critical inside of capture --></p>
+    <p>  <!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#transacción-evento-iniciar" id="markdown-toc-transacción-evento-iniciar">Transacción Evento Iniciar</a></li>
@@ -240,7 +238,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El evento <strong>iniciar</strong> debe soportar a siguiente secuencia:</p>
 
 <div align="center">
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="142px" preserveAspectRatio="none" style="width:258px;height:142px;background:#FFFFFF;" version="1.1" viewBox="0 0 258 142" width="258px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="Roboto Condensed" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="213" x="22.25" y="27.9951">Transacci&#243;n: Evento Iniciar</text><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="40" x2="40" y1="73.5938" y2="135.7266" /><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="71" x="5" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="57" x="12" y="62.292">CESFAM</text><line style="stroke:#107050;stroke-width:1.0;" x1="40.5" x2="82.5" y1="104.7266" y2="104.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="82.5" x2="82.5" y1="104.7266" y2="117.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="41.5" x2="82.5" y1="117.7266" y2="117.7266" /><polygon fill="#107050" points="51.5,113.7266,41.5,117.7266,51.5,121.7266,47.5,117.7266" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="47.5" y="99.6606">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="163" x="88.5" y="99.6606">Creaci&#243;n de Interconsulta</text></g></svg>
+  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 258 142" zoomAndPan="magnify" preserveAspectRatio="none" width="258px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:258px;height:142px;background:#FFFFFF;" version="1.1" height="142px"><defs/><g><text font-weight="bold" lengthAdjust="spacing" x="22.25" font-size="14" textLength="213" y="27.9951" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Iniciar</text><line y1="73.5938" x1="40" y2="135.7266" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="40"/><rect rx="4.5" ry="4.5" width="71" x="5" y="42.2969" style="stroke:#107050;stroke-width:0.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="12" font-size="14" textLength="57" y="62.292" font-family="Roboto Condensed" fill="#000000">CESFAM</text><line y1="104.7266" x1="40.5" y2="104.7266" style="stroke:#107050;stroke-width:1.0;" x2="82.5"/><line y1="104.7266" x1="82.5" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="82.5"/><line y1="117.7266" x1="41.5" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="82.5"/><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="51.5,113.7266,41.5,117.7266,51.5,121.7266,47.5,117.7266"/><text font-weight="bold" lengthAdjust="spacing" x="47.5" font-size="13" textLength="37" y="99.6606" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="88.5" font-size="13" textLength="163" y="99.6606" font-family="Roboto Condensed" fill="#000000">Creación de Interconsulta</text></g></svg>
 </div>
 
 <h4 id="semántica-del-mensaje">Semántica del Mensaje</h4>
@@ -251,7 +249,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><a href="StructureDefinition-BundleIniciarLE.html">Bundle Evento Iniciar</a></li>
-  <li><a href="Bundle-EjemploBundleIniciar.html">Ejemplo Bundle Evento Iniciar</a></li>
+  <li><a name="l477">​</a><a href="Bundle-EjemploBundleIniciar.html">Ejemplo Bundle Evento Iniciar</a></li>
 </ul>
 
 <h5 id="response">Response</h5>
@@ -299,7 +297,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El evento <strong>referenciar</strong> debe soportar las siguientes secuencias:</p>
 
 <div align="center">
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="248px" preserveAspectRatio="none" style="width:628px;height:248px;background:#FFFFFF;" version="1.1" viewBox="0 0 628 248" width="628px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="Roboto Condensed" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="258" x="186" y="27.9951">Transacci&#243;n: Evento Referenciar</text><rect fill="#FFFFFF" height="134.1406" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:1.5;" width="611" x="10" y="90.5938" /><path d="M10,136.8594 L621,136.8594 L621,176.2969 A4.5,4.5 0 0 1 616.5,180.7969 L14.5,180.7969 A4.5,4.5 0 0 1 10,176.2969 L10,136.8594 " fill="#FFFFFF" style="stroke:none;stroke-width:1.0;" /><path d="M10,180.7969 L621,180.7969 L621,220.2344 A4.5,4.5 0 0 1 616.5,224.7344 L14.5,224.7344 A4.5,4.5 0 0 1 10,220.2344 L10,180.7969 " fill="#FFFFFF" style="stroke:none;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="55" x2="55" y1="73.5938" y2="241.7344" /><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="269" x2="269" y1="73.5938" y2="241.7344" /><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="553" x2="553" y1="73.5938" y2="241.7344" /><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="71" x="20" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="57" x="27" y="62.292">CESFAM</text><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="69" x="235" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="55" x="242" y="62.292">Hospital</text><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="115" x="496" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="101" x="503" y="62.292">Hospital Digital</text><path d="M14.5,90.5938 L74,90.5938 L74,97.7266 L64,107.7266 L10,107.7266 L10,95.0938 A4.5,4.5 0 0 1 14.5,90.5938 " fill="#FFFFFF" style="stroke:#107050;stroke-width:1.5;" /><rect fill="none" height="134.1406" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:1.5;" width="611" x="10" y="90.5938" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="25" y="103.6606">alt</text><text fill="#000000" font-family="Roboto Condensed" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="62" x="89" y="102.8042">[CESFAM]</text><polygon fill="#107050" points="257.5,124.8594,267.5,128.8594,257.5,132.8594,261.5,128.8594" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="55.5" x2="263.5" y1="128.8594" y2="128.8594" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="62.5" y="123.7935">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="149" x="103.5" y="123.7935">APS a Nivel Secundario</text><line style="stroke:#107050;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="621" y1="137.8594" y2="137.8594" /><text fill="#000000" font-family="Roboto Condensed" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="94" x="15" y="148.0698">[HOSPITALDIG]</text><polygon fill="#107050" points="541.5,168.7969,551.5,172.7969,541.5,176.7969,545.5,172.7969" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="269.5" x2="547.5" y1="172.7969" y2="172.7969" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="276.5" y="167.731">1.1.2</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="219" x="317.5" y="167.731">Nivel Secundario a Hospital Digital</text><line style="stroke:#107050;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="621" y1="181.7969" y2="181.7969" /><text fill="#000000" font-family="Roboto Condensed" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="72" x="15" y="192.0073">[HOSPITAL]</text><polygon fill="#107050" points="66.5,212.7344,56.5,216.7344,66.5,220.7344,62.5,216.7344" style="stroke:#107050;stroke-width:1.0;" /><line style="stroke:#107050;stroke-width:1.0;" x1="60.5" x2="268.5" y1="216.7344" y2="216.7344" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="72.5" y="211.6685">1.1.3</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="149" x="113.5" y="211.6685">Nivel Secundario a APS</text></g></svg>
+  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 628 248" zoomAndPan="magnify" preserveAspectRatio="none" width="628px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:628px;height:248px;background:#FFFFFF;" version="1.1" height="248px"><defs/><g><text font-weight="bold" lengthAdjust="spacing" x="186" font-size="14" textLength="258" y="27.9951" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Referenciar</text><rect rx="4.5" ry="4.5" width="611" x="10" y="90.5938" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="134.1406"/><path d="M10,136.8594 L621,136.8594 L621,176.2969 A4.5,4.5 0 0 1 616.5,180.7969 L14.5,180.7969 A4.5,4.5 0 0 1 10,176.2969 L10,136.8594 " style="stroke:none;stroke-width:1.0;" fill="#FFFFFF"/><path d="M10,180.7969 L621,180.7969 L621,220.2344 A4.5,4.5 0 0 1 616.5,224.7344 L14.5,224.7344 A4.5,4.5 0 0 1 10,220.2344 L10,180.7969 " style="stroke:none;stroke-width:1.0;" fill="#FFFFFF"/><line y1="73.5938" x1="55" y2="241.7344" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="55"/><line y1="73.5938" x1="269" y2="241.7344" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="269"/><line y1="73.5938" x1="553" y2="241.7344" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="553"/><rect rx="4.5" ry="4.5" width="71" x="20" y="42.2969" style="stroke:#107050;stroke-width:0.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="27" font-size="14" textLength="57" y="62.292" font-family="Roboto Condensed" fill="#000000">CESFAM</text><rect rx="4.5" ry="4.5" width="69" x="235" y="42.2969" style="stroke:#107050;stroke-width:0.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="242" font-size="14" textLength="55" y="62.292" font-family="Roboto Condensed" fill="#000000">Hospital</text><rect rx="4.5" ry="4.5" width="115" x="496" y="42.2969" style="stroke:#107050;stroke-width:0.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="503" font-size="14" textLength="101" y="62.292" font-family="Roboto Condensed" fill="#000000">Hospital Digital</text><path d="M14.5,90.5938 L74,90.5938 L74,97.7266 L64,107.7266 L10,107.7266 L10,95.0938 A4.5,4.5 0 0 1 14.5,90.5938 " style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF"/><rect rx="4.5" ry="4.5" width="611" x="10" y="90.5938" style="stroke:#107050;stroke-width:1.5;" fill="none" height="134.1406"/><text font-weight="bold" lengthAdjust="spacing" x="25" font-size="13" textLength="19" y="103.6606" font-family="Roboto Condensed" fill="#000000">alt</text><text font-weight="bold" lengthAdjust="spacing" x="89" font-size="11" textLength="62" y="102.8042" font-family="Roboto Condensed" fill="#000000">[CESFAM]</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="257.5,124.8594,267.5,128.8594,257.5,132.8594,261.5,128.8594"/><line y1="128.8594" x1="55.5" y2="128.8594" style="stroke:#107050;stroke-width:1.0;" x2="263.5"/><text font-weight="bold" lengthAdjust="spacing" x="62.5" font-size="13" textLength="37" y="123.7935" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="103.5" font-size="13" textLength="149" y="123.7935" font-family="Roboto Condensed" fill="#000000">APS a Nivel Secundario</text><line y1="137.8594" x1="10" y2="137.8594" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x2="621"/><text font-weight="bold" lengthAdjust="spacing" x="15" font-size="11" textLength="94" y="148.0698" font-family="Roboto Condensed" fill="#000000">[HOSPITALDIG]</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="541.5,168.7969,551.5,172.7969,541.5,176.7969,545.5,172.7969"/><line y1="172.7969" x1="269.5" y2="172.7969" style="stroke:#107050;stroke-width:1.0;" x2="547.5"/><text font-weight="bold" lengthAdjust="spacing" x="276.5" font-size="13" textLength="37" y="167.731" font-family="Roboto Condensed" fill="#000000">1.1.2</text><text lengthAdjust="spacing" x="317.5" font-size="13" textLength="219" y="167.731" font-family="Roboto Condensed" fill="#000000">Nivel Secundario a Hospital Digital</text><line y1="181.7969" x1="10" y2="181.7969" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x2="621"/><text font-weight="bold" lengthAdjust="spacing" x="15" font-size="11" textLength="72" y="192.0073" font-family="Roboto Condensed" fill="#000000">[HOSPITAL]</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="66.5,212.7344,56.5,216.7344,66.5,220.7344,62.5,216.7344"/><line y1="216.7344" x1="60.5" y2="216.7344" style="stroke:#107050;stroke-width:1.0;" x2="268.5"/><text font-weight="bold" lengthAdjust="spacing" x="72.5" font-size="13" textLength="37" y="211.6685" font-family="Roboto Condensed" fill="#000000">1.1.3</text><text lengthAdjust="spacing" x="113.5" font-size="13" textLength="149" y="211.6685" font-family="Roboto Condensed" fill="#000000">Nivel Secundario a APS</text></g></svg>
 </div>
 
 <h4 id="semántica-del-mensaje-1">Semántica del Mensaje</h4>
@@ -310,7 +308,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><a href="StructureDefinition-BundleReferenciarLE.html">Bundle Evento Referenciar</a></li>
-  <li><a href="Bundle-EjemploBundleReferenciar.html">Ejemplo Bundle Referenciar</a></li>
+  <li><a name="l658">​</a><a href="Bundle-EjemploBundleReferenciar.html">Ejemplo Bundle Referenciar</a></li>
 </ul>
 
 <h5 id="response-1">Response</h5>
@@ -360,7 +358,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El evento <strong>revisar</strong> debe soportar a siguiente secuencia:</p>
 
 <div align="center">
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="142px" preserveAspectRatio="none" style="width:269px;height:142px;background:#FFFFFF;" version="1.1" viewBox="0 0 269 142" width="269px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="Roboto Condensed" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="224" x="22" y="27.9951">Transacci&#243;n: Evento Revisar</text><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="67" x2="67" y1="73.5938" y2="135.7266" /><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="124" x="5" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="110" x="12" y="62.292">Establecimiento</text><line style="stroke:#107050;stroke-width:1.0;" x1="67" x2="109" y1="104.7266" y2="104.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="109" x2="109" y1="104.7266" y2="117.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="68" x2="109" y1="117.7266" y2="117.7266" /><polygon fill="#107050" points="78,113.7266,68,117.7266,78,121.7266,74,117.7266" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="74" y="99.6606">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="147" x="115" y="99.6606">Revisi&#243;n de pertinencia</text></g></svg>
+  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 269 142" zoomAndPan="magnify" preserveAspectRatio="none" width="269px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:269px;height:142px;background:#FFFFFF;" version="1.1" height="142px"><defs/><g><text font-weight="bold" lengthAdjust="spacing" x="22" font-size="14" textLength="224" y="27.9951" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Revisar</text><line y1="73.5938" x1="67" y2="135.7266" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="67"/><rect rx="4.5" ry="4.5" width="124" x="5" y="42.2969" style="stroke:#107050;stroke-width:0.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="12" font-size="14" textLength="110" y="62.292" font-family="Roboto Condensed" fill="#000000">Establecimiento</text><line y1="104.7266" x1="67" y2="104.7266" style="stroke:#107050;stroke-width:1.0;" x2="109"/><line y1="104.7266" x1="109" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="109"/><line y1="117.7266" x1="68" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="109"/><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="78,113.7266,68,117.7266,78,121.7266,74,117.7266"/><text font-weight="bold" lengthAdjust="spacing" x="74" font-size="13" textLength="37" y="99.6606" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="115" font-size="13" textLength="147" y="99.6606" font-family="Roboto Condensed" fill="#000000">Revisión de pertinencia</text></g></svg>
 </div>
 
 <h4 id="semántica-del-mensaje-2">Semántica del Mensaje</h4>
@@ -371,7 +369,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><a href="StructureDefinition-BundleRevisarLE.html">Bundle Evento Revisar</a></li>
-  <li><a href="Bundle-EjemploBundleRevisar.html">Ejemplo Bundle Revisar</a></li>
+  <li><a name="l809">​</a><a href="Bundle-EjemploBundleRevisar.html">Ejemplo Bundle Revisar</a></li>
 </ul>
 
 <h5 id="response-2">Response</h5>
@@ -421,7 +419,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El evento <strong>priorizar</strong> debe soportar a siguiente secuencia:</p>
 
 <div align="center">
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="142px" preserveAspectRatio="none" style="width:261px;height:142px;background:#FFFFFF;" version="1.1" viewBox="0 0 261 142" width="261px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="Roboto Condensed" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="233" x="10" y="27.9951">Transacci&#243;n: Evento Priorizar</text><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="41.75" x2="41.75" y1="73.5938" y2="135.7266" /><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="69" x="7.75" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="55" x="14.75" y="62.292">Hospital</text><line style="stroke:#107050;stroke-width:1.0;" x1="42.25" x2="84.25" y1="104.7266" y2="104.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="84.25" x2="84.25" y1="104.7266" y2="117.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="43.25" x2="84.25" y1="117.7266" y2="117.7266" /><polygon fill="#107050" points="53.25,113.7266,43.25,117.7266,53.25,121.7266,49.25,117.7266" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="49.25" y="99.6606">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="154" x="90.25" y="99.6606">Priorizar la Interconsulta</text></g></svg>
+  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 261 142" zoomAndPan="magnify" preserveAspectRatio="none" width="261px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:261px;height:142px;background:#FFFFFF;" version="1.1" height="142px"><defs/><g><text font-weight="bold" lengthAdjust="spacing" x="10" font-size="14" textLength="233" y="27.9951" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Priorizar</text><line y1="73.5938" x1="41.75" y2="135.7266" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="41.75"/><rect rx="4.5" ry="4.5" width="69" x="7.75" y="42.2969" style="stroke:#107050;stroke-width:0.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="14.75" font-size="14" textLength="55" y="62.292" font-family="Roboto Condensed" fill="#000000">Hospital</text><line y1="104.7266" x1="42.25" y2="104.7266" style="stroke:#107050;stroke-width:1.0;" x2="84.25"/><line y1="104.7266" x1="84.25" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="84.25"/><line y1="117.7266" x1="43.25" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="84.25"/><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="53.25,113.7266,43.25,117.7266,53.25,121.7266,49.25,117.7266"/><text font-weight="bold" lengthAdjust="spacing" x="49.25" font-size="13" textLength="37" y="99.6606" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="90.25" font-size="13" textLength="154" y="99.6606" font-family="Roboto Condensed" fill="#000000">Priorizar la Interconsulta</text></g></svg>
 </div>
 
 <h4 id="semántica-del-mensaje-3">Semántica del Mensaje</h4>
@@ -432,7 +430,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 .</p>
 <ul>
   <li><a href="StructureDefinition-BundlePriorizarLE.html">Bundle Evento Priorizar</a></li>
-  <li><a href="Bundle-EjemploBundlePriorizar.html">Ejemplo Bundle Priorizar</a></li>
+  <li><a name="l961">​</a><a href="Bundle-EjemploBundlePriorizar.html">Ejemplo Bundle Priorizar</a></li>
 </ul>
 
 <h5 id="response-3">Response</h5>
@@ -482,7 +480,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El evento <strong>agendar</strong> debe soportar a siguiente secuencia:</p>
 
 <div align="center">
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="142px" preserveAspectRatio="none" style="width:261px;height:142px;background:#FFFFFF;" version="1.1" viewBox="0 0 261 142" width="261px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="Roboto Condensed" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="233" x="10" y="27.9951">Transacci&#243;n: Evento Agendar</text><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="60.75" x2="60.75" y1="73.5938" y2="135.7266" /><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="69" x="26.75" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="55" x="33.75" y="62.292">Hospital</text><line style="stroke:#107050;stroke-width:1.0;" x1="61.25" x2="103.25" y1="104.7266" y2="104.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="103.25" x2="103.25" y1="104.7266" y2="117.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="62.25" x2="103.25" y1="117.7266" y2="117.7266" /><polygon fill="#107050" points="72.25,113.7266,62.25,117.7266,72.25,121.7266,68.25,117.7266" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="68.25" y="99.6606">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="116" x="109.25" y="99.6606">Agendar de la cita</text></g></svg>
+  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 261 142" zoomAndPan="magnify" preserveAspectRatio="none" width="261px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:261px;height:142px;background:#FFFFFF;" version="1.1" height="142px"><defs/><g><text font-weight="bold" lengthAdjust="spacing" x="10" font-size="14" textLength="233" y="27.9951" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Agendar</text><line y1="73.5938" x1="60.75" y2="135.7266" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="60.75"/><rect rx="4.5" ry="4.5" width="69" x="26.75" y="42.2969" style="stroke:#107050;stroke-width:0.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="33.75" font-size="14" textLength="55" y="62.292" font-family="Roboto Condensed" fill="#000000">Hospital</text><line y1="104.7266" x1="61.25" y2="104.7266" style="stroke:#107050;stroke-width:1.0;" x2="103.25"/><line y1="104.7266" x1="103.25" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="103.25"/><line y1="117.7266" x1="62.25" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="103.25"/><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="72.25,113.7266,62.25,117.7266,72.25,121.7266,68.25,117.7266"/><text font-weight="bold" lengthAdjust="spacing" x="68.25" font-size="13" textLength="37" y="99.6606" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="109.25" font-size="13" textLength="116" y="99.6606" font-family="Roboto Condensed" fill="#000000">Agendar de la cita</text></g></svg>
 </div>
 
 <h4 id="semántica-del-mensaje-4">Semántica del Mensaje</h4>
@@ -493,11 +491,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><a href="StructureDefinition-BundleAgendarLE.html">Bundle Evento Agendar</a></li>
-  <li><a href="Bundle-EjemploBundleAgendar.html">Ejemplo Bundle Agendar</a>
+  <li><a name="l1112">​</a><a href="Bundle-EjemploBundleAgendar.html">Ejemplo Bundle Agendar</a>
     <ul>
-      <li>Appointment usado para agendar cita(<a href="Appointment-EjemploAppointmentAgendar.html">Appointment Agendar</a>)</li>
-      <li>Appointment usado para cancelar cita(<a href="Appointment-EjemploAppointmentAgendarCancelar.html">Appointment Cancelar</a>)</li>
-      <li>Appointment usado para marcar una cita sin presentación(<a href="Appointment-EjemploAppointmentAgendarSinPresentacion.html">Appointment Sin Presentación</a>)</li>
+      <li><a name="l1118">​</a>Appointment usado para agendar cita(<a href="Appointment-EjemploAppointmentAgendar.html">Appointment Agendar</a>)</li>
+      <li><a name="l1124">​</a>Appointment usado para cancelar cita(<a href="Appointment-EjemploAppointmentAgendarCancelar.html">Appointment Cancelar</a>)</li>
+      <li><a name="l1130">​</a>Appointment usado para marcar una cita sin presentación(<a href="Appointment-EjemploAppointmentAgendarSinPresentacion.html">Appointment Sin Presentación</a>)</li>
     </ul>
   </li>
 </ul>
@@ -549,7 +547,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El evento <strong>atender</strong> debe soportar a siguiente secuencia:</p>
 
 <div align="center">
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="142px" preserveAspectRatio="none" style="width:272px;height:142px;background:#FFFFFF;" version="1.1" viewBox="0 0 272 142" width="272px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="Roboto Condensed" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="230" x="20.75" y="27.9951">Transacci&#243;n: Evento Atender</text><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="39" x2="39" y1="73.5938" y2="135.7266" /><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="69" x="5" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="55" x="12" y="62.292">Hospital</text><line style="stroke:#107050;stroke-width:1.0;" x1="39.5" x2="81.5" y1="104.7266" y2="104.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="81.5" x2="81.5" y1="104.7266" y2="117.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="40.5" x2="81.5" y1="117.7266" y2="117.7266" /><polygon fill="#107050" points="50.5,113.7266,40.5,117.7266,50.5,121.7266,46.5,117.7266" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="46.5" y="99.6606">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="178" x="87.5" y="99.6606">Atenci&#243;n de la interconsulta</text></g></svg>
+  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 272 142" zoomAndPan="magnify" preserveAspectRatio="none" width="272px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:272px;height:142px;background:#FFFFFF;" version="1.1" height="142px"><defs/><g><text font-weight="bold" lengthAdjust="spacing" x="20.75" font-size="14" textLength="230" y="27.9951" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Atender</text><line y1="73.5938" x1="39" y2="135.7266" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="39"/><rect rx="4.5" ry="4.5" width="69" x="5" y="42.2969" style="stroke:#107050;stroke-width:0.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="12" font-size="14" textLength="55" y="62.292" font-family="Roboto Condensed" fill="#000000">Hospital</text><line y1="104.7266" x1="39.5" y2="104.7266" style="stroke:#107050;stroke-width:1.0;" x2="81.5"/><line y1="104.7266" x1="81.5" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="81.5"/><line y1="117.7266" x1="40.5" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="81.5"/><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="50.5,113.7266,40.5,117.7266,50.5,121.7266,46.5,117.7266"/><text font-weight="bold" lengthAdjust="spacing" x="46.5" font-size="13" textLength="37" y="99.6606" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="87.5" font-size="13" textLength="178" y="99.6606" font-family="Roboto Condensed" fill="#000000">Atención de la interconsulta</text></g></svg>
 </div>
 
 <h4 id="semántica-del-mensaje-5">Semántica del Mensaje</h4>
@@ -560,7 +558,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><a href="StructureDefinition-BundleAtenderLE.html">Bundle Evento Atender</a></li>
-  <li><a href="Bundle-EjemploBundleAtender.html">Ejemplo Bundle Atender</a></li>
+  <li><a name="l1285">​</a><a href="Bundle-EjemploBundleAtender.html">Ejemplo Bundle Atender</a></li>
 </ul>
 
 <h5 id="response-5">Response</h5>
@@ -610,7 +608,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>El evento <strong>terminar</strong> debe soportar a siguiente secuencia:</p>
 
 <div align="center">
-<?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="142px" preserveAspectRatio="none" style="width:265px;height:142px;background:#FFFFFF;" version="1.1" viewBox="0 0 265 142" width="265px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="Roboto Condensed" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="237" x="10" y="27.9951">Transacci&#243;n: Evento Terminar</text><line style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="41.25" x2="41.25" y1="73.5938" y2="135.7266" /><rect fill="#FFFFFF" height="30.2969" rx="4.5" ry="4.5" style="stroke:#107050;stroke-width:0.5;" width="69" x="7.25" y="42.2969" /><text fill="#000000" font-family="Roboto Condensed" font-size="14" lengthAdjust="spacing" textLength="55" x="14.25" y="62.292">Hospital</text><line style="stroke:#107050;stroke-width:1.0;" x1="41.75" x2="83.75" y1="104.7266" y2="104.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="83.75" x2="83.75" y1="104.7266" y2="117.7266" /><line style="stroke:#107050;stroke-width:1.0;" x1="42.75" x2="83.75" y1="117.7266" y2="117.7266" /><polygon fill="#107050" points="52.75,113.7266,42.75,117.7266,52.75,121.7266,48.75,117.7266" style="stroke:#107050;stroke-width:1.0;" /><text fill="#000000" font-family="Roboto Condensed" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="37" x="48.75" y="99.6606">1.1.1</text><text fill="#000000" font-family="Roboto Condensed" font-size="13" lengthAdjust="spacing" textLength="159" x="89.75" y="99.6606">Terminar la Interconsulta</text></g></svg>
+  <!-- ?xml version="1.0" encoding="us-ascii" standalone="no"? --><svg xmlns="http://www.w3.org/2000/svg" contentStyleType="text/css" viewBox="0 0 265 142" zoomAndPan="magnify" preserveAspectRatio="none" width="265px" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:265px;height:142px;background:#FFFFFF;" version="1.1" height="142px"><defs/><g><text font-weight="bold" lengthAdjust="spacing" x="10" font-size="14" textLength="237" y="27.9951" font-family="Roboto Condensed" fill="#000000">Transacción: Evento Terminar</text><line y1="73.5938" x1="41.25" y2="135.7266" style="stroke:#107050;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x2="41.25"/><rect rx="4.5" ry="4.5" width="69" x="7.25" y="42.2969" style="stroke:#107050;stroke-width:0.5;" fill="#FFFFFF" height="30.2969"/><text lengthAdjust="spacing" x="14.25" font-size="14" textLength="55" y="62.292" font-family="Roboto Condensed" fill="#000000">Hospital</text><line y1="104.7266" x1="41.75" y2="104.7266" style="stroke:#107050;stroke-width:1.0;" x2="83.75"/><line y1="104.7266" x1="83.75" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="83.75"/><line y1="117.7266" x1="42.75" y2="117.7266" style="stroke:#107050;stroke-width:1.0;" x2="83.75"/><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="52.75,113.7266,42.75,117.7266,52.75,121.7266,48.75,117.7266"/><text font-weight="bold" lengthAdjust="spacing" x="48.75" font-size="13" textLength="37" y="99.6606" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="89.75" font-size="13" textLength="159" y="99.6606" font-family="Roboto Condensed" fill="#000000">Terminar la Interconsulta</text></g></svg>
 </div>
 
 <h4 id="semántica-del-mensaje-6">Semántica del Mensaje</h4>
@@ -621,7 +619,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <ul>
   <li><a href="StructureDefinition-BundleTerminarLE.html">Bundle Evento Terminar</a></li>
-  <li><a href="Bundle-EjemploBundleTerminar.html">Ejemplo Bundle Terminar</a></li>
+  <li><a name="l1436">​</a><a href="Bundle-EjemploBundleTerminar.html">Ejemplo Bundle Terminar</a></li>
 </ul>
 
 <h5 id="response-6">Response</h5>
@@ -644,53 +642,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
 </div>
-        </div>  <!-- /inner-wrapper -->
-      </div>  <!-- /row -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-content -->
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
-  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
   <a name="bottom"> </a>
-  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
-    <div class="container">  <!-- container -->
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 30, 2024 11:40+0000">2024-04-30</span>
+          IG &copy; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 30, 2024 19:35+0000">2024-05-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">Reporte QA</a> 
-<!-- <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interoperabilidad.minsal.cl/fhir/ig/tei"></a> -->
-</a>
- | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/Minsal-CL/SIGTEv2-IG">Issues</a>
+  <!-- <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://interoperabilidad.minsal.cl/fhir/ig/tei"></a> -->
+
+ | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/Minsal-CL/SIGTEv2-IG" target="_blank">Issues</a>
           </span>
         </p>
-      </div>  <!-- /inner-wrapper -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-footer -->
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
   
-  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
-    <div class="container">  <!-- container -->
-    </div>  <!-- /container -->
-  </div>  <!-- /segment-post-footer -->
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
   
-  <!-- JS and analytics only. -->
-  <!-- Bootstrap core JavaScript
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
   ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
-  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
-  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
   
-  <!-- Analytics Below
+    <!-- Analytics Below
   ================================================== -->
   </body>
 </html>
-

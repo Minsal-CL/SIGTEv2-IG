@@ -13,6 +13,18 @@
       "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
     },
     {
+      "url" : "http://hl7.org/fhir/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.401"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
+    },
+    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -34,8 +46,9 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-VSServicioRequerido.html" : "Servicio Requerido",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "ValueSet-VSServicioRequerido.html" : "Servicio Requerido"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -64,30 +77,55 @@
       "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "9.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "oids" : ["2.16.840.1.113883.5.4"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCoverageTypeCode.html" : "ActCoverageTypeCode"
+    },
+    {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
-      "version" : "1.8.5",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "CSTipoIdentificador",
       "title" : "Tipo Identificador",
       "description" : "Tipo Identificador",
       "uses" : {
       },
-      "https://hl7chile.cl/fhir/ig/clcore/1.8.5/ValueSet-VSTipoIdentificador.html" : "Tipo Identificador"
+      "https://build.fhir.org/ig/HL7Chile/clcore_ig//ValueSet-VSTipoIdentificador.html" : "Tipo Identificador",
+      "ValueSet-VSIdentificadorPrestador.html" : "IdentificadorPrestador"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-      "version" : "1.8.5",
+      "version" : "1.8.11",
       "status" : "active",
       "name" : "CSCodPaises",
       "title" : "Códigos de Países",
       "description" : "Codigos definidos para la identificación de países segun norma ISO3166-N",
       "uses" : {
       },
-      "https://hl7chile.cl/fhir/ig/clcore/1.8.5/ValueSet-CodPais.html" : "Códigos de Países"
+      "https://build.fhir.org/ig/HL7Chile/clcore_ig//ValueSet-CodPais.html" : "Códigos de Países"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSConsecuenciaAtencionCodigo",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSConsecuenciaAtencionCodigo",
       "title" : "Consecuencia Atención Codigo",
@@ -98,7 +136,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDerivadoParaCodigo",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSDerivadoParaCodigo",
       "title" : "Derivado Para",
@@ -109,7 +147,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDestinoReferenciaCodigo",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSDestinoReferenciaCodigo",
       "title" : "Destino Referencia Codigo",
@@ -120,7 +158,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDocAcreditacionCuidador",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSDocAcreditacionCuidador",
       "title" : "Documento Acreditacion Cuidador",
@@ -131,7 +169,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadBioqca",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSEspecialidadBioqca",
       "title" : "Especialidades y Subespecialidades Bioquímicas",
@@ -143,7 +181,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadFarma",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSEspecialidadFarma",
       "title" : "Especialidades Farmaceúticas o Química Farmaceúticas",
@@ -155,7 +193,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadMed",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSEspecialidadMed",
       "title" : "EspecialidadMed",
@@ -167,7 +205,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadOdont",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSEspecialidadOdont",
       "title" : "Especialidades Odontológicas",
@@ -179,7 +217,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestinoCodigo",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSEstablecimientoDestinoCodigo",
       "title" : "Establecimiento Destino Codigo",
@@ -190,7 +228,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoCivil",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSEstadoCivil",
       "title" : "EstadoCivil",
@@ -201,7 +239,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoInterconsulta",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSEstadoInterconsulta",
       "title" : "Estado Interconsulta",
@@ -212,7 +250,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSHipotesisDiagnosticaCodigo",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSHipotesisDiagnosticaCodigo",
       "title" : "HipotesisDiagnosticaCodigo",
@@ -223,19 +261,8 @@
       "ValueSet-VSHipotesisDiagnosticaCodigo.html" : "HipotesisDiagnosticaCodigo"
     },
     {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdInterconsulta",
-      "version" : "0.1.6",
-      "status" : "active",
-      "name" : "CSIdInterconsulta",
-      "title" : "Id interconsulta",
-      "description" : "Id interconsulta",
-      "uses" : {
-      },
-      "ValueSet-VSIdInterconsulta.html" : "Id interconsulta"
-    },
-    {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentidaddeGenero",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSIdentidaddeGenero",
       "title" : "Identidad de Genero",
@@ -246,7 +273,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIndicecomorbilidad",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSIndicecomorbilidad",
       "title" : "Indice Comorbilidad",
@@ -256,19 +283,19 @@
       "ValueSet-VSIndicecomorbilidad.html" : "Indice Comorbilidad"
     },
     {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMedioNotificacion",
-      "version" : "0.1.6",
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMediodeContacto",
+      "version" : "0.9.1",
       "status" : "active",
-      "name" : "CSMedioNotificacion",
+      "name" : "CSMediodeContacto",
       "title" : "Medio Notificación",
       "description" : "Medio Notificación",
       "uses" : {
       },
-      "ValueSet-VSMedioNotificacion.html" : "Medio Notificación"
+      "ValueSet-VSMediodeContacto.html" : "Medio Notificación"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSModalidadAtencionCodigo",
       "title" : "Modalidad Atencion Codigo",
@@ -279,7 +306,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoCierreInterconsulta",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSMotivoCierreInterconsulta",
       "title" : "Motivo Cierre Interconsulta",
@@ -290,7 +317,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoContactabilidad",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSMotivoNoContactabilidad",
       "title" : "Motivo No Contactabilidad",
@@ -301,7 +328,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMotivoNoPertinenciaCodigo",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSMotivoNoPertinenciaCodigo",
       "title" : "Motivo No Pertinencia Codigo",
@@ -312,7 +339,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPertinenciaInterconsulta",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSPertinenciaInterconsulta",
       "title" : "Pertinencia Interconsulta",
@@ -323,7 +350,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPractitionerTipoRolLE",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSPractitionerTipoRolLE",
       "title" : "Rol de profesionales",
@@ -334,7 +361,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPrevisionCodigo",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSPrevisionCodigo",
       "title" : "PrevisionCodigo",
@@ -344,8 +371,19 @@
       "ValueSet-VSPrevisionCodigo.html" : "PrevisionCodigo"
     },
     {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSProblemaGES",
+      "version" : "0.9.1",
+      "status" : "active",
+      "name" : "CSProblemaGES",
+      "title" : "Sospecha Patologia Ges",
+      "description" : "Sospecha Patologia Ges",
+      "uses" : {
+      },
+      "ValueSet-VSProblemaGES.html" : "Sospecha Patologia Ges"
+    },
+    {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSReligion",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSReligion",
       "title" : "Religion",
@@ -356,7 +394,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSexoBiologico",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSSexoBiologico",
       "title" : "Códigos para Sexo de Nacimiento de Paciente",
@@ -367,7 +405,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologia",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSSospechaPatologia",
       "title" : "Sospecha Patologia",
@@ -377,19 +415,8 @@
       "ValueSet-VSSospechaPatologia.html" : "Sospecha Patologia"
     },
     {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologiaGes",
-      "version" : "0.1.6",
-      "status" : "active",
-      "name" : "CSSospechaPatologiaGes",
-      "title" : "Sospecha Patologia Ges",
-      "description" : "Sospecha Patologia Ges",
-      "uses" : {
-      },
-      "ValueSet-VSSospechaPatologiaGes.html" : "Sospecha Patologia Ges"
-    },
-    {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoCodDiagnostica",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSTipoCodDiagnostica",
       "title" : "Tipo Codificación Diagnostica",
@@ -400,7 +427,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoConsulta",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSTipoConsulta",
       "title" : "Tipo Consulta",
@@ -411,7 +438,7 @@
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoEventoLE",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSTipoEventoLE",
       "title" : "Tipo de Evento",
@@ -421,8 +448,19 @@
       "ValueSet-VSTipoEventoLE.html" : "Tipo de Evento"
     },
     {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoIdentificadorSR",
+      "version" : "0.9.1",
+      "status" : "active",
+      "name" : "CSTipoIdentificadorSR",
+      "title" : "Id interconsulta",
+      "description" : "Id interconsulta",
+      "uses" : {
+      },
+      "ValueSet-VSTipoIdentificadorSR.html" : "Id interconsulta"
+    },
+    {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTituloProfesional",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "active",
       "name" : "CSTituloProfesional",
       "title" : "TituloProfesional",
@@ -432,19 +470,19 @@
       "ValueSet-VSTituloProfesional.html" : "TituloProfesional"
     },
     {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSinterconsulta",
-      "version" : "0.1.6",
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSorigenInterconsulta",
+      "version" : "0.9.1",
       "status" : "active",
-      "name" : "CSinterconsulta",
-      "title" : "Interconsulta",
-      "description" : "Interconsulta",
+      "name" : "CSorigenInterconsulta",
+      "title" : "Origen Interconsulta",
+      "description" : "Origen Interconsulta",
       "uses" : {
       },
-      "ValueSet-VSinterconsulta.html" : "Interconsulta"
+      "ValueSet-VSorigenInterconsulta.html" : "Origen Interconsulta"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS",
-      "version" : "0.1.6",
+      "version" : "0.9.1",
       "status" : "draft",
       "name" : "PueblosOriginariosCS",
       "title" : "Pueblos Originarios de Chile",

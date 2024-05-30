@@ -17,4 +17,11 @@
       <sch:assert test="count(f:description) &gt;= 1">description: minimum cardinality of 'description' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:CarePlan/f:activity</sch:title>
+    <sch:rule context="f:CarePlan/f:activity">
+      <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
+      <sch:assert test="count(f:reference) &gt;= 1">reference: minimum cardinality of 'reference' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>
