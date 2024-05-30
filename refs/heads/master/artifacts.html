@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts - Tiempos de Espera Interoperable v0.1.6</title>
+    <title>Artifacts - Tiempos de Espera Interoperable v0.9.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -66,7 +66,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
             <br/>
-            <span style="display:inline-block;">0.1.6 - draft
+            <span style="display:inline-block;">0.9.1 - draft
 
 
 
@@ -182,7 +182,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.1.6. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.9.1. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   <h2>Artifacts</h2>
   
   
@@ -207,9 +207,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
       <li>
          <a href="#5">Terminology: Concept Maps</a>
-      </li>
-      <li>
-         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -315,6 +312,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ConditionDiagnosticoLE.html"
+                  title="StructureDefinition/ConditionDiagnosticoLE">Condition Diagnostico LE</a>
+            </td>
+            <td>
+<p>Condicion Diagnostico LE, recurso que se utiliza para indicar el diagnóstico</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ConditionIniciarGesLE.html"
                   title="StructureDefinition/ConditionIniciarGesLE">Condition GES</a>
             </td>
@@ -324,20 +330,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ConditionIniciarDiagnosticoLE.html"
-                  title="StructureDefinition/ConditionIniciarDiagnosticoLE">Condition Iniciar Diagnostico LE</a>
+               <a href="StructureDefinition-CoverageLE.html"
+                  title="StructureDefinition/CoverageLE">Coverage LE</a>
             </td>
             <td>
-<p>Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-CoverageIniciarLE.html"
-                  title="StructureDefinition/CoverageIniciarLE">Coverage Iniciar LE</a>
-            </td>
-            <td>
-<p>Coverage Iniciar LE, recurso que permite saber la previsión de un paciente</p>
+<p>Coverage LE, recurso que permite saber la previsión de un paciente</p>
 </td>
          </tr>
          <tr>
@@ -369,11 +366,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ExamenesAnteriores.html"
+                  title="StructureDefinition/ExamenesAnteriores">Examenes Anteriores</a>
+            </td>
+            <td>
+<p>Recurso que permite agregar los examenes anteriores</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-MessageHeaderLE.html"
                   title="StructureDefinition/MessageHeaderLE">MessageHeader LE</a>
             </td>
             <td>
 <p>MessageHeaderLE</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ObservationIniciarDiscapacidadLE.html"
+                  title="StructureDefinition/ObservationIniciarDiscapacidadLE">Observación Iniciar Discapacidad LE</a>
+            </td>
+            <td>
+<p>Observación Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad</p>
 </td>
          </tr>
          <tr>
@@ -391,16 +406,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/ObservationIniciarCuidadorLE">Observation Iniciar Cuidador LE</a>
             </td>
             <td>
-<p>Observation Iniciar, para describir si un paciente necesita cuidador</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ObservationIniciarDiscapacidadLE.html"
-                  title="StructureDefinition/ObservationIniciarDiscapacidadLE">Observation Iniciar Discapacidad LE</a>
-            </td>
-            <td>
-<p>Observation Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad</p>
+<p>Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona</p>
 </td>
          </tr>
          <tr>
@@ -410,15 +416,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ObservationIniciarLE.html"
-                  title="StructureDefinition/ObservationIniciarLE">Observation Iniciar LE</a>
-            </td>
-            <td>
-<p>Observation Iniciar LE, recurso que permite agregar los examenes en el evento iniciar.</p>
 </td>
          </tr>
          <tr>
@@ -445,7 +442,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/PractitionerRoleLE">PractitionerRole LE</a>
             </td>
             <td>
-<p>PractitionerRole LE, recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud.</p>
+<p>PractitionerRole LE, recurso que se utiliza para representar la información de roles, un profesional de la salud.</p>
 </td>
          </tr>
          <tr>
@@ -499,7 +496,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/ServiceRequestExamenLE">ServiceRequestExamen LE</a>
             </td>
             <td>
-<p>ServiceRequestExamen LE recurso utilizado para la representación de los datos de la examen.</p>
+<p>ServiceRequestExamen LE recurso utilizado para la representación de los datos del examen</p>
 </td>
          </tr>
       </tbody>
@@ -522,10 +519,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-Contactado.html"
-                  title="StructureDefinition/Contactado">Contactado</a>
+                  title="StructureDefinition/Contactado">ContactadoLE</a>
             </td>
             <td>
-<p>Contactado</p>
+<p>ContactadoLE</p>
 </td>
          </tr>
          <tr>
@@ -535,15 +532,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>DigitoVerificador</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-DocAcreditacionCuidadorCodigoLE.html"
-                  title="StructureDefinition/DocAcreditacionCuidadorCodigoLE">Doc Acreditacion Cuidador</a>
-            </td>
-            <td>
-<p>Doc Acreditacion Cuidador</p>
 </td>
          </tr>
          <tr>
@@ -589,6 +577,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>ExtBool ¿Hace uso de atención preferente?</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ExtBoolEsCuidador.html"
+                  title="StructureDefinition/ExtBoolEsCuidador">ExtBool EsCuidador</a>
+            </td>
+            <td>
+<p>ExtBool EsCuidador</p>
 </td>
          </tr>
          <tr>
@@ -674,20 +671,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-IdentidadDeGenero.html"
-                  title="StructureDefinition/IdentidadDeGenero">Identidad De Genero</a>
+               <a href="StructureDefinition-MediodeContacto.html"
+                  title="StructureDefinition/MediodeContacto">MediodeContacto</a>
             </td>
             <td>
-<p>Identidad De Genero</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-MedioNotificacion.html"
-                  title="StructureDefinition/MedioNotificacion">MedioNotificacion</a>
-            </td>
-            <td>
-<p>MedioNotificacion</p>
+<p>MediodeContacto</p>
 </td>
          </tr>
          <tr>
@@ -755,6 +743,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ProblemaGES.html"
+                  title="StructureDefinition/ProblemaGES">ProblemaGES</a>
+            </td>
+            <td>
+<p>Indica si corresponde a GES</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-PueblosOriginarios.html"
                   title="StructureDefinition/PueblosOriginarios">Pueblos Originarios</a>
             </td>
@@ -814,15 +811,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>SituacionCalle</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SospechaPatologiaGes.html"
-                  title="StructureDefinition/SospechaPatologiaGes">SospechaPatologiaGes</a>
-            </td>
-            <td>
-<p>Indica si corresponde a GES</p>
 </td>
          </tr>
          <tr>
@@ -975,8 +963,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-VSIdInterconsulta.html"
-                  title="ValueSet/VSIdInterconsulta">Id interconsulta</a>
+               <a href="ValueSet-VSTipoIdentificadorSR.html"
+                  title="ValueSet/VSTipoIdentificadorSR">Id interconsulta</a>
             </td>
             <td>
 <p>Id interconsulta</p>
@@ -993,6 +981,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-VSIdentificadorPrestador.html"
+                  title="ValueSet/VSIdentificadorPrestador">IdentificadorPrestador</a>
+            </td>
+            <td>
+<p>IdentificadorPrestador</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-VSIndicecomorbilidad.html"
                   title="ValueSet/VSIndicecomorbilidad">Indice Comorbilidad</a>
             </td>
@@ -1002,16 +999,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-VSinterconsulta.html" title="ValueSet/VSinterconsulta">Interconsulta</a>
-            </td>
-            <td>
-<p>Interconsulta</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-VSMedioNotificacion.html"
-                  title="ValueSet/VSMedioNotificacion">Medio Notificación</a>
+               <a href="ValueSet-VSMediodeContacto.html"
+                  title="ValueSet/VSMediodeContacto">Medio Notificación</a>
             </td>
             <td>
 <p>Medio Notificación</p>
@@ -1051,6 +1040,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Motivo No Pertinencia Codigo</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-VSorigenInterconsulta.html"
+                  title="ValueSet/VSorigenInterconsulta">Origen Interconsulta</a>
+            </td>
+            <td>
+<p>Origen Interconsulta</p>
 </td>
          </tr>
          <tr>
@@ -1117,8 +1115,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-VSSospechaPatologiaGes.html"
-                  title="ValueSet/VSSospechaPatologiaGes">Sospecha Patologia Ges</a>
+               <a href="ValueSet-VSProblemaGES.html" title="ValueSet/VSProblemaGES">Sospecha Patologia Ges</a>
             </td>
             <td>
 <p>Sospecha Patologia Ges</p>
@@ -1284,8 +1281,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-CSIdInterconsulta.html"
-                  title="CodeSystem/CSIdInterconsulta">Id interconsulta</a>
+               <a href="CodeSystem-CSTipoIdentificadorSR.html"
+                  title="CodeSystem/CSTipoIdentificadorSR">Id interconsulta</a>
             </td>
             <td>
 <p>Id interconsulta</p>
@@ -1302,6 +1299,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-CSIdentificadorPrestador.html"
+                  title="CodeSystem/CSIdentificadorPrestador">IdentificadorPrestador</a>
+            </td>
+            <td>
+<p>IdentificadorPrestador</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-CSIndicecomorbilidad.html"
                   title="CodeSystem/CSIndicecomorbilidad">Indice Comorbilidad</a>
             </td>
@@ -1311,17 +1317,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-CSinterconsulta.html"
-                  title="CodeSystem/CSinterconsulta">Interconsulta</a>
-            </td>
-            <td>
-<p>Interconsulta</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-CSMedioNotificacion.html"
-                  title="CodeSystem/CSMedioNotificacion">Medio Notificación</a>
+               <a href="CodeSystem-CSMediodeContacto.html"
+                  title="CodeSystem/CSMediodeContacto">Medio Notificación</a>
             </td>
             <td>
 <p>Medio Notificación</p>
@@ -1361,6 +1358,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Motivo No Pertinencia Codigo</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CSorigenInterconsulta.html"
+                  title="CodeSystem/CSorigenInterconsulta">Origen Interconsulta</a>
+            </td>
+            <td>
+<p>Origen Interconsulta</p>
 </td>
          </tr>
          <tr>
@@ -1418,8 +1424,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-CSSospechaPatologiaGes.html"
-                  title="CodeSystem/CSSospechaPatologiaGes">Sospecha Patologia Ges</a>
+               <a href="CodeSystem-CSProblemaGES.html" title="CodeSystem/CSProblemaGES">Sospecha Patologia Ges</a>
             </td>
             <td>
 <p>Sospecha Patologia Ges</p>
@@ -1478,624 +1483,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="6"> </a>
-   <h3>Example: Example Instances </h3>
-    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="AllergyIntolerance-EjemploAllergyIntolerance.html"
-                  title="AllergyIntolerance/EjemploAllergyIntolerance">AllergyIntolerance Evento Iniciar</a>
-            </td>
-            <td>
-<p>AllergyIntolerance Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Appointment-EjemploAppointmentAgendar.html"
-                  title="Appointment/EjemploAppointmentAgendar">Appointment Evento Agendar</a>
-            </td>
-            <td>
-<p>Appointment Evento Agendar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Appointment-EjemploAppointmentAgendarCancelar.html"
-                  title="Appointment/EjemploAppointmentAgendarCancelar">Appointment Evento Agendar(Cancelación)</a>
-            </td>
-            <td>
-<p>Appointment Evento Agendar(Cancelación)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Appointment-EjemploAppointmentAgendarSinPresentacion.html"
-                  title="Appointment/EjemploAppointmentAgendarSinPresentacion">Appointment Evento Agendar(Sin Presentacion)</a>
-            </td>
-            <td>
-<p>Appointment Evento Agendar(Sin Presentacion)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-EjemploBundleAgendar.html"
-                  title="Bundle/EjemploBundleAgendar">Bundle Evento Agendar</a>
-            </td>
-            <td>
-<p>Bundle Evento Agendar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-EjemploBundleAtender.html"
-                  title="Bundle/EjemploBundleAtender">Bundle Evento Atender</a>
-            </td>
-            <td>
-<p>Bundle Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-EjemploBundleIniciar.html"
-                  title="Bundle/EjemploBundleIniciar">Bundle Evento Iniciar</a>
-            </td>
-            <td>
-<p>Bundle Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-EjemploBundlePriorizar.html"
-                  title="Bundle/EjemploBundlePriorizar">Bundle Evento Priorizar</a>
-            </td>
-            <td>
-<p>Bundle Evento Priorizar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-EjemploBundleReferenciar.html"
-                  title="Bundle/EjemploBundleReferenciar">Bundle Evento Referenciar</a>
-            </td>
-            <td>
-<p>Bundle Evento Referenciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-EjemploBundleRevisar.html"
-                  title="Bundle/EjemploBundleRevisar">Bundle Evento Revisar</a>
-            </td>
-            <td>
-<p>Bundle Evento Revisar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Bundle-EjemploBundleTerminar.html"
-                  title="Bundle/EjemploBundleTerminar">Bundle Evento Terminar</a>
-            </td>
-            <td>
-<p>Bundle Evento Terminar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CarePlan-EjemploCarePlanLE.html"
-                  title="CarePlan/EjemploCarePlanLE">CarePlan Evento Atender</a>
-            </td>
-            <td>
-<p>CarePlan Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Condition-EjemploCondition.html"
-                  title="Condition/EjemploCondition">Condition Diagnóstico Sospecha Evento Iniciar</a>
-            </td>
-            <td>
-<p>Condition Diagnóstico Sospecha Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Condition-EjemploConditionAtender.html"
-                  title="Condition/EjemploConditionAtender">Condition Diagnóstico Sospecha Evento Iniciar</a>
-            </td>
-            <td>
-<p>Condition Diagnóstico Sospecha Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Coverage-EjemploCoverage.html" title="Coverage/EjemploCoverage">Coverage Evento Iniciar</a>
-            </td>
-            <td>
-<p>Coverage Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="DocumentReference-EjemploDocumentReference.html"
-                  title="DocumentReference/EjemploDocumentReference">DocumentReference Evento Iniciar</a>
-            </td>
-            <td>
-<p>DocumentReference Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Encounter-EjemploEncounterAtender.html"
-                  title="Encounter/EjemploEncounterAtender">Encounter Evento Atender</a>
-            </td>
-            <td>
-<p>Encounter Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Encounter-EjemploEncounter.html"
-                  title="Encounter/EjemploEncounter">Encounter Evento Iniciar</a>
-            </td>
-            <td>
-<p>Encounter Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="MessageHeader-EjemploMessageHeaderAgendar.html"
-                  title="MessageHeader/EjemploMessageHeaderAgendar">MesaggeHeader Evento Agendar</a>
-            </td>
-            <td>
-<p>MesaggeHeader Evento Agendar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="MessageHeader-EjemploMessageHeaderAtender.html"
-                  title="MessageHeader/EjemploMessageHeaderAtender">MesaggeHeader Evento Atender</a>
-            </td>
-            <td>
-<p>MesaggeHeader Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="MessageHeader-EjemploMessageHeader.html"
-                  title="MessageHeader/EjemploMessageHeader">MesaggeHeader Evento Iniciar</a>
-            </td>
-            <td>
-<p>MesaggeHeader Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="MessageHeader-EjemploMessageHeaderPriorizar.html"
-                  title="MessageHeader/EjemploMessageHeaderPriorizar">MesaggeHeader Evento Priorizar</a>
-            </td>
-            <td>
-<p>MesaggeHeader Evento Priorizar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="MessageHeader-EjemploMessageHeaderReferencia.html"
-                  title="MessageHeader/EjemploMessageHeaderReferencia">MesaggeHeader Evento Referenciar</a>
-            </td>
-            <td>
-<p>MesaggeHeader Evento Referenciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="MessageHeader-EjemploMessageHeaderRevisar.html"
-                  title="MessageHeader/EjemploMessageHeaderRevisar">MesaggeHeader Evento Revisar</a>
-            </td>
-            <td>
-<p>MesaggeHeader Evento Revisar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="MessageHeader-EjemploMessageHeaderTerminar.html"
-                  title="MessageHeader/EjemploMessageHeaderTerminar">MesaggeHeader Evento Terminar</a>
-            </td>
-            <td>
-<p>MesaggeHeader Evento Terminar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-EjemploObservationCuidador.html"
-                  title="Observation/EjemploObservationCuidador">Observation Cuidador Evento Iniciar</a>
-            </td>
-            <td>
-<p>Observation Cuidador Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-EjemploObservationDiscapacidad.html"
-                  title="Observation/EjemploObservationDiscapacidad">Observation Discapacidad Evento Iniciar</a>
-            </td>
-            <td>
-<p>Observation Discapacidad Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-EjemploObservationAtender.html"
-                  title="Observation/EjemploObservationAtender">Observation Evento Atender</a>
-            </td>
-            <td>
-<p>Observation Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-EjemploObservation.html"
-                  title="Observation/EjemploObservation">Observation Evento Iniciar</a>
-            </td>
-            <td>
-<p>Observation Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-EjemploObservation2.html"
-                  title="Observation/EjemploObservation2">Observation Índice Comorbilidad Evento Iniciar</a>
-            </td>
-            <td>
-<p>Observation Índice Comorbilidadn Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-EjemploOrganizationAgendar.html"
-                  title="Organization/EjemploOrganizationAgendar">Organization Evento Agendar</a>
-            </td>
-            <td>
-<p>Organization Evento Agendar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-EjemploOrganizationAtender.html"
-                  title="Organization/EjemploOrganizationAtender">Organization Evento Atender</a>
-            </td>
-            <td>
-<p>Organization Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-EjemploOrganization.html"
-                  title="Organization/EjemploOrganization">Organization Evento Iniciar</a>
-            </td>
-            <td>
-<p>Organization Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-EjemploOrganizationPriorizar.html"
-                  title="Organization/EjemploOrganizationPriorizar">Organization Evento Priorizar</a>
-            </td>
-            <td>
-<p>Organization Evento Priorizar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-EjemploOrganizationReferencia.html"
-                  title="Organization/EjemploOrganizationReferencia">Organization Evento Referenciar</a>
-            </td>
-            <td>
-<p>Organization Evento Referenciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-EjemploOrganizationRevisar.html"
-                  title="Organization/EjemploOrganizationRevisar">Organization Evento Revisar</a>
-            </td>
-            <td>
-<p>Organization Evento Revisar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-EjemploOrganizationTerminar.html"
-                  title="Organization/EjemploOrganizationTerminar">Organization Evento Terminar</a>
-            </td>
-            <td>
-<p>Organization Evento Terminar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-EjemploOrganizationAgendarAgendador.html"
-                  title="Organization/EjemploOrganizationAgendarAgendador">Organization Evento de Agendador</a>
-            </td>
-            <td>
-<p>Organization Evento de Agendador</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-EjemploOrganizationReferenciarReferenciador.html"
-                  title="Organization/EjemploOrganizationReferenciarReferenciador">Organization Referenciador Evento Referenciar</a>
-            </td>
-            <td>
-<p>Organization Referenciador Evento Referenciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-EjemploPatient.html" title="Patient/EjemploPatient">Patient Lista de Espera</a>
-            </td>
-            <td>
-<p>Patient Lista de Espera</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Condition-EjemploConditionGES.html"
-                  title="Condition/EjemploConditionGES">Patología GES (número)</a>
-            </td>
-            <td>
-<p>Patología GES (número)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-EjemploPractitionerAgendarAgendador.html"
-                  title="Practitioner/EjemploPractitionerAgendarAgendador">Practitioner Agendador Evento Agendar</a>
-            </td>
-            <td>
-<p>Practitioner Agendador Evento Agendar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-EjemploPractitionerAgendarAtendedor.html"
-                  title="Practitioner/EjemploPractitionerAgendarAtendedor">Practitioner Atendedor Evento Agendar</a>
-            </td>
-            <td>
-<p>Practitioner Atendedor Evento Agendar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-EjemploPractitionerAtender.html"
-                  title="Practitioner/EjemploPractitionerAtender">Practitioner Evento Atender</a>
-            </td>
-            <td>
-<p>Practitioner Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-EjemploPractitionerIniciar.html"
-                  title="Practitioner/EjemploPractitionerIniciar">Practitioner Evento Iniciar</a>
-            </td>
-            <td>
-<p>Practitioner Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-EjemploPractitionerPriorizar.html"
-                  title="Practitioner/EjemploPractitionerPriorizar">Practitioner Evento Priorizar</a>
-            </td>
-            <td>
-<p>Practitioner Evento Priorizar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-EjemploPractitionerRevisar.html"
-                  title="Practitioner/EjemploPractitionerRevisar">Practitioner Evento Revisar</a>
-            </td>
-            <td>
-<p>Practitioner Evento Revisar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-EjemploPractitionerTerminar.html"
-                  title="Practitioner/EjemploPractitionerTerminar">Practitioner Evento Terminar</a>
-            </td>
-            <td>
-<p>Practitioner Evento Terminar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-EjemploPractitionerReferenciarReferenciador.html"
-                  title="Practitioner/EjemploPractitionerReferenciarReferenciador">Practitioner Referenciador Evento Referenciar</a>
-            </td>
-            <td>
-<p>Practitioner Referenciador Evento Referenciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-EjemploPractitionerRoleReferenciarAtendedor.html"
-                  title="PractitionerRole/EjemploPractitionerRoleReferenciarAtendedor">PractitionerRole Atendedor Evento Referenciar</a>
-            </td>
-            <td>
-<p>PractitionerRole Atendedor Evento Referenciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-EjemploPractitionerRoleAgendarAPPO.html"
-                  title="PractitionerRole/EjemploPractitionerRoleAgendarAPPO">PractitionerRole Evento Agendar Apponitment</a>
-            </td>
-            <td>
-<p>PractitionerRole Evento Agendar Apponitment</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-EjemploPractitionerRoleAgendarMH.html"
-                  title="PractitionerRole/EjemploPractitionerRoleAgendarMH">PractitionerRole Evento Agendar MessageHeader</a>
-            </td>
-            <td>
-<p>PractitionerRole Evento Agendar MessageHeader</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-EjemploPractitionerRoleAtender.html"
-                  title="PractitionerRole/EjemploPractitionerRoleAtender">PractitionerRole Evento Atender</a>
-            </td>
-            <td>
-<p>PractitionerRole Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-EjemploPractitionerRole.html"
-                  title="PractitionerRole/EjemploPractitionerRole">PractitionerRole Evento Iniciar</a>
-            </td>
-            <td>
-<p>PractitionerRole Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-EjemploPractitionerRolePriorizar.html"
-                  title="PractitionerRole/EjemploPractitionerRolePriorizar">PractitionerRole Evento Priorizar</a>
-            </td>
-            <td>
-<p>PractitionerRole Evento Priorizar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-EjemploPractitionerRoleRevisar.html"
-                  title="PractitionerRole/EjemploPractitionerRoleRevisar">PractitionerRole Evento Revisar</a>
-            </td>
-            <td>
-<p>PractitionerRole Evento Revisar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-EjemploPractitionerRoleTerminar.html"
-                  title="PractitionerRole/EjemploPractitionerRoleTerminar">PractitionerRole Evento Terminar</a>
-            </td>
-            <td>
-<p>PractitionerRole Evento Terminar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-EjemploPractitionerRoleReferenciarReferenciador.html"
-                  title="PractitionerRole/EjemploPractitionerRoleReferenciarReferenciador">PractitionerRole Referenciador Evento Referenciar</a>
-            </td>
-            <td>
-<p>PractitionerRole Referenciador Evento Referenciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-EjemploQuestionnaireResponseAtenderLE.html"
-                  title="QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE">QuestionnaireResponse Evento Atender</a>
-            </td>
-            <td>
-<p>QuestionnaireResponse Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-EjemploQuestionnaireResponseIniciarLE.html"
-                  title="QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE">QuestionnaireResponse Evento Iniciar Motivo derivación</a>
-            </td>
-            <td>
-<p>QuestionnaireResponse Evento Iniciar Motivo derivación</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-EjemploServiceRequestAgendar.html"
-                  title="ServiceRequest/EjemploServiceRequestAgendar">ServiceRequest Evento Agendar</a>
-            </td>
-            <td>
-<p>ServiceRequest Evento Agendar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-EjemploServiceRequestAtender.html"
-                  title="ServiceRequest/EjemploServiceRequestAtender">ServiceRequest Evento Atender</a>
-            </td>
-            <td>
-<p>ServiceRequest Evento Atender</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-EjemploServiceRequest.html"
-                  title="ServiceRequest/EjemploServiceRequest">ServiceRequest Evento Iniciar</a>
-            </td>
-            <td>
-<p>ServiceRequest Evento Iniciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-EjemploServiceRequestPriorizar.html"
-                  title="ServiceRequest/EjemploServiceRequestPriorizar">ServiceRequest Evento Priorizar</a>
-            </td>
-            <td>
-<p>ServiceRequest Evento Priorizar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-EjemploServiceRequestReferenciada.html"
-                  title="ServiceRequest/EjemploServiceRequestReferenciada">ServiceRequest Evento Referenciar</a>
-            </td>
-            <td>
-<p>ServiceRequest Evento Referenciar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-EjemploServiceRequestRevisar.html"
-                  title="ServiceRequest/EjemploServiceRequestRevisar">ServiceRequest Evento Revisar</a>
-            </td>
-            <td>
-<p>ServiceRequest Evento Revisar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-EjemploServiceRequestTerminar.html"
-                  title="ServiceRequest/EjemploServiceRequestTerminar">ServiceRequest Evento Terminar</a>
-            </td>
-            <td>
-<p>ServiceRequest Evento Terminar</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ServiceRequest-EjemploServiceRequestExamen.html"
-                  title="ServiceRequest/EjemploServiceRequestExamen">ServiceRequest Examen</a>
-            </td>
-            <td>
-<p>ServiceRequest Examen</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
 </div>
 
 </div>
@@ -2114,7 +1501,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.1.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 30, 2024 11:40+0000">2024-04-30</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 30, 2024 19:35+0000">2024-05-30</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

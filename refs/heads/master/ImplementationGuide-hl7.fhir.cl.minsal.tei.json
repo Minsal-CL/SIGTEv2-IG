@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TiemposDeEsperaInteroperable</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/tei/ImplementationGuide/hl7.fhir.cl.minsal.tei</pre><div><p>Tiempos de Espera Interoperable</p>\n</div></div>"
   },
   "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ImplementationGuide/hl7.fhir.cl.minsal.tei",
-  "version" : "0.1.6",
+  "version" : "0.9.1",
   "name" : "TiemposDeEsperaInteroperable",
   "title" : "Tiempos de Espera Interoperable",
   "status" : "draft",
-  "date" : "2024-04-30T11:40:38+00:00",
+  "date" : "2024-05-30T19:35:25+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -54,7 +54,7 @@
     "id" : "hl7_fhir_cl_clcore",
     "uri" : "https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore",
     "packageId" : "hl7.fhir.cl.clcore",
-    "version" : "1.8.5"
+    "version" : "dev"
   }],
   "definition" : {
     "extension" : [{
@@ -64,7 +64,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "2023+"
+        "valueString" : "2024"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -343,7 +343,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "2023+"
+        "valueString" : "2024"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -614,18 +614,6 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "AllergyIntolerance"
-      }],
-      "reference" : {
-        "reference" : "AllergyIntolerance/EjemploAllergyIntolerance"
-      },
-      "name" : "AllergyIntolerance Evento Iniciar",
-      "description" : "AllergyIntolerance Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AllergyIntoleranceIniciarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -650,42 +638,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
-      }],
-      "reference" : {
-        "reference" : "Appointment/EjemploAppointmentAgendar"
-      },
-      "name" : "Appointment Evento Agendar",
-      "description" : "Appointment Evento Agendar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
-      }],
-      "reference" : {
-        "reference" : "Appointment/EjemploAppointmentAgendarCancelar"
-      },
-      "name" : "Appointment Evento Agendar(Cancelación)",
-      "description" : "Appointment Evento Agendar(Cancelación)",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Appointment"
-      }],
-      "reference" : {
-        "reference" : "Appointment/EjemploAppointmentAgendarSinPresentacion"
-      },
-      "name" : "Appointment Evento Agendar(Sin Presentacion)",
-      "description" : "Appointment Evento Agendar(Sin Presentacion)",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/AppointmentAgendarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -706,90 +658,6 @@
       "name" : "Bundle Atender LE",
       "description" : "Bundle Atender LE recurso utilizado para transportar todos los datos del mensaje relacionado al evento Atender.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/EjemploBundleAgendar"
-      },
-      "name" : "Bundle Evento Agendar",
-      "description" : "Bundle Evento Agendar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleAgendarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/EjemploBundleAtender"
-      },
-      "name" : "Bundle Evento Atender",
-      "description" : "Bundle Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleAtenderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/EjemploBundleIniciar"
-      },
-      "name" : "Bundle Evento Iniciar",
-      "description" : "Bundle Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleIniciarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/EjemploBundlePriorizar"
-      },
-      "name" : "Bundle Evento Priorizar",
-      "description" : "Bundle Evento Priorizar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundlePriorizarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/EjemploBundleReferenciar"
-      },
-      "name" : "Bundle Evento Referenciar",
-      "description" : "Bundle Evento Referenciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/EjemploBundleRevisar"
-      },
-      "name" : "Bundle Evento Revisar",
-      "description" : "Bundle Evento Revisar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleRevisarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/EjemploBundleTerminar"
-      },
-      "name" : "Bundle Evento Terminar",
-      "description" : "Bundle Evento Terminar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleTerminarLE"
     },
     {
       "extension" : [{
@@ -866,18 +734,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CarePlan"
-      }],
-      "reference" : {
-        "reference" : "CarePlan/EjemploCarePlanLE"
-      },
-      "name" : "CarePlan Evento Atender",
-      "description" : "CarePlan Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CarePlanAtenderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ConceptMap"
       }],
       "reference" : {
@@ -890,26 +746,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Condition/EjemploCondition"
+        "reference" : "StructureDefinition/ConditionDiagnosticoLE"
       },
-      "name" : "Condition Diagnóstico Sospecha Evento Iniciar",
-      "description" : "Condition Diagnóstico Sospecha Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/EjemploConditionAtender"
-      },
-      "name" : "Condition Diagnóstico Sospecha Evento Iniciar",
-      "description" : "Condition Diagnóstico Sospecha Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarDiagnosticoLE"
+      "name" : "Condition Diagnostico LE",
+      "description" : "Condicion Diagnostico LE, recurso que se utiliza para indicar el diagnóstico",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -921,18 +765,6 @@
       },
       "name" : "Condition GES",
       "description" : "Condition GES",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ConditionIniciarDiagnosticoLE"
-      },
-      "name" : "Condition Iniciar Diagnostico LE",
-      "description" : "Condicion Iniciar LE, recurso que se utiliza para indicar el diagnóstico del motivo que origina la interconsulta.",
       "exampleBoolean" : false
     },
     {
@@ -979,21 +811,9 @@
       "reference" : {
         "reference" : "StructureDefinition/Contactado"
       },
-      "name" : "Contactado",
-      "description" : "Contactado",
+      "name" : "ContactadoLE",
+      "description" : "ContactadoLE",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Coverage"
-      }],
-      "reference" : {
-        "reference" : "Coverage/EjemploCoverage"
-      },
-      "name" : "Coverage Evento Iniciar",
-      "description" : "Coverage Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageIniciarLE"
     },
     {
       "extension" : [{
@@ -1001,10 +821,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/CoverageIniciarLE"
+        "reference" : "StructureDefinition/CoverageLE"
       },
-      "name" : "Coverage Iniciar LE",
-      "description" : "Coverage Iniciar LE, recurso que permite saber la previsión de un paciente",
+      "name" : "Coverage LE",
+      "description" : "Coverage LE, recurso que permite saber la previsión de un paciente",
       "exampleBoolean" : false
     },
     {
@@ -1106,18 +926,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DocAcreditacionCuidadorCodigoLE"
-      },
-      "name" : "Doc Acreditacion Cuidador",
-      "description" : "Doc Acreditacion Cuidador",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1142,18 +950,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "DocumentReference"
-      }],
-      "reference" : {
-        "reference" : "DocumentReference/EjemploDocumentReference"
-      },
-      "name" : "DocumentReference Evento Iniciar",
-      "description" : "DocumentReference Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceIniciarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1174,30 +970,6 @@
       "name" : "Encounter Atender LE",
       "description" : "Encounter Atender LE recurso que se utiliza para representar el encuentro médico, cuando se comienza a ejecutar la atención de la interconsulta.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/EjemploEncounterAtender"
-      },
-      "name" : "Encounter Evento Atender",
-      "description" : "Encounter Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/EjemploEncounter"
-      },
-      "name" : "Encounter Evento Iniciar",
-      "description" : "Encounter Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE"
     },
     {
       "extension" : [{
@@ -1418,6 +1190,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ExamenesAnteriores"
+      },
+      "name" : "Examenes Anteriores",
+      "description" : "Recurso que permite agregar los examenes anteriores",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1449,6 +1233,18 @@
       },
       "name" : "ExtBool Atención Preferente",
       "description" : "ExtBool ¿Hace uso de atención preferente?",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ExtBoolEsCuidador"
+      },
+      "name" : "ExtBool EsCuidador",
+      "description" : "ExtBool EsCuidador",
       "exampleBoolean" : false
     },
     {
@@ -1588,7 +1384,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSIdInterconsulta"
+        "reference" : "ValueSet/VSTipoIdentificadorSR"
       },
       "name" : "Id interconsulta",
       "description" : "Id interconsulta",
@@ -1600,22 +1396,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSIdInterconsulta"
+        "reference" : "CodeSystem/CSTipoIdentificadorSR"
       },
       "name" : "Id interconsulta",
       "description" : "Id interconsulta",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/IdentidadDeGenero"
-      },
-      "name" : "Identidad De Genero",
-      "description" : "Identidad De Genero",
       "exampleBoolean" : false
     },
     {
@@ -1648,6 +1432,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSIdentificadorPrestador"
+      },
+      "name" : "IdentificadorPrestador",
+      "description" : "IdentificadorPrestador",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSIdentificadorPrestador"
+      },
+      "name" : "IdentificadorPrestador",
+      "description" : "IdentificadorPrestador",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSIndicecomorbilidad"
       },
       "name" : "Indice Comorbilidad",
@@ -1672,31 +1480,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSinterconsulta"
-      },
-      "name" : "Interconsulta",
-      "description" : "Interconsulta",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSinterconsulta"
-      },
-      "name" : "Interconsulta",
-      "description" : "Interconsulta",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSMedioNotificacion"
+        "reference" : "ValueSet/VSMediodeContacto"
       },
       "name" : "Medio Notificación",
       "description" : "Medio Notificación",
@@ -1708,7 +1492,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSMedioNotificacion"
+        "reference" : "CodeSystem/CSMediodeContacto"
       },
       "name" : "Medio Notificación",
       "description" : "Medio Notificación",
@@ -1720,10 +1504,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MedioNotificacion"
+        "reference" : "StructureDefinition/MediodeContacto"
       },
-      "name" : "MedioNotificacion",
-      "description" : "MedioNotificacion",
+      "name" : "MediodeContacto",
+      "description" : "MediodeContacto",
       "exampleBoolean" : false
     },
     {
@@ -1737,90 +1521,6 @@
       "name" : "Mención profesional añadida l título profesional",
       "description" : "Mención profesional obtenida junto con el título, dato que se agrega en texto lible",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeaderAgendar"
-      },
-      "name" : "MesaggeHeader Evento Agendar",
-      "description" : "MesaggeHeader Evento Agendar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeaderAtender"
-      },
-      "name" : "MesaggeHeader Evento Atender",
-      "description" : "MesaggeHeader Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeader"
-      },
-      "name" : "MesaggeHeader Evento Iniciar",
-      "description" : "MesaggeHeader Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeaderPriorizar"
-      },
-      "name" : "MesaggeHeader Evento Priorizar",
-      "description" : "MesaggeHeader Evento Priorizar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeaderReferencia"
-      },
-      "name" : "MesaggeHeader Evento Referenciar",
-      "description" : "MesaggeHeader Evento Referenciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeaderRevisar"
-      },
-      "name" : "MesaggeHeader Evento Revisar",
-      "description" : "MesaggeHeader Evento Revisar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/EjemploMessageHeaderTerminar"
-      },
-      "name" : "MesaggeHeader Evento Terminar",
-      "description" : "MesaggeHeader Evento Terminar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MessageHeaderLE"
     },
     {
       "extension" : [{
@@ -1960,59 +1660,23 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ObservationAtenderLE"
+        "reference" : "StructureDefinition/ObservationIniciarDiscapacidadLE"
       },
-      "name" : "Observation Atender LE",
-      "description" : "ObservationAtender LE",
+      "name" : "Observación Iniciar Discapacidad LE",
+      "description" : "Observación Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Observation/EjemploObservationCuidador"
+        "reference" : "StructureDefinition/ObservationAtenderLE"
       },
-      "name" : "Observation Cuidador Evento Iniciar",
-      "description" : "Observation Cuidador Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarCuidadorLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/EjemploObservationDiscapacidad"
-      },
-      "name" : "Observation Discapacidad Evento Iniciar",
-      "description" : "Observation Discapacidad Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarDiscapacidadLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/EjemploObservationAtender"
-      },
-      "name" : "Observation Evento Atender",
-      "description" : "Observation Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationAtenderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/EjemploObservation"
-      },
-      "name" : "Observation Evento Iniciar",
-      "description" : "Observation Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarLE"
+      "name" : "Observation Atender LE",
+      "description" : "ObservationAtender LE",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -2023,19 +1687,7 @@
         "reference" : "StructureDefinition/ObservationIniciarCuidadorLE"
       },
       "name" : "Observation Iniciar Cuidador LE",
-      "description" : "Observation Iniciar, para describir si un paciente necesita cuidador",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ObservationIniciarDiscapacidadLE"
-      },
-      "name" : "Observation Iniciar Discapacidad LE",
-      "description" : "Observation Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad",
+      "description" : "Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona",
       "exampleBoolean" : false
     },
     {
@@ -2056,143 +1708,11 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ObservationIniciarLE"
-      },
-      "name" : "Observation Iniciar LE",
-      "description" : "Observation Iniciar LE, recurso que permite agregar los examenes en el evento iniciar.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/EjemploObservation2"
-      },
-      "name" : "Observation Índice Comorbilidad Evento Iniciar",
-      "description" : "Observation Índice Comorbilidadn Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationIniciarIndiceComorbilidadLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationAgendar"
-      },
-      "name" : "Organization Evento Agendar",
-      "description" : "Organization Evento Agendar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationAtender"
-      },
-      "name" : "Organization Evento Atender",
-      "description" : "Organization Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationAgendarAgendador"
-      },
-      "name" : "Organization Evento de Agendador",
-      "description" : "Organization Evento de Agendador",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganization"
-      },
-      "name" : "Organization Evento Iniciar",
-      "description" : "Organization Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationPriorizar"
-      },
-      "name" : "Organization Evento Priorizar",
-      "description" : "Organization Evento Priorizar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationReferencia"
-      },
-      "name" : "Organization Evento Referenciar",
-      "description" : "Organization Evento Referenciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationRevisar"
-      },
-      "name" : "Organization Evento Revisar",
-      "description" : "Organization Evento Revisar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationTerminar"
-      },
-      "name" : "Organization Evento Terminar",
-      "description" : "Organization Evento Terminar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/OrganizationLE"
       },
       "name" : "Organization LE",
       "description" : "Organization LE según [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/EjemploOrganizationReferenciarReferenciador"
-      },
-      "name" : "Organization Referenciador Evento Referenciar",
-      "description" : "Organization Referenciador Evento Referenciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrganizationLE"
     },
     {
       "extension" : [{
@@ -2209,6 +1729,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSorigenInterconsulta"
+      },
+      "name" : "Origen Interconsulta",
+      "description" : "Origen Interconsulta",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSorigenInterconsulta"
+      },
+      "name" : "Origen Interconsulta",
+      "description" : "Origen Interconsulta",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2217,30 +1761,6 @@
       "name" : "Patient LE",
       "description" : "Paciente definido para el Registro Maestro de Pacientes",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/EjemploPatient"
-      },
-      "name" : "Patient Lista de Espera",
-      "description" : "Patient Lista de Espera",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/EjemploConditionGES"
-      },
-      "name" : "Patología GES (número)",
-      "description" : "Patología GES (número)",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarGesLE"
     },
     {
       "extension" : [{
@@ -2293,218 +1813,14 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerAgendarAgendador"
-      },
-      "name" : "Practitioner Agendador Evento Agendar",
-      "description" : "Practitioner Agendador Evento Agendar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorAdministrativoLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerAgendarAtendedor"
-      },
-      "name" : "Practitioner Atendedor Evento Agendar",
-      "description" : "Practitioner Atendedor Evento Agendar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerAtender"
-      },
-      "name" : "Practitioner Evento Atender",
-      "description" : "Practitioner Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerIniciar"
-      },
-      "name" : "Practitioner Evento Iniciar",
-      "description" : "Practitioner Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerPriorizar"
-      },
-      "name" : "Practitioner Evento Priorizar",
-      "description" : "Practitioner Evento Priorizar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerRevisar"
-      },
-      "name" : "Practitioner Evento Revisar",
-      "description" : "Practitioner Evento Revisar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerTerminar"
-      },
-      "name" : "Practitioner Evento Terminar",
-      "description" : "Practitioner Evento Terminar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/EjemploPractitionerReferenciarReferenciador"
-      },
-      "name" : "Practitioner Referenciador Evento Referenciar",
-      "description" : "Practitioner Referenciador Evento Referenciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PrestadorProfesionalLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleReferenciarAtendedor"
-      },
-      "name" : "PractitionerRole Atendedor Evento Referenciar",
-      "description" : "PractitionerRole Atendedor Evento Referenciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleAgendarAPPO"
-      },
-      "name" : "PractitionerRole Evento Agendar Apponitment",
-      "description" : "PractitionerRole Evento Agendar Apponitment",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleAgendarMH"
-      },
-      "name" : "PractitionerRole Evento Agendar MessageHeader",
-      "description" : "PractitionerRole Evento Agendar MessageHeader",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleAtender"
-      },
-      "name" : "PractitionerRole Evento Atender",
-      "description" : "PractitionerRole Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRole"
-      },
-      "name" : "PractitionerRole Evento Iniciar",
-      "description" : "PractitionerRole Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRolePriorizar"
-      },
-      "name" : "PractitionerRole Evento Priorizar",
-      "description" : "PractitionerRole Evento Priorizar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleRevisar"
-      },
-      "name" : "PractitionerRole Evento Revisar",
-      "description" : "PractitionerRole Evento Revisar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleTerminar"
-      },
-      "name" : "PractitionerRole Evento Terminar",
-      "description" : "PractitionerRole Evento Terminar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/PractitionerRoleLE"
       },
       "name" : "PractitionerRole LE",
-      "description" : "PractitionerRole LE, recurso que se utiliza para representar la información de roles, especialidades o subespecialidades de un profesional de la salud.",
+      "description" : "PractitionerRole LE, recurso que se utiliza para representar la información de roles, un profesional de la salud.",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/EjemploPractitionerRoleReferenciarReferenciador"
-      },
-      "name" : "PractitionerRole Referenciador Evento Referenciar",
-      "description" : "PractitionerRole Referenciador Evento Referenciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE"
     },
     {
       "extension" : [{
@@ -2564,6 +1880,18 @@
       },
       "name" : "Previsión determinada de aseguramiento de salud del paciente.",
       "description" : "La previsión es la variable que determina sistema de aseguramiento de salud del paciente.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ProblemaGES"
+      },
+      "name" : "ProblemaGES",
+      "description" : "Indica si corresponde a GES",
       "exampleBoolean" : false
     },
     {
@@ -2641,30 +1969,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/EjemploQuestionnaireResponseAtenderLE"
-      },
-      "name" : "QuestionnaireResponse Evento Atender",
-      "description" : "QuestionnaireResponse Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseAtenderLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/EjemploQuestionnaireResponseIniciarLE"
-      },
-      "name" : "QuestionnaireResponse Evento Iniciar Motivo derivación",
-      "description" : "QuestionnaireResponse Evento Iniciar Motivo derivación",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/QuestionnaireResponseIniciarLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2737,102 +2041,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestAgendar"
-      },
-      "name" : "ServiceRequest Evento Agendar",
-      "description" : "ServiceRequest Evento Agendar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestAtender"
-      },
-      "name" : "ServiceRequest Evento Atender",
-      "description" : "ServiceRequest Evento Atender",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequest"
-      },
-      "name" : "ServiceRequest Evento Iniciar",
-      "description" : "ServiceRequest Evento Iniciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestPriorizar"
-      },
-      "name" : "ServiceRequest Evento Priorizar",
-      "description" : "ServiceRequest Evento Priorizar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestReferenciada"
-      },
-      "name" : "ServiceRequest Evento Referenciar",
-      "description" : "ServiceRequest Evento Referenciar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestRevisar"
-      },
-      "name" : "ServiceRequest Evento Revisar",
-      "description" : "ServiceRequest Evento Revisar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestTerminar"
-      },
-      "name" : "ServiceRequest Evento Terminar",
-      "description" : "ServiceRequest Evento Terminar",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ServiceRequest"
-      }],
-      "reference" : {
-        "reference" : "ServiceRequest/EjemploServiceRequestExamen"
-      },
-      "name" : "ServiceRequest Examen",
-      "description" : "ServiceRequest Examen",
-      "exampleCanonical" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ServiceRequestExamenLE"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -2851,7 +2059,7 @@
         "reference" : "StructureDefinition/ServiceRequestExamenLE"
       },
       "name" : "ServiceRequestExamen LE",
-      "description" : "ServiceRequestExamen LE recurso utilizado para la representación de los datos de la examen.",
+      "description" : "ServiceRequestExamen LE recurso utilizado para la representación de los datos del examen",
       "exampleBoolean" : false
     },
     {
@@ -2932,7 +2140,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSSospechaPatologiaGes"
+        "reference" : "ValueSet/VSProblemaGES"
       },
       "name" : "Sospecha Patologia Ges",
       "description" : "Sospecha Patologia Ges",
@@ -2944,22 +2152,10 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSSospechaPatologiaGes"
+        "reference" : "CodeSystem/CSProblemaGES"
       },
       "name" : "Sospecha Patologia Ges",
       "description" : "Sospecha Patologia Ges",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/SospechaPatologiaGes"
-      },
-      "name" : "SospechaPatologiaGes",
-      "description" : "Indica si corresponde a GES",
       "exampleBoolean" : false
     },
     {
