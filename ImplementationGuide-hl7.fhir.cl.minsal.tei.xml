@@ -11,7 +11,7 @@
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2024-05-30T19:35:25+00:00"/>
+  <date value="2024-05-31T20:01:16+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -769,17 +769,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DocumentReferenceIniciarLE"/>
-      </reference>
-      <name value="DocumentReference Iniciar LE"/>
-      <description value="DocumentReference Iniciar LE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/EncounterAtenderLE"/>
       </reference>
       <name value="Encounter Atender LE"/>
@@ -806,17 +795,6 @@
       </reference>
       <name value="Especialidad Médica Destino Código"/>
       <description value="Especialidad Médica Destino Código"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSEspecialidades"/>
-      </reference>
-      <name value="Especialidades"/>
-      <description value="Especialidades"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -912,7 +890,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VSEstablecimientoDestinoCodigo"/>
+        <reference value="ValueSet/VSEstablecimientoDestino"/>
       </reference>
       <name value="Establecimiento Destino Codigo"/>
       <description value="Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"/>
@@ -923,7 +901,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/CSEstablecimientoDestinoCodigo"/>
+        <reference value="CodeSystem/CSEstablecimientoDestino"/>
       </reference>
       <name value="Establecimiento Destino Codigo"/>
       <description value="Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"/>
@@ -986,13 +964,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EvaluacionPertinencia"/>
+      </reference>
+      <name value="Evaluacion Pertinencia"/>
+      <description value="Evaluacion Pertinencia"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/ExamenesAnteriores"/>
       </reference>
-      <name value="Examenes Anteriores"/>
-      <description value="Recurso que permite agregar los examenes anteriores"/>
+      <name value="ExamenesAnteriores"/>
+      <description value="Resultados de examenes anteriores como antecedentes para la derivación a interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1252,6 +1241,28 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/VSIsapres"/>
+      </reference>
+      <name value="Isapres"/>
+      <description value="Isapres"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/CSIsapres"/>
+      </reference>
+      <name value="Isapres"/>
+      <description value="Isapres"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/VSMediodeContacto"/>
       </reference>
       <name value="Medio Notificación"/>
@@ -1384,10 +1395,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MotivoNoPertinenciaCodigo"/>
+        <reference value="StructureDefinition/MotivoNoPertinencia"/>
       </reference>
-      <name value="Motivo No Pertinencia Codigo"/>
-      <description value="Motivo No Pertinencia Codigo"/>
+      <name value="Motivo No Pertinencia"/>
+      <description value="Motivo No Pertinencia"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1883,6 +1894,17 @@
       </reference>
       <name value="SubEspecialidad Médica Destino Código"/>
       <description value="SubEspecialidad Médica Destino Código"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/VSTerminologiasDiag"/>
+      </reference>
+      <name value="TerminologiasDiag"/>
+      <description value="TerminologiasDiag"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

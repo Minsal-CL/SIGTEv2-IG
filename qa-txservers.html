@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TiemposDeEsperaInteroperable</h1>
- <p>Generated Thu May 30 19:40:21 UTC 2024, FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.9.1 (canonical = <a href="https://interoperabilidad.minsal.cl/fhir/ig/tei">https://interoperabilidad.minsal.cl/fhir/ig/tei</a> (<a href="https://interoperabilidad.minsal.cl/fhir/ig/tei/history.html">history</a>))</p>
+ <p>Generated Fri May 31 20:06:49 UTC 2024, FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.9.1 (canonical = <a href="https://interoperabilidad.minsal.cl/fhir/ig/tei">https://interoperabilidad.minsal.cl/fhir/ig/tei</a> (<a href="https://interoperabilidad.minsal.cl/fhir/ig/tei/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -22,10 +22,10 @@
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
 <ul>
-  <li>(No Errors/Reports - all good)</li>
+  <li>https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTerminologiasDiag|0.9.1 includes multiple systems [http://hl7.org/fhir/sid/icd-10, http://snomed.info/sct] best handled by multiple servers: [auth = http://tx.fhir.org/r4, candidates=, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 14. Code Systems used: </p>
+<p>Use Count: 16. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -42,6 +42,14 @@
     </th>
   </tr>
   <tr>
+    <td>http://hl7.org/fhir/sid/icd-10</td>
+    <td>2</td>
+    <td>0</td>
+    <td>
+      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-icd10.html">ICD-10</a>
+    </td>
+  </tr>
+  <tr>
     <td>http://loinc.org</td>
     <td>2</td>
     <td>0</td>
@@ -51,7 +59,7 @@
   </tr>
   <tr>
     <td>http://snomed.info/sct</td>
-    <td>2</td>
+    <td>3</td>
     <td>1</td>
     <td>
       <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>

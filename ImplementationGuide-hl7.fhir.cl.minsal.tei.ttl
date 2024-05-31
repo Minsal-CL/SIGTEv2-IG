@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TiemposDeEsperaInteroperable"] ; # 
   fhir:title [ fhir:v "Tiempos de Espera Interoperable"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-30T19:35:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-31T20:01:16+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -867,18 +867,6 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DocumentReferenceIniciarLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/DocumentReferenceIniciarLE" ]
-       ] ;
-       fhir:name [ fhir:v "DocumentReference Iniciar LE" ] ;
-       fhir:description [ fhir:v "DocumentReference Iniciar LE" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE> ;
          fhir:reference [ fhir:v "StructureDefinition/EncounterAtenderLE" ]
        ] ;
@@ -908,18 +896,6 @@
        ] ;
        fhir:name [ fhir:v "Especialidad Médica Destino Código" ] ;
        fhir:description [ fhir:v "Especialidad Médica Destino Código" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEspecialidades> ;
-         fhir:reference [ fhir:v "ValueSet/VSEspecialidades" ]
-       ] ;
-       fhir:name [ fhir:v "Especialidades" ] ;
-       fhir:description [ fhir:v "Especialidades" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1023,8 +999,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEstablecimientoDestinoCodigo> ;
-         fhir:reference [ fhir:v "ValueSet/VSEstablecimientoDestinoCodigo" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSEstablecimientoDestino> ;
+         fhir:reference [ fhir:v "ValueSet/VSEstablecimientoDestino" ]
        ] ;
        fhir:name [ fhir:v "Establecimiento Destino Codigo" ] ;
        fhir:description [ fhir:v "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)" ] ;
@@ -1035,8 +1011,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestinoCodigo> ;
-         fhir:reference [ fhir:v "CodeSystem/CSEstablecimientoDestinoCodigo" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino> ;
+         fhir:reference [ fhir:v "CodeSystem/CSEstablecimientoDestino" ]
        ] ;
        fhir:name [ fhir:v "Establecimiento Destino Codigo" ] ;
        fhir:description [ fhir:v "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)" ] ;
@@ -1104,14 +1080,26 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EvaluacionPertinencia> ;
+         fhir:reference [ fhir:v "StructureDefinition/EvaluacionPertinencia" ]
+       ] ;
+       fhir:name [ fhir:v "Evaluacion Pertinencia" ] ;
+       fhir:description [ fhir:v "Evaluacion Pertinencia" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExamenesAnteriores> ;
          fhir:reference [ fhir:v "StructureDefinition/ExamenesAnteriores" ]
        ] ;
-       fhir:name [ fhir:v "Examenes Anteriores" ] ;
-       fhir:description [ fhir:v "Recurso que permite agregar los examenes anteriores" ] ;
+       fhir:name [ fhir:v "ExamenesAnteriores" ] ;
+       fhir:description [ fhir:v "Resultados de examenes anteriores como antecedentes para la derivación a interconsulta" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1394,6 +1382,30 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSIsapres> ;
+         fhir:reference [ fhir:v "ValueSet/VSIsapres" ]
+       ] ;
+       fhir:name [ fhir:v "Isapres" ] ;
+       fhir:description [ fhir:v "Isapres" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIsapres> ;
+         fhir:reference [ fhir:v "CodeSystem/CSIsapres" ]
+       ] ;
+       fhir:name [ fhir:v "Isapres" ] ;
+       fhir:description [ fhir:v "Isapres" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSMediodeContacto> ;
          fhir:reference [ fhir:v "ValueSet/VSMediodeContacto" ]
        ] ;
@@ -1538,11 +1550,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinenciaCodigo> ;
-         fhir:reference [ fhir:v "StructureDefinition/MotivoNoPertinenciaCodigo" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinencia> ;
+         fhir:reference [ fhir:v "StructureDefinition/MotivoNoPertinencia" ]
        ] ;
-       fhir:name [ fhir:v "Motivo No Pertinencia Codigo" ] ;
-       fhir:description [ fhir:v "Motivo No Pertinencia Codigo" ] ;
+       fhir:name [ fhir:v "Motivo No Pertinencia" ] ;
+       fhir:description [ fhir:v "Motivo No Pertinencia" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -2083,6 +2095,18 @@
        ] ;
        fhir:name [ fhir:v "SubEspecialidad Médica Destino Código" ] ;
        fhir:description [ fhir:v "SubEspecialidad Médica Destino Código" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTerminologiasDiag> ;
+         fhir:reference [ fhir:v "ValueSet/VSTerminologiasDiag" ]
+       ] ;
+       fhir:name [ fhir:v "TerminologiasDiag" ] ;
+       fhir:description [ fhir:v "TerminologiasDiag" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -10,7 +10,7 @@
   "name" : "TiemposDeEsperaInteroperable",
   "title" : "Tiempos de Espera Interoperable",
   "status" : "draft",
-  "date" : "2024-05-30T19:35:25+00:00",
+  "date" : "2024-05-31T20:01:16+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -953,18 +953,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/DocumentReferenceIniciarLE"
-      },
-      "name" : "DocumentReference Iniciar LE",
-      "description" : "DocumentReference Iniciar LE",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/EncounterAtenderLE"
       },
       "name" : "Encounter Atender LE",
@@ -993,18 +981,6 @@
       },
       "name" : "Especialidad Médica Destino Código",
       "description" : "Especialidad Médica Destino Código",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSEspecialidades"
-      },
-      "name" : "Especialidades",
-      "description" : "Especialidades",
       "exampleBoolean" : false
     },
     {
@@ -1109,7 +1085,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSEstablecimientoDestinoCodigo"
+        "reference" : "ValueSet/VSEstablecimientoDestino"
       },
       "name" : "Establecimiento Destino Codigo",
       "description" : "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
@@ -1121,7 +1097,7 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/CSEstablecimientoDestinoCodigo"
+        "reference" : "CodeSystem/CSEstablecimientoDestino"
       },
       "name" : "Establecimiento Destino Codigo",
       "description" : "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
@@ -1190,13 +1166,25 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EvaluacionPertinencia"
+      },
+      "name" : "Evaluacion Pertinencia",
+      "description" : "Evaluacion Pertinencia",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/ExamenesAnteriores"
       },
-      "name" : "Examenes Anteriores",
-      "description" : "Recurso que permite agregar los examenes anteriores",
+      "name" : "ExamenesAnteriores",
+      "description" : "Resultados de examenes anteriores como antecedentes para la derivación a interconsulta",
       "exampleBoolean" : false
     },
     {
@@ -1480,6 +1468,30 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/VSIsapres"
+      },
+      "name" : "Isapres",
+      "description" : "Isapres",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/CSIsapres"
+      },
+      "name" : "Isapres",
+      "description" : "Isapres",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/VSMediodeContacto"
       },
       "name" : "Medio Notificación",
@@ -1624,10 +1636,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MotivoNoPertinenciaCodigo"
+        "reference" : "StructureDefinition/MotivoNoPertinencia"
       },
-      "name" : "Motivo No Pertinencia Codigo",
-      "description" : "Motivo No Pertinencia Codigo",
+      "name" : "Motivo No Pertinencia",
+      "description" : "Motivo No Pertinencia",
       "exampleBoolean" : false
     },
     {
@@ -2168,6 +2180,18 @@
       },
       "name" : "SubEspecialidad Médica Destino Código",
       "description" : "SubEspecialidad Médica Destino Código",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/VSTerminologiasDiag"
+      },
+      "name" : "TerminologiasDiag",
+      "description" : "TerminologiasDiag",
       "exampleBoolean" : false
     },
     {
