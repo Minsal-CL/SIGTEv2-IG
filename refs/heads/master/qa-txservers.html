@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TiemposDeEsperaInteroperable</h1>
- <p>Generated Fri May 31 20:06:49 UTC 2024, FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.9.1 (canonical = <a href="https://interoperabilidad.minsal.cl/fhir/ig/tei">https://interoperabilidad.minsal.cl/fhir/ig/tei</a> (<a href="https://interoperabilidad.minsal.cl/fhir/ig/tei/history.html">history</a>))</p>
+ <p>Generated Fri May 31 20:35:50 UTC 2024, FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.9.1 (canonical = <a href="https://interoperabilidad.minsal.cl/fhir/ig/tei">https://interoperabilidad.minsal.cl/fhir/ig/tei</a> (<a href="https://interoperabilidad.minsal.cl/fhir/ig/tei/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -22,10 +22,11 @@
 </ul>
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
 <ul>
+  <li>https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSIdentificadorPrestador|0.9.1 uses the system [https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTerminologiasDiag|0.9.1 includes multiple systems [http://hl7.org/fhir/sid/icd-10, http://snomed.info/sct] best handled by multiple servers: [auth = http://tx.fhir.org/r4, candidates=, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 16. Code Systems used: </p>
+<p>Use Count: 17. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -46,7 +47,7 @@
     <td>2</td>
     <td>0</td>
     <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-icd10.html">ICD-10</a>
+      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html">ICD-10</a>
     </td>
   </tr>
   <tr>
@@ -54,7 +55,7 @@
     <td>2</td>
     <td>0</td>
     <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
   </tr>
   <tr>
@@ -72,11 +73,19 @@
     <td/>
   </tr>
   <tr>
+    <td>https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador</td>
+    <td>1</td>
+    <td>0</td>
+    <td>
+      <a href="https://hl7chile.cl/fhir/ig/clcore/1.8.5/CodeSystem-CSTipoIdentificador.html">Tipo Identificador</a>
+    </td>
+  </tr>
+  <tr>
     <td>urn:iso:std:iso:3166</td>
     <td>3</td>
     <td>5</td>
     <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
+      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>
     </td>
   </tr>
   <tr>
@@ -84,7 +93,7 @@
     <td>1</td>
     <td>1</td>
     <td>
-      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-iso3166-2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
+      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part2.html">ISO 3166 Part 2 Country Subdivision Codes</a>
     </td>
   </tr>
 </table>
