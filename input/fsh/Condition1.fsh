@@ -13,6 +13,7 @@ Description: "Condicion Diagnostico LE, recurso que se utiliza para indicar el d
 * subject 1..1 MS 
 * subject ^short = "Paciente que tiene este diagnóstico"
 
+* code from VSTerminologiasDiag
 * code 1..1 MS
   * coding 1..1 MS
   * coding ^short = "Código definido por un sistema terminológico"

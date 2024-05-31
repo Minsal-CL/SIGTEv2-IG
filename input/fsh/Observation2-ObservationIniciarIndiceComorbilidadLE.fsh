@@ -42,7 +42,7 @@ Description: "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza
     * system ^short = "Sistema terminológico, url/uri/uuid"
     * system = #http://terminology.hl7.org/CodeSystem/observation-category
     * code 1..1 MS
-    * code = #vital-signs
+    * code = #survey
     * code ^short = "Código definido en un sistema terminológico"
     * display 0..1 MS
     * display ^short = "Representación visual, definida por el sistema terminológico"

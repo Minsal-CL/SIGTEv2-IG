@@ -6,8 +6,10 @@
   - Extension "Religión", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept".
   - Extension "Pueblos Originarios", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept".
   - Se elimina la extension "LugarDeNacimiento"
-	- El elemento "deceased[x]" se deja abierto para que se pueda registrar una fecha de fallecimiento o un booleano sobre si el paciente esta fallecido o no
-	- El elemento identifier.type.extension[paisEmisionDocumento] se le cambia la cardinalidad de 0..1 -> 1..1 
+  - El elemento "deceased[x]" se deja abierto para que se pueda registrar una fecha de fallecimiento o un booleano sobre si el paciente esta fallecido o no
+  - El elemento identifier.type.extension[paisEmisionDocumento] se le cambia la cardinalidad de 0..1 -> 1..1 
+  - Se cambia cardinalidad birthDate 0..1 -> 1..1
+  - Se cambia cardinalidad de extension nacionalidad 0..1 -> 1..1
 
 - Perfil [BundleAtenderLE](StructureDefinition-BundleAtenderLE.html)
   - Se agrega entry AllergyIntolerance aceptando solo AllergyIntoleranceIniciarLE en el campo resource
@@ -18,6 +20,10 @@
 - Perfil [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html)
   - Se agrega extensión ConsecuenciaAtencionCodigo
   - Se fija valor ConsecuenciaAtencionCodigo.valueCodeableConcept.coding.code <- 3
+
+
+- Perfil [ServiceRequestExamenLE](StructureDefinition-ServiceRequestExamenLE.html)
+  - Se fija valor identifier.type.coding.code -> 02
 
 - Perfil [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html)
   - Se elimina la extension "CorrespondeGES"
@@ -34,10 +40,14 @@
   - Se cambia cardinalidad supportingInfo[motivoDerivacion] 0..1 -> 1..1
   - Se elimina extensión ConsecuenciaAtencionCodigo
   - Se modifica el nombre del slice supportingInfo:DiagnosticoSospecha -> supportingInfo:DiagnosticoInicio
+  - Se fija valor identifier.type.coding.code -> 01
+  - Se elimina extension MotivoNoPertinenciaCodigo de doNotPerform
 
 - Perfil [AllergyIntoleranceIniciarLE](StructureDefinition-AllergyIntoleranceIniciarLE.html)
    - code.coding modifica cardinalidad 0..1 -> 1..1
    - code.coding.code modifica cardinalidad 0..1 -> 1..1
+   - Se fija binding http://hl7.org/fhir/ValueSet/allergyintolerance-code para code
+   
 
 - Perfil [BundleRevisarLE](StructureDefinition-BundleRevisarLE.html)
    - Se modifica la cardinalidad de entry[practitionerRole] 2..2 -> 1..1
@@ -49,6 +59,8 @@
    - Se cambia cardinalidad code.text 1..1 -> 0..1
    - Se fija la referencia de subject solo a PatientLE
    - Se fija el valor "laboratory" de category.coding.code
+   - Se fija cardinalidad coding 1..1
+   - Se fija cardinalidad code 1..1
 
 - Perfil [PrestadorAdministrativoLE](StructureDefinition-PrestadorAdministrativoLE.html)
    - Se elimina la extension Nacionalidad
@@ -57,8 +69,13 @@
    - Se fija cardinalidad de identifier 1..1
    - Se deja solo el slice qualification[TituloProfesional] 
    - Se remueve el valor obligatorio para type.coding.system
-   - Se fija la referencia de beneficiary -> "PatientLE"
+   - Se fija la referencia de beneficiary -> "PatientLE"- 
    - Se cambia el nombre del perfil de CoverageIniciarLE -> CoverageLE
+   - Se cambia cardinalidad de identifier[run].coding -> 1..1 
+   - Se cambia cardinalidad de identifier[run].type.coding -> 1..1 
+   - Se cambia cardinalidad de identifier[run]value -> 1..1
+
+
 
 
 - Perfil [ObservationIniciarIndiceComorbilidadLE](StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html)
@@ -75,12 +92,26 @@
    - Se remueve el valor obligatorio para type.coding.system
    - Se fija la referencia de beneficiary -> "PatientLE"
    - Se cambia el nombre del perfil de CoverageIniciarLE -> CoverageLE
+   - Se cambia el bindig del type a VSPrevisionCodigo
+   - Se cambia el bindig del class.type a VSInstitucionAseguradora
+   - Se agrega PatientLE como referencia a payor
+
+   
 
 - Perfil [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
    - Se cambia cardinalidad type 1..1 -> 0..1
    - Se fija la referencia de participant.individual -> PractitionerRoleLE
    - Se elimina el slice reasonReference[ObservationAtenderLE]
    - Se fija la referencia de reasonReference a "QuestionnaireResponseAtenderLE"
+
+
+- Perfil [QuestionnaireResponseIniciarLE](StructureDefinition-QuestionnaireResponseIniciarLE.html)
+   - Se cambia cardinalidad item 0..1 -> 1..1
+   - Se cambia cardinalidad item.linkId 0..1 -> 1..1
+   - Se fija referencia subject only Reference(PatientLE)
+   - Se fija referencia encounter only Reference(EncounterIniciarLE)
+   - Se fija referencia author only Reference(PrestadorProfesionalLE)
+
 
 - Perfil [ObservationIniciarCuidadorLE](StructureDefinition-ObservationIniciarCuidadorLE.html)
    - Se agrega la extension EsCuidador
@@ -95,6 +126,7 @@
    - Se cambia la descripcion del elemento code.text
    - Se cambia la cardinalidad de severity.coding.system 1..1 -> 0..1
    - Se cambia la cardinalidad de code.coding.display 1..1 -> 0..1
+   - Se agrega binding en code VSTerminologiasDiag
 
 
 - Perfil [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html)
@@ -103,8 +135,6 @@
    - Se cambia la cardinalidad de activity[referenciaReceta].reference 0..1 -> 1..1
    - Se cambia la cardinalidad de activity[referenciaServiceRequestExamenLE].reference 0..1 -> 1..1
    
-
-
 - Se cambia el nombre del perfil ConditionDiagnosticoLE -> ConditionDiagnosticoLE
    - Se modifica el nombre de la extension solicitudExamen -> Requiere-Examen
 
@@ -113,6 +143,13 @@
 - Extension cambia nombre Interconsulta -> OrigenInterconsulta
 - Extension OrigenInterconsulta.valueCodeableConcept cambia binding a VSorigenInterconsulta
 - Se crea la extensión ExtBoolEsCuidador
+- Se elimina el perfil DocumentReferenceIniciarLE y todas sus referencias
+
+
+- [ObservationIniciarDiscapacidadLE](StructureDefinition-ObservationIniciarDiscapacidadLE.html)
+  - Se cambia cardinalidad subjecto 0..1 -> 1..1
+  - EspOdo -> EspecialidadOdontologica
+
 
 - [PrestadorProfesionalLE](StructureDefinition-PrestadorProfesionalLE.html)
   - Se cambia el nombre de los siguientes slices de qualification:
@@ -131,7 +168,16 @@
   - Se fija el valor de address.use = #work
   - Se cambia cardinalidad address.use 0..1 -> 1..1
   - Se cambia el binding de qualification[EspecialidadMedica].code -> VSEspecialidadMed
+  - Se cambia la cardinalidad de qualification[TituloProfesional].identifier 0..1 -> 1..1
+  - Se cambia la cardinalidad de qualification[EspecialidadMedica].identifier 0..1 -> 1..1
+  - Se cambia la cardinalidad de qualification[Subespecialidad].identifier 0..1 -> 1..1
+  - Se cambia la cardinalidad de qualification[EspecialidadOdontologica].identifier 0..1 -> 1..1
+  - Se cambia la cardinalidad de qualification[EspecialidadBioQuimica].identifier 0..1 -> 1..1
+  - Se cambia la cardinalidad de qualification[EspecialidadFarmacologica].identifier 0..1 -> 1..1
 
+
+
+- Se elimina VSEspecialidades
 - Se cambia el nombre el perfil ConditionInicioDiagnosticoLE -> ConditionDiagnosticoLE
 - Se elimina el recurso CondicionAtenderDiagnosticoConfirmacionLE
 - Se cambia nombre de VSSospechaPatologiaGes -> VSProblemaGES
@@ -145,6 +191,12 @@
 - Se modifican valores de CSMotivoNoContactabilidad
 - Se cambia cardinalidad en elemento de extension * extension[contactadoLE].extension[Contactado].value[x] 0..1 -> 1..1
 - Se eleminia la extension DocAcreditacionCuidadorCodigoLE
+- Se crea VSIsapres
+- Se crea CSIsapres
+- Se crea VSTerminologiasDiag
+- Se cambia nombde de perfil ObservationIniciarLE -> ExamenesAnteriores
+
+
 
 - Modificaciones de la "CLcore"
   - Se cambió el nombre de la extension identifier.type.extension[paises] -> identifier.type.extension[paisEmisionDocumento]
@@ -154,6 +206,7 @@
       - Cert -> TituloProfesional
       - Esp -> EspecialidadMedica
       - SubEsp -> Subespecialidad
+- Para el perfil PrestadorCL se fija en todos los slices del  identifier[run|rnpi|pasaporte|otro].type from VSTipoIdentificador
 
 
 
@@ -265,66 +318,8 @@
    - Se crea un CS/VS de ejemplo llamado TipoIdentificadorSR, esto con el fin de hacer posible la redirección de un binding en el recurso ServiceRequest (identifier.type.coding)
 
 
+
+-------------------------------------------------------------
 -------------------------------------------------------------
 
 ### Version 0.2.0
-- 
-
-### Version 1.8.6
-- Perfil [PacienteCL](StructureDefinition-CorePacienteCl.html)
-  - Se incluyeron los ejemplos
-  - Cambio cardinalidad **contact.name.given** 0..1 -> 0..*
-- El elemento **addresss** debe cumplir con **ClAddress** para las direcciones de los perfiles [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html) y [LocalizacionCL](StructureDefinition-CoreLocalizacionCl.html)
-- Cambio en el [Ejemplo Organización Prestadora de Salud](Organization-ORG1.html) para cumplir con el perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
-- Cambio en el [Ejemplo Localización Farmacia](Location-LocalizacionEjemploCL1.html) para cumplir con el perfil [LocalizacionCL](StructureDefinition-CoreLocalizacionCl.html)
-- Se incluyo el context en las siguientes extensiones:
-  - [Códigos para Comunas en Chile](StructureDefinition-ComunasCl.html)
-  - [Códigos para Provincias en Chile](StructureDefinition-ProvinciasCl.html)
-  - [Códigos para Regiones en Chile](StructureDefinition-RegionesCl.html)
-  - [Identificación del Contacto de un Paciente](StructureDefinition-IdContacto.html)
-  - [Especialidad del médico principal](StructureDefinition-VSEspecialidadesDeisCL.html)
-  - [Contacto de los participantes secundarios del encuentro](StructureDefinition-ContactoParticipantes.html)
-  - [Código de las razones por la cual no se pudo realizar la atención](StructureDefinition-RazonNOrealizarse.html)
-  - [Notas realizadas en un encuentro por Comité](StructureDefinition-NotasEncuentro.html)
-  - [Observaciones o comentarios simples respecto a un diagnóstico](StructureDefinition-ObservacionesDiagnostico.html)
-  - [Código de tipos de Vacunas en Chile](StructureDefinition-TiposVacunaRNI.html)
-  - [Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)](StructureDefinition-NombreCampana.html)
-  - [Razones por las cuales no se pudo realizar la inmunización](StructureDefinition-RazonNOrealizarseInm.html)
-  - [Segundo Apellido](StructureDefinition-SegundoApellido.html)
-  - [Sexo Biológico](StructureDefinition-SexoBiologico.html)
-- El elemento **gender** del perfil [PrestadorCL](StructureDefinition-CorePrestadorCl.html) y [PacienteCl](StructureDefinition-CorePacienteCl.html) es reincluido para el sexo Registral(Registro Civil). Deprecando la extensión **SexoRegistral**
-- Se depreca el perfil **BundleCL**.
-- CodeSystem "Tipo Identificador", se modifican los valores.
-- Se agrega en la pagina inicial la lista de dependencias
-- Se elimina la dependencia de la guia IPS v1.0.0
-
-### Version 1.8.5
-- Prefil [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
-  - Cambio cardinalidad **birthDate** 1..1 -> 0..1
-  - Cambio cardinalidad **geder** 1..1 -> 0..1
-  - Cambio cardinalidad **qualification:Cert.code.text**  1..1 -> 0..1
-  - Cambio cardinalidad **qualification:Esp.code.text**  1..1 -> 0..1
-  - Cambio cardinalidad **qualification:SubEsp.code.text**  1..1 -> 0..1
-  
-- El elemento **gender** del perfil [PrestadorCL](StructureDefinition-CorePrestadorCl.html) y [PacienteCl](StructureDefinition-CorePacienteCl.html) es deprecado y reemplazado por las extensiones:
-  - [IdentidadDeGenero](StructureDefinition-IdentidadDeGenero.html)
-  - [SexoBiologico](StructureDefinition-SexoBiologico.html)
-  - **SexoRegistral**
-
-- Prefil [CoreEspecialidadCl](StructureDefinition-CoreRolClinicoCl.html)
-
-- Perfil [PacienteCl](StructureDefinition-CorePacienteCl.html)
-  - Cambio cardinalidad **birthDate** 1..1 -> 0..1
-  - Cambio cardinalidad **geder** 1..1 -> 0..1
-
-### Version 1.8.2
-- Se agrega CodeSystem y ValueSet *Tipo Identificador*, segun tabla maestra DEIS
-- Se modifica la fuerza del ValueSet *Patient.indentifier.type* de *"Required"* -> *"Extensible"*
-
-### Version 1.8.1
-- Se agrega link para generar comentarios en un google form
-
-### Versión 1.8.0
-
-- Se realiza cambio del *Computable Name* a "clcore"
-- Se realiza cambio del *id* a "hl7.fhir.cl.clcore"

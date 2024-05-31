@@ -1,8 +1,8 @@
 Profile: ExamenesAnteriores
 Parent: Observation
 Id: ExamenesAnteriores
-Title: "Examenes Anteriores"
-Description: "Recurso que permite agregar los examenes anteriores"
+Title: "ExamenesAnteriores"
+Description: "Resultados de examenes anteriores como antecedentes para la derivación a interconsulta"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
@@ -16,6 +16,9 @@ Description: "Recurso que permite agregar los examenes anteriores"
 * status = #registered
 
 * code 1..1 MS
+  * coding 1..1 MS
+    * code 1..1 MS
+    * system MS
 * code ^short = "Tipo de observación"
   * text 1..1 MS
   * text ^short = "Representación textual de un concepto, en este caso por defecto es 'examenes'"

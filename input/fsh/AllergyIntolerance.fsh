@@ -18,7 +18,7 @@ Description: "AllergyIntolerance Iniciar LE"
 * patient.display ^definition = "Informacion extra o nombre del paciente"
 
 * code 1..1 MS
-* code from http://hl7.org/fhir/ValueSet/condition-code
+* code from http://hl7.org/fhir/ValueSet/allergyintolerance-code
 
 * code.coding 1..1 MS
   * code 1..1 MS

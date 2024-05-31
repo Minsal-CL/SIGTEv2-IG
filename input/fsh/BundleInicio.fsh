@@ -33,7 +33,7 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
         and practitionerrole 1..1
         and practitioner 1..1
         and organization 1..1
-        and docCuidador 0..1
+        //and docCuidador 0..1
         and prevision 0..1
         and motivoDerivacion 0..1
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
@@ -78,9 +78,9 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
 * entry[practitioner].resource only PrestadorProfesionalLE
 * entry[practitioner].resource ^short = "Profesional que inicia la interconsulta"
-* entry[docCuidador] ^short = "Entrada en el Bundle: contendrá un recurso DocumentReference"
-* entry[docCuidador].resource only DocumentReferenceIniciarLE
-* entry[docCuidador].resource ^short = "Documento que acredita que el paciente es cuidador."
+//* entry[docCuidador] ^short = "Entrada en el Bundle: contendrá un recurso DocumentReference"
+//* entry[docCuidador].resource only DocumentReferenceIniciarLE
+//* entry[docCuidador].resource ^short = "Documento que acredita que el paciente es cuidador."
 * entry[prevision] ^short = "Entrada en el Bundle: contendrá un recurso Coverage"
 * entry[prevision].resource only CoverageLE
 * entry[prevision].resource ^short = "Información de la previsión del paciente"

@@ -88,27 +88,40 @@ Description: "MediodeContacto"
   * display 0..1 MS
 
 
+
 Extension:   PertinenciaInterconsulta
 Id:          PertinenciaInterconsulta
 Title:       "Pertinencia Interconsulta"
 Description: "Pertinencia Interconsulta"
+* extension contains
+  EvaluacionPertinencia 1..1 MS and
+  MotivoNoPertinencia 0..1 MS
+* url MS
+
+Extension:   EvaluacionPertinencia
+Id:          EvaluacionPertinencia
+Title:       "Evaluacion Pertinencia"
+Description: "Evaluacion Pertinencia"
 * value[x] only CodeableConcept
-* value[x] ^short = "Motivo No Pertinencia"
+* value[x] ^short = "Evaluación de la pertinencia de la solicitud de interconsulta"
 * url 1..1 MS
 * valueCodeableConcept from VSPertinenciaInterconsulta
+* valueCodeableConcept 1..1 MS
 * valueCodeableConcept.coding 1..1 MS
   * code 1..1 MS
   * system 0..1 MS
   * display 0..1 MS
 
-Extension:   MotivoNoPertinenciaCodigo
-Id:          MotivoNoPertinenciaCodigo
-Title:       "Motivo No Pertinencia Codigo"
-Description: "Motivo No Pertinencia Codigo"
+Extension:   MotivoNoPertinencia
+Id:          MotivoNoPertinencia
+Title:       "Motivo No Pertinencia"
+Description: "Motivo No Pertinencia"
 * value[x] only CodeableConcept
 * value[x] ^short = "Motivo No Pertinencia"
 * url 1..1 MS
-* valueCodeableConcept.coding 1..1 MS
+
+* valueCodeableConcept 1..1 MS
+* valueCodeableConcept.coding MS
   * code 1..1 MS
   * system 0..1 MS
   * display 0..1 MS

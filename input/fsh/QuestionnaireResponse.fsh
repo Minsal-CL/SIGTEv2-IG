@@ -21,6 +21,12 @@ Description: "QuestionnaireResponse Iniciar para Motivo de Derivación LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+* subject only Reference(PatientLE)
+* encounter only Reference(EncounterIniciarLE)
+* author only Reference(PrestadorProfesionalLE)
+
+* item 1..1 MS
+* item.linkId 1..1 MS
 * item.linkId = "MotivoDerivacion"
 * item.text = "Motivo Derivación"
 * item.answer[0].valueString 

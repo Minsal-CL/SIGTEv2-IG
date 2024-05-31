@@ -9,7 +9,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * extension contains PueblosOriginariosPerteneciente named PueblosOriginariosPerteneciente 1..1 MS
 * extension contains PueblosAfrodescendiente named PueblosAfrodescendiente 0..1 MS
 * extension contains PueblosOriginarios named PueblosOriginarios 0..1 MS
-
+* extension[nacionalidad] 1..1 MS
 * extension[IdentidadDeGenero] 1..1 MS
 
 * identifier.type 1..1 MS
@@ -39,12 +39,15 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * address.extension contains SituacionCalle named SituacionCalle 0..1 MS
 
 
+* birthDate 1..1 MS
 
 * telecom 1..* MS
 * telecom.rank MS
 * telecom.rank ^short = "Orden de uso del método de contacto, siendo 1 = prioritario"
+* telecom.system ^short = "Orden de uso del método de contacto, siendo 1 = prioritario"
 * telecom.period MS
-* telecom.period ^short = "Periodo de tiempo durante el cual es válido el contacto del paciente"
+* telecom.period ^short = "Para completar este campo utilice solo los valores \"phone | email\""
+
 * maritalStatus from VSEstadoCivil
 * maritalStatus MS
 * maritalStatus ^short = "Estado civil del paciente"

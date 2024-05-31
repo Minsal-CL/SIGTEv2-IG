@@ -15,7 +15,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
   * coding ^short = "Códigos definidos por un sistema terminológico"
     * code 1..1 MS
     * code ^short = "Código definido en un sistema terminológico"
-    * code = #TipoIdentificadorSR
+    * code = #01
     * system 0..1 MS
     * system ^short = "Sistema terminológico, url/uri/uuid"
     * display 0..1 MS
@@ -59,19 +59,13 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension[EspecialidadMedicaDestinoCodigo] ^short = "Código de la especialidad médica de destino."
 
 * extension contains SubEspecialidadMedicaDestinoCodigo named SubEspecialidadMedicaDestinoCodigo 0..1 MS
-* extension[SubEspecialidadMedicaDestinoCodigo] ^short = "Código de la subespecialidad médica de destino."
+* extension[SubEspecialidadMedicaDestinoCodigo] ^short = "Código de la subespecialidad médica de destino"
 
 * extension contains PertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
-* extension[PertinenciaInterconsulta] ^short = "Tipo de pertinencia de la IC: Pertinente|Incompleta|No pertinente."
+* extension[PertinenciaInterconsulta] ^short = "Descripción de la evaluación de pertinencia de la interconsulta"
 
 
 // fin
-
-
-* doNotPerform.extension contains MotivoNoPertinenciaCodigo named MotivoNoPertinenciaCodigo 0..1 MS
-* doNotPerform 0..1 MS
-* doNotPerform ^short = "Si el servicio debiese o no realizarse."
-* doNotPerform.extension[MotivoNoPertinenciaCodigo].valueCodeableConcept.text ^short = "Motivo de no pertinencia, como texto libre"
 
 * authoredOn 1..1 MS
 * authoredOn ^short = "Fecha en que se solicita la Interconsulta. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ"
@@ -143,7 +137,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
 * supportingInfo contains DiagnosticoInicio 0..1 MS 
 and ProblemaGES 0..1 MS and TipoAlergia 0..* MS and IndiceComorbilidad 0..1 MS
-and Cuidador 0..1 MS and DocCuidador 0..1 MS and Discapacidad 1..1 MS and Prevision 0..1 MS and motivoDerivacion 0..1 MS and Examen 0..1 MS
+and Cuidador 0..1 MS and Discapacidad 1..1 MS and Prevision 0..1 MS and motivoDerivacion 0..1 MS and Examen 0..1 MS
 
 * supportingInfo[DiagnosticoInicio] only Reference(ConditionDiagnosticoLE)
 * supportingInfo[DiagnosticoInicio] ^short = "Referencia a la condición que especifica el diagnóstico inicial por el cual se emite la IC"
@@ -155,8 +149,8 @@ and Cuidador 0..1 MS and DocCuidador 0..1 MS and Discapacidad 1..1 MS and Previs
 * supportingInfo[TipoAlergia] ^short = "Referencia  a los tipos de alergia"
 * supportingInfo[Cuidador] only Reference(ObservationIniciarCuidadorLE)
 * supportingInfo[Cuidador] ^short = "Referencia a la observación de si el paciente es cuidador"
-* supportingInfo[DocCuidador] only Reference(DocumentReferenceIniciarLE)
-* supportingInfo[DocCuidador] ^short = "Referencia al documento que acredita que el paciente es cuidador"
+//* supportingInfo[DocCuidador] only Reference(DocumentReferenceIniciarLE)
+//* supportingInfo[DocCuidador] ^short = "Referencia al documento que acredita que el paciente es cuidador"
 * supportingInfo[Discapacidad] only Reference(ObservationIniciarDiscapacidadLE)
 * supportingInfo[Discapacidad] ^short = "Referencia a la observación que indica si el paciente tiene discapacidad"
 * supportingInfo[Prevision] only Reference(CoverageLE)

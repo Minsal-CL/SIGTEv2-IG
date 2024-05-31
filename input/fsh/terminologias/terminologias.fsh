@@ -174,46 +174,7 @@ Description: "Destino Referencia Codigo"
 * #4 "Hospital Digital"
 * #5 "Establecimiento de alta complejidad"
 
-ValueSet: VSEstablecimientoDestinoCodigo
-Id: VSEstablecimientoDestinoCodigo
-Title: "Establecimiento Destino Codigo"
-Description: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSEstablecimientoDestinoCodigo
-
-CodeSystem: CSEstablecimientoDestinoCodigo
-Id: CSEstablecimientoDestinoCodigo
-Title: "Establecimiento Destino Codigo"
-Description: "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #101012 "Clínica Dental Móvil Simple. Pat. PW4076 (Arica) Servicio de Salud Arica"
-* #101090 "Oficina Sanitaria Chacalluta Servicio de Salud Arica"
-* #101100 "Hospital Dr. Juan Noé Crevanni (Arica) Servicio de Salud Arica"
-* #101203 "Clínica Hebe SEREMI De Arica y Parinacota"
-* #101212 "Clínica San Agustín SEREMI De Arica y Parinacota"
-* #101213 "Clínica San José SEREMI De Arica y Parinacota"
-* #101214 "Clínica Arica SEREMI De Arica y Parinacota"
-* #101300 "Centro de Salud Familiar Víctor Bertín Soto Servicio de Salud Arica"
-* #101302 "Centro de Salud Familiar Dr. Amador Neghme de Arica Servicio de Salud Arica"
-* #101303 "Centro de Salud Familiar E. U. Iris Véliz Hume (Ex Oriente) Servicio de Salud Arica"
-* #101304 "Centro de Salud Familiar Putre Servicio de Salud Arica"
 
 ValueSet: VSEstadoInterconsulta
 Id: VSEstadoInterconsulta
@@ -1186,25 +1147,6 @@ Description: "Especialidades y Subespecialidades Bioquímicas"
 * codes from system CSEspecialidadBioqca
 
 
-ValueSet: VSEspecialidades
-Id: VSEspecialidades
-Title: "Especialidades"
-Description: "Especialidades"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSEspecialidadMed 
-* codes from system CSEspecialidadOdont
-* codes from system CSEspecialidadFarma
-* codes from system CSEspecialidadBioqca
-
-
 ValueSet: CodigoExamen
 Id: CodigoExamen
 Title: "Códigos de Examenes"
@@ -1344,7 +1286,7 @@ Description: "Id interconsulta"
 * ^contact.telecom.value = "minsal@minsal.cl"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "SolicitudInterconsulta"
+* #01 "ID Solicitud interconsulta"
 * #02 "ID Solicitud exámen"
 
 
@@ -1395,3 +1337,60 @@ Description: "IdentificadorPrestador"
 
 * include codes from system CSTipoIdentificador where concept is-a #01 "Rol Único Nacional o RUN"
 * include codes from system CSTipoIdentificador where concept is-a #13 "Registro Nacional de Prestadores Individuales"
+
+ValueSet: VSTerminologiasDiag
+Id: VSTerminologiasDiag
+Title: "TerminologiasDiag"
+Description: "TerminologiasDiag"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* include codes from system http://hl7.org/fhir/sid/icd-10
+* include codes from system http://snomed.info/sct	
+
+ValueSet: VSIsapres
+Id: VSIsapres
+Title: "Isapres"
+Description: "Isapres"
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSIsapres
+
+CodeSystem: CSIsapres
+Id: CSIsapres
+Title: "Isapres"
+Description: "Isapres"
+* ^experimental = false
+* ^caseSensitive = true
+* ^version = "0.9"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* #01 "Banmédica S.A."
+* #02 "Isalud Ltda."
+* #03 "Colmena Golden Cross S.A."
+* #04 "Consalud S.A."
+* #05 "Cruz Blanca S.A."
+* #06 "Cruz del Norte Ltda."
+* #07 "Nueva Masvida S.A."
+* #08 "Fundación Ltda."
+* #09 "Vida Tres S.A."
+* #10 "Esencial S.A."
+

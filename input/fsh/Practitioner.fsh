@@ -8,6 +8,7 @@ Title: "Prestador Profesional LE"
 Description: "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
 
 * extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises named Nacionalidad 0..1 MS
+* extension[SexoBiologico] 0..0 
 
 * name 1..1 MS
 * name ^short = "Nombre del prestador"
@@ -102,6 +103,13 @@ Corresponde a tres slices:"
 * qualification[EspecialidadBioQuimica].code.text 1..1
 * qualification[EspecialidadFarmacologica].code.text 1..1
 
+* qualification[TituloProfesional].identifier 1..1 MS
+* qualification[EspecialidadMedica].identifier 1..1 MS
+* qualification[Subespecialidad].identifier 1..1 MS
+* qualification[EspecialidadOdontologica].identifier 1..1 MS
+* qualification[EspecialidadBioQuimica].identifier 1..1 MS
+* qualification[EspecialidadFarmacologica].identifier 1..1 MS
+
 
 * qualification[TituloProfesional] ^short = "Especificación de los Títulos o Certificados Profesionales que tiene el Prestador"
 * qualification[TituloProfesional] ^definition = "Listado de Títulos o Cetificados Profesionales que tiene el prestador. Solo se consideran aquellos que pueden ser demostrados en consulta a la casa de estudios pertinente"
@@ -119,8 +127,6 @@ Corresponde a tres slices:"
   * display ^short = "La entidad que otorga en texto libre"
   * display ^definition = "La entidad que otorga en texto libre"
 * qualification[TituloProfesional].extension contains Mencion named Mencion 0..1 MS
-
-
 
 * qualification[EspecialidadOdontologica] ^short = "Especialidad Odontológica que tiene el Prestador"
   * ^definition = "Especialidades definidas en Norma Técnica 820"
@@ -144,21 +150,11 @@ Corresponde a tres slices:"
   * start ^short = "Fecha de emisión"
   * end ^short = "Fecha de expiración" 
 * qualification[EspecialidadMedica].code from VSEspecialidadMed
-
 * qualification[EspecialidadMedica].issuer 0..1 MS
   * ^short = "Entidad que otorga la especialidad"
   * ^definition = "El nombre de la entidad se solicitará en displayo libre"
   * display ^short = "La entidad que otorga en texto libre"
   * display ^definition = "La entidad que otorga en texto libre"
-
-* qualification[EspecialidadBioQuimica] ^short = "Especialidad Bioquímica que tiene el Prestador"
-  * ^definition = "Especialidades definidas en Norma Técnica 820"
-  * identifier.value = "EspBioQ"
-  * identifier.value ^short = "Valor único para el identificador"
-  * code MS
-  * code ^short = "Representación de la especialidad bioquímica del prestador"
-    * text ^short = "Representación textual de la especialidad odontológica del prestador"
-  * code from VSEspecialidadBioqca
 * qualification[EspecialidadMedica].period 0..1 MS
   * ^short = "Período en el cual se entregó la especialidad considerando fecha de emisión y de caducidad"
   * start ^short = "Fecha de emisión"
@@ -168,6 +164,36 @@ Corresponde a tres slices:"
   * ^definition = "El nombre de la entidad se solicitará en texto libre"
   * display ^short = "La entidad que otorga en texto libre"
   * display ^definition = "La entidad que otorga en texto libre"
+
+
+* qualification[Subespecialidad].period ^short = "Período en el cual se entregó la especialidad considerando fecha de emisión y de caducidad"
+  * start ^short = "Fecha de emisión"
+  * end ^short = "Fecha de expiración" 
+* qualification[Subespecialidad].code from VSEspecialidadMed
+* qualification[Subespecialidad].issuer 0..1 MS
+  * ^short = "Entidad que otorga la Subespecialidad"
+  * ^definition = "El nombre de la entidad se solicitará en display libre"
+  * display ^short = "La entidad que otorga en texto libre"
+  * display ^definition = "La entidad que otorga en texto libre"
+* qualification[Subespecialidad].period 0..1 MS
+  * ^short = "Período en el cual se entregó la Subespecialidad considerando fecha de emisión y de caducidad"
+  * start ^short = "Fecha de emisión"
+  * end ^short = "Fecha de expiración" 
+* qualification[Subespecialidad].issuer 0..1 MS
+  * ^short = "Entidad que otorga la especialidad"
+  * ^definition = "El nombre de la entidad se solicitará en texto libre"
+  * display ^short = "La entidad que otorga en texto libre"
+  * display ^definition = "La entidad que otorga en texto libre"
+
+
+* qualification[EspecialidadBioQuimica] ^short = "Especialidad Bioquímica que tiene el Prestador"
+  * ^definition = "Especialidades definidas en Norma Técnica 820"
+  * identifier.value = "EspBioQ"
+  * identifier.value ^short = "Valor único para el identificador"
+  * code MS
+  * code ^short = "Representación de la especialidad bioquímica del prestador"
+    * text ^short = "Representación textual de la especialidad odontológica del prestador"
+  * code from VSEspecialidadBioqca
 
 * qualification[EspecialidadFarmacologica] ^short = "Especialidad Farmacéutica o Química Farmacéutica que tiene el Prestador"
   * ^definition = "Especialidades definidas en Norma Técnica 820"

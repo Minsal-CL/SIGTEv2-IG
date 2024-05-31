@@ -42,7 +42,7 @@ Description: "Appointment Agendar LE"
   * value ^short = "Valor del Id"
   * use MS
   * system MS
-* identifier ^short = "ID de los identificadores de la cita"
+* identifier ^short = "ID del identificador de la cita"
 
 * appointmentType 0..1 MS
   * coding 1..1 MS
