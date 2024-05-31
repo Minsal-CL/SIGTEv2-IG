@@ -201,11 +201,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#cambios-de-versión-016-a-versión-02" id="markdown-toc-cambios-de-versión-016-a-versión-02">Cambios de versión 0.1.6 a versión 0.2</a></li>
   <li><a href="#cambios-de-versión-015-a-versión-016" id="markdown-toc-cambios-de-versión-015-a-versión-016">Cambios de versión 0.1.5 a versión 0.1.6</a></li>
   <li><a href="#version-020" id="markdown-toc-version-020">Version 0.2.0</a></li>
-  <li><a href="#version-186" id="markdown-toc-version-186">Version 1.8.6</a></li>
-  <li><a href="#version-185" id="markdown-toc-version-185">Version 1.8.5</a></li>
-  <li><a href="#version-182" id="markdown-toc-version-182">Version 1.8.2</a></li>
-  <li><a href="#version-181" id="markdown-toc-version-181">Version 1.8.1</a></li>
-  <li><a href="#versión-180" id="markdown-toc-versión-180">Versión 1.8.0</a></li>
 </ul>
 
 </div>
@@ -214,16 +209,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Perfil <a href="StructureDefinition-PatientLE.html">PatientLE</a>
     <ul>
-      <li><a name="l383">​</a>Se elimina elemento “IdentidadDeGenero” repetido, dejando solo el que viene referenciado desde la <a href="https://hl7chile.cl/fhir/ig/clcore/1.8.10/">Guia CLCore</a></li>
+      <li><a name="l363">​</a>Se elimina elemento “IdentidadDeGenero” repetido, dejando solo el que viene referenciado desde la <a href="https://hl7chile.cl/fhir/ig/clcore/1.8.10/">Guia CLCore</a></li>
       <li>Extension “País de origen del paciente”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
       <li>Extension “Religión”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
       <li>Extension “Pueblos Originarios”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
-      <li>Se elimina la extension “LugarDeNacimiento”
-        <ul>
-          <li>El elemento “deceased[x]” se deja abierto para que se pueda registrar una fecha de fallecimiento o un booleano sobre si el paciente esta fallecido o no</li>
-          <li>El elemento identifier.type.extension[paisEmisionDocumento] se le cambia la cardinalidad de 0..1 -&gt; 1..1</li>
-        </ul>
-      </li>
+      <li>Se elimina la extension “LugarDeNacimiento”</li>
+      <li>El elemento “deceased[x]” se deja abierto para que se pueda registrar una fecha de fallecimiento o un booleano sobre si el paciente esta fallecido o no</li>
+      <li>El elemento identifier.type.extension[paisEmisionDocumento] se le cambia la cardinalidad de 0..1 -&gt; 1..1</li>
+      <li>Se cambia cardinalidad birthDate 0..1 -&gt; 1..1</li>
+      <li>Se cambia cardinalidad de extension nacionalidad 0..1 -&gt; 1..1</li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-BundleAtenderLE.html">BundleAtenderLE</a>
@@ -242,6 +236,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se fija valor ConsecuenciaAtencionCodigo.valueCodeableConcept.coding.code &lt;- 3</li>
     </ul>
   </li>
+  <li>Perfil <a href="StructureDefinition-ServiceRequestExamenLE.html">ServiceRequestExamenLE</a>
+    <ul>
+      <li>Se fija valor identifier.type.coding.code -&gt; 02</li>
+    </ul>
+  </li>
   <li>Perfil <a href="StructureDefinition-ServiceRequestLE.html">ServiceRequestLE</a>
     <ul>
       <li>Se elimina la extension “CorrespondeGES”</li>
@@ -258,12 +257,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se cambia cardinalidad supportingInfo[motivoDerivacion] 0..1 -&gt; 1..1</li>
       <li>Se elimina extensión ConsecuenciaAtencionCodigo</li>
       <li>Se modifica el nombre del slice supportingInfo:DiagnosticoSospecha -&gt; supportingInfo:DiagnosticoInicio</li>
+      <li>Se fija valor identifier.type.coding.code -&gt; 01</li>
+      <li>Se elimina extension MotivoNoPertinenciaCodigo de doNotPerform</li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-AllergyIntoleranceIniciarLE.html">AllergyIntoleranceIniciarLE</a>
     <ul>
       <li>code.coding modifica cardinalidad 0..1 -&gt; 1..1</li>
       <li>code.coding.code modifica cardinalidad 0..1 -&gt; 1..1</li>
+      <li>Se fija binding http://hl7.org/fhir/ValueSet/allergyintolerance-code para code</li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-BundleRevisarLE.html">BundleRevisarLE</a>
@@ -278,6 +280,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se cambia cardinalidad code.text 1..1 -&gt; 0..1</li>
       <li>Se fija la referencia de subject solo a PatientLE</li>
       <li>Se fija el valor “laboratory” de category.coding.code</li>
+      <li>Se fija cardinalidad coding 1..1</li>
+      <li>Se fija cardinalidad code 1..1</li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-PrestadorAdministrativoLE.html">PrestadorAdministrativoLE</a>
@@ -288,8 +292,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se fija cardinalidad de identifier 1..1</li>
       <li>Se deja solo el slice qualification[TituloProfesional]</li>
       <li>Se remueve el valor obligatorio para type.coding.system</li>
-      <li>Se fija la referencia de beneficiary -&gt; “PatientLE”</li>
+      <li>Se fija la referencia de beneficiary -&gt; “PatientLE”-</li>
       <li>Se cambia el nombre del perfil de CoverageIniciarLE -&gt; CoverageLE</li>
+      <li>Se cambia cardinalidad de identifier[run].coding -&gt; 1..1</li>
+      <li>Se cambia cardinalidad de identifier[run].type.coding -&gt; 1..1</li>
+      <li>Se cambia cardinalidad de identifier[run]value -&gt; 1..1</li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html">ObservationIniciarIndiceComorbilidadLE</a>
@@ -322,6 +329,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se remueve el valor obligatorio para type.coding.system</li>
       <li>Se fija la referencia de beneficiary -&gt; “PatientLE”</li>
       <li>Se cambia el nombre del perfil de CoverageIniciarLE -&gt; CoverageLE</li>
+      <li>Se cambia el bindig del type a VSPrevisionCodigo</li>
+      <li>Se cambia el bindig del class.type a VSInstitucionAseguradora</li>
+      <li>Se agrega PatientLE como referencia a payor</li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-EncounterAtenderLE.html">EncounterAtenderLE</a>
@@ -330,6 +340,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se fija la referencia de participant.individual -&gt; PractitionerRoleLE</li>
       <li>Se elimina el slice reasonReference[ObservationAtenderLE]</li>
       <li>Se fija la referencia de reasonReference a “QuestionnaireResponseAtenderLE”</li>
+    </ul>
+  </li>
+  <li>Perfil <a href="StructureDefinition-QuestionnaireResponseIniciarLE.html">QuestionnaireResponseIniciarLE</a>
+    <ul>
+      <li>Se cambia cardinalidad item 0..1 -&gt; 1..1</li>
+      <li>Se cambia cardinalidad item.linkId 0..1 -&gt; 1..1</li>
+      <li>Se fija referencia subject only Reference(PatientLE)</li>
+      <li>Se fija referencia encounter only Reference(EncounterIniciarLE)</li>
+      <li>Se fija referencia author only Reference(PrestadorProfesionalLE)</li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-ObservationIniciarCuidadorLE.html">ObservationIniciarCuidadorLE</a>
@@ -350,6 +369,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se cambia la descripcion del elemento code.text</li>
       <li>Se cambia la cardinalidad de severity.coding.system 1..1 -&gt; 0..1</li>
       <li>Se cambia la cardinalidad de code.coding.display 1..1 -&gt; 0..1</li>
+      <li>Se agrega binding en code VSTerminologiasDiag</li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-CarePlanAtenderLE.html">CarePlanAtenderLE</a>
@@ -369,8 +389,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>codeSystem cambia nombre CSinterconsulta -&gt; CSorigenInterconsulta</li>
   <li>Extension cambia nombre Interconsulta -&gt; OrigenInterconsulta</li>
   <li>Extension OrigenInterconsulta.valueCodeableConcept cambia binding a VSorigenInterconsulta</li>
+  <li>Se crea la extensión ExtBoolEsCuidador</li>
   <li>
-    <p>Se crea la extensión ExtBoolEsCuidador</p>
+    <p>Se elimina el perfil DocumentReferenceIniciarLE y todas sus referencias</p>
+  </li>
+  <li><a href="StructureDefinition-ObservationIniciarDiscapacidadLE.html">ObservationIniciarDiscapacidadLE</a>
+    <ul>
+      <li>Se cambia cardinalidad subjecto 0..1 -&gt; 1..1</li>
+      <li>EspOdo -&gt; EspecialidadOdontologica</li>
+    </ul>
   </li>
   <li><a href="StructureDefinition-PrestadorProfesionalLE.html">PrestadorProfesionalLE</a>
     <ul>
@@ -393,8 +420,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se fija el valor de address.use = #work</li>
       <li>Se cambia cardinalidad address.use 0..1 -&gt; 1..1</li>
       <li>Se cambia el binding de qualification[EspecialidadMedica].code -&gt; VSEspecialidadMed</li>
+      <li>Se cambia la cardinalidad de qualification[TituloProfesional].identifier 0..1 -&gt; 1..1</li>
+      <li>Se cambia la cardinalidad de qualification[EspecialidadMedica].identifier 0..1 -&gt; 1..1</li>
+      <li>Se cambia la cardinalidad de qualification[Subespecialidad].identifier 0..1 -&gt; 1..1</li>
+      <li>Se cambia la cardinalidad de qualification[EspecialidadOdontologica].identifier 0..1 -&gt; 1..1</li>
+      <li>Se cambia la cardinalidad de qualification[EspecialidadBioQuimica].identifier 0..1 -&gt; 1..1</li>
+      <li>Se cambia la cardinalidad de qualification[EspecialidadFarmacologica].identifier 0..1 -&gt; 1..1</li>
     </ul>
   </li>
+  <li>Se elimina VSEspecialidades</li>
   <li>Se cambia el nombre el perfil ConditionInicioDiagnosticoLE -&gt; ConditionDiagnosticoLE</li>
   <li>Se elimina el recurso CondicionAtenderDiagnosticoConfirmacionLE</li>
   <li>Se cambia nombre de VSSospechaPatologiaGes -&gt; VSProblemaGES</li>
@@ -407,14 +441,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Se modifican valores de CSMediodeContacto</li>
   <li>Se modifican valores de CSMotivoNoContactabilidad</li>
   <li>Se cambia cardinalidad en elemento de extension * extension[contactadoLE].extension[Contactado].value[x] 0..1 -&gt; 1..1</li>
+  <li>Se eleminia la extension DocAcreditacionCuidadorCodigoLE</li>
+  <li>Se crea VSIsapres</li>
+  <li>Se crea CSIsapres</li>
+  <li>Se crea VSTerminologiasDiag</li>
   <li>
-    <p>Se eleminia la extension DocAcreditacionCuidadorCodigoLE</p>
+    <p>Se cambia nombde de perfil ObservationIniciarLE -&gt; ExamenesAnteriores</p>
   </li>
   <li>Modificaciones de la “CLcore”
     <ul>
       <li>Se cambió el nombre de la extension identifier.type.extension[paises] -&gt; identifier.type.extension[paisEmisionDocumento]</li>
       <li>Extension “Codigo de Identificación de países”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept.</li>
-      <li><a name="l893">​</a><a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a>
+      <li><a name="l998">​</a><a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a>
         <ul>
           <li>Se cambia el nombre de los siguientes slices de qualification:
             <ul>
@@ -426,23 +464,35 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         </ul>
       </li>
     </ul>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>Para el perfil PrestadorCL se fija en todos los slices del  identifier[run</td>
+          <td>rnpi</td>
+          <td>pasaporte</td>
+          <td>otro].type from VSTipoIdentificador</td>
+        </tr>
+      </tbody>
+    </table>
 
     <p>Se incluyeron los ejemplos</p>
     <ul>
       <li>Cambio cardinalidad <strong>contact.name.given</strong> 0..1 -&gt; 0..*</li>
     </ul>
   </li>
-  <li><a name="l930">​</a>El elemento <strong>addresss</strong> debe cumplir con <strong>ClAddress</strong> para las direcciones de los perfiles <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a> y <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
-  <li><a name="l944">​</a>Cambio en el <a href="Organization-ORG1.html">Ejemplo Organización Prestadora de Salud</a> para cumplir con el perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a></li>
-  <li><a name="l952">​</a>Cambio en el <a href="Location-LocalizacionEjemploCL1.html">Ejemplo Localización Farmacia</a> para cumplir con el perfil <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
+  <li><a name="l1059">​</a>El elemento <strong>addresss</strong> debe cumplir con <strong>ClAddress</strong> para las direcciones de los perfiles <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a> y <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
+  <li><a name="l1073">​</a>Cambio en el <a href="Organization-ORG1.html">Ejemplo Organización Prestadora de Salud</a> para cumplir con el perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a></li>
+  <li><a name="l1081">​</a>Cambio en el <a href="Location-LocalizacionEjemploCL1.html">Ejemplo Localización Farmacia</a> para cumplir con el perfil <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
   <li>Se incluyo el context en las siguientes extensiones:
     <ul>
-      <li><a name="l964">​</a><a href="StructureDefinition-ComunasCl.html">Códigos para Comunas en Chile</a></li>
-      <li><a name="l968">​</a><a href="StructureDefinition-ProvinciasCl.html">Códigos para Provincias en Chile</a></li>
-      <li><a name="l972">​</a><a href="StructureDefinition-RegionesCl.html">Códigos para Regiones en Chile</a></li>
-      <li><a name="l976">​</a><a href="StructureDefinition-IdContacto.html">Identificación del Contacto de un Paciente</a></li>
-      <li><a name="l980">​</a><a href="StructureDefinition-VSEspecialidadesDeisCL.html">Especialidad del médico principal</a></li>
-      <li><a name="l984">​</a><a href="StructureDefinition-ContactoParticipantes.html">Contacto de los participantes secundarios del encuentro</a></li>
+      <li><a name="l1093">​</a><a href="StructureDefinition-ComunasCl.html">Códigos para Comunas en Chile</a></li>
+      <li><a name="l1097">​</a><a href="StructureDefinition-ProvinciasCl.html">Códigos para Provincias en Chile</a></li>
+      <li><a name="l1101">​</a><a href="StructureDefinition-RegionesCl.html">Códigos para Regiones en Chile</a></li>
+      <li><a name="l1105">​</a><a href="StructureDefinition-IdContacto.html">Identificación del Contacto de un Paciente</a></li>
+      <li><a name="l1109">​</a><a href="StructureDefinition-VSEspecialidadesDeisCL.html">Especialidad del médico principal</a></li>
+      <li><a name="l1113">​</a><a href="StructureDefinition-ContactoParticipantes.html">Contacto de los participantes secundarios del encuentro</a></li>
     </ul>
   </li>
 </ul>
@@ -586,94 +636,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 <hr/>
+<hr/>
 
 <h3 id="version-020">Version 0.2.0</h3>
-<ul>
-  <li></li>
-</ul>
-
-<h3 id="version-186">Version 1.8.6</h3>
-<ul>
-  <li><a name="l1319">​</a>Perfil <a href="StructureDefinition-CorePacienteCl.html">PacienteCL</a>
-    <ul>
-      <li>Se incluyeron los ejemplos</li>
-      <li>Cambio cardinalidad <strong>contact.name.given</strong> 0..1 -&gt; 0..*</li>
-    </ul>
-  </li>
-  <li><a name="l1337">​</a>El elemento <strong>addresss</strong> debe cumplir con <strong>ClAddress</strong> para las direcciones de los perfiles <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a> y <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
-  <li><a name="l1351">​</a>Cambio en el <a href="Organization-ORG1.html">Ejemplo Organización Prestadora de Salud</a> para cumplir con el perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a></li>
-  <li><a name="l1359">​</a>Cambio en el <a href="Location-LocalizacionEjemploCL1.html">Ejemplo Localización Farmacia</a> para cumplir con el perfil <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
-  <li>Se incluyo el context en las siguientes extensiones:
-    <ul>
-      <li><a name="l1371">​</a><a href="StructureDefinition-ComunasCl.html">Códigos para Comunas en Chile</a></li>
-      <li><a name="l1375">​</a><a href="StructureDefinition-ProvinciasCl.html">Códigos para Provincias en Chile</a></li>
-      <li><a name="l1379">​</a><a href="StructureDefinition-RegionesCl.html">Códigos para Regiones en Chile</a></li>
-      <li><a name="l1383">​</a><a href="StructureDefinition-IdContacto.html">Identificación del Contacto de un Paciente</a></li>
-      <li><a name="l1387">​</a><a href="StructureDefinition-VSEspecialidadesDeisCL.html">Especialidad del médico principal</a></li>
-      <li><a name="l1391">​</a><a href="StructureDefinition-ContactoParticipantes.html">Contacto de los participantes secundarios del encuentro</a></li>
-      <li><a name="l1395">​</a><a href="StructureDefinition-RazonNOrealizarse.html">Código de las razones por la cual no se pudo realizar la atención</a></li>
-      <li><a name="l1399">​</a><a href="StructureDefinition-NotasEncuentro.html">Notas realizadas en un encuentro por Comité</a></li>
-      <li><a name="l1403">​</a><a href="StructureDefinition-ObservacionesDiagnostico.html">Observaciones o comentarios simples respecto a un diagnóstico</a></li>
-      <li><a name="l1407">​</a><a href="StructureDefinition-TiposVacunaRNI.html">Código de tipos de Vacunas en Chile</a></li>
-      <li><a name="l1411">​</a><a href="StructureDefinition-NombreCampana.html">Nombre de la Campaña de vacunación establecida por el RNI (Registro Nacional de Inmunizaciones)</a></li>
-      <li><a name="l1415">​</a><a href="StructureDefinition-RazonNOrealizarseInm.html">Razones por las cuales no se pudo realizar la inmunización</a></li>
-      <li><a name="l1419">​</a><a href="StructureDefinition-SegundoApellido.html">Segundo Apellido</a></li>
-      <li><a href="StructureDefinition-SexoBiologico.html">Sexo Biológico</a></li>
-    </ul>
-  </li>
-  <li><a name="l1429">​</a>El elemento <strong>gender</strong> del perfil <a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a> y <a href="StructureDefinition-CorePacienteCl.html">PacienteCl</a> es reincluido para el sexo Registral(Registro Civil). Deprecando la extensión <strong>SexoRegistral</strong></li>
-  <li>Se depreca el perfil <strong>BundleCL</strong>.</li>
-  <li>CodeSystem “Tipo Identificador”, se modifican los valores.</li>
-  <li>Se agrega en la pagina inicial la lista de dependencias</li>
-  <li>Se elimina la dependencia de la guia IPS v1.0.0</li>
-</ul>
-
-<h3 id="version-185">Version 1.8.5</h3>
-<ul>
-  <li><a name="l1464">​</a>Prefil <a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a>
-    <ul>
-      <li>Cambio cardinalidad <strong>birthDate</strong> 1..1 -&gt; 0..1</li>
-      <li>Cambio cardinalidad <strong>geder</strong> 1..1 -&gt; 0..1</li>
-      <li>Cambio cardinalidad <strong>qualification:Cert.code.text</strong>  1..1 -&gt; 0..1</li>
-      <li>Cambio cardinalidad <strong>qualification:Esp.code.text</strong>  1..1 -&gt; 0..1</li>
-      <li>Cambio cardinalidad <strong>qualification:SubEsp.code.text</strong>  1..1 -&gt; 0..1</li>
-    </ul>
-  </li>
-  <li><a name="l1503">​</a>El elemento <strong>gender</strong> del perfil <a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a> y <a href="StructureDefinition-CorePacienteCl.html">PacienteCl</a> es deprecado y reemplazado por las extensiones:
-    <ul>
-      <li><a name="l1516">​</a><a href="StructureDefinition-IdentidadDeGenero.html">IdentidadDeGenero</a></li>
-      <li><a href="StructureDefinition-SexoBiologico.html">SexoBiologico</a></li>
-      <li><strong>SexoRegistral</strong></li>
-    </ul>
-  </li>
-  <li>
-    <p><a name="l1532">​</a>Prefil <a href="StructureDefinition-CoreRolClinicoCl.html">CoreEspecialidadCl</a></p>
-  </li>
-  <li><a name="l1538">​</a>Perfil <a href="StructureDefinition-CorePacienteCl.html">PacienteCl</a>
-    <ul>
-      <li>Cambio cardinalidad <strong>birthDate</strong> 1..1 -&gt; 0..1</li>
-      <li>Cambio cardinalidad <strong>geder</strong> 1..1 -&gt; 0..1</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="version-182">Version 1.8.2</h3>
-<ul>
-  <li>Se agrega CodeSystem y ValueSet <em>Tipo Identificador</em>, segun tabla maestra DEIS</li>
-  <li>Se modifica la fuerza del ValueSet <em>Patient.indentifier.type</em> de <em>“Required”</em> -&gt; <em>“Extensible”</em></li>
-</ul>
-
-<h3 id="version-181">Version 1.8.1</h3>
-<ul>
-  <li>Se agrega link para generar comentarios en un google form</li>
-</ul>
-
-<h3 id="versión-180">Versión 1.8.0</h3>
-
-<ul>
-  <li>Se realiza cambio del <em>Computable Name</em> a “clcore”</li>
-  <li>Se realiza cambio del <em>id</em> a “hl7.fhir.cl.clcore”</li>
-</ul>
 
 
 
@@ -693,7 +658,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 30, 2024 19:35+0000">2024-05-30</span>
+          IG &copy; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.9.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 31, 2024 20:01+0000">2024-05-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |

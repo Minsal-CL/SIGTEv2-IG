@@ -25,6 +25,18 @@
       "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/sid/icd-10",
+      "version" : "2.1.1",
+      "status" : "retired",
+      "name" : "Icd10",
+      "title" : "ICD-10",
+      "description" : "International Classification of Diseases revision 10 (ICD 10)",
+      "oids" : ["2.16.840.1.113883.6.3"],
+      "uses" : {
+      },
+      "ValueSet-VSTerminologiasDiag.html" : "TerminologiasDiag"
+    },
+    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -46,9 +58,10 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-VSServicioRequerido.html" : "Servicio Requerido",
       "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "ValueSet-VSServicioRequerido.html" : "Servicio Requerido"
+      "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
+      "ValueSet-VSTerminologiasDiag.html" : "TerminologiasDiag"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -72,9 +85,9 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1075"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus",
       "http://terminology.hl7.org/5.5.0/ValueSet-condition-ver-status.html" : "ConditionVerificationStatus",
-      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
-      "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
+      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
@@ -87,18 +100,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "version" : "9.0.0",
-      "status" : "active",
-      "name" : "ActCode",
-      "title" : "ActCode",
-      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
-      "oids" : ["2.16.840.1.113883.5.4"],
-      "uses" : {
-      },
-      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActCoverageTypeCode.html" : "ActCoverageTypeCode"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
@@ -176,7 +177,6 @@
       "description" : "Especialidades y Subespecialidades Bioquímicas",
       "uses" : {
       },
-      "ValueSet-VSEspecialidades.html" : "Especialidades",
       "ValueSet-VSEspecialidadBioqca.html" : "Especialidades y Subespecialidades Bioquímicas"
     },
     {
@@ -188,7 +188,6 @@
       "description" : "Especialidades Farmaceúticas o Química Farmaceúticas",
       "uses" : {
       },
-      "ValueSet-VSEspecialidades.html" : "Especialidades",
       "ValueSet-VSEspecialidadFarma.html" : "Especialidades Farmaceúticas o Química Farmaceúticas"
     },
     {
@@ -200,7 +199,6 @@
       "description" : "EspecialidadMed",
       "uses" : {
       },
-      "ValueSet-VSEspecialidades.html" : "Especialidades",
       "ValueSet-VSEspecialidadMed.html" : "EspecialidadMed"
     },
     {
@@ -212,19 +210,18 @@
       "description" : "Especialidades Odontológicas",
       "uses" : {
       },
-      "ValueSet-VSEspecialidades.html" : "Especialidades",
       "ValueSet-VSEspecialidadOdont.html" : "Especialidades Odontológicas"
     },
     {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestinoCodigo",
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino",
       "version" : "0.9.1",
       "status" : "active",
-      "name" : "CSEstablecimientoDestinoCodigo",
+      "name" : "CSEstablecimientoDestino",
       "title" : "Establecimiento Destino Codigo",
       "description" : "Establecimiento Destino Codigo ejemplos hechos en base a este documento con los [Códigos DEIS del establecimientos](https://datos.gob.cl/dataset/establecimientos-de-salud-vigentes)",
       "uses" : {
       },
-      "ValueSet-VSEstablecimientoDestinoCodigo.html" : "Establecimiento Destino Codigo"
+      "ValueSet-VSEstablecimientoDestino.html" : "Establecimiento Destino Codigo"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstadoCivil",
@@ -257,8 +254,8 @@
       "description" : "HipotesisDiagnosticaCodigo",
       "uses" : {
       },
-      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
-      "ValueSet-VSHipotesisDiagnosticaCodigo.html" : "HipotesisDiagnosticaCodigo"
+      "ValueSet-VSHipotesisDiagnosticaCodigo.html" : "HipotesisDiagnosticaCodigo",
+      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentidaddeGenero",
@@ -281,6 +278,17 @@
       "uses" : {
       },
       "ValueSet-VSIndicecomorbilidad.html" : "Indice Comorbilidad"
+    },
+    {
+      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIsapres",
+      "version" : "0.9.1",
+      "status" : "active",
+      "name" : "CSIsapres",
+      "title" : "Isapres",
+      "description" : "Isapres",
+      "uses" : {
+      },
+      "ValueSet-VSIsapres.html" : "Isapres"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMediodeContacto",

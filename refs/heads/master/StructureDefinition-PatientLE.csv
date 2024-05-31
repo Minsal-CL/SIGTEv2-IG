@@ -21,7 +21,7 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "Patient.contained","Patient.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"","","N/A"
-"Patient.extension","Patient.extension","","","",3,*,"","","","Extension {[]} {[]}
+"Patient.extension","Patient.extension","","","",4,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -33,7 +33,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Sexo Biologico del paciente","Sexo Biologico del paciente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension:nacionalidad","Patient.extension","nacionalidad","","",0,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises]]} {[]}
+"Patient.extension:nacionalidad","Patient.extension","nacionalidad","","",1,1,"Y","","","Extension {[CanonicalType[https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises]]} {[]}
 ","Codigo de Identificación de países","Esta extensión incluye códigos de paises de origen","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -223,7 +223,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Patient.telecom.system","Patient.telecom.system","","","",0,1,"Y","","Y","code {[]} {[]}
-","phone | fax | email | pager | url | sms | other","Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto.","","","","","","","","","",,"required","Tipo de contacto para HL7 FHIR","http://hl7.org/fhir/ValueSet/contact-point-system","",,,,"ContactPoint.system",0,1,"cpt-2
+","Orden de uso del método de contacto, siendo 1 = prioritario","Forma de telecomunicación para el punto de contacto: qué sistema de comunicación se requiere para hacer uso del contacto.","","","","","","","","","",,"required","Tipo de contacto para HL7 FHIR","http://hl7.org/fhir/ValueSet/contact-point-system","",,,,"ContactPoint.system",0,1,"cpt-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./scheme","XTN.3"
 "Patient.telecom.value","Patient.telecom.value","","","",0,1,"Y","","Y","string {[]} {[]}
@@ -236,12 +236,12 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Orden de uso del método de contacto, siendo 1 = prioritario","Specifies a preferred order in which to use a set of contacts. ContactPoints with lower rank values are more preferred than those with higher rank values.","Note that rank does not necessarily follow the order in which the contacts are represented in the instance.","","","","","","","","",,,,,"",,,,"ContactPoint.rank",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","n/a","n/a"
 "Patient.telecom.period","Patient.telecom.period","","","",0,1,"Y","","Y","Period {[]} {[]}
-","Periodo de tiempo durante el cual es válido el contacto del paciente","Time period when the contact point was/is in use.","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Para completar este campo utilice solo los valores ""phone | email""","Time period when the contact point was/is in use.","","","","","","","","","",,,,,"",,,,"ContactPoint.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./usablePeriod[type=""IVL<TS>""]","N/A"
 "Patient.gender","Patient.gender","","","",1,1,"Y","","Y","code {[]} {[]}
 ","Sexo Registral del paciente","Sexo Registrado","The gender might not match the biological sex as determined by genetics or the individual's preferred identification. Note that for both humans and particularly animals, there are other legitimate possibilities than male and female, though the vast majority of systems and contexts only support male and female.  Systems providing decision support or enforcing business rules should ideally do this on the basis of Observations dealing with the specific sex or gender aspect of interest (anatomical, chromosomal, social, etc.)  However, because these observations are infrequently recorded, defaulting to the administrative gender is common practice.  Where such defaulting occurs, rule enforcement should allow for the variation between administrative and biological, chromosomal and other gender aspects.  For example, an alert about a hysterectomy on a male should be handled as a warning or overridable error, not a ""hard"" error.  See the Patient Gender and Sex section for additional information about communicating patient gender and sex.","Needed for identification of the individual, in combination with (at least) name and birth date.","","","","","","","",,"required","The gender of a person used for administrative purposes.","http://hl7.org/fhir/ValueSet/administrative-gender|4.0.1","",,,,"Patient.gender",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/administrativeGender",".patient.administrativeGenderCode","PID-8"
-"Patient.birthDate","Patient.birthDate","","","",0,1,"Y","","Y","date {[]} {[]}
+"Patient.birthDate","Patient.birthDate","","","",1,1,"Y","","Y","date {[]} {[]}
 ","Fecha de nacimiento del Paciente.","Fecha de nacimiento del Paciente.","At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension ""patient-birthTime"" available that should be used where Time is required (such as in maternity/infant care systems).","Age of the individual drives many clinical processes.","","","","","","","",,,,,"",,,,"Patient.birthDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/birthTime",".patient.birthTime","PID-7","21112-8"
 "Patient.deceased[x]","Patient.deceased[x]","","","",1,1,"Y","Y","Y","boolean {[]} {[]}
