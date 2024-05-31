@@ -98,6 +98,9 @@ Description: "Pertinencia Interconsulta"
   MotivoNoPertinencia 0..1 MS
 * url MS
 
+* extension[MotivoNoPertinencia].value[x] only CodeableConcept
+* extension[EvaluacionPertinencia].value[x] only CodeableConcept
+
 Extension:   EvaluacionPertinencia
 Id:          EvaluacionPertinencia
 Title:       "Evaluacion Pertinencia"
