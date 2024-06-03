@@ -421,7 +421,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Practitioner.photo","Practitioner.photo","","","",0,*,"","","","Attachment {[]} {[]}
 ","Image of the person","Image of the person.","","Many EHR systems have the capability to capture an image of patients and personnel. Fits with newer social media usage too.","","","","","","","",,,,,"",,,,"Practitioner.photo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./subjectOf/ObservationEvent[code=""photo""]/value","./ImageURI (only supports the URI reference)"
-"Practitioner.qualification","Practitioner.qualification","","","",0,1,"Y","","","BackboneElement {[]} {[]}
+"Practitioner.qualification","Practitioner.qualification","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Certificados, títulos y/o Especialidad(es) obtenidas por el Prestador","Certificados, titulos y/o especialidades que el Prestador pueda validar","","","","","","","","","",,,,,"","value:identifier.value}
 ","Debido a que los profesisonales de la salud pueden tener titulo y ademas poseer especialidades, es que se ha realizado un slice, con el fin de poder diferenciarlos. El de Certificados tiene identifier.value el valor cert y el slice de especialidad el valor esp",,"open","Practitioner.qualification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CER?",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications"
@@ -794,9 +794,6 @@ Reference is intended to point to a structure that can potentially be expressed 
 "Practitioner.qualification:SubEsp.issuer.display","Practitioner.qualification.issuer.display","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Nombre de la organizacion que entrega certificado o título","Nombre de la organizacion que entrega el certificado o título válido para ejercer como prestdor. En este elemento solo se puede agregar texto libre","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Practitioner.qualification:TituloProfesional","Practitioner.qualification","TituloProfesional","","",0,1,"Y","","","BackboneElement {[]} {[]}
-","Certificados, títulos y/o Especialidad(es) obtenidas por el Prestador","Certificados, titulos y/o especialidades que el Prestador pueda validar","","","","","","","","","",,,,,"",,,,"Practitioner.qualification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","CER?",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications"
 "Practitioner.qualification:EspecialidadMedica","Practitioner.qualification","EspecialidadMedica","","",0,0,"Y","","","BackboneElement {[]} {[]}
 ","Certificados, títulos y/o Especialidad(es) obtenidas por el Prestador","Certificados, titulos y/o especialidades que el Prestador pueda validar","","","","","","","","","",,,,,"",,,,"Practitioner.qualification",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CER?",".playingEntity.playingRole[classCode=QUAL].code","./Qualifications"
