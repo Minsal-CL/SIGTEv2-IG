@@ -7,6 +7,12 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+
+* identifier MS
+  * value MS
+  * value ^short = "Identificador de la Interconsulta"
+* identifier ^short = "Identificador de la Interconsulta (Se asigna a nivel central)"
+
 //* identifier 0..1 MS
 //* identifier ^short = "Corresponde al Identificador de la Interconsulta. Se asigna desde nivel central."
 //* identifier.type from VSTipoIdentificadorSR

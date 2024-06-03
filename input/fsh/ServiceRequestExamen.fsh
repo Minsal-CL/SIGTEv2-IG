@@ -6,10 +6,10 @@ Description: "ServiceRequestExamen LE recurso utilizado para la representación 
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
-//* identifier 1..1 MS
-//  * value 1..1 MS
-//  * value ^short = "Valor del Identificador de la Interconsulta"
-//* identifier ^short = "Identificador de la Interconsulta (Se asigna a nivel central)"
+* identifier MS
+  * value MS
+  * value ^short = "Identificador de la Interconsulta"
+* identifier ^short = "Identificador de la Interconsulta (Se asigna a nivel local)"
 
 
 // OBLIGATORIOS POR ESTANDAR
