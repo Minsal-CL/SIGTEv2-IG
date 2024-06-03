@@ -98,8 +98,33 @@ Description: "Pertinencia Interconsulta"
   MotivoNoPertinencia 0..1 MS
 * url MS
 
-* extension[MotivoNoPertinencia].value[x] only CodeableConcept
 * extension[EvaluacionPertinencia].value[x] only CodeableConcept
+* extension[EvaluacionPertinencia].value[x] ^short = "Evaluación de la pertinencia de la solicitud de interconsulta"
+* extension[EvaluacionPertinencia].url 1..1 MS
+* extension[EvaluacionPertinencia].valueCodeableConcept from VSPertinenciaInterconsulta
+* extension[EvaluacionPertinencia].valueCodeableConcept 1..1 MS
+* extension[EvaluacionPertinencia].valueCodeableConcept.coding 1..1 MS
+  * code 1..1 MS
+  * system 0..1 MS
+  * display 0..1 MS
+
+* extension[MotivoNoPertinencia].value[x] only string
+* extension[MotivoNoPertinencia].value[x] ^short = "Motivo No Pertinencia"
+* extension[MotivoNoPertinencia].url 1..1 MS
+
+
+
+
+
+
+
+
+/*
+
+
+
+
+
 
 Extension:   EvaluacionPertinencia
 Id:          EvaluacionPertinencia
@@ -119,7 +144,7 @@ Extension:   MotivoNoPertinencia
 Id:          MotivoNoPertinencia
 Title:       "Motivo No Pertinencia"
 Description: "Motivo No Pertinencia"
-* value[x] only CodeableConcept
+* value[x] only string
 * value[x] ^short = "Motivo No Pertinencia"
 * url 1..1 MS
 
@@ -130,6 +155,7 @@ Description: "Motivo No Pertinencia"
   * display 0..1 MS
 * valueCodeableConcept.text 0..1 MS 
 * valueCodeableConcept from VSMotivoNoPertinenciaCodigo
+*/
 
 Extension:   EstadoInterconsultaCodigoLE
 Id:          EstadoInterconsultaCodigoLE
