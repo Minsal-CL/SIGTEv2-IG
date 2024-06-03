@@ -46,7 +46,8 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 * address ^definition = "Dirección según Guía Core-CL"
 * address MS
 
-* qualification 0..1
+* qualification 0..*
+* qualification[TituloProfesional] 0..*
 * qualification[EspecialidadMedica] 0..0
 * qualification[Subespecialidad] 0..0
 

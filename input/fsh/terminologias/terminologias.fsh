@@ -1272,39 +1272,6 @@ Description: "EstadoCivil"
 * #06 "Conviviente civil"
 * #99 "Desconocido"
 
-CodeSystem: CSTipoIdentificadorSR
-Id: CSTipoIdentificadorSR
-Title: "Id interconsulta"
-Description: "Id interconsulta"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #01 "ID Solicitud interconsulta"
-* #02 "ID Solicitud exámen"
-
-
-ValueSet: VSTipoIdentificadorSR
-Id: VSTipoIdentificadorSR
-Title: "Id interconsulta"
-Description: "Id interconsulta"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSTipoIdentificadorSR
-
 CodeSystem: CSIdentificadorPrestador
 Id: CSIdentificadorPrestador
 Title: "IdentificadorPrestador"

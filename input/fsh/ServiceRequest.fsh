@@ -7,21 +7,21 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
-* identifier 0..1 MS
-* identifier ^short = "Corresponde al Identificador de la Interconsulta. Se asigna desde nivel central."
-* identifier.type from VSTipoIdentificadorSR
-* identifier.type 1..1 MS
-  * coding 1..1 MS
-  * coding ^short = "Códigos definidos por un sistema terminológico"
-    * code 1..1 MS
-    * code ^short = "Código definido en un sistema terminológico"
-    * code = #01
-    * system 0..1 MS
-    * system ^short = "Sistema terminológico, url/uri/uuid"
-    * display 0..1 MS
-    * display ^short = "Representación visual, definida por el sistema terminológico"
-* identifier.value 1..1 MS
-* identifier.value ^short = "Valor del identificador"
+//* identifier 0..1 MS
+//* identifier ^short = "Corresponde al Identificador de la Interconsulta. Se asigna desde nivel central."
+//* identifier.type from VSTipoIdentificadorSR
+//* identifier.type 1..1 MS
+//  * coding 1..1 MS
+//  * coding ^short = "Códigos definidos por un sistema terminológico"
+//    * code 1..1 MS
+//    * code ^short = "Código definido en un sistema terminológico"
+//    * code = #01
+//    * system 0..1 MS
+//    * system ^short = "Sistema terminológico, url/uri/uuid"
+//    * display 0..1 MS
+//    * display ^short = "Representación visual, definida por el sistema terminológico"
+//* identifier.value 1..1 MS
+//* identifier.value ^short = "Valor del identificador"
 
 // OBLIGATORIOS POR ESTANDAR
 * status MS

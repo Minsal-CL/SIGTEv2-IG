@@ -1,4 +1,4 @@
-### Cambios de versión 0.1.6 a versión 0.2
+### Versión 0.2.0
 
 - Perfil [PatientLE](StructureDefinition-PatientLE.html)
   - Se elimina elemento "IdentidadDeGenero" repetido, dejando solo el que viene referenciado desde la [Guia CLCore](https://hl7chile.cl/fhir/ig/clcore/1.8.10/)
@@ -32,7 +32,6 @@
   - requester se agrega MustSupport
   - requester debe referenciar solo a "PractitionerRoleLE"
   - authoredOn se modifica cardinalidad 0..1 -> 1..1
-  - identifier.type binding [TipoIdentificadorSR](ValueSet-VSTipoIdentificadorSR.html)
   - intent se cambia la descripcion "Tipo de Servicio solicitado" -> "Tipo de solicitud"
   - code se modifica cardinalidad 0..1 -> 1..1
   - Se elemina extension "Alergia"
@@ -40,7 +39,6 @@
   - Se cambia cardinalidad supportingInfo[motivoDerivacion] 0..1 -> 1..1
   - Se elimina extensión ConsecuenciaAtencionCodigo
   - Se modifica el nombre del slice supportingInfo:DiagnosticoSospecha -> supportingInfo:DiagnosticoInicio
-  - Se fija valor identifier.type.coding.code -> 01
   - Se elimina extension MotivoNoPertinenciaCodigo de doNotPerform
 
 - Perfil [AllergyIntoleranceIniciarLE](StructureDefinition-AllergyIntoleranceIniciarLE.html)
@@ -74,9 +72,6 @@
    - Se cambia cardinalidad de identifier[run].coding -> 1..1 
    - Se cambia cardinalidad de identifier[run].type.coding -> 1..1 
    - Se cambia cardinalidad de identifier[run]value -> 1..1
-
-
-
 
 - Perfil [ObservationIniciarIndiceComorbilidadLE](StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html)
    - Se fija el valor "final" para el elemento status
@@ -195,7 +190,8 @@
 - Se crea CSIsapres
 - Se crea VSTerminologiasDiag
 - Se cambia nombde de perfil ObservationIniciarLE -> ExamenesAnteriores
-
+- Se elimina VSTipoIdentificadorSR
+- Se elimina CSTipoIdentificadorSR
 
 
 - Modificaciones de la "CLcore"
@@ -316,10 +312,3 @@
    - Sobre las extensiones, se agrega una llamada “Mencion” que hace referencia a la mención profesional, ésta se agregó junto al nuevo Prestador Profesional y Administrativo, provenientes del HPD.  
    - El CS Establecimiento Destino Atencion ahora cuenta con los displays correctos (establecimientos al principio). 
    - Se crea un CS/VS de ejemplo llamado TipoIdentificadorSR, esto con el fin de hacer posible la redirección de un binding en el recurso ServiceRequest (identifier.type.coding)
-
-
-
--------------------------------------------------------------
--------------------------------------------------------------
-
-### Version 0.2.0
