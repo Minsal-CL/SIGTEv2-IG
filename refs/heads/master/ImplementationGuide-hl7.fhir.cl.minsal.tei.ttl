@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TiemposDeEsperaInteroperable"] ; # 
   fhir:title [ fhir:v "Tiempos de Espera Interoperable"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-03T14:39:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-04T14:45:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -68,14 +68,6 @@
        fhir:link <https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.cl.clcore" ] ;
-     fhir:version [ fhir:v "dev" ]
-  ] [
-     fhir:id [ fhir:v "hl7_fhir_cl_minsal_snre" ] ;
-     fhir:uri [
-       fhir:v "https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre"^^xsd:anyURI ;
-       fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre>
-     ] ;
-     fhir:packageId [ fhir:v "hl7.fhir.cl.minsal.snre" ] ;
      fhir:version [ fhir:v "dev" ]
   ] ) ; # 
   fhir:definition [
@@ -1088,18 +1080,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EvaluacionPertinencia> ;
-         fhir:reference [ fhir:v "StructureDefinition/EvaluacionPertinencia" ]
-       ] ;
-       fhir:name [ fhir:v "Evaluacion Pertinencia" ] ;
-       fhir:description [ fhir:v "Evaluacion Pertinencia" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -1527,18 +1507,6 @@
        ] ;
        fhir:name [ fhir:v "Motivo No Contactabilidad" ] ;
        fhir:description [ fhir:v "Motivo No Contactabilidad" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinencia> ;
-         fhir:reference [ fhir:v "StructureDefinition/MotivoNoPertinencia" ]
-       ] ;
-       fhir:name [ fhir:v "Motivo No Pertinencia" ] ;
-       fhir:description [ fhir:v "Motivo No Pertinencia" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
