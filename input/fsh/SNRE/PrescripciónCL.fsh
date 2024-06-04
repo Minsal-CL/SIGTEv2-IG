@@ -125,14 +125,14 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * authoredOn ^short = "Fecha y hora en la cual fue prescrito el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz"
 * authoredOn ^definition = "Fecha y hora en la cual fue prescrito el medicamento en formato YYYY-MM-DDThh:mm:ss+zz:zz, e.j. 2018, 1973-06, 1905-08-23, 2015-02-07T13:28:17-05:00 o 2017-01-01T00:00:00.000Z"
 * requester 1..1	
-* requester only Reference (PrestadorCL)
+//* requester only Reference (PrestadorCL)
 * requester ^short = "Referencia al Prescriptor"
 * requester ^definition = "En este caso la referencia será sobre una persona que es Prescritpr  validado por la SIS"
 * requester.reference ^short = "Recurso asociado al Prescriptor  \"https://api-receta.minsal.cl/v2/Practitioner\"" 
 * requester.display ^short = "Nombre Prescriptor"
 * recorder 0..1
 //* recorder only Reference(PrestadorCL)
-* recorder only Reference(PrestadorCL)
+//* recorder only Reference(PrestadorCL)
 * recorder ^short = "Referencia a un sujeto, que será el que registra la receta"
 * recorder ^definition = "En este caso la referencia será sobre una persona que es un prescriptor validado por la SIS"
 * recorder.reference ^short = "Recurso asociado \"http://api-receta.minsal.cl/v2/Practitioner\""
