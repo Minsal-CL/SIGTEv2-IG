@@ -117,7 +117,7 @@ Description:    "Este Perfil describe la información contenida en la Prescripci
 * extension contains ProdComercial named ProdComercial 0..1 MS
 * extension ^short = "Determinación del medicamento en Producto Comercial"
 * extension ^definition = "Determinación de un medicamento en Producto Comercial. Para eso esta extensión define una Referencia solo a un recurso de medication. "
-* subject only Reference (PacienteCl) 
+//* subject only Reference (PacienteCl)
 * subject ^short = "Referencia al paciente a quien se le prescribe"
 * subject ^definition = "La referencia en este caso solo se hace sobre el paciente al cual se le prescribe el fármaco independiente que sea otra la persona que hace retiro de estos"
 * subject.reference ^short = "Referencia al recurso del paciente. \"https://api-receta.minsal.cl/v2/Patient\"" 
