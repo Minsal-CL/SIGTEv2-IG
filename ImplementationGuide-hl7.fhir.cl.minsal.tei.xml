@@ -11,7 +11,7 @@
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2024-06-03T14:39:49+00:00"/>
+  <date value="2024-06-04T14:45:33+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -50,11 +50,6 @@
   <dependsOn id="hl7_fhir_cl_clcore">
     <uri value="https://hl7chile.cl/fhir/ig/clcore/ImplementationGuide/hl7.fhir.cl.clcore"/>
     <packageId value="hl7.fhir.cl.clcore"/>
-    <version value="dev"/>
-  </dependsOn>
-  <dependsOn id="hl7_fhir_cl_minsal_snre">
-    <uri value="https://interoperabilidad.minsal.cl/fhir/ig/snre/ImplementationGuide/hl7.fhir.cl.minsal.snre"/>
-    <packageId value="hl7.fhir.cl.minsal.snre"/>
     <version value="dev"/>
   </dependsOn>
   <definition>
@@ -969,17 +964,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/EvaluacionPertinencia"/>
-      </reference>
-      <name value="Evaluacion Pertinencia"/>
-      <description value="Evaluacion Pertinencia"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1371,17 +1355,6 @@
       </reference>
       <name value="Motivo No Contactabilidad"/>
       <description value="Motivo No Contactabilidad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MotivoNoPertinencia"/>
-      </reference>
-      <name value="Motivo No Pertinencia"/>
-      <description value="Motivo No Pertinencia"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

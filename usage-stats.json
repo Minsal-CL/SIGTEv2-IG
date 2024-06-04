@@ -135,24 +135,6 @@
       ]
     },
     {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EvaluacionPertinencia",
-      "title": "Evaluacion Pertinencia",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
       "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBool",
       "title": "ExtBool",
       "types": [
@@ -287,24 +269,6 @@
       ]
     },
     {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinencia",
-      "title": "Motivo No Pertinencia",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
       "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/OrigenInterconsulta",
       "title": "Origen Interconsulta",
       "types": [
@@ -345,7 +309,18 @@
       "title": "Pertinencia Interconsulta",
       "types": [
         "CodeableConcept",
-        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "string",
         "base64Binary",
         "boolean",
         "canonical",
@@ -676,9 +651,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -686,10 +658,8 @@
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/geolocation": [
-      "Patient.address"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-mothers-family": [
-      "Patient.contact.name.family"
+      "Patient.address",
+      "Practitioner.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
@@ -752,15 +722,13 @@
       "Practitioner.address.state"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido": [
+      "Patient.contact.name.family",
       "Patient.name.family",
       "Practitioner.name.family"
     ],
     "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoBiologico": [
       "Patient",
       "Practitioner"
-    ],
-    "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SexoRegistral": [
-      "Patient"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConsecuenciaAtencionCodigo": [
       "Encounter"
