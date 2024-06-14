@@ -6,7 +6,7 @@ Description: "Encounter Iniciar LE recurso que se utiliza para representar el en
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
-* extension contains ConsecuenciaAtencionCodigo named ConsecuenciaAtencionCodigo 0..1 MS
+* extension contains ExtensionConsecuenciaAtencionCodigo named ConsecuenciaAtencionCodigo 0..1 MS
 * extension[ConsecuenciaAtencionCodigo] ^short = "Código de la consecuencia de la atención"
 * extension[ConsecuenciaAtencionCodigo].valueCodeableConcept.coding.code = #3
 
@@ -25,7 +25,7 @@ Description: "Encounter Iniciar LE recurso que se utiliza para representar el en
 * identifier ^short = "Id del registro de atención o encuentro del sistema clínico de origen"
 
 * diagnosis 1..*
-* diagnosis ^short = "Diagnóstico de origen por cual se crea la interconsulta"
+* diagnosis ^short = "El o los diagnósticos por cual se crea la solicitud de interconsulta"
 * diagnosis.condition only Reference(ConditionDiagnosticoLE)
 * diagnosis.condition ^short = "Referencia al diagnóstico de origen"
 

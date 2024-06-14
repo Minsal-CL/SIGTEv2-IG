@@ -1,9 +1,9 @@
 Alias: $SegundoApellido = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido
 Alias: $cl-address = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address
 
-Profile: PrestadorProfesionalLE
+Profile: PractitionerProfesionalLE
 Parent: PrestadorCL
-Id: PrestadorProfesionalLE
+Id: PractitionerProfesionalLE
 Title: "Prestador Profesional LE"
 Description: "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
 

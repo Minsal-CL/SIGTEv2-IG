@@ -35,7 +35,7 @@ Description: "Bundle Terminar LE recurso utilizado para transportar todos los da
 * entry[organization].resource only OrganizationLE
 * entry[organization].resource ^short = "Centro de salud que termina la interconsulta."
 * entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
-* entry[practitioner].resource only PrestadorProfesionalLE
+* entry[practitioner].resource only PractitionerProfesionalLE
 * entry[practitioner].resource ^short = "Profesional que prestó la atención al paciente"
 * entry[practitionerRole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
 * entry[practitionerRole].resource only PractitionerRoleLE

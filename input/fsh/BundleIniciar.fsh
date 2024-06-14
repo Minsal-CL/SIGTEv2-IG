@@ -17,7 +17,7 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
-* entry 9..17 MS
+* entry 9..* MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
@@ -28,7 +28,7 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
         and observationDiscapacidad 1..1 
         and observationCuidador 0..1 
         and conditionGes 0..1 
-        and observation 0..1 
+        and ObservationResultadoExamen 0..* 
         and allergyintolerance 0..1
         and practitionerrole 1..1
         and practitioner 1..1
@@ -45,19 +45,19 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry[encounter] ^short = "Entrada en el Bundle: contendrá un recurso Encounter"
 * entry[encounter].resource only EncounterIniciarLE
 * entry[encounter].resource ^short = "Encuentro que ocurre en el APS y donde se solicita la interconsulta"
-* entry[observation] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
-* entry[observation].resource only ExamenesAnteriores
-* entry[observation].resource ^short = "Observación para indicar los examenes realizados al paciente."
+* entry[ObservationResultadoExamen] ^short = "Entrada en el Bundle: contendrá un recurso Observation de resultado de examen"
+* entry[ObservationResultadoExamen].resource only ObservationResultadoExamen
+* entry[ObservationResultadoExamen].resource ^short = "Observación para indicar los examenes realizados al paciente."
 * entry[conditionDiagnostico] ^short = "Entrada en el Bundle: contendrá un recurso Condition"
 * entry[conditionDiagnostico].resource only ConditionDiagnosticoLE
 * entry[conditionDiagnostico].resource ^short = "Condición que especifica el diagnóstico inicial por el cual se emite la IC"
-* entry[observationComorbilidad] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
-* entry[observationComorbilidad].resource only ObservationIniciarIndiceComorbilidadLE
+* entry[observationComorbilidad] ^short = "Entrada en el Bundle: contendrá un recurso Observation de indice de Comorbilidad"
+* entry[observationComorbilidad].resource only ObservationIndiceComorbilidadLE
 * entry[observationComorbilidad].resource ^short = "Indice de Comorbilidad del paciente"
-* entry[observationDiscapacidad] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
-* entry[observationDiscapacidad].resource only ObservationIniciarDiscapacidadLE
+* entry[observationDiscapacidad] ^short = "Entrada en el Bundle: contendrá un recurso Observation de Discapacidad"
+* entry[observationDiscapacidad].resource only ObservationDiscapacidadLE
 * entry[observationDiscapacidad].resource ^short = "Observación para indicar si el paciente tiene una discapacidad o no"
-* entry[observationCuidador] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
+* entry[observationCuidador] ^short = "Entrada en el Bundle: contendrá un recurso Observation de Cuidador"
 * entry[observationCuidador].resource only ObservationIniciarCuidadorLE
 * entry[observationCuidador].resource ^short = "Observación para indicar si el paciente es cuidador o no"
 * entry[conditionGes] ^short = "Entrada en el Bundle: contendrá un recurso Condition"
@@ -76,7 +76,7 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry[organization].resource only OrganizationLE
 * entry[organization].resource ^short = "Centro de salud que inicia la interconsulta"
 * entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
-* entry[practitioner].resource only PrestadorProfesionalLE
+* entry[practitioner].resource only PractitionerProfesionalLE
 * entry[practitioner].resource ^short = "Profesional que inicia la interconsulta"
 //* entry[docCuidador] ^short = "Entrada en el Bundle: contendrá un recurso DocumentReference"
 //* entry[docCuidador].resource only DocumentReferenceIniciarLE

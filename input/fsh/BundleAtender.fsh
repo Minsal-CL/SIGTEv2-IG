@@ -38,7 +38,7 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[servicerequest].resource only ServiceRequestLE
 * entry[servicerequest].resource ^short = "Prestación que se requiere para el paciente, que no pudo ser resuelta en el APS"
 * entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
-* entry[practitioner].resource only PrestadorProfesionalLE
+* entry[practitioner].resource only PractitionerProfesionalLE
 * entry[practitioner].resource ^short = "Profesional que presto la atención al paciente"
 * entry[practitionerRole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
 * entry[practitionerRole].resource only PractitionerRoleLE

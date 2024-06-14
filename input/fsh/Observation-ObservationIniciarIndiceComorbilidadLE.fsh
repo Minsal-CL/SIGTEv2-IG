@@ -1,7 +1,7 @@
-Profile: ObservationIniciarIndiceComorbilidadLE
+Profile: ObservationIndiceComorbilidadLE
 Parent: Observation
-Id: ObservationIniciarIndiceComorbilidadLE
-Title: "Observation Iniciar Indice Comorbilidad LE"
+Id: ObservationIndiceComorbilidadLE
+Title: "Indice Comorbilidad LE"
 Description: "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
@@ -15,6 +15,9 @@ Description: "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza
 * status from http://hl7.org/fhir/ValueSet/observation-status
 * status 1..1 MS
 
+* encounter 0..1 MS
+* encounter ^short = "Encuentro del cual nace la observación"
+* encounter only Reference(EncounterIniciarLE or EncounterAtenderLE)
 
 * code 1..1 MS
 * code ^short = "Tipo de observación, aquí se define el riesgo asociado al Índice de comorbilidad"

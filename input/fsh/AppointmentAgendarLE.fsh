@@ -7,8 +7,8 @@ Description: "Appointment Agendar LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 // EXTESIONES
-* extension contains MediodeContacto named MediodeContacto 0..1 MS
-* extension[MediodeContacto] ^short = "Medio por donde se notificó al paciente"
+* extension contains ExtensionMediodeContacto named ExtensionMediodeContacto 0..1 MS
+* extension[ExtensionMediodeContacto] ^short = "Medio por donde se notificó al paciente"
 
 * extension contains ContactadoLE named ContactadoLE 1..1 MS
 * extension[ContactadoLE] ^short = "Extensión compleja, donde se indica si el paciente fue Contactado[true|false] o MotivoNoContactabilidad si la anterior fue false"

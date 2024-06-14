@@ -1,16 +1,18 @@
-Profile: ExamenesAnteriores
+Profile: ObservationResultadoExamen
 Parent: Observation
-Id: ExamenesAnteriores
-Title: "ExamenesAnteriores"
-Description: "Resultados de examenes anteriores como antecedentes para la derivación a interconsulta"
+Id: ObservationResultadoExamen
+Title: "Resultado Examen"
+Description: "Resultado de examen anterior como antecedente"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 
 * value[x] 1..1 MS 
 * value[x] ^short = "Resultado de los examenes realizados"
-* effective[x] 1..1 MS
-* effective[x] ^short = "Tiempo o momento en que el valor fue observado"
+
+* effectiveDateTime 1..1 MS
+* effectiveDateTime ^short = "Tiempo o momento en que el valor fue observado"
+
 * status 1..1 MS
 * status ^short = "Estado de la observación, por defecto DEBE ser registered"
 * status = #registered
@@ -26,6 +28,10 @@ Description: "Resultados de examenes anteriores como antecedentes para la deriva
 
 * subject 1..1 MS
 * subject only Reference(PatientLE)
+
+* encounter 1..1 MS
+* encounter ^short = "Encuentro del cual nace la observación"
+* encounter only Reference(EncounterIniciarLE or EncounterAtenderLE)
 
 * category 1..1 MS
 * category ^short = "Categoría de la observación"

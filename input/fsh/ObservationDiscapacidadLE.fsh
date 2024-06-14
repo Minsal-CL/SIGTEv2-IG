@@ -1,8 +1,8 @@
-Profile: ObservationIniciarDiscapacidadLE
+Profile: ObservationDiscapacidadLE
 Parent: Observation
-Id: ObservationIniciarDiscapacidadLE
-Title: "Observación Iniciar Discapacidad LE"
-Description: "Observación Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad"
+Id: ObservationDiscapacidadLE
+Title: "Discapacidad LE"
+Description: "Observación Discapacidad LE, para describir si un paciente presenta discapacidad"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
@@ -26,11 +26,12 @@ Description: "Observación Iniciar Discapacidad LE, para describir si un pacient
 //    * code ^short = "Código definido en un sistema terminológico"
 * code ^short = "Tipo de observación"
 * code.coding.code = #101720-1
-* code.coding.system = #http://loinc.org
+* code.coding.system = "http://loinc.org"
 
+* value[x] only boolean
+* valueBoolean 1..1 MS
+* valueBoolean ^short = "Tiene Discapacidad? true | false"
 
-
-
-
-* extension contains ExtBoolPresentaDiscapacidad named PresentaDiscapacidad 1..1 MS
-* extension[PresentaDiscapacidad] ^short = "Presenta discapacidad? true | false"
+* encounter 0..1 MS
+* encounter ^short = "Encuentro del cual nace la observación"
+* encounter only Reference(EncounterIniciarLE or EncounterAtenderLE)

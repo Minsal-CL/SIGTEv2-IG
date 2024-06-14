@@ -1,7 +1,7 @@
 Profile: ServiceRequestExamenLE
 Parent: ServiceRequest
 Id: ServiceRequestExamenLE
-Title: "ServiceRequestExamen LE"
+Title: "Solicitud de Examen LE"
 Description: "ServiceRequestExamen LE recurso utilizado para la representación de los datos del examen"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
@@ -30,7 +30,7 @@ Description: "ServiceRequestExamen LE recurso utilizado para la representación 
 
 * requester 1..1 MS 
 * requester ^short = "Quien es la persona que solicita el estudio"
-* requester only Reference(PrestadorProfesionalLE) 
+* requester only Reference(PractitionerProfesionalLE) 
 
 * reasonCode 1..1 MS
   * text 1..1 MS

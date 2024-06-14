@@ -41,7 +41,7 @@ Description: "Condicion Diagnostico LE, recurso que se utiliza para indicar el d
   * text ^short = "Representación en texto plano del concepto"
 * category ^short = "Categoría del diagnóstico de origen. Se refiere a un diagnostico  identificado durante el encuentro médico o un problema de salud previamente hablado"
 
-* clinicalStatus 1..1 MS
+* clinicalStatus 0..1 MS
   * coding 1..1 MS
   * coding ^short = "Código definido por un sistema terminológico"
     * system 1..1 MS
@@ -54,7 +54,7 @@ Description: "Condicion Diagnostico LE, recurso que se utiliza para indicar el d
 * clinicalStatus ^short = "Estado clinico del diagnostico, general (active | inactive) o detallado (recurrence | relapse | remission | resolved)"
 * clinicalStatus from http://hl7.org/fhir/ValueSet/condition-clinical
 
-* verificationStatus 1..1 MS
+* verificationStatus 0..1 MS
   * coding 1..1 MS
   * coding ^short = "Código definido por un sistema terminológico"
     * system 1..1 MS

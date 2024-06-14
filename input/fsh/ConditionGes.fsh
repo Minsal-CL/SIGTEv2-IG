@@ -14,7 +14,7 @@ Description: "Condition GES"
 * code 1..1 MS
   * coding 1..1 MS
   * coding ^short = "Código definido por un sistema terminológico"
-    * system 1..1 MS
+    * system 0..1 MS
     * system ^short = "Sistema terminológico, url/uri/uuid"
     * code 1..1 MS
     * code ^short = "Código definido en un sistema terminológico"
@@ -24,9 +24,6 @@ Description: "Condition GES"
   * text ^short = "Representación textual del concepto"
 * code ^short = "Código para la Patología ges"
 * code from VSProblemaGES
-
-
-
 
 * category 1..1 MS
   * coding 1..1 MS
@@ -39,6 +36,6 @@ Description: "Condition GES"
     * code = #problem-list-item
     * display 0..1 MS
     * display ^short = "Representación visual definida por el sistema terminológico"
+     
   * text 1..1 MS
-  * text = #sospechaGes
-* category ^short = ""
+  * text = "ProblemaGes"
