@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TiemposDeEsperaInteroperable</h2><p>The official URL for this implementation guide is: </p><pre>https://interoperabilidad.minsal.cl/fhir/ig/tei/ImplementationGuide/hl7.fhir.cl.minsal.tei</pre><div><p>Tiempos de Espera Interoperable</p>\n</div></div>"
   },
   "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ImplementationGuide/hl7.fhir.cl.minsal.tei",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "TiemposDeEsperaInteroperable",
   "title" : "Tiempos de Espera Interoperable",
   "status" : "draft",
-  "date" : "2024-06-04T14:45:33+00:00",
+  "date" : "2024-06-14T16:20:30+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -773,7 +773,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ConsecuenciaAtencionCodigo"
+        "reference" : "StructureDefinition/ExtensionConsecuenciaAtencionCodigo"
       },
       "name" : "Consecuencia Atención Codigo",
       "description" : "Consecuencia Atención Codigo",
@@ -825,6 +825,18 @@
       },
       "name" : "Coverage LE",
       "description" : "Coverage LE, recurso que permite saber la previsión de un paciente",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ObservationIniciarCuidadorLE"
+      },
+      "name" : "Cuidador LE",
+      "description" : "Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona",
       "exampleBoolean" : false
     },
     {
@@ -926,6 +938,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ObservationDiscapacidadLE"
+      },
+      "name" : "Discapacidad LE",
+      "description" : "Observación Discapacidad LE, para describir si un paciente presenta discapacidad",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -977,7 +1001,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/EspecialidadMedicaDestinoCodigo"
+        "reference" : "StructureDefinition/ExtensionEspecialidadMedicaDestinoCodigo"
       },
       "name" : "Especialidad Médica Destino Código",
       "description" : "Especialidad Médica Destino Código",
@@ -1133,7 +1157,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/EstadoInterconsultaCodigoLE"
+        "reference" : "StructureDefinition/ExtensionEstadoInterconsultaCodigoLE"
       },
       "name" : "Estado Interconsulta Codigo",
       "description" : "Estado Interconsulta Codigo",
@@ -1166,13 +1190,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ExamenesAnteriores"
+        "reference" : "StructureDefinition/EvaluacionPertinencia"
       },
-      "name" : "ExamenesAnteriores",
-      "description" : "Resultados de examenes anteriores como antecedentes para la derivación a interconsulta",
+      "name" : "Evaluacion Pertinencia",
+      "description" : "Evaluacion Pertinencia",
       "exampleBoolean" : false
     },
     {
@@ -1205,7 +1229,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ExtBoolAtencionPreferente"
+        "reference" : "StructureDefinition/ExtensionBoolAtencionPreferente"
       },
       "name" : "ExtBool Atención Preferente",
       "description" : "ExtBool ¿Hace uso de atención preferente?",
@@ -1265,7 +1289,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ExtBoolRequiereExamen"
+        "reference" : "StructureDefinition/ExtensionBoolRequiereExamen"
       },
       "name" : "ExtBool RequiereExamen",
       "description" : "ExtBool RequiereExamen",
@@ -1277,7 +1301,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ExtBoolResolutividadAPS"
+        "reference" : "StructureDefinition/ExtensionBoolResolutividadAPS"
       },
       "name" : "ExtBool ResolutividadAPS",
       "description" : "ExtBool ResolutividadAPS",
@@ -1293,6 +1317,17 @@
       },
       "name" : "ExtBool Solicitud Examenes",
       "description" : "ExtBool Solicitud Examenes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ExtensionStringFundamentoPriorizacion"
+      },
+      "name" : "ExtensionStringFundamentoPriorizacion",
       "exampleBoolean" : false
     },
     {
@@ -1317,17 +1352,6 @@
       },
       "name" : "ExtString MotivoNoPertinencia",
       "description" : "ExtString MotivoNoPertinencia",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ExtStringFundamentoPriorizacion"
-      },
-      "name" : "ExtStringFundamentoPriorizacion",
       "exampleBoolean" : false
     },
     {
@@ -1429,6 +1453,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ObservationIndiceComorbilidadLE"
+      },
+      "name" : "Indice Comorbilidad LE",
+      "description" : "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1480,7 +1516,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MediodeContacto"
+        "reference" : "StructureDefinition/ExtensionMediodeContacto"
       },
       "name" : "MediodeContacto",
       "description" : "MediodeContacto",
@@ -1540,7 +1576,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MotivoCierreInterconsulta"
+        "reference" : "StructureDefinition/ExtensionMotivoCierreInterconsulta"
       },
       "name" : "Motivo Cierre Interconsulta",
       "description" : "Motivo Cierre Interconsulta",
@@ -1597,6 +1633,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MotivoNoPertinencia"
+      },
+      "name" : "Motivo No Pertinencia",
+      "description" : "Motivo No Pertinencia",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1624,46 +1672,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ObservationIniciarDiscapacidadLE"
-      },
-      "name" : "Observación Iniciar Discapacidad LE",
-      "description" : "Observación Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/ObservationAtenderLE"
       },
       "name" : "Observation Atender LE",
-      "description" : "ObservationAtender LE",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ObservationIniciarCuidadorLE"
-      },
-      "name" : "Observation Iniciar Cuidador LE",
-      "description" : "Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ObservationIniciarIndiceComorbilidadLE"
-      },
-      "name" : "Observation Iniciar Indice Comorbilidad LE",
-      "description" : "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente",
+      "description" : "Observation Atender LE",
       "exampleBoolean" : false
     },
     {
@@ -1684,7 +1696,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/OrigenInterconsulta"
+        "reference" : "StructureDefinition/ExtensionOrigenInterconsulta"
       },
       "name" : "Origen Interconsulta",
       "description" : "Origen Interconsulta",
@@ -1744,7 +1756,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PertinenciaInterconsulta"
+        "reference" : "StructureDefinition/ExtensionPertinenciaInterconsulta"
       },
       "name" : "Pertinencia Interconsulta",
       "description" : "Pertinencia Interconsulta",
@@ -1792,7 +1804,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PrestadorAdministrativoLE"
+        "reference" : "StructureDefinition/PractitionerAdministrativoLE"
       },
       "name" : "Prestador Administrativo LE",
       "description" : "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud.",
@@ -1804,7 +1816,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PrestadorProfesionalLE"
+        "reference" : "StructureDefinition/PractitionerProfesionalLE"
       },
       "name" : "Prestador Profesional LE",
       "description" : "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud.",
@@ -1832,18 +1844,6 @@
       },
       "name" : "PrevisionCodigo",
       "description" : "PrevisionCodigo",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/PrevisionCodigoLE"
-      },
-      "name" : "Previsión determinada de aseguramiento de salud del paciente.",
-      "description" : "La previsión es la variable que determina sistema de aseguramiento de salud del paciente.",
       "exampleBoolean" : false
     },
     {
@@ -1981,6 +1981,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ObservationResultadoExamen"
+      },
+      "name" : "Resultado Examen",
+      "description" : "Resultado de examen anterior como antecedente",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2012,18 +2024,6 @@
       },
       "name" : "ServiceRequest LE",
       "description" : "ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ServiceRequestExamenLE"
-      },
-      "name" : "ServiceRequestExamen LE",
-      "description" : "ServiceRequestExamen LE recurso utilizado para la representación de los datos del examen",
       "exampleBoolean" : false
     },
     {
@@ -2072,6 +2072,18 @@
       },
       "name" : "SituacionCalle",
       "description" : "SituacionCalle",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ServiceRequestExamenLE"
+      },
+      "name" : "Solicitud de Examen LE",
+      "description" : "ServiceRequestExamen LE recurso utilizado para la representación de los datos del examen",
       "exampleBoolean" : false
     },
     {
@@ -2128,7 +2140,7 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SubEspecialidadMedicaDestinoCodigo"
+        "reference" : "StructureDefinition/ExtensionSubEspecialidadMedicaDestinoCodigo"
       },
       "name" : "SubEspecialidad Médica Destino Código",
       "description" : "SubEspecialidad Médica Destino Código",

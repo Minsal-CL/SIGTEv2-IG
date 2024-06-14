@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://interoperabilidad.minsal.cl/fhir/ig/tei/ImplementationGuide/hl7.fhir.cl.minsal.tei"/>
-  <version value="0.2.0"/>
+  <version value="0.2.1"/>
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2024-06-04T14:45:33+00:00"/>
+  <date value="2024-06-14T16:20:30+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -604,7 +604,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ConsecuenciaAtencionCodigo"/>
+        <reference value="StructureDefinition/ExtensionConsecuenciaAtencionCodigo"/>
       </reference>
       <name value="Consecuencia Atención Codigo"/>
       <description value="Consecuencia Atención Codigo"/>
@@ -652,6 +652,17 @@
       </reference>
       <name value="Coverage LE"/>
       <description value="Coverage LE, recurso que permite saber la previsión de un paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ObservationIniciarCuidadorLE"/>
+      </reference>
+      <name value="Cuidador LE"/>
+      <description value="Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -744,6 +755,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ObservationDiscapacidadLE"/>
+      </reference>
+      <name value="Discapacidad LE"/>
+      <description value="Observación Discapacidad LE, para describir si un paciente presenta discapacidad"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -791,7 +813,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/EspecialidadMedicaDestinoCodigo"/>
+        <reference value="StructureDefinition/ExtensionEspecialidadMedicaDestinoCodigo"/>
       </reference>
       <name value="Especialidad Médica Destino Código"/>
       <description value="Especialidad Médica Destino Código"/>
@@ -934,7 +956,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/EstadoInterconsultaCodigoLE"/>
+        <reference value="StructureDefinition/ExtensionEstadoInterconsultaCodigoLE"/>
       </reference>
       <name value="Estado Interconsulta Codigo"/>
       <description value="Estado Interconsulta Codigo"/>
@@ -964,13 +986,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ExamenesAnteriores"/>
+        <reference value="StructureDefinition/EvaluacionPertinencia"/>
       </reference>
-      <name value="ExamenesAnteriores"/>
-      <description value="Resultados de examenes anteriores como antecedentes para la derivación a interconsulta"/>
+      <name value="Evaluacion Pertinencia"/>
+      <description value="Evaluacion Pertinencia"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1000,7 +1022,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ExtBoolAtencionPreferente"/>
+        <reference value="StructureDefinition/ExtensionBoolAtencionPreferente"/>
       </reference>
       <name value="ExtBool Atención Preferente"/>
       <description value="ExtBool ¿Hace uso de atención preferente?"/>
@@ -1055,7 +1077,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ExtBoolRequiereExamen"/>
+        <reference value="StructureDefinition/ExtensionBoolRequiereExamen"/>
       </reference>
       <name value="ExtBool RequiereExamen"/>
       <description value="ExtBool RequiereExamen"/>
@@ -1066,7 +1088,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ExtBoolResolutividadAPS"/>
+        <reference value="StructureDefinition/ExtensionBoolResolutividadAPS"/>
       </reference>
       <name value="ExtBool ResolutividadAPS"/>
       <description value="ExtBool ResolutividadAPS"/>
@@ -1081,6 +1103,16 @@
       </reference>
       <name value="ExtBool Solicitud Examenes"/>
       <description value="ExtBool Solicitud Examenes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtensionStringFundamentoPriorizacion"/>
+      </reference>
+      <name value="ExtensionStringFundamentoPriorizacion"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1103,16 +1135,6 @@
       </reference>
       <name value="ExtString MotivoNoPertinencia"/>
       <description value="ExtString MotivoNoPertinencia"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ExtStringFundamentoPriorizacion"/>
-      </reference>
-      <name value="ExtStringFundamentoPriorizacion"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1205,6 +1227,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ObservationIndiceComorbilidadLE"/>
+      </reference>
+      <name value="Indice Comorbilidad LE"/>
+      <description value="Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1252,7 +1285,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MediodeContacto"/>
+        <reference value="StructureDefinition/ExtensionMediodeContacto"/>
       </reference>
       <name value="MediodeContacto"/>
       <description value="MediodeContacto"/>
@@ -1307,7 +1340,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MotivoCierreInterconsulta"/>
+        <reference value="StructureDefinition/ExtensionMotivoCierreInterconsulta"/>
       </reference>
       <name value="Motivo Cierre Interconsulta"/>
       <description value="Motivo Cierre Interconsulta"/>
@@ -1359,6 +1392,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MotivoNoPertinencia"/>
+      </reference>
+      <name value="Motivo No Pertinencia"/>
+      <description value="Motivo No Pertinencia"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1384,43 +1428,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ObservationIniciarDiscapacidadLE"/>
-      </reference>
-      <name value="Observación Iniciar Discapacidad LE"/>
-      <description value="Observación Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/ObservationAtenderLE"/>
       </reference>
       <name value="Observation Atender LE"/>
-      <description value="ObservationAtender LE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationIniciarCuidadorLE"/>
-      </reference>
-      <name value="Observation Iniciar Cuidador LE"/>
-      <description value="Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObservationIniciarIndiceComorbilidadLE"/>
-      </reference>
-      <name value="Observation Iniciar Indice Comorbilidad LE"/>
-      <description value="Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente"/>
+      <description value="Observation Atender LE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1439,7 +1450,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/OrigenInterconsulta"/>
+        <reference value="StructureDefinition/ExtensionOrigenInterconsulta"/>
       </reference>
       <name value="Origen Interconsulta"/>
       <description value="Origen Interconsulta"/>
@@ -1494,7 +1505,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PertinenciaInterconsulta"/>
+        <reference value="StructureDefinition/ExtensionPertinenciaInterconsulta"/>
       </reference>
       <name value="Pertinencia Interconsulta"/>
       <description value="Pertinencia Interconsulta"/>
@@ -1538,7 +1549,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PrestadorAdministrativoLE"/>
+        <reference value="StructureDefinition/PractitionerAdministrativoLE"/>
       </reference>
       <name value="Prestador Administrativo LE"/>
       <description value="Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."/>
@@ -1549,7 +1560,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PrestadorProfesionalLE"/>
+        <reference value="StructureDefinition/PractitionerProfesionalLE"/>
       </reference>
       <name value="Prestador Profesional LE"/>
       <description value="Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."/>
@@ -1575,17 +1586,6 @@
       </reference>
       <name value="PrevisionCodigo"/>
       <description value="PrevisionCodigo"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/PrevisionCodigoLE"/>
-      </reference>
-      <name value="Previsión determinada de aseguramiento de salud del paciente."/>
-      <description value="La previsión es la variable que determina sistema de aseguramiento de salud del paciente."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1711,6 +1711,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ObservationResultadoExamen"/>
+      </reference>
+      <name value="Resultado Examen"/>
+      <description value="Resultado de examen anterior como antecedente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1740,17 +1751,6 @@
       </reference>
       <name value="ServiceRequest LE"/>
       <description value="ServiceRequest LE recurso utilizado para la representación de los datos de la interconsulta."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ServiceRequestExamenLE"/>
-      </reference>
-      <name value="ServiceRequestExamen LE"/>
-      <description value="ServiceRequestExamen LE recurso utilizado para la representación de los datos del examen"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1795,6 +1795,17 @@
       </reference>
       <name value="SituacionCalle"/>
       <description value="SituacionCalle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ServiceRequestExamenLE"/>
+      </reference>
+      <name value="Solicitud de Examen LE"/>
+      <description value="ServiceRequestExamen LE recurso utilizado para la representación de los datos del examen"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1846,7 +1857,7 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/SubEspecialidadMedicaDestinoCodigo"/>
+        <reference value="StructureDefinition/ExtensionSubEspecialidadMedicaDestinoCodigo"/>
       </reference>
       <name value="SubEspecialidad Médica Destino Código"/>
       <description value="SubEspecialidad Médica Destino Código"/>
