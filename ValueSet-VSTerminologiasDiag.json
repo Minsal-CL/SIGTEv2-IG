@@ -3,10 +3,10 @@
   "id" : "VSTerminologiasDiag",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  404684003 (Clinical finding (finding))</li></ul></div>"
   },
   "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTerminologiasDiag",
-  "version" : "0.2.0",
+  "version" : "0.2.1",
   "name" : "VSTerminologiasDiag",
   "title" : "TerminologiasDiag",
   "status" : "active",
@@ -33,7 +33,12 @@
       "system" : "http://hl7.org/fhir/sid/icd-10"
     },
     {
-      "system" : "http://snomed.info/sct"
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "404684003"
+      }]
     }]
   }
 }

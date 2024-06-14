@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts - Tiempos de Espera Interoperable v0.2.0</title>
+    <title>Artifacts - Tiempos de Espera Interoperable v0.2.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -66,7 +66,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Tiempos de Espera Interoperable</span>
             <br/>
-            <span style="display:inline-block;">0.2.0 - draft
+            <span style="display:inline-block;">0.2.1 - draft
 
 
 
@@ -182,7 +182,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.2.0. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This is the continuous build for version 0.2.1. This version is based on the current content of <a href="https://github.com/WorldHealthOrganization/ddcc">https://github.com/WorldHealthOrganization/ddcc</a> and changes regularly.</p><!--EndReleaseHeader-->
   <h2>Artifacts</h2>
   
   
@@ -339,6 +339,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ObservationIniciarCuidadorLE.html"
+                  title="StructureDefinition/ObservationIniciarCuidadorLE">Cuidador LE</a>
+            </td>
+            <td>
+<p>Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ObservationDiscapacidadLE.html"
+                  title="StructureDefinition/ObservationDiscapacidadLE">Discapacidad LE</a>
+            </td>
+            <td>
+<p>Observación Discapacidad LE, para describir si un paciente presenta discapacidad</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-EncounterAtenderLE.html"
                   title="StructureDefinition/EncounterAtenderLE">Encounter Atender LE</a>
             </td>
@@ -357,11 +375,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ExamenesAnteriores.html"
-                  title="StructureDefinition/ExamenesAnteriores">ExamenesAnteriores</a>
+               <a href="StructureDefinition-ObservationIndiceComorbilidadLE.html"
+                  title="StructureDefinition/ObservationIndiceComorbilidadLE">Indice Comorbilidad LE</a>
             </td>
             <td>
-<p>Resultados de examenes anteriores como antecedentes para la derivación a interconsulta</p>
+<p>Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente</p>
 </td>
          </tr>
          <tr>
@@ -375,38 +393,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ObservationIniciarDiscapacidadLE.html"
-                  title="StructureDefinition/ObservationIniciarDiscapacidadLE">Observación Iniciar Discapacidad LE</a>
-            </td>
-            <td>
-<p>Observación Iniciar Discapacidad LE, para describir si un paciente presenta discapacidad</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-ObservationAtenderLE.html"
                   title="StructureDefinition/ObservationAtenderLE">Observation Atender LE</a>
             </td>
             <td>
-<p>ObservationAtender LE</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ObservationIniciarCuidadorLE.html"
-                  title="StructureDefinition/ObservationIniciarCuidadorLE">Observation Iniciar Cuidador LE</a>
-            </td>
-            <td>
-<p>Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html"
-                  title="StructureDefinition/ObservationIniciarIndiceComorbilidadLE">Observation Iniciar Indice Comorbilidad LE</a>
-            </td>
-            <td>
-<p>Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente</p>
+<p>Observation Atender LE</p>
 </td>
          </tr>
          <tr>
@@ -438,8 +429,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-PrestadorAdministrativoLE.html"
-                  title="StructureDefinition/PrestadorAdministrativoLE">Prestador Administrativo LE</a>
+               <a href="StructureDefinition-PractitionerAdministrativoLE.html"
+                  title="StructureDefinition/PractitionerAdministrativoLE">Prestador Administrativo LE</a>
             </td>
             <td>
 <p>Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud.</p>
@@ -447,8 +438,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-PrestadorProfesionalLE.html"
-                  title="StructureDefinition/PrestadorProfesionalLE">Prestador Profesional LE</a>
+               <a href="StructureDefinition-PractitionerProfesionalLE.html"
+                  title="StructureDefinition/PractitionerProfesionalLE">Prestador Profesional LE</a>
             </td>
             <td>
 <p>Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud.</p>
@@ -474,6 +465,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-ObservationResultadoExamen.html"
+                  title="StructureDefinition/ObservationResultadoExamen">Resultado Examen</a>
+            </td>
+            <td>
+<p>Resultado de examen anterior como antecedente</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-ServiceRequestLE.html"
                   title="StructureDefinition/ServiceRequestLE">ServiceRequest LE</a>
             </td>
@@ -484,7 +484,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-ServiceRequestExamenLE.html"
-                  title="StructureDefinition/ServiceRequestExamenLE">ServiceRequestExamen LE</a>
+                  title="StructureDefinition/ServiceRequestExamenLE">Solicitud de Examen LE</a>
             </td>
             <td>
 <p>ServiceRequestExamen LE recurso utilizado para la representación de los datos del examen</p>
@@ -500,8 +500,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ConsecuenciaAtencionCodigo.html"
-                  title="StructureDefinition/ConsecuenciaAtencionCodigo">Consecuencia Atención Codigo</a>
+               <a href="StructureDefinition-ExtensionConsecuenciaAtencionCodigo.html"
+                  title="StructureDefinition/ExtensionConsecuenciaAtencionCodigo">Consecuencia Atención Codigo</a>
             </td>
             <td>
 <p>Consecuencia Atención Codigo</p>
@@ -527,8 +527,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-EspecialidadMedicaDestinoCodigo.html"
-                  title="StructureDefinition/EspecialidadMedicaDestinoCodigo">Especialidad Médica Destino Código</a>
+               <a href="StructureDefinition-ExtensionEspecialidadMedicaDestinoCodigo.html"
+                  title="StructureDefinition/ExtensionEspecialidadMedicaDestinoCodigo">Especialidad Médica Destino Código</a>
             </td>
             <td>
 <p>Especialidad Médica Destino Código</p>
@@ -536,11 +536,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-EstadoInterconsultaCodigoLE.html"
-                  title="StructureDefinition/EstadoInterconsultaCodigoLE">Estado Interconsulta Codigo</a>
+               <a href="StructureDefinition-ExtensionEstadoInterconsultaCodigoLE.html"
+                  title="StructureDefinition/ExtensionEstadoInterconsultaCodigoLE">Estado Interconsulta Codigo</a>
             </td>
             <td>
 <p>Estado Interconsulta Codigo</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EvaluacionPertinencia.html"
+                  title="StructureDefinition/EvaluacionPertinencia">Evaluacion Pertinencia</a>
+            </td>
+            <td>
+<p>Evaluacion Pertinencia</p>
 </td>
          </tr>
          <tr>
@@ -563,8 +572,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ExtBoolAtencionPreferente.html"
-                  title="StructureDefinition/ExtBoolAtencionPreferente">ExtBool Atención Preferente</a>
+               <a href="StructureDefinition-ExtensionBoolAtencionPreferente.html"
+                  title="StructureDefinition/ExtensionBoolAtencionPreferente">ExtBool Atención Preferente</a>
             </td>
             <td>
 <p>ExtBool ¿Hace uso de atención preferente?</p>
@@ -608,8 +617,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ExtBoolRequiereExamen.html"
-                  title="StructureDefinition/ExtBoolRequiereExamen">ExtBool RequiereExamen</a>
+               <a href="StructureDefinition-ExtensionBoolRequiereExamen.html"
+                  title="StructureDefinition/ExtensionBoolRequiereExamen">ExtBool RequiereExamen</a>
             </td>
             <td>
 <p>ExtBool RequiereExamen</p>
@@ -617,8 +626,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ExtBoolResolutividadAPS.html"
-                  title="StructureDefinition/ExtBoolResolutividadAPS">ExtBool ResolutividadAPS</a>
+               <a href="StructureDefinition-ExtensionBoolResolutividadAPS.html"
+                  title="StructureDefinition/ExtensionBoolResolutividadAPS">ExtBool ResolutividadAPS</a>
             </td>
             <td>
 <p>ExtBool ResolutividadAPS</p>
@@ -653,8 +662,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-ExtStringFundamentoPriorizacion.html"
-                  title="StructureDefinition/ExtStringFundamentoPriorizacion">ExtStringFundamentoPriorizacion</a>
+               <a href="StructureDefinition-ExtensionStringFundamentoPriorizacion.html"
+                  title="StructureDefinition/ExtensionStringFundamentoPriorizacion">ExtensionStringFundamentoPriorizacion</a>
             </td>
             <td>
 
@@ -662,8 +671,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-MediodeContacto.html"
-                  title="StructureDefinition/MediodeContacto">MediodeContacto</a>
+               <a href="StructureDefinition-ExtensionMediodeContacto.html"
+                  title="StructureDefinition/ExtensionMediodeContacto">MediodeContacto</a>
             </td>
             <td>
 <p>MediodeContacto</p>
@@ -680,8 +689,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-MotivoCierreInterconsulta.html"
-                  title="StructureDefinition/MotivoCierreInterconsulta">Motivo Cierre Interconsulta</a>
+               <a href="StructureDefinition-ExtensionMotivoCierreInterconsulta.html"
+                  title="StructureDefinition/ExtensionMotivoCierreInterconsulta">Motivo Cierre Interconsulta</a>
             </td>
             <td>
 <p>Motivo Cierre Interconsulta</p>
@@ -689,8 +698,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-OrigenInterconsulta.html"
-                  title="StructureDefinition/OrigenInterconsulta">Origen Interconsulta</a>
+               <a href="StructureDefinition-MotivoNoPertinencia.html"
+                  title="StructureDefinition/MotivoNoPertinencia">Motivo No Pertinencia</a>
+            </td>
+            <td>
+<p>Motivo No Pertinencia</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ExtensionOrigenInterconsulta.html"
+                  title="StructureDefinition/ExtensionOrigenInterconsulta">Origen Interconsulta</a>
             </td>
             <td>
 <p>Origen Interconsulta</p>
@@ -707,20 +725,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-PertinenciaInterconsulta.html"
-                  title="StructureDefinition/PertinenciaInterconsulta">Pertinencia Interconsulta</a>
+               <a href="StructureDefinition-ExtensionPertinenciaInterconsulta.html"
+                  title="StructureDefinition/ExtensionPertinenciaInterconsulta">Pertinencia Interconsulta</a>
             </td>
             <td>
 <p>Pertinencia Interconsulta</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-PrevisionCodigoLE.html"
-                  title="StructureDefinition/PrevisionCodigoLE">Previsión determinada de aseguramiento de salud del paciente.</a>
-            </td>
-            <td>
-<p>La previsión es la variable que determina sistema de aseguramiento de salud del paciente.</p>
 </td>
          </tr>
          <tr>
@@ -797,8 +806,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-SubEspecialidadMedicaDestinoCodigo.html"
-                  title="StructureDefinition/SubEspecialidadMedicaDestinoCodigo">SubEspecialidad Médica Destino Código</a>
+               <a href="StructureDefinition-ExtensionSubEspecialidadMedicaDestinoCodigo.html"
+                  title="StructureDefinition/ExtensionSubEspecialidadMedicaDestinoCodigo">SubEspecialidad Médica Destino Código</a>
             </td>
             <td>
 <p>SubEspecialidad Médica Destino Código</p>
@@ -1482,7 +1491,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jun 4, 2024 14:45+0000">2024-06-04</span>
+          IG &#169; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 14, 2024 16:20+0000">2024-06-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
