@@ -43,31 +43,31 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 
 //--de aqui hacia abajo todo es opcional, para que sea generico
 
-* extension contains MotivoCierreInterconsulta named MotivoCierreInterconsulta 0..1 MS
-* extension contains ExtBoolRequiereExamen named RequiereExamen 0..1 MS
-* extension contains ExtBoolAtencionPreferente named AtencionPreferente 0..1 MS
+* extension contains ExtensionMotivoCierreInterconsulta named MotivoCierreInterconsulta 0..1 MS
+* extension contains ExtensionBoolRequiereExamen named RequiereExamen 0..1 MS
+* extension contains ExtensionBoolAtencionPreferente named AtencionPreferente 0..1 MS
 
 // ServiceRequest Iniciar
 
-* extension contains ExtBoolResolutividadAPS named ResolutividadAPS 0..1 MS
+* extension contains ExtensionBoolResolutividadAPS named ResolutividadAPS 0..1 MS
 * extension[ResolutividadAPS] ^short = "Programa de Resolutividad local."
 
-* extension contains OrigenInterconsulta named OrigenInterconsulta 0..1 MS
+* extension contains ExtensionOrigenInterconsulta named OrigenInterconsulta 0..1 MS
 * extension[OrigenInterconsulta] ^short = "Origen de la interconsulta"
 
-* extension contains ExtStringFundamentoPriorizacion named FundamentoPriorizacion 0..1 MS
+* extension contains ExtensionStringFundamentoPriorizacion named FundamentoPriorizacion 0..1 MS
 * extension[FundamentoPriorizacion] ^short = " Razones del porque se prioriza esta Interconsulta."
 
-* extension contains EstadoInterconsultaCodigoLE named EstadoInterconsultaCodigo 1..1 MS
+* extension contains ExtensionEstadoInterconsultaCodigoLE named EstadoInterconsultaCodigo 1..1 MS
 * extension[EstadoInterconsultaCodigo] ^short = "Estado de la Interconsulta en relación al proceso de negocio."
 
-* extension contains EspecialidadMedicaDestinoCodigo named EspecialidadMedicaDestinoCodigo 0..1 MS
+* extension contains ExtensionEspecialidadMedicaDestinoCodigo named EspecialidadMedicaDestinoCodigo 0..1 MS
 * extension[EspecialidadMedicaDestinoCodigo] ^short = "Código de la especialidad médica de destino."
 
-* extension contains SubEspecialidadMedicaDestinoCodigo named SubEspecialidadMedicaDestinoCodigo 0..1 MS
+* extension contains ExtensionSubEspecialidadMedicaDestinoCodigo named SubEspecialidadMedicaDestinoCodigo 0..1 MS
 * extension[SubEspecialidadMedicaDestinoCodigo] ^short = "Código de la subespecialidad médica de destino"
 
-* extension contains PertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
+* extension contains ExtensionPertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
 * extension[PertinenciaInterconsulta] ^short = "Descripción de la evaluación de pertinencia de la interconsulta"
 
 
@@ -121,8 +121,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * code from VSServicioRequerido
 
 * subject only Reference(PatientLE)
-* reasonReference only Reference(ExamenesAnteriores)
-* reasonReference ^short = "Referencia a la observación"
+
 * encounter only Reference(EncounterIniciarLE)
 * encounter ^short = "Referencia al encuentro que da Iniciar a la interconsulta" 
 * requester 1..1 MS
@@ -133,8 +132,6 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * performer ^short = "Rol especialista que resuelve la solicitud de interconsulta"
 * performer only Reference(PractitionerRoleLE)
 
-
-
 * supportingInfo 0..* MS 
 * supportingInfo ^short = "Información clínica adicional"
 * supportingInfo ^slicing.discriminator.type = #profile
@@ -143,11 +140,12 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
 * supportingInfo contains DiagnosticoInicio 0..1 MS 
 and ProblemaGES 0..1 MS and TipoAlergia 0..* MS and IndiceComorbilidad 0..1 MS
-and Cuidador 0..1 MS and Discapacidad 1..1 MS and Prevision 0..1 MS and motivoDerivacion 0..1 MS and Examen 0..1 MS
+and Cuidador 0..1 MS and Discapacidad 1..1 MS and Prevision 0..1 MS and motivoDerivacion 0..1 MS and SolicitudExamen 0..1 MS
+and ResultadoExamen 0..* MS
 
 * supportingInfo[DiagnosticoInicio] only Reference(ConditionDiagnosticoLE)
 * supportingInfo[DiagnosticoInicio] ^short = "Referencia a la condición que especifica el diagnóstico inicial por el cual se emite la IC"
-* supportingInfo[IndiceComorbilidad] only Reference(ObservationIniciarIndiceComorbilidadLE)
+* supportingInfo[IndiceComorbilidad] only Reference(ObservationIndiceComorbilidadLE)
 * supportingInfo[IndiceComorbilidad] ^short = "Referencia al indice de comorbilidad"
 * supportingInfo[ProblemaGES] only Reference(ConditionIniciarGesLE)
 * supportingInfo[ProblemaGES] ^short = "Referencia a la condición que especifica si es sospecha de GES"
@@ -157,11 +155,13 @@ and Cuidador 0..1 MS and Discapacidad 1..1 MS and Prevision 0..1 MS and motivoDe
 * supportingInfo[Cuidador] ^short = "Referencia a la observación de si el paciente es cuidador"
 //* supportingInfo[DocCuidador] only Reference(DocumentReferenceIniciarLE)
 //* supportingInfo[DocCuidador] ^short = "Referencia al documento que acredita que el paciente es cuidador"
-* supportingInfo[Discapacidad] only Reference(ObservationIniciarDiscapacidadLE)
+* supportingInfo[Discapacidad] only Reference(ObservationDiscapacidadLE)
 * supportingInfo[Discapacidad] ^short = "Referencia a la observación que indica si el paciente tiene discapacidad"
 * supportingInfo[Prevision] only Reference(CoverageLE)
 * supportingInfo[Prevision] ^short = "Referencia a la previsión del paciente"
 * supportingInfo[motivoDerivacion] only Reference(QuestionnaireResponseIniciarLE)
 * supportingInfo[motivoDerivacion] ^short = "Referencia al motivo de derivación"
-* supportingInfo[Examen] only Reference(ServiceRequestExamenLE)
-* supportingInfo[Examen] ^short = "Referencia a los examenes"
+* supportingInfo[SolicitudExamen] only Reference(ServiceRequestExamenLE)
+* supportingInfo[SolicitudExamen] ^short = "Referencia a las solicitudes de examenes"
+* supportingInfo[ResultadoExamen] only Reference(ObservationResultadoExamen)
+* supportingInfo[ResultadoExamen] ^short = "Referencia al los resultados de examenes"

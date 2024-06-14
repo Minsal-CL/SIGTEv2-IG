@@ -23,7 +23,7 @@ Description: "QuestionnaireResponse Iniciar para Motivo de Derivación LE"
 
 * subject only Reference(PatientLE)
 * encounter only Reference(EncounterIniciarLE)
-* author only Reference(PrestadorProfesionalLE)
+* author only Reference(PractitionerProfesionalLE)
 
 * item 1..1 MS
 * item.linkId 1..1 MS

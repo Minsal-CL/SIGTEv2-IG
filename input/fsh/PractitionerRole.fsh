@@ -12,7 +12,7 @@ Description: "PractitionerRole LE, recurso que se utiliza para representar la in
 
 
 * practitioner 0..1 MS
-* practitioner only Reference(PrestadorProfesionalLE or PrestadorAdministrativoLE) 
+* practitioner only Reference(PractitionerProfesionalLE or PractitionerAdministrativoLE) 
 * practitioner ^short = "Referencia al prestador, profesional o administrativo, que varía según evento"
 
 * code 1..1 MS

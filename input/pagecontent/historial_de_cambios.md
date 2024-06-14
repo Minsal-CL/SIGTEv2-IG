@@ -1,3 +1,56 @@
+### Versión 0.2.1
+
+- Perfil [ObservationResultadoExamen](StructureDefinition-ObservationResultadoExamen.html)
+  - Se cambia Id de ExamenesAnteriores A ObservationResultadoExamen
+  - Se incluye el valor encounter 1..1
+  - Se Actualiza el titulo y la descripción
+  - Effective[x] a EffectiveDateTime 1..1 MS
+
+- Perfil [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html)
+   - Se actualizan las extensiones de
+     - MotivoCierreInterconsulta -> ExtensionMotivoCierreInterconsulta
+     - ExtensionBoolRequiereExamen -> ExtensionBoolRequiereExamen
+     - BoolAtencionPreferente -> ExtensionBoolAtencionPreferente
+     - BoolResolutividadAPS -> ExtensionBoolResolutividadAPS
+     - OrigenInterconsulta -> ExtensionOrigenInterconsulta
+     - StringFundamentoPriorizacion -> ExtensionStringFundamentoPriorizacion
+     - EstadoInterconsultaCodigoLE -> ExtensionEstadoInterconsultaCodigoLE
+     - EspecialidadMedicaDestinoCodigo -> ExtensionEspecialidadMedicaDestinoCodigo
+     - SubEspecialidadMedicaDestinoCodigo -> ExtensionSubEspecialidadMedicaDestinoCodigo
+     - PertinenciaInterconsulta -> ExtensionPertinenciaInterconsulta
+   - Se actualiza referencia de ExamenesAnteriores A ObservationResultadoExamen
+   - Se mueve ObservationResultadoExamen de ReasonReference a SupportInfo
+- Perfil [PatientLE](StructureDefinition-PatientLE.html)
+  - Identifier 1..*
+  - Identifier.type.coding 1..1
+  - telecom.system  1..1 
+  - telecom.value 1..1
+
+- Perfil [BundleIniciarLE](StructureDefinition-BundleIniciarLE.html)
+   - Se actualiza recurso de ExamenesAnteriores A ObservationResultadoExamen
+   - se actualiza entry de 9..17 a 9..*
+   - se actualiza entry[ObservationResultadoExamen] 0..1 a 0..*
+   - edición de short observation
+
+- ValueSet [TerminologiasDiag](ValueSet-VSTerminologiasDiag.html)
+  - se filtra a hallazgos clínicos
+
+- Perfil [ConditionDiagnosticoLE](StructureDefinition-ConditionDiagnosticoLE.html)
+  - Se cambia cardinalidad clinicalStatus 1..1 a 0..1
+  - Se cambia cardinalidad de verificationStatus 1..1 a 0..1
+- Perfil [ObservationIndiceComorbilidadLE](StructureDefinition-ObservationIndiceComorbilidadLE.html)
+ - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
+
+- Perfil [ObservationIniciarCuidadorLE](StructureDefinition-ObservationIniciarCuidadorLE.html)
+ - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
+ - se depreca extension ExtBoolEsCuidador
+ - se incluye el ValueBoolean a 1..1
+
+- Perfil [ObservationDiscapacidadLE](StructureDefinition-ObservationDiscapacidadLE.html)
+ - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
+ - se depreca extension ExtBoolPresentaDiscapacidad
+ - se incluye el ValueBoolean a 1..1 
+
 ### Versión 0.2.0
 
 - Perfil [PatientLE](StructureDefinition-PatientLE.html)
@@ -60,7 +113,7 @@
    - Se fija cardinalidad coding 1..1
    - Se fija cardinalidad code 1..1
 
-- Perfil [PrestadorAdministrativoLE](StructureDefinition-PrestadorAdministrativoLE.html)
+- Perfil [PractitionerAdministrativoLE](StructureDefinition-PractitionerAdministrativoLE.html)
    - Se elimina la extension Nacionalidad
    - Se cambia cardinalidad birthDate 1..1 -> 0..1
    - Se elimina el slice identifier:run
@@ -105,7 +158,7 @@
    - Se cambia cardinalidad item.linkId 0..1 -> 1..1
    - Se fija referencia subject only Reference(PatientLE)
    - Se fija referencia encounter only Reference(EncounterIniciarLE)
-   - Se fija referencia author only Reference(PrestadorProfesionalLE)
+   - Se fija referencia author only Reference(PractitionerProfesionalLE)
 
 
 - Perfil [ObservationIniciarCuidadorLE](StructureDefinition-ObservationIniciarCuidadorLE.html)
@@ -141,12 +194,12 @@
 - Se elimina el perfil DocumentReferenceIniciarLE y todas sus referencias
 
 
-- [ObservationIniciarDiscapacidadLE](StructureDefinition-ObservationIniciarDiscapacidadLE.html)
+- [ObservationDiscapacidadLE](StructureDefinition-ObservationDiscapacidadLE.html)
   - Se cambia cardinalidad subjecto 0..1 -> 1..1
   - EspOdo -> EspecialidadOdontologica
 
 
-- [PrestadorProfesionalLE](StructureDefinition-PrestadorProfesionalLE.html)
+- [PractitionerProfesionalLE](StructureDefinition-PractitionerProfesionalLE.html)
   - Se cambia el nombre de los siguientes slices de qualification:
     - EspOdo -> EspecialidadOdontologica
     - EspBioQ -> EspecialidadBioQuimica
@@ -237,7 +290,7 @@
       - La pestaña de “Mensajería” tiene un cambio mayor, y es que se borraron los antiguos diagramas para colocar descripciones sobre los mensajes de envío, respuesta y los response code. 
 
    - **Recursos nuevos/actualizados:**  
-      - El recurso PractitionerLE ahora se dividió en dos: PrestadorProfesionalLE y PrestadorAdministrativoLE
+      - El recurso PractitionerLE ahora se dividió en dos: PractitionerProfesionalLE y PractitionerAdministrativoLE
       - El recurso PacienteMPI ahora se llama PatientLE. 
       - Se agrega un recurso nuevo: ObservationInicioDiscapacidadLE. 
       - El título del recurso Patología GES (número) ahora es Condition GES LE. 
@@ -245,9 +298,9 @@
 - **Cambios en los recursos:**
 
    - **Para el BundleIniciarLE:**   
-      - La cadinalidad ahora pasa de 8..17 a 9..17, ya que ahora existe un recurso extra que representa la discapacidad (ObservationIniciarDiscapacidadLE).  
+      - La cadinalidad ahora pasa de 8..17 a 9..17, ya que ahora existe un recurso extra que representa la discapacidad (ObservationDiscapacidadLE).  
       - Referencia al recurso paciente pasa de PacienteMinsalMPI a PatientLE.  
-      - Referencia al recurso practitioner pasa de PractitionerLE a PrestadorProfesionalLE.  
+      - Referencia al recurso practitioner pasa de PractitionerLE a PractitionerProfesionalLE.  
 
    - **Para el recurso MessageHeaderLE:**  
       - La cardinalidad de "focus" cambia a 1..2 y en este mismo atributo se crean slices para restringir el uso de los recursos de referencia.   
@@ -280,7 +333,7 @@
       - La cardinalidad de organization cambia de 0..1 a 1..1 
 
    - **Para el BundleReferenciarLE:**
-      - La referencia al recurso Practitioner cambia de PractitionerLE a PrestadorProfesionalLE 
+      - La referencia al recurso Practitioner cambia de PractitionerLE a PractitionerProfesionalLE 
 
    - **Para el BundleRevisarLE:**  
       - Ahora el número de entry's pasa de 5..6 a 7..8 

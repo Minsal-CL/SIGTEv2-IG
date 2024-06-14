@@ -1,51 +1,5 @@
-// Extension:   PaisOrigenClLE
-// Id:          CodigoPaises
-// Title:       "Codigo de Identificación de países"
-// Description: "Esta extensión incluye códigos de paises de origen"
-// * value[x] only CodeableConcept
-// * value[x] ^short = "Código de País"
-// * url 1..1 MS
-
-// * valueCodeableConcept from CodPais
-// * valueCodeableConcept.coding 1..1 MS
-//   * code 1..1 MS
-//   * system 0..1 MS
-//   * display 0..1 MS
-// * valueCodeableConcept.text 1..1 MS
-
-
-Extension:   PrevisionCodigoLE
-Id:          PrevisionCodigoLE
-Title:       "Previsión determinada de aseguramiento de salud del paciente."
-Description: "La previsión es la variable que determina sistema de aseguramiento de salud del paciente."
-* value[x] only CodeableConcept
-* value[x] ^short = "Prevision Codigo"
-* url 1..1 MS
-* valueCodeableConcept from VSPrevisionCodigo
-* valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  * system 0..1 MS
-  * display 0..1 MS
-* valueCodeableConcept.text 0..1 MS
-
-
-// Extension:   NacionalidadCodigoClLE
-// Id:          NacionalidadCodigo
-// Title:       "Codigo de Identificación de Nacionalidad"
-// Description: "Codigo de Identificación de Nacionalidad"
-// * value[x] only CodeableConcept
-// * value[x] ^short = "Código de la Nacionalidad"
-// * url 1..1 MS
-// * valueCodeableConcept from CodPais
-// * valueCodeableConcept.coding 1..1 MS
-//   * code 1..1 MS
-//   * system 0..1 MS
-//   * display 0..1 MS
-// * valueCodeableConcept.text 1..1 MS
-
-
-Extension:   MotivoCierreInterconsulta
-Id:          MotivoCierreInterconsulta
+Extension:   ExtensionMotivoCierreInterconsulta
+Id:          ExtensionMotivoCierreInterconsulta
 Title:       "Motivo Cierre Interconsulta"
 Description: "Motivo Cierre Interconsulta"
 * value[x] only CodeableConcept
@@ -58,8 +12,8 @@ Description: "Motivo Cierre Interconsulta"
   * display 0..1 MS
 * valueCodeableConcept.text 0..1 MS
 
-Extension:   ConsecuenciaAtencionCodigo
-Id:          ConsecuenciaAtencionCodigo
+Extension:   ExtensionConsecuenciaAtencionCodigo
+Id:          ExtensionConsecuenciaAtencionCodigo
 Title:       "Consecuencia Atención Codigo"
 Description: "Consecuencia Atención Codigo"
 * value[x] only CodeableConcept
@@ -72,10 +26,11 @@ Description: "Consecuencia Atención Codigo"
   * display 0..1 MS
 
 
-Extension:   MediodeContacto
-Id:          MediodeContacto
+Extension:   ExtensionMediodeContacto
+Id:          ExtensionMediodeContacto
 Title:       "MediodeContacto"
 Description: "MediodeContacto"
+
 * value[x] only CodeableConcept
 * value[x] ^short = "MediodeContacto"
 * url 1..1 MS
@@ -89,10 +44,13 @@ Description: "MediodeContacto"
 
 
 
-Extension:   PertinenciaInterconsulta
-Id:          PertinenciaInterconsulta
+Extension:   ExtensionPertinenciaInterconsulta
+Id:          ExtensionPertinenciaInterconsulta
 Title:       "Pertinencia Interconsulta"
 Description: "Pertinencia Interconsulta"
+
+Context: ServiceRequestLE
+
 * extension contains
   EvaluacionPertinencia 1..1 MS and
   MotivoNoPertinencia 0..1 MS
@@ -112,20 +70,6 @@ Description: "Pertinencia Interconsulta"
 * extension[MotivoNoPertinencia].value[x] ^short = "Motivo No Pertinencia"
 * extension[MotivoNoPertinencia].url 1..1 MS
 
-
-
-
-
-
-
-
-/*
-
-
-
-
-
-
 Extension:   EvaluacionPertinencia
 Id:          EvaluacionPertinencia
 Title:       "Evaluacion Pertinencia"
@@ -144,10 +88,10 @@ Extension:   MotivoNoPertinencia
 Id:          MotivoNoPertinencia
 Title:       "Motivo No Pertinencia"
 Description: "Motivo No Pertinencia"
-* value[x] only string
-* value[x] ^short = "Motivo No Pertinencia"
-* url 1..1 MS
-
+// * value[x] only string
+// * value[x] ^short = "Motivo No Pertinencia"
+// * url 1..1 MS
+* value[x] only CodeableConcept
 * valueCodeableConcept 1..1 MS
 * valueCodeableConcept.coding MS
   * code 1..1 MS
@@ -155,10 +99,9 @@ Description: "Motivo No Pertinencia"
   * display 0..1 MS
 * valueCodeableConcept.text 0..1 MS 
 * valueCodeableConcept from VSMotivoNoPertinenciaCodigo
-*/
 
-Extension:   EstadoInterconsultaCodigoLE
-Id:          EstadoInterconsultaCodigoLE
+Extension:   ExtensionEstadoInterconsultaCodigoLE
+Id:          ExtensionEstadoInterconsultaCodigoLE
 Title:       "Estado Interconsulta Codigo"
 Description: "Estado Interconsulta Codigo"
 * value[x] only CodeableConcept
@@ -169,59 +112,6 @@ Description: "Estado Interconsulta Codigo"
   * system 0..1 MS
   * display 0..1 MS
 * valueCodeableConcept from VSEstadoInterconsulta
-
-
-
-
-// Extension:   TipoOtroTelefono
-// Id:          TipoOtroTelefono
-// Title:       "TipoOtroTelefono"
-// Description: "TipoOtroTelefono"
-// * value[x] only CodeableConcept
-// * value[x] ^short = "TipoOtroTelefonos"
-// * url 1..1 MS
-// * valueCodeableConcept.coding 1..1 MS
-//   * code 1..1 MS
-//   * system 0..1 MS
-//   * display 0..1 MS
-// * valueCodeableConcept from VSTipoOtroTelefono
-
-
-
-// Extension:   IdentidadGenero
-// Id:          IdentidadGenero
-// Title:       "Identidad de genero"
-// Description: "Identidad de genero"
-// * value[x] only CodeableConcept
-// * value[x] ^short = "Codigo de la identidad de gneero"
-// * url 1..1 MS
-// * valueCodeableConcept.coding 1..1 MS
-//   * code 1..1 MS
-//   * system 0..1 MS
-//   * display 0..1 MS
-// * valueCodeableConcept from VSIdentidaddeGenero
-
-// Extension: PuebloIndigena
-// Id: PuebloIndigena
-// Title: "Etnia a la cual pertenece"
-// Description: "Etnia a la cual pertenece"
-// * extension contains
-// 	PuebloIndigenaCodigo 0..* MS and
-// 	PuebloIndigenaPertenencia 1..1 MS
-// * url MS
-
-// * extension[PuebloIndigenaCodigo].value[x] only CodeableConcept
-// * extension[PuebloIndigenaCodigo].value[x] ^short = "Codigo de la etnia"
-// * extension[PuebloIndigenaCodigo].url 1..1 MS
-// * extension[PuebloIndigenaCodigo].valueCodeableConcept.coding 1..1 MS
-//   * code 0..1 MS
-//   * system 0..1 MS
-//   * display 0..1 MS
-// * extension[PuebloIndigenaCodigo].valueCodeableConcept.text MS
-// * extension[PuebloIndigenaCodigo].valueCodeableConcept.text ^short = "Ingresar pueblo pertenciente, en caso que no se encuentre en la lista"
-// * extension[PuebloIndigenaCodigo].valueCodeableConcept from VSPuebloIndigena
-
-// * extension[PuebloIndigenaPertenencia].value[x] only boolean
 
 Extension: ContactadoLE
 Id: Contactado
@@ -248,9 +138,6 @@ Description: "ContactadoLE"
 * extension[Contactado].value[x] only boolean
 * extension[Contactado].value[x] 1..1 MS  
 
-
-
-
 Extension: ExtBool 
 Id: ExtBool
 Title:       "ExtBool"
@@ -269,14 +156,8 @@ Title:       "ExtBool Pertinencia Atencion Box"
 Description: "ExtBool Pertinencia Atencion Box"
 * value[x] only boolean
 
-// Extension: ExtBoolAfrodescendiente 
-// Id: ExtBoolAfrodescendiente
-// Title:       "ExtBool Afrodescendiente"
-// Description: "ExtBool Afrodescendiente"
-// * value[x] only boolean
-
-Extension: ExtBoolResolutividadAPS 
-Id: ExtBoolResolutividadAPS
+Extension: ExtensionBoolResolutividadAPS 
+Id: ExtensionBoolResolutividadAPS
 Title:       "ExtBool ResolutividadAPS"
 Description: "ExtBool ResolutividadAPS"
 * value[x] only boolean
@@ -305,18 +186,11 @@ Title:       "ExtBool PersonaMayor"
 Description: "ExtBool PersonaMayor"
 * value[x] only boolean
 
-Extension: ExtBoolRequiereExamen 
-Id: ExtBoolRequiereExamen
+Extension: ExtensionBoolRequiereExamen 
+Id: ExtensionBoolRequiereExamen
 Title:       "ExtBool RequiereExamen"
 Description: "ExtBool RequiereExamen"
 * value[x] only boolean
-
-// Extension: SegundoApellido
-// Id: SegundoApellido
-// Title: "Segundo Apellido"
-// Description: "Segundo Apellido"
-// * value[x] only string
-
 
 
 Extension: ExtStringMotivoNoPertinencia 
@@ -325,8 +199,8 @@ Title:       "ExtString MotivoNoPertinencia"
 Description: "ExtString MotivoNoPertinencia"
 * value[x] only string
 
-Extension: ExtStringFundamentoPriorizacion 
-Id: ExtStringFundamentoPriorizacion
+Extension: ExtensionStringFundamentoPriorizacion 
+Id: ExtensionStringFundamentoPriorizacion
 * value[x] only string
 
 Extension: ExtInteger 
@@ -335,8 +209,8 @@ Title:       "ExtInteger"
 Description: "ExtInteger"
 * value[x] only integer
 
-Extension: OrigenInterconsulta
-Id: OrigenInterconsulta
+Extension: ExtensionOrigenInterconsulta
+Id: ExtensionOrigenInterconsulta
 Title: "Origen Interconsulta"
 Description: "Origen Interconsulta"
 * value[x] only CodeableConcept
@@ -361,8 +235,8 @@ Title: "ProblemaGES"
 Description: "Indica si corresponde a GES"
 * value[x] only boolean
 
-Extension:   EspecialidadMedicaDestinoCodigo
-Id:          EspecialidadMedicaDestinoCodigo
+Extension:   ExtensionEspecialidadMedicaDestinoCodigo
+Id:          ExtensionEspecialidadMedicaDestinoCodigo
 Title:       "Especialidad Médica Destino Código"
 Description: "Especialidad Médica Destino Código"
 * value[x] only CodeableConcept
@@ -374,8 +248,8 @@ Description: "Especialidad Médica Destino Código"
   * display 0..1 MS
 * valueCodeableConcept from VSEspecialidadMed
 
-Extension:   SubEspecialidadMedicaDestinoCodigo
-Id:          SubEspecialidadMedicaDestinoCodigo
+Extension:   ExtensionSubEspecialidadMedicaDestinoCodigo
+Id:          ExtensionSubEspecialidadMedicaDestinoCodigo
 Title:       "SubEspecialidad Médica Destino Código"
 Description: "SubEspecialidad Médica Destino Código"
 * value[x] only CodeableConcept
@@ -388,8 +262,8 @@ Description: "SubEspecialidad Médica Destino Código"
 * valueCodeableConcept from VSEspecialidadMed
 * valueCodeableConcept 1..1 MS
 
-Extension: ExtBoolAtencionPreferente
-Id: ExtBoolAtencionPreferente
+Extension: ExtensionBoolAtencionPreferente
+Id: ExtensionBoolAtencionPreferente
 Title:       "ExtBool Atención Preferente"
 Description: "ExtBool ¿Hace uso de atención preferente?"
 * value[x] only boolean
@@ -431,7 +305,6 @@ Id: SexoBiologico
 Title: "Sexo Biologico del paciente"
 Description: "Sexo Biologico del paciente"
 * value[x] only CodeableConcept
-//* valueReference = Reference()
 * valueCodeableConcept ^short = "SexoBiologico"
 * valueCodeableConcept from http://hl7.org/fhir/ValueSet/administrative-gender
 
@@ -439,28 +312,18 @@ Extension: SexoNacimiento820
 Id:   SexoNacimiento820
 Title:  "Sexo de Nacimiento 820"
 Description: "Código que identifica el sexo de nacimiento de un paciente según la definición en la Norma Técnica"
-Context: PrestadorProfesionalLE
-// publisher, contact, and other metadata could be defined here using caret syntax (omitted)
+Context: PractitionerProfesionalLE
+
 * value[x] only code
 * value[x] from VSSexoBiologico (required)
 
-//Extension: IdentidadDeGenero
-//Id: IdentidadDeGenero
-//Title: "Identidad De Genero"
-//Description: "Identidad De Genero"
-//
-////* value[x] only CodeSystem
-////* valueReference = Reference()
-//* valueCodeableConcept ^short = "Identidad De Genero"
-//* valueCodeableConcept from  VSIdentidaddeGenero
 
 Extension: PueblosOriginariosPerteneciente
 Id: PueblosOriginariosPerteneciente
 Title: "PueblosOriginariosPerteneciente"
 Description: "PueblosOriginariosPerteneciente"
 
-//* value[x] only Boolean
-//* valueReference = Reference()
+* value[x] only boolean
 * valueBoolean ^short = "PueblosOriginariosPerteneciente"
 
 
@@ -497,14 +360,13 @@ Id: SituacionCalle
 Title: "SituacionCalle"
 Description: "SituacionCalle"
 
-//* value[x] only Boolean
-//* valueReference = Reference()
+* value[x] only boolean
 * valueBoolean ^short = "SituacionCalle"
 
 Extension: Mencion
 Id:   Mencion
 Title:  "Mención profesional añadida l título profesional"
 Description: "Mención profesional obtenida junto con el título, dato que se agrega en texto lible"
-Context: PrestadorProfesionalLE.qualification
-// publisher, contact, and other metadata could be defined here using caret syntax (omitted)
+Context: PractitionerProfesionalLE.qualification
+
 * value[x] only string

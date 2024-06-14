@@ -2,9 +2,9 @@ Alias: $SegundoApellido = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition
 Alias: $cl-address = https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/cl-address
 
 
-Profile: PrestadorAdministrativoLE
+Profile: PractitionerAdministrativoLE
 Parent: PrestadorCL
-Id: PrestadorAdministrativoLE
+Id: PractitionerAdministrativoLE
 Title: "Prestador Administrativo LE"
 Description: "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
 

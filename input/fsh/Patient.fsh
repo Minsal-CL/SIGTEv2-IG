@@ -12,20 +12,23 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * extension[nacionalidad] 1..1 MS
 * extension[IdentidadDeGenero] 1..1 MS
 
+* identifier 1..* MS
+* identifier ^short = "Identificador de paciente"
 * identifier.type 1..1 MS
 * identifier.type ^short = "Tipo de documento"
 * identifier.type ^definition = "Tipo de documento"
 * identifier.type ^comment = "Tipo de documento"
 * identifier.type from VSTipoIdentificador
 * identifier.type ^binding.description = "Identificadores definidos por DEIS"
+  * coding 1..1   
+    * system 0..1
+    * code 1..1
 * identifier.type.extension[paisEmisionDocumento] 1..1 MS
-
-
+* identifier.value 1..1 MS
+* identifier.value ^short = "Valor del identificador" 
 
 * gender ^short = "Sexo Registral del paciente"
 * gender 1..1 MS
-
-
 
 * address.extension contains http://hl7.org/fhir/StructureDefinition/geolocation named geolocalizacion 0..1
 * address.extension[geolocalizacion] ^short = "Dirección absoluta, es decir, latitud y longitud." 
@@ -42,6 +45,11 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * birthDate 1..1 MS
 
 * telecom 1..* MS
+* telecom.system 1..1 MS
+* telecom.system ^short = "phone | email "
+* telecom.system ^definition = "Sistema de contacto"
+* telecom.value 1..1 MS
+* telecom.value ^short = "Valor de contacto"
 * telecom.rank MS
 * telecom.rank ^short = "Orden de uso del método de contacto, siendo 1 = prioritario"
 * telecom.system ^short = "Orden de uso del método de contacto, siendo 1 = prioritario"

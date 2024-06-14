@@ -1319,7 +1319,7 @@ Description: "TerminologiasDiag"
 * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
 * include codes from system http://hl7.org/fhir/sid/icd-10
-* include codes from system http://snomed.info/sct	
+* include codes from system http://snomed.info/sct where concept descendent-of #404684003
 
 ValueSet: VSIsapres
 Id: VSIsapres

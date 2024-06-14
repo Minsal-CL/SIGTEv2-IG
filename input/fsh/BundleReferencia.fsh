@@ -35,7 +35,7 @@ Description: "Bundle Referenciar LE, recurso utilizado para transportar todos lo
 * entry[organization].resource only OrganizationLE
 * entry[organization].resource ^short = "Centro de salud que referencia la interconsulta y centro de salud hacia donde se referencia la IC"
 * entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
-* entry[practitioner].resource only PrestadorProfesionalLE
+* entry[practitioner].resource only PractitionerProfesionalLE
 * entry[practitioner].resource ^short = "Profesional que referencia la interconsulta"
 * entry[practitionerRole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
 * entry[practitionerRole].resource only PractitionerRoleLE
