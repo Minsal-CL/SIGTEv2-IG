@@ -1,10 +1,10 @@
 TiemposDeEsperaInteroperable : Validation Results
 =========================================
 
-err = 0, warn = 65, info = 1
+err = 0, warn = 65, info = 2
 IG Publisher Version: 1.5.16 Out of date - current version is 1.6.11
-Generated Tue Jun 18 19:38:52 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.2.1 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei)
- Build Errors : 27 / 4 / 0
+Generated Tue Jun 18 20:08:13 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsal.tei#0.2.1 (canonical = https://interoperabilidad.minsal.cl/fhir/ig/tei)
+ Build Errors : 26 / 4 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-CSConsecuenciaAtencionCodigo : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-CSDerivadoParaCodigo : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-CSDestinoReferenciaCodigo : 0 / 0 / 1
@@ -45,7 +45,7 @@ Generated Tue Jun 18 19:38:52 UTC 2024. FHIR version 4.0.1 for hl7.fhir.cl.minsa
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleAgendarLE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleAtenderLE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleIniciarLE : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-BundlePriorizarLE : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-BundlePriorizarLE : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleReferenciarLE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleRevisarLE : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-BundleTerminarLE : 0 / 1 / 1
@@ -138,23 +138,22 @@ ERROR: /github/workspace/output/Transacciones.html#/html/body/div/div/div/div/di
 ERROR: /github/workspace/output/Transacciones.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 500, column 68: The link 'Appointment-EjemploAppointmentAgendarSinPresentacion.html' for "Appointment Sin Presentación" cannot be resolved
 ERROR: /github/workspace/output/Transacciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 563, column 8: The link 'Bundle-EjemploBundleAtender.html' for "Ejemplo Bundle Atender" cannot be resolved
 ERROR: /github/workspace/output/Transacciones.html#/html/body/div/div/div/div/div/ul/li/a at Line 624, column 8: The link 'Bundle-EjemploBundleTerminar.html' for "Ejemplo Bundle Terminar" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 303, column 15: The link 'StructureDefinition-BundleRevisar.html' for "BundleRevisar" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 341, column 110: The link 'https://hl7chile.cl/fhir/ig/clcore/1.8.10/' for "Guia CLCore" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 404, column 15: The link 'StructureDefinition-ExamenesAnteriores.html' for "ExamenesAnteriores" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 429, column 15: The link 'StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html' for "ObservationIniciarIndiceComorbilidadLE" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 584, column 12: The link 'StructureDefinition-CorePrestadorCl.html' for "PrestadorCL" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 614, column 127: The link 'StructureDefinition-CoreOrganizacionCl.html' for "OrganiztionCL" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 614, column 201: The link 'StructureDefinition-CoreLocalizacionCl.html' for "LocalizacionCL" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 615, column 21: The link 'Organization-ORG1.html' for "Ejemplo Organización Prestadora de Salud" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 615, column 126: The link 'StructureDefinition-CoreOrganizacionCl.html' for "OrganiztionCL" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 616, column 21: The link 'Location-LocalizacionEjemploCL1.html' for "Ejemplo Localización Farmacia" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 616, column 129: The link 'StructureDefinition-CoreLocalizacionCl.html' for "LocalizacionCL" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 619, column 12: The link 'StructureDefinition-ComunasCl.html' for "Códigos para Comunas en Chile" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 620, column 12: The link 'StructureDefinition-ProvinciasCl.html' for "Códigos para Provincias en Chile" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 621, column 12: The link 'StructureDefinition-RegionesCl.html' for "Códigos para Regiones en Chile" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 622, column 12: The link 'StructureDefinition-IdContacto.html' for "Identificación del Contacto de un Paciente" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 623, column 12: The link 'StructureDefinition-VSEspecialidadesDeisCL.html' for "Especialidad del médico principal" cannot be resolved
-ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 624, column 12: The link 'StructureDefinition-ContactoParticipantes.html' for "Contacto de los participantes secundarios del encuentro" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 363, column 110: The link 'https://hl7chile.cl/fhir/ig/clcore/1.8.10/' for "Guia CLCore" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 426, column 15: The link 'StructureDefinition-ExamenesAnteriores.html' for "ExamenesAnteriores" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 451, column 15: The link 'StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html' for "ObservationIniciarIndiceComorbilidadLE" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 606, column 12: The link 'StructureDefinition-CorePrestadorCl.html' for "PrestadorCL" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 636, column 127: The link 'StructureDefinition-CoreOrganizacionCl.html' for "OrganiztionCL" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 636, column 201: The link 'StructureDefinition-CoreLocalizacionCl.html' for "LocalizacionCL" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 637, column 21: The link 'Organization-ORG1.html' for "Ejemplo Organización Prestadora de Salud" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 637, column 126: The link 'StructureDefinition-CoreOrganizacionCl.html' for "OrganiztionCL" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 638, column 21: The link 'Location-LocalizacionEjemploCL1.html' for "Ejemplo Localización Farmacia" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/a at Line 638, column 129: The link 'StructureDefinition-CoreLocalizacionCl.html' for "LocalizacionCL" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 641, column 12: The link 'StructureDefinition-ComunasCl.html' for "Códigos para Comunas en Chile" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 642, column 12: The link 'StructureDefinition-ProvinciasCl.html' for "Códigos para Provincias en Chile" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 643, column 12: The link 'StructureDefinition-RegionesCl.html' for "Códigos para Regiones en Chile" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 644, column 12: The link 'StructureDefinition-IdContacto.html' for "Identificación del Contacto de un Paciente" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 645, column 12: The link 'StructureDefinition-VSEspecialidadesDeisCL.html' for "Especialidad del médico principal" cannot be resolved
+ERROR: /github/workspace/output/historial_de_cambios.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 646, column 12: The link 'StructureDefinition-ContactoParticipantes.html' for "Contacto de los participantes secundarios del encuentro" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
@@ -211,6 +210,7 @@ WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fh
 == fsh-generated/resources/StructureDefinition-BundleIniciarLE.json ==
 WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleIniciarLE'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-BundlePriorizarLE.json ==
+INFORMATION: StructureDefinition.snapshot.element[15]: The slice definition for Bundle.entry has a maximum of 5 but the slices add up to a maximum of 7. Check that this is what is intended
 WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundlePriorizarLE'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-BundleReferenciarLE.json ==
 WARNING: StructureDefinition.where(url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/BundleReferenciarLE'): The Implementation Guide contains no examples for this profile

@@ -5755,7 +5755,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"BundlePriorizarLE","Bundle.entry:practitionerRole","Bundle.entry","practitionerRole","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"BundlePriorizarLE","Bundle.entry:practitionerRole","Bundle.entry","practitionerRole","","",1,2,"","","Y","BackboneElement {[]} {[]}
 ","Entrada en el Bundle: contendrá un recurso PractitionerRole","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "BundlePriorizarLE","Bundle.entry:practitionerRole.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -5873,7 +5873,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"BundlePriorizarLE","Bundle.entry:organization","Bundle.entry","organization","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"BundlePriorizarLE","Bundle.entry:organization","Bundle.entry","organization","","",1,2,"","","Y","BackboneElement {[]} {[]}
 ","Entrada en el Bundle: contendrá un recurso Organization","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "BundlePriorizarLE","Bundle.entry:organization.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -7301,7 +7301,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"BundleRevisarLE","Bundle.entry:practitionerRole","Bundle.entry","practitionerRole","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"BundleRevisarLE","Bundle.entry:practitionerRole","Bundle.entry","practitionerRole","","",1,2,"","","Y","BackboneElement {[]} {[]}
 ","Entrada en el Bundle: contendrá un recurso PractitionerRole","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "BundleRevisarLE","Bundle.entry:practitionerRole.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -7419,7 +7419,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","OperationOutcome with hints and warnings (for batch/transaction)","An OperationOutcome containing hints and warnings produced as part of processing this entry in a batch or transaction.","For a POST/PUT operation, this is the equivalent outcome that would be returned for prefer = operationoutcome - except that the resource is always returned whether or not the outcome is returned.
 
 This outcome is not used for error responses in batch/transaction, only for hints and warnings. In a batch operation, the error will be in Bundle.entry.response, and for transaction, there will be a single OperationOutcome instead of a bundle in the case of an error.","","","","","","","","",,,,,"",,,,"Bundle.entry.response.outcome",0,1,"",""
-"BundleRevisarLE","Bundle.entry:organization","Bundle.entry","organization","","",1,1,"","","Y","BackboneElement {[]} {[]}
+"BundleRevisarLE","Bundle.entry:organization","Bundle.entry","organization","","",1,2,"","","Y","BackboneElement {[]} {[]}
 ","Entrada en el Bundle: contendrá un recurso Organization","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"",,,,"Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "BundleRevisarLE","Bundle.entry:organization.id","Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -10539,7 +10539,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The source of the data entry","The person or device that performed the data entry leading to this message. When there is more than one candidate, pick the most proximal to the message. Can provide other enterers in extensions.","Usually only for the request but can be used in a response.","Need to know for audit/traceback requirements and possibly for authorization.","","","","","","","",,,,,"",,,,"MessageHeader.enterer",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MessageHeaderLE","MessageHeader.author","MessageHeader.author","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerRoleLE]]}
-","Referencia al rol del profesional que realiza la atención sanitaria el nivel primario","The logical author of the message - the person or device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions.","Usually only for the request but can be used in a response.","Need to know for audit/traceback requirements and possibly for authorization.","","","","","","","",,,,,"",,,,"MessageHeader.author",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Referencia al rol del profesional que realiza la acción asociada al evento.","The logical author of the message - the person or device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions.","Usually only for the request but can be used in a response.","Need to know for audit/traceback requirements and possibly for authorization.","","","","","","","",,,,,"",,,,"MessageHeader.author",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "MessageHeaderLE","MessageHeader.source","MessageHeader.source","","","",1,1,"","","Y","BackboneElement {[]} {[]}
 ","Message source application","The source application from which this message originated.","","Allows replies, supports audit.","","","","","","","",,,,,"",,,,"MessageHeader.source",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -14959,20 +14959,20 @@ Ratio {[]} {[]}Range {[]} {[]}","Service amount","An amount of service being req
 ","Encounter in which the request was created","An encounter that provides additional information about the healthcare context in which this request is made.","","","","","","","","","",,,,,"",,,,"ServiceRequest.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ServiceRequestExamenLE","ServiceRequest.occurrence[x]","ServiceRequest.occurrence[x]","","schedule
-","",1,1,"","","Y","dateTime {[]} {[]}
-","When service should occur","The date/time at which the requested service should occur.","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","ServiceRequest.occurrence[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","",0,1,"","","Y","dateTime {[]} {[]}
+Period {[]} {[]}Timing {[]} {[]}","When service should occur","The date/time at which the requested service should occur.","","","","","","","","","",,,,,"","type:$this}
+","",,"open","ServiceRequest.occurrence[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ServiceRequestExamenLE","ServiceRequest.occurrence[x]:occurrenceDateTime","ServiceRequest.occurrence[x]","occurrenceDateTime","schedule
-","",1,1,"Y","","Y","dateTime {[]} {[]}
+","",0,1,"Y","","Y","dateTime {[]} {[]}
 ","Fecha y hora en que se emite la solicitud de estudio. El formato corresponde a año, mes, día y hora (hh:mm) y se representa de la siguiente forma: YYYY-MM-DDTHH:MMZ","The date/time at which the requested service should occur.","","","","","","","","","",,,,,"",,,,"ServiceRequest.occurrence[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ServiceRequestExamenLE","ServiceRequest.asNeeded[x]","ServiceRequest.asNeeded[x]","","","",0,1,"","","Y","boolean {[]} {[]}
 CodeableConcept {[]} {[]}","Preconditions for service","If a CodeableConcept is present, it indicates the pre-condition for performing the service.  For example ""pain"", ""on flare-up"", etc.","","","","","","","","","",,"example","A coded concept identifying the pre-condition that should hold prior to performing a procedure.  For example ""pain"", ""on flare-up"", etc.","http://hl7.org/fhir/ValueSet/medication-as-needed-reason","",,,,"ServiceRequest.asNeeded[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ServiceRequestExamenLE","ServiceRequest.authoredOn","ServiceRequest.authoredOn","","orderedOn
-","",0,1,"","","Y","dateTime {[]} {[]}
-","Date request signed","When the request transitioned to being actionable.","","","","","","","","","",,,,,"",,,,"ServiceRequest.authoredOn",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","",1,1,"Y","","Y","dateTime {[]} {[]}
+","Fecha en que se solicita el examen. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ","When the request transitioned to being actionable.","","","","","","","","","",,,,,"",,,,"ServiceRequest.authoredOn",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ServiceRequestExamenLE","ServiceRequest.requester","ServiceRequest.requester","","author
 orderer","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE]]}

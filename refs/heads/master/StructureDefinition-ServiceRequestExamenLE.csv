@@ -147,20 +147,20 @@ Ratio {[]} {[]}Range {[]} {[]}","Service amount","An amount of service being req
 ","Encounter in which the request was created","An encounter that provides additional information about the healthcare context in which this request is made.","","","","","","","","","",,,,,"",,,,"ServiceRequest.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.encounter","PV1",".inboundRelationship(typeCode=COMP].source[classCode<=PCPR, moodCode=EVN]","FiveWs.context","ClinicalStatement.encounter"
 "ServiceRequest.occurrence[x]","ServiceRequest.occurrence[x]","","schedule
-","",1,1,"","","Y","dateTime {[]} {[]}
-","When service should occur","The date/time at which the requested service should occur.","","","","","","","","","",,,,,"","type:$this}
-","",,"closed","ServiceRequest.occurrence[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","",0,1,"","","Y","dateTime {[]} {[]}
+Period {[]} {[]}Timing {[]} {[]}","When service should occur","The date/time at which the requested service should occur.","","","","","","","","","",,,,,"","type:$this}
+","",,"open","ServiceRequest.occurrence[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.occurrence[x]","TQ1/TQ2, OBR-7/OBR-8",".effectiveTime","FiveWs.planned","Procedure.procedureSchedule"
 "ServiceRequest.occurrence[x]:occurrenceDateTime","ServiceRequest.occurrence[x]","occurrenceDateTime","schedule
-","",1,1,"Y","","Y","dateTime {[]} {[]}
+","",0,1,"Y","","Y","dateTime {[]} {[]}
 ","Fecha y hora en que se emite la solicitud de estudio. El formato corresponde a año, mes, día y hora (hh:mm) y se representa de la siguiente forma: YYYY-MM-DDTHH:MMZ","The date/time at which the requested service should occur.","","","","","","","","","",,,,,"",,,,"ServiceRequest.occurrence[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.occurrence[x]","TQ1/TQ2, OBR-7/OBR-8",".effectiveTime","FiveWs.planned","Procedure.procedureSchedule"
 "ServiceRequest.asNeeded[x]","ServiceRequest.asNeeded[x]","","","",0,1,"","","Y","boolean {[]} {[]}
 CodeableConcept {[]} {[]}","Preconditions for service","If a CodeableConcept is present, it indicates the pre-condition for performing the service.  For example ""pain"", ""on flare-up"", etc.","","","","","","","","","",,"example","A coded concept identifying the pre-condition that should hold prior to performing a procedure.  For example ""pain"", ""on flare-up"", etc.","http://hl7.org/fhir/ValueSet/medication-as-needed-reason","",,,,"ServiceRequest.asNeeded[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","boolean: precondition.negationInd (inversed - so negationInd = true means asNeeded=false CodeableConcept: precondition.observationEventCriterion[code=""Assertion""].value","Proposal.prnReason.reason"
 "ServiceRequest.authoredOn","ServiceRequest.authoredOn","","orderedOn
-","",0,1,"","","Y","dateTime {[]} {[]}
-","Date request signed","When the request transitioned to being actionable.","","","","","","","","","",,,,,"",,,,"ServiceRequest.authoredOn",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","",1,1,"Y","","Y","dateTime {[]} {[]}
+","Fecha en que se solicita el examen. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ","When the request transitioned to being actionable.","","","","","","","","","",,,,,"",,,,"ServiceRequest.authoredOn",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.authoredOn","ORC.9,  RF1-7 / RF1-9",".participation[typeCode=AUT].time","FiveWs.recorded","Proposal.proposedAtTime"
 "ServiceRequest.requester","ServiceRequest.requester","","author
 orderer","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PractitionerProfesionalLE]]}
