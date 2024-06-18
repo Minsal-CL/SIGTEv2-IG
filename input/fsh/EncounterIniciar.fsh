@@ -8,7 +8,8 @@ Description: "Encounter Iniciar LE recurso que se utiliza para representar el en
 
 * extension contains ExtensionConsecuenciaAtencionCodigo named ConsecuenciaAtencionCodigo 0..1 MS
 * extension[ConsecuenciaAtencionCodigo] ^short = "Código de la consecuencia de la atención"
-* extension[ConsecuenciaAtencionCodigo].valueCodeableConcept = #3
+* extension[ConsecuenciaAtencionCodigo].valueCodeableConcept.coding.code = #3
+
 
 * status MS
 * status ^short = "Estado actual del encuentro"
