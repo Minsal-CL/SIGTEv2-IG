@@ -47,8 +47,6 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains ExtensionBoolRequiereExamen named RequiereExamen 0..1 MS
 * extension contains ExtensionBoolAtencionPreferente named AtencionPreferente 0..1 MS
 
-// ServiceRequest Iniciar
-
 * extension contains ExtensionBoolResolutividadAPS named ResolutividadAPS 0..1 MS
 * extension[ResolutividadAPS] ^short = "Programa de Resolutividad local."
 
@@ -71,9 +69,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension[PertinenciaInterconsulta] ^short = "Descripción de la evaluación de pertinencia de la interconsulta"
 
 
-// fin
-
-* authoredOn 1..1 MS
+* authoredOn 0..1 MS
 * authoredOn ^short = "Fecha en que se solicita la Interconsulta. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ"
 
 * reasonCode 0..1 MS 
@@ -107,8 +103,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * category ^short = "Modalidad de atención"
 * category from VSModalidadAtencionCodigo
 
-
-* code 1..1 MS
+* code 0..1 MS
   * coding 1..1 MS
   * coding ^short = "Códigos definidos por un sistema terminológico"
     * code 1..1 MS
@@ -118,17 +113,17 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
     * system 0..1 MS
     * system ^short = "Sistema terminológico, url/uri/uuid"
 * code ^short = "Correspondencia al servicio que se requiere."
-* code from VSServicioRequerido
+* code from VSServicioRequerido (required)
 
 * subject only Reference(PatientLE)
 
 * encounter only Reference(EncounterIniciarLE)
 * encounter ^short = "Referencia al encuentro que da Iniciar a la interconsulta" 
-* requester 1..1 MS
+* requester 0..1 MS
 * requester ^short = "Rol del médico que solicita la interconsulta"
 * requester only Reference(PractitionerRoleLE)
 
-* performer 1..1 MS
+* performer 0..1 MS
 * performer ^short = "Rol especialista que resuelve la solicitud de interconsulta"
 * performer only Reference(PractitionerRoleLE)
 
@@ -138,17 +133,24 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * supportingInfo ^slicing.discriminator.path = "resolve()"
 * supportingInfo ^slicing.rules = #open
 * supportingInfo ^slicing.description = "Slice creado para almacenar referencias"
-* supportingInfo contains DiagnosticoInicio 0..1 MS 
-and ProblemaGES 0..1 MS and TipoAlergia 0..* MS and IndiceComorbilidad 0..1 MS
-and Cuidador 0..1 MS and Discapacidad 1..1 MS and Prevision 0..1 MS and motivoDerivacion 0..1 MS and SolicitudExamen 0..1 MS
-and ResultadoExamen 0..* MS
+* supportingInfo contains 
+   DiagnosticoInicio 0..1 MS 
+   and TipoAlergia 0..* MS 
+   and IndiceComorbilidad 0..1 MS
+   and Cuidador 0..1 MS 
+   and Discapacidad 1..1 MS 
+   and Prevision 0..1 MS 
+   and motivoDerivacion 0..1 MS 
+   and SolicitudExamen 0..* MS
+   and ResultadoExamen 0..* MS
+ //and ProblemaGES 0..1 MS
 
 * supportingInfo[DiagnosticoInicio] only Reference(ConditionDiagnosticoLE)
 * supportingInfo[DiagnosticoInicio] ^short = "Referencia a la condición que especifica el diagnóstico inicial por el cual se emite la IC"
 * supportingInfo[IndiceComorbilidad] only Reference(ObservationIndiceComorbilidadLE)
 * supportingInfo[IndiceComorbilidad] ^short = "Referencia al indice de comorbilidad"
-* supportingInfo[ProblemaGES] only Reference(ConditionIniciarGesLE)
-* supportingInfo[ProblemaGES] ^short = "Referencia a la condición que especifica si es sospecha de GES"
+// * supportingInfo[ProblemaGES] only Reference(ConditionIniciarGesLE)
+// * supportingInfo[ProblemaGES] ^short = "Referencia a la condición que especifica si es sospecha de GES"
 * supportingInfo[TipoAlergia] only Reference(AllergyIntoleranceIniciarLE)
 * supportingInfo[TipoAlergia] ^short = "Referencia  a los tipos de alergia"
 * supportingInfo[Cuidador] only Reference(ObservationIniciarCuidadorLE)
@@ -157,8 +159,8 @@ and ResultadoExamen 0..* MS
 //* supportingInfo[DocCuidador] ^short = "Referencia al documento que acredita que el paciente es cuidador"
 * supportingInfo[Discapacidad] only Reference(ObservationDiscapacidadLE)
 * supportingInfo[Discapacidad] ^short = "Referencia a la observación que indica si el paciente tiene discapacidad"
-* supportingInfo[Prevision] only Reference(CoverageLE)
-* supportingInfo[Prevision] ^short = "Referencia a la previsión del paciente"
+// * supportingInfo[Prevision] only Reference(CoverageLE)
+// * supportingInfo[Prevision] ^short = "Referencia a la previsión del paciente"
 * supportingInfo[motivoDerivacion] only Reference(QuestionnaireResponseIniciarLE)
 * supportingInfo[motivoDerivacion] ^short = "Referencia al motivo de derivación"
 * supportingInfo[SolicitudExamen] only Reference(ServiceRequestExamenLE)

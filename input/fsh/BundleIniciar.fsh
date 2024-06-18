@@ -11,7 +11,7 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * type MS
 * type ^short = "Indica de qué tipo es el Bundle, en este caso de tipo message"
 * type = #message
-* timestamp MS
+* timestamp 1..1 MS
 * timestamp ^short = "Cuando el Bundle fue armado"
 
 * entry ^slicing.discriminator.type = #profile
@@ -27,15 +27,17 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
         and observationComorbilidad 0..1
         and observationDiscapacidad 1..1 
         and observationCuidador 0..1 
-        and conditionGes 0..1 
+        // and conditionGes 0..1 
         and ObservationResultadoExamen 0..* 
-        and allergyintolerance 0..1
+        and allergyintolerance 0..*
         and practitionerrole 1..1
         and practitioner 1..1
         and organization 1..1
         //and docCuidador 0..1
         and prevision 0..1
         and motivoDerivacion 0..1
+        and SolicitudExamen 0..*
+
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
 * entry[messageheader].resource only MessageHeaderLE
 * entry[messageheader].resource ^short = "Cabecera del mensaje que facilita el seguimiento, debe ser siempre el primer entry en Bundle.type = message"
@@ -60,9 +62,9 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry[observationCuidador] ^short = "Entrada en el Bundle: contendrá un recurso Observation de Cuidador"
 * entry[observationCuidador].resource only ObservationIniciarCuidadorLE
 * entry[observationCuidador].resource ^short = "Observación para indicar si el paciente es cuidador o no"
-* entry[conditionGes] ^short = "Entrada en el Bundle: contendrá un recurso Condition"
-* entry[conditionGes].resource only ConditionIniciarGesLE
-* entry[conditionGes].resource ^short = "Se indica si la Condición que especifica si es diagnostico factible de considerarse bajo GES"
+// * entry[conditionGes] ^short = "Entrada en el Bundle: contendrá un recurso Condition"
+// * entry[conditionGes].resource only ConditionIniciarGesLE
+// * entry[conditionGes].resource ^short = "Se indica si la Condición que especifica si es diagnostico factible de considerarse bajo GES"
 * entry[allergyintolerance] ^short = "Entrada en el Bundle: contendrá un recurso AllergyIntolerance"
 * entry[allergyintolerance].resource only AllergyIntoleranceIniciarLE
 * entry[allergyintolerance].resource ^short = "Alergias que padece el paciente."
@@ -81,9 +83,12 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 //* entry[docCuidador] ^short = "Entrada en el Bundle: contendrá un recurso DocumentReference"
 //* entry[docCuidador].resource only DocumentReferenceIniciarLE
 //* entry[docCuidador].resource ^short = "Documento que acredita que el paciente es cuidador."
-* entry[prevision] ^short = "Entrada en el Bundle: contendrá un recurso Coverage"
-* entry[prevision].resource only CoverageLE
-* entry[prevision].resource ^short = "Información de la previsión del paciente"
+// * entry[prevision] ^short = "Entrada en el Bundle: contendrá un recurso Coverage"
+// * entry[prevision].resource only CoverageLE
+// * entry[prevision].resource ^short = "Información de la previsión del paciente"
 * entry[motivoDerivacion] ^short = "Entrada en el Bundle: contendrá un recurso QuestionnaireResponse"
 * entry[motivoDerivacion].resource only QuestionnaireResponseIniciarLE
 * entry[motivoDerivacion].resource ^short = "Recurso donde se registra el motivo de la derivación del paciente"
+* entry[SolicitudExamen] ^short = "Entrada en el Bundle: Solicitud Examen"
+* entry[SolicitudExamen].resource only ServiceRequestExamenLE
+* entry[SolicitudExamen].resource ^short = "Solicitud de examen"

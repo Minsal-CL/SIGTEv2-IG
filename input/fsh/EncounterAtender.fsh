@@ -66,17 +66,17 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 
 * basedOn only Reference(ServiceRequestLE)
 
-* extension contains ExtBoolPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
+* extension contains ExtensionPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
 * extension[PertinenciaAtencionBox] ^short = "Pertinencia de la atención al ser evaluado por el profesional especialista"
-* extension contains ExtStringMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
+* extension contains ExtensionMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
 * extension[MotivoNoPertinencia] ^short = "Indicar Motivo de la No Pertinecia en texto libre (PertinenciaAtencionBox = false)"
 
 * participant.individual only Reference(PractitionerRoleLE)
 
 
 /*
-* extension contains ExtBoolPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
-* extension contains ExtStringMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
+* extension contains ExtensionPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
+* extension contains ExtensionMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
 
 
 

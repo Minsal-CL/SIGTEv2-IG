@@ -10,9 +10,6 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
 * extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises named Nacionalidad 0..1 MS
 * extension[SexoBiologico] 0..0 
 
-* name 1..1 MS
-* name ^short = "Nombre del prestador"
-
 * identifier 1..2
 * identifier ^short = "Identificador de identidad del Profesional.
 Corresponde a tres slices:"
@@ -30,7 +27,7 @@ Corresponde a tres slices:"
     * coding MS
     * coding ^short = "Código definido por un sistema terminológico"
       * system 0..1 MS
-      * system = #"https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
+      * system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
       * system ^short = "Sistema de codificación para el tipo de identificador"
       * code 1..1 MS
       * code = #1
@@ -42,7 +39,7 @@ Corresponde a tres slices:"
 
 * identifier[rnpi] 0..1 MS
 * identifier[rnpi] ^short = "Identificador para RNPI"
-  //* use 1..1 MS
+  //* use 0..1 MS
   //* use = #secondary
   * use ^short = "Se define el uso de este identificador"
   * use ^definition = "Se definirá este uso siempre como \"secondary\""
@@ -67,11 +64,21 @@ Corresponde a tres slices:"
 
 * active MS
 
+* name 1..1 MS
+* name ^short = "Nombre del prestador"
+  * family 1..1 MS
+  * family ^short = "Apellidos del Profesional"
+  * given 1..* MS 
+  * given ^short = "Nombres del Profesional"
+
 * birthDate 1..1 MS
 * birthDate ^short = "Fecha de nacimiento del prestador profesional. El formato debe ser YYYY-MM-DD"
 * birthDate ^definition = "Fecha de nacimiento del prestador profesional. El formato debe ser YYYY-MM-DD (Ej: 1996-08-21)"
 
 * telecom MS
+  * system 1..1 MS
+  * system ^short = "Debe utilizar \"phone\" o \"email\"."
+  * value 1..1 MS
   * rank 0..1 MS
     * ^short = "Ranking de preferencia en el uso del contacto"
     * ^definition = "Ranking de preferencia en el uso del contacto"

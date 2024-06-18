@@ -2,6 +2,8 @@ Extension:   ExtensionMotivoCierreInterconsulta
 Id:          ExtensionMotivoCierreInterconsulta
 Title:       "Motivo Cierre Interconsulta"
 Description: "Motivo Cierre Interconsulta"
+Context: ServiceRequestLE
+
 * value[x] only CodeableConcept
 * value[x] ^short = "Motivo Cierre Interconsulta"
 * url 1..1 MS
@@ -16,6 +18,7 @@ Extension:   ExtensionConsecuenciaAtencionCodigo
 Id:          ExtensionConsecuenciaAtencionCodigo
 Title:       "Consecuencia Atención Codigo"
 Description: "Consecuencia Atención Codigo"
+Context: EncounterAtenderLE, EncounterIniciarLE
 * value[x] only CodeableConcept
 * value[x] ^short = "Código Consecuencia Atención"
 * url 1..1 MS
@@ -29,7 +32,8 @@ Description: "Consecuencia Atención Codigo"
 Extension:   ExtensionMediodeContacto
 Id:          ExtensionMediodeContacto
 Title:       "MediodeContacto"
-Description: "MediodeContacto"
+Description: "Medio de Contacto"
+Context: AppointmentAgendarLE
 
 * value[x] only CodeableConcept
 * value[x] ^short = "MediodeContacto"
@@ -48,7 +52,6 @@ Extension:   ExtensionPertinenciaInterconsulta
 Id:          ExtensionPertinenciaInterconsulta
 Title:       "Pertinencia Interconsulta"
 Description: "Pertinencia Interconsulta"
-
 Context: ServiceRequestLE
 
 * extension contains
@@ -70,40 +73,14 @@ Context: ServiceRequestLE
 * extension[MotivoNoPertinencia].value[x] ^short = "Motivo No Pertinencia"
 * extension[MotivoNoPertinencia].url 1..1 MS
 
-Extension:   EvaluacionPertinencia
-Id:          EvaluacionPertinencia
-Title:       "Evaluacion Pertinencia"
-Description: "Evaluacion Pertinencia"
-* value[x] only CodeableConcept
-* value[x] ^short = "Evaluación de la pertinencia de la solicitud de interconsulta"
-* url 1..1 MS
-* valueCodeableConcept from VSPertinenciaInterconsulta
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept.coding 1..1 MS
-  * code 1..1 MS
-  * system 0..1 MS
-  * display 0..1 MS
 
-Extension:   MotivoNoPertinencia
-Id:          MotivoNoPertinencia
-Title:       "Motivo No Pertinencia"
-Description: "Motivo No Pertinencia"
-// * value[x] only string
-// * value[x] ^short = "Motivo No Pertinencia"
-// * url 1..1 MS
-* value[x] only CodeableConcept
-* valueCodeableConcept 1..1 MS
-* valueCodeableConcept.coding MS
-  * code 1..1 MS
-  * system 0..1 MS
-  * display 0..1 MS
-* valueCodeableConcept.text 0..1 MS 
-* valueCodeableConcept from VSMotivoNoPertinenciaCodigo
 
 Extension:   ExtensionEstadoInterconsultaCodigoLE
 Id:          ExtensionEstadoInterconsultaCodigoLE
 Title:       "Estado Interconsulta Codigo"
 Description: "Estado Interconsulta Codigo"
+Context: ServiceRequestLE
+
 * value[x] only CodeableConcept
 * value[x] ^short = "Estado Interconsulta Codigo"
 * url 1..1 MS
@@ -113,10 +90,11 @@ Description: "Estado Interconsulta Codigo"
   * display 0..1 MS
 * valueCodeableConcept from VSEstadoInterconsulta
 
-Extension: ContactadoLE
+Extension: ExtensionContactadoLE
 Id: Contactado
-Title: "ContactadoLE"
-Description: "ContactadoLE"
+Title: "ExtensionContactadoLE"
+Description: "ExtensionContactadoLE"
+Context: AppointmentAgendarLE
 * extension contains
 	Contactado 1..1 MS and
 	MotivoNoContactabilidad 0..1 MS
@@ -138,81 +116,60 @@ Description: "ContactadoLE"
 * extension[Contactado].value[x] only boolean
 * extension[Contactado].value[x] 1..1 MS  
 
-Extension: ExtBool 
-Id: ExtBool
-Title:       "ExtBool"
-Description: "ExtBool"
-* value[x] only boolean
 
-Extension: ExtBoolSolicitudExamenes
-Id: ExtBoolSolicitudExamenes
+Extension: ExtensionSolicitudExamenes
+Id: ExtensionSolicitudExamenes
 Title:       "ExtBool Solicitud Examenes"
-Description: "ExtBool Solicitud Examenes"
+Description: "Extensión que indica si requiere solicitud examenes"
+Context: CarePlanAtenderLE, ServiceRequestLE 
 * value[x] only boolean
 
-Extension: ExtBoolPertinenciaAtencionBox 
-Id: ExtBoolPertinenciaAtencionBox
+Extension: ExtensionPertinenciaAtencionBox 
+Id: ExtensionPertinenciaAtencionBox
 Title:       "ExtBool Pertinencia Atencion Box"
 Description: "ExtBool Pertinencia Atencion Box"
+Context: EncounterAtenderLE
 * value[x] only boolean
 
 Extension: ExtensionBoolResolutividadAPS 
 Id: ExtensionBoolResolutividadAPS
 Title:       "ExtBool ResolutividadAPS"
 Description: "ExtBool ResolutividadAPS"
+Context: ServiceRequestLE
 * value[x] only boolean
 
-Extension: ExtBoolAlergia 
-Id: ExtBoolAlergia
-Title:       "ExtBool Alergia"
-Description: "ExtBool Alergia"
-* value[x] only boolean
-
-Extension: ExtBoolPresentaDiscapacidad 
-Id: ExtBoolPresentaDiscapacidad
-Title:       "ExtBool PresentaDiscapacidad"
-Description: "ExtBool PresentaDiscapacidad"
-* value[x] only boolean
-
-Extension: ExtBoolEsCuidador 
-Id: ExtBoolEsCuidador
-Title:       "ExtBool EsCuidador"
-Description: "ExtBool EsCuidador"
-* value[x] only boolean
-
-Extension: ExtBoolPersonaMayor 
-Id: ExtBoolPersonaMayor
-Title:       "ExtBool PersonaMayor"
-Description: "ExtBool PersonaMayor"
-* value[x] only boolean
 
 Extension: ExtensionBoolRequiereExamen 
 Id: ExtensionBoolRequiereExamen
 Title:       "ExtBool RequiereExamen"
 Description: "ExtBool RequiereExamen"
+Context: ServiceRequestLE 
+
 * value[x] only boolean
 
 
-Extension: ExtStringMotivoNoPertinencia 
-Id: ExtStringMotivoNoPertinencia
+Extension:    ExtensionMotivoNoPertinencia 
+Id:           ExtensionMotivoNoPertinencia
 Title:       "ExtString MotivoNoPertinencia"
-Description: "ExtString MotivoNoPertinencia"
+Description: "Extensión que declara un porque de la no pertinencia"
+Context: EncounterAtenderLE
 * value[x] only string
 
 Extension: ExtensionStringFundamentoPriorizacion 
 Id: ExtensionStringFundamentoPriorizacion
+Title: "ExtensionStringFundamentoPriorizacion"
+Description: "Extensión para fundamenta la priorización de la interconsulta"
+Context: ServiceRequestLE
 * value[x] only string
 
-Extension: ExtInteger 
-Id: ExtInteger
-Title:       "ExtInteger"
-Description: "ExtInteger"
-* value[x] only integer
+
 
 Extension: ExtensionOrigenInterconsulta
 Id: ExtensionOrigenInterconsulta
 Title: "Origen Interconsulta"
 Description: "Origen Interconsulta"
+Context: ServiceRequestLE
+
 * value[x] only CodeableConcept
 * value[x] ^short = "Codigo de la interconsulta"
 * url 1..1 MS
@@ -223,22 +180,12 @@ Description: "Origen Interconsulta"
 * valueCodeableConcept from VSorigenInterconsulta
 * valueCodeableConcept.text MS
 
-Extension: DigitoVerificador 
-Id: DigitoVerificador
-Title:       "DigitoVerificador"
-Description: "DigitoVerificador"
-* value[x] only string
-
-Extension: ProblemaGES
-Id: ProblemaGES
-Title: "ProblemaGES"
-Description: "Indica si corresponde a GES"
-* value[x] only boolean
-
 Extension:   ExtensionEspecialidadMedicaDestinoCodigo
 Id:          ExtensionEspecialidadMedicaDestinoCodigo
 Title:       "Especialidad Médica Destino Código"
 Description: "Especialidad Médica Destino Código"
+Context: ServiceRequestLE
+
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de la especialidad médica de destino"
 * url 1..1 MS
@@ -252,6 +199,8 @@ Extension:   ExtensionSubEspecialidadMedicaDestinoCodigo
 Id:          ExtensionSubEspecialidadMedicaDestinoCodigo
 Title:       "SubEspecialidad Médica Destino Código"
 Description: "SubEspecialidad Médica Destino Código"
+Context: ServiceRequestLE
+
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de la SubEspecialidad médica de destino"
 * url 1..1 MS
@@ -266,6 +215,8 @@ Extension: ExtensionBoolAtencionPreferente
 Id: ExtensionBoolAtencionPreferente
 Title:       "ExtBool Atención Preferente"
 Description: "ExtBool ¿Hace uso de atención preferente?"
+Context: ServiceRequestLE
+
 * value[x] only boolean
 
 
@@ -275,6 +226,7 @@ Extension:   PaisOrigenMPI
 Id:          PaisOrigenMPI
 Title:       "País de origen del paciente"
 Description: "País de origen del paciente"
+Context: PatientLE
 * value[x] only CodeableConcept
 * value[x] ^short = "Código de País"
 * url 1..1 MS
@@ -288,6 +240,7 @@ Description: "País de origen del paciente"
 Extension: Religion
 Title: "Religión"
 Description: "Religión"
+Context: PatientLE
 * value[x] only CodeableConcept
 * value[x] ^short = "Religión del paciente"
 * url and value[x].coding and value[x] and value[x].coding.system and value[x].coding.display and value[x].coding.code MS
@@ -300,28 +253,11 @@ Description: "Religión"
 * value[x].coding.code ^short = "Nombre de la religión"
 
 
-Extension: SexoBiologico
-Id: SexoBiologico
-Title: "Sexo Biologico del paciente"
-Description: "Sexo Biologico del paciente"
-* value[x] only CodeableConcept
-* valueCodeableConcept ^short = "SexoBiologico"
-* valueCodeableConcept from http://hl7.org/fhir/ValueSet/administrative-gender
-
-Extension: SexoNacimiento820
-Id:   SexoNacimiento820
-Title:  "Sexo de Nacimiento 820"
-Description: "Código que identifica el sexo de nacimiento de un paciente según la definición en la Norma Técnica"
-Context: PractitionerProfesionalLE
-
-* value[x] only code
-* value[x] from VSSexoBiologico (required)
-
-
 Extension: PueblosOriginariosPerteneciente
 Id: PueblosOriginariosPerteneciente
 Title: "PueblosOriginariosPerteneciente"
 Description: "PueblosOriginariosPerteneciente"
+Context: PatientLE
 
 * value[x] only boolean
 * valueBoolean ^short = "PueblosOriginariosPerteneciente"
@@ -331,6 +267,7 @@ Extension: PueblosAfrodescendiente
 Id: PueblosAfrodescendiente
 Title: "PueblosAfrodescendiente"
 Description: "PueblosAfrodescendiente"
+Context: PatientLE
 * value[x] only boolean
 * url and valueBoolean MS
 * valueBoolean 1..1
@@ -341,6 +278,7 @@ Description: "PueblosAfrodescendiente"
 Extension: PueblosOriginarios
 Title: "Pueblos Originarios"
 Description: "Almacenar si el paciente pertenece a algun pueblo originario"
+Context: PatientLE
 * value[x] only CodeableConcept
 * value[x] ^short = "Código Pueblo Originario"
 * url and value[x].coding and value[x] and value[x].coding.system and value[x].coding.display and value[x].coding.code MS
@@ -359,6 +297,7 @@ Extension: SituacionCalle
 Id: SituacionCalle
 Title: "SituacionCalle"
 Description: "SituacionCalle"
+Context: ClAddress
 
 * value[x] only boolean
 * valueBoolean ^short = "SituacionCalle"

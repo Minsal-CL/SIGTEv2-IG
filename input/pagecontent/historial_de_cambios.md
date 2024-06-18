@@ -5,6 +5,7 @@
   - Se incluye el valor encounter 1..1
   - Se Actualiza el titulo y la descripción
   - Effective[x] a EffectiveDateTime 1..1 MS
+  - Se elimino obligatoriedad del code.text y el requerido de exámenes
 
 - Perfil [ServiceRequestLE](StructureDefinition-ServiceRequestLE.html)
    - Se actualizan las extensiones de
@@ -20,6 +21,12 @@
      - PertinenciaInterconsulta -> ExtensionPertinenciaInterconsulta
    - Se actualiza referencia de ExamenesAnteriores A ObservationResultadoExamen
    - Se mueve ObservationResultadoExamen de ReasonReference a SupportInfo
+   - performer 1..1 -> 0..1
+   - requester 1..1 -> 0..1
+   - authoredOn 1..1 -> 0..1
+   - code 1..1 -> 0..1
+   
+
 - Perfil [PatientLE](StructureDefinition-PatientLE.html)
   - Identifier 1..*
   - Identifier.type.coding 1..1
@@ -31,6 +38,8 @@
    - se actualiza entry de 9..17 a 9..*
    - se actualiza entry[ObservationResultadoExamen] 0..1 a 0..*
    - edición de short observation
+   - se actualiza entry[allergyintolerance] 0..1 a 0..*
+   - se crea entry[SolicitudExamen] 0..*
 
 - ValueSet [TerminologiasDiag](ValueSet-VSTerminologiasDiag.html)
   - se filtra a hallazgos clínicos
@@ -49,7 +58,41 @@
 - Perfil [ObservationDiscapacidadLE](StructureDefinition-ObservationDiscapacidadLE.html)
  - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
  - se depreca extension ExtBoolPresentaDiscapacidad
- - se incluye el ValueBoolean a 1..1 
+ - se incluye el ValueBoolean a 1..1
+
+- Perfil **Condición GES** se depreca y se elimina cualquier referencia a él.
+
+- Perfil [CarePlan Atender LE](StructureDefinition-CarePlanAtenderLE.html)
+  - se modifica la cardinalidad de **activity[referenciaReceta]** de 0..1 -> 0..* y **activity[referenciaServiceRequestExamenLE]** 0..1 -> 0..*
+
+-  Perfil [BundleAtenderLE](StructureDefinition-BundleAtenderLE.html)
+  - Se cambia ObservationAtender LE por ObservationResultadoExamen
+  - Se incluye la solicitud de medicamento y la solicitud de exámenes.
+
+- Perfil [BundleRevisar](StructureDefinition-BundleRevisar.html)
+  - Se modifica la cardinalidad de entry[servicerequestexamen] de 0..1 -> 0..*
+
+
+- Perfil [PractitionerAdministrativoLE](StructureDefinition-PractitionerAdministrativoLE.html)
+   - Cambia cardinalidad de name.family 0..1 -> 1..1
+   - Cambia cardinalidad de name.given 0..* -> 1..*
+   - Cambia cardinalidad de telecom.system 0..1 -> 1..1
+   - Cambia cardinalidad de telecom.value 0..1 -> 1..1
+
+- [PractitionerProfesionalLE](StructureDefinition-PractitionerProfesionalLE.html)
+   - Cambia cardinalidad de name.family 0..1 -> 1..1
+   - Cambia cardinalidad de name.given 0..* -> 1..*
+   - Cambia cardinalidad de telecom.system 0..1 -> 1..1
+   - Cambia cardinalidad de telecom.value 0..1 -> 1..1
+
+- La extensión **ContactadoLE** paso a llamarse **ExtensionContactadoLE**
+- La extension **ExtBoolPertinenciaAtencionBox** paso a llamarse **ExtensionPertinenciaAtencionBox**
+- La extensión **ExtBoolSolicitudExamenes** paso a llamarse **ExtensionSolicitudExamenes**
+- La extensión **ExtStringMotivoNoPertinencia** paso a llamarse **ExtensionMotivoNoPertinencia**
+
+- En todos los Perfiles Bundle se pasas los timestamp de 0..1 -> 1..1 
+
+- Se depreca el recurso **Coverage**
 
 ### Versión 0.2.0
 
@@ -132,10 +175,10 @@
 
 - Perfil [AppointmentAgendarLE](StructureDefinition-AppointmentAgendarLE.html)
    - Se elimina el valor fijado en participant[patientLE].status = #accepted, quedando libre para el set de valores accepted | declined | tentative | needs-action
-   - Se cambia cardinalidad extension ContactadoLE 0..1 -> 1..1
+   - Se cambia cardinalidad extension ExtensionContactadoLE 0..1 -> 1..1
    - Se cambia cardinalidad create 0..1 -> 1..1
 
-- Perfil [CoverageLE](StructureDefinition-CoverageLE.html)
+- Perfil **CoverageLE**
    - Se cambia cardinalidad type 1..1 -> 0..1
    - Se remueve el valor obligatorio para type.coding.system
    - Se fija la referencia de beneficiary -> "PatientLE"
@@ -237,7 +280,7 @@
 - Se cambia nombre de VSMedioNotificacion -> VSMediodeContacto
 - Se modifican valores de CSMediodeContacto
 - Se modifican valores de CSMotivoNoContactabilidad
-- Se cambia cardinalidad en elemento de extension * extension[contactadoLE].extension[Contactado].value[x] 0..1 -> 1..1
+- Se cambia cardinalidad en elemento de extension * extension[ExtensionContactadoLE].extension[Contactado].value[x] 0..1 -> 1..1
 - Se eleminia la extension DocAcreditacionCuidadorCodigoLE
 - Se crea VSIsapres
 - Se crea CSIsapres

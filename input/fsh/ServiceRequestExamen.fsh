@@ -8,8 +8,8 @@ Description: "ServiceRequestExamen LE recurso utilizado para la representación 
 
 * identifier MS
   * value MS
-  * value ^short = "Identificador de la Interconsulta"
-* identifier ^short = "Identificador de la Interconsulta (Se asigna a nivel local)"
+  * value ^short = "Identificador de la solicitud"
+* identifier ^short = "Identificador de la solicitud"
 
 
 // OBLIGATORIOS POR ESTANDAR

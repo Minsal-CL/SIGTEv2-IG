@@ -11,7 +11,7 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * type MS
 * type ^short = "Indica de qué tipo es el Bundle, en este caso de tipo message"
 * type = #message
-* timestamp MS
+* timestamp 1..1 MS
 * timestamp ^short = "Cuando el Bundle fue armado"
 
 * entry ^slicing.discriminator.type = #profile
@@ -28,8 +28,9 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
         and carePlan 1..1
         and questionnaireResponse 1..1
         and AllergyIntolerance 0..*
-        and observation 0..*
-
+        and ObservationResultadoExamen 0..*
+        and SolicitudMedicamento 0..*
+        and SolicitudExamen 0..*
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
 * entry[messageheader].resource only MessageHeaderLE
@@ -55,9 +56,15 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[questionnaireResponse] ^short = "Entrada en el Bundle: contendrá un recurso QuestionnaireResponse"
 * entry[questionnaireResponse].resource only QuestionnaireResponseAtenderLE  
 * entry[questionnaireResponse].resource ^short = "Recurso utilizado para guardar la anamnesis del paciente"
-* entry[observation] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
-* entry[observation].resource only ObservationAtenderLE  
-* entry[observation].resource ^short = "Recurso para indicar el resultado de los examenes realizados con anterioridad"
+* entry[ObservationResultadoExamen] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
+* entry[ObservationResultadoExamen].resource only ObservationResultadoExamen  
+* entry[ObservationResultadoExamen].resource ^short = "Recurso para indicar el resultado de los examenes realizados con anterioridad"
 * entry[AllergyIntolerance] ^short = "Entrada en el Bundle: contendrá un recurso AllergyIntolerance"
 * entry[AllergyIntolerance].resource only AllergyIntoleranceIniciarLE
 * entry[AllergyIntolerance].resource ^short = "Recurso para indicar si el paciente posee alguna alergia"
+* entry[SolicitudMedicamento] ^short = "Entrada en el Bundle: Solicitud Medicamento"
+* entry[SolicitudMedicamento].resource only MedicationRequest
+* entry[SolicitudMedicamento].resource ^short = "Recurso base del estandar"
+* entry[SolicitudExamen] ^short = "Entrada en el Bundle: Solicitud Examen"
+* entry[SolicitudExamen].resource only ServiceRequestExamenLE
+* entry[SolicitudExamen].resource ^short = "Solicitud de examen"

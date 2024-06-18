@@ -11,20 +11,20 @@ Description: "Bundle Revisar LE recurso utilizado para transportar todos los dat
 * type MS
 * type ^short = "Indica de qué tipo es el Bundle, en este caso de tipo message"
 * type = #message
-* timestamp MS
+* timestamp 1..1 MS
 * timestamp ^short = "Cuando el Bundle fue armado"
 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
-* entry 7..8 MS
+* entry 7..* MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
         and practitioner 1..1
         and practitionerRole 1..1
         and organization 1..1
-        and servicerequestexamen 0..1
+        and servicerequestexamen 0..*
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
 * entry[messageheader].resource only MessageHeaderLE

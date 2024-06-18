@@ -8,9 +8,6 @@ Id: PractitionerAdministrativoLE
 Title: "Prestador Administrativo LE"
 Description: "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
 
-* name 1..1 MS
-* name ^short = "Nombre del prestador administrativo"
-
 * identifier[run] 1..1
 * identifier[run].type 1..1 MS
 * identifier[run].type.coding 1..1 MS
@@ -20,13 +17,20 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 * identifier[pasaporte] 0..0
 * identifier[otro] 0..0
 
+* name 1..1 MS
+* name ^short = "Nombre del prestador administrativo"
+  * family 1..1 MS
+  * family ^short = "Apellidos del administrativo"
+  * given 1..* MS 
+  * given ^short = "Nombres del administrativo"
+
 * active MS
 
 * telecom MS
 * telecom ^definition = "Contacto del prestador"
-  * system MS
+  * system 1..1 MS
   * system ^short = "Debe utilizar \"phone\" o \"email\"."
-  * value MS
+  * value 1..1 MS
   * use MS
   * use ^short = "Uso del contacto descrito. Puede usar \"home | work | temp | old | mobile\""
   * rank 0..1 MS
@@ -50,6 +54,10 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 * qualification[TituloProfesional] 0..*
 * qualification[EspecialidadMedica] 0..0
 * qualification[Subespecialidad] 0..0
+
+* qualification[TituloProfesional]
+  * code
+    * text ^short = "Título Profesional como texto libre"
 
 * birthDate 0..1 MS
 * birthDate ^short = "Fecha de nacimiento del prestador administrativo. El formato debe ser YYYY-MM-DD"

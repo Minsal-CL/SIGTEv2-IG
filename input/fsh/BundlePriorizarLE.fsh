@@ -11,7 +11,7 @@ Description: "Bundle Priorizar LE, recurso utilizado para transportar todos los 
 * type MS
 * type ^short = "Indica de qué tipo es el Bundle, en este caso de tipo message"
 * type = #message
-* timestamp MS
+* timestamp 1..1 MS
 * timestamp ^short = "Cuando el Bundle fue armado"
 
 * entry ^slicing.discriminator.type = #profile
