@@ -25,7 +25,12 @@
    - requester 1..1 -> 0..1
    - authoredOn 1..1 -> 0..1
    - code 1..1 -> 0..1
-   
+
+- Perfil [ServiceRequestExamenLE](StructureDefinition-ServiceRequestExamenLE.html)
+  - Se modifica la descripción del identifier
+  - authoredOn 0..1 -> 1..1
+  - ocurrenceDateTime 1..1 -> 0..1
+
 
 - Perfil [PatientLE](StructureDefinition-PatientLE.html)
   - Identifier 1..*
@@ -69,9 +74,14 @@
   - Se cambia ObservationAtender LE por ObservationResultadoExamen
   - Se incluye la solicitud de medicamento y la solicitud de exámenes.
 
-- Perfil [BundleRevisar](StructureDefinition-BundleRevisar.html)
+- Perfil [BundleRevisarLE](StructureDefinition-BundleRevisarLE.html)
   - Se modifica la cardinalidad de entry[servicerequestexamen] de 0..1 -> 0..*
+  - Se modifica la cardinalidad de entry[practitionerRole] de 1..1 -> 1..2
+  - Se modifica la cardinalidad de entry[organization] de 1..1 -> 1..2
 
+- Perfil [BundlePriorizarLE](StructureDefinition-BundlePriorizarLE.html)
+  - Se modifica la cardinalidad de entry[practitionerRole] de 1..1 -> 1..2
+  - Se modifica la cardinalidad de entry[organization] de 1..1 -> 1..2
 
 - Perfil [PractitionerAdministrativoLE](StructureDefinition-PractitionerAdministrativoLE.html)
    - Cambia cardinalidad de name.family 0..1 -> 1..1
@@ -79,7 +89,7 @@
    - Cambia cardinalidad de telecom.system 0..1 -> 1..1
    - Cambia cardinalidad de telecom.value 0..1 -> 1..1
 
-- [PractitionerProfesionalLE](StructureDefinition-PractitionerProfesionalLE.html)
+- Perfil [PractitionerProfesionalLE](StructureDefinition-PractitionerProfesionalLE.html)
    - Cambia cardinalidad de name.family 0..1 -> 1..1
    - Cambia cardinalidad de name.given 0..* -> 1..*
    - Cambia cardinalidad de telecom.system 0..1 -> 1..1
@@ -93,6 +103,9 @@
 - En todos los Perfiles Bundle se pasas los timestamp de 0..1 -> 1..1 
 
 - Se depreca el recurso **Coverage**
+
+- Perfil[MessageHeaderLE](StructureDefinition-MessageHeaderLE.html)
+  - Se cambia la descripción del author
 
 ### Versión 0.2.0
 

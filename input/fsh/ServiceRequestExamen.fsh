@@ -2,7 +2,7 @@ Profile: ServiceRequestExamenLE
 Parent: ServiceRequest
 Id: ServiceRequestExamenLE
 Title: "Solicitud de Examen LE"
-Description: "ServiceRequestExamen LE recurso utilizado para la representación de los datos del examen"
+Description: "ServiceRequestExamen LE recurso utilizado para la representación de la solicitud de examen"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
@@ -25,7 +25,7 @@ Description: "ServiceRequestExamen LE recurso utilizado para la representación 
 * subject ^short = "Referencia al paciente"
 * subject only Reference(PatientLE)
 
-* occurrenceDateTime 1..1 MS
+* occurrenceDateTime 0..1 MS
 * occurrenceDateTime ^short = "Fecha y hora en que se emite la solicitud de estudio. El formato corresponde a año, mes, día y hora (hh:mm) y se representa de la siguiente forma: YYYY-MM-DDTHH:MMZ"
 
 * requester 1..1 MS 
@@ -56,3 +56,6 @@ Description: "ServiceRequestExamen LE recurso utilizado para la representación 
   * text ^short  = "Examen solicitado en texto libre" 
 * code ^short = "Que es lo que se está solicitando"
 * code from CodigoExamen
+
+* authoredOn 1..1 MS
+* authoredOn ^short = "Fecha en que se solicita el examen. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ"

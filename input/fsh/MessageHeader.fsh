@@ -15,7 +15,7 @@ Description: "MessageHeaderLE"
 * source.endpoint ^short = "Dirección o ID de origen del mensaje real."
 
 * author 1..1 MS
-* author ^short = "Referencia al rol del profesional que realiza la atención sanitaria el nivel primario"
+* author ^short = "Referencia al rol del profesional que realiza la acción asociada al evento."
 * focus 1..2 MS
 * focus ^slicing.discriminator.type = #profile
 * focus ^slicing.discriminator.path = "resolve()"

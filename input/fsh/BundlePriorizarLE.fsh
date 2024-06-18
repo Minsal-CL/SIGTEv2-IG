@@ -22,8 +22,8 @@ Description: "Bundle Priorizar LE, recurso utilizado para transportar todos los 
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
         and practitioner 1..1
-        and practitionerRole 1..1
-        and organization 1..1
+        and practitionerRole 1..2
+        and organization 1..2
         
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
 * entry[messageheader].resource only MessageHeaderLE
