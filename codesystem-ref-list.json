@@ -1,18 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/administrative-gender",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "AdministrativeGender",
-      "title" : "AdministrativeGender",
-      "description" : "The gender of a person used for administrative purposes.",
-      "oids" : ["2.16.840.1.113883.4.642.4.2"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
-    },
-    {
       "url" : "http://hl7.org/fhir/observation-status",
       "version" : "4.0.1",
       "status" : "active",
@@ -58,10 +46,10 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
       "ValueSet-VSServicioRequerido.html" : "Servicio Requerido",
       "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
-      "ValueSet-VSTerminologiasDiag.html" : "TerminologiasDiag",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
+      "ValueSet-VSTerminologiasDiag.html" : "TerminologiasDiag"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -85,9 +73,9 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1075"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-condition-ver-status.html" : "ConditionVerificationStatus",
       "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus",
-      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
+      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
+      "http://terminology.hl7.org/5.5.0/ValueSet-condition-ver-status.html" : "ConditionVerificationStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
@@ -110,8 +98,8 @@
       "description" : "Tipo Identificador",
       "uses" : {
       },
-      "https://build.fhir.org/ig/HL7Chile/clcore_ig//ValueSet-VSTipoIdentificador.html" : "Tipo Identificador",
-      "ValueSet-VSIdentificadorPrestador.html" : "IdentificadorPrestador"
+      "ValueSet-VSIdentificadorPrestador.html" : "IdentificadorPrestador",
+      "https://build.fhir.org/ig/HL7Chile/clcore_ig//ValueSet-VSTipoIdentificador.html" : "Tipo Identificador"
     },
     {
       "url" : "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
@@ -254,8 +242,8 @@
       "description" : "HipotesisDiagnosticaCodigo",
       "uses" : {
       },
-      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
-      "ValueSet-VSHipotesisDiagnosticaCodigo.html" : "HipotesisDiagnosticaCodigo"
+      "ValueSet-VSHipotesisDiagnosticaCodigo.html" : "HipotesisDiagnosticaCodigo",
+      "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentidaddeGenero",
@@ -377,17 +365,6 @@
       "uses" : {
       },
       "ValueSet-VSPrevisionCodigo.html" : "PrevisionCodigo"
-    },
-    {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSProblemaGES",
-      "version" : "0.2.1",
-      "status" : "active",
-      "name" : "CSProblemaGES",
-      "title" : "Sospecha Patologia Ges",
-      "description" : "Sospecha Patologia Ges",
-      "uses" : {
-      },
-      "ValueSet-VSProblemaGES.html" : "Sospecha Patologia Ges"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSReligion",

@@ -10,7 +10,7 @@
   "name" : "TiemposDeEsperaInteroperable",
   "title" : "Tiempos de Espera Interoperable",
   "status" : "draft",
-  "date" : "2024-06-14T18:56:59+00:00",
+  "date" : "2024-06-18T19:34:09+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -758,18 +758,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ConditionIniciarGesLE"
-      },
-      "name" : "Condition GES",
-      "description" : "Condition GES",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -801,30 +789,6 @@
       },
       "name" : "Consecuencia Atención Codigo",
       "description" : "Consecuencia Atención Codigo",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Contactado"
-      },
-      "name" : "ContactadoLE",
-      "description" : "ContactadoLE",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/CoverageLE"
-      },
-      "name" : "Coverage LE",
-      "description" : "Coverage LE, recurso que permite saber la previsión de un paciente",
       "exampleBoolean" : false
     },
     {
@@ -921,18 +885,6 @@
       },
       "name" : "Destino Referencia Codigo",
       "description" : "Destino Referencia Codigo",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/DigitoVerificador"
-      },
-      "name" : "DigitoVerificador",
-      "description" : "DigitoVerificador",
       "exampleBoolean" : false
     },
     {
@@ -1193,42 +1145,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/EvaluacionPertinencia"
-      },
-      "name" : "Evaluacion Pertinencia",
-      "description" : "Evaluacion Pertinencia",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ExtBool"
-      },
-      "name" : "ExtBool",
-      "description" : "ExtBool",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ExtBoolAlergia"
-      },
-      "name" : "ExtBool Alergia",
-      "description" : "ExtBool Alergia",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/ExtensionBoolAtencionPreferente"
       },
       "name" : "ExtBool Atención Preferente",
@@ -1241,46 +1157,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ExtBoolEsCuidador"
-      },
-      "name" : "ExtBool EsCuidador",
-      "description" : "ExtBool EsCuidador",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ExtBoolPersonaMayor"
-      },
-      "name" : "ExtBool PersonaMayor",
-      "description" : "ExtBool PersonaMayor",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ExtBoolPertinenciaAtencionBox"
+        "reference" : "StructureDefinition/ExtensionPertinenciaAtencionBox"
       },
       "name" : "ExtBool Pertinencia Atencion Box",
       "description" : "ExtBool Pertinencia Atencion Box",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ExtBoolPresentaDiscapacidad"
-      },
-      "name" : "ExtBool PresentaDiscapacidad",
-      "description" : "ExtBool PresentaDiscapacidad",
       "exampleBoolean" : false
     },
     {
@@ -1313,10 +1193,22 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ExtBoolSolicitudExamenes"
+        "reference" : "StructureDefinition/ExtensionSolicitudExamenes"
       },
       "name" : "ExtBool Solicitud Examenes",
-      "description" : "ExtBool Solicitud Examenes",
+      "description" : "Extensión que indica si requiere solicitud examenes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Contactado"
+      },
+      "name" : "ExtensionContactadoLE",
+      "description" : "ExtensionContactadoLE",
       "exampleBoolean" : false
     },
     {
@@ -1328,6 +1220,7 @@
         "reference" : "StructureDefinition/ExtensionStringFundamentoPriorizacion"
       },
       "name" : "ExtensionStringFundamentoPriorizacion",
+      "description" : "Extensión para fundamenta la priorización de la interconsulta",
       "exampleBoolean" : false
     },
     {
@@ -1336,22 +1229,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ExtInteger"
-      },
-      "name" : "ExtInteger",
-      "description" : "ExtInteger",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ExtStringMotivoNoPertinencia"
+        "reference" : "StructureDefinition/ExtensionMotivoNoPertinencia"
       },
       "name" : "ExtString MotivoNoPertinencia",
-      "description" : "ExtString MotivoNoPertinencia",
+      "description" : "Extensión que declara un porque de la no pertinencia",
       "exampleBoolean" : false
     },
     {
@@ -1519,7 +1400,7 @@
         "reference" : "StructureDefinition/ExtensionMediodeContacto"
       },
       "name" : "MediodeContacto",
-      "description" : "MediodeContacto",
+      "description" : "Medio de Contacto",
       "exampleBoolean" : false
     },
     {
@@ -1633,18 +1514,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/MotivoNoPertinencia"
-      },
-      "name" : "Motivo No Pertinencia",
-      "description" : "Motivo No Pertinencia",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1672,10 +1541,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ObservationAtenderLE"
+        "reference" : "StructureDefinition/ObservationResultadoExamen"
       },
-      "name" : "Observation Atender LE",
-      "description" : "Observation Atender LE",
+      "name" : "Observation Resultado Examen",
+      "description" : "Resultado de examen anterior como antecedente",
       "exampleBoolean" : false
     },
     {
@@ -1852,18 +1721,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ProblemaGES"
-      },
-      "name" : "ProblemaGES",
-      "description" : "Indica si corresponde a GES",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/PueblosOriginarios"
       },
       "name" : "Pueblos Originarios",
@@ -1981,18 +1838,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ObservationResultadoExamen"
-      },
-      "name" : "Resultado Examen",
-      "description" : "Resultado de examen anterior como antecedente",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -2044,30 +1889,6 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/SexoBiologico"
-      },
-      "name" : "Sexo Biologico del paciente",
-      "description" : "Sexo Biologico del paciente",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/SexoNacimiento820"
-      },
-      "name" : "Sexo de Nacimiento 820",
-      "description" : "Código que identifica el sexo de nacimiento de un paciente según la definición en la Norma Técnica",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/SituacionCalle"
       },
       "name" : "SituacionCalle",
@@ -2108,30 +1929,6 @@
       },
       "name" : "Sospecha Patologia",
       "description" : "Sospecha Patologia",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSProblemaGES"
-      },
-      "name" : "Sospecha Patologia Ges",
-      "description" : "Sospecha Patologia Ges",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSProblemaGES"
-      },
-      "name" : "Sospecha Patologia Ges",
-      "description" : "Sospecha Patologia Ges",
       "exampleBoolean" : false
     },
     {

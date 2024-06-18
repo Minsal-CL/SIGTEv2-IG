@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TiemposDeEsperaInteroperable"] ; # 
   fhir:title [ fhir:v "Tiempos de Espera Interoperable"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-14T18:56:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-18T19:34:09+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -672,18 +672,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarGesLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/ConditionIniciarGesLE" ]
-       ] ;
-       fhir:name [ fhir:v "Condition GES" ] ;
-       fhir:description [ fhir:v "Condition GES" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -716,30 +704,6 @@
        ] ;
        fhir:name [ fhir:v "Consecuencia Atención Codigo" ] ;
        fhir:description [ fhir:v "Consecuencia Atención Codigo" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado> ;
-         fhir:reference [ fhir:v "StructureDefinition/Contactado" ]
-       ] ;
-       fhir:name [ fhir:v "ContactadoLE" ] ;
-       fhir:description [ fhir:v "ContactadoLE" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/CoverageLE" ]
-       ] ;
-       fhir:name [ fhir:v "Coverage LE" ] ;
-       fhir:description [ fhir:v "Coverage LE, recurso que permite saber la previsión de un paciente" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -836,18 +800,6 @@
        ] ;
        fhir:name [ fhir:v "Destino Referencia Codigo" ] ;
        fhir:description [ fhir:v "Destino Referencia Codigo" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador> ;
-         fhir:reference [ fhir:v "StructureDefinition/DigitoVerificador" ]
-       ] ;
-       fhir:name [ fhir:v "DigitoVerificador" ] ;
-       fhir:description [ fhir:v "DigitoVerificador" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1107,42 +1059,6 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EvaluacionPertinencia> ;
-         fhir:reference [ fhir:v "StructureDefinition/EvaluacionPertinencia" ]
-       ] ;
-       fhir:name [ fhir:v "Evaluacion Pertinencia" ] ;
-       fhir:description [ fhir:v "Evaluacion Pertinencia" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBool> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtBool" ]
-       ] ;
-       fhir:name [ fhir:v "ExtBool" ] ;
-       fhir:description [ fhir:v "ExtBool" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolAlergia> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtBoolAlergia" ]
-       ] ;
-       fhir:name [ fhir:v "ExtBool Alergia" ] ;
-       fhir:description [ fhir:v "ExtBool Alergia" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolAtencionPreferente> ;
          fhir:reference [ fhir:v "StructureDefinition/ExtensionBoolAtencionPreferente" ]
        ] ;
@@ -1155,47 +1071,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolEsCuidador> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtBoolEsCuidador" ]
-       ] ;
-       fhir:name [ fhir:v "ExtBool EsCuidador" ] ;
-       fhir:description [ fhir:v "ExtBool EsCuidador" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPersonaMayor> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtBoolPersonaMayor" ]
-       ] ;
-       fhir:name [ fhir:v "ExtBool PersonaMayor" ] ;
-       fhir:description [ fhir:v "ExtBool PersonaMayor" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPertinenciaAtencionBox> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtBoolPertinenciaAtencionBox" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionPertinenciaAtencionBox> ;
+         fhir:reference [ fhir:v "StructureDefinition/ExtensionPertinenciaAtencionBox" ]
        ] ;
        fhir:name [ fhir:v "ExtBool Pertinencia Atencion Box" ] ;
        fhir:description [ fhir:v "ExtBool Pertinencia Atencion Box" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPresentaDiscapacidad> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtBoolPresentaDiscapacidad" ]
-       ] ;
-       fhir:name [ fhir:v "ExtBool PresentaDiscapacidad" ] ;
-       fhir:description [ fhir:v "ExtBool PresentaDiscapacidad" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1227,11 +1107,23 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolSolicitudExamenes> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtBoolSolicitudExamenes" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSolicitudExamenes> ;
+         fhir:reference [ fhir:v "StructureDefinition/ExtensionSolicitudExamenes" ]
        ] ;
        fhir:name [ fhir:v "ExtBool Solicitud Examenes" ] ;
-       fhir:description [ fhir:v "ExtBool Solicitud Examenes" ] ;
+       fhir:description [ fhir:v "Extensión que indica si requiere solicitud examenes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado> ;
+         fhir:reference [ fhir:v "StructureDefinition/Contactado" ]
+       ] ;
+       fhir:name [ fhir:v "ExtensionContactadoLE" ] ;
+       fhir:description [ fhir:v "ExtensionContactadoLE" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1243,6 +1135,7 @@
          fhir:reference [ fhir:v "StructureDefinition/ExtensionStringFundamentoPriorizacion" ]
        ] ;
        fhir:name [ fhir:v "ExtensionStringFundamentoPriorizacion" ] ;
+       fhir:description [ fhir:v "Extensión para fundamenta la priorización de la interconsulta" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1250,23 +1143,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtInteger> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtInteger" ]
-       ] ;
-       fhir:name [ fhir:v "ExtInteger" ] ;
-       fhir:description [ fhir:v "ExtInteger" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtStringMotivoNoPertinencia> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtStringMotivoNoPertinencia" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoNoPertinencia> ;
+         fhir:reference [ fhir:v "StructureDefinition/ExtensionMotivoNoPertinencia" ]
        ] ;
        fhir:name [ fhir:v "ExtString MotivoNoPertinencia" ] ;
-       fhir:description [ fhir:v "ExtString MotivoNoPertinencia" ] ;
+       fhir:description [ fhir:v "Extensión que declara un porque de la no pertinencia" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1434,7 +1315,7 @@
          fhir:reference [ fhir:v "StructureDefinition/ExtensionMediodeContacto" ]
        ] ;
        fhir:name [ fhir:v "MediodeContacto" ] ;
-       fhir:description [ fhir:v "MediodeContacto" ] ;
+       fhir:description [ fhir:v "Medio de Contacto" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1547,18 +1428,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinencia> ;
-         fhir:reference [ fhir:v "StructureDefinition/MotivoNoPertinencia" ]
-       ] ;
-       fhir:name [ fhir:v "Motivo No Pertinencia" ] ;
-       fhir:description [ fhir:v "Motivo No Pertinencia" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -1586,11 +1455,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationAtenderLE> ;
-         fhir:reference [ fhir:v "StructureDefinition/ObservationAtenderLE" ]
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationResultadoExamen> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationResultadoExamen" ]
        ] ;
-       fhir:name [ fhir:v "Observation Atender LE" ] ;
-       fhir:description [ fhir:v "Observation Atender LE" ] ;
+       fhir:name [ fhir:v "Observation Resultado Examen" ] ;
+       fhir:description [ fhir:v "Resultado de examen anterior como antecedente" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1766,18 +1635,6 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ProblemaGES> ;
-         fhir:reference [ fhir:v "StructureDefinition/ProblemaGES" ]
-       ] ;
-       fhir:name [ fhir:v "ProblemaGES" ] ;
-       fhir:description [ fhir:v "Indica si corresponde a GES" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginarios> ;
          fhir:reference [ fhir:v "StructureDefinition/PueblosOriginarios" ]
        ] ;
@@ -1895,18 +1752,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationResultadoExamen> ;
-         fhir:reference [ fhir:v "StructureDefinition/ObservationResultadoExamen" ]
-       ] ;
-       fhir:name [ fhir:v "Resultado Examen" ] ;
-       fhir:description [ fhir:v "Resultado de examen anterior como antecedente" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -1958,30 +1803,6 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SexoBiologico> ;
-         fhir:reference [ fhir:v "StructureDefinition/SexoBiologico" ]
-       ] ;
-       fhir:name [ fhir:v "Sexo Biologico del paciente" ] ;
-       fhir:description [ fhir:v "Sexo Biologico del paciente" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SexoNacimiento820> ;
-         fhir:reference [ fhir:v "StructureDefinition/SexoNacimiento820" ]
-       ] ;
-       fhir:name [ fhir:v "Sexo de Nacimiento 820" ] ;
-       fhir:description [ fhir:v "Código que identifica el sexo de nacimiento de un paciente según la definición en la Norma Técnica" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SituacionCalle> ;
          fhir:reference [ fhir:v "StructureDefinition/SituacionCalle" ]
        ] ;
@@ -2023,30 +1844,6 @@
        ] ;
        fhir:name [ fhir:v "Sospecha Patologia" ] ;
        fhir:description [ fhir:v "Sospecha Patologia" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSProblemaGES> ;
-         fhir:reference [ fhir:v "ValueSet/VSProblemaGES" ]
-       ] ;
-       fhir:name [ fhir:v "Sospecha Patologia Ges" ] ;
-       fhir:description [ fhir:v "Sospecha Patologia Ges" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSProblemaGES> ;
-         fhir:reference [ fhir:v "CodeSystem/CSProblemaGES" ]
-       ] ;
-       fhir:name [ fhir:v "Sospecha Patologia Ges" ] ;
-       fhir:description [ fhir:v "Sospecha Patologia Ges" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -25,8 +25,8 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"CarePlan.extension:Requiere-Examen","CarePlan.extension","Requiere-Examen","","",1,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolSolicitudExamenes]]} {[]}
-","Declaración si el paciente requiere exámenes","ExtBool Solicitud Examenes","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"CarePlan.extension:Requiere-Examen","CarePlan.extension","Requiere-Examen","","",1,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSolicitudExamenes]]} {[]}
+","Declaración si el paciente requiere exámenes","Extensión que indica si requiere solicitud examenes","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "CarePlan.modifierExtension","CarePlan.modifierExtension","","extensions
@@ -105,7 +105,7 @@ This element is labeled as a modifier because the status contains the code enter
 "CarePlan.goal","CarePlan.goal","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Goal]]}
 ","Desired outcome of plan","Describes the intended objective(s) of carrying out the care plan.","Goal can be achieving a particular change or merely maintaining a current state or even slowing a decline.","Provides context for plan.  Allows plan effectiveness to be evaluated by clinicians.","","","","","","","",,,,,"",,,,"CarePlan.goal",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode<=OBJ].","GOL.1"
-"CarePlan.activity","CarePlan.activity","","","",0,2,"Y","","","BackboneElement {[]} {[]}
+"CarePlan.activity","CarePlan.activity","","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Action to occur as part of plan","Identifies a planned action to occur as part of the plan.  For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.","","Allows systems to prompt for performance of planned activities, and validate plans against best practice.","","","","","","","",,,,,"","value:reference}
 ","",,"open","CarePlan.activity",0,*,"","cpl-3:Provide a reference or detail, not both {detail.empty() or reference.empty()}
 ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}","{no mapping
@@ -204,7 +204,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 "CarePlan.activity.detail.description","CarePlan.activity.detail.description","","","",0,1,"","","","string {[]} {[]}
 ","Extra info describing activity to perform","This provides a textual description of constraints on the intended activity occurrence, including relation to other activities.  It may also include objectives, pre-conditions and end-conditions.  Finally, it may convey specifics about the activity such as body site, method, route, etc.","","","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".text","NTE?"
-"CarePlan.activity:referenciaReceta","CarePlan.activity","referenciaReceta","","",0,1,"Y","","","BackboneElement {[]} {[]}
+"CarePlan.activity:referenciaReceta","CarePlan.activity","referenciaReceta","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Action to occur as part of plan","Identifies a planned action to occur as part of the plan.  For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.","","Allows systems to prompt for performance of planned activities, and validate plans against best practice.","","","","","","","",,,,,"",,,,"CarePlan.activity",0,*,"","cpl-3:Provide a reference or detail, not both {detail.empty() or reference.empty()}
 ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}","{no mapping
 NOTE: This is a list of contained Request-Event tuples!}",".outboundRelationship[typeCode=COMP].target"
@@ -302,7 +302,7 @@ Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Medicatio
 "CarePlan.activity:referenciaReceta.detail.description","CarePlan.activity.detail.description","","","",0,1,"","","","string {[]} {[]}
 ","Extra info describing activity to perform","This provides a textual description of constraints on the intended activity occurrence, including relation to other activities.  It may also include objectives, pre-conditions and end-conditions.  Finally, it may convey specifics about the activity such as body site, method, route, etc.","","","","","","","","","",,,,,"",,,,"CarePlan.activity.detail.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".text","NTE?"
-"CarePlan.activity:referenciaServiceRequestExamenLE","CarePlan.activity","referenciaServiceRequestExamenLE","","",0,1,"Y","","","BackboneElement {[]} {[]}
+"CarePlan.activity:referenciaServiceRequestExamenLE","CarePlan.activity","referenciaServiceRequestExamenLE","","",0,*,"Y","","","BackboneElement {[]} {[]}
 ","Action to occur as part of plan","Identifies a planned action to occur as part of the plan.  For example, a medication to be used, lab tests to perform, self-monitoring, education, etc.","","Allows systems to prompt for performance of planned activities, and validate plans against best practice.","","","","","","","",,,,,"",,,,"CarePlan.activity",0,*,"","cpl-3:Provide a reference or detail, not both {detail.empty() or reference.empty()}
 ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}","{no mapping
 NOTE: This is a list of contained Request-Event tuples!}",".outboundRelationship[typeCode=COMP].target"

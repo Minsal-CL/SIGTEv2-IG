@@ -38,9 +38,23 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Practitioner/f:name</sch:title>
+    <sch:rule context="f:Practitioner/f:name">
+      <sch:assert test="count(f:family) &gt;= 1">family: minimum cardinality of 'family' is 1</sch:assert>
+      <sch:assert test="count(f:given) &gt;= 1">given: minimum cardinality of 'given' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:Practitioner/f:name/f:family</sch:title>
     <sch:rule context="f:Practitioner/f:name/f:family">
       <sch:assert test="count(f:extension[@url = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido']) &lt;= 1">extension with URL = 'https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido': maximum cardinality of 'extension' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Practitioner/f:telecom</sch:title>
+    <sch:rule context="f:Practitioner/f:telecom">
+      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
+      <sch:assert test="count(f:value) &gt;= 1">value: minimum cardinality of 'value' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

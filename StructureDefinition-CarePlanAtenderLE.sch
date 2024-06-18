@@ -12,8 +12,8 @@
   <sch:pattern>
     <sch:title>f:CarePlan</sch:title>
     <sch:rule context="f:CarePlan">
-      <sch:assert test="count(f:extension[@url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolSolicitudExamenes']) &gt;= 1">extension with URL = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolSolicitudExamenes': minimum cardinality of 'extension' is 1</sch:assert>
-      <sch:assert test="count(f:extension[@url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolSolicitudExamenes']) &lt;= 1">extension with URL = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolSolicitudExamenes': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSolicitudExamenes']) &gt;= 1">extension with URL = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSolicitudExamenes': minimum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSolicitudExamenes']) &lt;= 1">extension with URL = 'https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSolicitudExamenes': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:description) &gt;= 1">description: minimum cardinality of 'description' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>

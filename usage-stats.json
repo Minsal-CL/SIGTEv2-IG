@@ -6,7 +6,7 @@
   "extensions": [
     {
       "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado",
-      "title": "ContactadoLE",
+      "title": "ExtensionContactadoLE",
       "types": [
         "boolean",
         "CodeableConcept",
@@ -71,94 +71,6 @@
         "UsageContext",
         "Dosage",
         "Meta"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/DigitoVerificador",
-      "title": "DigitoVerificador",
-      "types": [
-        "string"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EvaluacionPertinencia",
-      "title": "Evaluacion Pertinencia",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBool",
-      "title": "ExtBool",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolAlergia",
-      "title": "ExtBool Alergia",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolEsCuidador",
-      "title": "ExtBool EsCuidador",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPersonaMayor",
-      "title": "ExtBool PersonaMayor",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPertinenciaAtencionBox",
-      "title": "ExtBool Pertinencia Atencion Box",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPresentaDiscapacidad",
-      "title": "ExtBool PresentaDiscapacidad",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolSolicitudExamenes",
-      "title": "ExtBool Solicitud Examenes",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtInteger",
-      "title": "ExtInteger",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtStringMotivoNoPertinencia",
-      "title": "ExtString MotivoNoPertinencia",
-      "types": [
-        "string"
       ]
     },
     {
@@ -273,6 +185,13 @@
       ]
     },
     {
+      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoNoPertinencia",
+      "title": "ExtString MotivoNoPertinencia",
+      "types": [
+        "string"
+      ]
+    },
+    {
       "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionOrigenInterconsulta",
       "title": "Origen Interconsulta",
       "types": [
@@ -288,6 +207,13 @@
         "string",
         "boolean",
         "string"
+      ]
+    },
+    {
+      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionPertinenciaAtencionBox",
+      "title": "ExtBool Pertinencia Atencion Box",
+      "types": [
+        "boolean"
       ]
     },
     {
@@ -360,6 +286,13 @@
       ]
     },
     {
+      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSolicitudExamenes",
+      "title": "ExtBool Solicitud Examenes",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
       "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionStringFundamentoPriorizacion",
       "title": "ExtensionStringFundamentoPriorizacion",
       "types": [
@@ -392,24 +325,6 @@
       ]
     },
     {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/MotivoNoPertinencia",
-      "title": "Motivo No Pertinencia",
-      "types": [
-        "CodeableConcept",
-        "string",
-        "Extension",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "string"
-      ]
-    },
-    {
       "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PaisOrigenMPI",
       "title": "País de origen del paciente",
       "types": [
@@ -425,13 +340,6 @@
         "string",
         "boolean",
         "string"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ProblemaGES",
-      "title": "ProblemaGES",
-      "types": [
-        "boolean"
       ]
     },
     {
@@ -482,20 +390,6 @@
         "string",
         "boolean",
         "string"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SexoBiologico",
-      "title": "Sexo Biologico del paciente",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SexoNacimiento820",
-      "title": "Sexo de Nacimiento 820",
-      "types": [
-        "code"
       ]
     },
     {
@@ -559,16 +453,6 @@
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionDiagnosticoLE",
         "title": "Condition Diagnostico LE"
-      },
-      {
-        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ConditionIniciarGesLE",
-        "title": "Condition GES"
-      }
-    ],
-    "Coverage": [
-      {
-        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/CoverageLE",
-        "title": "Coverage LE"
       }
     ],
     "Encounter": [
@@ -589,10 +473,6 @@
     ],
     "Observation": [
       {
-        "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationAtenderLE",
-        "title": "Observation Atender LE"
-      },
-      {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationDiscapacidadLE",
         "title": "Discapacidad LE"
       },
@@ -606,7 +486,7 @@
       },
       {
         "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationResultadoExamen",
-        "title": "Resultado Examen"
+        "title": "Observation Resultado Examen"
       }
     ],
     "Organization": [
@@ -753,15 +633,6 @@
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado": [
       "Appointment"
     ],
-    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolPertinenciaAtencionBox": [
-      "Encounter"
-    ],
-    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtBoolSolicitudExamenes": [
-      "CarePlan"
-    ],
-    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtStringMotivoNoPertinencia": [
-      "Encounter"
-    ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolAtencionPreferente": [
       "ServiceRequest"
     ],
@@ -786,11 +657,20 @@
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoCierreInterconsulta": [
       "ServiceRequest"
     ],
+    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoNoPertinencia": [
+      "Encounter"
+    ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionOrigenInterconsulta": [
       "ServiceRequest"
     ],
+    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionPertinenciaAtencionBox": [
+      "Encounter"
+    ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionPertinenciaInterconsulta": [
       "ServiceRequest"
+    ],
+    "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionSolicitudExamenes": [
+      "CarePlan"
     ],
     "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionStringFundamentoPriorizacion": [
       "ServiceRequest"
