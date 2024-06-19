@@ -192,8 +192,8 @@ La semántica del mensaje para la transacción del evento agendar usa el [Bundle
 * [Bundle Evento Agendar](StructureDefinition-BundleAgendarLE.html)
 * [Ejemplo Bundle Agendar](Bundle-EjemploBundleAgendar.html)
   * Appointment usado para agendar cita([Appointment Agendar](Appointment-EjemploAppointmentAgendar.html))
-  * Appointment usado para cancelar cita([Appointment Cancelar](Appointment-EjemploAppointmentAgendarCancelar.html))
-  * Appointment usado para marcar una cita sin presentación([Appointment Sin Presentación](Appointment-EjemploAppointmentAgendarSinPresentacion.html))
+  <!--* Appointment usado para cancelar cita([Appointment Cancelar](Appointment-EjemploAppointmentAgendarCancelar.html))
+  * Appointment usado para marcar una cita sin presentación([Appointment Sin Presentación](Appointment-EjemploAppointmentAgendarSinPresentacion.html))-->
 
 ##### Response
 
