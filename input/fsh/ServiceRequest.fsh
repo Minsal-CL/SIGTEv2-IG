@@ -139,10 +139,10 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
    and IndiceComorbilidad 0..1 MS
    and Cuidador 0..1 MS 
    and Discapacidad 1..1 MS 
-   and Prevision 0..1 MS 
    and motivoDerivacion 0..1 MS 
    and SolicitudExamen 0..* MS
    and ResultadoExamen 0..* MS
+ //and Prevision 0..1 MS 
  //and ProblemaGES 0..1 MS
 
 * supportingInfo[DiagnosticoInicio] only Reference(ConditionDiagnosticoLE)
