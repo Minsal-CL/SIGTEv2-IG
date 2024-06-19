@@ -26,7 +26,6 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
         and organization 1..1
         and encounter 1..1
         and carePlan 1..1
-        and questionnaireResponse 1..1
         and AllergyIntolerance 0..*
         and ObservationResultadoExamen 0..*
         and SolicitudMedicamento 0..*
@@ -54,9 +53,9 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[carePlan] ^short = "Entrada en el Bundle: contendrá un recurso CarePlan"
 * entry[carePlan].resource only CarePlanAtenderLE  
 * entry[carePlan].resource ^short = "Indicaciones clinicas que deja el profesional para el paciente"
-* entry[questionnaireResponse] ^short = "Entrada en el Bundle: contendrá un recurso QuestionnaireResponse"
-* entry[questionnaireResponse].resource only QuestionnaireResponseAtenderLE  
-* entry[questionnaireResponse].resource ^short = "Recurso utilizado para guardar la anamnesis del paciente"
+// * entry[questionnaireResponse] ^short = "Entrada en el Bundle: contendrá un recurso QuestionnaireResponse"
+// * entry[questionnaireResponse].resource only QuestionnaireResponseAtenderLE  
+// * entry[questionnaireResponse].resource ^short = "Recurso utilizado para guardar la anamnesis del paciente"
 * entry[ObservationResultadoExamen] ^short = "Entrada en el Bundle: contendrá un recurso Observation"
 * entry[ObservationResultadoExamen].resource only ObservationResultadoExamen  
 * entry[ObservationResultadoExamen].resource ^short = "Recurso para indicar el resultado de los examenes realizados con anterioridad"

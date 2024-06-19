@@ -153,6 +153,7 @@
 
 - Perfil [BundleAtenderLE](StructureDefinition-BundleAtenderLE.html)
   - Se agrega entry AllergyIntolerance aceptando solo AllergyIntoleranceIniciarLE en el campo resource
+  - Se elimina slice "questionnaireResponse"
 
 - Perfil [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
   - Se agrega extensión ConsecuenciaAtencionCodigo
@@ -358,6 +359,7 @@
   - [Especialidad del médico principal](StructureDefinition-VSEspecialidadesDeisCL.html)
   - [Contacto de los participantes secundarios del encuentro](StructureDefinition-ContactoParticipantes.html)
 
+- Se depreca perfil QuestionnaireResponseAntederLE
 
 ### Cambios de versión 0.1.5 a versión 0.1.6
 
