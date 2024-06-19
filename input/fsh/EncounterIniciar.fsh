@@ -17,10 +17,10 @@ Description: "Encounter Iniciar LE recurso que se utiliza para representar el en
 * identifier 1..1 MS
   * value 1..1 MS
   * value ^short = "Valor de registro real"
-  * type 1..1 MS
-  * type ^short = "Tipo de identificador" 
-  * type.coding.code ^short = "El valor DEBE ser FILL"
-  * type.coding.code = #FILL
+  // * type 1..1 MS
+  // * type ^short = "Tipo de identificador" 
+  // * type.coding.code ^short = "El valor DEBE ser FILL"
+  // * type.coding.code = #FILL
 * identifier ^short = "Id del registro de atención o encuentro del sistema clínico de origen"
 
 * diagnosis 1..*

@@ -1,75 +1,3 @@
-CodeSystem:  CSSexoBiologico
-Id: CSSexoBiologico
-Title: "Códigos para Sexo de Nacimiento de Paciente"
-Description: "Codigos definidos para el sexo de nacimiento de un paciente en Chile"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-  
-
-* #1 "Hombre" "Persona que al nacer se observa anatómicamente que tiene a nivel genital pene, escroto y/o testículos."
-* #2 "Mujer" "Persona que al nacerse se observa anatómicamente que tiene a nivel genital vulva u orificio vaginal."
-* #3 "Intersexual" "Persona que al nacer se observa variaciones anatómicas en los órganos genitales del cuerpo que no permite clasificar de forma dicotómica en hombre o mujer. No constituye un tercer sexo."
-* #99 "Desconocido" "No es posible determinarlo al momento de la atención de salud." 
-
-ValueSet: VSSexoBiologico
-Id: VSSexoBiologico
-Title: "Códigos para sexo biológico en Chile"
-Description: "Códigos para sexo biológico en Chile según tabla 820."
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSSexoBiologico
-
-
-ValueSet: VSIdentidaddeGenero
-Id: VSIdentidaddeGenero
-Title: "Identidad de Genero"
-Description: "Identidad de Genero"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSIdentidaddeGenero
-
-CodeSystem: CSIdentidaddeGenero
-Id: CSIdentidaddeGenero
-Title: "Identidad de Genero"
-Description: "Identidad de Genero"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #1 "Masculino"
-* #2 "Femenina"
-* #4 "Transgénero Masculino"
-* #5 "Transgénero Femenina"
-* #6 "No binarie"
-* #7 "Otra"
-* #8 "No Revelado"
-
 ValueSet: VSDerivadoParaCodigo
 Id: VSDerivadoParaCodigo
 Title: "Derivado Para"
@@ -212,43 +140,6 @@ Description: "Estado Interconsulta"
 * #5 "En espera de la atención"
 * #6 "A la espera de cierre"
 * #7 "Cerrada"
-
-
-ValueSet: VSDocAcreditacionCuidador
-Id: VSDocAcreditacionCuidador
-Title: "Documento Acreditacion Cuidador"
-Description: "Documento Acreditacion Cuidador"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSDocAcreditacionCuidador
-
-CodeSystem: CSDocAcreditacionCuidador
-Id: CSDocAcreditacionCuidador
-Title: "Documento Acreditacion Cuidador"
-Description: "Documento Acreditacion Cuidador"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #1 "Documento que acredita calidad de cuidador/a del Programa Red Local de Apoyos y Cuidados (MIDESOF)"
-* #2 "Documento que acredita calidad de cuidador/a del Programa de Atención Domicliaria a Personas con Dependencia Severa (MINSAL APS)"
-* #3 "Documento de que acredita calidad de cuidador/a de las Unidades de Cuidados Paliativos Universales (MINSAL)"
-* #4 "Documento de que acredita calidad de cuidador/a del Programa de Cuidados Domiciliarios (SENAMA)"
-* #5 "Documento de que acredita calidad de cuidador/a de Centro de Apoyo Comunitario para Personas con Demencia (MINSAL)"
-* #6 "Credencial de cuidador/a Registro Social de Hogares (MIDESOF)"
 
 ValueSet: VSPertinenciaInterconsulta
 Id: VSPertinenciaInterconsulta
@@ -453,41 +344,6 @@ Description: "Consecuencia Atención Codigo"
 * #2 "Alta"
 * #3 "Derivación"
 
-
-ValueSet: VSTipoCodDiagnostica
-Id: VSTipoCodDiagnostica
-Title: "Tipo Codificación Diagnostica"
-Description: "Tipo Codificación Diagnostica"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSTipoCodDiagnostica
-
-CodeSystem: CSTipoCodDiagnostica
-Id: CSTipoCodDiagnostica
-Title: "Tipo Codificación Diagnostica"
-Description: "Tipo Codificación Diagnostica"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #1 "CIE11"
-* #2 "CIE10"
-* #3 "SNOMED CT"
-
-
 ValueSet: VSMotivoCierreInterconsulta
 Id: VSMotivoCierreInterconsulta
 Title: "Motivo Cierre Interconsulta"
@@ -571,41 +427,6 @@ Description: "Indice Comorbilidad"
 * #G2 "Riesgo Moderado, 2 a 4 condiciones crónicas"
 * #G3 "Riesgo Alto, 5 o más condiciones crónicas"
 
-
-ValueSet: VSSospechaPatologia
-Id: VSSospechaPatologia
-Title: "Sospecha Patologia"
-Description: "Sospecha Patologia"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSSospechaPatologia
-
-CodeSystem: CSSospechaPatologia
-Id: CSSospechaPatologia
-Title: "Sospecha Patologia"
-Description: "Sospecha Patologia"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #I120 "Enfermedad renal Hipertensiva con insuficicencia renal"
-* #N184 "Enfermedad renal crónica, etapa 4"
-* #N189 "Enfermedad renal crónica, no especificada"
-* #Q602 "Agenesia renal, sin otra especificación"
-* #Q603 "Hipoplasia renal, unilateral"
 
 
 ValueSet: VSMotivoNoPertinenciaCodigo
@@ -748,43 +569,6 @@ Description: "CodeSystem con códigos definidos para representar cada rol de pro
 * #atendedor "Atendedor"
 * #terminador "Terminador"
 
-
-ValueSet: VSPrevisionCodigo
-Id: VSPrevisionCodigo
-Title: "PrevisionCodigo"
-Description: "PrevisionCodigo"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSPrevisionCodigo
-
-CodeSystem: CSPrevisionCodigo
-Id: CSPrevisionCodigo
-Title: "PrevisionCodigo"
-Description: "PrevisionCodigo"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #1   "FONASA Fondo Nacional de Salud."
-* #2   "ISAPRE  Instituciones de Salud Previsional."
-* #3   "CAPREDENA Caja de Previsión de la Defensa Nacional."
-* #4   "DIPRECA Dirección de Previsión de Carabineros, PDI y Gendarmería"
-* #5   "SISA Sistema de Salud de las Fuerzas Armadas (Ejército, Armada y Fuerza Aérea)."
-* #96  "NINGUNA"
-* #99  "DESCONOCIDO"
 
 ValueSet: VSHipotesisDiagnosticaCodigo
 Id: VSHipotesisDiagnosticaCodigo
@@ -1321,43 +1105,5 @@ Description: "TerminologiasDiag"
 * include codes from system http://hl7.org/fhir/sid/icd-10
 * include codes from system http://snomed.info/sct where concept descendent-of #404684003
 
-ValueSet: VSIsapres
-Id: VSIsapres
-Title: "Isapres"
-Description: "Isapres"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* codes from system CSIsapres
-
-CodeSystem: CSIsapres
-Id: CSIsapres
-Title: "Isapres"
-Description: "Isapres"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #01 "Banmédica S.A."
-* #02 "Isalud Ltda."
-* #03 "Colmena Golden Cross S.A."
-* #04 "Consalud S.A."
-* #05 "Cruz Blanca S.A."
-* #06 "Cruz del Norte Ltda."
-* #07 "Nueva Masvida S.A."
-* #08 "Fundación Ltda."
-* #09 "Vida Tres S.A."
-* #10 "Esencial S.A."
 

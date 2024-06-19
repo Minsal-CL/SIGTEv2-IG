@@ -21,8 +21,12 @@ Description: "CarePlan Atender LE es el recurso utilizado para representar las i
 * subject ^short = "Referencia al paciente"
 * subject only Reference(PatientLE)
 
+* encounter 0..1 MS
+* encounter ^short = "Encuentro en el cual se genera el plan de cuidado"
+* encounter only Reference(EncounterAtenderLE)
+
 * description 1..1 MS
-* description ^short = "Descripción como texto libre"
+* description ^short = "Indicaciones del plan de cuidado como texto libre"
 
 * activity 0..* MS
 * activity ^slicing.discriminator.type = #value

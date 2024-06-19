@@ -8,6 +8,8 @@ Id: PractitionerAdministrativoLE
 Title: "Prestador Administrativo LE"
 Description: "Prestador Administrativo definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."
 
+* extension[SexoBiologico] 0..0 MS
+
 * identifier[run] 1..1
 * identifier[run].type 1..1 MS
 * identifier[run].type.coding 1..1 MS

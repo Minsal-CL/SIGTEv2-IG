@@ -51,11 +51,12 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * subject ^short = "Referencia al paciente que fue atendido en APS"
 * subject only Reference(PatientLE)
 
+* period 1..1 MS
+  * start 1..1 MS
+  * start ^short = "Fecha Comienzo del encuentro atención de especialidad"
+  * end 1..1 MS
+  * end ^short = "Fecha de término del encuentro atención de especialidad"
 * period ^short = "Fechas de comienzo y término del encuentro atención de especialidad. El formato queda consignado como YYYY-MM-DDTHH:MMZ"
-* period.start 1..1 MS
-* period.start ^short = "Fecha Comienzo del encuentro atención de especialidad"
-* period.end 0..1 MS
-* period.end ^short = "Fecha de término del encuentro atención de especialidad"
 
 * type from VSTipoConsulta
 * type ^short = "Tipo de consulta"
@@ -78,21 +79,9 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * extension contains ExtensionPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
 * extension contains ExtensionMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
 
-
-
-
-
-
-
-
-
 * appointment 1..1 MS
   * reference 1..1 MS
 * appointment only Reference(AppointmentAgendarLE)
-
-* subject 1..1 MS
-  * reference 1..1 MS
-* subject only Reference(PatientLE)
 
 * class MS
 */

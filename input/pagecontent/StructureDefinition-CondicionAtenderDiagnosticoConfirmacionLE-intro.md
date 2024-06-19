@@ -1,4 +1,5 @@
-* Para el caso de uso de terminología propia el elemento **code** quedaría de la siguiente forma:
+* Para el caso de uso de terminología propia el elemento **code** quedaría de la 
+siguiente forma:
   ```
   "code": {
     "coding": [

@@ -31,6 +31,7 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
         and ObservationResultadoExamen 0..*
         and SolicitudMedicamento 0..*
         and SolicitudExamen 0..*
+        and Anamnesis 0..1
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
 * entry[messageheader].resource only MessageHeaderLE
@@ -68,3 +69,6 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[SolicitudExamen] ^short = "Entrada en el Bundle: Solicitud Examen"
 * entry[SolicitudExamen].resource only ServiceRequestExamenLE
 * entry[SolicitudExamen].resource ^short = "Solicitud de examen"
+* entry[Anamnesis] ^short = "Entrada en el Bundle: Anamnesis"
+* entry[Anamnesis].resource only ObservationAnamnesisLE
+* entry[Anamnesis].resource ^short = "Anmanesis"

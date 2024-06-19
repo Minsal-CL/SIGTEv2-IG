@@ -69,6 +69,8 @@
 
 - Perfil [CarePlan Atender LE](StructureDefinition-CarePlanAtenderLE.html)
   - se modifica la cardinalidad de **activity[referenciaReceta]** de 0..1 -> 0..* y **activity[referenciaServiceRequestExamenLE]** 0..1 -> 0..*
+  - se modifica descripción del description
+  - se pasa  MS el encounter y se solicita que sean **EncounterAtenderLE**
 
 -  Perfil [BundleAtenderLE](StructureDefinition-BundleAtenderLE.html)
   - Se cambia ObservationAtender LE por ObservationResultadoExamen
@@ -106,6 +108,35 @@
 
 - Perfil[MessageHeaderLE](StructureDefinition-MessageHeaderLE.html)
   - Se cambia la descripción del author
+
+- Perfil[EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html)
+  - Se cambia obligatoriedad y mas support del identifier.type
+
+- Perfil[EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
+  - Se cambia obligatoriedad y mas support del identifier.type
+
+- Se eliminan los siguientes ValueSet de la guía:
+  - Códigos para sexo biológico en Chile 
+  - Documento Acreditacion Cuidador
+  - Identidad de Genero
+  - Isapres
+  - PrevisionCodigo 
+  - Sospecha Patologia
+  - VSTipoCodDiagnostica
+
+- Se eliminan los siguientes CodeSystem de la guía:
+  - Códigos para Sexo de Nacimiento de Paciente
+  - Documento Acreditacion Cuidador
+  - Identidad de Genero
+  - Isapres
+  - PrevisionCodigo
+  - Tipo Codificación Diagnostica
+  - Sospecha Patologia
+
+- Perfil **ObservationAtender** -> Se llamara [ObservationAnamnesis](StructureDefinition-ObservationAnamnesisLE.html)
+  - se incluye el code = http://snomed.info/sct"#108217004 entrevista, historia clínica y/o examen físico"
+  - se incluye el code.text = "Anamnesis"
+  
 
 ### Versión 0.2.0
 
@@ -199,8 +230,6 @@
    - Se cambia el bindig del type a VSPrevisionCodigo
    - Se cambia el bindig del class.type a VSInstitucionAseguradora
    - Se agrega PatientLE como referencia a payor
-
-   
 
 - Perfil [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
    - Se cambia cardinalidad type 1..1 -> 0..1
