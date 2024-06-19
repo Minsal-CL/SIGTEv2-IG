@@ -10,7 +10,7 @@
   "name" : "TiemposDeEsperaInteroperable",
   "title" : "Tiempos de Espera Interoperable",
   "status" : "draft",
-  "date" : "2024-06-18T20:03:27+00:00",
+  "date" : "2024-06-19T19:58:24+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -821,30 +821,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSSexoBiologico"
-      },
-      "name" : "Códigos para sexo biológico en Chile",
-      "description" : "Códigos para sexo biológico en Chile según tabla 820.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSSexoBiologico"
-      },
-      "name" : "Códigos para Sexo de Nacimiento de Paciente",
-      "description" : "Codigos definidos para el sexo de nacimiento de un paciente en Chile",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/VSDerivadoParaCodigo"
       },
       "name" : "Derivado Para",
@@ -897,30 +873,6 @@
       },
       "name" : "Discapacidad LE",
       "description" : "Observación Discapacidad LE, para describir si un paciente presenta discapacidad",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSDocAcreditacionCuidador"
-      },
-      "name" : "Documento Acreditacion Cuidador",
-      "description" : "Documento Acreditacion Cuidador",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSDocAcreditacionCuidador"
-      },
-      "name" : "Documento Acreditacion Cuidador",
-      "description" : "Documento Acreditacion Cuidador",
       "exampleBoolean" : false
     },
     {
@@ -1265,30 +1217,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/VSIdentidaddeGenero"
-      },
-      "name" : "Identidad de Genero",
-      "description" : "Identidad de Genero",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSIdentidaddeGenero"
-      },
-      "name" : "Identidad de Genero",
-      "description" : "Identidad de Genero",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/VSIdentificadorPrestador"
       },
       "name" : "IdentificadorPrestador",
@@ -1341,30 +1269,6 @@
       },
       "name" : "Indice Comorbilidad LE",
       "description" : "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSIsapres"
-      },
-      "name" : "Isapres",
-      "description" : "Isapres",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSIsapres"
-      },
-      "name" : "Isapres",
-      "description" : "Isapres",
       "exampleBoolean" : false
     },
     {
@@ -1541,6 +1445,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ObservationAnamnesisLE"
+      },
+      "name" : "Observation Anamnesis LE",
+      "description" : "Observation Anamnesis LE",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ObservationResultadoExamen"
       },
       "name" : "Observation Resultado Examen",
@@ -1689,30 +1605,6 @@
       },
       "name" : "Prestador Profesional LE",
       "description" : "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSPrevisionCodigo"
-      },
-      "name" : "PrevisionCodigo",
-      "description" : "PrevisionCodigo",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSPrevisionCodigo"
-      },
-      "name" : "PrevisionCodigo",
-      "description" : "PrevisionCodigo",
       "exampleBoolean" : false
     },
     {
@@ -1910,30 +1802,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSSospechaPatologia"
-      },
-      "name" : "Sospecha Patologia",
-      "description" : "Sospecha Patologia",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSSospechaPatologia"
-      },
-      "name" : "Sospecha Patologia",
-      "description" : "Sospecha Patologia",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
@@ -1953,30 +1821,6 @@
       },
       "name" : "TerminologiasDiag",
       "description" : "TerminologiasDiag",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/VSTipoCodDiagnostica"
-      },
-      "name" : "Tipo Codificación Diagnostica",
-      "description" : "Tipo Codificación Diagnostica",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/CSTipoCodDiagnostica"
-      },
-      "name" : "Tipo Codificación Diagnostica",
-      "description" : "Tipo Codificación Diagnostica",
       "exampleBoolean" : false
     },
     {

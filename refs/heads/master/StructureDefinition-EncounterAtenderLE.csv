@@ -166,7 +166,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Encounter.appointment","Encounter.appointment","","","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Appointment]]}
 ","The appointment that scheduled this encounter","The appointment that scheduled this encounter.","","","","","","","","","",,,,,"",,,,"Encounter.appointment",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.basedOn",".outboundRelationship[typeCode=FLFS].target[classCode=ENC, moodCode=APT]","SCH-1 / SCH-2"
-"Encounter.period","Encounter.period","","","",0,1,"","","","Period {[]} {[]}
+"Encounter.period","Encounter.period","","","",1,1,"Y","","","Period {[]} {[]}
 ","Fechas de comienzo y término del encuentro atención de especialidad. El formato queda consignado como YYYY-MM-DDTHH:MMZ","The start and end time of the encounter.","If not (yet) known, the end of the Period may be omitted.","","","","","","","","",,,,,"",,,,"Encounter.period",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]",".effectiveTime (low & high)","FiveWs.done[x]","PV1-44, PV1-45"
 "Encounter.period.id","Encounter.period.id","","","",0,1,"","","","string {[]} {[]}
@@ -180,7 +180,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Fecha Comienzo del encuentro atención de especialidad","The start of the period. The boundary is inclusive.","If the low element is missing, the meaning is that the low boundary is not known.","","","","","","","","",,,,,"",,,,"Period.start",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./low","DR.1"
-"Encounter.period.end","Encounter.period.end","","","",0,1,"Y","","Y","dateTime {[]} {[]}
+"Encounter.period.end","Encounter.period.end","","","",1,1,"Y","","Y","dateTime {[]} {[]}
 ","Fecha de término del encuentro atención de especialidad","The end of the period. If the end of the period is missing, it means no end was known or planned at the time the instance was created. The start may be in the past, and the end date in the future, which means that period is expected/planned to end at that time.","The high value includes any matching date/time. i.e. 2012-02-03T10:00:00 is in a period that has an end value of 2012-02-03.","","","If the end of the period is missing, it means that the period is ongoing","","","","","",,,,,"",,,,"Period.end",0,1,"per-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./high","DR.2"

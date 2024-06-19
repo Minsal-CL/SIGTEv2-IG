@@ -46,10 +46,10 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "ValueSet-VSTerminologiasDiag.html" : "TerminologiasDiag",
       "http://hl7.org/fhir/R4/valueset-allergyintolerance-code.html" : "AllergyIntolerance Substance/Product, Condition and Negation Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
       "ValueSet-VSServicioRequerido.html" : "Servicio Requerido",
-      "ValueSet-VSTerminologiasDiag.html" : "TerminologiasDiag"
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -73,9 +73,9 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1075"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.5.0/ValueSet-condition-ver-status.html" : "ConditionVerificationStatus",
+      "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus",
       "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus",
-      "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
+      "http://terminology.hl7.org/5.5.0/ValueSet-condition-ver-status.html" : "ConditionVerificationStatus"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
@@ -144,17 +144,6 @@
       "uses" : {
       },
       "ValueSet-VSDestinoReferenciaCodigo.html" : "Destino Referencia Codigo"
-    },
-    {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDocAcreditacionCuidador",
-      "version" : "0.2.1",
-      "status" : "active",
-      "name" : "CSDocAcreditacionCuidador",
-      "title" : "Documento Acreditacion Cuidador",
-      "description" : "Documento Acreditacion Cuidador",
-      "uses" : {
-      },
-      "ValueSet-VSDocAcreditacionCuidador.html" : "Documento Acreditacion Cuidador"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEspecialidadBioqca",
@@ -246,17 +235,6 @@
       "ConceptMap-CMHipotesisDiagnosticaCodigoAConditionVerificationStatus.html" : "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
     },
     {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentidaddeGenero",
-      "version" : "0.2.1",
-      "status" : "active",
-      "name" : "CSIdentidaddeGenero",
-      "title" : "Identidad de Genero",
-      "description" : "Identidad de Genero",
-      "uses" : {
-      },
-      "ValueSet-VSIdentidaddeGenero.html" : "Identidad de Genero"
-    },
-    {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIndicecomorbilidad",
       "version" : "0.2.1",
       "status" : "active",
@@ -266,17 +244,6 @@
       "uses" : {
       },
       "ValueSet-VSIndicecomorbilidad.html" : "Indice Comorbilidad"
-    },
-    {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIsapres",
-      "version" : "0.2.1",
-      "status" : "active",
-      "name" : "CSIsapres",
-      "title" : "Isapres",
-      "description" : "Isapres",
-      "uses" : {
-      },
-      "ValueSet-VSIsapres.html" : "Isapres"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSMediodeContacto",
@@ -356,17 +323,6 @@
       "ValueSet-VSPractitionerTipoRolLE.html" : "Rol de profesionales"
     },
     {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPrevisionCodigo",
-      "version" : "0.2.1",
-      "status" : "active",
-      "name" : "CSPrevisionCodigo",
-      "title" : "PrevisionCodigo",
-      "description" : "PrevisionCodigo",
-      "uses" : {
-      },
-      "ValueSet-VSPrevisionCodigo.html" : "PrevisionCodigo"
-    },
-    {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSReligion",
       "version" : "0.2.1",
       "status" : "active",
@@ -376,39 +332,6 @@
       "uses" : {
       },
       "ValueSet-VSReligion.html" : "Religion"
-    },
-    {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSexoBiologico",
-      "version" : "0.2.1",
-      "status" : "active",
-      "name" : "CSSexoBiologico",
-      "title" : "Códigos para Sexo de Nacimiento de Paciente",
-      "description" : "Codigos definidos para el sexo de nacimiento de un paciente en Chile",
-      "uses" : {
-      },
-      "ValueSet-VSSexoBiologico.html" : "Códigos para sexo biológico en Chile"
-    },
-    {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologia",
-      "version" : "0.2.1",
-      "status" : "active",
-      "name" : "CSSospechaPatologia",
-      "title" : "Sospecha Patologia",
-      "description" : "Sospecha Patologia",
-      "uses" : {
-      },
-      "ValueSet-VSSospechaPatologia.html" : "Sospecha Patologia"
-    },
-    {
-      "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoCodDiagnostica",
-      "version" : "0.2.1",
-      "status" : "active",
-      "name" : "CSTipoCodDiagnostica",
-      "title" : "Tipo Codificación Diagnostica",
-      "description" : "Tipo Codificación Diagnostica",
-      "uses" : {
-      },
-      "ValueSet-VSTipoCodDiagnostica.html" : "Tipo Codificación Diagnostica"
     },
     {
       "url" : "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoConsulta",

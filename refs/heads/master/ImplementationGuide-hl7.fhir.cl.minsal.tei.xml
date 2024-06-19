@@ -11,7 +11,7 @@
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2024-06-18T20:03:27+00:00"/>
+  <date value="2024-06-19T19:58:24+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -648,28 +648,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VSSexoBiologico"/>
-      </reference>
-      <name value="Códigos para sexo biológico en Chile"/>
-      <description value="Códigos para sexo biológico en Chile según tabla 820."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSSexoBiologico"/>
-      </reference>
-      <name value="Códigos para Sexo de Nacimiento de Paciente"/>
-      <description value="Codigos definidos para el sexo de nacimiento de un paciente en Chile"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/VSDerivadoParaCodigo"/>
       </reference>
       <name value="Derivado Para"/>
@@ -718,28 +696,6 @@
       </reference>
       <name value="Discapacidad LE"/>
       <description value="Observación Discapacidad LE, para describir si un paciente presenta discapacidad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSDocAcreditacionCuidador"/>
-      </reference>
-      <name value="Documento Acreditacion Cuidador"/>
-      <description value="Documento Acreditacion Cuidador"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSDocAcreditacionCuidador"/>
-      </reference>
-      <name value="Documento Acreditacion Cuidador"/>
-      <description value="Documento Acreditacion Cuidador"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1055,28 +1011,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/VSIdentidaddeGenero"/>
-      </reference>
-      <name value="Identidad de Genero"/>
-      <description value="Identidad de Genero"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSIdentidaddeGenero"/>
-      </reference>
-      <name value="Identidad de Genero"/>
-      <description value="Identidad de Genero"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/VSIdentificadorPrestador"/>
       </reference>
       <name value="IdentificadorPrestador"/>
@@ -1125,28 +1059,6 @@
       </reference>
       <name value="Indice Comorbilidad LE"/>
       <description value="Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSIsapres"/>
-      </reference>
-      <name value="Isapres"/>
-      <description value="Isapres"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSIsapres"/>
-      </reference>
-      <name value="Isapres"/>
-      <description value="Isapres"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1308,6 +1220,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/ObservationAnamnesisLE"/>
+      </reference>
+      <name value="Observation Anamnesis LE"/>
+      <description value="Observation Anamnesis LE"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ObservationResultadoExamen"/>
       </reference>
       <name value="Observation Resultado Examen"/>
@@ -1444,28 +1367,6 @@
       </reference>
       <name value="Prestador Profesional LE"/>
       <description value="Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSPrevisionCodigo"/>
-      </reference>
-      <name value="PrevisionCodigo"/>
-      <description value="PrevisionCodigo"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSPrevisionCodigo"/>
-      </reference>
-      <name value="PrevisionCodigo"/>
-      <description value="PrevisionCodigo"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1646,28 +1547,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSSospechaPatologia"/>
-      </reference>
-      <name value="Sospecha Patologia"/>
-      <description value="Sospecha Patologia"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSSospechaPatologia"/>
-      </reference>
-      <name value="Sospecha Patologia"/>
-      <description value="Sospecha Patologia"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -1686,28 +1565,6 @@
       </reference>
       <name value="TerminologiasDiag"/>
       <description value="TerminologiasDiag"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/VSTipoCodDiagnostica"/>
-      </reference>
-      <name value="Tipo Codificación Diagnostica"/>
-      <description value="Tipo Codificación Diagnostica"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/CSTipoCodDiagnostica"/>
-      </reference>
-      <name value="Tipo Codificación Diagnostica"/>
-      <description value="Tipo Codificación Diagnostica"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
