@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TiemposDeEsperaInteroperable"] ; # 
   fhir:title [ fhir:v "Tiempos de Espera Interoperable"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-18T20:03:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-19T19:58:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -735,30 +735,6 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSSexoBiologico> ;
-         fhir:reference [ fhir:v "ValueSet/VSSexoBiologico" ]
-       ] ;
-       fhir:name [ fhir:v "Códigos para sexo biológico en Chile" ] ;
-       fhir:description [ fhir:v "Códigos para sexo biológico en Chile según tabla 820." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSexoBiologico> ;
-         fhir:reference [ fhir:v "CodeSystem/CSSexoBiologico" ]
-       ] ;
-       fhir:name [ fhir:v "Códigos para Sexo de Nacimiento de Paciente" ] ;
-       fhir:description [ fhir:v "Codigos definidos para el sexo de nacimiento de un paciente en Chile" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSDerivadoParaCodigo> ;
          fhir:reference [ fhir:v "ValueSet/VSDerivadoParaCodigo" ]
        ] ;
@@ -812,30 +788,6 @@
        ] ;
        fhir:name [ fhir:v "Discapacidad LE" ] ;
        fhir:description [ fhir:v "Observación Discapacidad LE, para describir si un paciente presenta discapacidad" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSDocAcreditacionCuidador> ;
-         fhir:reference [ fhir:v "ValueSet/VSDocAcreditacionCuidador" ]
-       ] ;
-       fhir:name [ fhir:v "Documento Acreditacion Cuidador" ] ;
-       fhir:description [ fhir:v "Documento Acreditacion Cuidador" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSDocAcreditacionCuidador> ;
-         fhir:reference [ fhir:v "CodeSystem/CSDocAcreditacionCuidador" ]
-       ] ;
-       fhir:name [ fhir:v "Documento Acreditacion Cuidador" ] ;
-       fhir:description [ fhir:v "Documento Acreditacion Cuidador" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1179,30 +1131,6 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSIdentidaddeGenero> ;
-         fhir:reference [ fhir:v "ValueSet/VSIdentidaddeGenero" ]
-       ] ;
-       fhir:name [ fhir:v "Identidad de Genero" ] ;
-       fhir:description [ fhir:v "Identidad de Genero" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentidaddeGenero> ;
-         fhir:reference [ fhir:v "CodeSystem/CSIdentidaddeGenero" ]
-       ] ;
-       fhir:name [ fhir:v "Identidad de Genero" ] ;
-       fhir:description [ fhir:v "Identidad de Genero" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSIdentificadorPrestador> ;
          fhir:reference [ fhir:v "ValueSet/VSIdentificadorPrestador" ]
        ] ;
@@ -1256,30 +1184,6 @@
        ] ;
        fhir:name [ fhir:v "Indice Comorbilidad LE" ] ;
        fhir:description [ fhir:v "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el índice de comorbilidad de un paciente" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSIsapres> ;
-         fhir:reference [ fhir:v "ValueSet/VSIsapres" ]
-       ] ;
-       fhir:name [ fhir:v "Isapres" ] ;
-       fhir:description [ fhir:v "Isapres" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIsapres> ;
-         fhir:reference [ fhir:v "CodeSystem/CSIsapres" ]
-       ] ;
-       fhir:name [ fhir:v "Isapres" ] ;
-       fhir:description [ fhir:v "Isapres" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1455,6 +1359,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationAnamnesisLE> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObservationAnamnesisLE" ]
+       ] ;
+       fhir:name [ fhir:v "Observation Anamnesis LE" ] ;
+       fhir:description [ fhir:v "Observation Anamnesis LE" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ObservationResultadoExamen> ;
          fhir:reference [ fhir:v "StructureDefinition/ObservationResultadoExamen" ]
        ] ;
@@ -1604,30 +1520,6 @@
        ] ;
        fhir:name [ fhir:v "Prestador Profesional LE" ] ;
        fhir:description [ fhir:v "Prestador Profesional Individual definido para fines de requerimientos normativos y conjunto de datos deseables para el sector público de salud." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSPrevisionCodigo> ;
-         fhir:reference [ fhir:v "ValueSet/VSPrevisionCodigo" ]
-       ] ;
-       fhir:name [ fhir:v "PrevisionCodigo" ] ;
-       fhir:description [ fhir:v "PrevisionCodigo" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSPrevisionCodigo> ;
-         fhir:reference [ fhir:v "CodeSystem/CSPrevisionCodigo" ]
-       ] ;
-       fhir:name [ fhir:v "PrevisionCodigo" ] ;
-       fhir:description [ fhir:v "PrevisionCodigo" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1824,30 +1716,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSSospechaPatologia> ;
-         fhir:reference [ fhir:v "ValueSet/VSSospechaPatologia" ]
-       ] ;
-       fhir:name [ fhir:v "Sospecha Patologia" ] ;
-       fhir:description [ fhir:v "Sospecha Patologia" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSSospechaPatologia> ;
-         fhir:reference [ fhir:v "CodeSystem/CSSospechaPatologia" ]
-       ] ;
-       fhir:name [ fhir:v "Sospecha Patologia" ] ;
-       fhir:description [ fhir:v "Sospecha Patologia" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
@@ -1868,30 +1736,6 @@
        ] ;
        fhir:name [ fhir:v "TerminologiasDiag" ] ;
        fhir:description [ fhir:v "TerminologiasDiag" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSTipoCodDiagnostica> ;
-         fhir:reference [ fhir:v "ValueSet/VSTipoCodDiagnostica" ]
-       ] ;
-       fhir:name [ fhir:v "Tipo Codificación Diagnostica" ] ;
-       fhir:description [ fhir:v "Tipo Codificación Diagnostica" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSTipoCodDiagnostica> ;
-         fhir:reference [ fhir:v "CodeSystem/CSTipoCodDiagnostica" ]
-       ] ;
-       fhir:name [ fhir:v "Tipo Codificación Diagnostica" ] ;
-       fhir:description [ fhir:v "Tipo Codificación Diagnostica" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

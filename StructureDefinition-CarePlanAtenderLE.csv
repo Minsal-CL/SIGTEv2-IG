@@ -70,14 +70,14 @@ This element is labeled as a modifier because the status contains the code enter
 ","Human-friendly name for the care plan","Human-friendly name for the care plan.","","","","","","","","","",,,,,"",,,,"CarePlan.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CarePlan.description","CarePlan.description","","","",1,1,"Y","","Y","string {[]} {[]}
-","Descripción como texto libre","A description of the scope and nature of the plan.","","Provides more detail than conveyed by category.","","","","","","","",,,,,"",,,,"CarePlan.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Indicaciones del plan de cuidado como texto libre","A description of the scope and nature of the plan.","","Provides more detail than conveyed by category.","","","","","","","",,,,,"",,,,"CarePlan.description",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.what[x]"
 "CarePlan.subject","CarePlan.subject","","patient
 ","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE]]}
 ","Referencia al paciente","Identifies the patient or group whose intended care is described by the plan.","","","","","","","","","",,,,,"",,,,"CarePlan.subject",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject",".participation[typeCode=PAT].role[classCode=PAT]","FiveWs.subject[x]","FiveWs.subject","PID-3"
-"CarePlan.encounter","CarePlan.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
-","Encounter created as part of","The Encounter during which this CarePlan was created or to which the creation of this record is tightly associated.","This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. CarePlan activities conducted as a result of the care plan may well occur as part of other encounters.","","","","","","","","",,,,,"",,,,"CarePlan.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"CarePlan.encounter","CarePlan.encounter","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterAtenderLE]]}
+","Encuentro en el cual se genera el plan de cuidado","The Encounter during which this CarePlan was created or to which the creation of this record is tightly associated.","This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter. CarePlan activities conducted as a result of the care plan may well occur as part of other encounters.","","","","","","","","",,,,,"",,,,"CarePlan.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.context",".","FiveWs.context","Associated PV1"
 "CarePlan.period","CarePlan.period","","timing
 ","",0,1,"","","Y","Period {[]} {[]}
