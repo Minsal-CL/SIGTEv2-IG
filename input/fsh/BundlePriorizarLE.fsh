@@ -17,7 +17,7 @@ Description: "Bundle Priorizar LE, recurso utilizado para transportar todos los 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
-* entry 5..5 MS
+* entry 5..7 MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
 * entry contains messageheader 1..1 
         and servicerequest 1..1 

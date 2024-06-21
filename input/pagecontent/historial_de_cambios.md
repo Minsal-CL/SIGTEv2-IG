@@ -73,15 +73,18 @@
   - se pasa  MS el encounter y se solicita que sean **EncounterAtenderLE**
 
 -  Perfil [BundleAtenderLE](StructureDefinition-BundleAtenderLE.html)
+  - Se modifica la cardinalidad de entry de 0..* -> 7..* 
   - Se cambia ObservationAtender LE por ObservationResultadoExamen
   - Se incluye la solicitud de medicamento y la solicitud de exámenes.
 
 - Perfil [BundleRevisarLE](StructureDefinition-BundleRevisarLE.html)
+  - Se modifica la cardinalidad de entry de 7..* -> 5..* 
   - Se modifica la cardinalidad de entry[servicerequestexamen] de 0..1 -> 0..*
   - Se modifica la cardinalidad de entry[practitionerRole] de 1..1 -> 1..2
   - Se modifica la cardinalidad de entry[organization] de 1..1 -> 1..2
 
 - Perfil [BundlePriorizarLE](StructureDefinition-BundlePriorizarLE.html)
+  - Se modifica la cardinalidad de entry de 5..5 -> 5..7 
   - Se modifica la cardinalidad de entry[practitionerRole] de 1..1 -> 1..2
   - Se modifica la cardinalidad de entry[organization] de 1..1 -> 1..2
 
