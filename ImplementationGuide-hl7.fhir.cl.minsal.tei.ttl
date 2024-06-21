@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TiemposDeEsperaInteroperable"] ; # 
   fhir:title [ fhir:v "Tiempos de Espera Interoperable"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-21T15:26:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-21T18:16:33+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -648,18 +648,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ConceptMap" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus> ;
-         fhir:reference [ fhir:v "ConceptMap/CMHipotesisDiagnosticaCodigoAConditionVerificationStatus" ]
-       ] ;
-       fhir:name [ fhir:v "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus" ] ;
-       fhir:description [ fhir:v "Mapping de codigos confirmación diagnostica a condition verfication status" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -1100,30 +1088,6 @@
        ] ;
        fhir:name [ fhir:v "ExtString MotivoNoPertinencia" ] ;
        fhir:description [ fhir:v "Extensión que declara un porque de la no pertinencia" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/ValueSet/VSHipotesisDiagnosticaCodigo> ;
-         fhir:reference [ fhir:v "ValueSet/VSHipotesisDiagnosticaCodigo" ]
-       ] ;
-       fhir:name [ fhir:v "HipotesisDiagnosticaCodigo" ] ;
-       fhir:description [ fhir:v "HipotesisDiagnosticaCodigo" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSHipotesisDiagnosticaCodigo> ;
-         fhir:reference [ fhir:v "CodeSystem/CSHipotesisDiagnosticaCodigo" ]
-       ] ;
-       fhir:name [ fhir:v "HipotesisDiagnosticaCodigo" ] ;
-       fhir:description [ fhir:v "HipotesisDiagnosticaCodigo" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
