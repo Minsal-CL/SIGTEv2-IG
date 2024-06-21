@@ -300,12 +300,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-BundleAtenderLE.html">BundleAtenderLE</a></li>
+  <li>Se modifica la cardinalidad de entry de 0..* -&gt; 7..*</li>
   <li>Se cambia ObservationAtender LE por ObservationResultadoExamen</li>
   <li>
     <p>Se incluye la solicitud de medicamento y la solicitud de exámenes.</p>
   </li>
   <li>Perfil <a href="StructureDefinition-BundleRevisarLE.html">BundleRevisarLE</a>
     <ul>
+      <li>Se modifica la cardinalidad de entry de 7..* -&gt; 5..*</li>
       <li>Se modifica la cardinalidad de entry[servicerequestexamen] de 0..1 -&gt; 0..*</li>
       <li>Se modifica la cardinalidad de entry[practitionerRole] de 1..1 -&gt; 1..2</li>
       <li>Se modifica la cardinalidad de entry[organization] de 1..1 -&gt; 1..2</li>
@@ -313,6 +315,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
   <li>Perfil <a href="StructureDefinition-BundlePriorizarLE.html">BundlePriorizarLE</a>
     <ul>
+      <li>Se modifica la cardinalidad de entry de 5..5 -&gt; 5..7</li>
       <li>Se modifica la cardinalidad de entry[practitionerRole] de 1..1 -&gt; 1..2</li>
       <li>Se modifica la cardinalidad de entry[organization] de 1..1 -&gt; 1..2</li>
     </ul>
@@ -405,7 +408,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Perfil <a href="StructureDefinition-PatientLE.html">PatientLE</a>
     <ul>
-      <li><a name="l908">​</a>Se elimina elemento “IdentidadDeGenero” repetido, dejando solo el que viene referenciado desde la <a href="https://hl7chile.cl/fhir/ig/clcore/1.8.10/">Guia CLCore</a></li>
+      <li><a name="l917">​</a>Se elimina elemento “IdentidadDeGenero” repetido, dejando solo el que viene referenciado desde la <a href="https://hl7chile.cl/fhir/ig/clcore/1.8.10/">Guia CLCore</a></li>
       <li>Extension “País de origen del paciente”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
       <li>Extension “Religión”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
       <li>Extension “Pueblos Originarios”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
@@ -469,7 +472,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se modifica la cardinalidad de entry[organization] 2..2 -&gt; 1..1</li>
     </ul>
   </li>
-  <li><a name="l1077">​</a>Perfil <a href="StructureDefinition-ExamenesAnteriores.html">ExamenesAnteriores</a>
+  <li><a name="l1086">​</a>Perfil <a href="StructureDefinition-ExamenesAnteriores.html">ExamenesAnteriores</a>
     <ul>
       <li>Se cambia cardinalidad subject 0..1 -&gt; 1..1</li>
       <li>Se cambia cardinalidad code.text 1..1 -&gt; 0..1</li>
@@ -494,7 +497,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Se cambia cardinalidad de identifier[run]value -&gt; 1..1</li>
     </ul>
   </li>
-  <li><a name="l1146">​</a>Perfil <a href="StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html">ObservationIniciarIndiceComorbilidadLE</a>
+  <li><a name="l1155">​</a>Perfil <a href="StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html">ObservationIniciarIndiceComorbilidadLE</a>
     <ul>
       <li>Se fija el valor “final” para el elemento status</li>
       <li>Se cambia cardinalidad category.text 1..1 -&gt; 0..1</li>
@@ -649,7 +652,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <ul>
       <li>Se cambió el nombre de la extension identifier.type.extension[paises] -&gt; identifier.type.extension[paisEmisionDocumento]</li>
       <li>Extension “Codigo de Identificación de países”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept.</li>
-      <li><a name="l1544">​</a><a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a>
+      <li><a name="l1553">​</a><a href="StructureDefinition-CorePrestadorCl.html">PrestadorCL</a>
         <ul>
           <li>Se cambia el nombre de los siguientes slices de qualification:
             <ul>
@@ -679,17 +682,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li>Cambio cardinalidad <strong>contact.name.given</strong> 0..1 -&gt; 0..*</li>
     </ul>
   </li>
-  <li><a name="l1605">​</a>El elemento <strong>addresss</strong> debe cumplir con <strong>ClAddress</strong> para las direcciones de los perfiles <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a> y <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
-  <li><a name="l1619">​</a>Cambio en el <a href="Organization-ORG1.html">Ejemplo Organización Prestadora de Salud</a> para cumplir con el perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a></li>
-  <li><a name="l1627">​</a>Cambio en el <a href="Location-LocalizacionEjemploCL1.html">Ejemplo Localización Farmacia</a> para cumplir con el perfil <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
+  <li><a name="l1614">​</a>El elemento <strong>addresss</strong> debe cumplir con <strong>ClAddress</strong> para las direcciones de los perfiles <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a> y <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
+  <li><a name="l1628">​</a>Cambio en el <a href="Organization-ORG1.html">Ejemplo Organización Prestadora de Salud</a> para cumplir con el perfil <a href="StructureDefinition-CoreOrganizacionCl.html">OrganiztionCL</a></li>
+  <li><a name="l1636">​</a>Cambio en el <a href="Location-LocalizacionEjemploCL1.html">Ejemplo Localización Farmacia</a> para cumplir con el perfil <a href="StructureDefinition-CoreLocalizacionCl.html">LocalizacionCL</a></li>
   <li>Se incluyo el context en las siguientes extensiones:
     <ul>
-      <li><a name="l1639">​</a><a href="StructureDefinition-ComunasCl.html">Códigos para Comunas en Chile</a></li>
-      <li><a name="l1643">​</a><a href="StructureDefinition-ProvinciasCl.html">Códigos para Provincias en Chile</a></li>
-      <li><a name="l1647">​</a><a href="StructureDefinition-RegionesCl.html">Códigos para Regiones en Chile</a></li>
-      <li><a name="l1651">​</a><a href="StructureDefinition-IdContacto.html">Identificación del Contacto de un Paciente</a></li>
-      <li><a name="l1655">​</a><a href="StructureDefinition-VSEspecialidadesDeisCL.html">Especialidad del médico principal</a></li>
-      <li><a name="l1659">​</a><a href="StructureDefinition-ContactoParticipantes.html">Contacto de los participantes secundarios del encuentro</a></li>
+      <li><a name="l1648">​</a><a href="StructureDefinition-ComunasCl.html">Códigos para Comunas en Chile</a></li>
+      <li><a name="l1652">​</a><a href="StructureDefinition-ProvinciasCl.html">Códigos para Provincias en Chile</a></li>
+      <li><a name="l1656">​</a><a href="StructureDefinition-RegionesCl.html">Códigos para Regiones en Chile</a></li>
+      <li><a name="l1660">​</a><a href="StructureDefinition-IdContacto.html">Identificación del Contacto de un Paciente</a></li>
+      <li><a name="l1664">​</a><a href="StructureDefinition-VSEspecialidadesDeisCL.html">Especialidad del médico principal</a></li>
+      <li><a name="l1668">​</a><a href="StructureDefinition-ContactoParticipantes.html">Contacto de los participantes secundarios del encuentro</a></li>
     </ul>
   </li>
   <li>Se depreca perfil QuestionnaireResponseAntederLE</li>
@@ -851,7 +854,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 18:16+0000">2024-06-21</span>
+          IG &copy; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 21:35+0000">2024-06-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
