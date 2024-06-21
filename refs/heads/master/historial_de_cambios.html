@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -114,9 +114,6 @@
       </li>
       <li>
         <a href="historias_de_usuario_segun_rol.html">Historias de Usuario según rol</a>
-      </li>
-      <li>
-        <a href="diccionario_de_datos.html">Diccionario de datos</a>
       </li>
     </ul>
   </li>
@@ -351,6 +348,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Perfil<a href="StructureDefinition-MessageHeaderLE.html">MessageHeaderLE</a>
     <ul>
       <li>Se cambia la descripción del author</li>
+      <li>Se cambia descripción focus[ServiceRequestLE], focus[AppointmentAgendarLE] y focus[EncounterAtenderLE]</li>
     </ul>
   </li>
   <li>Perfil<a href="StructureDefinition-EncounterIniciarLE.html">EncounterIniciarLE</a>
@@ -398,7 +396,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
   <li>Perfil <a href="StructureDefinition-PatientLE.html">PatientLE</a>
     <ul>
-      <li><a name="l890">​</a>Se elimina elemento “IdentidadDeGenero” repetido, dejando solo el que viene referenciado desde la <a href="https://hl7chile.cl/fhir/ig/clcore/1.8.10/">Guia CLCore</a></li>
+      <li><a name="l887">​</a>Se elimina elemento “IdentidadDeGenero” repetido, dejando solo el que viene referenciado desde la <a href="https://hl7chile.cl/fhir/ig/clcore/1.8.10/">Guia CLCore</a></li>
       <li>Extension “País de origen del paciente”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
       <li>Extension “Religión”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
       <li>Extension “Pueblos Originarios”, el binding se modifica para dejarlo linkeado al elemento “valueCodeableConcept”.</li>
@@ -412,6 +410,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Perfil <a href="StructureDefinition-BundleAtenderLE.html">BundleAtenderLE</a>
     <ul>
       <li>Se agrega entry AllergyIntolerance aceptando solo AllergyIntoleranceIniciarLE en el campo resource</li>
+      <li>Se elimina slice “questionnaireResponse”</li>
     </ul>
   </li>
   <li>Perfil <a href="StructureDefinition-EncounterAtenderLE.html">EncounterAtenderLE</a>
@@ -684,6 +683,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <li><a name="l1638">​</a><a href="StructureDefinition-ContactoParticipantes.html">Contacto de los participantes secundarios del encuentro</a></li>
     </ul>
   </li>
+  <li>Se depreca perfil QuestionnaireResponseAntederLE</li>
 </ul>
 
 <h3 id="cambios-de-versión-015-a-versión-016">Cambios de versión 0.1.5 a versión 0.1.6</h3>
@@ -842,7 +842,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 19, 2024 20:13+0000">2024-06-19</span>
+          IG &copy; 2024 <a style="color:var(--footer-hyperlink-text-color)" href="https://interoperabilidad.minsal.cl">Unidad de Interoperabilidad - MINSAL</a>.  Package hl7.fhir.cl.minsal.tei#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 21, 2024 14:59+0000">2024-06-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
              Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Tabla de contenidos</a> |
