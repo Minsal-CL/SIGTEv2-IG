@@ -65,11 +65,13 @@ Corresponde a tres slices:"
 * active MS
 
 * name 1..1 MS
-* name ^short = "Nombre del prestador"
+* name ^short = "Nombre(s) y apellido(s) del profesional"
   * family 1..1 MS
-  * family ^short = "Apellidos del Profesional"
+  * family ^short = "Primer apellido del profesional"
+  * family.extension[segundoApellido] MS
+  * family.extension[segundoApellido] ^short = "Segundo apellido del profesional"
   * given 1..* MS 
-  * given ^short = "Nombres del Profesional"
+  * given ^short = "Nombre(s) del Profesional"
 
 * birthDate 1..1 MS
 * birthDate ^short = "Fecha de nacimiento del prestador profesional. El formato debe ser YYYY-MM-DD"

@@ -21,9 +21,9 @@ Description: "MessageHeaderLE"
 * focus ^slicing.discriminator.path = "resolve()"
 * focus ^slicing.rules = #closed
 * focus contains ServiceRequestLE 1..1 and AppointmentAgendarLE 0..1 and EncounterAtenderLE 0..1 
-* focus[ServiceRequestLE] ^short = "Referencia a la prestación requerida por el paciente, debe ir en cada uno de los eventos"
-* focus[AppointmentAgendarLE] ^short = "Referencia a la prestación requerida por el paciente, representa la cita médica y se agrega SOLO en el evento agendar"
-* focus[EncounterAtenderLE] ^short = "Referencia a la prestación requerida por el paciente, representa la atención realizada y se agrega SOLO en el evento atender"
+* focus[ServiceRequestLE] ^short = "Referencia a la solicitud de servicio requerida por el paciente, debe ir en cada uno de los eventos"
+* focus[AppointmentAgendarLE] ^short = "Referencia a la cita médica requerida por el paciente y se agrega SOLO en el evento agendar"
+* focus[EncounterAtenderLE] ^short = "Referencia a la atención realizada al paciente  y se agrega SOLO en el evento atender"
 * focus ^short = "Referencia a la prestación requerida para el paciente en cada evento"
 * eventCoding 1..1 MS
 * eventCoding ^short = "Código para el evento que representa este mensaje o enlace a la definición del evento"

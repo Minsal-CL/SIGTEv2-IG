@@ -108,6 +108,7 @@
 
 - Perfil[MessageHeaderLE](StructureDefinition-MessageHeaderLE.html)
   - Se cambia la descripción del author
+  - Se cambia descripción focus[ServiceRequestLE], focus[AppointmentAgendarLE] y focus[EncounterAtenderLE]
 
 - Perfil[EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html)
   - Se cambia obligatoriedad y mas support del identifier.type

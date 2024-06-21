@@ -20,11 +20,13 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 * identifier[otro] 0..0
 
 * name 1..1 MS
-* name ^short = "Nombre del prestador administrativo"
+* name ^short = "Nombre(s) y apellido(s) del prestador administrativo"
   * family 1..1 MS
-  * family ^short = "Apellidos del administrativo"
+  * family ^short = "Primer apellido del administrativo"
+  * family.extension[segundoApellido] MS
+  * family.extension[segundoApellido] ^short = "Segundo apellido del administrativo"
   * given 1..* MS 
-  * given ^short = "Nombres del administrativo"
+  * given ^short = "Nombre(s) del administrativo"
 
 * active MS
 
