@@ -61,7 +61,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Bundle.link.url","Bundle.link.url","","","",1,1,"","","Y","uri {[]} {[]}
 ","Reference details for the link","The reference details for the link.","","","","","","","","","",,,,,"",,,,"Bundle.link.url",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry","Bundle.entry","","","",5,5,"Y","","Y","BackboneElement {[]} {[]}
+"Bundle.entry","Bundle.entry","","","",5,7,"Y","","Y","BackboneElement {[]} {[]}
 ","Entrada en el Bundle: contendrá un recurso o información","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"","profile:resource}
 ","",,"closed","Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
