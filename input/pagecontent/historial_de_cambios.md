@@ -102,7 +102,9 @@
 - La extensión **ExtBoolSolicitudExamenes** paso a llamarse **ExtensionSolicitudExamenes**
 - La extensión **ExtStringMotivoNoPertinencia** paso a llamarse **ExtensionMotivoNoPertinencia**
 
-- En todos los Perfiles Bundle se pasas los timestamp de 0..1 -> 1..1 
+- En todos los Perfiles Bundle:
+  - Los timestamp de 0..1 -> 1..1
+  - Los entry.resource 0..1 -> 1..1
 
 - Se depreca el recurso **Coverage**
 
@@ -124,6 +126,7 @@
   - PrevisionCodigo 
   - Sospecha Patologia
   - VSTipoCodDiagnostica
+  - VSHipotesisDiagnosticaCodigo
 
 - Se eliminan los siguientes CodeSystem de la guía:
   - Códigos para Sexo de Nacimiento de Paciente
@@ -133,11 +136,15 @@
   - PrevisionCodigo
   - Tipo Codificación Diagnostica
   - Sospecha Patologia
+  - CSHipotesisDiagnosticaCodigo
+
+- Se depreca ConceptMap CMHipotesisDiagnosticaCodigoAConditionVerificationStatus
 
 - Perfil **ObservationAtender** -> Se llamara [ObservationAnamnesis](StructureDefinition-ObservationAnamnesisLE.html)
   - se incluye el code = http://snomed.info/sct"#108217004 entrevista, historia clínica y/o examen físico"
   - se incluye el code.text = "Anamnesis"
-  
+
+- En todos los perfiles bundles el uso de la tabla de datos y sus consideraciones   
 
 ### Versión 0.2.0
 

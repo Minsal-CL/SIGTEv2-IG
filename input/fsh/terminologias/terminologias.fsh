@@ -569,39 +569,6 @@ Description: "CodeSystem con códigos definidos para representar cada rol de pro
 * #atendedor "Atendedor"
 * #terminador "Terminador"
 
-
-ValueSet: VSHipotesisDiagnosticaCodigo
-Id: VSHipotesisDiagnosticaCodigo
-Title: "HipotesisDiagnosticaCodigo"
-Description: "HipotesisDiagnosticaCodigo"
-* ^experimental = false
-* ^version = "0.1"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* codes from system CSHipotesisDiagnosticaCodigo
-
-CodeSystem: CSHipotesisDiagnosticaCodigo
-Id: CSHipotesisDiagnosticaCodigo
-Title: "HipotesisDiagnosticaCodigo"
-Description: "HipotesisDiagnosticaCodigo"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-
-* #1  "Confirmada"
-* #2  "Descartada"
-
 ValueSet: VSTituloProfesional
 Id: VSTituloProfesional
 Title: "TituloProfesional"
@@ -761,40 +728,7 @@ Description: "EspecialidadMed"
 * #67  "TRAUMATOLOGÍA Y ORTOPEDIA PEDIÁTRICA"
 * #68  "UROLOGÍA PEDIÁTRICA"
 
-Instance: CMHipotesisDiagnosticaCodigoAConditionVerificationStatus
-InstanceOf: ConceptMap
-Usage: #definition
-* name = "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
-* title = "CMHipotesisDiagnosticaCodigoAConditionVerificationStatus"
-* description = "Mapping de codigos confirmación diagnostica a condition verfication status"
-* status = #draft
-* experimental = true
-* date = "2023-04-28"
-* version = "0.9"
-* contact.name = "MINSAL CHILE"
-* contact.telecom.system = #email
-* contact.telecom.value = "minsal@minsal.cl"
-* jurisdiction = urn:iso:std:iso:3166#CL "Chile"
-* sourceCanonical = Canonical(VSHipotesisDiagnosticaCodigo)
-* targetCanonical = Canonical(http://terminology.hl7.org/ValueSet/condition-ver-status)
-* group[+]
-  * source = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSHipotesisDiagnosticaCodigo"
-  * target = "http://terminology.hl7.org/CodeSystem/condition-ver-status"
-  * element[+]
-    * code = #1
-    * display = "Confirmada"
-    * target[+]
-      * code = #confirmed
-      * display = "Confirmed"
-      * equivalence = #equivalent
 
-  * element[+]
-    * code = #2
-    * display = "Descartada"
-    * target[+]
-      * code = #refuted
-      * display = "Refuted"
-      * equivalence = #equivalent
 
 ValueSet: VSServicioRequerido
 Id: VSServicioRequerido
