@@ -13,6 +13,7 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 * identifier[run] 1..1
 * identifier[run].type 1..1 MS
 * identifier[run].type.coding 1..1 MS
+  * code = #01
 * identifier.value 1..1 MS
 
 * identifier[rnpi] 0..0

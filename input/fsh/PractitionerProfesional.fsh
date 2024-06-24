@@ -30,7 +30,7 @@ Corresponde a tres slices:"
       * system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
       * system ^short = "Sistema de codificación para el tipo de identificador"
       * code 1..1 MS
-      * code = #1
+      * code = #01
       * code ^short = "Código que identifica al tipo de documento de identificador"
       * code ^definition = "Código que identifica al tipo de documento de identificador"
   * value 1..1 MS

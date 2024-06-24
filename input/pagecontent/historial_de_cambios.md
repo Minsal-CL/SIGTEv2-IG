@@ -93,12 +93,14 @@
    - Cambia cardinalidad de name.given 0..* -> 1..*
    - Cambia cardinalidad de telecom.system 0..1 -> 1..1
    - Cambia cardinalidad de telecom.value 0..1 -> 1..1
+   - Se corrige type.coding.code 1 -> 01
 
 - Perfil [PractitionerProfesionalLE](StructureDefinition-PractitionerProfesionalLE.html)
    - Cambia cardinalidad de name.family 0..1 -> 1..1
    - Cambia cardinalidad de name.given 0..* -> 1..*
    - Cambia cardinalidad de telecom.system 0..1 -> 1..1
    - Cambia cardinalidad de telecom.value 0..1 -> 1..1
+   - Se corrige type.coding.code 1 -> 01
 
 - La extensión **ContactadoLE** paso a llamarse **ExtensionContactadoLE**
 - La extension **ExtBoolPertinenciaAtencionBox** paso a llamarse **ExtensionPertinenciaAtencionBox**
