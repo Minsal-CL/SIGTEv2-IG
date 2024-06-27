@@ -149,7 +149,8 @@
   - se incluye el code = http://snomed.info/sct"#108217004 entrevista, historia clínica y/o examen físico"
   - se incluye el code.text = "Anamnesis"
 
-- En todos los perfiles bundles el uso de la tabla de datos y sus consideraciones   
+- En todos los perfiles bundles se elimina el uso de la tabla de datos y sus consideraciones
+- En las extensiones se ajustan los contextos para el uso en los servidores
 
 ### Versión 0.2.0
 

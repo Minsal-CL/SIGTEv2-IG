@@ -6,6 +6,15 @@ Description: "AllergyIntolerance Iniciar LE"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+// * obeys ait-1 and ait-2
+
+// * clinicalStatus MS
+//   * ^short = "active | inactive | resolved"
+//   * ^definition = "Estado clínico de la alergía o la intolerancia"
+// * verificationStatus MS
+//   * ^short = "unconfirmed | confirmed | refuted | entered-in-error"
+//   * ^definition = "Estado de verificación de la alergía o la intolerancia"
+
 * patient 1..1 MS
   * reference 1..1 MS
   * display 0..1 MS
@@ -27,3 +36,13 @@ Description: "AllergyIntolerance Iniciar LE"
 * code ^short = "Seccion para identificar la alergia o intolerancia del paciente"
   * text 1..1 MS
   * text ^short = "Alergia del paciente"  
+
+// Invariant: ait-1
+// Description: "AllergyIntolerance.clinicalStatus DEBE estar presente si verificationStatus no es 'entered-in-error.'"
+// Expression: "verificationStatus.coding.where(system = 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification' and code = 'entered-in-error').exists() or clinicalStatus.exists()"
+// Severity: #error
+
+// Invariant: ait-2
+// Description: "AllergyIntolerance.clinicalStatus NO DEBE estar presente si  verificationStatus es 'entered-in-error'"
+// Expression: "verificationStatus.coding.where(system = 'http://terminology.hl7.org/CodeSystem/allergyintolerance-verification' and code = 'entered-in-error').empty() or clinicalStatus.empty()"
+// Severity: #error
