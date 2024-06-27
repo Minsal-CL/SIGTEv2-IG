@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TiemposDeEsperaInteroperable"] ; # 
   fhir:title [ fhir:v "Tiempos de Espera Interoperable"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-06-24T21:09:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-06-27T13:53:42+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Unidad de Interoperabilidad - MINSAL"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Unidad de Interoperabilidad - MINSAL" ] ;
@@ -1026,8 +1026,8 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolRequiereExamen> ;
          fhir:reference [ fhir:v "StructureDefinition/ExtensionBoolRequiereExamen" ]
        ] ;
-       fhir:name [ fhir:v "ExtBool RequiereExamen" ] ;
-       fhir:description [ fhir:v "ExtBool RequiereExamen" ] ;
+       fhir:name [ fhir:v "ExtBool Requiere Examen" ] ;
+       fhir:description [ fhir:v "ExtBool Requiere Examen" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1038,8 +1038,8 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolResolutividadAPS> ;
          fhir:reference [ fhir:v "StructureDefinition/ExtensionBoolResolutividadAPS" ]
        ] ;
-       fhir:name [ fhir:v "ExtBool ResolutividadAPS" ] ;
-       fhir:description [ fhir:v "ExtBool ResolutividadAPS" ] ;
+       fhir:name [ fhir:v "ExtBool Resolutividad APS" ] ;
+       fhir:description [ fhir:v "ExtBool Resolutividad APS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1062,8 +1062,8 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado> ;
          fhir:reference [ fhir:v "StructureDefinition/Contactado" ]
        ] ;
-       fhir:name [ fhir:v "ExtensionContactadoLE" ] ;
-       fhir:description [ fhir:v "ExtensionContactadoLE" ] ;
+       fhir:name [ fhir:v "Extension ContactadoLE" ] ;
+       fhir:description [ fhir:v "Extension ContactadoLE" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1074,7 +1074,7 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionStringFundamentoPriorizacion> ;
          fhir:reference [ fhir:v "StructureDefinition/ExtensionStringFundamentoPriorizacion" ]
        ] ;
-       fhir:name [ fhir:v "ExtensionStringFundamentoPriorizacion" ] ;
+       fhir:name [ fhir:v "Extension String Fundamento Priorizacion" ] ;
        fhir:description [ fhir:v "Extensión para fundamenta la priorización de la interconsulta" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1086,7 +1086,7 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMotivoNoPertinencia> ;
          fhir:reference [ fhir:v "StructureDefinition/ExtensionMotivoNoPertinencia" ]
        ] ;
-       fhir:name [ fhir:v "ExtString MotivoNoPertinencia" ] ;
+       fhir:name [ fhir:v "ExtString Motivo No Pertinencia" ] ;
        fhir:description [ fhir:v "Extensión que declara un porque de la no pertinencia" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1152,6 +1152,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMediodeContacto> ;
+         fhir:reference [ fhir:v "StructureDefinition/ExtensionMediodeContacto" ]
+       ] ;
+       fhir:name [ fhir:v "Medio de Contacto" ] ;
+       fhir:description [ fhir:v "Medio de Contacto" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -1179,22 +1191,10 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionMediodeContacto> ;
-         fhir:reference [ fhir:v "StructureDefinition/ExtensionMediodeContacto" ]
-       ] ;
-       fhir:name [ fhir:v "MediodeContacto" ] ;
-       fhir:description [ fhir:v "Medio de Contacto" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Mencion> ;
          fhir:reference [ fhir:v "StructureDefinition/Mencion" ]
        ] ;
-       fhir:name [ fhir:v "Mención profesional añadida l título profesional" ] ;
+       fhir:name [ fhir:v "Mención profesional añadida al título profesional" ] ;
        fhir:description [ fhir:v "Mención profesional obtenida junto con el título, dato que se agrega en texto lible" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1491,6 +1491,18 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosAfrodescendiente> ;
+         fhir:reference [ fhir:v "StructureDefinition/PueblosAfrodescendiente" ]
+       ] ;
+       fhir:name [ fhir:v "Pueblos Afrodescendiente" ] ;
+       fhir:description [ fhir:v "Pueblos Afrodescendiente" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginarios> ;
          fhir:reference [ fhir:v "StructureDefinition/PueblosOriginarios" ]
        ] ;
@@ -1527,23 +1539,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosAfrodescendiente> ;
-         fhir:reference [ fhir:v "StructureDefinition/PueblosAfrodescendiente" ]
-       ] ;
-       fhir:name [ fhir:v "PueblosAfrodescendiente" ] ;
-       fhir:description [ fhir:v "PueblosAfrodescendiente" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginariosPerteneciente> ;
          fhir:reference [ fhir:v "StructureDefinition/PueblosOriginariosPerteneciente" ]
        ] ;
-       fhir:name [ fhir:v "PueblosOriginariosPerteneciente" ] ;
-       fhir:description [ fhir:v "PueblosOriginariosPerteneciente" ] ;
+       fhir:name [ fhir:v "Pueblos Originarios Perteneciente" ] ;
+       fhir:description [ fhir:v "Pueblos Originarios Perteneciente" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1650,8 +1650,8 @@
          fhir:link <https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SituacionCalle> ;
          fhir:reference [ fhir:v "StructureDefinition/SituacionCalle" ]
        ] ;
-       fhir:name [ fhir:v "SituacionCalle" ] ;
-       fhir:description [ fhir:v "SituacionCalle" ] ;
+       fhir:name [ fhir:v "Situacion Calle" ] ;
+       fhir:description [ fhir:v "Situacion Calle" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

@@ -10,7 +10,7 @@
   "name" : "TiemposDeEsperaInteroperable",
   "title" : "Tiempos de Espera Interoperable",
   "status" : "draft",
-  "date" : "2024-06-24T21:09:26+00:00",
+  "date" : "2024-06-27T13:53:42+00:00",
   "publisher" : "Unidad de Interoperabilidad - MINSAL",
   "contact" : [{
     "name" : "Unidad de Interoperabilidad - MINSAL",
@@ -1111,8 +1111,8 @@
       "reference" : {
         "reference" : "StructureDefinition/ExtensionBoolRequiereExamen"
       },
-      "name" : "ExtBool RequiereExamen",
-      "description" : "ExtBool RequiereExamen",
+      "name" : "ExtBool Requiere Examen",
+      "description" : "ExtBool Requiere Examen",
       "exampleBoolean" : false
     },
     {
@@ -1123,8 +1123,8 @@
       "reference" : {
         "reference" : "StructureDefinition/ExtensionBoolResolutividadAPS"
       },
-      "name" : "ExtBool ResolutividadAPS",
-      "description" : "ExtBool ResolutividadAPS",
+      "name" : "ExtBool Resolutividad APS",
+      "description" : "ExtBool Resolutividad APS",
       "exampleBoolean" : false
     },
     {
@@ -1147,8 +1147,8 @@
       "reference" : {
         "reference" : "StructureDefinition/Contactado"
       },
-      "name" : "ExtensionContactadoLE",
-      "description" : "ExtensionContactadoLE",
+      "name" : "Extension ContactadoLE",
+      "description" : "Extension ContactadoLE",
       "exampleBoolean" : false
     },
     {
@@ -1159,7 +1159,7 @@
       "reference" : {
         "reference" : "StructureDefinition/ExtensionStringFundamentoPriorizacion"
       },
-      "name" : "ExtensionStringFundamentoPriorizacion",
+      "name" : "Extension String Fundamento Priorizacion",
       "description" : "Extensión para fundamenta la priorización de la interconsulta",
       "exampleBoolean" : false
     },
@@ -1171,7 +1171,7 @@
       "reference" : {
         "reference" : "StructureDefinition/ExtensionMotivoNoPertinencia"
       },
-      "name" : "ExtString MotivoNoPertinencia",
+      "name" : "ExtString Motivo No Pertinencia",
       "description" : "Extensión que declara un porque de la no pertinencia",
       "exampleBoolean" : false
     },
@@ -1238,6 +1238,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ExtensionMediodeContacto"
+      },
+      "name" : "Medio de Contacto",
+      "description" : "Medio de Contacto",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1265,21 +1277,9 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/ExtensionMediodeContacto"
-      },
-      "name" : "MediodeContacto",
-      "description" : "Medio de Contacto",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/Mencion"
       },
-      "name" : "Mención profesional añadida l título profesional",
+      "name" : "Mención profesional añadida al título profesional",
       "description" : "Mención profesional obtenida junto con el título, dato que se agrega en texto lible",
       "exampleBoolean" : false
     },
@@ -1577,6 +1577,18 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/PueblosAfrodescendiente"
+      },
+      "name" : "Pueblos Afrodescendiente",
+      "description" : "Pueblos Afrodescendiente",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/PueblosOriginarios"
       },
       "name" : "Pueblos Originarios",
@@ -1613,22 +1625,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/PueblosAfrodescendiente"
-      },
-      "name" : "PueblosAfrodescendiente",
-      "description" : "PueblosAfrodescendiente",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/PueblosOriginariosPerteneciente"
       },
-      "name" : "PueblosOriginariosPerteneciente",
-      "description" : "PueblosOriginariosPerteneciente",
+      "name" : "Pueblos Originarios Perteneciente",
+      "description" : "Pueblos Originarios Perteneciente",
       "exampleBoolean" : false
     },
     {
@@ -1735,8 +1735,8 @@
       "reference" : {
         "reference" : "StructureDefinition/SituacionCalle"
       },
-      "name" : "SituacionCalle",
-      "description" : "SituacionCalle",
+      "name" : "Situacion Calle",
+      "description" : "Situacion Calle",
       "exampleBoolean" : false
     },
     {
