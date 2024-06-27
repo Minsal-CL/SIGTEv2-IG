@@ -217,7 +217,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AppointmentAgendarLE","Appointment.extension:ExtensionContactadoLE","Appointment.extension","ExtensionContactadoLE","","",1,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Contactado]]} {[]}
-","Extensión compleja, donde se indica si el paciente fue Contactado[true|false] o MotivoNoContactabilidad si la anterior fue false","ExtensionContactadoLE","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Extensión compleja, donde se indica si el paciente fue Contactado[true|false] o MotivoNoContactabilidad si la anterior fue false","Extension ContactadoLE","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "AppointmentAgendarLE","Appointment.modifierExtension","Appointment.modifierExtension","","extensions
@@ -9024,7 +9024,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Additional information about the Condition","Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis.","","","","","","","","","",,,,,"",,,,"Condition.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Contactado","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","ExtensionContactadoLE","ExtensionContactadoLE","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Extension ContactadoLE","Extension ContactadoLE","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Contactado","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -9757,7 +9757,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExtensionBoolRequiereExamen","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","ExtBool RequiereExamen","ExtBool RequiereExamen","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ExtBool Requiere Examen","ExtBool Requiere Examen","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExtensionBoolRequiereExamen","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -9772,7 +9772,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExtensionBoolResolutividadAPS","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","ExtBool ResolutividadAPS","ExtBool ResolutividadAPS","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ExtBool Resolutividad APS","ExtBool Resolutividad APS","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExtensionBoolResolutividadAPS","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -9937,7 +9937,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExtensionMediodeContacto","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","MediodeContacto","Medio de Contacto","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Medio de Contacto","Medio de Contacto","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExtensionMediodeContacto","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -10037,7 +10037,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExtensionMotivoNoPertinencia","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","ExtString MotivoNoPertinencia","Extensión que declara un porque de la no pertinencia","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","ExtString Motivo No Pertinencia","Extensión que declara un porque de la no pertinencia","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExtensionMotivoNoPertinencia","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -10210,7 +10210,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "ExtensionStringFundamentoPriorizacion","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","ExtensionStringFundamentoPriorizacion","Extensión para fundamenta la priorización de la interconsulta","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Extension String Fundamento Priorizacion","Extensión para fundamenta la priorización de la interconsulta","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ExtensionStringFundamentoPriorizacion","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -10275,7 +10275,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Mencion","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Mención profesional añadida l título profesional","Mención profesional obtenida junto con el título, dato que se agrega en texto lible","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Mención profesional añadida al título profesional","Mención profesional obtenida junto con el título, dato que se agrega en texto lible","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Mencion","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -11879,10 +11879,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Religión","Religión","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PatientLE","Patient.extension:PueblosOriginariosPerteneciente","Patient.extension","PueblosOriginariosPerteneciente","","",1,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginariosPerteneciente]]} {[]}
-","PueblosOriginariosPerteneciente","PueblosOriginariosPerteneciente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Pueblos Originarios Perteneciente","Pueblos Originarios Perteneciente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PatientLE","Patient.extension:PueblosAfrodescendiente","Patient.extension","PueblosAfrodescendiente","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosAfrodescendiente]]} {[]}
-","PueblosAfrodescendiente","PueblosAfrodescendiente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Pueblos Afrodescendiente","Pueblos Afrodescendiente","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PatientLE","Patient.extension:PueblosOriginarios","Patient.extension","PueblosOriginarios","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginarios]]} {[]}
 ","Pueblos Originarios","Almacenar si el paciente pertenece a algun pueblo originario","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -12100,7 +12100,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Dirección absoluta, es decir, latitud y longitud.","The absolute geographic location of the Location, expressed using the WGS84 datum (This is the same co-ordinate system used in KML).","The extension can be further extended to include unique geolocation identifiers, confidence, altitude, etc.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PatientLE","Patient.address.extension:SituacionCalle","Patient.address.extension","SituacionCalle","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SituacionCalle]]} {[]}
-","SituacionCalle","SituacionCalle","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Situacion Calle","Situacion Calle","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PatientLE","Patient.address.use","Patient.address.use","","","",1,1,"Y","Y","Y","code {[]} {[]}
 ","Definición del tipo de domicilio home | work | temp | old (requerido)","Se especifica el tipo de dirección notificada. Esto debe ser segun los códigos definidos por HL7 FHIR","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -13694,7 +13694,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PractitionerProfesionalLE","Practitioner.qualification:TituloProfesional.extension:Mencion","Practitioner.qualification.extension","Mencion","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/Mencion]]} {[]}
-","Mención profesional añadida l título profesional","Mención profesional obtenida junto con el título, dato que se agrega en texto lible","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+","Mención profesional añadida al título profesional","Mención profesional obtenida junto con el título, dato que se agrega en texto lible","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PractitionerProfesionalLE","Practitioner.qualification:TituloProfesional.modifierExtension","Practitioner.qualification.modifierExtension","","extensions
@@ -14513,7 +14513,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Technical endpoints providing access to services operated for the practitioner with this role","Technical endpoints providing access to services operated for the practitioner with this role.","","Organizations have multiple systems that provide various services and ,ay also be different for practitioners too.So the endpoint satisfies the need to be able to define the technical connection details for how to connect to them, and for what purpose.","","","","","","","",,,,,"",,,,"PractitionerRole.endpoint",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "PueblosAfrodescendiente","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","PueblosAfrodescendiente","PueblosAfrodescendiente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Pueblos Afrodescendiente","Pueblos Afrodescendiente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PueblosAfrodescendiente","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -14525,7 +14525,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "PueblosAfrodescendiente","Extension.url","Extension.url","","","",1,1,"Y","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosAfrodescendiente""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "PueblosAfrodescendiente","Extension.value[x]","Extension.value[x]","","","",1,1,"Y","","","boolean {[]} {[]}
-","PueblosAfrodescendiente","PueblosAfrodescendiente","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Pueblos Afrodescendiente","Pueblos Afrodescendiente","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "PueblosOriginarios","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Pueblos Originarios","Almacenar si el paciente pertenece a algun pueblo originario","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
@@ -14578,7 +14578,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Otro pueblo originario","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "PueblosOriginariosPerteneciente","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","PueblosOriginariosPerteneciente","PueblosOriginariosPerteneciente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Pueblos Originarios Perteneciente","Pueblos Originarios Perteneciente","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "PueblosOriginariosPerteneciente","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -15031,7 +15031,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ServiceRequestLE","ServiceRequest.extension:RequiereExamen","ServiceRequest.extension","RequiereExamen","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolRequiereExamen]]} {[]}
-","ExtBool RequiereExamen","ExtBool RequiereExamen","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ExtBool Requiere Examen","ExtBool Requiere Examen","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ServiceRequestLE","ServiceRequest.extension:AtencionPreferente","ServiceRequest.extension","AtencionPreferente","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolAtencionPreferente]]} {[]}
@@ -15039,7 +15039,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ServiceRequestLE","ServiceRequest.extension:ResolutividadAPS","ServiceRequest.extension","ResolutividadAPS","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionBoolResolutividadAPS]]} {[]}
-","Programa de Resolutividad local.","ExtBool ResolutividadAPS","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","Programa de Resolutividad local.","ExtBool Resolutividad APS","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "ServiceRequestLE","ServiceRequest.extension:OrigenInterconsulta","ServiceRequest.extension","OrigenInterconsulta","","",0,1,"Y","","","Extension {[CanonicalType[https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/ExtensionOrigenInterconsulta]]} {[]}
@@ -15349,7 +15349,7 @@ AOE","",0,*,"Y","","","Reference {[]} {[CanonicalType[https://interoperabilidad.
 ","Request provenance","Key events in the history of the request.","This might not include provenances for all versions of the request – only those deemed “relevant” or important.This SHALL NOT include the Provenance associated with this current version of the resource.  (If that provenance is deemed to be a “relevant” change, it will need to be added as part of a later update.  Until then, it can be queried directly as the Provenance that points to this version using _revincludeAll Provenances should have some historical version of this Request as their subject.","","","","","","","","",,,,,"",,,,"ServiceRequest.relevantHistory",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "SituacionCalle","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","SituacionCalle","SituacionCalle","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+","Situacion Calle","Situacion Calle","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "SituacionCalle","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
@@ -15361,5 +15361,5 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "SituacionCalle","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/SituacionCalle""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "SituacionCalle","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","boolean {[]} {[]}
-","SituacionCalle","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Situacion Calle","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

@@ -11,7 +11,7 @@
   <name value="TiemposDeEsperaInteroperable"/>
   <title value="Tiempos de Espera Interoperable"/>
   <status value="draft"/>
-  <date value="2024-06-24T21:09:26+00:00"/>
+  <date value="2024-06-27T13:53:42+00:00"/>
   <publisher value="Unidad de Interoperabilidad - MINSAL"/>
   <contact>
     <name value="Unidad de Interoperabilidad - MINSAL"/>
@@ -914,8 +914,8 @@
       <reference>
         <reference value="StructureDefinition/ExtensionBoolRequiereExamen"/>
       </reference>
-      <name value="ExtBool RequiereExamen"/>
-      <description value="ExtBool RequiereExamen"/>
+      <name value="ExtBool Requiere Examen"/>
+      <description value="ExtBool Requiere Examen"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -925,8 +925,8 @@
       <reference>
         <reference value="StructureDefinition/ExtensionBoolResolutividadAPS"/>
       </reference>
-      <name value="ExtBool ResolutividadAPS"/>
-      <description value="ExtBool ResolutividadAPS"/>
+      <name value="ExtBool Resolutividad APS"/>
+      <description value="ExtBool Resolutividad APS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -947,8 +947,8 @@
       <reference>
         <reference value="StructureDefinition/Contactado"/>
       </reference>
-      <name value="ExtensionContactadoLE"/>
-      <description value="ExtensionContactadoLE"/>
+      <name value="Extension ContactadoLE"/>
+      <description value="Extension ContactadoLE"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -958,7 +958,7 @@
       <reference>
         <reference value="StructureDefinition/ExtensionStringFundamentoPriorizacion"/>
       </reference>
-      <name value="ExtensionStringFundamentoPriorizacion"/>
+      <name value="Extension String Fundamento Priorizacion"/>
       <description value="Extensión para fundamenta la priorización de la interconsulta"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -969,7 +969,7 @@
       <reference>
         <reference value="StructureDefinition/ExtensionMotivoNoPertinencia"/>
       </reference>
-      <name value="ExtString MotivoNoPertinencia"/>
+      <name value="ExtString Motivo No Pertinencia"/>
       <description value="Extensión que declara un porque de la no pertinencia"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1030,6 +1030,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ExtensionMediodeContacto"/>
+      </reference>
+      <name value="Medio de Contacto"/>
+      <description value="Medio de Contacto"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1055,20 +1066,9 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/ExtensionMediodeContacto"/>
-      </reference>
-      <name value="MediodeContacto"/>
-      <description value="Medio de Contacto"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/Mencion"/>
       </reference>
-      <name value="Mención profesional añadida l título profesional"/>
+      <name value="Mención profesional añadida al título profesional"/>
       <description value="Mención profesional obtenida junto con el título, dato que se agrega en texto lible"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1341,6 +1341,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/PueblosAfrodescendiente"/>
+      </reference>
+      <name value="Pueblos Afrodescendiente"/>
+      <description value="Pueblos Afrodescendiente"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/PueblosOriginarios"/>
       </reference>
       <name value="Pueblos Originarios"/>
@@ -1374,21 +1385,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/PueblosAfrodescendiente"/>
-      </reference>
-      <name value="PueblosAfrodescendiente"/>
-      <description value="PueblosAfrodescendiente"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/PueblosOriginariosPerteneciente"/>
       </reference>
-      <name value="PueblosOriginariosPerteneciente"/>
-      <description value="PueblosOriginariosPerteneciente"/>
+      <name value="Pueblos Originarios Perteneciente"/>
+      <description value="Pueblos Originarios Perteneciente"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1486,8 +1486,8 @@
       <reference>
         <reference value="StructureDefinition/SituacionCalle"/>
       </reference>
-      <name value="SituacionCalle"/>
-      <description value="SituacionCalle"/>
+      <name value="Situacion Calle"/>
+      <description value="Situacion Calle"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
