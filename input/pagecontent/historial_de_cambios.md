@@ -89,6 +89,7 @@
   - Se modifica la cardinalidad de entry[organization] de 1..1 -> 1..2
 
 - Perfil [PractitionerAdministrativoLE](StructureDefinition-PractitionerAdministrativoLE.html)
+   - Se cambian las descripciones del Identifier
    - Cambia cardinalidad de name.family 0..1 -> 1..1
    - Cambia cardinalidad de name.given 0..* -> 1..*
    - Cambia cardinalidad de telecom.system 0..1 -> 1..1
