@@ -32,12 +32,6 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
-    <sch:title>f:Practitioner/f:identifier/f:type/f:coding</sch:title>
-    <sch:rule context="f:Practitioner/f:identifier/f:type/f:coding">
-      <sch:assert test="count(f:system) &gt;= 1">system: minimum cardinality of 'system' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>f:Practitioner/f:name</sch:title>
     <sch:rule context="f:Practitioner/f:name">
       <sch:assert test="count(f:family) &gt;= 1">family: minimum cardinality of 'family' is 1</sch:assert>
