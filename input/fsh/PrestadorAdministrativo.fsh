@@ -10,11 +10,28 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 
 * extension[SexoBiologico] 0..0 MS
 
-* identifier[run] 1..1
-* identifier[run].type 1..1 MS
-* identifier[run].type.coding 1..1 MS
-  * code = #01
-* identifier.value 1..1 MS
+* identifier[run] 1..1 MS
+* identifier[run] ^short = "Identificador destinado a determinar el número de RUN"
+* identifier[run].use = #official
+* identifier[run].use ^short = "Uso del identificador"
+* identifier[run].use 1..1 MS
+* identifier[run] ^definition = "Corresponde al identificador (RUN) otorgado el Registro Civil de Chile"
+  * type 1..1 MS
+  * type from VSIdentificadorPrestador
+  * type ^short = "Descripción del identificador"
+  * type ^definition = "Descripción para el tipo de identificador"
+    * coding MS
+    * coding ^short = "Código definido por un sistema terminológico"
+      * system 0..1 MS
+      * system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
+      * system ^short = "Sistema de codificación para el tipo de identificador"
+      * code 1..1 MS
+      * code = #01
+      * code ^short = "Código que identifica al tipo de documento de identificador"
+      * code ^definition = "Código que identifica al tipo de documento de identificador"
+  * value 1..1 MS
+  * value ^short = "Número RUN"
+  * value ^definition = "Valor RUN"
 
 * identifier[rnpi] 0..0
 * identifier[pasaporte] 0..0

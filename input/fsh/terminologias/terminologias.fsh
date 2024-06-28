@@ -988,22 +988,21 @@ Description: "EstadoCivil"
 * #06 "Conviviente civil"
 * #99 "Desconocido"
 
-CodeSystem: CSIdentificadorPrestador
-Id: CSIdentificadorPrestador
-Title: "IdentificadorPrestador"
-Description: "IdentificadorPrestador"
-* ^experimental = false
-* ^caseSensitive = true
-* ^version = "0.9"
-* ^status = #active
-* ^date = "2023-01-15"
-* ^contact.name = "MINSAL CHILE"
-* ^contact.telecom.system = #email
-* ^contact.telecom.value = "minsal@minsal.cl"
-* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+// CodeSystem: CSIdentificadorPrestador
+// Id: CSIdentificadorPrestador
+// Title: "IdentificadorPrestador"
+// Description: "IdentificadorPrestador"
+// * ^experimental = false
+// * ^caseSensitive = true
+// * ^version = "0.9"
+// * ^status = #active
+// * ^date = "2023-01-15"
+// * ^contact.name = "MINSAL CHILE"
+// * ^contact.telecom.system = #email
+// * ^contact.telecom.value = "minsal@minsal.cl"
+// * ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
 
-* #01 "RNPI (Registro Nacional de Prestador Individual)"
-
+// * #01 "RNPI (Registro Nacional de Prestador Individual)"
 
 ValueSet: VSIdentificadorPrestador
 Id: VSIdentificadorPrestador

@@ -49,9 +49,10 @@ Corresponde a tres slices:"
   * type ^definition = "Descripción para el tipo de identificador"
     * coding MS
     * coding ^short = "Código definido por un sistema terminológico"
-      * system 1..1 MS
+      * system 0..1 MS
+      * code 1..1 MS
       * code = #13
-      * system  = #"https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSIdentificadorPrestador"
+      * system  = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador"
       * system ^short = "Sistema de codificación para el código de tipo de identificador"
       * code ^short = "Código que identifica al tipo de documento de identificador"
       * code ^definition = "Código que identifica al tipo de documento de identificador. Será #98 para RNPI"
