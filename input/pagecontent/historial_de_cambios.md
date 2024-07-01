@@ -31,7 +31,6 @@
   - authoredOn 0..1 -> 1..1
   - ocurrenceDateTime 1..1 -> 0..1
 
-
 - Perfil [PatientLE](StructureDefinition-PatientLE.html)
   - Identifier 1..*
   - Identifier.type.coding 1..1
@@ -177,7 +176,6 @@
   - Se agrega extensión ConsecuenciaAtencionCodigo
   - Se fija valor ConsecuenciaAtencionCodigo.valueCodeableConcept.coding.code <- 3
 
-
 - Perfil [ServiceRequestExamenLE](StructureDefinition-ServiceRequestExamenLE.html)
   - Se fija valor identifier.type.coding.code -> 02
 
@@ -202,12 +200,10 @@
    - code.coding.code modifica cardinalidad 0..1 -> 1..1
    - Se fija binding http://hl7.org/fhir/ValueSet/allergyintolerance-code para code
    
-
 - Perfil [BundleRevisarLE](StructureDefinition-BundleRevisarLE.html)
    - Se modifica la cardinalidad de entry[practitionerRole] 2..2 -> 1..1
    - Se modifica la cardinalidad de entry[organization] 2..2 -> 1..1
    
-
 - Perfil [ExamenesAnteriores](StructureDefinition-ExamenesAnteriores.html)
    - Se cambia cardinalidad subject 0..1 -> 1..1
    - Se cambia cardinalidad code.text 1..1 -> 0..1
@@ -253,14 +249,12 @@
    - Se elimina el slice reasonReference[ObservationAtenderLE]
    - Se fija la referencia de reasonReference a "QuestionnaireResponseAtenderLE"
 
-
 - Perfil [QuestionnaireResponseIniciarLE](StructureDefinition-QuestionnaireResponseIniciarLE.html)
    - Se cambia cardinalidad item 0..1 -> 1..1
    - Se cambia cardinalidad item.linkId 0..1 -> 1..1
    - Se fija referencia subject only Reference(PatientLE)
    - Se fija referencia encounter only Reference(EncounterIniciarLE)
    - Se fija referencia author only Reference(PractitionerProfesionalLE)
-
 
 - Perfil [ObservationIniciarCuidadorLE](StructureDefinition-ObservationIniciarCuidadorLE.html)
    - Se agrega la extension EsCuidador
@@ -276,7 +270,6 @@
    - Se cambia la cardinalidad de severity.coding.system 1..1 -> 0..1
    - Se cambia la cardinalidad de code.coding.display 1..1 -> 0..1
    - Se agrega binding en code VSTerminologiasDiag
-
 
 - Perfil [CarePlanAtenderLE](StructureDefinition-CarePlanAtenderLE.html)
    - Se modifica el nombre de la extension solicitudExamen -> Requiere-Examen
@@ -294,11 +287,9 @@
 - Se crea la extensión ExtBoolEsCuidador
 - Se elimina el perfil DocumentReferenceIniciarLE y todas sus referencias
 
-
 - [ObservationDiscapacidadLE](StructureDefinition-ObservationDiscapacidadLE.html)
   - Se cambia cardinalidad subjecto 0..1 -> 1..1
   - EspOdo -> EspecialidadOdontologica
-
 
 - [PractitionerProfesionalLE](StructureDefinition-PractitionerProfesionalLE.html)
   - Se cambia el nombre de los siguientes slices de qualification:
@@ -324,8 +315,6 @@
   - Se cambia la cardinalidad de qualification[EspecialidadBioQuimica].identifier 0..1 -> 1..1
   - Se cambia la cardinalidad de qualification[EspecialidadFarmacologica].identifier 0..1 -> 1..1
 
-
-
 - Se elimina VSEspecialidades
 - Se cambia el nombre el perfil ConditionInicioDiagnosticoLE -> ConditionDiagnosticoLE
 - Se elimina el recurso CondicionAtenderDiagnosticoConfirmacionLE
@@ -347,7 +336,6 @@
 - Se elimina VSTipoIdentificadorSR
 - Se elimina CSTipoIdentificadorSR
 
-
 - Modificaciones de la "CLcore"
   - Se cambió el nombre de la extension identifier.type.extension[paises] -> identifier.type.extension[paisEmisionDocumento]
   - Extension "Codigo de Identificación de países", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept.
@@ -357,9 +345,6 @@
       - Esp -> EspecialidadMedica
       - SubEsp -> Subespecialidad
 - Para el perfil PrestadorCL se fija en todos los slices del  identifier[run|rnpi|pasaporte|otro].type from VSTipoIdentificador
-
-
-
 
   Se incluyeron los ejemplos
   - Cambio cardinalidad **contact.name.given** 0..1 -> 0..*
