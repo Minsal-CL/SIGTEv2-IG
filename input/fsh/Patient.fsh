@@ -52,9 +52,9 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * telecom.value ^short = "Valor de contacto"
 * telecom.rank MS
 * telecom.rank ^short = "Orden de uso del método de contacto, siendo 1 = prioritario"
-* telecom.system ^short = "Orden de uso del método de contacto, siendo 1 = prioritario"
+
 * telecom.period MS
-* telecom.period ^short = "Para completar este campo utilice solo los valores \"phone | email\""
+* telecom.period ^short = "Periodo de tiempo durante el cual es válido el contacto del paciente"
 
 * maritalStatus from VSEstadoCivil
 * maritalStatus MS
