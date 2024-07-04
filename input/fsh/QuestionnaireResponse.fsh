@@ -11,8 +11,27 @@
 // * item.answer[0].valueString 
 // * encounter 1..1 MS
 // * encounter only Reference(EncounterAtenderLE)
+/*
+Instance: MotivoDerivacion
+InstanceOf: Questionnaire
+Usage: #definition
+Title: "MotivoDerivacion"
+Description: "Permite describir el motivo de derivacion de un paciente"
 
-
+* title = "Motivo de Derivación"
+* status = #draft
+* experimental = true
+* subjectType[0] = #Patient
+* date = "2024-07-04"
+* item[0]
+  * linkId = "MotivoDerivacion"
+  * text = "Motivo Derivación"
+  * type = #text
+  * required = true
+  * repeats = false
+  * maxLength = 3000
+*/
+  
 Profile: QuestionnaireResponseIniciarLE
 Parent: QuestionnaireResponse
 Id: QuestionnaireResponseIniciarLE
