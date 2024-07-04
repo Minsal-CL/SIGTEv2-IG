@@ -51,7 +51,7 @@
 - Perfil [ConditionDiagnosticoLE](StructureDefinition-ConditionDiagnosticoLE.html)
   - Se cambia cardinalidad clinicalStatus 1..1 a 0..1
   - Se cambia cardinalidad de verificationStatus 1..1 a 0..1
-  
+
 - Perfil [ObservationIndiceComorbilidadLE](StructureDefinition-ObservationIndiceComorbilidadLE.html)
  - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
  - Se corrije el uso del code y el biding [TipoDeObservacion](ValueSet-TipoDeObservacion.html) para determinar el tipo de observación
@@ -156,6 +156,7 @@
 - Perfil **ObservationAtender** -> Se llamara [ObservationAnamnesis](StructureDefinition-ObservationAnamnesisLE.html)
   - se incluye el code = http://snomed.info/sct#84100007
   - se incluye el code.text = "Anamnesis"
+  - se incluye biding a [TipoDeObservacion](ValueSet-TipoDeObservacion.html)
 
 - En todos los perfiles bundles se elimina el uso de la tabla de datos y sus consideraciones
 - En las extensiones se ajustan los contextos para el uso en los servidores

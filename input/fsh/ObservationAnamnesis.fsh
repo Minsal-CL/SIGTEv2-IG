@@ -11,7 +11,6 @@ Description: "Observation Anamnesis LE"
 * status = #registered
 
 * code 1..1 MS
-  * ^short = "Tipo de observación"
   * coding 1..1 MS
     * system 1..1 MS
     * system ^short =  "Sistema terminológico, url/uri/uuid"
@@ -21,7 +20,8 @@ Description: "Observation Anamnesis LE"
     * display 0..1 MS
   * text 0..1 MS
   * text ^short = "Anamnesis"
-* code ^short = "Anamnesis" 
+* code ^short = "Anamnesis"
+* code from TipoDeObservacion (extensible)
 
 * subject 1..1 MS
 * subject only Reference(PatientLE)
