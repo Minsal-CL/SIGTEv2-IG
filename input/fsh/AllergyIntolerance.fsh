@@ -8,12 +8,12 @@ Description: "AllergyIntolerance Iniciar LE"
 
 // * obeys ait-1 and ait-2
 
-// * clinicalStatus MS
-//   * ^short = "active | inactive | resolved"
-//   * ^definition = "Estado clínico de la alergía o la intolerancia"
-// * verificationStatus MS
-//   * ^short = "unconfirmed | confirmed | refuted | entered-in-error"
-//   * ^definition = "Estado de verificación de la alergía o la intolerancia"
+* clinicalStatus MS
+  * ^short = "active | inactive | resolved"
+  * ^definition = "Estado clínico de la alergía o la intolerancia"
+* verificationStatus MS
+  * ^short = "unconfirmed | confirmed | refuted | entered-in-error"
+  * ^definition = "Estado de verificación de la alergía o la intolerancia"
 
 * patient 1..1 MS
   * reference 1..1 MS

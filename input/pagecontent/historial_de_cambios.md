@@ -51,8 +51,12 @@
 - Perfil [ConditionDiagnosticoLE](StructureDefinition-ConditionDiagnosticoLE.html)
   - Se cambia cardinalidad clinicalStatus 1..1 a 0..1
   - Se cambia cardinalidad de verificationStatus 1..1 a 0..1
+  
 - Perfil [ObservationIndiceComorbilidadLE](StructureDefinition-ObservationIndiceComorbilidadLE.html)
  - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
+ - Se corrije el uso del code y el biding [TipoDeObservacion](ValueSet-TipoDeObservacion.html) para determinar el tipo de observación
+ - Se agrega el dato value[x] forzado a valueCodebleConcept, la cardinalidad a 1..1 y se realiza un biding al [VSIndicecomorbilidad](ValueSet-VSIndicecomorbilidad.html)
+
 
 - Perfil [ObservationIniciarCuidadorLE](StructureDefinition-ObservationIniciarCuidadorLE.html)
  - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
@@ -63,7 +67,8 @@
  - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
  - se depreca extension ExtBoolPresentaDiscapacidad
  - se incluye el ValueBoolean a 1..1
-
+ - Se incluye el biding [TipoDeObservacion](ValueSet-TipoDeObservacion.html) para determinar el tipo de observación.
+   
 - Perfil **Condición GES** se depreca y se elimina cualquier referencia a él.
 
 - Perfil [CarePlan Atender LE](StructureDefinition-CarePlanAtenderLE.html)
@@ -113,15 +118,18 @@
 
 - Se depreca el recurso **Coverage**
 
-- Perfil[MessageHeaderLE](StructureDefinition-MessageHeaderLE.html)
+- Perfil [MessageHeaderLE](StructureDefinition-MessageHeaderLE.html)
   - Se cambia la descripción del author
   - Se cambia descripción focus[ServiceRequestLE], focus[AppointmentAgendarLE] y focus[EncounterAtenderLE]
 
-- Perfil[EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html)
-  - Se cambia obligatoriedad y mas support del identifier.type
+- Perfil [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html)
+  - Se cambia obligatoriedad y must support del identifier.type
 
-- Perfil[EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
-  - Se cambia obligatoriedad y mas support del identifier.type
+- Perfil [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
+  - Se cambia obligatoriedad y must support del identifier.type
+
+- Perfil [AllergyIntoleranceIniciarLE](StructureDefinition-AllergyIntoleranceIniciarLE.html)
+  - Se agrega Must Support a clinicalStatus y verificationStatus
 
 - Se eliminan los siguientes ValueSet de la guía:
   - Códigos para sexo biológico en Chile 
@@ -146,11 +154,13 @@
 - Se depreca ConceptMap CMHipotesisDiagnosticaCodigoAConditionVerificationStatus
 
 - Perfil **ObservationAtender** -> Se llamara [ObservationAnamnesis](StructureDefinition-ObservationAnamnesisLE.html)
-  - se incluye el code = http://snomed.info/sct"#108217004 entrevista, historia clínica y/o examen físico"
+  - se incluye el code = http://snomed.info/sct#84100007
   - se incluye el code.text = "Anamnesis"
 
 - En todos los perfiles bundles se elimina el uso de la tabla de datos y sus consideraciones
 - En las extensiones se ajustan los contextos para el uso en los servidores
+- Se crea el Value Set [TipoDeObservacion](ValueSet-TipoDeObservacion.html)
+- Se crea el Code System [CSTipoObservacionMinsal](CodeSystem-CSTipoObservacionMinsal.html)
 
 ### Versión 0.2.0
 

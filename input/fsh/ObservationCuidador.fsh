@@ -21,6 +21,7 @@ Description: "Indica que el paciente es cuidador, es decir es responsable del cu
 * encounter only Reference(EncounterIniciarLE or EncounterAtenderLE)
 
 * code 1..1 MS
+* code from TipoDeObservacion (extensible)
 * code ^short = "Tipo de observación, por defecto se usará como valor fijo el código de loinc que explicita si un paciente está a cargo de los cuidados de otra persona"
   * coding 1..1 MS
     * system ^short = "http://loinc.org"

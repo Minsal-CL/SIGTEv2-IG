@@ -27,6 +27,7 @@ Description: "Observación Discapacidad LE, para describir si un paciente presen
 * code ^short = "Tipo de observación"
 * code.coding.code = #101720-1
 * code.coding.system = "http://loinc.org"
+* code from TipoDeObservacion (extensible)
 
 * value[x] only boolean
 * valueBoolean 1..1 MS

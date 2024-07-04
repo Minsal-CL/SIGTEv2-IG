@@ -11,15 +11,15 @@ Description: "Observation Anamnesis LE"
 * status = #registered
 
 * code 1..1 MS
+  * ^short = "Tipo de observación"
   * coding 1..1 MS
     * system 1..1 MS
-    * system ^short = "Sistema de identificación de la observación"
+    * system ^short =  "Sistema terminológico, url/uri/uuid"
     * system = "http://snomed.info/sct"
     * code 1..1 MS
-    * code = #108217004
-    * display 1..1 MS
-    * display = "entrevista, historia clínica y/o examen físico"
-  * text 1..1 MS
+    * code = #84100007
+    * display 0..1 MS
+  * text 0..1 MS
   * text ^short = "Anamnesis"
 * code ^short = "Anamnesis" 
 
