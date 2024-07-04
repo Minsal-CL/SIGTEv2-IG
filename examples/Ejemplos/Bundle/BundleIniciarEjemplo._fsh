@@ -51,124 +51,7 @@ Description: "Ejemplo de un mensaje del evento Iniciar"
     },
     {
       "fullUrl": "http://interoperabilidad.minsal.cl/fhir/ig/tei/PatientEjemplo",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "example",
-        "meta": {
-          "profile": [
-            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PatientLE"
-          ]
-        },
-        "extension": [
-          {
-            "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/IdentidadDeGenero",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSIdentidaddeGenero",
-                  "code": "2",
-                  "display": "Femenina"
-                }
-              ],
-              "text": "Femenina"
-            }
-          },
-          {
-            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PaisOrigenMPI",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais",
-                  "code": "152",
-                  "display": "Chile"
-                }
-              ],
-              "text": "Chile"
-            }
-          },
-          {
-            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginariosPerteneciente",
-            "valueBoolean": true
-          },
-          {
-            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosAfrodescendiente",
-            "valueBoolean": false
-          },
-          {
-            "url": "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/PueblosOriginarios",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/PueblosOriginariosCS",
-                  "code": "07",
-                  "display": "Diaguita"
-                }
-              ],
-              "text": "Diaguita"
-            }
-          }
-        ],
-        "identifier": [
-          {
-            "use": "official",
-            "type": {
-              "coding": [
-                {
-                  "system": "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador",
-                  "code": "01",
-                  "display": "RUN"
-                }
-              ],
-              "text": "Rol Único Nacional"
-            },
-            "value": "90000000-6",
-            "assigner": {
-              "display": "Republica de Chile"
-            }
-          }
-        ],
-        "active": true,
-        "name": [
-          {
-            "use": "official",
-            "family": "Gonzalez",
-            "given": [
-              "María",
-              "Josefina"
-            ],
-            "extension": [
-              {
-                "url": "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/SegundoApellido",
-                "valueString": "Morales"
-              }
-            ]
-          }
-        ],
-        "telecom": [
-          {
-            "system": "phone",
-            "value": "(562) 5555 6473",
-            "use": "home",
-            "rank": 1
-          }
-        ],
-        "gender": "male",
-        "birthDate": "1974-12-25",
-        "deceasedBoolean": false,
-        "address": [
-          {
-            "use": "home",
-            "text": "Calle Arrabal Conchita Tejeda Nº 24, Esc. 432",
-            "line": [
-              "Calle Arrabal Conchita Tejeda"
-            ],
-            "city": "Huara",
-            "district": "Provincia del Tamarugal",
-            "state": "Región de Tarapacá",
-            "postalCode": "1140000"
-          }
-        ]
-      }
+      
     },
     {
       "fullUrl": "http://interoperabilidad.minsal.cl/fhir/ig/tei/OrganizationEjemplo",
@@ -632,54 +515,7 @@ Description: "Ejemplo de un mensaje del evento Iniciar"
     },
     {
       "fullUrl": "http://interoperabilidad.minsal.cl/fhir/ig/tei/EncounterEjemplo",
-      "resource": {
-        "resourceType": "Encounter",
-        "id": "example",
-        "meta": {
-          "profile": [
-            "https://interoperabilidad.minsal.cl/fhir/ig/tei/StructureDefinition/EncounterIniciarLE"
-          ]
-        },
-        "identifier": [
-          {
-            "type": "official",
-            "system": "http://example.org/sampleencounter-identifier",
-            "value": "123"
-          }
-        ],
-        "status": "finished",
-        "class": {
-          "system": "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSModalidadAtencionCodigo",
-          "code": "1",
-          "display": "Presencial"
-        },
-        "subject": {
-          "reference": "Patient/example"
-        },
-        "basedOn": {
-          "reference": "ServiceRequest/example"
-        },
-        "participant": [
-          {
-            "individual": {
-              "reference": "Practitioner/example",
-              "display": "Dr José Contreras"
-            }
-          }
-        ],
-        "period": {
-          "start": "2024-01-17T16:00:00+10:00",
-          "end": "2024-01-17T16:30:00+10:00"
-        },
-        "diagnosis": [
-          {
-            "condition": {
-              "reference": "Condition/example"
-            },
-            "rank": 1
-          }
-        ]
-      }
+      "resource": 
     },
     {
       "fullUrl": "http://interoperabilidad.minsal.cl/fhir/ig/tei/ObservationIndiceComorbilidadEjemplo",
@@ -767,6 +603,7 @@ Description: "Ejemplo de un mensaje del evento Iniciar"
         "subject": {
             "reference": "Patient/example"
         }
+      }
     },
     {
       "fullUrl": "http://interoperabilidad.minsal.cl/fhir/ig/tei/AllergyIntoleranceEjemplo",
