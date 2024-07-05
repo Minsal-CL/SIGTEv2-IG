@@ -10,6 +10,6 @@ Description: "Ejemplo de un profesional con el rol de iniciador de la interconsu
 
 * active = true
 * practitioner = Reference(PractitionerProfesionalLEEjemplo)
-* organization = Reference(OrganizationLEejemplo)
+* organization = Reference(OrganizationLEEjemplo)
 
 * code = CSPractitionerTipoRolLE#iniciador "Iniciador"

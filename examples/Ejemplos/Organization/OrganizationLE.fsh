@@ -1,7 +1,7 @@
-Instance: OrganizationLEejemplo
+Instance: OrganizationLEEjemplo
 InstanceOf: OrganizationLE
 Usage: #example
-Title: "OrganizationLEejemplo"
+Title: "OrganizationLE ejemplo"
 Description: "Ejemplo de una organización que inicia una interconsulta"
 
 * identifier[0]

@@ -1,7 +1,7 @@
 Instance: EjemploObservationCuidador
 InstanceOf: ObservationIniciarCuidadorLE
 Usage: #example
-Title: "EjemploObservationCuidador"
+Title: "Ejemplo Observation Cuidador"
 Description: "Ejemplo del recurso que indica si el paciente es cuidador o no"
 
 * status = #final
