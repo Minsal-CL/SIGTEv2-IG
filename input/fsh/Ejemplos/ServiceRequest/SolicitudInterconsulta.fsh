@@ -6,10 +6,10 @@ Description: "Ejemplo de la solicitud de Interconsulta para un paciente con nece
 
 // * extension[MotivoCierreInterconsulta] =  ExtensionMotivoCierreInterconsultaEj1
 * extension[RequiereExamen] = ExtensionBoolRequiereExamenEj1
-* extension[AtencionPreferente] =  ExtensionBoolAtencionPreferenteEj1
+// * extension[AtencionPreferente] =  ExtensionBoolAtencionPreferenteEj1
 * extension[ResolutividadAPS] = ExtensionBoolResolutividadAPSEj1
 * extension[OrigenInterconsulta] = ExtensionOrigenInterconsultaEj1
-* extension[FundamentoPriorizacion] = ExtensionStringFundamentoPriorizacionEj1
+// * extension[FundamentoPriorizacion] = ExtensionStringFundamentoPriorizacionEj1
 * extension[EstadoInterconsultaCodigo] = ExtensionEstadoInterconsultaCodigoLEEj1
 * extension[EspecialidadMedicaDestinoCodigo] = ExtensionEspecialidadMedicaDestinoCodigoEj1
 * extension[SubEspecialidadMedicaDestinoCodigo] = ExtensionSubEspecialidadMedicaDestinoCodigoEj1
@@ -58,11 +58,11 @@ Usage: #inline
 
 * valueBoolean = true
 
-Instance: ExtensionBoolAtencionPreferenteEj1
-InstanceOf: ExtensionBoolAtencionPreferente
-Usage: #inline
+// Instance: ExtensionBoolAtencionPreferenteEj1
+// InstanceOf: ExtensionBoolAtencionPreferente
+// Usage: #inline
 
-* valueBoolean = true
+// * valueBoolean = true
 
 Instance: ExtensionBoolResolutividadAPSEj1
 InstanceOf: ExtensionBoolResolutividadAPS
@@ -76,11 +76,11 @@ Usage: #inline
 
 * valueCodeableConcept = CSorigenInterconsulta#1 "APS"
 
-Instance: ExtensionStringFundamentoPriorizacionEj1
-InstanceOf: ExtensionStringFundamentoPriorizacion 
-Usage: #inline
+// Instance: ExtensionStringFundamentoPriorizacionEj1
+// InstanceOf: ExtensionStringFundamentoPriorizacion 
+// Usage: #inline
 
-* valueString = "Paciente es jefa de hogar y cuidadora de adulto mayor."
+// * valueString = "Paciente es jefa de hogar y cuidadora de adulto mayor."
 
 Instance: ExtensionEstadoInterconsultaCodigoLEEj1
 InstanceOf: ExtensionEstadoInterconsultaCodigoLE

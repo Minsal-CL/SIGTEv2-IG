@@ -19,7 +19,7 @@ Description: "Ejemplo de una condición como motivo de interconsulta"
 
 * code
   * coding = http://snomed.info/sct#165865000 "Adrenal antibody detected"
-  * text = "anticuerpos contra glándulas suprarrenales detectados "
+  * text = "anticuerpos contra glándulas suprarrenales detectados"
 
 * subject = Reference(EjemploPatientLE)
 

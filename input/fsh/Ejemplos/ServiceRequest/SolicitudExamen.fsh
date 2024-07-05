@@ -11,7 +11,7 @@ Description: "Ejemplo de la solicitud realizada junto a una interconsulta"
   * coding = http://loinc.org#2857-1 "Prostate specific Ag [Mass/volume] in Serum or Plasma"
   * text = "Antigeno Prostático Específico en Suero o Plasma"
 * subject = Reference(EjemploPatientLE)
-* authoredOn = "2013-05-02T16:16:00-07:00"
+* authoredOn = "2024-01-17T16:00:00-03:00"
 * requester = Reference(PractitionerProfesionalLEEjemplo)
 * reasonCode
   * coding = http://snomed.info/sct#414205003

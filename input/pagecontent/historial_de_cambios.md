@@ -236,7 +236,7 @@
    - Se cambia cardinalidad de identifier[run].type.coding -> 1..1 
    - Se cambia cardinalidad de identifier[run]value -> 1..1
 
-- Perfil [ObservationIniciarIndiceComorbilidadLE]((StructureDefinition-ObservationIndiceComorbilidadLE.html))
+- Perfil [ObservationIniciarIndiceComorbilidadLE](StructureDefinition-ObservationIndiceComorbilidadLE.html)
    - Se fija el valor "final" para el elemento status
    - Se cambia cardinalidad category.text 1..1 -> 0..1
 
