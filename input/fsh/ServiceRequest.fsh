@@ -54,7 +54,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension[OrigenInterconsulta] ^short = "Origen de la interconsulta"
 
 * extension contains ExtensionStringFundamentoPriorizacion named FundamentoPriorizacion 0..1 MS
-* extension[FundamentoPriorizacion] ^short = " Razones del porque se prioriza esta Interconsulta."
+* extension[FundamentoPriorizacion] ^short = "Razones del porque se prioriza esta Interconsulta."
 
 * extension contains ExtensionEstadoInterconsultaCodigoLE named EstadoInterconsultaCodigo 1..1 MS
 * extension[EstadoInterconsultaCodigo] ^short = "Estado de la Interconsulta en relación al proceso de negocio."

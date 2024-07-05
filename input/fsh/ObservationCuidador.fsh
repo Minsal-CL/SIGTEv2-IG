@@ -14,7 +14,7 @@ Description: "Indica que el paciente es cuidador, es decir es responsable del cu
 * subject 1..1 MS 
 * subject ^short = "Referencia al paciente"
 * status = #final
-* status ^short = "Estado de la observación, por defecto 'final' "
+* status ^short = "Estado de la observación, por defecto 'final'"
 
 * encounter 0..1 MS
 * encounter ^short = "Encuentro del cual nace la observación"

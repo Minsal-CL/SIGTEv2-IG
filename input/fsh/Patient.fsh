@@ -46,7 +46,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 
 * telecom 1..* MS
 * telecom.system 1..1 MS
-* telecom.system ^short = "phone | email "
+* telecom.system ^short = "phone | email"
 * telecom.system ^definition = "Sistema de contacto"
 * telecom.value 1..1 MS
 * telecom.value ^short = "Valor de contacto"

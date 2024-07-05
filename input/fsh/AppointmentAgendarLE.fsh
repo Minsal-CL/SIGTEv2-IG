@@ -72,7 +72,7 @@ Description: "Appointment Agendar LE"
 * participant[patientLE].actor ^short = "Paciente participante de esta cita"
 * participant[patientLE].actor.type = #Patient
 * participant[patientLE].actor.type ^short = "Tipo de participante de la cita al que se hace referencia"
-* participant[patientLE].status ^short = "Estado de la cita, este puede ser \"accepted | declined | tentative | needs-action\" "
+* participant[patientLE].status ^short = "Estado de la cita, este puede ser \"accepted | declined | tentative | needs-action\""
 
 
 * participant[practitionerRoleLE].actor 1..1 MS

@@ -14,7 +14,7 @@ Description: "Ejemplo de la solicitud realizada junto a una interconsulta"
 * authoredOn = "2013-05-02T16:16:00-07:00"
 * requester = Reference(PractitionerProfesionalLEEjemplo)
 * reasonCode
-  * coding = http://snomed.info/sct#414205
+  * coding = http://snomed.info/sct#414205003
   * text = "antecedente familiar de neoplasia maligna de próstata"
 * note
   * text = "paciente con APE elevado en 2022, se solicita examen vigente previo a atención con especialidad"

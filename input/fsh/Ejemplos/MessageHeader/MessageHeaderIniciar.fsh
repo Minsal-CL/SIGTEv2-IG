@@ -4,7 +4,7 @@ Usage: #example
 Title: "MesssageHeader Iniciar"
 Description: "Es el ejemplo da la cabecera de un ejemplo de messsage header con tipo iniciar"
 
-* meta.lastUpdated = "2024-01-17T16:00:00+10:00"
+* meta.lastUpdated = "2024-01-17T16:00:00-03:00"
 * eventCoding = CSTipoEventoLE#iniciar
 * author = Reference(PractitionerRoleIniciador)
 * source

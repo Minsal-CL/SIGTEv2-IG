@@ -4,7 +4,7 @@ Usage: #example
 Title: "Ejemplo de Solicitud de Interconsulta"
 Description: "Ejemplo de la solicitud de Interconsulta para un paciente con necesidad de que sea de endocrinología"
 
-* extension[MotivoCierreInterconsulta] =  ExtensionMotivoCierreInterconsultaEj1
+// * extension[MotivoCierreInterconsulta] =  ExtensionMotivoCierreInterconsultaEj1
 * extension[RequiereExamen] = ExtensionBoolRequiereExamenEj1
 * extension[AtencionPreferente] =  ExtensionBoolAtencionPreferenteEj1
 * extension[ResolutividadAPS] = ExtensionBoolResolutividadAPSEj1
@@ -44,12 +44,13 @@ Description: "Ejemplo de la solicitud de Interconsulta para un paciente con nece
 * supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidadLE)
 * supportingInfo[motivoDerivacion] = Reference(MotivoDerivacionEjemplo)
 * supportingInfo[SolicitudExamen] = Reference(SolicitudExamenEjemplo)
+* supportingInfo[ResultadoExamen] = Reference(AnticuerpoAdrenal)
 
-Instance: ExtensionMotivoCierreInterconsultaEj1
-InstanceOf: ExtensionMotivoCierreInterconsulta
-Usage: #inline
+// Instance: ExtensionMotivoCierreInterconsultaEj1
+// InstanceOf: ExtensionMotivoCierreInterconsulta
+// Usage: #inline
 
-* valueCodeableConcept = CSMotivoCierreInterconsulta#2 "Atención Realizada (1)"
+// * valueCodeableConcept = CSMotivoCierreInterconsulta#2 "Atención Realizada (1)"
 
 Instance: ExtensionBoolRequiereExamenEj1
 InstanceOf: ExtensionBoolRequiereExamen
@@ -85,7 +86,7 @@ Instance: ExtensionEstadoInterconsultaCodigoLEEj1
 InstanceOf: ExtensionEstadoInterconsultaCodigoLE
 Usage: #inline
 
-* valueCodeableConcept = CSEstadoInterconsulta#2 "A la espera de referenciar"
+* valueCodeableConcept = CSEstadoInterconsulta#1 "A la espera de referencia"
 
 Instance: ExtensionEspecialidadMedicaDestinoCodigoEj1
 InstanceOf: ExtensionEspecialidadMedicaDestinoCodigo

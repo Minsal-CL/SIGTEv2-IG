@@ -66,7 +66,7 @@ El evento **referenciar** debe soportar las siguientes secuencias:
 La semántica del mensaje para la transacción del Evento Referenciar usa el [Bundle Referenciar LE](StructureDefinition-BundleReferenciarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al Evento Referenciar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Bundle Evento Referenciar](StructureDefinition-BundleReferenciarLE.html)
-* [Ejemplo Bundle Referenciar](Bundle-EjemploBundleReferenciar.html)
+<!--* [Ejemplo Bundle Referenciar](Bundle-EjemploBundleReferenciar.html)-->
 
 ##### Response
 
@@ -107,7 +107,7 @@ El evento **revisar** debe soportar a siguiente secuencia:
 La semántica del mensaje para la transacción del evento de revisar usa el [Bundle Revisar LE](StructureDefinition-BundleRevisarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento de revisar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Bundle Evento Revisar](StructureDefinition-BundleRevisarLE.html)
-* [Ejemplo Bundle Revisar](Bundle-EjemploBundleRevisar.html)
+<!--* [Ejemplo Bundle Revisar](Bundle-EjemploBundleRevisar.html)-->
 
 ##### Response
 
@@ -149,7 +149,7 @@ El evento **priorizar** debe soportar a siguiente secuencia:
 La semántica del mensaje para la transacción del evento priorizar usa el [Bundle Priorizar LE](StructureDefinition-BundlePriorizarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al evento priorizar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 .
 * [Bundle Evento Priorizar](StructureDefinition-BundlePriorizarLE.html)
-* [Ejemplo Bundle Priorizar](Bundle-EjemploBundlePriorizar.html)
+<!--* [Ejemplo Bundle Priorizar](Bundle-EjemploBundlePriorizar.html)-->
 
 ##### Response
 

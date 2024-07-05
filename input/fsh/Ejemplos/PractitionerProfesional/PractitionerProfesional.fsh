@@ -27,7 +27,7 @@ Description: "Ejemplo de un profesional de tiempos de espera"
   * family.extension[segundoApellido] = SegundoApellidoPractitionerProfesionalEjemplo
 
 * address =  ClAddressPractitionerProfesionalEjemplo
-* gender = #material
+* gender = #male
 * birthDate = "1980-01-01"
 
 * qualification[TituloProfesional]
@@ -71,4 +71,4 @@ Instance: RegionesClProfesionalEjemplo
 InstanceOf: RegionesCl
 Usage: #inline
 
-* valueCodeableConcept = CSCodRegionCL#13 "Región Metropolitana de Santiago"
+* valueCodeableConcept = CSCodRegionCL#13 "Metropolitana de Santiago"

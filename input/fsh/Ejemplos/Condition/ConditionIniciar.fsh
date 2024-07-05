@@ -18,8 +18,8 @@ Description: "Ejemplo de una condición como motivo de interconsulta"
   * text = "Severo"
 
 * code
-  * coding = http://snomed.info/sct#39065001 "Burn of ear"
-  * text = "Quemadura de Oido"
+  * coding = http://snomed.info/sct#165865000 "Adrenal antibody detected"
+  * text = "anticuerpos contra glándulas suprarrenales detectados "
 
 * subject = Reference(EjemploPatientLE)
 

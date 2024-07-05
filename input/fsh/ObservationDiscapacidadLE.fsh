@@ -13,7 +13,7 @@ Description: "Observación Discapacidad LE, para describir si un paciente presen
 * status 1..1 MS
 * status = #final
 * status from http://hl7.org/fhir/ValueSet/observation-status
-* status ^short = "Estado de la observación, por defecto 'final' "
+* status ^short = "Estado de la observación, por defecto 'final'"
 
 * code 1..1 MS
 * code.coding 1..1 MS

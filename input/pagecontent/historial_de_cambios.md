@@ -166,7 +166,7 @@
 ### Versión 0.2.0
 
 - Perfil [PatientLE](StructureDefinition-PatientLE.html)
-  - Se elimina elemento "IdentidadDeGenero" repetido, dejando solo el que viene referenciado desde la [Guia CLCore](https://hl7chile.cl/fhir/ig/clcore/1.8.10/)
+  - Se elimina elemento "IdentidadDeGenero" repetido, dejando solo el que viene referenciado desde la **Guia CLCore**
   - Extension "País de origen del paciente", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept".
   - Extension "Religión", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept".
   - Extension "Pueblos Originarios", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept".
@@ -215,7 +215,7 @@
    - Se modifica la cardinalidad de entry[practitionerRole] 2..2 -> 1..1
    - Se modifica la cardinalidad de entry[organization] 2..2 -> 1..1
    
-- Perfil [ExamenesAnteriores](StructureDefinition-ExamenesAnteriores.html)
+- Perfil [ExamenesAnteriores](StructureDefinition-ObservationResultadoExamen.html)
    - Se cambia cardinalidad subject 0..1 -> 1..1
    - Se cambia cardinalidad code.text 1..1 -> 0..1
    - Se fija la referencia de subject solo a PatientLE
@@ -236,7 +236,7 @@
    - Se cambia cardinalidad de identifier[run].type.coding -> 1..1 
    - Se cambia cardinalidad de identifier[run]value -> 1..1
 
-- Perfil [ObservationIniciarIndiceComorbilidadLE](StructureDefinition-ObservationIniciarIndiceComorbilidadLE.html)
+- Perfil [ObservationIniciarIndiceComorbilidadLE]((StructureDefinition-ObservationIndiceComorbilidadLE.html))
    - Se fija el valor "final" para el elemento status
    - Se cambia cardinalidad category.text 1..1 -> 0..1
 
@@ -350,7 +350,7 @@
 - Modificaciones de la "CLcore"
   - Se cambió el nombre de la extension identifier.type.extension[paises] -> identifier.type.extension[paisEmisionDocumento]
   - Extension "Codigo de Identificación de países", el binding se modifica para dejarlo linkeado al elemento "valueCodeableConcept.
-  - [PrestadorCL](StructureDefinition-CorePrestadorCl.html)
+  - **PrestadorCL**
     - Se cambia el nombre de los siguientes slices de qualification:
       - Cert -> TituloProfesional
       - Esp -> EspecialidadMedica
@@ -359,16 +359,16 @@
 
   Se incluyeron los ejemplos
   - Cambio cardinalidad **contact.name.given** 0..1 -> 0..*
-- El elemento **addresss** debe cumplir con **ClAddress** para las direcciones de los perfiles [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html) y [LocalizacionCL](StructureDefinition-CoreLocalizacionCl.html)
-- Cambio en el [Ejemplo Organización Prestadora de Salud](Organization-ORG1.html) para cumplir con el perfil [OrganiztionCL](StructureDefinition-CoreOrganizacionCl.html)
-- Cambio en el [Ejemplo Localización Farmacia](Location-LocalizacionEjemploCL1.html) para cumplir con el perfil [LocalizacionCL](StructureDefinition-CoreLocalizacionCl.html)
+- El elemento **addresss** debe cumplir con **ClAddress** para las direcciones de los perfiles **OrganiztionCL** y **LocalizacionCL**
+- Cambio en el **Ejemplo Organización Prestadora de Salud** para cumplir con el perfil **OrganiztionCL**
+- Cambio en el **Ejemplo Localización Farmacia** para cumplir con el perfil **LocalizacionCL**
 - Se incluyo el context en las siguientes extensiones:
-  - [Códigos para Comunas en Chile](StructureDefinition-ComunasCl.html)
-  - [Códigos para Provincias en Chile](StructureDefinition-ProvinciasCl.html)
-  - [Códigos para Regiones en Chile](StructureDefinition-RegionesCl.html)
-  - [Identificación del Contacto de un Paciente](StructureDefinition-IdContacto.html)
-  - [Especialidad del médico principal](StructureDefinition-VSEspecialidadesDeisCL.html)
-  - [Contacto de los participantes secundarios del encuentro](StructureDefinition-ContactoParticipantes.html)
+  - **Códigos para Comunas en Chile**
+  - **Códigos para Provincias en Chile**
+  - **Códigos para Regiones en Chile**
+  - **Identificación del Contacto de un Paciente**
+  - **Especialidad del médico principal**
+  - **Contacto de los participantes secundarios del encuentro**
 
 - Se depreca perfil QuestionnaireResponseAntederLE
 
