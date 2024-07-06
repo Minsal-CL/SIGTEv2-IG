@@ -24,7 +24,7 @@ El evento **iniciar** debe soportar a siguiente secuencia:
 La semántica del mensaje para la transacción del Evento Iniciar usa el [Bundle Inicio LE](StructureDefinition-BundleIniciarLE.html) que es un Bundle del tipo **message** que incluye toda la información asociada al Evento Iniciar, esta información va representada de manera general en el recurso [ServiceRequest LE](StructureDefinition-ServiceRequestLE.html) y debe incluir un recurso cabecera llamado [MessageHeader LE](StructureDefinition-MessageHeaderLE.html) para representar el evento de acuerdo al [Mecanismo de Intercambio de Mensajería](Mensajeria.html)
 
 * [Bundle Evento Iniciar](StructureDefinition-BundleIniciarLE.html)
-* [Ejemplo Bundle Evento Iniciar](Bundle-EjemploBundleIniciar.html)
+* [Ejemplo Bundle Evento Iniciar](Bundle-BundleIniciarEjemplo.html)
 
 ##### Response
 
