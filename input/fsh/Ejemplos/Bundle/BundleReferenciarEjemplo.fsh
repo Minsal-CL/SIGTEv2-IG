@@ -87,7 +87,7 @@ Usage: #inline
 * supportingInfo[Cuidador] = Reference(EjemploObservationCuidador)
 * supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidadLE)
 * supportingInfo[motivoDerivacion] = Reference(MotivoDerivacionEjemplo)
-* supportingInfo[SolicitudExamen] = Reference(SolicitudExamenEjemplo)
+* supportingInfo[SolicitudExamen] = Reference(EjemploSolicitudExamen)
 * supportingInfo[ResultadoExamen] = Reference(AnticuerpoAdrenal)
 
 // Instance: ExtensionMotivoCierreInterconsultaEj1

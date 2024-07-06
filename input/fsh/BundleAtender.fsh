@@ -16,21 +16,23 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
-* entry ^slicing.rules = #closed
-* entry 7..* MS
+* entry ^slicing.rules = #open
+* entry 8..* MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
-        and practitioner 1..1
-        and practitionerRole 1..1
-        and organization 1..1
-        and encounter 1..1
+        and practitioner 1..1 
+        and practitionerRole 1..1 
+        and organization 1..1 
+        and encounter 1..1 
         and carePlan 1..1
+        and Condition 1..* 
         and AllergyIntolerance 0..*
         and ObservationResultadoExamen 0..*
-        and SolicitudMedicamento 0..*
+        // and SolicitudMedicamento 0..*
         and SolicitudExamen 0..*
-        and Anamnesis 0..1
+        and Anamnesis 0..1 
+        
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
 * entry[messageheader].resource 1..1 MS
@@ -71,10 +73,10 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[AllergyIntolerance].resource 1..1 MS
 * entry[AllergyIntolerance].resource only AllergyIntoleranceIniciarLE
 * entry[AllergyIntolerance].resource ^short = "Recurso para indicar si el paciente posee alguna alergia"
-* entry[SolicitudMedicamento] ^short = "Entrada en el Bundle: Solicitud Medicamento"
-* entry[SolicitudMedicamento].resource 1..1 MS
-* entry[SolicitudMedicamento].resource only MedicationRequest
-* entry[SolicitudMedicamento].resource ^short = "Recurso base del estandar"
+// * entry[SolicitudMedicamento] ^short = "Entrada en el Bundle: Solicitud Medicamento"
+// * entry[SolicitudMedicamento].resource 1..1 MS
+// * entry[SolicitudMedicamento].resource only MedicationRequest
+// * entry[SolicitudMedicamento].resource ^short = "Recurso base del estandar"
 * entry[SolicitudExamen] ^short = "Entrada en el Bundle: Solicitud Examen"
 * entry[SolicitudExamen].resource 1..1 MS
 * entry[SolicitudExamen].resource only ServiceRequestExamenLE
@@ -83,3 +85,7 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[Anamnesis].resource 1..1 MS
 * entry[Anamnesis].resource only ObservationAnamnesisLE
 * entry[Anamnesis].resource ^short = "Anmanesis"
+* entry[Condition] ^short = "Entrada en el Bundle: ConditionDiagnosticoLE"
+* entry[Condition].resource 1..1 MS
+* entry[Condition].resource only ConditionDiagnosticoLE
+* entry[Condition].resource ^short = "Condición por la cual será tratado el paciente"

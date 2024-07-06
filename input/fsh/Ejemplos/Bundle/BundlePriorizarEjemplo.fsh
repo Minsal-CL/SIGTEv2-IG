@@ -1,56 +1,54 @@
-Instance: BundleRevisarEjemplo
-InstanceOf: BundleRevisarLE
+Instance: BundlePriorizarEjemplo
+InstanceOf: BundlePriorizarLE
 Usage: #example
-Title: "Ejemplo Bundle Revisar"
-Description: "Ejemplo del mensaje de la revisión de interconsulta"
+Title: "Ejemplo Bundle Prorización"
+Description: "Ejemplo del mensaje de la priorización de interconsulta"
 
 * type = #message
-* timestamp = "2024-01-19T16:00:00-03:00"
+* timestamp = "2024-01-20T16:00:00-03:00"
 * entry[messageheader]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/MessageHeader/MesssageHeaderRevisar"
-  * resource = MesssageHeaderRevisar
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/MessageHeader/MesssageHeaderPriorizar"
+  * resource = MesssageHeaderPriorizar
 * entry[servicerequest]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/SolicitudInterconsultaEjemplo3"
-  * resource = SolicitudInterconsultaEjemplo3
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/SolicitudInterconsultaEjemplo4"
+  * resource = SolicitudInterconsultaEjemplo4
 * entry[practitioner]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLERevisor"
-  * resource = PractitionerProfesionalLERevisor
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLEPriorizador"
+  * resource = PractitionerProfesionalLEPriorizador
 * entry[practitionerRole][0]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleRevisor2"
-  * resource = PractitionerRoleRevisor2
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRolePriorizador"
+  * resource = PractitionerRolePriorizador
 * entry[organization][0]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLERevisora2"
-  * resource = OrganizationLERevisora2
-* entry[servicerequestexamen]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/EjemploSolicitudExamen"
-  * resource = EjemploSolicitudExamen
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEPriorizadora"
+  * resource = OrganizationLEPriorizadora
 
-Instance: MesssageHeaderRevisar
+
+Instance: MesssageHeaderPriorizar
 InstanceOf: MessageHeaderLE
 Usage: #inline
 
-* meta.lastUpdated = "2024-01-19T16:00:00-03:00"
-* eventCoding = CSTipoEventoLE#revisar "Revisar"
-* author = Reference(PractitionerRoleRevisor2)
+* meta.lastUpdated = "2024-01-20T16:00:00-03:00"
+* eventCoding = CSTipoEventoLE#priorizar "Priorizar"
+* author = Reference(PractitionerRolePriorizador)
 * source
   * software = "SISMaule"
   * endpoint = "llp:10.11.12.13:5432"
 
-* focus[ServiceRequestLE] = Reference(SolicitudInterconsultaEjemplo3)
+* focus[ServiceRequestLE] = Reference(SolicitudInterconsultaEjemplo4)
 
-Instance: SolicitudInterconsultaEjemplo3
+Instance: SolicitudInterconsultaEjemplo4
 InstanceOf: ServiceRequestLE
 Usage: #inline
 
-* meta.versionId = "3.0"
+* meta.versionId = "4.0"
 
 // * extension[MotivoCierreInterconsulta] =  ExtensionMotivoCierreInterconsultaEj1
 * extension[RequiereExamen] = ExtensionBoolRequiereExamenEj1
-// * extension[AtencionPreferente] =  ExtensionBoolAtencionPreferenteEj1
+* extension[AtencionPreferente] =  ExtensionBoolAtencionPreferenteEj1
 * extension[ResolutividadAPS] = ExtensionBoolResolutividadAPSEj1
 * extension[OrigenInterconsulta] = ExtensionOrigenInterconsultaEj1
-// * extension[FundamentoPriorizacion] = ExtensionStringFundamentoPriorizacionEj1
-* extension[EstadoInterconsultaCodigo] = ExtensionEstadoInterconsultaCodigoLEEj3
+* extension[FundamentoPriorizacion] = ExtensionStringFundamentoPriorizacionEj1
+* extension[EstadoInterconsultaCodigo] = ExtensionEstadoInterconsultaCodigoLEEj4
 * extension[EspecialidadMedicaDestinoCodigo] = ExtensionEspecialidadMedicaDestinoCodigoEj1
 * extension[SubEspecialidadMedicaDestinoCodigo] = ExtensionSubEspecialidadMedicaDestinoCodigoEj1
 * extension[PertinenciaInterconsulta] = ExtensionPertinenciaInterconsultaEj1
@@ -72,7 +70,7 @@ Usage: #inline
 * encounter = Reference(EncounterIniciarEjemplo)
 * authoredOn = "2024-12-10T09:00:00Z"
 * requester = Reference(PractitionerRoleIniciador)
-* performer = Reference(PractitionerRoleRevisor2)
+* performer = Reference(PractitionerRolePriorizador)
 * locationCode
   * coding =  CSDestinoReferenciaCodigo#1 "Nivel Secundario"
 * reasonCode
@@ -87,32 +85,37 @@ Usage: #inline
 * supportingInfo[SolicitudExamen] = Reference(EjemploSolicitudExamen)
 * supportingInfo[ResultadoExamen] = Reference(AnticuerpoAdrenal)
 
-Instance: ExtensionPertinenciaInterconsultaEj1
-InstanceOf: ExtensionPertinenciaInterconsulta
-Usage: #inline
-
-* extension[EvaluacionPertinencia]
-  * url = "EvaluacionPertinencia" 
-  * valueCodeableConcept = CSPertinenciaInterconsulta#3 "Pertinente Incompleta"
-  
-Instance: ExtensionEstadoInterconsultaCodigoLEEj3
+Instance: ExtensionEstadoInterconsultaCodigoLEEj4
 InstanceOf: ExtensionEstadoInterconsultaCodigoLE
 Usage: #inline
 
-* valueCodeableConcept = CSEstadoInterconsulta#3 "A la espera de priorización"
+* valueCodeableConcept = CSEstadoInterconsulta#4 "A la espera de agendamiento"
 
-Instance: PractitionerRoleRevisor2
+Instance: ExtensionBoolAtencionPreferenteEj1
+InstanceOf: ExtensionBoolAtencionPreferente
+Usage: #inline
+
+* valueBoolean = true
+
+Instance: ExtensionStringFundamentoPriorizacionEj1
+InstanceOf: ExtensionStringFundamentoPriorizacion 
+Usage: #inline
+
+* valueString = "Paciente es jefe de hogar y cuidador de adulto mayor."
+
+
+Instance: PractitionerRolePriorizador
 InstanceOf: PractitionerRoleLE
 Usage: #inline
 
 * active = true
-* practitioner = Reference(PractitionerProfesionalLERevisor)
-* organization = Reference(OrganizationLERevisora2)
+* practitioner = Reference(PractitionerProfesionalLEPriorizador)
+* organization = Reference(OrganizationLEPriorizadora)
 
-* code = CSPractitionerTipoRolLE#revisor "Revisor"
+* code = CSPractitionerTipoRolLE#priorizador "Priorizador"
 
 
-Instance: OrganizationLERevisora2
+Instance: OrganizationLEPriorizadora
 InstanceOf: OrganizationLE
 Usage: #inline
 
@@ -123,7 +126,7 @@ Usage: #inline
 * name = "Centro de Referencia de Salud Miraflores"
 
 
-Instance: PractitionerProfesionalLERevisor
+Instance: PractitionerProfesionalLEPriorizador
 InstanceOf: PractitionerProfesionalLE
 Usage: #inline
 
@@ -147,7 +150,7 @@ Usage: #inline
   * prefix[0] = "Dr"
   * given[0] = "Gonzalo"
   * family = "Gonzalez"
-  * family.extension[segundoApellido] = SegundoApellidoPractitionerProfesionalEjemplo2
+  * family.extension[segundoApellido] = SegundoApellidoPractitionerProfesionalEjemplo3
 
 * gender = #male
 * birthDate = "1980-01-01"
@@ -176,10 +179,8 @@ Usage: #inline
   * period.start = "2014-11-01"
   * issuer.display = "Universidad de Valparaíso"
 
-Instance: SegundoApellidoPractitionerProfesionalEjemplo2
+Instance: SegundoApellidoPractitionerProfesionalEjemplo3
 InstanceOf: SegundoApellido
 Usage: #Inline
 
 * valueString = "Gutierrez"
-
-

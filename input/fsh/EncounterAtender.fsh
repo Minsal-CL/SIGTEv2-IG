@@ -6,11 +6,16 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
-// Obligatorios por estandar
+
+* extension contains ExtensionPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
+* extension[PertinenciaAtencionBox] ^short = "Pertinencia de la atención al ser evaluado por el profesional especialista"
+* extension contains ExtensionMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
+* extension[MotivoNoPertinencia] ^short = "Indicar Motivo de la No Pertinecia en texto libre (PertinenciaAtencionBox = false)"
 
 * extension contains ExtensionConsecuenciaAtencionCodigo named ConsecuenciaAtencionCodigo 0..1 MS
 * extension[ConsecuenciaAtencionCodigo] ^short = "Código de la consecuencia de la atención"
 
+// Obligatorios por estandar
 * status MS
 * status ^short = "Estado actual del encuentro"
 * status = #finished
@@ -35,7 +40,7 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 // * diagnosis ^slicing.rules = #open
 // * diagnosis ^slicing.description = "Slice creado para almacenar diferentes tipos de diagnosis"
 
-* diagnosis 1..1 MS
+* diagnosis 1..* MS
 * diagnosis ^short = "Lista de diagnósticos relevantes a este encuentro médico"
 * diagnosis.condition 1..1 MS
 * diagnosis.condition ^short = "Referencia al diagnóstico, relevante para este encuentro médico"
@@ -66,12 +71,6 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * basedOn ^short = "Relación a service request que representa la interconsulta"
 
 * basedOn only Reference(ServiceRequestLE)
-
-* extension contains ExtensionPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
-* extension[PertinenciaAtencionBox] ^short = "Pertinencia de la atención al ser evaluado por el profesional especialista"
-* extension contains ExtensionMotivoNoPertinencia named MotivoNoPertinencia 0..1 MS
-* extension[MotivoNoPertinencia] ^short = "Indicar Motivo de la No Pertinecia en texto libre (PertinenciaAtencionBox = false)"
-
 * participant.individual only Reference(PractitionerRoleLE)
 
 

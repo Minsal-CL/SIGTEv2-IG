@@ -29,8 +29,8 @@ Description: "CarePlan Atender LE es el recurso utilizado para representar las i
 * description ^short = "Indicaciones del plan de cuidado como texto libre"
 
 * activity 0..* MS
-* activity ^slicing.discriminator.type = #value
-* activity ^slicing.discriminator.path = "reference"
+* activity ^slicing.discriminator.type = #profile
+* activity ^slicing.discriminator.path = "reference.resolve()"
 * activity ^slicing.rules = #open
 * activity contains referenciaReceta 0..* MS and referenciaServiceRequestExamenLE 0..* MS
 

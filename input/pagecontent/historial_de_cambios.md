@@ -80,6 +80,7 @@
   - Se modifica la cardinalidad de entry de 0..* -> 7..* 
   - Se cambia ObservationAtender LE por ObservationResultadoExamen
   - Se incluye la solicitud de medicamento y la solicitud de exámenes.
+  - Se incluye la condición del encuentro
 
 - Perfil [BundleRevisarLE](StructureDefinition-BundleRevisarLE.html)
   - Se modifica la cardinalidad de entry de 7..* -> 5..* 
@@ -127,6 +128,7 @@
 
 - Perfil [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
   - Se cambia obligatoriedad y must support del identifier.type
+  - Se cambia la cardinalidad de diagnosis 1..1 -> 1..*
 
 - Perfil [AllergyIntoleranceIniciarLE](StructureDefinition-AllergyIntoleranceIniciarLE.html)
   - Se agrega Must Support a clinicalStatus y verificationStatus
