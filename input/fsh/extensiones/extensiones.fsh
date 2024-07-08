@@ -101,7 +101,7 @@ Title: "Extension ContactadoLE"
 Description: "Extension ContactadoLE"
 Context: Appointment
 
-* obeys ext-con-01
+// * obeys ext-con-01
 * extension contains
 	Contactado 1..1 MS and
 	MotivoNoContactabilidad 0..1 MS
