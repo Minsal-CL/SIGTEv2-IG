@@ -34,7 +34,7 @@ Description: "Appointment Agendar LE"
 
 * start 1..1 MS
 * start ^short = "Inicio de esta cita"
-* end 0..1 MS
+* end 1..1 MS
 * end ^short = "Término de esta cita"
 
 * identifier 1..1 MS

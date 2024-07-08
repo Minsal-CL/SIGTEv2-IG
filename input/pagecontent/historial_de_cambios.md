@@ -160,6 +160,11 @@
   - se incluye el code.text = "Anamnesis"
   - se incluye biding a [TipoDeObservacion](ValueSet-TipoDeObservacion.html)
 
+- Perfil [AppointmentAgendarLE](StructureDefinition-AppointmentAgendarLE.html)
+  - end 0..1 -> 1..1 
+
+- Se crea el perfil [MedicationRequestLE](StructureDefinition-MedicationRequestLE.html)
+
 - En todos los perfiles bundles se elimina el uso de la tabla de datos y sus consideraciones
 - En las extensiones se ajustan los contextos para el uso en los servidores
 - Se crea el Value Set [TipoDeObservacion](ValueSet-TipoDeObservacion.html)

@@ -100,6 +100,8 @@ Id: Contactado
 Title: "Extension ContactadoLE"
 Description: "Extension ContactadoLE"
 Context: Appointment
+
+* obeys ext-con-01
 * extension contains
 	Contactado 1..1 MS and
 	MotivoNoContactabilidad 0..1 MS
@@ -119,7 +121,12 @@ Context: Appointment
 
 
 * extension[Contactado].value[x] only boolean
-* extension[Contactado].value[x] 1..1 MS  
+* extension[Contactado].value[x] 1..1 MS
+
+// Invariant: ext-con-01
+// Description: "Se debe cumplir que en caso de no ser contactado, se debe incluir el motivo de no contactabilidad."
+// Expression: "extension[Contactado].valueBoolean.is(false) and extension[motivoNoContactabilidad].exists()"
+// Severity: #error
 
 
 Extension: ExtensionSolicitudExamenes

@@ -39,5 +39,5 @@ Description: "CarePlan Atender LE es el recurso utilizado para representar las i
 * activity[referenciaServiceRequestExamenLE].reference ^short = "Detalles definidos en un recurso específico"
 
 * activity[referenciaReceta].reference 1..1 MS
-* activity[referenciaReceta].reference only Reference(MedicationRequest)
+* activity[referenciaReceta].reference only Reference(MedicationRequestLE)
 * activity[referenciaReceta].reference ^short = "Detalles definidos en un recurso específico"

@@ -280,7 +280,7 @@ Usage: #inline
   * text = "para dar seguimiento al tratamiento del paciente"
 
 Instance: Prednisona
-InstanceOf: MedicationRequest
+InstanceOf: MedicationRequestLE
 Usage: #inline
 
 * status = #draft

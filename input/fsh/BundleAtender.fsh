@@ -29,7 +29,7 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
         and Condition 1..* 
         and AllergyIntolerance 0..*
         and ObservationResultadoExamen 0..*
-        // and SolicitudMedicamento 0..*
+        and SolicitudMedicamento 0..*
         and SolicitudExamen 0..*
         and Anamnesis 0..1 
         
@@ -73,10 +73,10 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry[AllergyIntolerance].resource 1..1 MS
 * entry[AllergyIntolerance].resource only AllergyIntoleranceIniciarLE
 * entry[AllergyIntolerance].resource ^short = "Recurso para indicar si el paciente posee alguna alergia"
-// * entry[SolicitudMedicamento] ^short = "Entrada en el Bundle: Solicitud Medicamento"
-// * entry[SolicitudMedicamento].resource 1..1 MS
-// * entry[SolicitudMedicamento].resource only MedicationRequest
-// * entry[SolicitudMedicamento].resource ^short = "Recurso base del estandar"
+* entry[SolicitudMedicamento] ^short = "Entrada en el Bundle: Solicitud Medicamento"
+* entry[SolicitudMedicamento].resource 1..1 MS
+* entry[SolicitudMedicamento].resource only MedicationRequestLE
+* entry[SolicitudMedicamento].resource ^short = "Recurso base del estandar"
 * entry[SolicitudExamen] ^short = "Entrada en el Bundle: Solicitud Examen"
 * entry[SolicitudExamen].resource 1..1 MS
 * entry[SolicitudExamen].resource only ServiceRequestExamenLE
