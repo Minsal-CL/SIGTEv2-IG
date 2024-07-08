@@ -125,7 +125,7 @@ Context: Appointment
 
 // Invariant: ext-con-01
 // Description: "Se debe cumplir que en caso de no ser contactado, se debe incluir el motivo de no contactabilidad."
-// Expression: "(extension[Contactado].valueBoolean.getValue() = false) and extension[motivoNoContactabilidad].exists()"
+// Expression: "((extension[Contactado].exists(valueBoolean = false)) and extension[motivoNoContactabilidad].exists()) or extension[Contactado].exists(valueBoolean = true)"
 // Severity: #error
 
 Extension: ExtensionSolicitudExamenes
