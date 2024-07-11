@@ -26,6 +26,9 @@
    - authoredOn 1..1 -> 0..1
    - code 1..1 -> 0..1
 
+- Extension [ExtensionEspecialidadMedicaDestinoCodigo](StructureDefinition-ExtensionEspecialidadMedicaDestinoCodigo.html) y [ExtensionSubEspecialidadMedicaDestinoCodigo](StructureDefinition-ExtensionSubEspecialidadMedicaDestinoCodigo.html)
+  - Se cambia el binding de ValueSet de Especialidad Medica a Especialidad de Destino
+
 - Perfil [ServiceRequestExamenLE](StructureDefinition-ServiceRequestExamenLE.html)
   - Se modifica la descripción del identifier
   - authoredOn 0..1 -> 1..1
@@ -132,6 +135,9 @@
 
 - Perfil [AllergyIntoleranceIniciarLE](StructureDefinition-AllergyIntoleranceIniciarLE.html)
   - Se agrega Must Support a clinicalStatus y verificationStatus
+
+- Se crean los siguientes bindings: 
+  - [VsEspecialidadDest](ValueSet-VsEspecialidadDest.html)
 
 - Se eliminan los siguientes ValueSet de la guía:
   - Códigos para sexo biológico en Chile 

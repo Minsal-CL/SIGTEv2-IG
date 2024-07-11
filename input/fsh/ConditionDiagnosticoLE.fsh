@@ -17,7 +17,7 @@ Description: "Condicion Diagnostico LE, recurso que se utiliza para indicar el d
 * code 1..1 MS
   * coding 1..1 MS
   * coding ^short = "Código definido por un sistema terminológico"
-    * system 0..1 MS
+    * system 1..1 MS
     * system ^short = "Sistema terminológico, url/uri/uuid"
     * code 1..1 MS
     * code ^short = "Código definido en un sistema terminológico"
