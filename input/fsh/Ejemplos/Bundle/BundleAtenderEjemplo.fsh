@@ -37,9 +37,9 @@ Description: "Ejemplo del mensaje de la atención de la interconsulta"
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/Abadrenal"
   * resource = Abadrenal
 * entry[Anamnesis]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/AnamnesisEjemplo"
-  * resource = AnamnesisEjemplo
-* entry[11]
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/Anamnesis"
+  * resource = Anamnesis
+* entry[SolicitudMedicamento]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/MedicationRequest/Prednisona"
   * resource = Prednisona
 
@@ -314,7 +314,7 @@ Usage: #inline
   * system = "http://unitsofmeasure.org"
   * code = #ng/mL
 
-Instance: AnamnesisEjemplo
+Instance: Anamnesis
 InstanceOf: ObservationAnamnesisLE
 Usage: #inline
 

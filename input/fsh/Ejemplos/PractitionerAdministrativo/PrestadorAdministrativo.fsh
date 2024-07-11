@@ -1,7 +1,7 @@
 Instance: ProfesionalAdministrativoEjemplo
 InstanceOf: PractitionerAdministrativoLE
 Usage: #example
-Title: "Profesional Administrativo de Ejemplo"
+Title: "Ejemplo de Profesional Administrativo"
 Description: "Ejemplo de un profesional administrativo que referenciara la interconsulta"
 
 * identifier[run]

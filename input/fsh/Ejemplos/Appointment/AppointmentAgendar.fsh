@@ -1,7 +1,7 @@
 Instance: AgendaEjemplo
 InstanceOf: AppointmentAgendarLE
 Usage: #example
-Title: "AgendaEjemplo"
+Title: "Ejemplo Agenda"
 Description: "Ejemplo de la agenda de un paciente"
 
 * extension[ExtensionMediodeContacto] = ExtensionMediodeContactoEjemplo

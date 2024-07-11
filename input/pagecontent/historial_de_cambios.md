@@ -176,6 +176,8 @@
 - Se crea el Value Set [TipoDeObservacion](ValueSet-TipoDeObservacion.html)
 - Se crea el Code System [CSTipoObservacionMinsal](CodeSystem-CSTipoObservacionMinsal.html)
 
+- Se habilitaron Ejemplos de todos los perfiles
+
 ### Versión 0.2.0
 
 - Perfil [PatientLE](StructureDefinition-PatientLE.html)

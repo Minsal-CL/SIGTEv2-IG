@@ -108,11 +108,3 @@ Usage: #inline
 * organization = Reference(OrganizationLEAtendedor)
 
 * code = CSPractitionerTipoRolLE#agendador "Agendador"
-
-
-
-
-
-
-
-
