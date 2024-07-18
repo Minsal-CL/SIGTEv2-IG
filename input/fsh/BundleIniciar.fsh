@@ -17,7 +17,7 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
 * entry ^slicing.discriminator.type = #profile
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #closed
-* entry 9..* MS
+* entry 8..* MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
@@ -25,10 +25,10 @@ Description: "Bundle Iniciar LE, recurso utilizado para transportar todos los da
         and patient 1..1 
         and conditionDiagnostico 1..1 
         and observationComorbilidad 0..1
-        and observationDiscapacidad 1..1 
+        and observationDiscapacidad 0..1 
         and observationCuidador 0..1 
         // and conditionGes 0..1 
-        and ObservationResultadoExamen 0..* 
+        and ObservationResultadoExamen 0..*
         and allergyintolerance 0..*
         and practitionerrole 1..1
         and practitioner 1..1

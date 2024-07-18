@@ -21,6 +21,7 @@
      - PertinenciaInterconsulta -> ExtensionPertinenciaInterconsulta
    - Se actualiza referencia de ExamenesAnteriores A ObservationResultadoExamen
    - Se mueve ObservationResultadoExamen de ReasonReference a SupportInfo
+   - supportingInfo[Discapacidad] 1..1 -> 0..1
    - performer 1..1 -> 0..1
    - requester 1..1 -> 0..1
    - authoredOn 1..1 -> 0..1
@@ -42,8 +43,9 @@
 
 - Perfil [BundleIniciarLE](StructureDefinition-BundleIniciarLE.html)
    - Se actualiza recurso de ExamenesAnteriores A ObservationResultadoExamen
-   - se actualiza entry de 9..17 a 9..*
+   - se actualiza entry de 8..17 a 9..*
    - se actualiza entry[ObservationResultadoExamen] 0..1 a 0..*
+   - se actualiza entry[observationDiscapacidad] 1..1 a 0..1
    - edición de short observation
    - se actualiza entry[allergyintolerance] 0..1 a 0..*
    - se crea entry[SolicitudExamen] 0..*
