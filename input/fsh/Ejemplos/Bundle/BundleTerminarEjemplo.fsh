@@ -1,8 +1,8 @@
 Instance: BundleTerminarEjemplo
 InstanceOf: BundleTerminarLE
 Usage: #example
-Title: "Ejemplo Bundle Atender"
-Description: "Ejemplo del mensaje de la atención de la interconsulta"
+Title: "Ejemplo Bundle Terminar"
+Description: "Ejemplo del mensaje del termino de una interconsulta"
 
 * type = #message
 * timestamp =  "2024-03-22T08:30:00-03:00"
