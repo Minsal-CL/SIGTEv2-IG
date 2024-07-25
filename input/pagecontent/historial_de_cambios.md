@@ -1,7 +1,7 @@
 ### Versión 0.2.1
 
 - Cambios Generales:
-   - Se obliga el uso de un id(Temporal) para todos los recursos
+   - Se obliga el uso de un id(Temporal) para todos los perfiles, a excepción del messageHeader y los Bundles.
    - Se incluyen los fullUrl de todos los Bundle.
 
 - Perfil [ObservationResultadoExamen](StructureDefinition-ObservationResultadoExamen.html)
