@@ -6,6 +6,9 @@ Description: "Encounter Atender LE recurso que se utiliza para representar el en
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
 
 * extension contains ExtensionPertinenciaAtencionBox named PertinenciaAtencionBox 1..1 MS
 * extension[PertinenciaAtencionBox] ^short = "Pertinencia de la atención al ser evaluado por el profesional especialista"

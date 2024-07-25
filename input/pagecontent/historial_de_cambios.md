@@ -1,5 +1,9 @@
 ### Versión 0.2.1
 
+- Cambios Generales:
+   - Se obliga el uso de un id(Temporal) para todos los recursos
+   - Se incluyen los fullUrl de todos los Bundle.
+
 - Perfil [ObservationResultadoExamen](StructureDefinition-ObservationResultadoExamen.html)
   - Se cambia Id de ExamenesAnteriores A ObservationResultadoExamen
   - Se incluye el valor encounter 1..1
@@ -56,6 +60,7 @@
 - Perfil [ConditionDiagnosticoLE](StructureDefinition-ConditionDiagnosticoLE.html)
   - Se cambia cardinalidad clinicalStatus 1..1 a 0..1
   - Se cambia cardinalidad de verificationStatus 1..1 a 0..1
+  - Se cambia cardinalidad de code.coding 1..1 a 1..*
 
 - Perfil [ObservationIndiceComorbilidadLE](StructureDefinition-ObservationIndiceComorbilidadLE.html)
  - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)

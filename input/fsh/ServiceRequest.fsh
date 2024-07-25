@@ -7,6 +7,9 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
 
 * identifier MS
   * value MS
@@ -67,7 +70,6 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 
 * extension contains ExtensionPertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
 * extension[PertinenciaInterconsulta] ^short = "Descripción de la evaluación de pertinencia de la interconsulta"
-
 
 * authoredOn 0..1 MS
 * authoredOn ^short = "Fecha en que se solicita la Interconsulta. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ"

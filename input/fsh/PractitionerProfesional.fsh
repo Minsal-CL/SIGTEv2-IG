@@ -10,6 +10,10 @@ Description: "Prestador Profesional Individual definido para fines de requerimie
 * extension contains https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises named Nacionalidad 0..1 MS
 * extension[SexoBiologico] 0..0 
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+
 * identifier 1..2
 * identifier ^short = "Identificador de identidad del Profesional.
 Corresponde a tres slices:"

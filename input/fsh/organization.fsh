@@ -6,6 +6,10 @@ Description: "Organization LE según [Códigos DEIS del establecimientos](https:
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+
 * identifier 1..1 MS
   * value 1..1 MS
 * identifier ^short = "Código DEIS del establecimiento de destino"

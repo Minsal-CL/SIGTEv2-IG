@@ -12,6 +12,10 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * extension[nacionalidad] 1..1 MS
 * extension[IdentidadDeGenero] 1..1 MS
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+
 * identifier 1..* MS
 * identifier ^short = "Identificador de paciente"
 * identifier.type 1..1 MS

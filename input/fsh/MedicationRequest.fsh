@@ -8,6 +8,10 @@ Description: "Perfil para la prescripción de un medicamento al paciente"
 
 * obeys mdr-01
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+
 * status 1..1 MS
   * ^short = "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown"
   * ^definition = "Estado de la prescripción"

@@ -6,6 +6,10 @@ Description: "Observación Discapacidad LE, para describir si un paciente presen
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+
 //OBLIGATORIO POR ESTANDAR
 * subject only Reference(PatientLE)
 * subject ^short = "Referencia al paciente"

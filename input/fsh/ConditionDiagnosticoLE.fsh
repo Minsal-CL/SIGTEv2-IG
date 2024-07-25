@@ -7,6 +7,10 @@ Description: "Condicion Diagnostico LE, recurso que se utiliza para indicar el d
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+
 //OBLIGATORIO POR ESTANDAR
 * subject only Reference(PatientLE)
 * encounter only Reference(EncounterIniciarLE)
@@ -15,7 +19,7 @@ Description: "Condicion Diagnostico LE, recurso que se utiliza para indicar el d
 
 * code from VSTerminologiasDiag
 * code 1..1 MS
-  * coding 1..1 MS
+  * coding 1..* MS
   * coding ^short = "Código definido por un sistema terminológico"
     * system 1..1 MS
     * system ^short = "Sistema terminológico, url/uri/uuid"

@@ -8,6 +8,10 @@ Description: "AllergyIntolerance Iniciar LE"
 
 // * obeys ait-1 and ait-2
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+
 * clinicalStatus MS
   * ^short = "active | inactive | resolved"
   * ^definition = "Estado clínico de la alergía o la intolerancia"

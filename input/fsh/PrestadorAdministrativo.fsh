@@ -10,6 +10,10 @@ Description: "Prestador Administrativo definido para fines de requerimientos nor
 
 * extension[SexoBiologico] 0..0 MS
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+
 * identifier[run] 1..1 MS
 * identifier[run] ^short = "Identificador destinado a determinar el número de RUN"
 * identifier[run].use = #official
