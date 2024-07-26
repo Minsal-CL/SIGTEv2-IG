@@ -1,5 +1,5 @@
 Profile: PractitionerRoleLE
-Parent: PractitionerRole
+Parent: CoreRolClinicoCl
 Id: PractitionerRoleLE
 Title: "PractitionerRole LE"
 Description: "PractitionerRole LE, recurso que se utiliza para representar la información de roles, un profesional de la salud."

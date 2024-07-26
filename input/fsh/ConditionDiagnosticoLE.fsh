@@ -1,5 +1,5 @@
 Profile: ConditionDiagnosticoLE
-Parent: Condition
+Parent: DiagnosticoCl
 Id: ConditionDiagnosticoLE
 Title: "Condition Diagnostico LE"
 Description: "Condicion Diagnostico LE, recurso que se utiliza para indicar el diagnóstico"

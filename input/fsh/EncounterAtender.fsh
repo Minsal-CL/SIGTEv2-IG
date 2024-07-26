@@ -1,5 +1,5 @@
 Profile: EncounterAtenderLE
-Parent: Encounter
+Parent: EncounterCL
 Id: EncounterAtenderLE
 Title: "Encounter Atender LE"
 Description: "Encounter Atender LE recurso que se utiliza para representar el encuentro médico, cuando se comienza a ejecutar la atención de la interconsulta."

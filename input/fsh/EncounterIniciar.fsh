@@ -1,5 +1,5 @@
 Profile: EncounterIniciarLE
-Parent: Encounter
+Parent: EncounterCL
 Id: EncounterIniciarLE
 Title: "Encounter Iniciar LE"
 Description: "Encounter Iniciar LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta."
