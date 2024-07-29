@@ -1,5 +1,5 @@
 Profile: AllergyIntoleranceIniciarLE
-Parent: AllergyIntolerance
+Parent: CoreAletgiaIntCl
 Id: AllergyIntoleranceIniciarLE
 Title: "AllergyIntolerance Iniciar LE"
 Description: "AllergyIntolerance Iniciar LE"
