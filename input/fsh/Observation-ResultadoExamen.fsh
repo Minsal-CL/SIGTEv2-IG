@@ -1,5 +1,5 @@
 Profile: ObservationResultadoExamen
-Parent: Observation
+Parent: CoreObservacionCL
 Id: ObservationResultadoExamen
 Title: "Observation Resultado Examen"
 Description: "Resultado de examen anterior como antecedente"

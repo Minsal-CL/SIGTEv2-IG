@@ -1,5 +1,5 @@
 Profile: ObservationIndiceComorbilidadLE
-Parent: Observation
+Parent: CoreObservacionCL
 Id: ObservationIndiceComorbilidadLE
 Title: "Indice Comorbilidad LE"
 Description: "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el riesgo de un paciente según su índice de comorbilidad"

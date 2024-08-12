@@ -1,5 +1,5 @@
 Profile: ObservationAnamnesisLE
-Parent: Observation
+Parent: CoreObservacionCL
 Id: ObservationAnamnesisLE
 Title: "Observation Anamnesis LE"
 Description: "Observation Anamnesis LE"

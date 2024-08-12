@@ -1,5 +1,5 @@
 Profile: ObservationDiscapacidadLE
-Parent: Observation
+Parent: CoreObservacionCL
 Id: ObservationDiscapacidadLE
 Title: "Discapacidad LE"
 Description: "Observación Discapacidad LE, para describir si un paciente presenta discapacidad"

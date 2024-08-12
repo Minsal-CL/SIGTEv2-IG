@@ -1,7 +1,7 @@
 Profile: MedicationRequestLE
 Parent: MedicationRequest
 Id: MedicationRequestLE
-Title: "Solicitude de Medicamento LE"
+Title: "Solicitud de Medicamento LE"
 Description: "Perfil para la prescripción de un medicamento al paciente"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft

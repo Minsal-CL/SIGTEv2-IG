@@ -1,5 +1,5 @@
 Profile: ObservationIniciarCuidadorLE
-Parent: Observation
+Parent: CoreObservacionCL
 Id: ObservationIniciarCuidadorLE
 Title: "Cuidador LE"
 Description: "Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona"
