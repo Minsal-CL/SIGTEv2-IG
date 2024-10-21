@@ -192,8 +192,6 @@ La semántica del mensaje para la transacción del evento agendar usa el [Bundle
 * [Bundle Evento Agendar](StructureDefinition-BundleAgendarLE.html)
 * [Ejemplo Bundle Agendar](Bundle-BundleAgendarEjemplo.html)
   * Appointment usado para agendar cita([Appointment Agendar](Appointment-AgendaEjemplo.html))
-  <!--* Appointment usado para cancelar cita([Appointment Cancelar](Appointment-EjemploAppointmentAgendarCancelar.html))
-  * Appointment usado para marcar una cita sin presentación([Appointment Sin Presentación](Appointment-EjemploAppointmentAgendarSinPresentacion.html))-->
 
 ##### Response
 
@@ -289,3 +287,7 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 
 * Actualización de un evento de interconsulta con datos de cierre de interconsulta
 * Notificar a encargados de Lista de espera.
+
+
+  <!--* Appointment usado para cancelar cita([Appointment Cancelar](Appointment-EjemploAppointmentAgendarCancelar.html))
+  * Appointment usado para marcar una cita sin presentación([Appointment Sin Presentación](Appointment-EjemploAppointmentAgendarSinPresentacion.html))-->

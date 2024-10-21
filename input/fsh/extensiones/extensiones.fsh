@@ -108,7 +108,7 @@ Context: Appointment
 * url MS
 
 * extension[MotivoNoContactabilidad].value[x] only CodeableConcept
-* extension[MotivoNoContactabilidad].value[x] ^short = "Codigo de la etnia"
+* extension[MotivoNoContactabilidad].value[x] ^short = "Código, del cual indica el motivo de no contactabilidad"
 * extension[MotivoNoContactabilidad].url 1..1 MS
 * extension[MotivoNoContactabilidad].valueCodeableConcept from VSMotivoNoContactabilidad
 
@@ -125,7 +125,7 @@ Context: Appointment
 
 // Invariant: ext-con-01
 // Description: "Se debe cumplir que en caso de no ser contactado, se debe incluir el motivo de no contactabilidad."
-// Expression: "((extension[Contactado].exists(valueBoolean = false)) and extension[motivoNoContactabilidad].exists()) or extension[Contactado].exists(valueBoolean = true)"
+// Expression: "(extension.exists(url = 'Contactado' and value = false) implies extension.exists(url = 'MotivoNoContactabilidad')"
 // Severity: #error
 
 Extension: ExtensionSolicitudExamenes
