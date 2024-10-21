@@ -1,5 +1,5 @@
 Profile: ObservationIndiceComorbilidadLE
-Parent: Observation
+Parent: CoreObservacionCL
 Id: ObservationIndiceComorbilidadLE
 Title: "Indice Comorbilidad LE"
 Description: "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza para indicar el riesgo de un paciente según su índice de comorbilidad"
@@ -7,6 +7,11 @@ Description: "Observation Iniciar Indice Comorbilidad LE, recurso que se utiliza
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 //OBLIGATORIO POR ESTANDAR
+
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+  
 * subject only Reference(PatientLE)
 * subject 1..1 MS 
 * subject ^short = "Referencia al paciente"

@@ -728,7 +728,22 @@ Description: "EspecialidadMed"
 * #67  "TRAUMATOLOGÍA Y ORTOPEDIA PEDIÁTRICA"
 * #68  "UROLOGÍA PEDIÁTRICA"
 
+ValueSet: VsEspecialidadDest
+Id: VsEspecialidadDest
+Title: "Especialidad de Destino"
+Description: "Son todas las especialidades de destino de una interconsulta"
 
+* ^experimental = false
+* ^version = "0.1"
+* ^status = #active
+* ^date = "2023-01-15"
+* ^contact.name = "MINSAL CHILE"
+* ^contact.telecom.system = #email
+* ^contact.telecom.value = "minsal@minsal.cl"
+* ^jurisdiction = urn:iso:std:iso:3166#CL "Chile"
+
+* codes from system CSEspecialidadMed
+* codes from system CSEspecialidadOdont
 
 ValueSet: VSServicioRequerido
 Id: VSServicioRequerido

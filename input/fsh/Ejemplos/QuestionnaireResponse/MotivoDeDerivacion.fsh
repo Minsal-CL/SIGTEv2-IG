@@ -5,7 +5,7 @@ Title: "Ejemplo del QuestionnaireResponse"
 Description: "Ejemplo del QuestionnaireResponse para describir el motivo de derivación"
 
 * status = #completed
-//* questionnaire = Canonical(MotivoDerivacion)
+* questionnaire = Canonical(MotivoDerivacion)
 * subject = Reference(EjemploPatientLE)
 * encounter = Reference(EncounterIniciarEjemplo)
 * author = Reference(PractitionerProfesionalLEEjemplo)

@@ -26,22 +26,38 @@ Description: "Bundle Terminar LE recurso utilizado para transportar todos los da
         and organization 1..1
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
-* entry[messageheader].resource 1..1 MS
-* entry[messageheader].resource only MessageHeaderLE
-* entry[messageheader].resource ^short = "Cabecera del mensaje que facilita el seguimiento, debe ser siempre el primer entry en Bundle.type = message"
+  * fullUrl 0..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only MessageHeaderLE
+  * resource ^short = "Cabecera del mensaje que facilita el seguimiento, debe ser siempre el primer entry en Bundle.type = message"
 * entry[servicerequest] ^short = "Entrada en el Bundle: contendrá un recurso ServiceRequest"
-* entry[servicerequest].resource 1..1 MS
-* entry[servicerequest].resource only ServiceRequestLE
-* entry[servicerequest].resource ^short = "Prestación que se requiere para el paciente, que no pudo ser resuelta en el APS"
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only ServiceRequestLE
+  * resource ^short = "Prestación que se requiere para el paciente, que no pudo ser resuelta en el APS"
 * entry[organization] ^short = "Entrada en el Bundle: contendrá un recurso Organization"
-* entry[organization].resource 1..1 MS
-* entry[organization].resource only OrganizationLE
-* entry[organization].resource ^short = "Centro de salud que termina la interconsulta."
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only OrganizationLE
+  * resource ^short = "Lugar donde se realizó la interconsulta."
 * entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
+<<<<<<< HEAD
 * entry[practitioner].resource 1..1 MS 
 * entry[practitioner].resource only PractitionerProfesionalLE or PractitionerAdministrativoLE
 * entry[practitioner].resource ^short = "Profesional que prestó la atención al paciente"
+=======
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only PractitionerProfesionalLE
+  * resource ^short = "Profesional que prestó la atención al paciente"
+>>>>>>> 103c207b41c74606c1cc6e85b8bc7b09dd0be525
 * entry[practitionerRole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
-* entry[practitionerRole].resource 1..1 MS
-* entry[practitionerRole].resource only PractitionerRoleLE
-* entry[practitionerRole].resource ^short = "Se indica que médico y que organización termina la inteconsulta. code.coding.code=terminador"
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only PractitionerRoleLE
+  * resource ^short = "Se indica que médico y que organización termina la inteconsulta. code.coding.code=terminador"

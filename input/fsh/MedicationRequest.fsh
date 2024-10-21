@@ -1,12 +1,16 @@
 Profile: MedicationRequestLE
 Parent: MedicationRequest
 Id: MedicationRequestLE
-Title: "Solicitude de Medicamento LE"
+Title: "Solicitud de Medicamento LE"
 Description: "Perfil para la prescripción de un medicamento al paciente"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
 * obeys mdr-01
+
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
 
 * status 1..1 MS
   * ^short = "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown"

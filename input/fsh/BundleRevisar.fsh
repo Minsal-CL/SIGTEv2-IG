@@ -27,26 +27,38 @@ Description: "Bundle Revisar LE recurso utilizado para transportar todos los dat
         and servicerequestexamen 0..*
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
-* entry[messageheader].resource 1..1 MS
-* entry[messageheader].resource only MessageHeaderLE
-* entry[messageheader].resource ^short = "Cabecera del mensaje que facilita el seguimiento, debe ser siempre el primer entry en Bundle.type = message"
+  * fullUrl 0..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only MessageHeaderLE
+  * resource ^short = "Cabecera del mensaje que facilita el seguimiento, debe ser siempre el primer entry en Bundle.type = message"
 * entry[servicerequest] ^short = "Entrada en el Bundle: contendrá un recurso ServiceRequest"
-* entry[servicerequest].resource 1..1 MS
-* entry[servicerequest].resource only ServiceRequestLE
-* entry[servicerequest].resource ^short = "Prestación que se requiere para el paciente, que no pudo ser resuelta en el APS"
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only ServiceRequestLE
+  * resource ^short = "Prestación que se requiere para el paciente, que no pudo ser resuelta en el APS"
 * entry[organization] ^short = "Entrada en el Bundle: contendrá un recurso Organization"
-* entry[organization].resource 1..1 MS
-* entry[organization].resource only OrganizationLE
-* entry[organization].resource ^short = "Centro de salud que revisa la interconsulta"
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only OrganizationLE
+  * resource ^short = "Centro de salud que revisa la interconsulta"
 * entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
-* entry[practitioner].resource 1..1 MS
-* entry[practitioner].resource only PractitionerProfesionalLE
-* entry[practitioner].resource ^short = "Profesional que revisa la interconsulta"
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only PractitionerProfesionalLE
+  * resource ^short = "Médico que revisa la interconsulta"
 * entry[practitionerRole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
-* entry[practitionerRole].resource 1..1
-* entry[practitionerRole].resource only PractitionerRoleLE
-* entry[practitionerRole].resource ^short = "Se indica que médico y que organización que revisa la inteconsulta" 
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only PractitionerRoleLE
+  * resource ^short = "Se indica que médico y que organización que revisa la inteconsulta" 
 * entry[servicerequestexamen] ^short = "Entrada en el Bundle: contendrá un recurso ServiceRequest"
-* entry[servicerequestexamen].resource 1..1 MS
-* entry[servicerequestexamen].resource only ServiceRequestExamenLE
-* entry[servicerequestexamen].resource ^short = "Exámenes requeridos"
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only ServiceRequestExamenLE
+  * resource ^short = "Exámenes requeridos"

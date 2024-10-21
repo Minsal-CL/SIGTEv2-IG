@@ -6,6 +6,10 @@ Description: "CarePlan Atender LE es el recurso utilizado para representar las i
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+
 * extension contains ExtensionSolicitudExamenes named Requiere-Examen 1..1 MS
 * extension[Requiere-Examen] ^short = "Declaración si el paciente requiere exámenes"
 

@@ -26,22 +26,34 @@ Description: "Bundle Referenciar LE, recurso utilizado para transportar todos lo
         and organization 2..2
         
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
-* entry[messageheader].resource 1..1 MS
-* entry[messageheader].resource only MessageHeaderLE
-* entry[messageheader].resource ^short = "Cabecera del mensaje que facilita el seguimiento, debe ser siempre el primer entry en Bundle.type = message"
+  * fullUrl 0..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only MessageHeaderLE
+  * resource ^short = "Cabecera del mensaje que facilita el seguimiento, debe ser siempre el primer entry en Bundle.type = message"
 * entry[servicerequest] ^short = "Entrada en el Bundle: contendrá un recurso ServiceRequest"
-* entry[servicerequest].resource 1..1 MS
-* entry[servicerequest].resource only ServiceRequestLE
-* entry[servicerequest].resource ^short = "Prestación que se requiere para el paciente, que no pudo ser resuelta en el APS"
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only ServiceRequestLE
+  * resource ^short = "Prestación que se requiere para el paciente, que no pudo ser resuelta en el APS"
 * entry[organization] ^short = "Entrada en el Bundle: contendrá un recurso Organization"
-* entry[organization].resource 1..1 MS
-* entry[organization].resource only OrganizationLE
-* entry[organization].resource ^short = "Centro de salud que referencia la interconsulta y centro de salud hacia donde se referencia la IC"
-* entry[practitioner].resource 1..1 MS
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only OrganizationLE
+  * resource ^short = "Centro de salud que realiza la interconsulta y centro de salud hacia donde se referencia la IC"
+
 * entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
-* entry[practitioner].resource only PractitionerProfesionalLE
-* entry[practitioner].resource ^short = "Profesional que referencia la interconsulta"
-* entry[practitionerRole].resource 1..1 MS
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only PractitionerProfesionalLE
+  * resource ^short = "Profesional que referencia la interconsulta"
+
 * entry[practitionerRole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
-* entry[practitionerRole].resource only PractitionerRoleLE
-* entry[practitionerRole].resource ^short = "Se indica que médico y que organización referencia la inteconsulta"
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only PractitionerRoleLE
+  * resource ^short = "Se indica que médico y que organización referencia la inteconsulta. O el destino de referencia"

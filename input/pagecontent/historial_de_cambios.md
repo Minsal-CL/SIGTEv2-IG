@@ -1,5 +1,9 @@
 ### Versión 0.2.1
 
+- Cambios Generales:
+   - Se obliga el uso de un id(Temporal) para todos los perfiles, a excepción del messageHeader y los Bundles.
+   - Se incluyen los fullUrl de todos los Bundle.
+
 - Perfil [ObservationResultadoExamen](StructureDefinition-ObservationResultadoExamen.html)
   - Se cambia Id de ExamenesAnteriores A ObservationResultadoExamen
   - Se incluye el valor encounter 1..1
@@ -21,10 +25,14 @@
      - PertinenciaInterconsulta -> ExtensionPertinenciaInterconsulta
    - Se actualiza referencia de ExamenesAnteriores A ObservationResultadoExamen
    - Se mueve ObservationResultadoExamen de ReasonReference a SupportInfo
+   - supportingInfo[Discapacidad] 1..1 -> 0..1
    - performer 1..1 -> 0..1
    - requester 1..1 -> 0..1
    - authoredOn 1..1 -> 0..1
    - code 1..1 -> 0..1
+
+- Extension [ExtensionEspecialidadMedicaDestinoCodigo](StructureDefinition-ExtensionEspecialidadMedicaDestinoCodigo.html) y [ExtensionSubEspecialidadMedicaDestinoCodigo](StructureDefinition-ExtensionSubEspecialidadMedicaDestinoCodigo.html)
+  - Se cambia el binding de ValueSet de Especialidad Medica a Especialidad de Destino
 
 - Perfil [ServiceRequestExamenLE](StructureDefinition-ServiceRequestExamenLE.html)
   - Se modifica la descripción del identifier
@@ -39,8 +47,9 @@
 
 - Perfil [BundleIniciarLE](StructureDefinition-BundleIniciarLE.html)
    - Se actualiza recurso de ExamenesAnteriores A ObservationResultadoExamen
-   - se actualiza entry de 9..17 a 9..*
+   - se actualiza entry de 8..17 a 9..*
    - se actualiza entry[ObservationResultadoExamen] 0..1 a 0..*
+   - se actualiza entry[observationDiscapacidad] 1..1 a 0..1
    - edición de short observation
    - se actualiza entry[allergyintolerance] 0..1 a 0..*
    - se crea entry[SolicitudExamen] 0..*
@@ -51,6 +60,7 @@
 - Perfil [ConditionDiagnosticoLE](StructureDefinition-ConditionDiagnosticoLE.html)
   - Se cambia cardinalidad clinicalStatus 1..1 a 0..1
   - Se cambia cardinalidad de verificationStatus 1..1 a 0..1
+  - Se cambia cardinalidad de code.coding 1..1 a 1..*
 
 - Perfil [ObservationIndiceComorbilidadLE](StructureDefinition-ObservationIndiceComorbilidadLE.html)
  - encounter pasa a  MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
@@ -133,6 +143,9 @@
 - Perfil [AllergyIntoleranceIniciarLE](StructureDefinition-AllergyIntoleranceIniciarLE.html)
   - Se agrega Must Support a clinicalStatus y verificationStatus
 
+- Se crean los siguientes bindings: 
+  - [VsEspecialidadDest](ValueSet-VsEspecialidadDest.html)
+
 - Se eliminan los siguientes ValueSet de la guía:
   - Códigos para sexo biológico en Chile 
   - Documento Acreditacion Cuidador
@@ -169,6 +182,8 @@
 - En las extensiones se ajustan los contextos para el uso en los servidores
 - Se crea el Value Set [TipoDeObservacion](ValueSet-TipoDeObservacion.html)
 - Se crea el Code System [CSTipoObservacionMinsal](CodeSystem-CSTipoObservacionMinsal.html)
+
+- Se habilitaron Ejemplos de todos los perfiles
 
 ### Versión 0.2.0
 

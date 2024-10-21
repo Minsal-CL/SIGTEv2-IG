@@ -288,6 +288,9 @@ La respuesta al mensaje enviado debe ser un Bundle del tipo **message** con un r
 * Actualización de un evento de interconsulta con datos de cierre de interconsulta
 * Notificar a encargados de Lista de espera.
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 103c207b41c74606c1cc6e85b8bc7b09dd0be525
   <!--* Appointment usado para cancelar cita([Appointment Cancelar](Appointment-EjemploAppointmentAgendarCancelar.html))
   * Appointment usado para marcar una cita sin presentación([Appointment Sin Presentación](Appointment-EjemploAppointmentAgendarSinPresentacion.html))-->

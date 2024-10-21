@@ -1,7 +1,7 @@
 Instance: IndiceConmorbilidadEjemplo
 InstanceOf: ObservationIndiceComorbilidadLE
 Usage: #example
-Title: "Indice Conmorbilidad Ejemplo"
+Title: "Ejemplo de Indice Conmorbilidad"
 Description: "Indica el nivel de conmorbilidad que posee un paciente"
 
 * status = #final

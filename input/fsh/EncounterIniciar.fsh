@@ -1,10 +1,14 @@
 Profile: EncounterIniciarLE
-Parent: Encounter
+Parent: EncounterCL
 Id: EncounterIniciarLE
 Title: "Encounter Iniciar LE"
 Description: "Encounter Iniciar LE recurso que se utiliza para representar el encuentro médico, que representa el encuentro de cuando se solicita la interconsulta."
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
+
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
 
 * extension contains ExtensionConsecuenciaAtencionCodigo named ConsecuenciaAtencionCodigo 0..1 MS
 * extension[ConsecuenciaAtencionCodigo] ^short = "Código de la consecuencia de la atención"

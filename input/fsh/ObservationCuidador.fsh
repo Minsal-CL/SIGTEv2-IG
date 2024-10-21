@@ -1,11 +1,16 @@
 Profile: ObservationIniciarCuidadorLE
-Parent: Observation
+Parent: CoreObservacionCL
 Id: ObservationIniciarCuidadorLE
 Title: "Cuidador LE"
 Description: "Indica que el paciente es cuidador, es decir es responsable del cuidado de otra persona"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 0
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status].valueCode = #draft
 
+
+* id 1..1 MS
+  * ^short = "Id temporal necesario para identificar el recurso"
+  * ^definition = "El Id que envíe desde la aplicación es temporal, el definitivo es creado por el servidor" 
+  
 // * extension contains ExtBoolEsCuidador named EsCuidador 1..1 MS
 // * extension[EsCuidador] ^short = "Es cuidador? true | false"
 
