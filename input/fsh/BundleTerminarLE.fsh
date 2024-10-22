@@ -44,17 +44,11 @@ Description: "Bundle Terminar LE recurso utilizado para transportar todos los da
   * resource only OrganizationLE
   * resource ^short = "Lugar donde se realizó la interconsulta."
 * entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
-<<<<<<< HEAD
-* entry[practitioner].resource 1..1 MS 
-* entry[practitioner].resource only PractitionerProfesionalLE or PractitionerAdministrativoLE
-* entry[practitioner].resource ^short = "Profesional que prestó la atención al paciente"
-=======
   * fullUrl 1..1 MS
   * fullUrl ^short = "Uri de identificación dentro del Bundle"
   * resource 1..1 MS
-  * resource only PractitionerProfesionalLE
+  * resource only PractitionerProfesionalLE or PractitionerAdministrativoLE
   * resource ^short = "Profesional que prestó la atención al paciente"
->>>>>>> 103c207b41c74606c1cc6e85b8bc7b09dd0be525
 * entry[practitionerRole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
   * fullUrl 1..1 MS
   * fullUrl ^short = "Uri de identificación dentro del Bundle"
