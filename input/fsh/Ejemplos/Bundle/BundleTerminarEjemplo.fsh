@@ -12,7 +12,7 @@ Description: "Ejemplo del mensaje del termino de una interconsulta"
 * entry[servicerequest]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/EjemploSolicitudInterconsultaFinalizada"
   * resource = EjemploSolicitudInterconsultaFinalizada
-* entry[practitioner]
+* entry[practitionerProfesional]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLETerminador"
   * resource = PractitionerProfesionalLETerminador
 * entry[practitionerRole]

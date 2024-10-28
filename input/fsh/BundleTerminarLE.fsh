@@ -21,7 +21,8 @@ Description: "Bundle Terminar LE recurso utilizado para transportar todos los da
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
 * entry contains messageheader 1..1 
         and servicerequest 1..1 
-        and practitioner 1..1
+        and practitionerProfesional 0..1
+        and practitionerAdmnistrativo 0..1
         and practitionerRole 1..1
         and organization 1..1
 
@@ -43,11 +44,17 @@ Description: "Bundle Terminar LE recurso utilizado para transportar todos los da
   * resource 1..1 MS
   * resource only OrganizationLE
   * resource ^short = "Lugar donde se realizó la interconsulta."
-* entry[practitioner] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
+* entry[practitionerProfesional] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
   * fullUrl 1..1 MS
   * fullUrl ^short = "Uri de identificación dentro del Bundle"
   * resource 1..1 MS
-  * resource only PractitionerProfesionalLE or PractitionerAdministrativoLE
+  * resource only PractitionerProfesionalLE
+  * resource ^short = "Profesional que prestó la atención al paciente"
+* entry[practitionerAdmnistrativo] ^short = "Entrada en el Bundle: contendrá un recurso Practitioner"
+  * fullUrl 1..1 MS
+  * fullUrl ^short = "Uri de identificación dentro del Bundle"
+  * resource 1..1 MS
+  * resource only PractitionerAdministrativoLE
   * resource ^short = "Profesional que prestó la atención al paciente"
 * entry[practitionerRole] ^short = "Entrada en el Bundle: contendrá un recurso PractitionerRole"
   * fullUrl 1..1 MS
