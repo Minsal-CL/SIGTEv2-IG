@@ -48,9 +48,9 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
   Este proyecto fue ejecutado por un equipo multidisciplinario del Ministerio de Salud, con la participación de profesionales del Departamento de Estadísticas e Información en Salud (DEIS), la División de Gestión de la Red Asistencial (DIGERA), la División de Atención Primaria (DIVAP) y la Unidad de Interoperabilidad del Departamento de Tecnologías de la Información y Comunicaciones (DTIC), con el apoyo del Centro Nacional de Sistemas de Información en Salud (CENS).
   Se ha utilizado una metodología para el re-diseño del proceso, optimizándolo y centrándolo en el paciente y se ha implementado bajo el uso estándares internacionales de interoperabilidad.
   
-#### Objetivos del Proyecto de Tiempos de Espera Interoperables
+### Objetivos del Proyecto de Tiempos de Espera Interoperables
   
-##### General
+#### General
 
   Desarrollar un sistema seguro e interoperable de datos clínicos que respalde la gestión de información, 
   incluyendo su registro, transferencia y análisis. Dicha información es entregada a través 
@@ -58,7 +58,7 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
   en el contexto de las solicitudes de nueva consulta de especialidad 
   No GES para pacientes de la red asistencial.
     
-##### Específicos
+#### Específicos
 
   - Lograr el intercambio de información de las solicitudes de interconsultas
   emitidas desde los registros clínicos electrónicos implementados en los
@@ -73,16 +73,16 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
   entre sistemas, evitando ambigüedades y errores en la interpretación de la
   información.
 
-#### Objetivos de la Guía de Implementación
+### Objetivos de la Guía de Implementación
  
-##### General
+#### General
 
   Brindar las directrices para el desarrollo de sistema de información que
   garanticen la interoperabilidad con la plataforma de Tiempos de Espera para el
   proceso de solicitud de nueva consulta de especialidad desde APS a nivel
   secundario, según los estándares definidos por el Ministerio de Salud.
 
-##### Específicos
+#### Específicos
   - Otorgar las herramientas necesarias para el desarrollo de sistemas informáticos de
   registro clínico que interoperen con la plataforma de tiempos de espera, en base al
   estándar HL7 FHIR.
