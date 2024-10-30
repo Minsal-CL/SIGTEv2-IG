@@ -14,8 +14,10 @@ Description: "Bundle Terminar LE recurso utilizado para transportar todos los da
 * timestamp 1..1 MS
 * timestamp ^short = "Cuando el Bundle fue armado"
 
-* entry ^slicing.discriminator.type = #profile
-* entry ^slicing.discriminator.path = "resource"
+* entry ^slicing.discriminator[0].type = #type
+* entry ^slicing.discriminator[=].path = "resource"
+* entry ^slicing.discriminator[+].type = #profile
+* entry ^slicing.discriminator[=].path = "resource"
 * entry ^slicing.rules = #closed
 * entry 5..5 MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"

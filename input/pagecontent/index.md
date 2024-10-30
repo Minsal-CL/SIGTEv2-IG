@@ -91,3 +91,19 @@ Para representar este proceso se definen 7 eventos, los cuáles son:
   
   - Ejemplificar los distintos casos de uso asociados al proceso de tiempos de espera para
   solicitud de primera consulta de especialidad desde APS a nivel secundario.
+
+### Perfiles Globales
+
+{% include globals-table.xhtml %}
+
+### Dependencias
+
+{% include dependency-table.xhtml %}
+
+### Analisis de versiones cruzadas
+
+{% include cross-version-analysis.xhtml %}
+
+### Declaracion de propiedad intelectual
+
+{% include ip-statements.xhtml %}
