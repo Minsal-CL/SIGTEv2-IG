@@ -1,7 +1,7 @@
 Instance: BundleReferenciarEjemplo
 InstanceOf: BundleReferenciarLE
 Usage: #example
-Title: "Ejemplo del Bundle Referenciar"
+Title: "Ejemplo Bundle Referenciar"
 Description: "Ejemplo de un mensaje de referencia de una interconsulta"
 
 * type = #message
