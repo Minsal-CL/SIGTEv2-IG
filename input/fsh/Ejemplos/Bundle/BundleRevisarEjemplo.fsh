@@ -16,8 +16,8 @@ Description: "Ejemplo del mensaje de la revisión de interconsulta"
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLERevisor"
   * resource = PractitionerProfesionalLERevisor
 * entry[practitionerRole][0]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleRevisor2"
-  * resource = PractitionerRoleRevisor2
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleRevisor"
+  * resource = PractitionerRoleRevisor
 * entry[organization][0]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLERevisora2"
   * resource = OrganizationLERevisora2
@@ -31,7 +31,7 @@ Usage: #inline
 
 * meta.lastUpdated = "2024-01-19T16:00:00-03:00"
 * eventCoding = CSTipoEventoLE#revisar "Revisar"
-* author = Reference(PractitionerRoleRevisor2)
+* author = Reference(PractitionerRoleRevisor)
 * source
   * software = "SISMaule"
   * endpoint = "llp:10.11.12.13:5432"
@@ -72,7 +72,7 @@ Usage: #inline
 * encounter = Reference(EncounterIniciarEjemplo)
 * authoredOn = "2024-12-10T09:00:00Z"
 * requester = Reference(PractitionerRoleIniciador)
-* performer = Reference(PractitionerRoleRevisor2)
+* performer = Reference(PractitionerRoleRevisor)
 * locationCode
   * coding =  CSDestinoReferenciaCodigo#1 "Nivel Secundario"
 * reasonCode
@@ -101,7 +101,7 @@ Usage: #inline
 
 * valueCodeableConcept = CSEstadoInterconsulta#3 "A la espera de priorización"
 
-Instance: PractitionerRoleRevisor2
+Instance: PractitionerRoleRevisor
 InstanceOf: PractitionerRoleLE
 Usage: #inline
 

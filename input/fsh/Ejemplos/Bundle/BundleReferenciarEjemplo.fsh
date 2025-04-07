@@ -7,7 +7,7 @@ Description: "Ejemplo de un mensaje de referencia de una interconsulta"
 * type = #message
 * timestamp = "2024-01-18T16:00:00-03:00"
 * entry[messageheader]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/MessageHeader/MesssageHeaderReferenciar"
+  * fullUrl = "http://interoperabilida<d.minsal.cl/fhir/ig/tei/MessageHeader/MesssageHeaderReferenciar"
   * resource = MesssageHeaderReferenciar
 * entry[servicerequest]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/SolicitudInterconsultaEjemplo2"
@@ -19,14 +19,14 @@ Description: "Ejemplo de un mensaje de referencia de una interconsulta"
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleReferenciador"
   * resource = PractitionerRoleReferenciador
 * entry[practitionerRole][1]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleRevisor"
-  * resource = PractitionerRoleRevisor
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleAtendedor1"
+  * resource = PractitionerRoleAtendedor1
 * entry[organization][0]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEReferenciar"
   * resource = OrganizationLEReferenciar
 * entry[organization][1]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLERevisora"
-  * resource = OrganizationLERevisora
+  * resource = OrganizationLEAtendedor
 
 Instance: MesssageHeaderReferenciar
 InstanceOf: MessageHeaderLE
@@ -75,7 +75,7 @@ Usage: #inline
 * encounter = Reference(EncounterIniciarEjemplo)
 * authoredOn = "2024-12-10T09:00:00Z"
 * requester = Reference(PractitionerRoleIniciador)
-* performer = Reference(PractitionerRoleRevisor)
+* performer = Reference(PractitionerRoleAtendedor1)
 * locationCode
   * coding =  CSDestinoReferenciaCodigo#1 "Nivel Secundario"
 * reasonCode
@@ -112,14 +112,14 @@ Usage: #inline
 
 * code = CSPractitionerTipoRolLE#referenciador "Referenciador"
 
-Instance: PractitionerRoleRevisor
+Instance: PractitionerRoleAtendedor1
 InstanceOf: PractitionerRoleLE
 Usage: #inline
 
+* meta.versionId = "1.0"
 * active = true
-* organization = Reference(OrganizationLERevisora)
-
-* code = CSPractitionerTipoRolLE#revisor "Revisor"
+* organization = Reference(OrganizationLEAtendedor)
+* code = CSPractitionerTipoRolLE#atendedor "Atendedor"
 
 Instance: OrganizationLEReferenciar
 InstanceOf: OrganizationLE
@@ -137,12 +137,12 @@ Usage: #inline
 
 * address = ClAddressOrganizacionEj1
 
-Instance: OrganizationLERevisora
-InstanceOf: OrganizationLE
-Usage: #inline
+// Instance: OrganizationLERevisora
+// InstanceOf: OrganizationLE
+// Usage: #inline
 
-* identifier[0]
-  * system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino"
-  * value = "121343"
+// * identifier[0]
+//   * system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino"
+//   * value = "121343"
 
-* name = "Centro de Referencia de Salud Miraflores"
+// * name = "Centro de Referencia de Salud Miraflores"

@@ -14,13 +14,13 @@ Description: "Ejemplo del mensaje de la atención de la interconsulta"
   * resource = SolicitudInterconsultaEjemplo6
 * entry[practitioner]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLEAtendedor2"
-  * resource = PractitionerProfesionalLEAtendedor2
+  * resource = PractitionerProfesionalLEAtendedor
 * entry[practitionerRole]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleAtendedor2"
-  * resource = PractitionerRoleAtendedor2
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleAtendedor"
+  * resource = PractitionerRoleAtendedor
 * entry[organization]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEAtendedor2"
-  * resource = OrganizationLEAtendedor2
+  * resource = OrganizationLEAtendedor
 * entry[encounter]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Encounter/Atencion"
   * resource = Atencion
@@ -112,79 +112,80 @@ Usage: #inline
 
 * valueCodeableConcept = CSEstadoInterconsulta#6 "A la espera de cierre"
 
-Instance: PractitionerRoleAtendedor2
-InstanceOf: PractitionerRoleLE
-Usage: #inline
+// Instance: PractitionerRoleAtendedor
+// InstanceOf: PractitionerRoleLE
+// Usage: #inline
 
-* active = true
-* practitioner = Reference(PractitionerProfesionalLEAtendedor2)
-* organization = Reference(OrganizationLEAtendedor2)
+// * meta.versionId = "1.0"
+// * active = true
+// * practitioner = Reference(PractitionerProfesionalLEAtendedor2)
+// * organization = Reference(OrganizationLEAtendedor2)
 
-* code = CSPractitionerTipoRolLE#atendedor "Atendedor"
+// * code = CSPractitionerTipoRolLE#atendedor "Atendedor"
 
-Instance: OrganizationLEAtendedor2
-InstanceOf: OrganizationLE
-Usage: #inline
+// Instance: OrganizationLEAtendedor2
+// InstanceOf: OrganizationLE
+// Usage: #inline
 
-* identifier[0]
-  * system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino"
-  * value = "121343"
+// * identifier[0]
+//   * system = "https://interoperabilidad.minsal.cl/fhir/ig/tei/CodeSystem/CSEstablecimientoDestino"
+//   * value = "121343"
 
-* name = "Centro de Referencia de Salud Miraflores"
+// * name = "Centro de Referencia de Salud Miraflores"
 
 
-Instance: PractitionerProfesionalLEAtendedor2
-InstanceOf: PractitionerProfesionalLE
-Usage: #inline
+// Instance: PractitionerProfesionalLEAtendedor2
+// InstanceOf: PractitionerProfesionalLE
+// Usage: #inline
 
-*  identifier[run]
-  * use = #official
-  * type.coding = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador#01 "RUN"
-  * type.text = "Rol Único Nacional"
-  * value = "19949350-7"
-  * assigner.display = "Republica de Chile"
+// *  identifier[run]
+//   * use = #official
+//   * type.coding = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador#01 "RUN"
+//   * type.text = "Rol Único Nacional"
+//   * value = "19949350-7"
+//   * assigner.display = "Republica de Chile"
 
-* identifier[rnpi]
-  * use = #secondary
-  * type.coding = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador#13 "RNPI"
-  * type.text = "Registro Nacional de Prestadores Individuales"
-  * value = "1234543"
-  * assigner.display = "Intendencia de prestadores individuales - Superintendencia de Salud"
+// * identifier[rnpi]
+//   * use = #secondary
+//   * type.coding = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CSTipoIdentificador#13 "RNPI"
+//   * type.text = "Registro Nacional de Prestadores Individuales"
+//   * value = "1234543"
+//   * assigner.display = "Intendencia de prestadores individuales - Superintendencia de Salud"
 
-* active = true
+// * active = true
 
-* name[0]
-  * prefix[0] = "Dr"
-  * given[0] = "Gonzalo"
-  * family = "Gonzalez"
-  * family.extension[segundoApellido] = SegundoApellidoPractitionerProfesionalEjemplo2
+// * name[0]
+//   * prefix[0] = "Dr"
+//   * given[0] = "Gonzalo"
+//   * family = "Gonzalez"
+//   * family.extension[segundoApellido] = SegundoApellidoPractitionerProfesionalEjemplo2
 
-* gender = #male
-* birthDate = "1980-01-01"
+// * gender = #male
+// * birthDate = "1980-01-01"
 
-* qualification[TituloProfesional]
-  * identifier.value = "cert"
-  * code
-    * coding = CSTituloProfesional#1 "MÉDICO CIRUJANO"
-    * text = "MÉDICO CIRUJANO"
-  * period.start = "2007-11-01"
-  * issuer.display = "Universidad de Chile"
+// * qualification[TituloProfesional]
+//   * identifier.value = "cert"
+//   * code
+//     * coding = CSTituloProfesional#1 "MÉDICO CIRUJANO"
+//     * text = "MÉDICO CIRUJANO"
+//   * period.start = "2007-11-01"
+//   * issuer.display = "Universidad de Chile"
 
-* qualification[EspecialidadMedica]
-  * identifier.value = "esp"
-  * code
-    * coding = CSEspecialidadMed#30 "MEDICINA INTERNA"
-    * text = "MEDICINA INTERNA"
-  * period.start = "2010-11-01"
-  * issuer.display = "Pontificia Universidad Católica de Chile"
+// * qualification[EspecialidadMedica]
+//   * identifier.value = "esp"
+//   * code
+//     * coding = CSEspecialidadMed#30 "MEDICINA INTERNA"
+//     * text = "MEDICINA INTERNA"
+//   * period.start = "2010-11-01"
+//   * issuer.display = "Pontificia Universidad Católica de Chile"
 
-* qualification[Subespecialidad]
-  * identifier.value = "subesp"
-  * code
-    * coding = CSEspecialidadMed#14 "ENDOCRINOLOGÍA ADULTO"
-    * text = "ENDOCRINOLOGÍA ADULTO"
-  * period.start = "2014-11-01"
-  * issuer.display = "Universidad de Valparaíso"
+// * qualification[Subespecialidad]
+//   * identifier.value = "subesp"
+//   * code
+//     * coding = CSEspecialidadMed#14 "ENDOCRINOLOGÍA ADULTO"
+//     * text = "ENDOCRINOLOGÍA ADULTO"
+//   * period.start = "2014-11-01"
+//   * issuer.display = "Universidad de Valparaíso"
 
 Instance: Atencion
 InstanceOf: EncounterAtenderLE
@@ -200,7 +201,7 @@ Usage: #inline
 * subject = Reference(EjemploPatientLE)
 * basedOn = Reference(SolicitudInterconsultaEjemplo6)
 * participant
-  * individual = Reference(PractitionerRoleAtendedor2)
+  * individual = Reference(PractitionerRoleAtendedor)
 * period
   * start = "2024-02-22T08:00:00-03:00"
   * end = "2024-02-22T08:30:00-03:00"
@@ -272,7 +273,7 @@ Usage: #inline
   * text = "Ab adrenal en Sérum"
 * subject = Reference(EjemploPatientLE)
 * authoredOn = "2024-02-22T08:30:00-03:00"
-* requester = Reference(PractitionerProfesionalLEAtendedor2)
+* requester = Reference(PractitionerProfesionalLEAtendedor)
 * reasonCode
   * coding = http://snomed.info/sct#24867002 "Severe adrenal insufficiency"
   * text = "insuficiencia adrenal severa"
@@ -287,7 +288,7 @@ Usage: #inline
 * intent = #order
 * subject = Reference(EjemploPatientLE)
 * encounter = Reference(Atencion)
-* requester = Reference(PractitionerProfesionalLEAtendedor2)
+* requester = Reference(PractitionerProfesionalLEAtendedor)
 * medicationCodeableConcept.text = "Prednisona 5mg"
 * note.text = "2 veces al día por 1 mes"
 
