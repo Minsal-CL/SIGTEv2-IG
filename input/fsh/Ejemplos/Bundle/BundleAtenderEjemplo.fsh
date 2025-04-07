@@ -13,13 +13,13 @@ Description: "Ejemplo del mensaje de la atención de la interconsulta"
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/SolicitudInterconsultaEjemplo6"
   * resource = SolicitudInterconsultaEjemplo6
 * entry[practitioner]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLEAtendedor2"
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLEAtendedor"
   * resource = PractitionerProfesionalLEAtendedor
 * entry[practitionerRole]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleAtendedor"
   * resource = PractitionerRoleAtendedor
 * entry[organization]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEAtendedor2"
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEAtendedor"
   * resource = OrganizationLEAtendedor
 * entry[encounter]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Encounter/Atencion"

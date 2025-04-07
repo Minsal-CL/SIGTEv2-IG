@@ -7,7 +7,7 @@ Description: "Ejemplo de un mensaje de referencia de una interconsulta"
 * type = #message
 * timestamp = "2024-01-18T16:00:00-03:00"
 * entry[messageheader]
-  * fullUrl = "http://interoperabilida<d.minsal.cl/fhir/ig/tei/MessageHeader/MesssageHeaderReferenciar"
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/MessageHeader/MesssageHeaderReferenciar"
   * resource = MesssageHeaderReferenciar
 * entry[servicerequest]
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/SolicitudInterconsultaEjemplo2"
@@ -25,7 +25,7 @@ Description: "Ejemplo de un mensaje de referencia de una interconsulta"
   * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEReferenciar"
   * resource = OrganizationLEReferenciar
 * entry[organization][1]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLERevisora"
+  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEAtendedor"
   * resource = OrganizationLEAtendedor
 
 Instance: MesssageHeaderReferenciar
