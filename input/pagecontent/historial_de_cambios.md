@@ -1,10 +1,3 @@
-### Versión 0.2.2
-
-Actualización de dependencia de la CoreCl.
-Correción de ejemplos:
- - [Bundle Atender](Bundle-BundleAtenderEjemplo.html)
- - [Bundle Referenciar](Bundle-BundleReferenciarEjemplo.html)
- - [Practitioner Role Iniciador](PractitionerRole-PractitionerRoleIniciador.html)
 ### Versión 0.2.1
 
 - Cambios Generales:

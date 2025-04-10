@@ -8,6 +8,8 @@ Description: "Ejemplo de un paciente de la guía Tiempos de Espera"
 * extension[nacionalidad] = NacionalidadPacienteLE1
 * extension[PaisOrigen] = PaisOrigenMPIPacienteLE1
 * extension[PueblosOriginariosPerteneciente] = PueblosOriginariosPertenecientePacienteLE1
+* extension[PueblosAfrodescendiente] = PueblosAfrodescendientePacienteLE1
+* extension[PueblosOriginarios] = PueblosOriginariosPacienteLE1
 
 * identifier
   * use = #official
