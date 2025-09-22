@@ -5,7 +5,7 @@ Title: "Practitioner Evento Iniciar"
 Description: "Practitioner Evento Iniciar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[Nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
@@ -65,7 +65,7 @@ Title: "Practitioner Referenciador Evento Referenciar"
 Description: "Practitioner Referenciador Evento Referenciar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[Nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
@@ -125,7 +125,7 @@ Title: "Practitioner Evento Revisar"
 Description: "Practitioner Evento Revisar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[Nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
@@ -185,7 +185,7 @@ Title: "Practitioner Evento Atender"
 Description: "Practitioner Evento Atender"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[Nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
@@ -245,7 +245,7 @@ Title: "Practitioner Evento Priorizar"
 Description: "Practitioner Evento Priorizar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[Nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 

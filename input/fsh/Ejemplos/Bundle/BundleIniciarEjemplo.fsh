@@ -7,50 +7,50 @@ Description: "Ejemplo de un mensaje del evento Iniciar"
 * type = #message
 * timestamp = "2024-01-17T16:00:00-03:00"
 * entry[messageheader]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/MessageHeader/MesssageHeaderIniciar"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/MessageHeader/MesssageHeaderIniciar"
   * resource = MesssageHeaderIniciar
 * entry[servicerequest]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/SolicitudInterconsultaEjemplo" 
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/SolicitudInterconsultaEjemplo" 
   * resource = SolicitudInterconsultaEjemplo
 * entry[encounter]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Encounter/EncounterIniciarEjemplo"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Encounter/EncounterIniciarEjemplo"
   * resource = EncounterIniciarEjemplo
 * entry[patient]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Patient/EjemploPatientLE"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Patient/EjemploPatientLE"
   * resource = EjemploPatientLE
 * entry[conditionDiagnostico]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Condition/ConditionInicialEjemplo"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Condition/ConditionInicialEjemplo"
   * resource = ConditionInicialEjemplo
 * entry[observationComorbilidad]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/IndiceConmorbilidadEjemplo"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/IndiceConmorbilidadEjemplo"
   * resource = IndiceConmorbilidadEjemplo
 * entry[observationDiscapacidad]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/EjemploObservationDiscapacidadLE"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/EjemploObservationDiscapacidadLE"
   * resource = EjemploObservationDiscapacidadLE
 * entry[observationCuidador]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/EjemploObservationCuidador"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/EjemploObservationCuidador"
   * resource = EjemploObservationCuidador
 * entry[ObservationResultadoExamen]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/AnticuerpoAdrenal"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Observation/AnticuerpoAdrenal"
   * resource = AnticuerpoAdrenal
 * entry[allergyintolerance]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/AllergyIntolerance/AllergyIntoleranceExample"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/AllergyIntolerance/AllergyIntoleranceExample"
   * resource = AllergyIntoleranceExample
 * entry[practitionerrole]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleIniciador"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/PractitionerRole/PractitionerRoleIniciador"
   * resource = PractitionerRoleIniciador
 * entry[practitioner]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLEEjemplo"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Practitioner/PractitionerProfesionalLEEjemplo"
   * resource = PractitionerProfesionalLEEjemplo
 * entry[organization]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEEjemplo"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/Organization/OrganizationLEEjemplo"
   * resource = OrganizationLEEjemplo
 * entry[motivoDerivacion]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/QuestionnaireResponse/MotivoDerivacionEjemplo"
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/QuestionnaireResponse/MotivoDerivacionEjemplo"
   * resource = MotivoDerivacionEjemplo
 * entry[SolicitudExamen]
-  * fullUrl = "http://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/SolicitudExamenEjemplo"
-  * resource = SolicitudExamenEjemplo
+  * fullUrl = "https://interoperabilidad.minsal.cl/fhir/ig/tei/ServiceRequest/EjemploSolicitudExamen"
+  * resource = EjemploSolicitudExamen
 
 Instance: MesssageHeaderIniciar
 InstanceOf: MessageHeaderLE
@@ -108,8 +108,7 @@ Usage: #inline
 * supportingInfo[Cuidador] = Reference(EjemploObservationCuidador)
 * supportingInfo[Discapacidad] = Reference(EjemploObservationDiscapacidadLE)
 * supportingInfo[motivoDerivacion] = Reference(MotivoDerivacionEjemplo)
-* supportingInfo[SolicitudExamen] = Reference(SolicitudExamenEjemplo
-)
+* supportingInfo[SolicitudExamen] = Reference(EjemploSolicitudExamen)
 * supportingInfo[ResultadoExamen] = Reference(AnticuerpoAdrenal)
 
 Instance: ExtensionBoolRequiereExamenEj1
@@ -148,21 +147,21 @@ Usage: #inline
 
 * valueCodeableConcept = CSEspecialidadMed#14 "ENDOCRINOLOGÍA ADULTO"
 
-Instance: SolicitudExamenEjemplo
-InstanceOf: ServiceRequestExamenLE
-Usage: #inline
+// Instance: SolicitudExamenEjemplo
+// InstanceOf: ServiceRequestExamenLE
+// Usage: #inline
 
-* basedOn = Reference(SolicitudInterconsultaEjemplo)
-* status = #draft
-* intent = #order
-* code 
-  * coding = http://loinc.org#2857-1 "Prostate specific Ag [Mass/volume] in Serum or Plasma"
-  * text = "Antigeno Prostático Específico en Suero o Plasma"
-* subject = Reference(EjemploPatientLE)
-* authoredOn = "2024-01-17T16:00:00-03:00"
-* requester = Reference(PractitionerProfesionalLEEjemplo)
-* reasonCode
-  * coding = http://snomed.info/sct#414205003
-  * text = "antecedente familiar de neoplasia maligna de próstata"
-* note
-  * text = "paciente con APE elevado en 2022, se solicita examen vigente previo a atención con especialidad"
+// * basedOn = Reference(SolicitudInterconsultaEjemplo)
+// * status = #draft
+// * intent = #order
+// * code 
+//   * coding = http://loinc.org#2857-1 "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+//   * text = "Antigeno Prostático Específico en Suero o Plasma"
+// * subject = Reference(EjemploPatientLE)
+// * authoredOn = "2024-01-17T16:00:00-03:00"
+// * requester = Reference(PractitionerProfesionalLEEjemplo)
+// * reasonCode
+//   * coding = http://snomed.info/sct#414205003
+//   * text = "antecedente familiar de neoplasia maligna de próstata"
+// * note
+//   * text = "paciente con APE elevado en 2022, se solicita examen vigente previo a atención con especialidad"

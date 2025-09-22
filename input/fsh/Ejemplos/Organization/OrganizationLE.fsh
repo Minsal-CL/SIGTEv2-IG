@@ -32,7 +32,7 @@ Instance: PaisOrganizacionEj1
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: ComunasClOrganizacionEj1 
 InstanceOf: ComunasCl
