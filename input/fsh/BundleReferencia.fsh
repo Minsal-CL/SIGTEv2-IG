@@ -19,11 +19,11 @@ Description: "Bundle Referenciar LE, recurso utilizado para transportar todos lo
 * entry ^slicing.rules = #closed
 * entry 7..7 MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
-* entry contains messageheader 1..1 
-        and servicerequest 1..1 
-        and practitioner 1..1
-        and practitionerRole 2..2
-        and organization 2..2
+* entry contains messageheader 1..1 MS
+        and servicerequest 1..1 MS
+        and practitioner 1..1 MS
+        and practitionerRole 2..2 MS
+        and organization 2..2 MS
         
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
   * fullUrl 0..1 MS

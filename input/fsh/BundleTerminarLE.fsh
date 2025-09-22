@@ -21,12 +21,12 @@ Description: "Bundle Terminar LE recurso utilizado para transportar todos los da
 * entry ^slicing.rules = #closed
 * entry 5..5 MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
-* entry contains messageheader 1..1 
-        and servicerequest 1..1 
-        and practitioner 0..1
+* entry contains messageheader 1..1 MS
+        and servicerequest 1..1 MS
+        and practitioner 0..1 MS
         // and practitionerAdmnistrativo 0..1
-        and practitionerRole 1..1
-        and organization 1..1
+        and practitionerRole 1..1 MS
+        and organization 1..1 MS
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
   * fullUrl 0..1 MS
