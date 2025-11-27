@@ -101,16 +101,9 @@ La solicitud de interconsulta es creada para continuar con el proceso de referen
   
   **Resultado de la acción**
   
-  **Si es “Pertinente”**:   El equipo profesional de su centro de salud de atención
-  primaria tomará contacto con el/la usuario/a y le informará que su caso ha sido
-  revisado y será atendido por especialidad, en el centro de atención de
-  especialidad. 
+  **Si es “Pertinente”**: El equipo profesional de su centro de salud de atención primaria tomará contacto con el/la usuario/a y le informará que su caso ha sido revisado y será atendido por especialidad, en el centro de atención de especialidad. 
   
-  **Si es “No Pertinente”**:  El equipo profesional del establecimiento de salud de
-  atención primaria tomará contacto con el/la usuario/a y le informará que la
-  continuación de su atención se realizará en un centro de atención primaria y que
-  gestionará su atención por parte del equipo de dicho establecimiento para continuar con su
-  atención en el nivel secundario. 
+  **Si es “No Pertinente”**: El equipo profesional del establecimiento de salud de atención primaria tomará contacto con el/la usuario/a y le informará que la continuación de su atención se realizará en un centro de atención primaria. 
 
 ### Priorizador
 

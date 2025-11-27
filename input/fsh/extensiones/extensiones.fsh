@@ -320,3 +320,9 @@ Description: "Mención profesional obtenida junto con el título, dato que se ag
 Context: Practitioner.qualification
 
 * value[x] only string
+
+Extension: SospechaPatologiaGes
+Id: SospechaPatologiaGes
+Title: "SospechaPatologiaGes"
+Description: "Indica si corresponde a GES"
+* value[x] only boolean

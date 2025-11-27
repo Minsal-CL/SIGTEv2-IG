@@ -71,6 +71,9 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains ExtensionPertinenciaInterconsulta named PertinenciaInterconsulta 0..1 MS
 * extension[PertinenciaInterconsulta] ^short = "Descripción de la evaluación de pertinencia de la interconsulta"
 
+* extension contains SospechaPatologiaGes named CorrespondeGES 0..1 MS
+* extension[CorrespondeGES] ^short = "Indica si corresponde a GES."
+
 * authoredOn 0..1 MS
 * authoredOn ^short = "Fecha en que se solicita la Interconsulta. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ"
 

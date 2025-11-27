@@ -1,14 +1,8 @@
 ### Iniciador
 
-  Corresponde al profesional de la salud que se encuentra atendiendo al usuario
-  (paciente) en la consulta que puede ser médica, de odontología, matronería o
-  consulta oftalmológica con tecnólogo/a médico/a, y que en virtud a su evaluación y
-  cuando corresponda, origina la Solicitud de Interconsulta (SIC) para nueva
-  consulta de especialidad en el nivel secundario. Los profesionales autorizados
-  para iniciar este proceso son médicos/as, matrones/as, odontólogo/as o
-  tecnólogos/as médicos/as con mención en oftalmología. Este profesional deberá
-  completar los antecedentes clínicos que fundamente la decisión de derivar a
-  especialidad. 
+Corresponde al profesional de la salud que se encuentra atendiendo al usuario (paciente) en la consulta que puede ser médica, de odontología, matronería o consulta oftalmológica con tecnólogo/a médico/a, y que en virtud a su evaluación y cuando corresponda, origina la Solicitud de Interconsulta (SIC) para nueva consulta de especialidad hacia el nivel secundario.
+
+Los profesionales autorizados para iniciar este proceso son médicos/as, matrones/as, odontólogo/as o tecnólogos/as médicos/as con mención en oftalmología. Este profesional deberá completar los antecedentes clínicos que fundamente la decisión de derivar a especialidad.
 
 ### Referenciador
   
@@ -27,34 +21,21 @@
 
 ### Revisor
   
-  Es el/la profesional clínico/a que ejerce las funciones de contraloría, quien
-  revisa la pertinencia de la solicitud, según el protocolo de referencia y
-  contrarreferencia establecido y reconocido por la red y los antecedentes
-  entregados por el INICIADOR. Puede aprobar, rechazar u objetar la derivación por
-  falta de antecedentes y gestionar la completitud de las antecedentes clínicos y
-  administrativos.
+Es el/la profesional clínico/a que ejerce las funciones de contraloría, quien revisa la pertinencia de la solicitud, según el protocolo de referencia y contrarreferencia establecido y reconocido por la red y los antecedentes entregados por el INICIADOR.
+Puede aprobar, rechazar u objetar la derivación por falta de antecedentes y gestionar la completitud de las antecedentes clínicos y administrativos.
 
-  Este profesional puede pertenecer al establecimiento de atención primaria o
-  secundaria, según lo definido por cada Servicio de Salud y en caso de rechazar la
-  SIC, debe gestionar las acciones necesarias para dar respuesta al usuario
-  (paciente). 
-  
-  El REVISOR también pueden verificar si existe alguna causal de salida de Lista de
-  Espera, por ejemplo, en caso de defunción, GES, no beneficiario entre otras. 
+Este profesional pertenece al establecimiento de atención primaria. 
+en caso de rechazar la SIC, debe gestionar las acciones necesarias para dar respuesta al usuario (paciente).
+
+El REVISOR también pueden verificar si existe alguna causal de salida de Lista de Espera, por ejemplo, en caso de defunción, GES, no beneficiario entre otras.
+
 
 ### Priorizador
   
-  Es el/la profesional clínico/a que ejerce las funciones de contraloría, quien debe
-  dar prioridad a la solicitud de interconsulta, en función de la categorización
-  definida, considerando patología, gravedad y determinantes sociales del paciente
-  informadas por el profesional INICIADOR. 
-  
-  Este profesional puede pertenecer al establecimiento de atención primaria o
-  secundaria, según lo definido por cada Servicio de Salud por acuerdo entre ambos
-  niveles y el Servicio de Salud. 
-  
-  También puede verificar si existe alguna causa de salida de Lista de Espera, por
-  ejemplo, en caso de defunción, GES, no beneficiario, entre otras. (Según [Norma técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view)).
+Es el/la profesional clínico/a que ejerce las funciones de contraloría, quien debe dar prioridad a la solicitud de interconsulta, en función de la categorización definida, considerando patología, gravedad y determinantes sociales del paciente informadas por el profesional INICIADOR.
+
+Este profesional pertenece al establecimiento secundario.
+También puede verificar si existe alguna causa de salida de Lista de Espera, por ejemplo, en caso de defunción, GES, no beneficiario, entre otras. (Según [Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view)).
 
 ### Agendador
   
@@ -84,10 +65,6 @@
 
 ### Terminador
   
-  Corresponde al funcionario administrativo que ejecuta la salida del usuario/a
-  paciente de lista de espera, en función de si recibió la atención de especialidad,
-  o por alguna de las otras causales de eliminación de la Lista de Espera según la
-  norma técnica N°118. 
-  
-  En algunos casos esto podría ser automático, sin la mediación de una persona,
-  según definiciones del sistema informático local.
+Corresponde al funcionario administrativo que ejecuta la salida del usuario/a paciente de lista de espera, en función de si recibió la atención de especialidad, o por alguna de las otras causales de eliminación de la Lista de Espera (Según [Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view)).
+ 
+En algunos casos esto podría ser automático, marcando como responsable al que gatilló el envio de este evento, según definiciones del sistema informático local.

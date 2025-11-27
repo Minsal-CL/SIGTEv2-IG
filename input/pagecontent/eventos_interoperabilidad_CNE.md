@@ -24,39 +24,22 @@
   faltantes de la solicitud de Interconsulta.
 
 ### Revisar
-  
-  Un profesional clínico contralor debe revisar la pertinencia de la solicitud,
-  según el protocolo de referencia y contrarreferencia establecido y reconocido
-  por la red. También puede objetar la derivación por falta de antecedentes y
-  gestionar la completitud de los antecedentes clínicos y administrativos.
-  
-  Esto puede suceder en APS o nivel secundario según acuerdo entre ambos niveles
-  y el Servicio de Salud, debiendo existir un flujo definido en caso de rechazo
-  de la SIC para dar respuesta al usuario.
-  
-  Acá se pueden verificar si existe alguna causal de salida de Lista de Espera,
-  por ejemplo, en caso de defunción, GES, no beneficiario, entre otras. 
+Un profesional clínico contralor debe revisar la pertinencia de la solicitud, según el protocolo de referencia y contrarreferencia establecido y reconocido por la red. También puede objetar la derivación por falta de antecedentes y gestionar la completitud de los antecedentes clínicos y administrativos.
+
+En caso de rechazo de la SIC debe existir un flujo definido para dar respuesta al usuario.
+
+Acá se pueden verificar si existe alguna causal de salida de Lista de Espera, por ejemplo, en caso de defunción, GES, no beneficiario, entre otras.
+
 
 ### Priorizar
-  
-  Un profesional clínico debe realizar la priorización de la solicitud de
-  interconsulta, en función de la categorización definida, considerando
-  patología, gravedad y determinantes sociales del paciente. 
-  
-  Esto puede suceder en el establecimiento de Atención Primaria de Salud o nivel
-  secundario, según acuerdo entre ambos niveles y el Servicio de Salud. 
-  
-  Acá se puede verificarla existencia de alguna de las causales de salida de Lista de Espera, 
-  por ejemplo, en caso de defunción, GES, no beneficiario, entre otras. 
-  (Según[Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view))
+Un profesional clínico debe realizar la priorización de la solicitud de interconsulta, en función de la categorización definida, considerando patología, gravedad y determinantes sociales del paciente.
+
+Acá se puede verificar la existencia de alguna de las causales de salida de Lista de Espera, por ejemplo, en caso de defunción, GES, no beneficiario, entre otras. (Según [Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view))
 
 ### Agendar
-  Un funcionario administrativo contactará al usuario para agendar la cita con el
-  especialista, según la priorización asignada y la disponibilidad de horas.
-  Esto puede suceder tanto en el establecimiento de atención primaria como en el
-  nivel secundario, según acuerdo entre ambos niveles y el Servicio de Salud. 
-  
-  Acá se puede verificarla existencia de alguna de las causales de salida de Lista de Espera, por ejemplo, en caso de defunción, GES, no beneficiario, entre otras. (Según[Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view))
+Un funcionario administrativo contactará al usuario para agendar la cita con el especialista, según la priorización asignada y la disponibilidad de horas. Esto debe ocurrir en el sistema de registro en secundario.
+
+Acá se puede verificar la existencia de alguna de las causales de salida de Lista de Espera, por ejemplo, en caso de defunción, GES, no beneficiario, entre otras.  (Según [Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view))
 
 ### Atender
   El usuario recibe atención con el médico especialista en el establecimiento de
@@ -77,8 +60,7 @@
 
 ### Terminar
   En este acto el paciente sale de la Lista de Espera, ya sea porque fue atendido
-  o por alguna de las causales de eliminación de la Lista de Espera, según la
-  [Norma técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view). 
+  o por alguna de las causales de eliminación de la Lista de Espera. (Según [Norma Técnica N°118](https://drive.google.com/file/d/1kZBAY7E-Rmy3DxGCMP3emotxEWh5nLEy/view)). 
   
   Esto puede ocurrir de forma automática por definiciones del sistema
   informático, o mediante un funcionario administrativo. 
