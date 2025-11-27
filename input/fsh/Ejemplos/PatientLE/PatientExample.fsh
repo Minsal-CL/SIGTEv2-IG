@@ -54,13 +54,13 @@ Instance: NacionalidadPacienteLE1
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: PaisOrigenMPIPacienteLE1
 InstanceOf: PaisOrigenMPI
 Usage: #inline
 
-* valueCodeableConcept = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 Instance: PueblosOriginariosPertenecientePacienteLE1
 InstanceOf: PueblosOriginariosPerteneciente
@@ -84,7 +84,7 @@ Instance: paisEmisionDocumentoPacienteLE1
 InstanceOf: CodigoPaises
 Usage: #inline
 
-* valueCodeableConcept = https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais#152 "Chile"
+* valueCodeableConcept = urn:iso:std:iso:3166#152 "Chile"
 
 
 Instance: segundoApellidoPacienteLE1

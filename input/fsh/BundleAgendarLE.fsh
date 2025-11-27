@@ -19,13 +19,13 @@ Description: "Bundle Agendar LE, recurso utilizado para transportar todos los da
 * entry ^slicing.rules = #closed
 * entry 8..8 MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
-* entry contains messageheader 1..1 
-        and servicerequest 1..1 
-        and practitionerAdministrativo 1..1
-        and practitionerProfesional 1..1
-        and practitionerRole 2..2
-        and organization 1..1
-        and appointment 1..1
+* entry contains messageheader 1..1 MS
+        and servicerequest 1..1 MS
+        and practitionerAdministrativo 1..1 MS
+        and practitionerProfesional 1..1 MS
+        and practitionerRole 2..2 MS
+        and organization 1..1 MS
+        and appointment 1..1 MS
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
   * fullUrl 0..1 MS
   * fullUrl ^short = "Uri de identificación dentro del Bundle"

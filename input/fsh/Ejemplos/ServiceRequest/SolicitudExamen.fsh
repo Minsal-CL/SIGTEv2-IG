@@ -8,7 +8,7 @@ Description: "Ejemplo de la solicitud realizada junto a una interconsulta"
 * status = #draft
 * intent = #order
 * code 
-  * coding = http://loinc.org#2857-1 "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+  * coding = http://loinc.org#2857-1 "Ag específico de próstata: Suero o Plasma : Punto temporal: Concentración de masa: Cuantitativo:"
   * text = "Antigeno Prostático Específico en Suero o Plasma"
 * subject = Reference(EjemploPatientLE)
 * authoredOn = "2024-01-17T16:00:00-03:00"

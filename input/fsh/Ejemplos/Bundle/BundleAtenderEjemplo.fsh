@@ -300,7 +300,7 @@ Usage: #inline
 * category = http://terminology.hl7.org/CodeSystem/observation-category#laboratory
 
 * code
-  * coding = http://loinc.org#2857-1 "Prostate specific Ag [Mass/volume] in Serum or Plasma"
+  * coding = http://loinc.org#2857-1 "Ag específico de próstata: Suero o Plasma : Punto temporal: Concentración de masa: Cuantitativo:"
   * text = "Antigeno Prostático Específico en Suero o Plasma"
 
 * subject = Reference(EjemploPatientLE)

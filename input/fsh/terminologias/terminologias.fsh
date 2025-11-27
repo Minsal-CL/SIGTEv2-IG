@@ -744,6 +744,15 @@ Description: "EspecialidadMed"
 * #66  "OBSTETRICIA" "OBSTETRICIA"
 * #67  "TRAUMATOLOGÍA Y ORTOPEDIA PEDIÁTRICA" "TRAUMATOLOGÍA Y ORTOPEDIA PEDIÁTRICA"
 * #68  "UROLOGÍA PEDIÁTRICA" "UROLOGÍA PEDIÁTRICA"
+* #69  "GINECOLOGÍA ONCOLÓGICA" "GINECOLOGÍA ONCOLÓGICA"
+* #70  "MASTOLOGÍA (CIRUGÍA DE LA MAMA)" "MASTOLOGÍA (CIRUGÍA DE LA MAMA)"
+* #71  "MEDICINA PALEATIVA Y DE MANEJO DEL DOLOR" "MEDICINA PALEATIVA Y DE MANEJO DEL DOLOR"
+* #72  "MEDICINA REPRODUCTIVA E INFERTILIDAD" "MEDICINA REPRODUCTIVA E INFERTILIDAD"
+* #73  "MEDICINA DEL ADOLESCENTE" "MEDICINA DEL ADOLESCENTE"
+* #74  "MEDICINA DEL DEPORTE" "MEDICINA DEL DEPORTE"
+* #75  "MICROBIOLOGÍA" "MICROBIOLOGÍA"
+* #76  "NEURORRADIOLOGÍA" "NEURORRADIOLÓGIA"
+
 
 ValueSet: VsEspecialidadDest
 Id: VsEspecialidadDest
@@ -805,12 +814,14 @@ Description: "Especialidades Odontológicas"
 * #6 "Odontología legal" "Odontología legal"
 * #7 "Odontopediatría" "Odontopediatría"
 * #8 "Ortodoncia y Ortopedia Dento Máxilo Facial" "Ortodoncia y Ortopedia Dento Máxilo Facial"
-* #9 "Patología Oral" "Patología Oral"
+* #9 "Patología Oral Maxilofacial" "Patología Oral Maxilofacial"
 * #10 "Periodoncia" "Periodoncia" 
-* #11 "Rehabilitación Oral" "Rehabilitación Oral"
+* #11 "Rehabilitación Oral Removible" "Rehabilitación Oral Removible"
 * #12 "Salud Pública" "Salud Pública"
 * #13 "Somato-Prótesis" "Somato-Prótesis"
 * #14 "Trastornos Temporomandibulares Y Dolor Orofacial" "Trastornos Temporomandibulares Y Dolor Orofacial"
+* #15 "Odontogeriatría" "Odontogeriatría"
+* #16 "Rehabilitación Oral Fija" "Rehabilitación Oral Fija"
 
 ValueSet: VSEspecialidadOdont
 Id: VSEspecialidadOdont

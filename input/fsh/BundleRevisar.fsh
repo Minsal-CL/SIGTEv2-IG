@@ -19,12 +19,12 @@ Description: "Bundle Revisar LE recurso utilizado para transportar todos los dat
 * entry ^slicing.rules = #closed
 * entry 5..* MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
-* entry contains messageheader 1..1 
-        and servicerequest 1..1 
-        and practitioner 1..1
-        and practitionerRole 1..2
-        and organization 1..2
-        and servicerequestexamen 0..*
+* entry contains messageheader 1..1 MS
+        and servicerequest 1..1 MS
+        and practitioner 1..1 MS
+        and practitionerRole 1..2 MS
+        and organization 1..2 MS
+        and servicerequestexamen 0..* MS
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"
   * fullUrl 0..1 MS

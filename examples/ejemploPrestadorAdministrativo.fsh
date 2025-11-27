@@ -6,7 +6,7 @@ Title: "Practitioner Atendedor Evento Agendar"
 Description: "Practitioner Atendedor Evento Agendar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[Nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
@@ -50,7 +50,7 @@ Description: "Practitioner Atendedor Evento Agendar"
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Valparaíso"
 
 * address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
 
@@ -79,7 +79,7 @@ Title: "Practitioner Agendador Evento Agendar"
 Description: "Practitioner Agendador Evento Agendar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[Nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 
@@ -118,7 +118,7 @@ Description: "Practitioner Agendador Evento Agendar"
 * address.state.extension[RegionesCl].valueCodeableConcept.coding.display  = "Valparaíso"
 
 * address.country.extension[CodigoPaises].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* address.country.extension[CodigoPaises].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.code = #152
 * address.country.extension[CodigoPaises].valueCodeableConcept.coding.display = "Chile"
 /*FIN PARA BUNDLE Agendar*/
@@ -131,7 +131,7 @@ Title: "Practitioner Evento Terminar"
 Description: "Practitioner Evento Terminar"
 
 * extension[Nacionalidad].url = "https://hl7chile.cl/fhir/ig/clcore/StructureDefinition/CodigoPaises"
-* extension[Nacionalidad].valueCodeableConcept.coding.system = "https://hl7chile.cl/fhir/ig/clcore/CodeSystem/CodPais"
+* extension[Nacionalidad].valueCodeableConcept.coding.system = "urn:iso:std:iso:3166"
 * extension[Nacionalidad].valueCodeableConcept.coding.code = #152
 * extension[Nacionalidad].valueCodeableConcept.coding.display = "Chile"
 

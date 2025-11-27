@@ -19,19 +19,19 @@ Description: "Bundle Atender LE recurso utilizado para transportar todos los dat
 * entry ^slicing.rules = #closed
 * entry 8..* MS
 * entry ^short = "Entrada en el Bundle: contendrá un recurso o información"
-* entry contains messageheader 1..1 
-        and servicerequest 1..1 
-        and practitioner 1..1 
-        and practitionerRole 1..1 
-        and organization 1..1 
-        and encounter 1..1 
-        and carePlan 1..1
-        and Condition 1..* 
-        and AllergyIntolerance 0..*
-        and ObservationResultadoExamen 0..*
-        and SolicitudMedicamento 0..*
-        and SolicitudExamen 0..*
-        and Anamnesis 0..1 
+* entry contains messageheader 1..1 MS
+        and servicerequest 1..1 MS
+        and practitioner 1..1 MS
+        and practitionerRole 1..1 MS
+        and organization 1..1 MS
+        and encounter 1..1 MS
+        and carePlan 1..1 MS
+        and Condition 1..* MS
+        and AllergyIntolerance 0..* MS
+        and ObservationResultadoExamen 0..* MS
+        and SolicitudMedicamento 0..* MS
+        and SolicitudExamen 0..* MS
+        and Anamnesis 0..1  MS
         
 
 * entry[messageheader] ^short = "Entrada en el Bundle: contendrá un recurso MessageHeader"

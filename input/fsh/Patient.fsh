@@ -35,7 +35,7 @@ Description: "Paciente definido para el Registro Maestro de Pacientes"
 * gender 1..1 MS
 
 //* address.extension contains http://hl7.org/fhir/StructureDefinition/geolocation named geolocalizacion 0..1
-* address.extension[Geolocalizacion] ^short = "Dirección absoluta, es decir, latitud y longitud." 
+//* address.extension[Geolocalizacion] ^short = "Dirección absoluta, es decir, latitud y longitud." 
 * address.use 1..1 MS
 
 * address.line 1..1 MS
