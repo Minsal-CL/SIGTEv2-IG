@@ -74,6 +74,7 @@ Usage: #inline
 * extension[EspecialidadMedicaDestinoCodigo] = ExtensionEspecialidadMedicaDestinoCodigoEj1
 * extension[SubEspecialidadMedicaDestinoCodigo] = ExtensionSubEspecialidadMedicaDestinoCodigoEj1
 * extension[PertinenciaInterconsulta] = ExtensionPertinenciaInterconsultaEj1
+* extension[CorrespondeGES] = ExtensionSospechaGESEj
 
 * identifier.value = "123"
 * status = #draft

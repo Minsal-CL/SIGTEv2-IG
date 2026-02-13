@@ -16,6 +16,7 @@ Description: "Ejemplo de una Solicitud finalizada"
 * extension[EspecialidadMedicaDestinoCodigo] = ExtensionEspecialidadMedicaDestinoCodigoEj1
 * extension[SubEspecialidadMedicaDestinoCodigo] = ExtensionSubEspecialidadMedicaDestinoCodigoEj1
 * extension[PertinenciaInterconsulta] = ExtensionPertinenciaInterconsultaEj1
+* extension[CorrespondeGES] = ExtensionSospechaGESEj
 
 * identifier.value = "123"
 * status = #draft
@@ -59,3 +60,15 @@ InstanceOf: ExtensionMotivoCierreInterconsulta
 Usage: #inline
 
 * valueCodeableConcept = CSMotivoCierreInterconsulta#2 "Atención Realizada (1)"
+
+// Instance: ExtensionSospechaGESEj
+// InstanceOf: SospechaPatologiaGes
+// Usage: #inline
+
+// * extension[sospechaGES].valueBoolean = false
+
+Instance: ExtensionSospechaGESEj
+InstanceOf: SospechaPatologiaGes
+Usage: #inline
+
+* valueBoolean = false

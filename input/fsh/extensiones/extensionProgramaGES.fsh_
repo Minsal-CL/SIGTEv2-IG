@@ -1,0 +1,25 @@
+Extension: SospechaPatologiaGes
+Id: SospechaPatologiaGes
+Title: "Sospecha Patologia Ges"
+Description: "Indica si corresponde a cual programa ges"
+Context: ServiceRequest
+
+* obeys tei-ges-01
+
+* extension contains sospechaGES 1..1 MS and programaGES 0..1 MS
+
+* extension[sospechaGES]
+  * ^short = "Indica si el caso es una sospecha GES o no"
+  * value[x] only boolean
+
+* extension[programaGES]
+  * ^short = "Indica a cual programa GES Corresponde"
+  * value[x] only CodeableConcept
+  * value[x] from ProgramasGESVS (required)
+
+Invariant: tei-ges-01
+Description: "En caso de que el caso sea una sospecha GES se debe indicar el programa a cual corresponda"
+Expression: "extension.where(url = 'sospechaGES' and value = true).exists() implies extension.where(url = 'programaGES').exists()"
+Severity: #error
+
+

@@ -323,6 +323,17 @@ Context: Practitioner.qualification
 
 Extension: SospechaPatologiaGes
 Id: SospechaPatologiaGes
-Title: "SospechaPatologiaGes"
+Title: "Sospecha Patologia Ges"
 Description: "Indica si corresponde a GES"
+Context: ServiceRequest
+
 * value[x] only boolean
+
+Extension: ProgramaGes
+Id: ProgramaGesTEI
+Title: "Programas GES"
+Description: "Indica si corresponde a que programa GES"
+Context: ServiceRequest
+
+* value[x] only CodeableConcept
+* value[x] from ProgramasGESVS (required)

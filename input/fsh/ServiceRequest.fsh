@@ -72,7 +72,10 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension[PertinenciaInterconsulta] ^short = "Descripción de la evaluación de pertinencia de la interconsulta"
 
 * extension contains SospechaPatologiaGes named CorrespondeGES 0..1 MS
-* extension[CorrespondeGES] ^short = "Indica si corresponde a GES."
+* extension[CorrespondeGES] ^short = "Indica si corresponde a GES la interconsulta"
+
+* extension contains ProgramaGes named ProgramaGes 0..1 MS
+* extension[ProgramaGes] ^short = "Indica a cual programa GES corresponde"
 
 * authoredOn 0..1 MS
 * authoredOn ^short = "Fecha en que se solicita la Interconsulta. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ"
@@ -172,3 +175,19 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * supportingInfo[SolicitudExamen] ^short = "Referencia a las solicitudes de examenes"
 * supportingInfo[ResultadoExamen] only Reference(ObservationResultadoExamen)
 * supportingInfo[ResultadoExamen] ^short = "Referencia al los resultados de examenes"
+
+* bodySite ^slicing.discriminator.type = #value
+* bodySite ^slicing.discriminator.path = "id"
+* bodySite ^slicing.rules = #open
+* bodySite ^slicing.description = "Usado para diferenciar los posible bodySite pero para identificar a uno como la parte del cuerpo para las GES"
+* bodySite ^slicing.ordered = false
+
+* bodySite contains GES 0..1 MS
+
+* bodySite[GES]
+  * ^short = "Usado para identificar las partes del cuerpo como información adicional"
+  * id = "GES"
+  * id ^short = "Se usa para dejar la etiqueta de que es GES"
+  * ^binding.description = "Set de valores usados para describir los sitios anatómicos usando SNOMED"
+
+* bodySite[GES] from PartesDelCuerpoSnomedVS (required)
