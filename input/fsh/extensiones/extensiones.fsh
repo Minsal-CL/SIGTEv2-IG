@@ -329,10 +329,10 @@ Context: ServiceRequest
 
 * value[x] only boolean
 
-Extension: ProgramaGes
-Id: ProgramaGesTEI
-Title: "Programas GES"
-Description: "Indica si corresponde a que programa GES"
+Extension: ProblemaSaludGES
+Id: ProblemaSaludGESTEI
+Title: "Problema GES"
+Description: "Indica si corresponde a que problema de salud GES"
 Context: ServiceRequest
 
 * value[x] only CodeableConcept

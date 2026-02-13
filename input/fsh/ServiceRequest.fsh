@@ -74,8 +74,8 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension contains SospechaPatologiaGes named CorrespondeGES 0..1 MS
 * extension[CorrespondeGES] ^short = "Indica si corresponde a GES la interconsulta"
 
-* extension contains ProgramaGes named ProgramaGes 0..1 MS
-* extension[ProgramaGes] ^short = "Indica a cual programa GES corresponde"
+* extension contains ProblemaSaludGES named ProblemaSaludGES 0..1 MS
+* extension[ProblemaSaludGES] ^short = "Indica a cual es el problema de salud GES que corresponde corresponde"
 
 * authoredOn 0..1 MS
 * authoredOn ^short = "Fecha en que se solicita la Interconsulta. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ"
@@ -187,7 +187,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * bodySite[GES]
   * ^short = "Usado para identificar las partes del cuerpo como información adicional"
   * id = "GES"
-  * id ^short = "Se usa para dejar la etiqueta de que es GES"
+  * id ^short = "Se usa para dejar la etiqueta de que es para un problema de salud GES"
   * ^binding.description = "Set de valores usados para describir los sitios anatómicos usando SNOMED"
 
 * bodySite[GES] from PartesDelCuerpoSnomedVS (required)
