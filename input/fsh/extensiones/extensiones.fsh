@@ -336,4 +336,4 @@ Description: "Indica si corresponde a que problema de salud GES"
 Context: ServiceRequest
 
 * value[x] only CodeableConcept
-* value[x] from ProblemaSaludGESCS (required)
+* value[x] from ProblemaSaludGESVS (required)
