@@ -176,11 +176,11 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * supportingInfo[ResultadoExamen] only Reference(ObservationResultadoExamen)
 * supportingInfo[ResultadoExamen] ^short = "Referencia al los resultados de examenes"
 
-* bodySite ^slicing.discriminator.type = #value
-* bodySite ^slicing.discriminator.path = "id"
-* bodySite ^slicing.rules = #open
-* bodySite ^slicing.description = "Usado para diferenciar los posible bodySite pero para identificar a uno como la parte del cuerpo para las GES"
-* bodySite ^slicing.ordered = false
+// * bodySite ^slicing.discriminator.type = #value
+// * bodySite ^slicing.discriminator.path = "id"
+// * bodySite ^slicing.rules = #open
+// * bodySite ^slicing.description = "Usado para diferenciar los posible bodySite pero para identificar a uno como la parte del cuerpo para las GES"
+// * bodySite ^slicing.ordered = false
 
 // * bodySite contains GES 0..1 MS
 
