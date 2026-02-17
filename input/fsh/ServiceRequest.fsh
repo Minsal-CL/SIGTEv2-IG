@@ -182,12 +182,12 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * bodySite ^slicing.description = "Usado para diferenciar los posible bodySite pero para identificar a uno como la parte del cuerpo para las GES"
 * bodySite ^slicing.ordered = false
 
-* bodySite contains GES 0..1 MS
+// * bodySite contains GES 0..1 MS
 
-* bodySite[GES]
-  * ^short = "Usado para identificar las partes del cuerpo como información adicional"
-  * id = "GES"
-  * id ^short = "Se usa para dejar la etiqueta de que es para un problema de salud GES"
-  * ^binding.description = "Set de valores usados para describir los sitios anatómicos usando SNOMED"
+// * bodySite[GES]
+//   * ^short = "Usado para identificar las partes del cuerpo como información adicional"
+//   * id = "GES"
+//   * id ^short = "Se usa para dejar la etiqueta de que es para un problema de salud GES"
+//   * ^binding.description = "Set de valores usados para describir los sitios anatómicos usando SNOMED"
 
-* bodySite[GES] from PartesDelCuerpoSnomedVS (required)
+// * bodySite[GES] from PartesDelCuerpoSnomedVS (required)
