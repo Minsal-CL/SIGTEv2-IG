@@ -1,5 +1,5 @@
 CodeSystem: ProblemaSaludGESCS
-Id: cs-programas-ges-tei
+Id: cs-problema-ges-tei
 Title: "Sitema de Codificación para los Problemas de Salud GES"
 Description: "Sistema de codificación de los problemas de salud GES"
 
@@ -104,7 +104,7 @@ Description: "Sistema de codificación de los problemas de salud GES"
 * #90	"Cesación del consumo de tabaco en personas de 25 años y más" "Cesación del consumo de tabaco en personas de 25 años y más"
 
 ValueSet: ProblemaSaludGESVS
-Id: vs-programa-ges-tei
+Id: vs-problema-ges-tei
 Title: "Value Set de los Problemas de Salud  GES"
 Description: "Set de valores utilizados para los problemas de salud ges"
 

@@ -75,7 +75,7 @@ Description: "ServiceRequest LE recurso utilizado para la representación de los
 * extension[CorrespondeGES] ^short = "Indica si corresponde a GES la interconsulta"
 
 * extension contains ProblemaSaludGES named ProblemaSaludGES 0..1 MS
-* extension[ProblemaSaludGES] ^short = "Indica a cual es el problema de salud GES que corresponde corresponde"
+* extension[ProblemaSaludGES] ^short = "Indica a cual es el problema de salud GES que corresponde la interconsulta"
 
 * authoredOn 0..1 MS
 * authoredOn ^short = "Fecha en que se solicita la Interconsulta. El formato corresponde a año, mes, día y hora (hh:mm) YYYY-MM-DDTHH:MMZ"
