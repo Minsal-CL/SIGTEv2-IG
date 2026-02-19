@@ -126,12 +126,14 @@ InstanceOf: ProblemaSaludGES
 Usage: #inline
 
 * extension[ProblemaSaludGES].valueCodeableConcept = ProblemaSaludGESCS#1	"Enfermedad renal crónica etapa 4 y 5"
-* extension[SubRamaGES].valueCodeableConcept.text = "En riñón derecho"
+* extension[RamaGES].valueCodeableConcept.text = "En riñón derecho"
 
 
 Instance: EjemploSolicitudExamen2
 InstanceOf: ServiceRequestExamenLE
-Usage: #inline
+Usage: #Example
+Title: "Ejemplo Solicitud de Examen con uso de las extensiones GES"
+Description: "Ejemplo de una solicitud de examen con uso de las extensiones GES"
 
 * basedOn = Reference(SolicitudInterconsultaEjemploGES)
 * status = #draft

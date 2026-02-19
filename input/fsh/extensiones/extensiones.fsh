@@ -335,11 +335,11 @@ Title: "Problema GES"
 Description: "Indica si corresponde a que problema de salud GES"
 Context: ServiceRequest
 
-* extension contains ProblemaSaludGES 1..1 MS and SubRamaGES 0..1 MS
+* extension contains ProblemaSaludGES 1..1 MS and RamaGES 0..1 MS
 * extension[ProblemaSaludGES]
   * ^short = "Indica el problema de salud GES" 
   * value[x] only CodeableConcept
   * value[x] from ProblemaSaludGESVS (required)
-* extension[SubRamaGES]
+* extension[RamaGES]
   * ^short = "Indica una especificación sobre el problema de salud GES"
   * value[x] only CodeableConcept

@@ -4,6 +4,11 @@
 
   - Se incluye la extension para validar si la solicitud corresponde a GES.
   - Se inlcuye extensión para especificar la patología ges a tratar.
+  - Se incluye ejemplo para el uso de extensiones.
+
+### Bundle Iniciar LE
+
+  - Se genera un nuevo Ejemplo para el iniciar LE que incluya un ServiceRequest con las extensiones nuevas.  
 
 ## Versión 0.2.1
 
