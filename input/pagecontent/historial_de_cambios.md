@@ -1,4 +1,4 @@
-## Versión 0.2.2
+### Versión 0.2.2
 
 #### ServiceRequest LE
 
@@ -6,13 +6,13 @@
   - Se inlcuye extensión para especificar la patología ges a tratar.
   - Se incluye ejemplo para el uso de extensiones.
 
-### Bundle Iniciar LE
+#### Bundle Iniciar LE
 
   - Se genera un nuevo Ejemplo para el iniciar LE que incluya un ServiceRequest con las extensiones nuevas.  
 
-## Versión 0.2.1
+### Versión 0.2.1
 
-### Cambios Generales
+#### Cambios Generales
 
 - Se obliga el uso de un id(Temporal) para todos los perfiles, a excepción del messageHeader y los Bundles.
 - Se incluyen los fullUrl de todos los Bundle.
@@ -24,9 +24,9 @@
 - Se habilitaron Ejemplos de todos los perfiles
 
 
-### Perfiles
+#### Perfiles
 
-#### ObservationResultadoExamen
+##### ObservationResultadoExamen
 
 - Se cambia Id de ExamenesAnteriores A ObservationResultadoExamen
 - Se incluye el valor encounter 1..1
@@ -34,32 +34,32 @@
 - Effective[x] a EffectiveDateTime 1..1 MS
 - Se elimino obligatoriedad del code.text y el requerido de exámenes
 
-#### ObservationIndiceComorbilidadLE
+##### ObservationIndiceComorbilidadLE
 
 - encounter pasa a MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
 - Se corrije el uso del code y el biding [TipoDeObservacion](ValueSet-TipoDeObservacion.html) para determinar el tipo de observación
 - Se agrega el dato value[x] forzado a valueCodebleConcept, la cardinalidad a 1..1 y se realiza un biding al [VSIndicecomorbilidad](ValueSet-VSIndicecomorbilidad.html)
 
-#### ObservationIniciarCuidadorLE
+##### ObservationIniciarCuidadorLE
 
 - encounter pasa a MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
 - se depreca extension ExtBoolEsCuidador
 - se incluye el ValueBoolean a 1..1
 
-#### ObservationDiscapacidadLE
+##### ObservationDiscapacidadLE
 
 - encounter pasa a MS y se referencia a los perfiles [EncounterIniciarLE](StructureDefinition-EncounterIniciarLE.html) y [EncounterAtenderLE](StructureDefinition-EncounterAtenderLE.html)
 - se depreca extension ExtBoolPresentaDiscapacidad
 - se incluye el ValueBoolean a 1..1
 - Se incluye el biding [TipoDeObservacion](ValueSet-TipoDeObservacion.html) para determinar el tipo de observación.
 
-#### ObservationAtender -> ObservationAnamnesisLE
+##### ObservationAtender -> ObservationAnamnesisLE
 
 - se incluye el code = http://snomed.info/sct#84100007
 - se incluye el code.text = "Anamnesis"
 - se incluye biding a [TipoDeObservacion](ValueSet-TipoDeObservacion.html)
 
-#### ServiceRequestLE
+##### ServiceRequestLE
 
 - Se actualizan las extensiones de
   - MotivoCierreInterconsulta -> ExtensionMotivoCierreInterconsulta
@@ -81,32 +81,32 @@
 - authoredOn 1..1 -> 0..1
 - code 1..1 -> 0..1
 
-#### ServiceRequestExamenLE
+##### ServiceRequestExamenLE
 
 - Se modifica la descripción del identifier
 - authoredOn 0..1 -> 1..1
 - ocurrenceDateTime 1..1 -> 0..1
 
-#### ConditionDiagnosticoLE
+##### ConditionDiagnosticoLE
 
 - Se cambia cardinalidad clinicalStatus 1..1 a 0..1
 - Se cambia cardinalidad de verificationStatus 1..1 a 0..1
 - Se cambia cardinalidad de code.coding 1..1 a 1..\*
 
-#### CarePlanAtenderLE
+##### CarePlanAtenderLE
 
 - se modifica la cardinalidad de **activity[referenciaReceta]** de 0..1 -> 0.._ y **activity[referenciaServiceRequestExamenLE]** 0..1 -> 0.._
 - se modifica descripción del description
 - se pasa MS el encounter y se solicita que sean **EncounterAtenderLE**
 
-#### PatientLE
+##### PatientLE
 
 - Identifier 1..\*
 - Identifier.type.coding 1..1
 - telecom.system 1..1
 - telecom.value 1..1
 
-#### PractitionerAdministrativoLE
+##### PractitionerAdministrativoLE
 
 - Se cambian las descripciones del Identifier
 - Cambia cardinalidad de name.family 0..1 -> 1..1
@@ -115,7 +115,7 @@
 - Cambia cardinalidad de telecom.value 0..1 -> 1..1
 - Se corrige type.coding.code 1 -> 01
 
-#### PractitionerProfesionalLE
+##### PractitionerProfesionalLE
 
 - Cambia cardinalidad de name.family 0..1 -> 1..1
 - Cambia cardinalidad de name.given 0.._ -> 1.._
@@ -123,37 +123,35 @@
 - Cambia cardinalidad de telecom.value 0..1 -> 1..1
 - Se corrige type.coding.code 1 -> 01
 
-#### AppointmentAgendarLE
+##### AppointmentAgendarLE
 
 - end 0..1 -> 1..1
 
-#### MessageHeaderLE
+##### MessageHeaderLE
 
 - Se cambia la descripción del author
 - Se cambia descripción focus[ServiceRequestLE], focus[AppointmentAgendarLE] y focus[EncounterAtenderLE]
 
-#### EncounterIniciarLE
+##### EncounterIniciarLE
 
 - Se cambia obligatoriedad y must support del identifier.type
 
-#### EncounterAtenderLE
+##### EncounterAtenderLE
 
 - Se cambia obligatoriedad y must support del identifier.type
 - Se cambia la cardinalidad de diagnosis 1..1 -> 1..\*
 
-#### AllergyIntoleranceIniciarLE
+##### AllergyIntoleranceIniciarLE
 
 - Se agrega Must Support a clinicalStatus y verificationStatus
 
-#### MedicationRequestLE
+##### MedicationRequestLE
 
 - Se crea el perfil
 
----
+#### Bundles
 
-### Bundles
-
-#### BundleIniciarLE
+##### BundleIniciarLE
 
 - Se actualiza recurso de ExamenesAnteriores A ObservationResultadoExamen
 - se actualiza entry de 8..17 a 9..\*
@@ -163,57 +161,54 @@
 - se actualiza entry[allergyintolerance] 0..1 a 0..\*
 - se crea entry[SolicitudExamen] 0..\*
 
-#### BundleAtenderLE
+##### BundleAtenderLE
 
 - Se modifica la cardinalidad de entry de 0.._ -> 7.._
 - Se cambia ObservationAtender LE por ObservationResultadoExamen
 - Se incluye la solicitud de medicamento y la solicitud de exámenes.
 - Se incluye la condición del encuentro
 
-#### BundleRevisarLE
+##### BundleRevisarLE
 
 - Se modifica la cardinalidad de entry de 7.._ -> 5.._
 - Se modifica la cardinalidad de entry[servicerequestexamen] de 0..1 -> 0..\*
 - Se modifica la cardinalidad de entry[practitionerRole] de 1..1 -> 1..2
 - Se modifica la cardinalidad de entry[organization] de 1..1 -> 1..2
 
-#### BundlePriorizarLE
+##### BundlePriorizarLE
 
 - Se modifica la cardinalidad de entry de 5..5 -> 5..7
 - Se modifica la cardinalidad de entry[practitionerRole] de 1..1 -> 1..2
 - Se modifica la cardinalidad de entry[organization] de 1..1 -> 1..2
 
----
+#### Extensiones
 
-### Extensiones
-
-#### Renombradas
+##### Renombradas
 
 - La extensión **ContactadoLE** paso a llamarse **ExtensionContactadoLE**
 - La extension **ExtBoolPertinenciaAtencionBox** paso a llamarse **ExtensionPertinenciaAtencionBox**
 - La extensión **ExtBoolSolicitudExamenes** paso a llamarse **ExtensionSolicitudExamenes**
 - La extensión **ExtStringMotivoNoPertinencia** paso a llamarse **ExtensionMotivoNoPertinencia**
 
-#### Actualizadas
+##### Actualizadas
 
 - Extension [ExtensionEspecialidadMedicaDestinoCodigo](StructureDefinition-ExtensionEspecialidadMedicaDestinoCodigo.html) y [ExtensionSubEspecialidadMedicaDestinoCodigo](StructureDefinition-ExtensionSubEspecialidadMedicaDestinoCodigo.html)
   - Se cambia el binding de ValueSet de Especialidad Medica a Especialidad de Destino
 
-#### Nuevas
+##### Nuevas
 
 - Se crea la extension SospechaPatologiaGes
 - Se agrega la extension CorrespondeGES
 
----
 
-### ValueSets
+#### ValueSets
 
-#### Nuevos
+##### Nuevos
 
 - [TipoDeObservacion](ValueSet-TipoDeObservacion.html)
 - [VsEspecialidadDest](ValueSet-VsEspecialidadDest.html)
 
-#### Eliminados
+##### Eliminados
 
 - Códigos para sexo biológico en Chile
 - Documento Acreditacion Cuidador
@@ -224,16 +219,15 @@
 - VSTipoCodDiagnostica
 - VSHipotesisDiagnosticaCodigo
 
-#### Modificados
+##### Modificados
 
 - ValueSet [TerminologiasDiag](ValueSet-VSTerminologiasDiag.html)
   - se filtra a hallazgos clínicos
 
----
 
-### CodeSystems
+#### CodeSystems
 
-#### Eliminados
+##### Eliminados
 
 - Códigos para Sexo de Nacimiento de Paciente
 - Documento Acreditacion Cuidador
@@ -244,21 +238,21 @@
 - Sospecha Patologia
 - CSHipotesisDiagnosticaCodigo
 
-#### Nuevos
+##### Nuevos
 
 - [CSTipoObservacionMinsal](CodeSystem-CSTipoObservacionMinsal.html)
 
----
 
-### Deprecaciones
+
+#### Deprecaciones
 
 - Perfil **Condición GES** se depreca y se elimina cualquier referencia a él.
 - Se depreca el recurso **Coverage**
 - Se depreca ConceptMap CMHipotesisDiagnosticaCodigoAConditionVerificationStatus
 
----
 
-## Versión 0.2.0
+
+### Versión 0.2.0
 
 - Perfil [PatientLE](StructureDefinition-PatientLE.html)
 
@@ -485,8 +479,6 @@
   - **Contacto de los participantes secundarios del encuentro**
 
 - Se depreca perfil QuestionnaireResponseAntederLE
-
----
 
 ### Cambios de versión 0.1.5 a versión 0.1.6
 
