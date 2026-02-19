@@ -1,5 +1,3 @@
-# Historial de Cambios
-
 ## Versión 0.2.2
 
 #### ServiceRequest LE

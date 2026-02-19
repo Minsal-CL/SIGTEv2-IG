@@ -1,7 +1,7 @@
 Instance: BundleIniciarEjemplo2
 InstanceOf: BundleIniciarLE
 Usage: #example
-Title: "Ejemplo Bundle Iniciar"
+Title: "Ejemplo Bundle Iniciar con uso de las extensiones GES"
 Description: "Ejemplo de un mensaje del evento Iniciar con uso de las extensiones GES"
 
 * type = #message
