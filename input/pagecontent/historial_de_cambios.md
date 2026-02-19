@@ -1,6 +1,11 @@
 # Historial de Cambios
 
----
+## Versión 0.2.2
+
+#### ServiceRequest LE
+
+  - Se incluye la extension para validar si la solicitud corresponde a GES.
+  - Se inlcuye extensión para especificar la patología ges a tratar.
 
 ## Versión 0.2.1
 
@@ -15,7 +20,6 @@
 - En las extensiones se ajustan los contextos para el uso en los servidores
 - Se habilitaron Ejemplos de todos los perfiles
 
----
 
 ### Perfiles
 
