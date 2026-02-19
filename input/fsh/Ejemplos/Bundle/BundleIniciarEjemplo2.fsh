@@ -67,7 +67,9 @@ Usage: #inline
 
 Instance: SolicitudInterconsultaEjemploGES
 InstanceOf: ServiceRequestLE
-Usage: #inline
+Usage: #example
+Title: "Ejemplo Solicitud de Examen con uso de las extensiones GES"
+Description: "Ejemplo de una solicitud de examen con uso de las extensiones GES"
 
 // * extension[MotivoCierreInterconsulta] =  ExtensionMotivoCierreInterconsultaEj1
 * extension[RequiereExamen] = ExtensionBoolRequiereExamenEj1
@@ -131,9 +133,7 @@ Usage: #inline
 
 Instance: EjemploSolicitudExamen2
 InstanceOf: ServiceRequestExamenLE
-Usage: #Example
-Title: "Ejemplo Solicitud de Examen con uso de las extensiones GES"
-Description: "Ejemplo de una solicitud de examen con uso de las extensiones GES"
+Usage: #Inline
 
 * basedOn = Reference(SolicitudInterconsultaEjemploGES)
 * status = #draft
